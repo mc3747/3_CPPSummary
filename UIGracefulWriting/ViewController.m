@@ -28,6 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor yellowColor];
     NSArray *buttonArray = @[_btn1,_btn2,_btn3,_btn4];
     [buttonArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIButton *button = (UIButton*)obj;
@@ -40,9 +41,12 @@
 
 #pragma mark -   普通滚动图片
 - (void)test1 {
-    CustomBannerScrollView *bannerView = [[CustomBannerScrollView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 250) ];
+    UIViewController *VC = [[UIViewController alloc] init];
+    VC.view.backgroundColor = [UIColor blueColor];
+    CustomBannerScrollView *bannerView = [[CustomBannerScrollView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 150) ];
     [bannerView configPictures:@[@"home_ad_1",@"home_ad_2",@"home_ad_3"]];
-    [self.view addSubview:bannerView];
+    [VC.view addSubview:bannerView];
+    [self.navigationController pushViewController:VC animated:YES];
 }
 
 #pragma mark -  循环滚动

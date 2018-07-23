@@ -17,8 +17,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    ViewController *VC = [[ViewController alloc] init];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController *VC = [storyboard instantiateInitialViewController];
+//    ViewController *VC = [[ViewController alloc] init];
     UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:VC];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = naviVC;
