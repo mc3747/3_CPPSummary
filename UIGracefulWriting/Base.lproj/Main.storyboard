@@ -38,6 +38,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="4，collectionView"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wa-e1-RUe">
+                                <rect key="frame" x="198" y="135" width="107" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="5,可点击的label"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -47,6 +52,7 @@
                         <outlet property="btn2" destination="TMW-W5-xdl" id="IRf-We-Uh6"/>
                         <outlet property="btn3" destination="fdG-nf-zex" id="b06-uS-Yux"/>
                         <outlet property="btn4" destination="5ov-b5-cwM" id="E9h-o4-p5V"/>
+                        <outlet property="btn5" destination="7Wa-e1-RUe" id="gYI-U2-YgC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

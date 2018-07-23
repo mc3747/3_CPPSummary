@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "CommonViewController.h"
+
 #import "CustomBannerScrollView.h"
 #import "BannerDemoVC.h"
 #import "SDViewController.h"
@@ -15,12 +17,14 @@
 #import "RightViewController.h"
 #import "SWRevealViewController.h"
 #import "Demo1ViewController.h"
+#import "ClickableLabel.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
 @property (weak, nonatomic) IBOutlet UIButton *btn2;
 @property (weak, nonatomic) IBOutlet UIButton *btn3;
 @property (weak, nonatomic) IBOutlet UIButton *btn4;
+@property (weak, nonatomic) IBOutlet UIButton *btn5;
 
 @end
 
@@ -29,7 +33,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
-    NSArray *buttonArray = @[_btn1,_btn2,_btn3,_btn4];
+    NSArray *buttonArray = @[_btn1,_btn2,_btn3,_btn4,_btn5];
     [buttonArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIButton *button = (UIButton*)obj;
         NSString *selName = [NSString stringWithFormat:@"test%li",idx + 1];
@@ -86,5 +90,37 @@
     
     [self.navigationController pushViewController:revealViewController animated:YES];
 }
+#pragma mark -  5,label可以点击
+- (void)test5 {
+//常见属性
+    ClickableLabel *ybLabel2 = [[ClickableLabel alloc] initWithFrame:CGRectMake(10, 200, self.view.bounds.size.width - 20, 40)];
+    ybLabel2.backgroundColor = [UIColor whiteColor];
+    ybLabel2.numberOfLines = 2;
+    
+//富文本显示属性
+    NSString *label_text2 = @"我已阅读 借款协议 和 风险及禁止性行为提示 并同意签署";
+    NSArray *stringArray = @[@"借款协议",@"风险及禁止性行为提示"];
+    NSArray <NSNumber *> *elementfonts = @[@14,@14];
+    NSArray <UIColor *> *elementcolors = @[[UIColor redColor],[UIColor grayColor]];
+    NSArray <UIColor *> *elementunderLineColors = @[[UIColor redColor],[UIColor grayColor]];
+    [ybLabel2 gjs_addAttributeString:label_text2 totalFont:@14 totalColor:[UIColor grayColor] elementStrings:stringArray elementFonts:elementfonts elementColors:elementcolors elementUnderLineColors:elementunderLineColors];
+    
+//点击属性
+    
+    [ybLabel2 gjs_addAttributeTapActionWithStrings:stringArray enabledTapEffect:YES clickTextColor:[UIColor blueColor] clickBackgroundColor:[UIColor clearColor] tapClicked:^(NSString *string, NSRange range, NSInteger index) {
+        NSString *message = [NSString stringWithFormat:@"点击了“%@”字符\nrange: %@\nindex: %ld",string,NSStringFromRange(range),index];
+        NSLog(@"%@",message);
+        
+    }];
+
+    [self pushVCWithView:ybLabel2];
+}
+
+- (void)pushVCWithView:(UIView *)view {
+    CommonViewController *vc = [[CommonViewController alloc] init];
+    [vc.view addSubview:view];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 @end
