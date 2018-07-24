@@ -18,6 +18,7 @@
 #import "SWRevealViewController.h"
 #import "Demo1ViewController.h"
 #import "ClickableLabel.h"
+#import "CommonUnderlineButton.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
@@ -25,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn3;
 @property (weak, nonatomic) IBOutlet UIButton *btn4;
 @property (weak, nonatomic) IBOutlet UIButton *btn5;
+@property (weak, nonatomic) IBOutlet UIButton *btn6;
 
 @end
 
@@ -33,7 +35,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
-    NSArray *buttonArray = @[_btn1,_btn2,_btn3,_btn4,_btn5];
+    NSArray *buttonArray = @[_btn1,_btn2,_btn3,_btn4,_btn5,_btn6];
     [buttonArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIButton *button = (UIButton*)obj;
         NSString *selName = [NSString stringWithFormat:@"test%li",idx + 1];
@@ -90,7 +92,7 @@
     
     [self.navigationController pushViewController:revealViewController animated:YES];
 }
-#pragma mark -  5,label可以点击
+#pragma mark -  5,label可以点击和带下划线
 - (void)test5 {
 //常见属性
     ClickableLabel *ybLabel2 = [[ClickableLabel alloc] initWithFrame:CGRectMake(10, 200, self.view.bounds.size.width - 20, 40)];
@@ -106,16 +108,36 @@
     [ybLabel2 gjs_addAttributeString:label_text2 totalFont:@14 totalColor:[UIColor grayColor] elementStrings:stringArray elementFonts:elementfonts elementColors:elementcolors elementUnderLineColors:elementunderLineColors];
     
 //点击属性
-    
     [ybLabel2 gjs_addAttributeTapActionWithStrings:stringArray enabledTapEffect:YES clickTextColor:[UIColor blueColor] clickBackgroundColor:[UIColor clearColor] tapClicked:^(NSString *string, NSRange range, NSInteger index) {
         NSString *message = [NSString stringWithFormat:@"点击了“%@”字符\nrange: %@\nindex: %ld",string,NSStringFromRange(range),index];
         NSLog(@"%@",message);
-        
     }];
 
     [self pushVCWithView:ybLabel2];
+    
+   
+}
+#pragma mark -  6，textfield相关见storyboard
+
+#pragma mark -  7，button相关
+- (void)test6 {
+    
+    CommonUnderlineButton *btn = [[CommonUnderlineButton alloc]
+                                                initWithButtonFrame: CGRectMake(10, 100, 200, 50)
+                                                    textNormalColor:[UIColor yellowColor]
+                                  textHighlightColor:[UIColor blueColor]
+                                  lineNormalColor:[UIColor yellowColor]
+                                  lineHighlightColor:[UIColor redColor]
+                                  underDistance:5.f clickBlock:^(CommonUnderlineButton *button) {
+        NSLog(@"点击了");
+    }];
+    
+    [btn setTitle:@"带下划线的button" forState:UIControlStateNormal];
+    
+    [self pushVCWithView:btn];
 }
 
+#pragma mark -  push出通用控制器
 - (void)pushVCWithView:(UIView *)view {
     CommonViewController *vc = [[CommonViewController alloc] init];
     [vc.view addSubview:view];

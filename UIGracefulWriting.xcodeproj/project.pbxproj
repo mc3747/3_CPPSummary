@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42981CE02105851C0052CCC3 /* ClickableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42981CDF2105851C0052CCC3 /* ClickableLabel.m */; };
-		42981CE42105C4790052CCC3 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 42981CE32105C4790052CCC3 /* UIButton+Category.m */; };
 		42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42981CE62105C4DF0052CCC3 /* CommonViewController.m */; };
 		429CB0F0210436960063A0D8 /* CustomBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CAF8E210436950063A0D8 /* CustomBannerScrollView.m */; };
 		429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CAF90210436950063A0D8 /* BannerDemoVC.m */; };
@@ -217,6 +215,24 @@
 		429CB1BC210436960063A0D8 /* DDCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CB0EF210436960063A0D8 /* DDCollectionViewFlowLayout.m */; };
 		429CB1C221043C3E0063A0D8 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CB1BE21043C3E0063A0D8 /* UIImage+Category.m */; };
 		429CB1C321043C3E0063A0D8 /* UIControl+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CB1BF21043C3E0063A0D8 /* UIControl+Category.m */; };
+		42B182642106C72300C1E682 /* IchiroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182522106C72300C1E682 /* IchiroTextField.m */; };
+		42B182652106C72300C1E682 /* NarikoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182532106C72300C1E682 /* NarikoTextField.m */; };
+		42B182662106C72300C1E682 /* UIFloatLabelTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182552106C72300C1E682 /* UIFloatLabelTextField.m */; };
+		42B182672106C72300C1E682 /* MinoruTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182582106C72300C1E682 /* MinoruTextField.m */; };
+		42B182682106C72300C1E682 /* JuroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1825C2106C72300C1E682 /* JuroTextField.m */; };
+		42B182692106C72300C1E682 /* YoshikoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1825D2106C72300C1E682 /* YoshikoTextField.m */; };
+		42B1826A2106C72300C1E682 /* BetaNaoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182602106C72300C1E682 /* BetaNaoTextField.m */; };
+		42B1826B2106C72300C1E682 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182622106C72300C1E682 /* PulsingHaloLayer.m */; };
+		42B1826C2106C72300C1E682 /* KuroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182632106C72300C1E682 /* KuroTextField.m */; };
+		42B182702106CAD200C1E682 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1826F2106CAD200C1E682 /* TextFieldViewController.m */; };
+		42B182762106D07800C1E682 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182742106D07800C1E682 /* UIButton+Category.m */; };
+		42B182792106D0B000C1E682 /* CommonUnderlineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182772106D0B000C1E682 /* CommonUnderlineButton.m */; };
+		42B1827E2106D13A00C1E682 /* ClickableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1827C2106D13A00C1E682 /* ClickableLabel.m */; };
+		42B182812106D21900C1E682 /* UIButton+Category1.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182802106D21900C1E682 /* UIButton+Category1.m */; };
+		42B182842106D83700C1E682 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182832106D83700C1E682 /* UIView+Extension.m */; };
+		42B1828821070BEF00C1E682 /* CustomFirstRateClickableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1828721070BEF00C1E682 /* CustomFirstRateClickableButton.m */; };
+		42B1828B2107105800C1E682 /* UIButton+category2.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182892107105800C1E682 /* UIButton+category2.m */; };
+		42B1828E210710D300C1E682 /* UIButton+category3.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1828D210710D300C1E682 /* UIButton+category3.m */; };
 		42BB66E920D1231A007BE2CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BB66E820D1231A007BE2CF /* AppDelegate.m */; };
 		42BB66EC20D1231A007BE2CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BB66EB20D1231A007BE2CF /* ViewController.m */; };
 		42BB66EF20D1231A007BE2CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42BB66ED20D1231A007BE2CF /* Main.storyboard */; };
@@ -245,10 +261,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		42981CDE2105851C0052CCC3 /* ClickableLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickableLabel.h; sourceTree = "<group>"; };
-		42981CDF2105851C0052CCC3 /* ClickableLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickableLabel.m; sourceTree = "<group>"; };
-		42981CE22105C4790052CCC3 /* UIButton+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Category.h"; sourceTree = "<group>"; };
-		42981CE32105C4790052CCC3 /* UIButton+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Category.m"; sourceTree = "<group>"; };
 		42981CE52105C4DF0052CCC3 /* CommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
 		42981CE62105C4DF0052CCC3 /* CommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
 		429CAF8D210436950063A0D8 /* CustomBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBannerScrollView.h; sourceTree = "<group>"; };
@@ -519,6 +531,42 @@
 		429CB1BF21043C3E0063A0D8 /* UIControl+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Category.m"; sourceTree = "<group>"; };
 		429CB1C021043C3E0063A0D8 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
 		429CB1C121043C3E0063A0D8 /* UIControl+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Category.h"; sourceTree = "<group>"; };
+		42B182512106C72300C1E682 /* YoshikoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoshikoTextField.h; sourceTree = "<group>"; };
+		42B182522106C72300C1E682 /* IchiroTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IchiroTextField.m; sourceTree = "<group>"; };
+		42B182532106C72300C1E682 /* NarikoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NarikoTextField.m; sourceTree = "<group>"; };
+		42B182552106C72300C1E682 /* UIFloatLabelTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFloatLabelTextField.m; sourceTree = "<group>"; };
+		42B182562106C72300C1E682 /* UIFloatLabelTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFloatLabelTextField.h; sourceTree = "<group>"; };
+		42B182572106C72300C1E682 /* NarikoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NarikoTextField.h; sourceTree = "<group>"; };
+		42B182582106C72300C1E682 /* MinoruTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinoruTextField.m; sourceTree = "<group>"; };
+		42B182592106C72300C1E682 /* KuroTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KuroTextField.h; sourceTree = "<group>"; };
+		42B1825A2106C72300C1E682 /* JuroTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuroTextField.h; sourceTree = "<group>"; };
+		42B1825B2106C72300C1E682 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
+		42B1825C2106C72300C1E682 /* JuroTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuroTextField.m; sourceTree = "<group>"; };
+		42B1825D2106C72300C1E682 /* YoshikoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoshikoTextField.m; sourceTree = "<group>"; };
+		42B1825E2106C72300C1E682 /* BetaNaoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetaNaoTextField.h; sourceTree = "<group>"; };
+		42B1825F2106C72300C1E682 /* IchiroTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IchiroTextField.h; sourceTree = "<group>"; };
+		42B182602106C72300C1E682 /* BetaNaoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetaNaoTextField.m; sourceTree = "<group>"; };
+		42B182612106C72300C1E682 /* MinoruTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinoruTextField.h; sourceTree = "<group>"; };
+		42B182622106C72300C1E682 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
+		42B182632106C72300C1E682 /* KuroTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KuroTextField.m; sourceTree = "<group>"; };
+		42B1826E2106CAD200C1E682 /* TextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
+		42B1826F2106CAD200C1E682 /* TextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
+		42B182742106D07800C1E682 /* UIButton+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Category.m"; sourceTree = "<group>"; };
+		42B182752106D07800C1E682 /* UIButton+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Category.h"; sourceTree = "<group>"; };
+		42B182772106D0B000C1E682 /* CommonUnderlineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUnderlineButton.m; sourceTree = "<group>"; };
+		42B182782106D0B000C1E682 /* CommonUnderlineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUnderlineButton.h; sourceTree = "<group>"; };
+		42B1827C2106D13A00C1E682 /* ClickableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableLabel.m; sourceTree = "<group>"; };
+		42B1827D2106D13A00C1E682 /* ClickableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickableLabel.h; sourceTree = "<group>"; };
+		42B1827F2106D21900C1E682 /* UIButton+Category1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Category1.h"; sourceTree = "<group>"; };
+		42B182802106D21900C1E682 /* UIButton+Category1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Category1.m"; sourceTree = "<group>"; };
+		42B182822106D83700C1E682 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		42B182832106D83700C1E682 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		42B1828621070BEF00C1E682 /* CustomFirstRateClickableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFirstRateClickableButton.h; sourceTree = "<group>"; };
+		42B1828721070BEF00C1E682 /* CustomFirstRateClickableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFirstRateClickableButton.m; sourceTree = "<group>"; };
+		42B182892107105800C1E682 /* UIButton+category2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+category2.m"; sourceTree = "<group>"; };
+		42B1828A2107105800C1E682 /* UIButton+category2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+category2.h"; sourceTree = "<group>"; };
+		42B1828C210710D300C1E682 /* UIButton+category3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+category3.h"; sourceTree = "<group>"; };
+		42B1828D210710D300C1E682 /* UIButton+category3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+category3.m"; sourceTree = "<group>"; };
 		42BB66E420D1231A007BE2CF /* UIGracefulWriting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIGracefulWriting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BB66E720D1231A007BE2CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42BB66E820D1231A007BE2CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -562,22 +610,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		42981CDD2105845F0052CCC3 /* #3_可点击label */ = {
+		42981CE12105C42B0052CCC3 /* #4_按钮相关 */ = {
 			isa = PBXGroup;
 			children = (
-				42981CDE2105851C0052CCC3 /* ClickableLabel.h */,
-				42981CDF2105851C0052CCC3 /* ClickableLabel.m */,
+				42B182732106D07800C1E682 /* 1，扩大按钮点击 */,
+				42B182712106D07800C1E682 /* 2，按钮文字排列 */,
+				42B182722106D07800C1E682 /* 3，带下划线的按钮 */,
+				42B1828521070BD300C1E682 /* 4，按钮重复点击 */,
 			);
-			path = "#3_可点击label";
-			sourceTree = "<group>";
-		};
-		42981CE12105C42B0052CCC3 /* #4_按钮扩大点击范围 */ = {
-			isa = PBXGroup;
-			children = (
-				42981CE22105C4790052CCC3 /* UIButton+Category.h */,
-				42981CE32105C4790052CCC3 /* UIButton+Category.m */,
-			);
-			path = "#4_按钮扩大点击范围";
+			path = "#4_按钮相关";
 			sourceTree = "<group>";
 		};
 		42981CE82105C7C30052CCC3 /* 1，UI简介 */ = {
@@ -592,8 +633,9 @@
 			children = (
 				429CAF8B210436950063A0D8 /* #1_轮播器 */,
 				429CAFE5210436950063A0D8 /* #2_CollectionView应用 */,
-				42981CDD2105845F0052CCC3 /* #3_可点击label */,
-				42981CE12105C42B0052CCC3 /* #4_按钮扩大点击范围 */,
+				42B1827A2106D13A00C1E682 /* #3_label相关 */,
+				42981CE12105C42B0052CCC3 /* #4_按钮相关 */,
+				42B182502106C61800C1E682 /* #5_TextField输入浮动效果 */,
 			);
 			path = "2，UI轮子";
 			sourceTree = "<group>";
@@ -1607,12 +1649,115 @@
 		429CB1BD21043C3E0063A0D8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				42B182822106D83700C1E682 /* UIView+Extension.h */,
+				42B182832106D83700C1E682 /* UIView+Extension.m */,
 				429CB1BF21043C3E0063A0D8 /* UIControl+Category.m */,
 				429CB1C121043C3E0063A0D8 /* UIControl+Category.h */,
 				429CB1BE21043C3E0063A0D8 /* UIImage+Category.m */,
 				429CB1C021043C3E0063A0D8 /* UIImage+Category.h */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		42B182502106C61800C1E682 /* #5_TextField输入浮动效果 */ = {
+			isa = PBXGroup;
+			children = (
+				42B182542106C72300C1E682 /* 1,输入上浮 */,
+				42B1825E2106C72300C1E682 /* BetaNaoTextField.h */,
+				42B182602106C72300C1E682 /* BetaNaoTextField.m */,
+				42B1825F2106C72300C1E682 /* IchiroTextField.h */,
+				42B182522106C72300C1E682 /* IchiroTextField.m */,
+				42B1825A2106C72300C1E682 /* JuroTextField.h */,
+				42B1825C2106C72300C1E682 /* JuroTextField.m */,
+				42B182592106C72300C1E682 /* KuroTextField.h */,
+				42B182632106C72300C1E682 /* KuroTextField.m */,
+				42B182612106C72300C1E682 /* MinoruTextField.h */,
+				42B182582106C72300C1E682 /* MinoruTextField.m */,
+				42B182572106C72300C1E682 /* NarikoTextField.h */,
+				42B182532106C72300C1E682 /* NarikoTextField.m */,
+				42B1825B2106C72300C1E682 /* PulsingHaloLayer.h */,
+				42B182622106C72300C1E682 /* PulsingHaloLayer.m */,
+				42B182512106C72300C1E682 /* YoshikoTextField.h */,
+				42B1825D2106C72300C1E682 /* YoshikoTextField.m */,
+			);
+			path = "#5_TextField输入浮动效果";
+			sourceTree = "<group>";
+		};
+		42B182542106C72300C1E682 /* 1,输入上浮 */ = {
+			isa = PBXGroup;
+			children = (
+				42B182562106C72300C1E682 /* UIFloatLabelTextField.h */,
+				42B182552106C72300C1E682 /* UIFloatLabelTextField.m */,
+			);
+			path = "1,输入上浮";
+			sourceTree = "<group>";
+		};
+		42B1826D2106CA9E00C1E682 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42B1826E2106CAD200C1E682 /* TextFieldViewController.h */,
+				42B1826F2106CAD200C1E682 /* TextFieldViewController.m */,
+				42981CE52105C4DF0052CCC3 /* CommonViewController.h */,
+				42981CE62105C4DF0052CCC3 /* CommonViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		42B182712106D07800C1E682 /* 2，按钮文字排列 */ = {
+			isa = PBXGroup;
+			children = (
+				42B1827F2106D21900C1E682 /* UIButton+Category1.h */,
+				42B182802106D21900C1E682 /* UIButton+Category1.m */,
+			);
+			path = "2，按钮文字排列";
+			sourceTree = "<group>";
+		};
+		42B182722106D07800C1E682 /* 3，带下划线的按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				42B182782106D0B000C1E682 /* CommonUnderlineButton.h */,
+				42B182772106D0B000C1E682 /* CommonUnderlineButton.m */,
+			);
+			path = "3，带下划线的按钮";
+			sourceTree = "<group>";
+		};
+		42B182732106D07800C1E682 /* 1，扩大按钮点击 */ = {
+			isa = PBXGroup;
+			children = (
+				42B182752106D07800C1E682 /* UIButton+Category.h */,
+				42B182742106D07800C1E682 /* UIButton+Category.m */,
+			);
+			path = "1，扩大按钮点击";
+			sourceTree = "<group>";
+		};
+		42B1827A2106D13A00C1E682 /* #3_label相关 */ = {
+			isa = PBXGroup;
+			children = (
+				42B1827B2106D13A00C1E682 /* 1,可点击label */,
+			);
+			path = "#3_label相关";
+			sourceTree = "<group>";
+		};
+		42B1827B2106D13A00C1E682 /* 1,可点击label */ = {
+			isa = PBXGroup;
+			children = (
+				42B1827C2106D13A00C1E682 /* ClickableLabel.m */,
+				42B1827D2106D13A00C1E682 /* ClickableLabel.h */,
+			);
+			path = "1,可点击label";
+			sourceTree = "<group>";
+		};
+		42B1828521070BD300C1E682 /* 4，按钮重复点击 */ = {
+			isa = PBXGroup;
+			children = (
+				42B1828A2107105800C1E682 /* UIButton+category2.h */,
+				42B182892107105800C1E682 /* UIButton+category2.m */,
+				42B1828C210710D300C1E682 /* UIButton+category3.h */,
+				42B1828D210710D300C1E682 /* UIButton+category3.m */,
+				42B1828621070BEF00C1E682 /* CustomFirstRateClickableButton.h */,
+				42B1828721070BEF00C1E682 /* CustomFirstRateClickableButton.m */,
+			);
+			path = "4，按钮重复点击";
 			sourceTree = "<group>";
 		};
 		42BB66DB20D1231A007BE2CF = {
@@ -1638,15 +1783,14 @@
 		42BB66E620D1231A007BE2CF /* UIGracefulWriting */ = {
 			isa = PBXGroup;
 			children = (
-				42981CE82105C7C30052CCC3 /* 1，UI简介 */,
 				429CB1BD21043C3E0063A0D8 /* Resources */,
+				42B1826D2106CA9E00C1E682 /* Controllers */,
+				42981CE82105C7C30052CCC3 /* 1，UI简介 */,
 				429CAF8A2104365F0063A0D8 /* 2，UI轮子 */,
 				42BB66E720D1231A007BE2CF /* AppDelegate.h */,
 				42BB66E820D1231A007BE2CF /* AppDelegate.m */,
 				42BB66EA20D1231A007BE2CF /* ViewController.h */,
 				42BB66EB20D1231A007BE2CF /* ViewController.m */,
-				42981CE52105C4DF0052CCC3 /* CommonViewController.h */,
-				42981CE62105C4DF0052CCC3 /* CommonViewController.m */,
 				42BB66ED20D1231A007BE2CF /* Main.storyboard */,
 				42BB66F020D1231B007BE2CF /* Assets.xcassets */,
 				42BB66F220D1231B007BE2CF /* LaunchScreen.storyboard */,
@@ -1951,23 +2095,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B182682106C72300C1E682 /* JuroTextField.m in Sources */,
 				429CB1C321043C3E0063A0D8 /* UIControl+Category.m in Sources */,
 				429CB11A210436960063A0D8 /* UIView+WebCacheOperation.m in Sources */,
 				429CB1B6210436960063A0D8 /* Demo6Cell.m in Sources */,
 				429CB1A7210436960063A0D8 /* BaseViewController.m in Sources */,
+				42B1828E210710D300C1E682 /* UIButton+category3.m in Sources */,
 				429CB10F210436960063A0D8 /* SDWebImageDownloader.m in Sources */,
-				42981CE02105851C0052CCC3 /* ClickableLabel.m in Sources */,
 				429CB0F3210436960063A0D8 /* TYPageControl.m in Sources */,
+				42B182702106CAD200C1E682 /* TextFieldViewController.m in Sources */,
 				429CB1B9210436960063A0D8 /* Demo7ViewController.m in Sources */,
 				42BB66EC20D1231A007BE2CF /* ViewController.m in Sources */,
 				429CB1AB210436960063A0D8 /* Demo5ViewController.m in Sources */,
 				42BB66F720D1231B007BE2CF /* main.m in Sources */,
 				429CB1B5210436960063A0D8 /* Demo1ViewController.m in Sources */,
+				42B182642106C72300C1E682 /* IchiroTextField.m in Sources */,
 				429CB0F6210436960063A0D8 /* CustomBannerView.m in Sources */,
 				429CB109210436960063A0D8 /* TAAbstractDotView.m in Sources */,
 				429CB1B0210436960063A0D8 /* Demo3HeaderView.m in Sources */,
 				429CB1AE210436960063A0D8 /* YYCell.m in Sources */,
+				42B182652106C72300C1E682 /* NarikoTextField.m in Sources */,
 				429CB103210436960063A0D8 /* SDCycleScrollView.m in Sources */,
+				42B182692106C72300C1E682 /* YoshikoTextField.m in Sources */,
 				429CB1A9210436960063A0D8 /* StretchyHeaderCollectionViewLayout.m in Sources */,
 				429CB1B8210436960063A0D8 /* TiltedLayout.m in Sources */,
 				429CB10E210436960063A0D8 /* UIImageView+HighlightedWebCache.m in Sources */,
@@ -1979,9 +2128,11 @@
 				429CB1C221043C3E0063A0D8 /* UIImage+Category.m in Sources */,
 				429CB1BB210436960063A0D8 /* RPSlidingMenuCell.m in Sources */,
 				429CB0F2210436960063A0D8 /* TYCyclePagerViewCell.m in Sources */,
+				42B182762106D07800C1E682 /* UIButton+Category.m in Sources */,
 				429CB104210436960063A0D8 /* UIView+SDExtension.m in Sources */,
 				429CB1A5210436960063A0D8 /* RightViewController.m in Sources */,
 				429CB118210436960063A0D8 /* NSImage+WebCache.m in Sources */,
+				42B1826A2106C72300C1E682 /* BetaNaoTextField.m in Sources */,
 				429CB11B210436960063A0D8 /* UIView+WebCache.m in Sources */,
 				429CB1AD210436960063A0D8 /* Demo2ViewController.m in Sources */,
 				429CB1BA210436960063A0D8 /* RPSlidingMenuLayout.m in Sources */,
@@ -1990,8 +2141,10 @@
 				429CB105210436960063A0D8 /* SDCollectionViewCell.m in Sources */,
 				429CB0F4210436960063A0D8 /* TYCyclePagerView.m in Sources */,
 				429CB1BC210436960063A0D8 /* DDCollectionViewFlowLayout.m in Sources */,
+				42B1826C2106C72300C1E682 /* KuroTextField.m in Sources */,
 				429CB1AA210436960063A0D8 /* Demo5Cell.m in Sources */,
 				429CB102210436960063A0D8 /* SDViewController.m in Sources */,
+				42B1828821070BEF00C1E682 /* CustomFirstRateClickableButton.m in Sources */,
 				429CB107210436960063A0D8 /* TAPageControl.m in Sources */,
 				429CB1A6210436960063A0D8 /* LeftViewController.m in Sources */,
 				429CB112210436960063A0D8 /* SDWebImageCompat.m in Sources */,
@@ -2000,21 +2153,28 @@
 				429CB1B3210436960063A0D8 /* Demo4ViewController.m in Sources */,
 				429CB0F0210436960063A0D8 /* CustomBannerScrollView.m in Sources */,
 				429CB110210436960063A0D8 /* UIImage+GIF.m in Sources */,
-				42981CE42105C4790052CCC3 /* UIButton+Category.m in Sources */,
 				429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */,
+				42B182812106D21900C1E682 /* UIButton+Category1.m in Sources */,
 				429CB1B2210436960063A0D8 /* WaterfallCell.m in Sources */,
+				42B1828B2107105800C1E682 /* UIButton+category2.m in Sources */,
 				429CB1A8210436960063A0D8 /* Demo5HeaderView.m in Sources */,
 				429CB106210436960063A0D8 /* TADotView.m in Sources */,
 				429CB10C210436960063A0D8 /* SDWebImageManager.m in Sources */,
+				42B182662106C72300C1E682 /* UIFloatLabelTextField.m in Sources */,
+				42B182792106D0B000C1E682 /* CommonUnderlineButton.m in Sources */,
 				429CB1B4210436960063A0D8 /* Demo1Cell.m in Sources */,
 				429CB111210436960063A0D8 /* UIImage+MultiFormat.m in Sources */,
 				429CB115210436960063A0D8 /* SDWebImageDownloaderOperation.m in Sources */,
 				429CB11D210436960063A0D8 /* SWRevealViewController.m in Sources */,
 				42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */,
+				42B1826B2106C72300C1E682 /* PulsingHaloLayer.m in Sources */,
+				42B182672106C72300C1E682 /* MinoruTextField.m in Sources */,
 				429CB1B7210436960063A0D8 /* Demo6ViewController.m in Sources */,
 				429CB0F5210436960063A0D8 /* TYCyclePagerTransformLayout.m in Sources */,
 				42BB66E920D1231A007BE2CF /* AppDelegate.m in Sources */,
 				429CB1AF210436960063A0D8 /* Demo3Cell.m in Sources */,
+				42B182842106D83700C1E682 /* UIView+Extension.m in Sources */,
+				42B1827E2106D13A00C1E682 /* ClickableLabel.m in Sources */,
 				429CB114210436960063A0D8 /* SDImageCache.m in Sources */,
 				429CB1B1210436960063A0D8 /* Demo3ViewController.m in Sources */,
 			);
