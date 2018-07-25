@@ -56,6 +56,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="7，按钮相关"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFh-VA-qBh">
+                                <rect key="frame" x="16" y="264" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="8,textView下划线"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -67,6 +72,7 @@
                         <outlet property="btn4" destination="5ov-b5-cwM" id="E9h-o4-p5V"/>
                         <outlet property="btn5" destination="7Wa-e1-RUe" id="gYI-U2-YgC"/>
                         <outlet property="btn6" destination="Xps-gU-cHI" id="QSe-XU-K6e"/>
+                        <outlet property="btn7" destination="uFh-VA-qBh" id="Qdq-S3-ybc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

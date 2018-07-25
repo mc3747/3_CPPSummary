@@ -19,6 +19,7 @@
 #import "Demo1ViewController.h"
 #import "ClickableLabel.h"
 #import "CommonUnderlineButton.h"
+#import "TextViewViewController.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
@@ -27,6 +28,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn4;
 @property (weak, nonatomic) IBOutlet UIButton *btn5;
 @property (weak, nonatomic) IBOutlet UIButton *btn6;
+@property (weak, nonatomic) IBOutlet UIButton *btn7;
 
 @end
 
@@ -35,7 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
-    NSArray *buttonArray = @[_btn1,_btn2,_btn3,_btn4,_btn5,_btn6];
+    NSArray *buttonArray = @[_btn1,_btn2,_btn3,_btn4,_btn5,_btn6,_btn7];
     [buttonArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIButton *button = (UIButton*)obj;
         NSString *selName = [NSString stringWithFormat:@"test%li",idx + 1];
@@ -136,7 +138,11 @@
     
     [self pushVCWithView:btn];
 }
-
+#pragma mark -  8,textView相关
+- (void)test7 {
+    TextViewViewController *vc = [[TextViewViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 #pragma mark -  push出通用控制器
 - (void)pushVCWithView:(UIView *)view {
     CommonViewController *vc = [[CommonViewController alloc] init];

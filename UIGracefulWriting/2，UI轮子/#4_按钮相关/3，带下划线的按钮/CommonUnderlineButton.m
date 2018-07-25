@@ -8,6 +8,7 @@
 
 #import "CommonUnderlineButton.h"
 #import "UIView+Extension.h"
+#import "UIButton+category2.h"
 
 @interface CommonUnderlineButton()
 @property (nonatomic, assign) BOOL isHighLightClick;
@@ -22,8 +23,6 @@
              lineHighlightColor:(UIColor *)lineHighlightColor
                   underDistance:(CGFloat)underDistance
                      clickBlock:(UnderlineButtonClickBlock)clickBlock {
-    
-    
     
     if (self = [self  initWithFrame:frame]) {
         [self setTitleColor:textNormalColor forState:UIControlStateNormal];
@@ -55,23 +54,10 @@
 #pragma mark -  下划线
 - (void)layoutSubviews {
     [super layoutSubviews];
-
-    // 设置标题坐标
-//    CGRect newframe = self.titleLabel.frame;
-//    newframe.origin.y = 0;
-//    self.titleLabel.frame = newframe;
     self.titleLabel.top = 0;
-    
-//    CGPoint center = self.center;
-//    center.y = (self.frame.size.height  - 3) * 0.5;
-//    self.titleLabel.center = center;
     self.titleLabel.centerY = (self.height - 3) * 0.5;
-    
     [self.titleLabel sizeToFit];
-
 }
-
-
 #pragma mark -  监听事件
 - (void)addTargetAction {
     

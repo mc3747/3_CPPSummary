@@ -233,6 +233,7 @@
 		42B1828821070BEF00C1E682 /* CustomFirstRateClickableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1828721070BEF00C1E682 /* CustomFirstRateClickableButton.m */; };
 		42B1828B2107105800C1E682 /* UIButton+category2.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182892107105800C1E682 /* UIButton+category2.m */; };
 		42B1828E210710D300C1E682 /* UIButton+category3.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1828D210710D300C1E682 /* UIButton+category3.m */; };
+		42BAFEF92108772D003CFD9A /* TextViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BAFEF82108772D003CFD9A /* TextViewViewController.m */; };
 		42BB66E920D1231A007BE2CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BB66E820D1231A007BE2CF /* AppDelegate.m */; };
 		42BB66EC20D1231A007BE2CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BB66EB20D1231A007BE2CF /* ViewController.m */; };
 		42BB66EF20D1231A007BE2CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42BB66ED20D1231A007BE2CF /* Main.storyboard */; };
@@ -567,6 +568,8 @@
 		42B1828A2107105800C1E682 /* UIButton+category2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+category2.h"; sourceTree = "<group>"; };
 		42B1828C210710D300C1E682 /* UIButton+category3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+category3.h"; sourceTree = "<group>"; };
 		42B1828D210710D300C1E682 /* UIButton+category3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+category3.m"; sourceTree = "<group>"; };
+		42BAFEF72108772D003CFD9A /* TextViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewViewController.h; sourceTree = "<group>"; };
+		42BAFEF82108772D003CFD9A /* TextViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewViewController.m; sourceTree = "<group>"; };
 		42BB66E420D1231A007BE2CF /* UIGracefulWriting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIGracefulWriting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BB66E720D1231A007BE2CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		42BB66E820D1231A007BE2CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -636,6 +639,7 @@
 				42B1827A2106D13A00C1E682 /* #3_label相关 */,
 				42981CE12105C42B0052CCC3 /* #4_按钮相关 */,
 				42B182502106C61800C1E682 /* #5_TextField输入浮动效果 */,
+				42BAFEF6210876CD003CFD9A /* #6_TextView设置下划线 */,
 			);
 			path = "2，UI轮子";
 			sourceTree = "<group>";
@@ -1741,8 +1745,8 @@
 		42B1827B2106D13A00C1E682 /* 1,可点击label */ = {
 			isa = PBXGroup;
 			children = (
-				42B1827C2106D13A00C1E682 /* ClickableLabel.m */,
 				42B1827D2106D13A00C1E682 /* ClickableLabel.h */,
+				42B1827C2106D13A00C1E682 /* ClickableLabel.m */,
 			);
 			path = "1,可点击label";
 			sourceTree = "<group>";
@@ -1758,6 +1762,15 @@
 				42B1828721070BEF00C1E682 /* CustomFirstRateClickableButton.m */,
 			);
 			path = "4，按钮重复点击";
+			sourceTree = "<group>";
+		};
+		42BAFEF6210876CD003CFD9A /* #6_TextView设置下划线 */ = {
+			isa = PBXGroup;
+			children = (
+				42BAFEF72108772D003CFD9A /* TextViewViewController.h */,
+				42BAFEF82108772D003CFD9A /* TextViewViewController.m */,
+			);
+			path = "#6_TextView设置下划线";
 			sourceTree = "<group>";
 		};
 		42BB66DB20D1231A007BE2CF = {
@@ -2162,6 +2175,7 @@
 				429CB10C210436960063A0D8 /* SDWebImageManager.m in Sources */,
 				42B182662106C72300C1E682 /* UIFloatLabelTextField.m in Sources */,
 				42B182792106D0B000C1E682 /* CommonUnderlineButton.m in Sources */,
+				42BAFEF92108772D003CFD9A /* TextViewViewController.m in Sources */,
 				429CB1B4210436960063A0D8 /* Demo1Cell.m in Sources */,
 				429CB111210436960063A0D8 /* UIImage+MultiFormat.m in Sources */,
 				429CB115210436960063A0D8 /* SDWebImageDownloaderOperation.m in Sources */,

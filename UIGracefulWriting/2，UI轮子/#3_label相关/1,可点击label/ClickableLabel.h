@@ -33,7 +33,7 @@ typedef void (^ClickBlock) (NSString *string , NSRange range , NSInteger index);
                               clickTextColor:(UIColor *)clickTextColor
                         clickBackgroundColor:(UIColor *)clickBackgroundColor
                                  tapClicked:(ClickBlock)tapClick;
-
-
+//重置下划线状态
+- (void)resetState;
 
 @end
