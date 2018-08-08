@@ -241,6 +241,15 @@
 		42BB66F720D1231B007BE2CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BB66F620D1231B007BE2CF /* main.m */; };
 		42BB670120D1231B007BE2CF /* UIGracefulWritingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BB670020D1231B007BE2CF /* UIGracefulWritingTests.m */; };
 		42BB670C20D1231B007BE2CF /* UIGracefulWritingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BB670B20D1231B007BE2CF /* UIGracefulWritingUITests.m */; };
+		42BF8153211A75010090E612 /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF814C211A75000090E612 /* UIImage+Transform.m */; };
+		42BF8154211A75010090E612 /* NSDate+InternetDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF814E211A75000090E612 /* NSDate+InternetDateTime.m */; };
+		42BF8155211A75010090E612 /* UIView+Gradient.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF814F211A75000090E612 /* UIView+Gradient.m */; };
+		42BF8156211A75010090E612 /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF8151211A75000090E612 /* NSString+Number.m */; };
+		42BF8157211A75010090E612 /* UIViewController+PushAndPop.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF8152211A75000090E612 /* UIViewController+PushAndPop.m */; };
+		42BF815A211A75860090E612 /* ShadeEffectVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF8159211A75860090E612 /* ShadeEffectVC.m */; };
+		42BF815D211A79680090E612 /* Common_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF815C211A79680090E612 /* Common_ViewController.m */; };
+		42BF8161211A808C0090E612 /* UILabel+MoneyAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF8160211A808C0090E612 /* UILabel+MoneyAnimation.m */; };
+		42BF8164211A80B50090E612 /* MoneyAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF8163211A80B50090E612 /* MoneyAnimationVC.m */; };
 		42EFA82F2109BBBD00AFC827 /* TabView_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA82E2109BBBD00AFC827 /* TabView_1_ViewController.m */; };
 		42EFA8322109BBCC00AFC827 /* TabView_2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8312109BBCC00AFC827 /* TabView_2_ViewController.m */; };
 		42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8342109BBD800AFC827 /* TabView_3_ViewController.m */; };
@@ -589,6 +598,24 @@
 		42BB670720D1231B007BE2CF /* UIGracefulWritingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIGracefulWritingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42BB670B20D1231B007BE2CF /* UIGracefulWritingUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIGracefulWritingUITests.m; sourceTree = "<group>"; };
 		42BB670D20D1231B007BE2CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42BF8149211A75000090E612 /* NSDate+InternetDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+InternetDateTime.h"; sourceTree = "<group>"; };
+		42BF814A211A75000090E612 /* UIView+Gradient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Gradient.h"; sourceTree = "<group>"; };
+		42BF814B211A75000090E612 /* NSString+Number.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Number.h"; sourceTree = "<group>"; };
+		42BF814C211A75000090E612 /* UIImage+Transform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Transform.m"; sourceTree = "<group>"; };
+		42BF814D211A75000090E612 /* UIViewController+PushAndPop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PushAndPop.h"; sourceTree = "<group>"; };
+		42BF814E211A75000090E612 /* NSDate+InternetDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+InternetDateTime.m"; sourceTree = "<group>"; };
+		42BF814F211A75000090E612 /* UIView+Gradient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Gradient.m"; sourceTree = "<group>"; };
+		42BF8150211A75000090E612 /* UIImage+Transform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Transform.h"; sourceTree = "<group>"; };
+		42BF8151211A75000090E612 /* NSString+Number.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Number.m"; sourceTree = "<group>"; };
+		42BF8152211A75000090E612 /* UIViewController+PushAndPop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PushAndPop.m"; sourceTree = "<group>"; };
+		42BF8158211A75860090E612 /* ShadeEffectVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadeEffectVC.h; sourceTree = "<group>"; };
+		42BF8159211A75860090E612 /* ShadeEffectVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadeEffectVC.m; sourceTree = "<group>"; };
+		42BF815B211A79680090E612 /* Common_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common_ViewController.h; sourceTree = "<group>"; };
+		42BF815C211A79680090E612 /* Common_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common_ViewController.m; sourceTree = "<group>"; };
+		42BF815F211A808C0090E612 /* UILabel+MoneyAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MoneyAnimation.h"; sourceTree = "<group>"; };
+		42BF8160211A808C0090E612 /* UILabel+MoneyAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MoneyAnimation.m"; sourceTree = "<group>"; };
+		42BF8162211A80B50090E612 /* MoneyAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyAnimationVC.h; sourceTree = "<group>"; };
+		42BF8163211A80B50090E612 /* MoneyAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyAnimationVC.m; sourceTree = "<group>"; };
 		42EFA82D2109BBBD00AFC827 /* TabView_1_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabView_1_ViewController.h; sourceTree = "<group>"; };
 		42EFA82E2109BBBD00AFC827 /* TabView_1_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabView_1_ViewController.m; sourceTree = "<group>"; };
 		42EFA8302109BBCC00AFC827 /* TabView_2_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabView_2_ViewController.h; sourceTree = "<group>"; };
@@ -656,6 +683,8 @@
 				42B182502106C61800C1E682 /* #5_TextField输入浮动效果 */,
 				42BAFEF6210876CD003CFD9A /* #6_TextView设置下划线 */,
 				42EFA8262109BA0E00AFC827 /* #7_UITableView */,
+				42BF8147211A74B20090E612 /* #8_渐变效果 */,
+				42BF815E211A80660090E612 /* #9_金额跳动动画 */,
 			);
 			path = "2，UI轮子";
 			sourceTree = "<group>";
@@ -1816,6 +1845,8 @@
 				429CAF8A2104365F0063A0D8 /* 2，UI轮子 */,
 				42BB66E720D1231A007BE2CF /* AppDelegate.h */,
 				42BB66E820D1231A007BE2CF /* AppDelegate.m */,
+				42BF815B211A79680090E612 /* Common_ViewController.h */,
+				42BF815C211A79680090E612 /* Common_ViewController.m */,
 				42BB66EA20D1231A007BE2CF /* ViewController.h */,
 				42BB66EB20D1231A007BE2CF /* ViewController.m */,
 				42BB66ED20D1231A007BE2CF /* Main.storyboard */,
@@ -1843,6 +1874,44 @@
 				42BB670D20D1231B007BE2CF /* Info.plist */,
 			);
 			path = UIGracefulWritingUITests;
+			sourceTree = "<group>";
+		};
+		42BF8147211A74B20090E612 /* #8_渐变效果 */ = {
+			isa = PBXGroup;
+			children = (
+				42BF8158211A75860090E612 /* ShadeEffectVC.h */,
+				42BF8159211A75860090E612 /* ShadeEffectVC.m */,
+				42BF8148211A75000090E612 /* AZCategory */,
+			);
+			path = "#8_渐变效果";
+			sourceTree = "<group>";
+		};
+		42BF8148211A75000090E612 /* AZCategory */ = {
+			isa = PBXGroup;
+			children = (
+				42BF8149211A75000090E612 /* NSDate+InternetDateTime.h */,
+				42BF814E211A75000090E612 /* NSDate+InternetDateTime.m */,
+				42BF814A211A75000090E612 /* UIView+Gradient.h */,
+				42BF814F211A75000090E612 /* UIView+Gradient.m */,
+				42BF814B211A75000090E612 /* NSString+Number.h */,
+				42BF8151211A75000090E612 /* NSString+Number.m */,
+				42BF814D211A75000090E612 /* UIViewController+PushAndPop.h */,
+				42BF8152211A75000090E612 /* UIViewController+PushAndPop.m */,
+				42BF8150211A75000090E612 /* UIImage+Transform.h */,
+				42BF814C211A75000090E612 /* UIImage+Transform.m */,
+			);
+			path = AZCategory;
+			sourceTree = "<group>";
+		};
+		42BF815E211A80660090E612 /* #9_金额跳动动画 */ = {
+			isa = PBXGroup;
+			children = (
+				42BF8162211A80B50090E612 /* MoneyAnimationVC.h */,
+				42BF8163211A80B50090E612 /* MoneyAnimationVC.m */,
+				42BF815F211A808C0090E612 /* UILabel+MoneyAnimation.h */,
+				42BF8160211A808C0090E612 /* UILabel+MoneyAnimation.m */,
+			);
+			path = "#9_金额跳动动画";
 			sourceTree = "<group>";
 		};
 		42EFA8262109BA0E00AFC827 /* #7_UITableView */ = {
@@ -2203,6 +2272,7 @@
 				42BB66F720D1231B007BE2CF /* main.m in Sources */,
 				429CB1B5210436960063A0D8 /* Demo1ViewController.m in Sources */,
 				42B182642106C72300C1E682 /* IchiroTextField.m in Sources */,
+				42BF8157211A75010090E612 /* UIViewController+PushAndPop.m in Sources */,
 				429CB0F6210436960063A0D8 /* CustomBannerView.m in Sources */,
 				429CB109210436960063A0D8 /* TAAbstractDotView.m in Sources */,
 				42EFA83B2109BBF700AFC827 /* TabView_5_ViewController.m in Sources */,
@@ -2223,11 +2293,13 @@
 				429CB1BB210436960063A0D8 /* RPSlidingMenuCell.m in Sources */,
 				429CB0F2210436960063A0D8 /* TYCyclePagerViewCell.m in Sources */,
 				42B182762106D07800C1E682 /* UIButton+Category.m in Sources */,
+				42BF8154211A75010090E612 /* NSDate+InternetDateTime.m in Sources */,
 				429CB104210436960063A0D8 /* UIView+SDExtension.m in Sources */,
 				42EFA83E2109BC0600AFC827 /* TabView_6_ViewController.m in Sources */,
 				429CB1A5210436960063A0D8 /* RightViewController.m in Sources */,
 				429CB118210436960063A0D8 /* NSImage+WebCache.m in Sources */,
 				42B1826A2106C72300C1E682 /* BetaNaoTextField.m in Sources */,
+				42BF8155211A75010090E612 /* UIView+Gradient.m in Sources */,
 				429CB11B210436960063A0D8 /* UIView+WebCache.m in Sources */,
 				429CB1AD210436960063A0D8 /* Demo2ViewController.m in Sources */,
 				429CB1BA210436960063A0D8 /* RPSlidingMenuLayout.m in Sources */,
@@ -2235,6 +2307,7 @@
 				429CB108210436960063A0D8 /* TAAnimatedDotView.m in Sources */,
 				429CB105210436960063A0D8 /* SDCollectionViewCell.m in Sources */,
 				429CB0F4210436960063A0D8 /* TYCyclePagerView.m in Sources */,
+				42BF815A211A75860090E612 /* ShadeEffectVC.m in Sources */,
 				429CB1BC210436960063A0D8 /* DDCollectionViewFlowLayout.m in Sources */,
 				42B1826C2106C72300C1E682 /* KuroTextField.m in Sources */,
 				429CB1AA210436960063A0D8 /* Demo5Cell.m in Sources */,
@@ -2250,14 +2323,17 @@
 				429CB110210436960063A0D8 /* UIImage+GIF.m in Sources */,
 				429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */,
 				42B182812106D21900C1E682 /* UIButton+Category1.m in Sources */,
+				42BF8153211A75010090E612 /* UIImage+Transform.m in Sources */,
 				429CB1B2210436960063A0D8 /* WaterfallCell.m in Sources */,
 				42B1828B2107105800C1E682 /* UIButton+category2.m in Sources */,
+				42BF8161211A808C0090E612 /* UILabel+MoneyAnimation.m in Sources */,
 				429CB1A8210436960063A0D8 /* Demo5HeaderView.m in Sources */,
 				429CB106210436960063A0D8 /* TADotView.m in Sources */,
 				429CB10C210436960063A0D8 /* SDWebImageManager.m in Sources */,
 				42B182662106C72300C1E682 /* UIFloatLabelTextField.m in Sources */,
 				42B182792106D0B000C1E682 /* CommonUnderlineButton.m in Sources */,
 				42BAFEF92108772D003CFD9A /* TextViewViewController.m in Sources */,
+				42BF8156211A75010090E612 /* NSString+Number.m in Sources */,
 				429CB1B4210436960063A0D8 /* Demo1Cell.m in Sources */,
 				429CB111210436960063A0D8 /* UIImage+MultiFormat.m in Sources */,
 				429CB115210436960063A0D8 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -2265,6 +2341,7 @@
 				42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */,
 				42B1826B2106C72300C1E682 /* PulsingHaloLayer.m in Sources */,
 				42B182672106C72300C1E682 /* MinoruTextField.m in Sources */,
+				42BF8164211A80B50090E612 /* MoneyAnimationVC.m in Sources */,
 				429CB1B7210436960063A0D8 /* Demo6ViewController.m in Sources */,
 				429CB0F5210436960063A0D8 /* TYCyclePagerTransformLayout.m in Sources */,
 				42BB66E920D1231A007BE2CF /* AppDelegate.m in Sources */,
@@ -2273,6 +2350,7 @@
 				42B1827E2106D13A00C1E682 /* ClickableLabel.m in Sources */,
 				42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */,
 				42EFA82F2109BBBD00AFC827 /* TabView_1_ViewController.m in Sources */,
+				42BF815D211A79680090E612 /* Common_ViewController.m in Sources */,
 				429CB114210436960063A0D8 /* SDImageCache.m in Sources */,
 				42EFA8382109BBEA00AFC827 /* TabView_4_ViewController.m in Sources */,
 				42EFA8322109BBCC00AFC827 /* TabView_2_ViewController.m in Sources */,

@@ -28,6 +28,8 @@
 #import "TabView_5_ViewController.h"
 #import "TabView_6_ViewController.h"
 
+#import "Common_ViewController.h"
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
 @property (weak, nonatomic) IBOutlet UIButton *btn2;
@@ -44,6 +46,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn13;
 @property (weak, nonatomic) IBOutlet UIButton *btn14;
 @property (weak, nonatomic) IBOutlet UIButton *btn15;
+@property (weak, nonatomic) IBOutlet UIButton *btn16;
 
 @end
 
@@ -52,7 +55,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
-    NSArray *buttonArray = @[_btn1,_btn2,_btn3,_btn4,_btn5,_btn6,_btn7,_btn8];
+    NSArray *buttonArray = @[_btn1,_btn2,_btn3,_btn4,_btn5,_btn6,_btn7,_btn8,_btn9,_btn10,_btn11,_btn12,_btn13,_btn14,_btn15,_btn16];
     [buttonArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIButton *button = (UIButton*)obj;
         NSString *selName = [NSString stringWithFormat:@"test%li",idx + 1];
@@ -164,6 +167,13 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+#pragma mark -  16,其他
+- (void)test16 {
+    Common_ViewController *vc = [[Common_ViewController alloc] init];
+    vc.vcNameArray = @[@"ShadeEffectVC",@"MoneyAnimationVC"];
+    vc.subtitleArray = @[@"1,渐变效果",@"2,金额跳动效果"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 #pragma mark -  push出通用控制器
 - (void)pushVCWithView:(UIView *)view {
     CommonViewController *vc = [[CommonViewController alloc] init];
