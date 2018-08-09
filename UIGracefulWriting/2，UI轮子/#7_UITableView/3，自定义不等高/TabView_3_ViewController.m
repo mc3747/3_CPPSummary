@@ -7,31 +7,83 @@
 //
 
 #import "TabView_3_ViewController.h"
-
-@interface TabView_3_ViewController ()
-
+#import "XMGStatus.h"
+#import "XMGStatusCell.h"
+@interface TabView_3_ViewController()<UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, strong) UITableView *tableView;
+@property (strong, nonatomic) NSArray *statuses;
 @end
 
 @implementation TabView_3_ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.view addSubview:self.tableView];
+}
+#pragma mark - Table view data source
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.statuses.count;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    XMGStatusCell *cell = [XMGStatusCell cellWithTableView:tableView];
+    cell.status = self.statuses[indexPath.row];
+    return cell;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - 代理方法
+/**
+ *  返回每一行的高度
+ */
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    XMGStatus *staus = self.statuses[indexPath.row];
+    return staus.cellHeight;
 }
-*/
 
+/**
+ * 返回每一行的估计高度
+ * 只要返回了估计高度，那么就会先调用tableView:cellForRowAtIndexPath:方法创建cell，再调用tableView:heightForRowAtIndexPath:方法获取cell的真实高度
+ */
+- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 200;
+}
+
+#pragma mark -  tableView整体设置
+- (UITableView *)tableView
+{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 66, [UIScreen mainScreen].bounds.size.width,  [UIScreen mainScreen].bounds.size.height)];
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
+        _tableView.backgroundColor = [UIColor lightGrayColor];
+        // 分割线颜色
+        self.tableView.separatorColor = [UIColor redColor];
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    }
+    
+    return _tableView;
+}
+
+#pragma mark -  数据模型
+- (NSArray *)statuses
+{
+    if (_statuses == nil) {
+        // 加载plist中的字典数组
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"statuses.plist" ofType:nil];
+        NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
+        
+        // 字典数组 -> 模型数组
+        NSMutableArray *statusArray = [NSMutableArray array];
+        for (NSDictionary *dict in dictArray) {
+            XMGStatus *status = [XMGStatus statusWithDict:dict];
+            [statusArray addObject:status];
+        }
+        
+        _statuses = statusArray;
+    }
+    return _statuses;
+}
 @end

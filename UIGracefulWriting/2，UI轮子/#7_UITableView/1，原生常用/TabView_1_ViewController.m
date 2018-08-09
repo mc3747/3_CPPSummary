@@ -115,6 +115,7 @@
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
 }
+
 // 移动时使用
 - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath{
     
@@ -131,6 +132,9 @@
         _tableView.dataSource = self;
         _tableView.delegate = self;
         _tableView.backgroundColor = [UIColor lightGrayColor];
+        // 分割线颜色
+        self.tableView.separatorColor = [UIColor redColor];
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     }
     
     return _tableView;

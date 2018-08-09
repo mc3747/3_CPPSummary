@@ -161,12 +161,21 @@
     TextViewViewController *vc = [[TextViewViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-#pragma mark -  9,tableView相关
+#pragma mark -  9,tableView常用设置
 - (void)test8 {
     TabView_1_ViewController *vc = [[TabView_1_ViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-
+#pragma mark -  10,tableView自定义等高
+- (void)test9 {
+    TabView_2_ViewController *vc = [[TabView_2_ViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+#pragma mark -  10,tableView自定义不等高
+- (void)test10 {
+    TabView_3_ViewController *vc = [[TabView_3_ViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 #pragma mark -  16,其他
 - (void)test16 {
     Common_ViewController *vc = [[Common_ViewController alloc] init];

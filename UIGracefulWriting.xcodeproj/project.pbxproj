@@ -272,6 +272,13 @@
 		42BF81AE211A89D90090E612 /* CQDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A2211A89D90090E612 /* CQDetailViewController.m */; };
 		42BF81AF211A89D90090E612 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A7211A89D90090E612 /* UIView+Util.m */; };
 		42BF81B0211A89D90090E612 /* UIView+FrameHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A8211A89D90090E612 /* UIView+FrameHelper.m */; };
+		42C519DC211C3E3500742239 /* XMGDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C519D9211C3E3400742239 /* XMGDeal.m */; };
+		42C519DD211C3E3500742239 /* XMGDealCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C519DA211C3E3400742239 /* XMGDealCell.m */; };
+		42C519DF211C3E5400742239 /* deals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42C519DE211C3E5400742239 /* deals.plist */; };
+		42C51A27211C445D00742239 /* XMGStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C51A22211C445C00742239 /* XMGStatus.m */; };
+		42C51A28211C445D00742239 /* statuses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42C51A24211C445C00742239 /* statuses.plist */; };
+		42C51A29211C445D00742239 /* XMGStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C51A26211C445D00742239 /* XMGStatusCell.m */; };
+		42C51A2B211C456A00742239 /* XMGStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C51A2A211C456A00742239 /* XMGStatusCell.xib */; };
 		42EFA82F2109BBBD00AFC827 /* TabView_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA82E2109BBBD00AFC827 /* TabView_1_ViewController.m */; };
 		42EFA8322109BBCC00AFC827 /* TabView_2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8312109BBCC00AFC827 /* TabView_2_ViewController.m */; };
 		42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8342109BBD800AFC827 /* TabView_3_ViewController.m */; };
@@ -682,6 +689,17 @@
 		42BF81AA211A89D90090E612 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
 		42BF81AB211A89D90090E612 /* UIView+FrameHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameHelper.h"; sourceTree = "<group>"; };
 		42BF81B1211A8B0C0090E612 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		42C519D8211C3E3400742239 /* XMGDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDeal.h; sourceTree = "<group>"; };
+		42C519D9211C3E3400742239 /* XMGDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDeal.m; sourceTree = "<group>"; };
+		42C519DA211C3E3400742239 /* XMGDealCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDealCell.m; sourceTree = "<group>"; };
+		42C519DB211C3E3400742239 /* XMGDealCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDealCell.h; sourceTree = "<group>"; };
+		42C519DE211C3E5400742239 /* deals.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = deals.plist; sourceTree = "<group>"; };
+		42C51A22211C445C00742239 /* XMGStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGStatus.m; sourceTree = "<group>"; };
+		42C51A23211C445C00742239 /* XMGStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGStatusCell.h; sourceTree = "<group>"; };
+		42C51A24211C445C00742239 /* statuses.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statuses.plist; sourceTree = "<group>"; };
+		42C51A25211C445D00742239 /* XMGStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGStatus.h; sourceTree = "<group>"; };
+		42C51A26211C445D00742239 /* XMGStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGStatusCell.m; sourceTree = "<group>"; };
+		42C51A2A211C456A00742239 /* XMGStatusCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGStatusCell.xib; sourceTree = "<group>"; };
 		42EFA82D2109BBBD00AFC827 /* TabView_1_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabView_1_ViewController.h; sourceTree = "<group>"; };
 		42EFA82E2109BBBD00AFC827 /* TabView_1_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabView_1_ViewController.m; sourceTree = "<group>"; };
 		42EFA8302109BBCC00AFC827 /* TabView_2_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabView_2_ViewController.h; sourceTree = "<group>"; };
@@ -2167,6 +2185,11 @@
 			children = (
 				42EFA8302109BBCC00AFC827 /* TabView_2_ViewController.h */,
 				42EFA8312109BBCC00AFC827 /* TabView_2_ViewController.m */,
+				42C519D8211C3E3400742239 /* XMGDeal.h */,
+				42C519D9211C3E3400742239 /* XMGDeal.m */,
+				42C519DB211C3E3400742239 /* XMGDealCell.h */,
+				42C519DA211C3E3400742239 /* XMGDealCell.m */,
+				42C519DE211C3E5400742239 /* deals.plist */,
 			);
 			path = "2，自定义等高";
 			sourceTree = "<group>";
@@ -2176,6 +2199,12 @@
 			children = (
 				42EFA8332109BBD800AFC827 /* TabView_3_ViewController.h */,
 				42EFA8342109BBD800AFC827 /* TabView_3_ViewController.m */,
+				42C51A24211C445C00742239 /* statuses.plist */,
+				42C51A25211C445D00742239 /* XMGStatus.h */,
+				42C51A22211C445C00742239 /* XMGStatus.m */,
+				42C51A23211C445C00742239 /* XMGStatusCell.h */,
+				42C51A26211C445D00742239 /* XMGStatusCell.m */,
+				42C51A2A211C456A00742239 /* XMGStatusCell.xib */,
 			);
 			path = "3，自定义不等高";
 			sourceTree = "<group>";
@@ -2351,6 +2380,7 @@
 				429CB190210436960063A0D8 /* 30_full.JPG in Resources */,
 				429CB148210436960063A0D8 /* 23.JPG in Resources */,
 				429CB11E210436960063A0D8 /* Contents.json in Resources */,
+				42C519DF211C3E5400742239 /* deals.plist in Resources */,
 				429CB177210436960063A0D8 /* Contents.json in Resources */,
 				429CB0FA210436960063A0D8 /* pageControlCurrentDot@3x.png in Resources */,
 				429CB169210436960063A0D8 /* Contents.json in Resources */,
@@ -2375,6 +2405,7 @@
 				429CB18A210436960063A0D8 /* 8_full.JPG in Resources */,
 				429CB11F210436960063A0D8 /* 0_full.JPG in Resources */,
 				429CB188210436960063A0D8 /* 20_full.JPG in Resources */,
+				42C51A28211C445D00742239 /* statuses.plist in Resources */,
 				429CB124210436960063A0D8 /* Contents.json in Resources */,
 				42BF819A211A88BB0090E612 /* jigsaw_list.json in Resources */,
 				429CB12A210436960063A0D8 /* 11_full.JPG in Resources */,
@@ -2466,6 +2497,7 @@
 				429CB121210436960063A0D8 /* Contents.json in Resources */,
 				429CB123210436960063A0D8 /* Contents.json in Resources */,
 				429CB132210436960063A0D8 /* 11.JPG in Resources */,
+				42C51A2B211C456A00742239 /* XMGStatusCell.xib in Resources */,
 				429CB138210436960063A0D8 /* Contents.json in Resources */,
 				429CB14B210436960063A0D8 /* 4.JPG in Resources */,
 				429CB13E210436960063A0D8 /* 28.JPG in Resources */,
@@ -2559,16 +2591,19 @@
 				429CB109210436960063A0D8 /* TAAbstractDotView.m in Sources */,
 				42EFA83B2109BBF700AFC827 /* TabView_5_ViewController.m in Sources */,
 				429CB1B0210436960063A0D8 /* Demo3HeaderView.m in Sources */,
+				42C519DD211C3E3500742239 /* XMGDealCell.m in Sources */,
 				429CB1AE210436960063A0D8 /* YYCell.m in Sources */,
 				42B182652106C72300C1E682 /* NarikoTextField.m in Sources */,
 				429CB103210436960063A0D8 /* SDCycleScrollView.m in Sources */,
 				42B182692106C72300C1E682 /* YoshikoTextField.m in Sources */,
+				42C519DC211C3E3500742239 /* XMGDeal.m in Sources */,
 				429CB1A9210436960063A0D8 /* StretchyHeaderCollectionViewLayout.m in Sources */,
 				429CB1B8210436960063A0D8 /* TiltedLayout.m in Sources */,
 				429CB10E210436960063A0D8 /* UIImageView+HighlightedWebCache.m in Sources */,
 				429CB101210436960063A0D8 /* CustomCollectionViewCell.m in Sources */,
 				429CB113210436960063A0D8 /* SDWebImagePrefetcher.m in Sources */,
 				42BF819C211A88BB0090E612 /* CQCategoryItemCell.m in Sources */,
+				42C51A27211C445D00742239 /* XMGStatus.m in Sources */,
 				429CB116210436960063A0D8 /* NSData+ImageContentType.m in Sources */,
 				429CB1AC210436960063A0D8 /* YYNews.m in Sources */,
 				429CB10D210436960063A0D8 /* SDWebImageDecoder.m in Sources */,
@@ -2629,6 +2664,7 @@
 				42BAFEF92108772D003CFD9A /* TextViewViewController.m in Sources */,
 				42BF8156211A75010090E612 /* NSString+Number.m in Sources */,
 				429CB1B4210436960063A0D8 /* Demo1Cell.m in Sources */,
+				42C51A29211C445D00742239 /* XMGStatusCell.m in Sources */,
 				429CB111210436960063A0D8 /* UIImage+MultiFormat.m in Sources */,
 				42BF819D211A88BB0090E612 /* CQCategoryView.m in Sources */,
 				429CB115210436960063A0D8 /* SDWebImageDownloaderOperation.m in Sources */,
