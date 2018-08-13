@@ -176,6 +176,11 @@
     TabView_3_ViewController *vc = [[TabView_3_ViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
+#pragma mark -  11,tableView优雅地写
+- (void)test11 {
+    TabView_4_ViewController *vc = [[TabView_4_ViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 #pragma mark -  16,其他
 - (void)test16 {
     Common_ViewController *vc = [[Common_ViewController alloc] init];

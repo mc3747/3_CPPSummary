@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4267072F2121301400046FE6 /* CCBaseTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */; };
+		426707302121301400046FE6 /* UIView+CCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071F2121301400046FE6 /* UIView+CCUtil.m */; };
+		426707312121301400046FE6 /* CCBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426707232121301400046FE6 /* CCBaseTableViewCell.m */; };
+		426707322121301400046FE6 /* UITableView+CCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 426707252121301400046FE6 /* UITableView+CCUtil.m */; };
+		426707332121301400046FE6 /* CCTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 426707272121301400046FE6 /* CCTableViewDataSource.m */; };
+		426707342121301400046FE6 /* CCTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 426707282121301400046FE6 /* CCTableViewDelegate.m */; };
+		426707352121301400046FE6 /* CCBaseTableFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267072A2121301400046FE6 /* CCBaseTableFooterView.m */; };
+		426707362121301400046FE6 /* CCTableDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267072C2121301400046FE6 /* CCTableDataItem.m */; };
+		426707422121325B00046FE6 /* ExampleHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426707392121325900046FE6 /* ExampleHeaderView.m */; };
+		426707432121325B00046FE6 /* ExampleData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267073A2121325900046FE6 /* ExampleData.m */; };
+		426707442121325B00046FE6 /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267073C2121325A00046FE6 /* ExampleCell.m */; };
+		426707452121325B00046FE6 /* ExampleDynamicHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267073D2121325A00046FE6 /* ExampleDynamicHeightCell.m */; };
+		426707462121325B00046FE6 /* ExampleFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267073E2121325A00046FE6 /* ExampleFooterView.m */; };
 		42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42981CE62105C4DF0052CCC3 /* CommonViewController.m */; };
 		429CB0F0210436960063A0D8 /* CustomBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CAF8E210436950063A0D8 /* CustomBannerScrollView.m */; };
 		429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CAF90210436950063A0D8 /* BannerDemoVC.m */; };
@@ -307,6 +320,33 @@
 
 /* Begin PBXFileReference section */
 		14963D90AB1CDCB894329DCE /* libPods-UIGracefulWriting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIGracefulWriting.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableHeaderView.m; sourceTree = "<group>"; };
+		4267071D2121301400046FE6 /* CCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTableViewDataSource.h; sourceTree = "<group>"; };
+		4267071E2121301400046FE6 /* CCBaseTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableFooterView.h; sourceTree = "<group>"; };
+		4267071F2121301400046FE6 /* UIView+CCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CCUtil.m"; sourceTree = "<group>"; };
+		426707202121301400046FE6 /* CCTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTableViewDelegate.h; sourceTree = "<group>"; };
+		426707212121301400046FE6 /* CCTableDataSourceHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTableDataSourceHeader.h; sourceTree = "<group>"; };
+		426707222121301400046FE6 /* CCTableDataItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTableDataItem.h; sourceTree = "<group>"; };
+		426707232121301400046FE6 /* CCBaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableViewCell.m; sourceTree = "<group>"; };
+		426707252121301400046FE6 /* UITableView+CCUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CCUtil.m"; sourceTree = "<group>"; };
+		426707262121301400046FE6 /* CCBaseTableHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableHeaderView.h; sourceTree = "<group>"; };
+		426707272121301400046FE6 /* CCTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTableViewDataSource.m; sourceTree = "<group>"; };
+		426707282121301400046FE6 /* CCTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTableViewDelegate.m; sourceTree = "<group>"; };
+		426707292121301400046FE6 /* UIView+CCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CCUtil.h"; sourceTree = "<group>"; };
+		4267072A2121301400046FE6 /* CCBaseTableFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableFooterView.m; sourceTree = "<group>"; };
+		4267072B2121301400046FE6 /* CCBaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableViewCell.h; sourceTree = "<group>"; };
+		4267072C2121301400046FE6 /* CCTableDataItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTableDataItem.m; sourceTree = "<group>"; };
+		4267072D2121301400046FE6 /* UITableView+CCUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CCUtil.h"; sourceTree = "<group>"; };
+		426707382121325900046FE6 /* ExampleHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleHeaderView.h; sourceTree = "<group>"; };
+		426707392121325900046FE6 /* ExampleHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleHeaderView.m; sourceTree = "<group>"; };
+		4267073A2121325900046FE6 /* ExampleData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleData.m; sourceTree = "<group>"; };
+		4267073B2121325A00046FE6 /* ExampleDynamicHeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDynamicHeightCell.h; sourceTree = "<group>"; };
+		4267073C2121325A00046FE6 /* ExampleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleCell.m; sourceTree = "<group>"; };
+		4267073D2121325A00046FE6 /* ExampleDynamicHeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleDynamicHeightCell.m; sourceTree = "<group>"; };
+		4267073E2121325A00046FE6 /* ExampleFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExampleFooterView.m; sourceTree = "<group>"; };
+		4267073F2121325B00046FE6 /* ExampleFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleFooterView.h; sourceTree = "<group>"; };
+		426707402121325B00046FE6 /* ExampleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleData.h; sourceTree = "<group>"; };
+		426707412121325B00046FE6 /* ExampleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleCell.h; sourceTree = "<group>"; };
 		42981CE52105C4DF0052CCC3 /* CommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
 		42981CE62105C4DF0052CCC3 /* CommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
 		429CAF8D210436950063A0D8 /* CustomBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBannerScrollView.h; sourceTree = "<group>"; };
@@ -749,6 +789,30 @@
 				738B0AD82298246E9B0FD270 /* Pods-UIGracefulWriting.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		4267071B2121301400046FE6 /* CCTableDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				426707212121301400046FE6 /* CCTableDataSourceHeader.h */,
+				426707262121301400046FE6 /* CCBaseTableHeaderView.h */,
+				4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */,
+				4267071E2121301400046FE6 /* CCBaseTableFooterView.h */,
+				4267072A2121301400046FE6 /* CCBaseTableFooterView.m */,
+				4267071D2121301400046FE6 /* CCTableViewDataSource.h */,
+				426707272121301400046FE6 /* CCTableViewDataSource.m */,
+				426707292121301400046FE6 /* UIView+CCUtil.h */,
+				4267071F2121301400046FE6 /* UIView+CCUtil.m */,
+				426707222121301400046FE6 /* CCTableDataItem.h */,
+				4267072C2121301400046FE6 /* CCTableDataItem.m */,
+				4267072B2121301400046FE6 /* CCBaseTableViewCell.h */,
+				426707232121301400046FE6 /* CCBaseTableViewCell.m */,
+				4267072D2121301400046FE6 /* UITableView+CCUtil.h */,
+				426707252121301400046FE6 /* UITableView+CCUtil.m */,
+				426707202121301400046FE6 /* CCTableViewDelegate.h */,
+				426707282121301400046FE6 /* CCTableViewDelegate.m */,
+			);
+			path = CCTableDataSource;
 			sourceTree = "<group>";
 		};
 		42981CE12105C42B0052CCC3 /* #4_按钮相关 */ = {
@@ -2212,8 +2276,19 @@
 		42EFA82A2109BAE200AFC827 /* 4，优雅地写 */ = {
 			isa = PBXGroup;
 			children = (
+				4267071B2121301400046FE6 /* CCTableDataSource */,
 				42EFA8362109BBEA00AFC827 /* TabView_4_ViewController.h */,
 				42EFA8372109BBEA00AFC827 /* TabView_4_ViewController.m */,
+				426707412121325B00046FE6 /* ExampleCell.h */,
+				4267073C2121325A00046FE6 /* ExampleCell.m */,
+				426707402121325B00046FE6 /* ExampleData.h */,
+				4267073A2121325900046FE6 /* ExampleData.m */,
+				4267073B2121325A00046FE6 /* ExampleDynamicHeightCell.h */,
+				4267073D2121325A00046FE6 /* ExampleDynamicHeightCell.m */,
+				4267073F2121325B00046FE6 /* ExampleFooterView.h */,
+				4267073E2121325A00046FE6 /* ExampleFooterView.m */,
+				426707382121325900046FE6 /* ExampleHeaderView.h */,
+				426707392121325900046FE6 /* ExampleHeaderView.m */,
 			);
 			path = "4，优雅地写";
 			sourceTree = "<group>";
@@ -2573,8 +2648,10 @@
 				429CB1C321043C3E0063A0D8 /* UIControl+Category.m in Sources */,
 				42BF8183211A88680090E612 /* CQFilterAlertController.m in Sources */,
 				42BF8187211A88680090E612 /* CQRegionModel.m in Sources */,
+				426707342121301400046FE6 /* CCTableViewDelegate.m in Sources */,
 				429CB11A210436960063A0D8 /* UIView+WebCacheOperation.m in Sources */,
 				42BF81AE211A89D90090E612 /* CQDetailViewController.m in Sources */,
+				426707452121325B00046FE6 /* ExampleDynamicHeightCell.m in Sources */,
 				429CB1B6210436960063A0D8 /* Demo6Cell.m in Sources */,
 				429CB1A7210436960063A0D8 /* BaseViewController.m in Sources */,
 				429CB10F210436960063A0D8 /* SDWebImageDownloader.m in Sources */,
@@ -2584,6 +2661,7 @@
 				42BB66EC20D1231A007BE2CF /* ViewController.m in Sources */,
 				429CB1AB210436960063A0D8 /* Demo5ViewController.m in Sources */,
 				42BB66F720D1231B007BE2CF /* main.m in Sources */,
+				426707462121325B00046FE6 /* ExampleFooterView.m in Sources */,
 				429CB1B5210436960063A0D8 /* Demo1ViewController.m in Sources */,
 				42B182642106C72300C1E682 /* IchiroTextField.m in Sources */,
 				42BF8157211A75010090E612 /* UIViewController+PushAndPop.m in Sources */,
@@ -2599,17 +2677,22 @@
 				42C519DC211C3E3500742239 /* XMGDeal.m in Sources */,
 				429CB1A9210436960063A0D8 /* StretchyHeaderCollectionViewLayout.m in Sources */,
 				429CB1B8210436960063A0D8 /* TiltedLayout.m in Sources */,
+				426707332121301400046FE6 /* CCTableViewDataSource.m in Sources */,
 				429CB10E210436960063A0D8 /* UIImageView+HighlightedWebCache.m in Sources */,
 				429CB101210436960063A0D8 /* CustomCollectionViewCell.m in Sources */,
 				429CB113210436960063A0D8 /* SDWebImagePrefetcher.m in Sources */,
 				42BF819C211A88BB0090E612 /* CQCategoryItemCell.m in Sources */,
 				42C51A27211C445D00742239 /* XMGStatus.m in Sources */,
+				426707302121301400046FE6 /* UIView+CCUtil.m in Sources */,
+				426707362121301400046FE6 /* CCTableDataItem.m in Sources */,
 				429CB116210436960063A0D8 /* NSData+ImageContentType.m in Sources */,
 				429CB1AC210436960063A0D8 /* YYNews.m in Sources */,
 				429CB10D210436960063A0D8 /* SDWebImageDecoder.m in Sources */,
 				429CB1C221043C3E0063A0D8 /* UIImage+Category.m in Sources */,
+				4267072F2121301400046FE6 /* CCBaseTableHeaderView.m in Sources */,
 				429CB1BB210436960063A0D8 /* RPSlidingMenuCell.m in Sources */,
 				429CB0F2210436960063A0D8 /* TYCyclePagerViewCell.m in Sources */,
+				426707442121325B00046FE6 /* ExampleCell.m in Sources */,
 				42B182762106D07800C1E682 /* UIButton+Category.m in Sources */,
 				42BF817E211A88680090E612 /* CQFilterCell.m in Sources */,
 				42BF8154211A75010090E612 /* NSDate+InternetDateTime.m in Sources */,
@@ -2630,6 +2713,7 @@
 				429CB0F4210436960063A0D8 /* TYCyclePagerView.m in Sources */,
 				42BF815A211A75860090E612 /* ShadeEffectVC.m in Sources */,
 				42BF81AD211A89D90090E612 /* CQBaseModel.m in Sources */,
+				426707422121325B00046FE6 /* ExampleHeaderView.m in Sources */,
 				429CB1BC210436960063A0D8 /* DDCollectionViewFlowLayout.m in Sources */,
 				42BF8186211A88680090E612 /* CQDepartmentModel.m in Sources */,
 				42B1826C2106C72300C1E682 /* KuroTextField.m in Sources */,
@@ -2669,6 +2753,7 @@
 				42BF819D211A88BB0090E612 /* CQCategoryView.m in Sources */,
 				429CB115210436960063A0D8 /* SDWebImageDownloaderOperation.m in Sources */,
 				429CB11D210436960063A0D8 /* SWRevealViewController.m in Sources */,
+				426707322121301400046FE6 /* UITableView+CCUtil.m in Sources */,
 				42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */,
 				42B1826B2106C72300C1E682 /* PulsingHaloLayer.m in Sources */,
 				42B182672106C72300C1E682 /* MinoruTextField.m in Sources */,
@@ -2679,12 +2764,15 @@
 				429CB0F5210436960063A0D8 /* TYCyclePagerTransformLayout.m in Sources */,
 				42BB66E920D1231A007BE2CF /* AppDelegate.m in Sources */,
 				429CB1AF210436960063A0D8 /* Demo3Cell.m in Sources */,
+				426707312121301400046FE6 /* CCBaseTableViewCell.m in Sources */,
 				42B182842106D83700C1E682 /* UIView+Extension.m in Sources */,
 				42B1827E2106D13A00C1E682 /* ClickableLabel.m in Sources */,
 				42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */,
+				426707352121301400046FE6 /* CCBaseTableFooterView.m in Sources */,
 				42EFA82F2109BBBD00AFC827 /* TabView_1_ViewController.m in Sources */,
 				42BF815D211A79680090E612 /* Common_ViewController.m in Sources */,
 				429CB114210436960063A0D8 /* SDImageCache.m in Sources */,
+				426707432121325B00046FE6 /* ExampleData.m in Sources */,
 				42EFA8382109BBEA00AFC827 /* TabView_4_ViewController.m in Sources */,
 				42EFA8322109BBCC00AFC827 /* TabView_2_ViewController.m in Sources */,
 				429CB1B1210436960063A0D8 /* Demo3ViewController.m in Sources */,

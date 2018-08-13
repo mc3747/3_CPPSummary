@@ -29,12 +29,21 @@
 
 // 返回显示的cell
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    // 系统自带cell的四个常用属性
+    //    imageView：显示在左边的一张图片logo；
+    //    textLabel：主要文字，黑色字体显示；
+    //    detailTextLabel：详细说明文字，字体较小；
+    //    accessaryView：附件视图，可以使用自定义View，也可以使用系统自带的一些标准按钮。
+    
     if (indexPath.row % 2 == 0) {
         return [self cell:tableView indexPath:indexPath];
     } else {
         return [self cell2:tableView indexPath:indexPath];
     };
+  
 }
+
 - (UITableViewCell *)cell:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath
 {
     // 0.重用标识
@@ -51,7 +60,9 @@
     // 3.覆盖数据
         cell.textLabel.text = [NSString stringWithFormat:@"cell1 - %zd", indexPath.row];
     }
-  
+    
+    // 4，右边小箭头
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }
