@@ -184,8 +184,8 @@
 #pragma mark -  16,其他
 - (void)test16 {
     Common_ViewController *vc = [[Common_ViewController alloc] init];
-    vc.vcNameArray = @[@"ShadeEffectVC",@"MoneyAnimationVC",@"CQFilterViewController",@"CQJigsawViewController"];
-    vc.subtitleArray = @[@"1,渐变效果",@"2,金额跳动效果",@"3，模态弹窗",@"4，比例拼图"];
+    vc.vcNameArray = @[@"ShadeEffectVC",@"MoneyAnimationVC",@"CQFilterViewController",@"CQJigsawViewController",@"DimImageViewController"];
+    vc.subtitleArray = @[@"1，渐变效果",@"2，金额跳动效果",@"3，模态弹窗",@"4，比例拼图",@"5，模糊效果"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark -  push出通用控制器

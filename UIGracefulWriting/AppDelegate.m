@@ -8,9 +8,16 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "ScreenBlurry.h"
 
+ /*1,毛玻璃效果：
+    1，加载完毕后初始化visualEffectView
+    2，进入后台后
+    3，进入前台
+  2，高斯模糊：
+  */
 @interface AppDelegate ()
-
+@property (nonatomic, strong, nullable) UIVisualEffectView *visualEffectView;
 @end
 
 @implementation AppDelegate
@@ -24,30 +31,57 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.rootViewController = naviVC;
     [self.window makeKeyAndVisible];
+    
+//    毛玻璃效果：加载
+    if (!self.visualEffectView) {
+        UIBlurEffect *blurEffect = [UIBlurEffect effectWithStyle:UIBlurEffectStyleRegular];
+        self.visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
+        self.visualEffectView.frame = self.window.frame;
+    };
     return YES;
 }
 
-
+//以下两组搭配使用（推荐使用）
 - (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    //    self.visualEffectView.alpha = 0;
+    //    [self.window addSubview:self.visualEffectView];
+    //    [UIView animateWithDuration:0.1 animations:^{
+    //        self.visualEffectView.alpha = 1;
+    //    }];
+    //添加模糊效果
+    [ScreenBlurry addBlurryScreenImage];
 }
 
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    
+    //    [UIView animateWithDuration:0.1 animations:^{
+    //        self.visualEffectView.alpha = 0;
+    //    } completion:^(BOOL finished) {
+    //        [self.visualEffectView removeFromSuperview];
+    //    }];
+    //去除模糊效果
+    [ScreenBlurry removeBlurryScreenImage];
+}
 
+//以下两组搭配使用
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    //        self.visualEffectView.alpha = 1.0;
+    //        [self.window addSubview:self.visualEffectView];
 }
 
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    //    [UIView animateWithDuration:0.2 animations:^{
+    //        self.visualEffectView.alpha = 0;
+    //
+    //    } completion:^(BOOL finished) {
+    //        [self.visualEffectView removeFromSuperview];
+    //
+    //    }];
 }
 
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
+
 
 
 - (void)applicationWillTerminate:(UIApplication *)application {

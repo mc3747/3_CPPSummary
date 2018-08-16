@@ -1,24 +1,28 @@
 PODS:
+  - GPUImage (0.1.7)
   - JSONModel (1.7.0)
   - Masonry (1.1.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
+  - GPUImage (~> 0.1.7)
   - JSONModel
   - Masonry
   - SVProgressHUD
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - GPUImage
     - JSONModel
     - Masonry
     - SVProgressHUD
 
 SPEC CHECKSUMS:
+  GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: bebdb67592e69cdf2251da3c2005ad8f03276d67
+PODFILE CHECKSUM: 6230d282df4a5bdeb498bbcf38cdb9df3809865d
 
 COCOAPODS: 1.5.0.beta.1

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4238B92C2125534200AF272E /* DimImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4238B92B2125534200AF272E /* DimImageViewController.m */; };
+		4238B92E2125547F00AF272E /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4238B92D2125547E00AF272E /* img1.jpg */; };
+		4238B93121255B4A00AF272E /* ImgTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4238B92F21255B4A00AF272E /* ImgTool.m */; };
+		4238B93621255B7F00AF272E /* ScreenBlurry.m in Sources */ = {isa = PBXBuildFile; fileRef = 4238B93421255B7F00AF272E /* ScreenBlurry.m */; };
+		4238B93721255B7F00AF272E /* UIImage+BlurGlass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4238B93521255B7F00AF272E /* UIImage+BlurGlass.m */; };
 		4267072F2121301400046FE6 /* CCBaseTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */; };
 		426707302121301400046FE6 /* UIView+CCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071F2121301400046FE6 /* UIView+CCUtil.m */; };
 		426707312121301400046FE6 /* CCBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426707232121301400046FE6 /* CCBaseTableViewCell.m */; };
@@ -320,6 +325,15 @@
 
 /* Begin PBXFileReference section */
 		14963D90AB1CDCB894329DCE /* libPods-UIGracefulWriting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIGracefulWriting.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4238B92A2125534200AF272E /* DimImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DimImageViewController.h; sourceTree = "<group>"; };
+		4238B92B2125534200AF272E /* DimImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DimImageViewController.m; sourceTree = "<group>"; };
+		4238B92D2125547E00AF272E /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
+		4238B92F21255B4A00AF272E /* ImgTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgTool.m; sourceTree = "<group>"; };
+		4238B93021255B4A00AF272E /* ImgTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgTool.h; sourceTree = "<group>"; };
+		4238B93221255B7E00AF272E /* UIImage+BlurGlass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BlurGlass.h"; sourceTree = "<group>"; };
+		4238B93321255B7F00AF272E /* ScreenBlurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScreenBlurry.h; sourceTree = "<group>"; };
+		4238B93421255B7F00AF272E /* ScreenBlurry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScreenBlurry.m; sourceTree = "<group>"; };
+		4238B93521255B7F00AF272E /* UIImage+BlurGlass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BlurGlass.m"; sourceTree = "<group>"; };
 		4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableHeaderView.m; sourceTree = "<group>"; };
 		4267071D2121301400046FE6 /* CCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTableViewDataSource.h; sourceTree = "<group>"; };
 		4267071E2121301400046FE6 /* CCBaseTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableFooterView.h; sourceTree = "<group>"; };
@@ -791,6 +805,38 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4238B927212551A600AF272E /* #12_模糊效果 */ = {
+			isa = PBXGroup;
+			children = (
+				4238B92D2125547E00AF272E /* img1.jpg */,
+				4238B92A2125534200AF272E /* DimImageViewController.h */,
+				4238B92B2125534200AF272E /* DimImageViewController.m */,
+				4238B9282125524000AF272E /* 图片模糊 */,
+				4238B9292125524A00AF272E /* 屏幕模糊 */,
+			);
+			path = "#12_模糊效果";
+			sourceTree = "<group>";
+		};
+		4238B9282125524000AF272E /* 图片模糊 */ = {
+			isa = PBXGroup;
+			children = (
+				4238B93021255B4A00AF272E /* ImgTool.h */,
+				4238B92F21255B4A00AF272E /* ImgTool.m */,
+			);
+			path = "图片模糊";
+			sourceTree = "<group>";
+		};
+		4238B9292125524A00AF272E /* 屏幕模糊 */ = {
+			isa = PBXGroup;
+			children = (
+				4238B93321255B7F00AF272E /* ScreenBlurry.h */,
+				4238B93421255B7F00AF272E /* ScreenBlurry.m */,
+				4238B93221255B7E00AF272E /* UIImage+BlurGlass.h */,
+				4238B93521255B7F00AF272E /* UIImage+BlurGlass.m */,
+			);
+			path = "屏幕模糊";
+			sourceTree = "<group>";
+		};
 		4267071B2121301400046FE6 /* CCTableDataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -847,6 +893,7 @@
 				42BF815E211A80660090E612 /* #9_金额跳动动画 */,
 				42BF8165211A872D0090E612 /* #10_模态弹窗 */,
 				42BF8189211A88910090E612 /* #11_比例拼图 */,
+				4238B927212551A600AF272E /* #12_模糊效果 */,
 			);
 			path = "2，UI轮子";
 			sourceTree = "<group>";
@@ -2445,6 +2492,7 @@
 				429CB134210436960063A0D8 /* 10.JPG in Resources */,
 				429CB156210436960063A0D8 /* Contents.json in Resources */,
 				429CB133210436960063A0D8 /* Contents.json in Resources */,
+				4238B92E2125547F00AF272E /* img1.jpg in Resources */,
 				429CB195210436960063A0D8 /* 29_full.JPG in Resources */,
 				429CB196210436960063A0D8 /* Contents.json in Resources */,
 				429CB182210436960063A0D8 /* 05.jpg in Resources */,
@@ -2626,10 +2674,20 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting-resources.sh",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
+				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2645,6 +2703,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42B182682106C72300C1E682 /* JuroTextField.m in Sources */,
+				4238B93721255B7F00AF272E /* UIImage+BlurGlass.m in Sources */,
 				429CB1C321043C3E0063A0D8 /* UIControl+Category.m in Sources */,
 				42BF8183211A88680090E612 /* CQFilterAlertController.m in Sources */,
 				42BF8187211A88680090E612 /* CQRegionModel.m in Sources */,
@@ -2668,6 +2727,7 @@
 				429CB0F6210436960063A0D8 /* CustomBannerView.m in Sources */,
 				429CB109210436960063A0D8 /* TAAbstractDotView.m in Sources */,
 				42EFA83B2109BBF700AFC827 /* TabView_5_ViewController.m in Sources */,
+				4238B92C2125534200AF272E /* DimImageViewController.m in Sources */,
 				429CB1B0210436960063A0D8 /* Demo3HeaderView.m in Sources */,
 				42C519DD211C3E3500742239 /* XMGDealCell.m in Sources */,
 				429CB1AE210436960063A0D8 /* YYCell.m in Sources */,
@@ -2694,6 +2754,7 @@
 				429CB0F2210436960063A0D8 /* TYCyclePagerViewCell.m in Sources */,
 				426707442121325B00046FE6 /* ExampleCell.m in Sources */,
 				42B182762106D07800C1E682 /* UIButton+Category.m in Sources */,
+				4238B93121255B4A00AF272E /* ImgTool.m in Sources */,
 				42BF817E211A88680090E612 /* CQFilterCell.m in Sources */,
 				42BF8154211A75010090E612 /* NSDate+InternetDateTime.m in Sources */,
 				429CB104210436960063A0D8 /* UIView+SDExtension.m in Sources */,
@@ -2721,6 +2782,7 @@
 				429CB102210436960063A0D8 /* SDViewController.m in Sources */,
 				42B1828821070BEF00C1E682 /* CustomFirstRateClickableButton.m in Sources */,
 				429CB107210436960063A0D8 /* TAPageControl.m in Sources */,
+				4238B93621255B7F00AF272E /* ScreenBlurry.m in Sources */,
 				429CB1A6210436960063A0D8 /* LeftViewController.m in Sources */,
 				42BF81AF211A89D90090E612 /* UIView+Util.m in Sources */,
 				429CB112210436960063A0D8 /* SDWebImageCompat.m in Sources */,
