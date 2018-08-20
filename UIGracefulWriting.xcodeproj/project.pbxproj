@@ -92,6 +92,9 @@
 		4242B94F212A72D800C3A2C5 /* YZFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4242B947212A72D700C3A2C5 /* YZFlowLayout.m */; };
 		4242B950212A72D800C3A2C5 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4242B948212A72D700C3A2C5 /* UIView+Frame.m */; };
 		4242B951212A72D800C3A2C5 /* YZDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4242B94C212A72D700C3A2C5 /* YZDisplayViewController.m */; };
+		4242B957212A959B00C3A2C5 /* UIImage+IconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 4242B953212A959A00C3A2C5 /* UIImage+IconFont.m */; };
+		4242B958212A959B00C3A2C5 /* IconFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4242B955212A959A00C3A2C5 /* IconFontViewController.m */; };
+		4242B99F212A9CC500C3A2C5 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4242B99E212A9CC500C3A2C5 /* iconfont.ttf */; };
 		4267072F2121301400046FE6 /* CCBaseTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */; };
 		426707302121301400046FE6 /* UIView+CCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071F2121301400046FE6 /* UIView+CCUtil.m */; };
 		426707312121301400046FE6 /* CCBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426707232121301400046FE6 /* CCBaseTableViewCell.m */; };
@@ -545,6 +548,11 @@
 		4242B94B212A72D700C3A2C5 /* YZFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZFlowLayout.h; sourceTree = "<group>"; };
 		4242B94C212A72D700C3A2C5 /* YZDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZDisplayViewController.m; sourceTree = "<group>"; };
 		4242B94D212A72D700C3A2C5 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		4242B953212A959A00C3A2C5 /* UIImage+IconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+IconFont.m"; sourceTree = "<group>"; };
+		4242B954212A959A00C3A2C5 /* IconFontViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconFontViewController.h; sourceTree = "<group>"; };
+		4242B955212A959A00C3A2C5 /* IconFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconFontViewController.m; sourceTree = "<group>"; };
+		4242B956212A959A00C3A2C5 /* UIImage+IconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IconFont.h"; sourceTree = "<group>"; };
+		4242B99E212A9CC500C3A2C5 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = iconfont.ttf; path = font_9rmno8jjb38/iconfont.ttf; sourceTree = "<group>"; };
 		4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableHeaderView.m; sourceTree = "<group>"; };
 		4267071D2121301400046FE6 /* CCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTableViewDataSource.h; sourceTree = "<group>"; };
 		4267071E2121301400046FE6 /* CCBaseTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableFooterView.h; sourceTree = "<group>"; };
@@ -1441,6 +1449,18 @@
 			path = YZDisplayViewController;
 			sourceTree = "<group>";
 		};
+		4242B952212A94F300C3A2C5 /* #15_IconFont的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				4242B99E212A9CC500C3A2C5 /* iconfont.ttf */,
+				4242B954212A959A00C3A2C5 /* IconFontViewController.h */,
+				4242B955212A959A00C3A2C5 /* IconFontViewController.m */,
+				4242B956212A959A00C3A2C5 /* UIImage+IconFont.h */,
+				4242B953212A959A00C3A2C5 /* UIImage+IconFont.m */,
+			);
+			path = "#15_IconFont的使用";
+			sourceTree = "<group>";
+		};
 		4267071B2121301400046FE6 /* CCTableDataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -1500,6 +1520,7 @@
 				4238B927212551A600AF272E /* #12_模糊效果 */,
 				4242B789212A4ABB00C3A2C5 /* #13_横向切换 */,
 				4242B78A212A4ADC00C3A2C5 /* #14_纵向滚动 */,
+				4242B952212A94F300C3A2C5 /* #15_IconFont的使用 */,
 			);
 			path = "2，UI轮子";
 			sourceTree = "<group>";
@@ -3178,6 +3199,7 @@
 				429CB193210436960063A0D8 /* 10_full.JPG in Resources */,
 				429CB127210436960063A0D8 /* 15_full.JPG in Resources */,
 				429CB1A0210436960063A0D8 /* 1_full.JPG in Resources */,
+				4242B99F212A9CC500C3A2C5 /* iconfont.ttf in Resources */,
 				429CB174210436960063A0D8 /* Contents.json in Resources */,
 				429CB126210436960063A0D8 /* Contents.json in Resources */,
 				4242B91C212A5A6A00C3A2C5 /* Number.gif in Resources */,
@@ -3356,6 +3378,7 @@
 				429CB1AB210436960063A0D8 /* Demo5ViewController.m in Sources */,
 				42BB66F720D1231B007BE2CF /* main.m in Sources */,
 				426707462121325B00046FE6 /* ExampleFooterView.m in Sources */,
+				4242B958212A959B00C3A2C5 /* IconFontViewController.m in Sources */,
 				429CB1B5210436960063A0D8 /* Demo1ViewController.m in Sources */,
 				4242B836212A4C1D00C3A2C5 /* Switch1_ViewController.m in Sources */,
 				4242B8FC212A5A6A00C3A2C5 /* PagingViewController.swift in Sources */,
@@ -3413,6 +3436,7 @@
 				429CB1A5210436960063A0D8 /* RightViewController.m in Sources */,
 				4242B90A212A5A6A00C3A2C5 /* SegmentedControlViewController.m in Sources */,
 				429CB118210436960063A0D8 /* NSImage+WebCache.m in Sources */,
+				4242B957212A959B00C3A2C5 /* UIImage+IconFont.m in Sources */,
 				42B1826A2106C72300C1E682 /* BetaNaoTextField.m in Sources */,
 				42BF8155211A75010090E612 /* UIView+Gradient.m in Sources */,
 				42BF81AC211A89D90090E612 /* CQBaseViewController.m in Sources */,
