@@ -184,8 +184,8 @@
 #pragma mark -  16,其他
 - (void)test16 {
     Common_ViewController *vc = [[Common_ViewController alloc] init];
-    vc.vcNameArray = @[@"ShadeEffectVC",@"MoneyAnimationVC",@"CQFilterViewController",@"CQJigsawViewController",@"DimImageViewController",@"Switch1_ViewController",@"Switch2_ViewController",@"IconFontViewController"];
-    vc.subtitleArray = @[@"1，渐变效果",@"2，金额跳动效果",@"3，模态弹窗",@"4，比例拼图",@"5，模糊效果",@"6，横向切换1",@"7，横向切换2",@"8,IconFont的使用"];
+    vc.vcNameArray = @[@"ShadeEffectVC",@"MoneyAnimationVC",@"CQFilterViewController",@"CQJigsawViewController",@"DimImageViewController",@"Switch1_ViewController",@"Switch2_ViewController",@"IconFontViewController",@"ScreenShotVC"];
+    vc.subtitleArray = @[@"1，渐变效果",@"2，金额跳动效果",@"3，模态弹窗",@"4，比例拼图",@"5，模糊效果",@"6，横向切换1",@"7，横向切换2",@"8，IconFont的使用",@"9，截屏展示"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark -  push出通用控制器

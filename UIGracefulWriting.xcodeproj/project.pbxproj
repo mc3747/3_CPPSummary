@@ -380,6 +380,8 @@
 		42C51A28211C445D00742239 /* statuses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42C51A24211C445C00742239 /* statuses.plist */; };
 		42C51A29211C445D00742239 /* XMGStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C51A26211C445D00742239 /* XMGStatusCell.m */; };
 		42C51A2B211C456A00742239 /* XMGStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C51A2A211C456A00742239 /* XMGStatusCell.xib */; };
+		42CB7E342138CF45003397FB /* ScreenShotVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E332138CF45003397FB /* ScreenShotVC.m */; };
+		42CB7E372138DCEB003397FB /* TestPushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E362138DCEB003397FB /* TestPushVC.m */; };
 		42EFA82F2109BBBD00AFC827 /* TabView_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA82E2109BBBD00AFC827 /* TabView_1_ViewController.m */; };
 		42EFA8322109BBCC00AFC827 /* TabView_2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8312109BBCC00AFC827 /* TabView_2_ViewController.m */; };
 		42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8342109BBD800AFC827 /* TabView_3_ViewController.m */; };
@@ -973,6 +975,10 @@
 		42C51A25211C445D00742239 /* XMGStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGStatus.h; sourceTree = "<group>"; };
 		42C51A26211C445D00742239 /* XMGStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGStatusCell.m; sourceTree = "<group>"; };
 		42C51A2A211C456A00742239 /* XMGStatusCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XMGStatusCell.xib; sourceTree = "<group>"; };
+		42CB7E322138CF45003397FB /* ScreenShotVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenShotVC.h; sourceTree = "<group>"; };
+		42CB7E332138CF45003397FB /* ScreenShotVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenShotVC.m; sourceTree = "<group>"; };
+		42CB7E352138DCEB003397FB /* TestPushVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPushVC.h; sourceTree = "<group>"; };
+		42CB7E362138DCEB003397FB /* TestPushVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPushVC.m; sourceTree = "<group>"; };
 		42EFA82D2109BBBD00AFC827 /* TabView_1_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabView_1_ViewController.h; sourceTree = "<group>"; };
 		42EFA82E2109BBBD00AFC827 /* TabView_1_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabView_1_ViewController.m; sourceTree = "<group>"; };
 		42EFA8302109BBCC00AFC827 /* TabView_2_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabView_2_ViewController.h; sourceTree = "<group>"; };
@@ -1521,6 +1527,7 @@
 				4242B789212A4ABB00C3A2C5 /* #13_横向切换 */,
 				4242B78A212A4ADC00C3A2C5 /* #14_纵向滚动 */,
 				4242B952212A94F300C3A2C5 /* #15_IconFont的使用 */,
+				42CB7E312138CEB7003397FB /* #16_截屏展示 */,
 			);
 			path = "2，UI轮子";
 			sourceTree = "<group>";
@@ -2897,6 +2904,17 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		42CB7E312138CEB7003397FB /* #16_截屏展示 */ = {
+			isa = PBXGroup;
+			children = (
+				42CB7E322138CF45003397FB /* ScreenShotVC.h */,
+				42CB7E332138CF45003397FB /* ScreenShotVC.m */,
+				42CB7E352138DCEB003397FB /* TestPushVC.h */,
+				42CB7E362138DCEB003397FB /* TestPushVC.m */,
+			);
+			path = "#16_截屏展示";
+			sourceTree = "<group>";
+		};
 		42EFA8262109BA0E00AFC827 /* #7_UITableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -3402,10 +3420,12 @@
 				4242B940212A72C400C3A2C5 /* YZJRViewController.m in Sources */,
 				429CB1A9210436960063A0D8 /* StretchyHeaderCollectionViewLayout.m in Sources */,
 				4242B89D212A5A5900C3A2C5 /* JXCategoryTitleImageView.m in Sources */,
+				42CB7E342138CF45003397FB /* ScreenShotVC.m in Sources */,
 				429CB1B8210436960063A0D8 /* TiltedLayout.m in Sources */,
 				426707332121301400046FE6 /* CCTableViewDataSource.m in Sources */,
 				429CB10E210436960063A0D8 /* UIImageView+HighlightedWebCache.m in Sources */,
 				429CB101210436960063A0D8 /* CustomCollectionViewCell.m in Sources */,
+				42CB7E372138DCEB003397FB /* TestPushVC.m in Sources */,
 				4242B942212A72C400C3A2C5 /* FullChildViewController.m in Sources */,
 				4242B8FF212A5A6A00C3A2C5 /* PagingViewTableHeaderView.swift in Sources */,
 				429CB113210436960063A0D8 /* SDWebImagePrefetcher.m in Sources */,
