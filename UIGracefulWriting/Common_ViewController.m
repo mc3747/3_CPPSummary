@@ -17,7 +17,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"其他UI效果";
     [self.view addSubview:self.tableView];
 }
 #pragma mark -  数据源
