@@ -29,6 +29,9 @@
 #import "TabView_6_ViewController.h"
 
 #import "Common_ViewController.h"
+#import "SGEventVC.h"
+#import "SGCountdownVC.h"
+#import "SGImagePositionVC.h"
 
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
@@ -47,6 +50,10 @@
 @property (weak, nonatomic) IBOutlet UIButton *btn14;
 @property (weak, nonatomic) IBOutlet UIButton *btn15;
 @property (weak, nonatomic) IBOutlet UIButton *btn16;
+@property (weak, nonatomic) IBOutlet UIButton *btn17;
+@property (weak, nonatomic) IBOutlet UIButton *btn18;
+@property (weak, nonatomic) IBOutlet UIButton *btn19;
+@property (weak, nonatomic) IBOutlet UIButton *btn20;
 
 @end
 
@@ -55,7 +62,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor yellowColor];
-    NSArray *buttonArray = @[_btn1,_btn2,_btn3,_btn4,_btn5,_btn6,_btn7,_btn8,_btn9,_btn10,_btn11,_btn12,_btn13,_btn14,_btn15,_btn16];
+    NSArray *buttonArray = @[_btn1,_btn2,_btn3,_btn4,_btn5,_btn6,_btn7,_btn8,_btn9,_btn10,_btn11,_btn12,_btn13,_btn14,_btn15,_btn16,_btn17,_btn18,_btn19,_btn20];
     [buttonArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIButton *button = (UIButton*)obj;
         NSString *selName = [NSString stringWithFormat:@"test%li",idx + 1];
@@ -138,6 +145,7 @@
    
 }
 #pragma mark -  6，textfield相关见storyboard
+//直接在stroyboard中跳转展示
 
 #pragma mark -  7，button相关
 - (void)test6 {
@@ -156,39 +164,76 @@
     
     [self pushVCWithView:btn];
 }
-#pragma mark -  8,textView相关
+#pragma mark -  8，文字图片组合按钮
 - (void)test7 {
+    SGImagePositionVC *vc = [[SGImagePositionVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+#pragma mark -  9,重复点击时间按钮
+- (void)test8 {
+    SGEventVC *vc = [[SGEventVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+#pragma mark -  10,倒计时按钮
+- (void)test9 {
+    SGCountdownVC *vc = [[SGCountdownVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+#pragma mark -  11,textView相关
+- (void)test10 {
     TextViewViewController *vc = [[TextViewViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-#pragma mark -  9,tableView常用设置
-- (void)test8 {
+#pragma mark -  12,tableView常用设置
+- (void)test11 {
     TabView_1_ViewController *vc = [[TabView_1_ViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-#pragma mark -  10,tableView自定义等高
-- (void)test9 {
+#pragma mark -  13,tableView自定义等高
+- (void)test12 {
     TabView_2_ViewController *vc = [[TabView_2_ViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-#pragma mark -  10,tableView自定义不等高
-- (void)test10 {
+#pragma mark -  14,tableView自定义不等高
+- (void)test13 {
     TabView_3_ViewController *vc = [[TabView_3_ViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-#pragma mark -  11,tableView优雅地写
-- (void)test11 {
+#pragma mark -  15,tableView优雅地写
+- (void)test14 {
     TabView_4_ViewController *vc = [[TabView_4_ViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
-#pragma mark -  16,其他
+#pragma mark -  16,炫酷效果
+- (void)test15 {
+    
+}
+#pragma mark -  17,性能优化
 - (void)test16 {
+    
+}
+#pragma mark -  18,备用
+- (void)test17 {
+   
+}
+#pragma mark -  19,备用
+- (void)test18 {
+  
+}
+
+#pragma mark -  20,备用
+- (void)test19 {
+    
+}
+#pragma mark -  21,其他
+- (void)test20 {
     Common_ViewController *vc = [[Common_ViewController alloc] init];
     vc.title = @"其他UI效果";
     vc.vcNameArray = @[@"ShadeEffectVC",@"MoneyAnimationVC",@"CQFilterViewController",@"CQJigsawViewController",@"DimImageViewController",@"Switch1_ViewController",@"Switch2_ViewController",@"IconFontViewController",@"ScreenShotVC",@"RichTextVC",@"MemoTableViewController",@"DemosViewController",@"DropDownViewController",@"YZDropViewController"];
     vc.subtitleArray = @[@"1，渐变效果",@"2，金额跳动效果",@"3，模态弹窗",@"4，比例拼图",@"5，模糊效果",@"6，横向切换1",@"7，横向切换2",@"8，IconFont的使用",@"9，截屏展示",@"10，富文本总结",@"11，便签效果",@"12，IGListKit的Demo",@"13，美团下拉二级菜单",@"14，袁崢二级菜单"];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
 #pragma mark -  push出通用控制器
 - (void)pushVCWithView:(UIView *)view {
     CommonViewController *vc = [[CommonViewController alloc] init];

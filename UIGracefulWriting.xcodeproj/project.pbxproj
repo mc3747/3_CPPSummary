@@ -329,7 +329,6 @@
 		42B182762106D07800C1E682 /* UIButton+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182742106D07800C1E682 /* UIButton+Category.m */; };
 		42B182792106D0B000C1E682 /* CommonUnderlineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182772106D0B000C1E682 /* CommonUnderlineButton.m */; };
 		42B1827E2106D13A00C1E682 /* ClickableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1827C2106D13A00C1E682 /* ClickableLabel.m */; };
-		42B182812106D21900C1E682 /* UIButton+Category1.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182802106D21900C1E682 /* UIButton+Category1.m */; };
 		42B182842106D83700C1E682 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182832106D83700C1E682 /* UIView+Extension.m */; };
 		42B1828821070BEF00C1E682 /* CustomFirstRateClickableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1828721070BEF00C1E682 /* CustomFirstRateClickableButton.m */; };
 		42B1828B2107105800C1E682 /* UIButton+category2.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182892107105800C1E682 /* UIButton+category2.m */; };
@@ -468,6 +467,14 @@
 		42C783CA213CCB6A0012188E /* YZDropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C783BF213CCB6A0012188E /* YZDropViewController.m */; };
 		42C783D0213CCBFF0012188E /* YZCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C783CC213CCBFE0012188E /* YZCover.m */; };
 		42C783D1213CCBFF0012188E /* YZPullDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C783CD213CCBFE0012188E /* YZPullDownMenu.m */; };
+		42C787D2213D2B420012188E /* UIButton+SGImagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C787D0213D2B420012188E /* UIButton+SGImagePosition.m */; };
+		42C787D6213D2B670012188E /* UIButton+SGCountdown.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C787D5213D2B670012188E /* UIButton+SGCountdown.m */; };
+		42C787DA213D2BA50012188E /* SGCountdownVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C787D7213D2BA40012188E /* SGCountdownVC.m */; };
+		42C787DB213D2BA50012188E /* SGCountdownVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C787D9213D2BA50012188E /* SGCountdownVC.xib */; };
+		42C787DF213D2BB10012188E /* SGEventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C787DC213D2BB10012188E /* SGEventVC.m */; };
+		42C787E0213D2BB10012188E /* SGEventVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C787DE213D2BB10012188E /* SGEventVC.xib */; };
+		42C787E4213D2BC60012188E /* SGImagePositionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C787E2213D2BC60012188E /* SGImagePositionVC.m */; };
+		42C787E5213D2BC60012188E /* SGImagePositionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C787E3213D2BC60012188E /* SGImagePositionVC.xib */; };
 		42CB7E342138CF45003397FB /* ScreenShotVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E332138CF45003397FB /* ScreenShotVC.m */; };
 		42CB7E372138DCEB003397FB /* TestPushVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E362138DCEB003397FB /* TestPushVC.m */; };
 		42CB7E5A2138F3C8003397FB /* RichTextVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E592138F3C8003397FB /* RichTextVC.m */; };
@@ -980,8 +987,6 @@
 		42B182782106D0B000C1E682 /* CommonUnderlineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUnderlineButton.h; sourceTree = "<group>"; };
 		42B1827C2106D13A00C1E682 /* ClickableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableLabel.m; sourceTree = "<group>"; };
 		42B1827D2106D13A00C1E682 /* ClickableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickableLabel.h; sourceTree = "<group>"; };
-		42B1827F2106D21900C1E682 /* UIButton+Category1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Category1.h"; sourceTree = "<group>"; };
-		42B182802106D21900C1E682 /* UIButton+Category1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Category1.m"; sourceTree = "<group>"; };
 		42B182822106D83700C1E682 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		42B182832106D83700C1E682 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		42B1828621070BEF00C1E682 /* CustomFirstRateClickableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFirstRateClickableButton.h; sourceTree = "<group>"; };
@@ -1246,6 +1251,19 @@
 		42C783CD213CCBFE0012188E /* YZPullDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YZPullDownMenu.m; sourceTree = "<group>"; };
 		42C783CE213CCBFE0012188E /* YZCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZCover.h; sourceTree = "<group>"; };
 		42C783CF213CCBFE0012188E /* YZPullDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YZPullDownMenu.h; sourceTree = "<group>"; };
+		42C787D0213D2B420012188E /* UIButton+SGImagePosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SGImagePosition.m"; sourceTree = "<group>"; };
+		42C787D1213D2B420012188E /* UIButton+SGImagePosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SGImagePosition.h"; sourceTree = "<group>"; };
+		42C787D4213D2B660012188E /* UIButton+SGCountdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+SGCountdown.h"; sourceTree = "<group>"; };
+		42C787D5213D2B670012188E /* UIButton+SGCountdown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+SGCountdown.m"; sourceTree = "<group>"; };
+		42C787D7213D2BA40012188E /* SGCountdownVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCountdownVC.m; sourceTree = "<group>"; };
+		42C787D8213D2BA40012188E /* SGCountdownVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCountdownVC.h; sourceTree = "<group>"; };
+		42C787D9213D2BA50012188E /* SGCountdownVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGCountdownVC.xib; sourceTree = "<group>"; };
+		42C787DC213D2BB10012188E /* SGEventVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGEventVC.m; sourceTree = "<group>"; };
+		42C787DD213D2BB10012188E /* SGEventVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGEventVC.h; sourceTree = "<group>"; };
+		42C787DE213D2BB10012188E /* SGEventVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGEventVC.xib; sourceTree = "<group>"; };
+		42C787E1213D2BC60012188E /* SGImagePositionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGImagePositionVC.h; sourceTree = "<group>"; };
+		42C787E2213D2BC60012188E /* SGImagePositionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGImagePositionVC.m; sourceTree = "<group>"; };
+		42C787E3213D2BC60012188E /* SGImagePositionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGImagePositionVC.xib; sourceTree = "<group>"; };
 		42CB7E322138CF45003397FB /* ScreenShotVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScreenShotVC.h; sourceTree = "<group>"; };
 		42CB7E332138CF45003397FB /* ScreenShotVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScreenShotVC.m; sourceTree = "<group>"; };
 		42CB7E352138DCEB003397FB /* TestPushVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPushVC.h; sourceTree = "<group>"; };
@@ -1365,7 +1383,7 @@
 		4242B789212A4ABB00C3A2C5 /* #13_横向切换 */ = {
 			isa = PBXGroup;
 			children = (
-				4242B78C212A4C1D00C3A2C5 /* 1_很全 */,
+				4242B78C212A4C1D00C3A2C5 /* 1_JXCategory */,
 				4242B923212A716400C3A2C5 /* 2_袁崢 */,
 			);
 			path = "#13_横向切换";
@@ -1378,7 +1396,7 @@
 			path = "#14_纵向滚动";
 			sourceTree = "<group>";
 		};
-		4242B78C212A4C1D00C3A2C5 /* 1_很全 */ = {
+		4242B78C212A4C1D00C3A2C5 /* 1_JXCategory */ = {
 			isa = PBXGroup;
 			children = (
 				4242B80A212A4C1D00C3A2C5 /* Switch1_ViewController.h */,
@@ -1387,7 +1405,7 @@
 				4242B8E1212A5A6A00C3A2C5 /* Images */,
 				4242B865212A5A5900C3A2C5 /* Sources */,
 			);
-			path = "1_很全";
+			path = 1_JXCategory;
 			sourceTree = "<group>";
 		};
 		4242B865212A5A5900C3A2C5 /* Sources */ = {
@@ -1795,9 +1813,10 @@
 			isa = PBXGroup;
 			children = (
 				42B182732106D07800C1E682 /* 1，扩大按钮点击 */,
-				42B182712106D07800C1E682 /* 2，按钮文字排列 */,
+				42B182712106D07800C1E682 /* 2，按钮文字图片组合 */,
 				42B182722106D07800C1E682 /* 3，带下划线的按钮 */,
 				42B1828521070BD300C1E682 /* 4，按钮重复点击 */,
+				42C787D3213D2B4E0012188E /* 5，倒计时按钮 */,
 			);
 			path = "#4_按钮相关";
 			sourceTree = "<group>";
@@ -2898,13 +2917,16 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		42B182712106D07800C1E682 /* 2，按钮文字排列 */ = {
+		42B182712106D07800C1E682 /* 2，按钮文字图片组合 */ = {
 			isa = PBXGroup;
 			children = (
-				42B1827F2106D21900C1E682 /* UIButton+Category1.h */,
-				42B182802106D21900C1E682 /* UIButton+Category1.m */,
+				42C787E1213D2BC60012188E /* SGImagePositionVC.h */,
+				42C787E2213D2BC60012188E /* SGImagePositionVC.m */,
+				42C787E3213D2BC60012188E /* SGImagePositionVC.xib */,
+				42C787D1213D2B420012188E /* UIButton+SGImagePosition.h */,
+				42C787D0213D2B420012188E /* UIButton+SGImagePosition.m */,
 			);
-			path = "2，按钮文字排列";
+			path = "2，按钮文字图片组合";
 			sourceTree = "<group>";
 		};
 		42B182722106D07800C1E682 /* 3，带下划线的按钮 */ = {
@@ -2946,6 +2968,9 @@
 		42B1828521070BD300C1E682 /* 4，按钮重复点击 */ = {
 			isa = PBXGroup;
 			children = (
+				42C787DD213D2BB10012188E /* SGEventVC.h */,
+				42C787DC213D2BB10012188E /* SGEventVC.m */,
+				42C787DE213D2BB10012188E /* SGEventVC.xib */,
 				42B1828A2107105800C1E682 /* UIButton+category2.h */,
 				42B182892107105800C1E682 /* UIButton+category2.m */,
 				42B1828621070BEF00C1E682 /* CustomFirstRateClickableButton.h */,
@@ -3552,6 +3577,18 @@
 			path = YZPullDownMenu;
 			sourceTree = "<group>";
 		};
+		42C787D3213D2B4E0012188E /* 5，倒计时按钮 */ = {
+			isa = PBXGroup;
+			children = (
+				42C787D8213D2BA40012188E /* SGCountdownVC.h */,
+				42C787D7213D2BA40012188E /* SGCountdownVC.m */,
+				42C787D9213D2BA50012188E /* SGCountdownVC.xib */,
+				42C787D4213D2B660012188E /* UIButton+SGCountdown.h */,
+				42C787D5213D2B670012188E /* UIButton+SGCountdown.m */,
+			);
+			path = "5，倒计时按钮";
+			sourceTree = "<group>";
+		};
 		42CB7E312138CEB7003397FB /* #16_截屏展示 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3921,6 +3958,7 @@
 				4242B90D212A5A6A00C3A2C5 /* IndicatorImageView.gif in Resources */,
 				42C519DF211C3E5400742239 /* deals.plist in Resources */,
 				429CB177210436960063A0D8 /* Contents.json in Resources */,
+				42C787DB213D2BA50012188E /* SGCountdownVC.xib in Resources */,
 				429CB0FA210436960063A0D8 /* pageControlCurrentDot@3x.png in Resources */,
 				429CB169210436960063A0D8 /* Contents.json in Resources */,
 				429CB153210436960063A0D8 /* Contents.json in Resources */,
@@ -4055,6 +4093,7 @@
 				429CB136210436960063A0D8 /* Contents.json in Resources */,
 				429CB0F8210436960063A0D8 /* pageControlCurrentDot@2x.png in Resources */,
 				429CB121210436960063A0D8 /* Contents.json in Resources */,
+				42C787E5213D2BC60012188E /* SGImagePositionVC.xib in Resources */,
 				429CB123210436960063A0D8 /* Contents.json in Resources */,
 				429CB132210436960063A0D8 /* 11.JPG in Resources */,
 				42C51A2B211C456A00742239 /* XMGStatusCell.xib in Resources */,
@@ -4065,6 +4104,7 @@
 				429CB198210436960063A0D8 /* 14_full.JPG in Resources */,
 				429CB147210436960063A0D8 /* Contents.json in Resources */,
 				429CB15A210436960063A0D8 /* Contents.json in Resources */,
+				42C787E0213D2BB10012188E /* SGEventVC.xib in Resources */,
 				429CB17B210436960063A0D8 /* Contents.json in Resources */,
 				429CB162210436960063A0D8 /* Contents.json in Resources */,
 				4242B912212A5A6A00C3A2C5 /* Football.gif in Resources */,
@@ -4173,6 +4213,7 @@
 				429CB1AB210436960063A0D8 /* Demo5ViewController.m in Sources */,
 				42C78352213CC45B0012188E /* MonthTitleViewModel.m in Sources */,
 				42BB66F720D1231B007BE2CF /* main.m in Sources */,
+				42C787E4213D2BC60012188E /* SGImagePositionVC.m in Sources */,
 				426707462121325B00046FE6 /* ExampleFooterView.m in Sources */,
 				4242B958212A959B00C3A2C5 /* IconFontViewController.m in Sources */,
 				429CB1B5210436960063A0D8 /* Demo1ViewController.m in Sources */,
@@ -4231,6 +4272,7 @@
 				429CB1C221043C3E0063A0D8 /* UIImage+Category.m in Sources */,
 				4267072F2121301400046FE6 /* CCBaseTableHeaderView.m in Sources */,
 				429CB1BB210436960063A0D8 /* RPSlidingMenuCell.m in Sources */,
+				42C787D2213D2B420012188E /* UIButton+SGImagePosition.m in Sources */,
 				42C78370213CC45B0012188E /* EmbeddedCollectionViewCell.m in Sources */,
 				42C7837A213CC45B0012188E /* StoryboardCell.m in Sources */,
 				4242B941212A72C400C3A2C5 /* YZXiMaViewController.m in Sources */,
@@ -4318,6 +4360,7 @@
 				42C7838E213CC45B0012188E /* FeedItemSectionController.m in Sources */,
 				42C7838C213CC45B0012188E /* DemoSectionController.m in Sources */,
 				42C783C3213CCB6A0012188E /* YZSortViewController.m in Sources */,
+				42C787D6213D2B670012188E /* UIButton+SGCountdown.m in Sources */,
 				42C78391213CC45B0012188E /* RemoveSectionController.m in Sources */,
 				4242B909212A5A6A00C3A2C5 /* SegmentedListViewController.m in Sources */,
 				429CB1B3210436960063A0D8 /* Demo4ViewController.m in Sources */,
@@ -4338,10 +4381,10 @@
 				42C78390213CC45B0012188E /* GridSectionController.m in Sources */,
 				42BF8184211A88680090E612 /* CQFilterViewController.m in Sources */,
 				42C78366213CC45B0012188E /* NestedAdapterViewController.m in Sources */,
-				42B182812106D21900C1E682 /* UIButton+Category1.m in Sources */,
 				4242B943212A72C400C3A2C5 /* ChildViewController.m in Sources */,
 				42CB7E5A2138F3C8003397FB /* RichTextVC.m in Sources */,
 				42BF8153211A75010090E612 /* UIImage+Transform.m in Sources */,
+				42C787DF213D2BB10012188E /* SGEventVC.m in Sources */,
 				42BF8182211A88680090E612 /* CQFilterRequest.m in Sources */,
 				429CB1B2210436960063A0D8 /* WaterfallCell.m in Sources */,
 				42BF81B0211A89D90090E612 /* UIView+FrameHelper.m in Sources */,
@@ -4427,6 +4470,7 @@
 				42C78378213CC45B0012188E /* LabelCell.m in Sources */,
 				426707432121325B00046FE6 /* ExampleData.m in Sources */,
 				4242B93E212A72C400C3A2C5 /* RequesCover.m in Sources */,
+				42C787DA213D2BA50012188E /* SGCountdownVC.m in Sources */,
 				42EFA8382109BBEA00AFC827 /* TabView_4_ViewController.m in Sources */,
 				42C7838F213CC45B0012188E /* ExpandableSectionController.m in Sources */,
 				42CB7E8C213939C3003397FB /* MemoTableViewController.m in Sources */,
