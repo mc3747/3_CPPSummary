@@ -5,4 +5,5 @@ pod 'JSONModel'
 pod 'Masonry'
 pod 'SVProgressHUD'
 pod 'GPUImage', '~> 0.1.7'
+pod 'IGListKit'
 end
