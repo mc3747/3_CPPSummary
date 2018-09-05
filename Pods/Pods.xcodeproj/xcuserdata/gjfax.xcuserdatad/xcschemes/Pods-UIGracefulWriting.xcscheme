@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4616D6F34D59B96D934D21B6D1FE74E7"
+               BlueprintIdentifier = "1AEEE6057CDB107DB35F9EB3A7F97A58"
                BlueprintName = "Pods-UIGracefulWriting"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-UIGracefulWriting.a">

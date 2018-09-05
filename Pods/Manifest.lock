@@ -6,31 +6,40 @@ PODS:
     - IGListKit/Diffing
   - IGListKit/Diffing (3.4.0)
   - JSONModel (1.7.0)
+  - LCActionSheet (3.5.0):
+    - Masonry (~> 1.1.0)
   - Masonry (1.1.0)
   - SVProgressHUD (2.2.5)
+  - TBActionSheet (1.6.2)
 
 DEPENDENCIES:
   - GPUImage (~> 0.1.7)
   - IGListKit
   - JSONModel
+  - LCActionSheet
   - Masonry
   - SVProgressHUD
+  - TBActionSheet
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - GPUImage
     - IGListKit
     - JSONModel
+    - LCActionSheet
     - Masonry
     - SVProgressHUD
+    - TBActionSheet
 
 SPEC CHECKSUMS:
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
+  LCActionSheet: b30611ab20290fc830976b7ae90ea2dd4142fb1c
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TBActionSheet: 8b810e7f51f53a25666b5e620add84ce826815ab
 
-PODFILE CHECKSUM: 3fa0f6b00d69c7fd503d47957e9f190e6419eabc
+PODFILE CHECKSUM: be76c0f30f3b72c72376ed68b07a80b1e5d5d213
 
 COCOAPODS: 1.5.0.beta.1
