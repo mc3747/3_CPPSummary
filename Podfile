@@ -6,7 +6,5 @@ pod 'Masonry'
 pod 'SVProgressHUD'
 pod 'GPUImage', '~> 0.1.7'
 pod 'IGListKit'
-pod 'TBActionSheet'
-pod 'LCActionSheet'
-
+pod 'LEEAlert'
 end

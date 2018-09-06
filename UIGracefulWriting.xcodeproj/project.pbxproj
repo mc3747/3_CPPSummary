@@ -95,6 +95,18 @@
 		4242B957212A959B00C3A2C5 /* UIImage+IconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 4242B953212A959A00C3A2C5 /* UIImage+IconFont.m */; };
 		4242B958212A959B00C3A2C5 /* IconFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4242B955212A959A00C3A2C5 /* IconFontViewController.m */; };
 		4242B99F212A9CC500C3A2C5 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4242B99E212A9CC500C3A2C5 /* iconfont.ttf */; };
+		425900EC2140BD8100304394 /* AlertTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900E92140BD8000304394 /* AlertTableViewController.m */; };
+		425900ED2140BD8100304394 /* ActionSheetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900EA2140BD8000304394 /* ActionSheetTableViewController.m */; };
+		425901042140BDE400304394 /* FontSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900F12140BDE400304394 /* FontSizeView.m */; };
+		425901052140BDE400304394 /* ShareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900F32140BDE400304394 /* ShareButton.m */; };
+		425901062140BDE400304394 /* ShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900F42140BDE400304394 /* ShareView.m */; };
+		425901072140BDE400304394 /* AllShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900F52140BDE400304394 /* AllShareView.m */; };
+		425901082140BDE400304394 /* OpenPushView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900FB2140BDE400304394 /* OpenPushView.m */; };
+		425901092140BDE400304394 /* SelectedListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900FD2140BDE400304394 /* SelectedListModel.m */; };
+		4259010A2140BDE400304394 /* SelectedListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900FE2140BDE400304394 /* SelectedListView.m */; };
+		4259010B2140BDE400304394 /* SignFinishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425901022140BDE400304394 /* SignFinishView.m */; };
+		425901132140BE7700304394 /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4259010E2140BE7700304394 /* UIView+SDAutoLayout.m */; };
+		425901142140BE7700304394 /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = 425901112140BE7700304394 /* UITableView+SDAutoTableViewCellHeight.m */; };
 		4267072F2121301400046FE6 /* CCBaseTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */; };
 		426707302121301400046FE6 /* UIView+CCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071F2121301400046FE6 /* UIView+CCUtil.m */; };
 		426707312121301400046FE6 /* CCBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426707232121301400046FE6 /* CCBaseTableViewCell.m */; };
@@ -713,6 +725,31 @@
 		4242B955212A959A00C3A2C5 /* IconFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconFontViewController.m; sourceTree = "<group>"; };
 		4242B956212A959A00C3A2C5 /* UIImage+IconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IconFont.h"; sourceTree = "<group>"; };
 		4242B99E212A9CC500C3A2C5 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = iconfont.ttf; path = font_9rmno8jjb38/iconfont.ttf; sourceTree = "<group>"; };
+		425900E82140BD8000304394 /* AlertTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableViewController.h; sourceTree = "<group>"; };
+		425900E92140BD8000304394 /* AlertTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewController.m; sourceTree = "<group>"; };
+		425900EA2140BD8000304394 /* ActionSheetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetTableViewController.m; sourceTree = "<group>"; };
+		425900EB2140BD8100304394 /* ActionSheetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetTableViewController.h; sourceTree = "<group>"; };
+		425900F02140BDE400304394 /* FontSizeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontSizeView.h; sourceTree = "<group>"; };
+		425900F12140BDE400304394 /* FontSizeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontSizeView.m; sourceTree = "<group>"; };
+		425900F32140BDE400304394 /* ShareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareButton.m; sourceTree = "<group>"; };
+		425900F42140BDE400304394 /* ShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShareView.m; sourceTree = "<group>"; };
+		425900F52140BDE400304394 /* AllShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllShareView.m; sourceTree = "<group>"; };
+		425900F62140BDE400304394 /* ShareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareButton.h; sourceTree = "<group>"; };
+		425900F72140BDE400304394 /* ShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShareView.h; sourceTree = "<group>"; };
+		425900F82140BDE400304394 /* AllShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllShareView.h; sourceTree = "<group>"; };
+		425900FA2140BDE400304394 /* OpenPushView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenPushView.h; sourceTree = "<group>"; };
+		425900FB2140BDE400304394 /* OpenPushView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenPushView.m; sourceTree = "<group>"; };
+		425900FD2140BDE400304394 /* SelectedListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedListModel.m; sourceTree = "<group>"; };
+		425900FE2140BDE400304394 /* SelectedListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedListView.m; sourceTree = "<group>"; };
+		425900FF2140BDE400304394 /* SelectedListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedListModel.h; sourceTree = "<group>"; };
+		425901002140BDE400304394 /* SelectedListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedListView.h; sourceTree = "<group>"; };
+		425901022140BDE400304394 /* SignFinishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignFinishView.m; sourceTree = "<group>"; };
+		425901032140BDE400304394 /* SignFinishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignFinishView.h; sourceTree = "<group>"; };
+		4259010E2140BE7700304394 /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		4259010F2140BE7700304394 /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		425901102140BE7700304394 /* SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAutoLayout.h; sourceTree = "<group>"; };
+		425901112140BE7700304394 /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		425901122140BE7700304394 /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
 		4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableHeaderView.m; sourceTree = "<group>"; };
 		4267071D2121301400046FE6 /* CCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTableViewDataSource.h; sourceTree = "<group>"; };
 		4267071E2121301400046FE6 /* CCBaseTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableFooterView.h; sourceTree = "<group>"; };
@@ -1927,6 +1964,111 @@
 			path = "#15_IconFont的使用";
 			sourceTree = "<group>";
 		};
+		425900E62140BCF700304394 /* 1，系统 */ = {
+			isa = PBXGroup;
+			children = (
+				42B573E5213FCD7C0089CFDF /* AlertViewController.h */,
+				42B573E6213FCD7C0089CFDF /* AlertViewController.m */,
+			);
+			path = "1，系统";
+			sourceTree = "<group>";
+		};
+		425900E72140BD0100304394 /* 2，第三方LEEAlert */ = {
+			isa = PBXGroup;
+			children = (
+				425900EB2140BD8100304394 /* ActionSheetTableViewController.h */,
+				425900EA2140BD8000304394 /* ActionSheetTableViewController.m */,
+				425900E82140BD8000304394 /* AlertTableViewController.h */,
+				425900E92140BD8000304394 /* AlertTableViewController.m */,
+				4259010C2140BE7700304394 /* Librarys */,
+				425900EE2140BDE400304394 /* Views */,
+			);
+			path = "2，第三方LEEAlert";
+			sourceTree = "<group>";
+		};
+		425900EE2140BDE400304394 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				425900EF2140BDE400304394 /* FontSizeView */,
+				425900F22140BDE400304394 /* ShareView */,
+				425900F92140BDE400304394 /* OpenPushView */,
+				425900FC2140BDE400304394 /* SelectedListView */,
+				425901012140BDE400304394 /* SignFinishView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		425900EF2140BDE400304394 /* FontSizeView */ = {
+			isa = PBXGroup;
+			children = (
+				425900F02140BDE400304394 /* FontSizeView.h */,
+				425900F12140BDE400304394 /* FontSizeView.m */,
+			);
+			path = FontSizeView;
+			sourceTree = "<group>";
+		};
+		425900F22140BDE400304394 /* ShareView */ = {
+			isa = PBXGroup;
+			children = (
+				425900F32140BDE400304394 /* ShareButton.m */,
+				425900F42140BDE400304394 /* ShareView.m */,
+				425900F52140BDE400304394 /* AllShareView.m */,
+				425900F62140BDE400304394 /* ShareButton.h */,
+				425900F72140BDE400304394 /* ShareView.h */,
+				425900F82140BDE400304394 /* AllShareView.h */,
+			);
+			path = ShareView;
+			sourceTree = "<group>";
+		};
+		425900F92140BDE400304394 /* OpenPushView */ = {
+			isa = PBXGroup;
+			children = (
+				425900FA2140BDE400304394 /* OpenPushView.h */,
+				425900FB2140BDE400304394 /* OpenPushView.m */,
+			);
+			path = OpenPushView;
+			sourceTree = "<group>";
+		};
+		425900FC2140BDE400304394 /* SelectedListView */ = {
+			isa = PBXGroup;
+			children = (
+				425900FD2140BDE400304394 /* SelectedListModel.m */,
+				425900FE2140BDE400304394 /* SelectedListView.m */,
+				425900FF2140BDE400304394 /* SelectedListModel.h */,
+				425901002140BDE400304394 /* SelectedListView.h */,
+			);
+			path = SelectedListView;
+			sourceTree = "<group>";
+		};
+		425901012140BDE400304394 /* SignFinishView */ = {
+			isa = PBXGroup;
+			children = (
+				425901022140BDE400304394 /* SignFinishView.m */,
+				425901032140BDE400304394 /* SignFinishView.h */,
+			);
+			path = SignFinishView;
+			sourceTree = "<group>";
+		};
+		4259010C2140BE7700304394 /* Librarys */ = {
+			isa = PBXGroup;
+			children = (
+				4259010D2140BE7700304394 /* SDAutoLayout */,
+			);
+			path = Librarys;
+			sourceTree = "<group>";
+		};
+		4259010D2140BE7700304394 /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				4259010E2140BE7700304394 /* UIView+SDAutoLayout.m */,
+				4259010F2140BE7700304394 /* UITableView+SDAutoTableViewCellHeight.h */,
+				425901102140BE7700304394 /* SDAutoLayout.h */,
+				425901112140BE7700304394 /* UITableView+SDAutoTableViewCellHeight.m */,
+				425901122140BE7700304394 /* UIView+SDAutoLayout.h */,
+			);
+			path = SDAutoLayout;
+			sourceTree = "<group>";
+		};
 		4267071B2121301400046FE6 /* CCTableDataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -1992,7 +2134,7 @@
 				42CB7E572138F200003397FB /* #17_富文本总结 */,
 				42CB7E8321393900003397FB /* #18_便签效果 */,
 				42C7839A213CC7F80012188E /* #19_下拉二级菜单 */,
-				42B573E4213FCCB50089CFDF /* #20_弹窗汇总  */,
+				42B573E4213FCCB50089CFDF /* #20_alert和sheet汇总  */,
 			);
 			path = "2，UI轮子";
 			sourceTree = "<group>";
@@ -3299,13 +3441,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		42B573E4213FCCB50089CFDF /* #20_弹窗汇总  */ = {
+		42B573E4213FCCB50089CFDF /* #20_alert和sheet汇总  */ = {
 			isa = PBXGroup;
 			children = (
-				42B573E5213FCD7C0089CFDF /* AlertViewController.h */,
-				42B573E6213FCD7C0089CFDF /* AlertViewController.m */,
+				425900E62140BCF700304394 /* 1，系统 */,
+				425900E72140BD0100304394 /* 2，第三方LEEAlert */,
 			);
-			path = "#20_弹窗汇总 ";
+			path = "#20_alert和sheet汇总 ";
 			sourceTree = "<group>";
 		};
 		42BAFEF6210876CD003CFD9A /* #6_TextView设置下划线 */ = {
@@ -4531,6 +4673,7 @@
 				42C783D0213CCBFF0012188E /* YZCover.m in Sources */,
 				42C78368213CC45B0012188E /* CalendarViewController.m in Sources */,
 				42BF81AE211A89D90090E612 /* CQDetailViewController.m in Sources */,
+				425901142140BE7700304394 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				426707452121325B00046FE6 /* ExampleDynamicHeightCell.m in Sources */,
 				42B573B5213FC1FE0089CFDF /* DefaultSystemVC.m in Sources */,
 				429CB1B6210436960063A0D8 /* Demo6Cell.m in Sources */,
@@ -4542,6 +4685,7 @@
 				42C783C6213CCB6A0012188E /* YZMenuButton.m in Sources */,
 				42B573ED213FD11C0089CFDF /* UIButton+Category.m in Sources */,
 				42CB7E8021391F3F003397FB /* WebviewLoadingHtmlController.m in Sources */,
+				425901062140BDE400304394 /* ShareView.m in Sources */,
 				42B573BE213FC1FE0089CFDF /* DefaultImageVC.m in Sources */,
 				42B182702106CAD200C1E682 /* TextFieldViewController.m in Sources */,
 				4242B8FA212A5A6A00C3A2C5 /* TitleViewController.m in Sources */,
@@ -4560,12 +4704,14 @@
 				429CB1B5210436960063A0D8 /* Demo1ViewController.m in Sources */,
 				4242B836212A4C1D00C3A2C5 /* Switch1_ViewController.m in Sources */,
 				4242B8FC212A5A6A00C3A2C5 /* PagingViewController.swift in Sources */,
+				4259010B2140BDE400304394 /* SignFinishView.m in Sources */,
 				42C7836E213CC45B0012188E /* InteractiveCell.m in Sources */,
 				42B182642106C72300C1E682 /* IchiroTextField.m in Sources */,
 				42BF8157211A75010090E612 /* UIViewController+PushAndPop.m in Sources */,
 				429CB0F6210436960063A0D8 /* CustomBannerView.m in Sources */,
 				4242B926212A727300C3A2C5 /* Switch2_ViewController.m in Sources */,
 				4242B8AE212A5A5900C3A2C5 /* JXCategoryBackgroundImageView.m in Sources */,
+				425901132140BE7700304394 /* UIView+SDAutoLayout.m in Sources */,
 				42C78362213CC45B0012188E /* WorkingRangeViewController.m in Sources */,
 				429CB109210436960063A0D8 /* TAAbstractDotView.m in Sources */,
 				42B573DC213FC1FE0089CFDF /* Switch3_ViewController.m in Sources */,
@@ -4622,6 +4768,7 @@
 				4267072F2121301400046FE6 /* CCBaseTableHeaderView.m in Sources */,
 				429CB1BB210436960063A0D8 /* RPSlidingMenuCell.m in Sources */,
 				42C787D2213D2B420012188E /* UIButton+SGImagePosition.m in Sources */,
+				425901052140BDE400304394 /* ShareButton.m in Sources */,
 				42C78370213CC45B0012188E /* EmbeddedCollectionViewCell.m in Sources */,
 				42C7837A213CC45B0012188E /* StoryboardCell.m in Sources */,
 				4242B941212A72C400C3A2C5 /* YZXiMaViewController.m in Sources */,
@@ -4642,6 +4789,7 @@
 				42C7837E213CC45B0012188E /* FullWidthSelfSizingCell.m in Sources */,
 				42BF817E211A88680090E612 /* CQFilterCell.m in Sources */,
 				42C78388213CC45B0012188E /* StoryboardLabelSectionController.m in Sources */,
+				425900EC2140BD8100304394 /* AlertTableViewController.m in Sources */,
 				42BF8154211A75010090E612 /* NSDate+InternetDateTime.m in Sources */,
 				42C7838B213CC45B0012188E /* SelfSizingSectionController.m in Sources */,
 				4242B8AC212A5A5900C3A2C5 /* JXCategoryLineStyleView.m in Sources */,
@@ -4714,6 +4862,8 @@
 				4242B90B212A5A6A00C3A2C5 /* IndicatorImageViewViewController.m in Sources */,
 				42BF81AF211A89D90090E612 /* UIView+Util.m in Sources */,
 				4242B8A6212A5A5900C3A2C5 /* JXCategoryNumberView.m in Sources */,
+				425901072140BDE400304394 /* AllShareView.m in Sources */,
+				425900ED2140BD8100304394 /* ActionSheetTableViewController.m in Sources */,
 				42C78374213CC45B0012188E /* ManuallySelfSizingCell.m in Sources */,
 				429CB112210436960063A0D8 /* SDWebImageCompat.m in Sources */,
 				42B573C8213FC1FE0089CFDF /* ChildFourthPopGestureVC.m in Sources */,
@@ -4798,6 +4948,7 @@
 				42B573BC213FC1FE0089CFDF /* DefaultFixedVC.m in Sources */,
 				426707322121301400046FE6 /* UITableView+CCUtil.m in Sources */,
 				42C78363213CC45B0012188E /* CollectionViewController.m in Sources */,
+				425901042140BDE400304394 /* FontSizeView.m in Sources */,
 				42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */,
 				42B1826B2106C72300C1E682 /* PulsingHaloLayer.m in Sources */,
 				42B182672106C72300C1E682 /* MinoruTextField.m in Sources */,
@@ -4813,6 +4964,7 @@
 				42C78360213CC45B0012188E /* MixedDataViewController.m in Sources */,
 				42C78384213CC45B0012188E /* ListeningSectionController.m in Sources */,
 				42BF819B211A88BB0090E612 /* CQJigsawViewController.m in Sources */,
+				425901092140BDE400304394 /* SelectedListModel.m in Sources */,
 				42C783C2213CCB6A0012188E /* YZMoreMenuCell.m in Sources */,
 				42C7836A213CC45B0012188E /* NibSelfSizingCell.m in Sources */,
 				42C78353213CC45B0012188E /* Post.m in Sources */,
@@ -4833,9 +4985,11 @@
 				42B573B9213FC1FE0089CFDF /* DefaultPopGestureVC.m in Sources */,
 				42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */,
 				4242B8A5212A5A5900C3A2C5 /* JXCategoryComponentCellModel.m in Sources */,
+				4259010A2140BDE400304394 /* SelectedListView.m in Sources */,
 				42C7837B213CC45B0012188E /* PhotoCell.m in Sources */,
 				42C78358213CC45B0012188E /* DiffTableViewController.m in Sources */,
 				426707352121301400046FE6 /* CCBaseTableFooterView.m in Sources */,
+				425901082140BDE400304394 /* OpenPushView.m in Sources */,
 				42EFA82F2109BBBD00AFC827 /* TabView_1_ViewController.m in Sources */,
 				42BF815D211A79680090E612 /* Common_ViewController.m in Sources */,
 				42B573D3213FC1FE0089CFDF /* ChildVCSeven.m in Sources */,
