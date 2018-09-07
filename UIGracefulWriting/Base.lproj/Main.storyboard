@@ -216,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+            <point key="canvasLocation" x="-113" y="-408"/>
         </scene>
         <!--Text Field View Controller-->
         <scene sceneID="rfk-6h-IHD">
@@ -293,7 +293,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CaQ-bS-kh1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1141.5999999999999" y="116.49175412293854"/>
+            <point key="canvasLocation" x="966" y="-489"/>
         </scene>
     </scenes>
 </document>
