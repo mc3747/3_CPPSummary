@@ -7,4 +7,5 @@ pod 'SVProgressHUD'
 pod 'GPUImage', '~> 0.1.7'
 pod 'IGListKit'
 pod 'LEEAlert'
+pod 'TYAttributedLabel', '~> 2.6.2'
 end

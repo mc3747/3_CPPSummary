@@ -9,6 +9,7 @@ PODS:
   - LEEAlert (1.1.8)
   - Masonry (1.1.0)
   - SVProgressHUD (2.2.5)
+  - TYAttributedLabel (2.6.6)
 
 DEPENDENCIES:
   - GPUImage (~> 0.1.7)
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - LEEAlert
   - Masonry
   - SVProgressHUD
+  - TYAttributedLabel (~> 2.6.2)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -26,6 +28,7 @@ SPEC REPOS:
     - LEEAlert
     - Masonry
     - SVProgressHUD
+    - TYAttributedLabel
 
 SPEC CHECKSUMS:
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
@@ -34,7 +37,8 @@ SPEC CHECKSUMS:
   LEEAlert: e264af2c9bffd1dbf95d56c9f3df53fba52443c2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
 
-PODFILE CHECKSUM: 4a48bd1cad3a2ef1a008fa0f355f1771139b5009
+PODFILE CHECKSUM: e68f790833eecafb357340a8dd201b831a95f39b
 
 COCOAPODS: 1.5.0.beta.1
