@@ -38,6 +38,8 @@
         self.visualEffectView = [[UIVisualEffectView alloc] initWithEffect:blurEffect];
         self.visualEffectView.frame = self.window.frame;
     };
+    
+    NSLog(@"#####%@",[[UIScreen mainScreen] bounds]);
     return YES;
 }
 

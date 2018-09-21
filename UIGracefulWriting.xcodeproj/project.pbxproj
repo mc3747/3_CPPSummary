@@ -131,6 +131,7 @@
 		426707462121325B00046FE6 /* ExampleFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267073E2121325A00046FE6 /* ExampleFooterView.m */; };
 		42789BF02154759900F85994 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BEF2154759900F85994 /* Test1ViewController.m */; };
 		42789BF3215475AB00F85994 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BF2215475AB00F85994 /* Test2ViewController.m */; };
+		42789C602154EEAB00F85994 /* CommonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789C5F2154EEAB00F85994 /* CommonMethod.m */; };
 		42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42981CE62105C4DF0052CCC3 /* CommonViewController.m */; };
 		429CB0F0210436960063A0D8 /* CustomBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CAF8E210436950063A0D8 /* CustomBannerScrollView.m */; };
 		429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CAF90210436950063A0D8 /* BannerDemoVC.m */; };
@@ -827,6 +828,9 @@
 		42789BEF2154759900F85994 /* Test1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test1ViewController.m; sourceTree = "<group>"; };
 		42789BF1215475AB00F85994 /* Test2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
 		42789BF2215475AB00F85994 /* Test2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
+		42789C5D2154EC5400F85994 /* IphoneSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IphoneSize.h; sourceTree = "<group>"; };
+		42789C5E2154EEAA00F85994 /* CommonMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMethod.h; sourceTree = "<group>"; };
+		42789C5F2154EEAB00F85994 /* CommonMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonMethod.m; sourceTree = "<group>"; };
 		42981CE52105C4DF0052CCC3 /* CommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
 		42981CE62105C4DF0052CCC3 /* CommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
 		429CAF8D210436950063A0D8 /* CustomBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBannerScrollView.h; sourceTree = "<group>"; };
@@ -3643,6 +3647,9 @@
 				42789BEF2154759900F85994 /* Test1ViewController.m */,
 				42789BF1215475AB00F85994 /* Test2ViewController.h */,
 				42789BF2215475AB00F85994 /* Test2ViewController.m */,
+				42789C5D2154EC5400F85994 /* IphoneSize.h */,
+				42789C5E2154EEAA00F85994 /* CommonMethod.h */,
+				42789C5F2154EEAB00F85994 /* CommonMethod.m */,
 				42BF81B1211A8B0C0090E612 /* PrefixHeader.pch */,
 				42BB66ED20D1231A007BE2CF /* Main.storyboard */,
 				42BB66F220D1231B007BE2CF /* LaunchScreen.storyboard */,
@@ -5318,6 +5325,7 @@
 				429CB1AF210436960063A0D8 /* Demo3Cell.m in Sources */,
 				42C78387213CC45B0012188E /* PostSectionController.m in Sources */,
 				426707312121301400046FE6 /* CCBaseTableViewCell.m in Sources */,
+				42789C602154EEAB00F85994 /* CommonMethod.m in Sources */,
 				42C5B4DC214251E700563794 /* JXTAlertView.m in Sources */,
 				42B182842106D83700C1E682 /* UIView+Extension.m in Sources */,
 				4242B94F212A72D800C3A2C5 /* YZFlowLayout.m in Sources */,
