@@ -231,9 +231,17 @@
     
     vc.title = @"其他UI效果";
     
-    vc.vcNameArray = @[@"ShadeEffectVC",@"MoneyAnimationVC",@"CQFilterViewController",@"CQJigsawViewController",@"DimImageViewController",@"Switch1_ViewController",@"Switch2_ViewController",@"IconFontViewController",@"ScreenShotVC",@"RichTextVC",@"MemoTableViewController",@"DemosViewController",@"DropDownViewController",@"YZDropViewController",@"Switch3_ViewController",@"AlertViewController",@"AlertTableViewController",@"ActionSheetTableViewController",@"ShowViewController",@"FatherAndSonVC",@"WonderfulColorVC",@"Switch4_ViewController"];
+    vc.vcNameArray = @[@[@"ShadeEffectVC",@"MoneyAnimationVC",@"CQFilterViewController",@"CQJigsawViewController",@"DimImageViewController",@"IconFontViewController",@"ScreenShotVC",@"RichTextVC",@"MemoTableViewController",@"DemosViewController",@"WonderfulColorVC"],
+  @[@"DropDownViewController",@"YZDropViewController"],
+  @[@"AlertViewController",@"AlertTableViewController",@"ActionSheetTableViewController",@"ShowViewController"],
+  @[@"FatherAndSonVC",@"Switch2_ViewController",@"Switch3_ViewController",@"Switch4_ViewController"],
+  @[@"Test1ViewController"]];
     
-    vc.subtitleArray = @[@"1，渐变效果",@"2，金额跳动效果",@"3，模态弹窗",@"4，比例拼图",@"5，模糊效果",@"6，横向切换1",@"7，横向切换2",@"8，IconFont的使用",@"9，截屏展示",@"10，富文本总结",@"11，便签效果",@"12，IGListKit的Demo",@"13，美团下拉二级菜单",@"14，袁崢二级菜单",@"15，SGPagingView横向切换",@"16，系统alert和sheet",@"17，LEE的alert",@"18，LEE的sheet",@"19，JXT的Alert汇总",@"20，父子控制器",@"21，完美颜色",@"22，JXCategory横向切换"];
+    vc.subtitleArray = @[@[@"渐变效果",@"金额跳动效果",@"模态弹窗",@"比例拼图",@"模糊效果",@"IconFont的使用",@"截屏展示",@"富文本总结",@"便签效果",@"IGListKit的Demo",@"完美颜色"],
+                         @[@"仿美团二级菜单",@"袁崢二级菜单"],
+  @[@"系统alert和sheet",@"LEE的alert",@"LEE的sheet",@"JXT的Alert汇总"],
+  @[@"父子控制器",@"袁崢切换",@"SGPagingView横向切换",@"JXCategory横向切换"],
+  @[@"测试控制器跳转过渡页"]];
     
     [self.navigationController pushViewController:vc animated:YES];
 }

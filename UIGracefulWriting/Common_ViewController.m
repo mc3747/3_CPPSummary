@@ -20,12 +20,29 @@
     [self.view addSubview:self.tableView];
 }
 #pragma mark -  数据源
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0.01f;
+}
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 10.f;
+}
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+   
+    return nil;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    UIView *footView= [UIView new];
+    footView.backgroundColor = LBRandomColor;
+    return footView;
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    return self.subtitleArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.subtitleArray.count;
+    return ((NSArray *)self.subtitleArray[section]).count;
     
 }
 
@@ -37,13 +54,31 @@
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
     }
     
-    cell.textLabel.text = self.subtitleArray[indexPath.row];
+    NSInteger sequenceNumber = [self getSequenceNumber:self.subtitleArray indexPath:indexPath];
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld,%@",(long)sequenceNumber,self.subtitleArray[indexPath.section][indexPath.row]];
     cell.textLabel.textColor = [UIColor blackColor];
     /*cell设置 */
     cell.selectionStyle = UITableViewCellSelectionStyleGray;            // 点击阴影效果
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;   // 右侧小箭头显示
     cell.backgroundColor = [UIColor whiteColor];
     return cell;
+}
+- (NSInteger )getSequenceNumber:(NSArray *)array indexPath:(NSIndexPath *)indexPath {
+    
+    if (array.count == 0) {
+        return 1;
+        
+    }else if (array.count == 1) {
+        return indexPath.row;
+        
+    }else  {
+        NSInteger count = 0;
+        for (int i = 0; i< indexPath.section; i++) {
+             count += ((NSArray *)array[i]).count;
+        }
+        return count + indexPath.row;
+    };
 }
 
 #pragma mark -  点击
@@ -53,11 +88,11 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     //跳转到Demo_ViewController
-    NSString *className = self.vcNameArray[indexPath.row];
+    NSString *className = self.vcNameArray[indexPath.section][indexPath.row];
     Class class = NSClassFromString(className);
     if (class) {
         UIViewController *ctrl = class.new;
-        ctrl.title = _subtitleArray[indexPath.row];
+        ctrl.title = _subtitleArray[indexPath.section][indexPath.row];
         ctrl.view.backgroundColor = [UIColor lightGrayColor];
         [self.navigationController pushViewController:ctrl animated:YES];
     };
@@ -67,7 +102,7 @@
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64)];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.backgroundColor = [UIColor lightGrayColor];
