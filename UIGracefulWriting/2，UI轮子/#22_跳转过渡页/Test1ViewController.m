@@ -17,7 +17,6 @@
 - (void)loadView {
     [super loadView];
    
-    
     UIView *maskView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT, SCREEN_WIDTH, SCREEN_HEIGHT)];
     maskView.backgroundColor = [UIColor yellowColor];
     [self.view addSubview:maskView];
@@ -40,56 +39,15 @@
     [super viewDidLoad];
      self.view.backgroundColor = [UIColor redColor];
     
-    
     UIView *maskView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
     maskView.backgroundColor = [UIColor blueColor];
     [self.view addSubview:maskView];
     
     UIView *maskView2 = [[UIView alloc] initWithFrame:CGRectMake(150, 100, 100, 100)];
     maskView2.backgroundColor = [UIColor orangeColor];
-    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
-    [maskView2 addGestureRecognizer:gesture];
     [self.view addSubview:maskView2];
 
 }
-
-- (void)tap {
-    Test2ViewController *vc = [[Test2ViewController alloc] init];
-    
-    CATransition* transition = [CATransition animation];
-
-    transition.duration =0.4f;
-
-    transition.type = kCATransitionMoveIn;
-
-    transition.subtype = kCATransitionFromTop;
-
-    [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
-
-    [self.navigationController pushViewController:vc animated:NO];
-    
-   
-//    Test2ViewController *vc = [[Test2ViewController alloc] init];
-//    [self.navigationController pushViewController:vc animated:YES];
-}
-
-- (void)pop
-{
-    
-    CATransition* transition = [CATransition animation];
-    
-    transition.duration =0.4f;
-    
-    transition.type = kCATransitionReveal;
-    
-    transition.subtype = kCATransitionFromBottom;
-    
-    [self.navigationController.view.layer addAnimation:transition forKey:kCATransition];
-    
-    [self.navigationController popViewControllerAnimated:NO];
-    
-}
-
 
 - (void)viewWillLayoutSubviews {
     [super viewWillLayoutSubviews];

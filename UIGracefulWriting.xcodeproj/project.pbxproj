@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4200C8792159C45800FCD77D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4200C8782159C45800FCD77D /* TestViewController.m */; };
 		422788442145F3E1002B9C13 /* Switch4_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422788432145F3E1002B9C13 /* Switch4_ViewController.m */; };
 		4227888E2145F430002B9C13 /* JXCategoryIndicatorLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227884B2145F430002B9C13 /* JXCategoryIndicatorLineView.m */; };
 		4227888F2145F430002B9C13 /* JXCategoryIndicatorTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227884C2145F430002B9C13 /* JXCategoryIndicatorTriangleView.m */; };
@@ -577,6 +578,8 @@
 
 /* Begin PBXFileReference section */
 		14963D90AB1CDCB894329DCE /* libPods-UIGracefulWriting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIGracefulWriting.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4200C8772159C45800FCD77D /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		4200C8782159C45800FCD77D /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		422788422145F3E1002B9C13 /* Switch4_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Switch4_ViewController.h; sourceTree = "<group>"; };
 		422788432145F3E1002B9C13 /* Switch4_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Switch4_ViewController.m; sourceTree = "<group>"; };
 		422788472145F430002B9C13 /* JXCategoryIndicatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryIndicatorCell.h; sourceTree = "<group>"; };
@@ -1616,6 +1619,19 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		4200C87A2159CABA00FCD77D /* #22_跳转过渡页 */ = {
+			isa = PBXGroup;
+			children = (
+				4200C8772159C45800FCD77D /* TestViewController.h */,
+				4200C8782159C45800FCD77D /* TestViewController.m */,
+				42789BEE2154759900F85994 /* Test1ViewController.h */,
+				42789BEF2154759900F85994 /* Test1ViewController.m */,
+				42789BF1215475AB00F85994 /* Test2ViewController.h */,
+				42789BF2215475AB00F85994 /* Test2ViewController.m */,
+			);
+			path = "#22_跳转过渡页";
+			sourceTree = "<group>";
+		};
 		422788452145F430002B9C13 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -2326,6 +2342,7 @@
 		429CAF8A2104365F0063A0D8 /* 2，UI轮子 */ = {
 			isa = PBXGroup;
 			children = (
+				4200C87A2159CABA00FCD77D /* #22_跳转过渡页 */,
 				429CAF8B210436950063A0D8 /* #1_轮播器 */,
 				429CAFE5210436950063A0D8 /* #2_CollectionView应用 */,
 				42B1827A2106D13A00C1E682 /* #3_label相关 */,
@@ -3639,14 +3656,10 @@
 				42C782B8213CC3CD0012188E /* 3，重量级UI框架 */,
 				42BB66E720D1231A007BE2CF /* AppDelegate.h */,
 				42BB66E820D1231A007BE2CF /* AppDelegate.m */,
-				42BF815B211A79680090E612 /* Common_ViewController.h */,
-				42BF815C211A79680090E612 /* Common_ViewController.m */,
 				42BB66EA20D1231A007BE2CF /* ViewController.h */,
 				42BB66EB20D1231A007BE2CF /* ViewController.m */,
-				42789BEE2154759900F85994 /* Test1ViewController.h */,
-				42789BEF2154759900F85994 /* Test1ViewController.m */,
-				42789BF1215475AB00F85994 /* Test2ViewController.h */,
-				42789BF2215475AB00F85994 /* Test2ViewController.m */,
+				42BF815B211A79680090E612 /* Common_ViewController.h */,
+				42BF815C211A79680090E612 /* Common_ViewController.m */,
 				42789C5D2154EC5400F85994 /* IphoneSize.h */,
 				42789C5E2154EEAA00F85994 /* CommonMethod.h */,
 				42789C5F2154EEAB00F85994 /* CommonMethod.m */,
@@ -5360,6 +5373,7 @@
 				42C5B4BD21422F5300563794 /* ParseTextViewController.m in Sources */,
 				426707432121325B00046FE6 /* ExampleData.m in Sources */,
 				42C5B4C821422F5300563794 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
+				4200C8792159C45800FCD77D /* TestViewController.m in Sources */,
 				4242B93E212A72C400C3A2C5 /* RequesCover.m in Sources */,
 				42C787DA213D2BA50012188E /* SGCountdownVC.m in Sources */,
 				422789342145F44F002B9C13 /* JXCategoryTitleAttributeView.m in Sources */,

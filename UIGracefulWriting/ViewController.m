@@ -235,7 +235,7 @@
   @[@"DropDownViewController",@"YZDropViewController"],
   @[@"AlertViewController",@"AlertTableViewController",@"ActionSheetTableViewController",@"ShowViewController"],
   @[@"FatherAndSonVC",@"Switch2_ViewController",@"Switch3_ViewController",@"Switch4_ViewController"],
-  @[@"Test1ViewController"]];
+  @[@"TestViewController"]];
     
     vc.subtitleArray = @[@[@"渐变效果",@"金额跳动效果",@"模态弹窗",@"比例拼图",@"模糊效果",@"IconFont的使用",@"截屏展示",@"富文本总结",@"便签效果",@"IGListKit的Demo",@"完美颜色"],
                          @[@"仿美团二级菜单",@"袁崢二级菜单"],
