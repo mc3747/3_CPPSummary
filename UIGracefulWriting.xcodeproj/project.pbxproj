@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4200C8792159C45800FCD77D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4200C8782159C45800FCD77D /* TestViewController.m */; };
+		42204D76215CB941002447BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42204D75215CB941002447BF /* Images.xcassets */; };
 		422788442145F3E1002B9C13 /* Switch4_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422788432145F3E1002B9C13 /* Switch4_ViewController.m */; };
 		4227888E2145F430002B9C13 /* JXCategoryIndicatorLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227884B2145F430002B9C13 /* JXCategoryIndicatorLineView.m */; };
 		4227888F2145F430002B9C13 /* JXCategoryIndicatorTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227884C2145F430002B9C13 /* JXCategoryIndicatorTriangleView.m */; };
@@ -580,6 +581,8 @@
 		14963D90AB1CDCB894329DCE /* libPods-UIGracefulWriting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIGracefulWriting.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4200C8772159C45800FCD77D /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		4200C8782159C45800FCD77D /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		42204D75215CB941002447BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		42204D77215CC1F7002447BF /* IPhoneColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPhoneColor.h; sourceTree = "<group>"; };
 		422788422145F3E1002B9C13 /* Switch4_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Switch4_ViewController.h; sourceTree = "<group>"; };
 		422788432145F3E1002B9C13 /* Switch4_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Switch4_ViewController.m; sourceTree = "<group>"; };
 		422788472145F430002B9C13 /* JXCategoryIndicatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryIndicatorCell.h; sourceTree = "<group>"; };
@@ -831,7 +834,7 @@
 		42789BEF2154759900F85994 /* Test1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test1ViewController.m; sourceTree = "<group>"; };
 		42789BF1215475AB00F85994 /* Test2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
 		42789BF2215475AB00F85994 /* Test2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
-		42789C5D2154EC5400F85994 /* IphoneSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IphoneSize.h; sourceTree = "<group>"; };
+		42789C5D2154EC5400F85994 /* IPhoneSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPhoneSize.h; sourceTree = "<group>"; };
 		42789C5E2154EEAA00F85994 /* CommonMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMethod.h; sourceTree = "<group>"; };
 		42789C5F2154EEAB00F85994 /* CommonMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonMethod.m; sourceTree = "<group>"; };
 		42981CE52105C4DF0052CCC3 /* CommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
@@ -2342,7 +2345,6 @@
 		429CAF8A2104365F0063A0D8 /* 2，UI轮子 */ = {
 			isa = PBXGroup;
 			children = (
-				4200C87A2159CABA00FCD77D /* #22_跳转过渡页 */,
 				429CAF8B210436950063A0D8 /* #1_轮播器 */,
 				429CAFE5210436950063A0D8 /* #2_CollectionView应用 */,
 				42B1827A2106D13A00C1E682 /* #3_label相关 */,
@@ -2364,6 +2366,7 @@
 				42C7839A213CC7F80012188E /* #19_下拉二级菜单 */,
 				42B573E4213FCCB50089CFDF /* #20_alert和sheet汇总  */,
 				42C5B6762142690300563794 /* #21_好用的颜色 */,
+				4200C87A2159CABA00FCD77D /* #22_跳转过渡页 */,
 			);
 			path = "2，UI轮子";
 			sourceTree = "<group>";
@@ -3660,10 +3663,12 @@
 				42BB66EB20D1231A007BE2CF /* ViewController.m */,
 				42BF815B211A79680090E612 /* Common_ViewController.h */,
 				42BF815C211A79680090E612 /* Common_ViewController.m */,
-				42789C5D2154EC5400F85994 /* IphoneSize.h */,
+				42789C5D2154EC5400F85994 /* IPhoneSize.h */,
+				42204D77215CC1F7002447BF /* IPhoneColor.h */,
 				42789C5E2154EEAA00F85994 /* CommonMethod.h */,
 				42789C5F2154EEAB00F85994 /* CommonMethod.m */,
 				42BF81B1211A8B0C0090E612 /* PrefixHeader.pch */,
+				42204D75215CB941002447BF /* Images.xcassets */,
 				42BB66ED20D1231A007BE2CF /* Main.storyboard */,
 				42BB66F220D1231B007BE2CF /* LaunchScreen.storyboard */,
 				42BB66F520D1231B007BE2CF /* Info.plist */,
@@ -4054,19 +4059,19 @@
 		42C5B68F2142699B00563794 /* Wonderful */ = {
 			isa = PBXGroup;
 			children = (
+				42C5B69C2142699B00563794 /* UIColor+Wonderful.h */,
+				42C5B6952142699B00563794 /* UIColor+Wonderful.m */,
 				42C5B6902142699B00563794 /* SXMarquee.h */,
 				42C5B6912142699B00563794 /* SXColorLabel.h */,
 				42C5B6922142699B00563794 /* UIColor+Separate.h */,
 				42C5B6932142699B00563794 /* SXHeadLine.m */,
 				42C5B6942142699B00563794 /* SXColorGradientView.h */,
-				42C5B6952142699B00563794 /* UIColor+Wonderful.m */,
 				42C5B6962142699B00563794 /* UILabel+Wonderful.h */,
 				42C5B6972142699B00563794 /* SXColorLabel.m */,
 				42C5B6982142699B00563794 /* SXMarquee.m */,
 				42C5B6992142699B00563794 /* SXHeadLine.h */,
 				42C5B69A2142699B00563794 /* UIColor+Separate.m */,
 				42C5B69B2142699B00563794 /* UILabel+Wonderful.m */,
-				42C5B69C2142699B00563794 /* UIColor+Wonderful.h */,
 				42C5B69D2142699B00563794 /* SXColorGradientView.m */,
 			);
 			path = Wonderful;
@@ -4780,6 +4785,7 @@
 				429CB151210436960063A0D8 /* 30.JPG in Resources */,
 				429CB134210436960063A0D8 /* 10.JPG in Resources */,
 				4238B92E2125547F00AF272E /* img1.jpg in Resources */,
+				42204D76215CB941002447BF /* Images.xcassets in Resources */,
 				429CB195210436960063A0D8 /* 29_full.JPG in Resources */,
 				429CB182210436960063A0D8 /* 05.jpg in Resources */,
 				429CB0FB210436960063A0D8 /* pageControlDot@3x.png in Resources */,
@@ -5557,6 +5563,7 @@
 			baseConfigurationReference = 80C7864567D28FF1398761C7 /* Pods-UIGracefulWriting.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MQBF47L68X;
@@ -5578,6 +5585,7 @@
 			baseConfigurationReference = 738B0AD82298246E9B0FD270 /* Pods-UIGracefulWriting.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MQBF47L68X;
