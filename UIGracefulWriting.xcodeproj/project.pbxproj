@@ -551,6 +551,7 @@
 		42CB7E8A213939C3003397FB /* UIAlertView+RWBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E84213939C1003397FB /* UIAlertView+RWBlock.m */; };
 		42CB7E8B213939C3003397FB /* RWBasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E85213939C1003397FB /* RWBasicTableViewCell.m */; };
 		42CB7E8C213939C3003397FB /* MemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E89213939C3003397FB /* MemoTableViewController.m */; };
+		42CFD901215DCB45005792BD /* IPhoneDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD900215DCB45005792BD /* IPhoneDeviceInfo.m */; };
 		42EFA82F2109BBBD00AFC827 /* TabView_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA82E2109BBBD00AFC827 /* TabView_1_ViewController.m */; };
 		42EFA8322109BBCC00AFC827 /* TabView_2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8312109BBCC00AFC827 /* TabView_2_ViewController.m */; };
 		42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8342109BBD800AFC827 /* TabView_3_ViewController.m */; };
@@ -1570,6 +1571,8 @@
 		42CB7E87213939C2003397FB /* RWBasicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWBasicTableViewCell.h; sourceTree = "<group>"; };
 		42CB7E88213939C3003397FB /* MemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoTableViewController.h; sourceTree = "<group>"; };
 		42CB7E89213939C3003397FB /* MemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoTableViewController.m; sourceTree = "<group>"; };
+		42CFD8FF215DCB45005792BD /* IPhoneDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPhoneDeviceInfo.h; sourceTree = "<group>"; };
+		42CFD900215DCB45005792BD /* IPhoneDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPhoneDeviceInfo.m; sourceTree = "<group>"; };
 		42EFA82D2109BBBD00AFC827 /* TabView_1_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabView_1_ViewController.h; sourceTree = "<group>"; };
 		42EFA82E2109BBBD00AFC827 /* TabView_1_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabView_1_ViewController.m; sourceTree = "<group>"; };
 		42EFA8302109BBCC00AFC827 /* TabView_2_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabView_2_ViewController.h; sourceTree = "<group>"; };
@@ -3663,6 +3666,8 @@
 				42BB66EB20D1231A007BE2CF /* ViewController.m */,
 				42BF815B211A79680090E612 /* Common_ViewController.h */,
 				42BF815C211A79680090E612 /* Common_ViewController.m */,
+				42CFD8FF215DCB45005792BD /* IPhoneDeviceInfo.h */,
+				42CFD900215DCB45005792BD /* IPhoneDeviceInfo.m */,
 				42789C5D2154EC5400F85994 /* IPhoneSize.h */,
 				42204D77215CC1F7002447BF /* IPhoneColor.h */,
 				42789C5E2154EEAA00F85994 /* CommonMethod.h */,
@@ -5211,6 +5216,7 @@
 				42B573C8213FC1FE0089CFDF /* ChildFourthPopGestureVC.m in Sources */,
 				422788A92145F431002B9C13 /* JXCategoryBaseView.m in Sources */,
 				429CB119210436960063A0D8 /* SDImageCacheConfig.m in Sources */,
+				42CFD901215DCB45005792BD /* IPhoneDeviceInfo.m in Sources */,
 				429CB11C210436960063A0D8 /* UIButton+WebCache.m in Sources */,
 				42C7838E213CC45B0012188E /* FeedItemSectionController.m in Sources */,
 				42C7838C213CC45B0012188E /* DemoSectionController.m in Sources */,
