@@ -25,10 +25,7 @@
 #import "IPhoneColor.h"
 #import "IPhoneDeviceInfo.h"
 
-// 颜色
-#define LBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
-#define LBRandomColor LBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
-#define MainColor [UIColor colorWithRed:1.000 green:0.580 blue:0.302 alpha:1.000];
+
 
 // 强弱引用
 #define GJWeakSelf  __weak typeof(self) weakSelf = self;

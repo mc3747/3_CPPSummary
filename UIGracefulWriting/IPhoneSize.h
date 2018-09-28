@@ -76,5 +76,6 @@
 #define IS_IPHONE_XMax (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height == 896.0)
 
 /**机型判断方法4：device model来判断******/
+    // 见iphoneDeviceInfo类
 
 #endif /* IphoneSize_h */

@@ -8,6 +8,9 @@ PODS:
   - JSONModel (1.7.0)
   - LEEAlert (1.1.8)
   - Masonry (1.1.0)
+  - SDWebImage (4.4.1):
+    - SDWebImage/Core (= 4.4.1)
+  - SDWebImage/Core (4.4.1)
   - SVProgressHUD (2.2.5)
   - TYAttributedLabel (2.6.6)
 
@@ -17,6 +20,7 @@ DEPENDENCIES:
   - JSONModel
   - LEEAlert
   - Masonry
+  - SDWebImage
   - SVProgressHUD
   - TYAttributedLabel (~> 2.6.2)
 
@@ -27,6 +31,7 @@ SPEC REPOS:
     - JSONModel
     - LEEAlert
     - Masonry
+    - SDWebImage
     - SVProgressHUD
     - TYAttributedLabel
 
@@ -36,9 +41,10 @@ SPEC CHECKSUMS:
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   LEEAlert: e264af2c9bffd1dbf95d56c9f3df53fba52443c2
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 47e9b5b925cbce75946c23f0c42dd19464189af4
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
 
-PODFILE CHECKSUM: e68f790833eecafb357340a8dd201b831a95f39b
+PODFILE CHECKSUM: d3e3d499a1fed041eaafcfb2550321eeb6c29eca
 
 COCOAPODS: 1.5.0.beta.1
