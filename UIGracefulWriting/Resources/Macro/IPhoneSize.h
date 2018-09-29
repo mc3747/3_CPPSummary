@@ -19,18 +19,18 @@
 
 /**常用屏幕宽高******************************/
 
-#define IS_IPHONE_Serial (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height >= 812.0)
+#define IS_IPHONEX_Serial (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height >= 812.0)
 // top安全高度
-#define Top_SafeArea_HEIGHT (IS_IPHONE_Serial ? 24.f : 0.f)
+#define Top_SafeArea_HEIGHT (IS_IPHONEX_Serial ? 24.f : 0.f)
 // 状态栏高度
-#define STATUS_BAR_HEIGHT (IS_IPHONE_Serial ? 44.f : 20.f)
+#define STATUS_BAR_HEIGHT (IS_IPHONEX_Serial ? 44.f : 20.f)
 // 导航栏高度
-#define NAVIGATION_BAR_HEIGHT (IS_IPHONE_Serial ? (64.f + 24.f): 64.f)
+#define NAVIGATION_BAR_HEIGHT (IS_IPHONEX_Serial ? (64.f + 24.f): 64.f)
 
 // tabBar高度
-#define TAB_BAR_HEIGHT (IS_IPHONE_Serial ? (49.f+34.f) : 49.f)
+#define TAB_BAR_HEIGHT (IS_IPHONEX_Serial ? (49.f+34.f) : 49.f)
 // bottom安全高度
-#define Bottom_SafeArea_HEIGHT (IS_IPHONE_Serial ? 34.f : 0.f)
+#define Bottom_SafeArea_HEIGHT (IS_IPHONEX_Serial ? 34.f : 0.f)
 
 
 /**机型判断方法1：currentMode来判断******/

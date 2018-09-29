@@ -24,7 +24,7 @@
 #import "IPhoneSize.h"
 #import "IPhoneColor.h"
 #import "IPhoneDeviceInfo.h"
-
+#import "CommonMethod.h"
 
 
 // 强弱引用

@@ -174,4 +174,67 @@
     return deviceModel;
 }
 
+#pragma mark - app的版本
++ (NSString *)appVersion
+{
+    NSDictionary *infoDic = [[NSBundle mainBundle] infoDictionary];
+    NSString *appVersion = [infoDic objectForKey:@"CFBundleShortVersionString"];
+    
+    return appVersion;
+}
+
+#pragma mark -  获取网络状态
++ (NSString *)getNetWorkStates
+{
+    UIApplication *app = [UIApplication sharedApplication];
+    UIView *statusBar = [app valueForKeyPath:@"statusBar"];
+    if (IS_IPHONEX_Serial) {
+        statusBar = [[app valueForKeyPath:@"statusBar"] valueForKeyPath:@"statusBar"];
+    }
+    NSArray *children = [[statusBar valueForKeyPath:@"foregroundView"] subviews];
+    NSString *state = [[NSString alloc] init];
+    int netType = 0;
+    //获取到网络返回码
+    for (id child in children) {
+        //根据状态选择
+        if([[UIDevice currentDevice].systemVersion floatValue] >= 8.0f) {
+            
+            if ([((UIView *)child).description containsString:@"VPN"]) {
+                state = @"VPN";
+                break;
+            }
+        }
+        if ([child isKindOfClass:NSClassFromString(@"UIStatusBarDataNetworkItemView")]) {
+            //获取到状态栏
+            netType = [[child valueForKeyPath:@"dataNetworkType"] intValue];
+            
+            switch (netType) {
+                case 0:
+                    state = @"无网络连接/或者连接wifi-网络不通";
+                    //无网模式
+                    break;
+                case 1:
+                    state =  @"2G";
+                    break;
+                case 2:
+                    state =  @"3G";
+                    break;
+                case 3:
+                    state =   @"4G";
+                    break;
+                case 5:
+                {
+                    state =  @"wifi";
+                }
+                    break;
+                default:
+                    state = @"网络状态获取失败";
+                    break;
+            }
+        }
+        
+    }
+    
+    return state;
+}
 @end

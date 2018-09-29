@@ -19,6 +19,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 //根据device model来获取设备信息
 +(NSString *) deviceModel;
+
+//系统版本
++ (NSString *)appVersion;
+
+//获取网络状态信息
++ (NSString *)getNetWorkStates;
 @end
 
 NS_ASSUME_NONNULL_END
