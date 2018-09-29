@@ -295,6 +295,18 @@
 		42C4DEFC215F108D00247949 /* JKCountDownLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DEFA215F108D00247949 /* JKCountDownLable.m */; };
 		42C4DF01215F138D00247949 /* JKCountDownDateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DEFE215F138C00247949 /* JKCountDownDateButton.m */; };
 		42C4DF02215F138D00247949 /* JKCountDownNumberButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DF00215F138D00247949 /* JKCountDownNumberButton.m */; };
+		42C4DF20215F2B3000247949 /* TABMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DF06215F2B2F00247949 /* TABMethod.m */; };
+		42C4DF21215F2B3000247949 /* UITableView+Animated.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DF07215F2B2F00247949 /* UITableView+Animated.m */; };
+		42C4DF22215F2B3000247949 /* TABViewAnimated.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DF08215F2B2F00247949 /* TABViewAnimated.m */; };
+		42C4DF23215F2B3000247949 /* UIView+Animated.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DF0A215F2B2F00247949 /* UIView+Animated.m */; };
+		42C4DF24215F2B3000247949 /* UIView+TABLayerout.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DF0C215F2B2F00247949 /* UIView+TABLayerout.m */; };
+		42C4DF25215F2B3000247949 /* UITableViewCell+Animated.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DF11215F2B2F00247949 /* UITableViewCell+Animated.m */; };
+		42C4DF26215F2B3000247949 /* NoDataTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DF13215F2B2F00247949 /* NoDataTableViewVC.m */; };
+		42C4DF27215F2B3000247949 /* TestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DF17215F2B3000247949 /* TestTableViewCell.m */; };
+		42C4DF28215F2B3000247949 /* TestHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DF18215F2B3000247949 /* TestHeadView.m */; };
+		42C4DF29215F2B3000247949 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42C4DF1B215F2B3000247949 /* test.jpg */; };
+		42C4DF2A215F2B3000247949 /* head.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42C4DF1C215F2B3000247949 /* head.jpg */; };
+		42C4DF2B215F2B3000247949 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DF1E215F2B3000247949 /* Game.m */; };
 		42C519DC211C3E3500742239 /* XMGDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C519D9211C3E3400742239 /* XMGDeal.m */; };
 		42C519DD211C3E3500742239 /* XMGDealCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C519DA211C3E3400742239 /* XMGDealCell.m */; };
 		42C519DF211C3E5400742239 /* deals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42C519DE211C3E5400742239 /* deals.plist */; };
@@ -1061,6 +1073,29 @@
 		42C4DEFE215F138C00247949 /* JKCountDownDateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCountDownDateButton.m; sourceTree = "<group>"; };
 		42C4DEFF215F138D00247949 /* JKCountDownDateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCountDownDateButton.h; sourceTree = "<group>"; };
 		42C4DF00215F138D00247949 /* JKCountDownNumberButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCountDownNumberButton.m; sourceTree = "<group>"; };
+		42C4DF05215F2B2F00247949 /* UIView+TABLayerout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TABLayerout.h"; sourceTree = "<group>"; };
+		42C4DF06215F2B2F00247949 /* TABMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABMethod.m; sourceTree = "<group>"; };
+		42C4DF07215F2B2F00247949 /* UITableView+Animated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Animated.m"; sourceTree = "<group>"; };
+		42C4DF08215F2B2F00247949 /* TABViewAnimated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TABViewAnimated.m; sourceTree = "<group>"; };
+		42C4DF09215F2B2F00247949 /* UITableViewCell+Animated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+Animated.h"; sourceTree = "<group>"; };
+		42C4DF0A215F2B2F00247949 /* UIView+Animated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animated.m"; sourceTree = "<group>"; };
+		42C4DF0B215F2B2F00247949 /* TABMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABMethod.h; sourceTree = "<group>"; };
+		42C4DF0C215F2B2F00247949 /* UIView+TABLayerout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TABLayerout.m"; sourceTree = "<group>"; };
+		42C4DF0D215F2B2F00247949 /* UITableView+Animated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Animated.h"; sourceTree = "<group>"; };
+		42C4DF0E215F2B2F00247949 /* TABAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABAnimated.h; sourceTree = "<group>"; };
+		42C4DF0F215F2B2F00247949 /* UIView+Animated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animated.h"; sourceTree = "<group>"; };
+		42C4DF10215F2B2F00247949 /* TABViewAnimated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TABViewAnimated.h; sourceTree = "<group>"; };
+		42C4DF11215F2B2F00247949 /* UITableViewCell+Animated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+Animated.m"; sourceTree = "<group>"; };
+		42C4DF13215F2B2F00247949 /* NoDataTableViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoDataTableViewVC.m; sourceTree = "<group>"; };
+		42C4DF14215F2B2F00247949 /* NoDataTableViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoDataTableViewVC.h; sourceTree = "<group>"; };
+		42C4DF16215F2B3000247949 /* TestHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestHeadView.h; sourceTree = "<group>"; };
+		42C4DF17215F2B3000247949 /* TestTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewCell.m; sourceTree = "<group>"; };
+		42C4DF18215F2B3000247949 /* TestHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestHeadView.m; sourceTree = "<group>"; };
+		42C4DF19215F2B3000247949 /* TestTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewCell.h; sourceTree = "<group>"; };
+		42C4DF1B215F2B3000247949 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		42C4DF1C215F2B3000247949 /* head.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = head.jpg; sourceTree = "<group>"; };
+		42C4DF1E215F2B3000247949 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		42C4DF1F215F2B3000247949 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		42C519D8211C3E3400742239 /* XMGDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDeal.h; sourceTree = "<group>"; };
 		42C519D9211C3E3400742239 /* XMGDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDeal.m; sourceTree = "<group>"; };
 		42C519DA211C3E3400742239 /* XMGDealCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDealCell.m; sourceTree = "<group>"; };
@@ -2195,6 +2230,7 @@
 				42C5B6762142690300563794 /* #21_好用的颜色 */,
 				4200C87A2159CABA00FCD77D /* #22_跳转过渡页 */,
 				42CFD940215E1DF8005792BD /* #23_启动页 */,
+				42C4DF03215F2A6C00247949 /* #24_无数据动画tableview */,
 			);
 			path = "2，UI轮子";
 			sourceTree = "<group>";
@@ -3092,6 +3128,76 @@
 				42C4DEFA215F108D00247949 /* JKCountDownLable.m */,
 			);
 			path = "3,倒计时label";
+			sourceTree = "<group>";
+		};
+		42C4DF03215F2A6C00247949 /* #24_无数据动画tableview */ = {
+			isa = PBXGroup;
+			children = (
+				42C4DF12215F2B2F00247949 /* Controller */,
+				42C4DF1A215F2B3000247949 /* Images */,
+				42C4DF1D215F2B3000247949 /* Model */,
+				42C4DF04215F2B2F00247949 /* TABAnimated */,
+				42C4DF15215F2B3000247949 /* View */,
+			);
+			path = "#24_无数据动画tableview";
+			sourceTree = "<group>";
+		};
+		42C4DF04215F2B2F00247949 /* TABAnimated */ = {
+			isa = PBXGroup;
+			children = (
+				42C4DF0E215F2B2F00247949 /* TABAnimated.h */,
+				42C4DF05215F2B2F00247949 /* UIView+TABLayerout.h */,
+				42C4DF0C215F2B2F00247949 /* UIView+TABLayerout.m */,
+				42C4DF0B215F2B2F00247949 /* TABMethod.h */,
+				42C4DF06215F2B2F00247949 /* TABMethod.m */,
+				42C4DF09215F2B2F00247949 /* UITableViewCell+Animated.h */,
+				42C4DF11215F2B2F00247949 /* UITableViewCell+Animated.m */,
+				42C4DF0D215F2B2F00247949 /* UITableView+Animated.h */,
+				42C4DF07215F2B2F00247949 /* UITableView+Animated.m */,
+				42C4DF10215F2B2F00247949 /* TABViewAnimated.h */,
+				42C4DF08215F2B2F00247949 /* TABViewAnimated.m */,
+				42C4DF0F215F2B2F00247949 /* UIView+Animated.h */,
+				42C4DF0A215F2B2F00247949 /* UIView+Animated.m */,
+			);
+			path = TABAnimated;
+			sourceTree = "<group>";
+		};
+		42C4DF12215F2B2F00247949 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42C4DF14215F2B2F00247949 /* NoDataTableViewVC.h */,
+				42C4DF13215F2B2F00247949 /* NoDataTableViewVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42C4DF15215F2B3000247949 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42C4DF19215F2B3000247949 /* TestTableViewCell.h */,
+				42C4DF17215F2B3000247949 /* TestTableViewCell.m */,
+				42C4DF16215F2B3000247949 /* TestHeadView.h */,
+				42C4DF18215F2B3000247949 /* TestHeadView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42C4DF1A215F2B3000247949 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				42C4DF1B215F2B3000247949 /* test.jpg */,
+				42C4DF1C215F2B3000247949 /* head.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		42C4DF1D215F2B3000247949 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42C4DF1F215F2B3000247949 /* Game.h */,
+				42C4DF1E215F2B3000247949 /* Game.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		42C5B46B21422C9200563794 /* 3，TextKit系列 */ = {
@@ -4032,6 +4138,7 @@
 				422789392145F539002B9C13 /* Switch4_ViewController.storyboard in Resources */,
 				42C783C4213CCB6A0012188E /* YZSortCell.xib in Resources */,
 				42C5B6F621426E9800563794 /* WonderfulColor.storyboard in Resources */,
+				42C4DF2A215F2B3000247949 /* head.jpg in Resources */,
 				42BF8181211A88680090E612 /* region_list.json in Resources */,
 				429CB0FE210436960063A0D8 /* h2.jpg in Resources */,
 				42C78392213CC45B0012188E /* Demo.storyboard in Resources */,
@@ -4044,6 +4151,7 @@
 				42C787E5213D2BC60012188E /* SGImagePositionVC.xib in Resources */,
 				42C51A2B211C456A00742239 /* XMGStatusCell.xib in Resources */,
 				42C787E0213D2BB10012188E /* SGEventVC.xib in Resources */,
+				42C4DF29215F2B3000247949 /* test.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4135,6 +4243,7 @@
 				422788A02145F431002B9C13 /* JXCategoryImageView.m in Sources */,
 				42BF81AE211A89D90090E612 /* CQDetailViewController.m in Sources */,
 				425901142140BE7700304394 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				42C4DF25215F2B3000247949 /* UITableViewCell+Animated.m in Sources */,
 				426707452121325B00046FE6 /* ExampleDynamicHeightCell.m in Sources */,
 				422789212145F44F002B9C13 /* JXPagingListContainerView.m in Sources */,
 				42C5B4C921422F5300563794 /* AttributedLabelCell.m in Sources */,
@@ -4170,6 +4279,7 @@
 				42C787E4213D2BC60012188E /* SGImagePositionVC.m in Sources */,
 				426707462121325B00046FE6 /* ExampleFooterView.m in Sources */,
 				4242B958212A959B00C3A2C5 /* IconFontViewController.m in Sources */,
+				42C4DF28215F2B3000247949 /* TestHeadView.m in Sources */,
 				429CB1B5210436960063A0D8 /* Demo1ViewController.m in Sources */,
 				4259010B2140BDE400304394 /* SignFinishView.m in Sources */,
 				42C7836E213CC45B0012188E /* InteractiveCell.m in Sources */,
@@ -4195,6 +4305,7 @@
 				429CB1B0210436960063A0D8 /* Demo3HeaderView.m in Sources */,
 				42C5B6AE2142699B00563794 /* UILabel+Wonderful.m in Sources */,
 				4227892A2145F44F002B9C13 /* IndicatorCustomizeViewController.m in Sources */,
+				42C4DF20215F2B3000247949 /* TABMethod.m in Sources */,
 				42C519DD211C3E3500742239 /* XMGDealCell.m in Sources */,
 				429CB1AE210436960063A0D8 /* YYCell.m in Sources */,
 				42B182652106C72300C1E682 /* NarikoTextField.m in Sources */,
@@ -4235,6 +4346,7 @@
 				42C51A27211C445D00742239 /* XMGStatus.m in Sources */,
 				422788AB2145F431002B9C13 /* JXCategoryBaseCellModel.m in Sources */,
 				426707302121301400046FE6 /* UIView+CCUtil.m in Sources */,
+				42C4DF24215F2B3000247949 /* UIView+TABLayerout.m in Sources */,
 				426707362121301400046FE6 /* CCTableDataItem.m in Sources */,
 				429CB1AC210436960063A0D8 /* YYNews.m in Sources */,
 				42C5B69E2142699B00563794 /* SXCLEntity.m in Sources */,
@@ -4299,6 +4411,7 @@
 				42C78398213CC4970012188E /* NSArray+Number.m in Sources */,
 				42B573DF213FC1FE0089CFDF /* SGPageContentScrollView.m in Sources */,
 				42B1826A2106C72300C1E682 /* BetaNaoTextField.m in Sources */,
+				42C4DF22215F2B3000247949 /* TABViewAnimated.m in Sources */,
 				42CB7E7B21391F3F003397FB /* UIView+Frame.m in Sources */,
 				42C5B48721422D4500563794 /* DetailViewController.m in Sources */,
 				42BF8155211A75010090E612 /* UIView+Gradient.m in Sources */,
@@ -4345,10 +4458,13 @@
 				422789352145F44F002B9C13 /* JXCategoryTitleAttributeCellModel.m in Sources */,
 				42C7834E213CC45B0012188E /* DayViewModel.m in Sources */,
 				429CB107210436960063A0D8 /* TAPageControl.m in Sources */,
+				42C4DF23215F2B3000247949 /* UIView+Animated.m in Sources */,
 				42CB7E7E21391F3F003397FB /* HtmlViewController.m in Sources */,
 				42B573C2213FC1FE0089CFDF /* DefaultZoomVC.m in Sources */,
 				4238B93621255B7F00AF272E /* ScreenBlurry.m in Sources */,
+				42C4DF27215F2B3000247949 /* TestTableViewCell.m in Sources */,
 				4227892B2145F44F002B9C13 /* LoadDataListBaseViewController.m in Sources */,
+				42C4DF2B215F2B3000247949 /* Game.m in Sources */,
 				42B573C0213FC1FE0089CFDF /* DefaultScrollVC.m in Sources */,
 				429CB1A6210436960063A0D8 /* LeftViewController.m in Sources */,
 				4242B93D212A72C400C3A2C5 /* YZWYViewController.m in Sources */,
@@ -4376,6 +4492,7 @@
 				42C78391213CC45B0012188E /* RemoveSectionController.m in Sources */,
 				429CB1B3210436960063A0D8 /* Demo4ViewController.m in Sources */,
 				429CB0F0210436960063A0D8 /* CustomBannerScrollView.m in Sources */,
+				42C4DF21215F2B3000247949 /* UITableView+Animated.m in Sources */,
 				42BF8198211A88BB0090E612 /* CQCategoryItemModel.m in Sources */,
 				4242B950212A72D800C3A2C5 /* UIView+Frame.m in Sources */,
 				42C5B69F2142699B00563794 /* SXColorListCell.m in Sources */,
@@ -4445,6 +4562,7 @@
 				42C7837F213CC45B0012188E /* SpinnerCell.m in Sources */,
 				42C5B4BA21422F5300563794 /* AddViewTextViewController.m in Sources */,
 				4242B94E212A72D800C3A2C5 /* YZDisplayTitleLabel.m in Sources */,
+				42C4DF26215F2B3000247949 /* NoDataTableViewVC.m in Sources */,
 				4227892D2145F44F002B9C13 /* NaviSegmentedControlViewController.m in Sources */,
 				42C78367213CC45B0012188E /* SupplementaryViewController.m in Sources */,
 				42C5B4CA21422F5300563794 /* TPKeyboardAvoidingScrollView.m in Sources */,

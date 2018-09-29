@@ -212,13 +212,13 @@
     
     dispatch_source_set_event_handler(_timer, ^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            if (_count >= _remain) {
-                dispatch_source_cancel(_timer);
+            if (self->_count >= self->_remain) {
+                dispatch_source_cancel(self->_timer);
                 self.viewLayer.strokeStart = 1;
                 [self dismiss];                         // 关闭界面
             } else {
                 self.viewLayer.strokeStart += 0.01;
-                _count++;                               //剩余时间进行自加
+                self->_count++;                               //剩余时间进行自加
             }
         });
     });
@@ -237,12 +237,12 @@
     
     dispatch_source_set_event_handler(_timer, ^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            if (_duration <= 0) {
-                dispatch_source_cancel(_timer);
+            if (self->_duration <= 0) {
+                dispatch_source_cancel(self->_timer);
                 [self dismiss];                         // 关闭界面
             } else {
-                [self showSkipBtnTitleTime:_duration];
-                _duration--;
+                [self showSkipBtnTitleTime:self->_duration];
+                self->_duration--;
             }
         });
     });
@@ -260,14 +260,14 @@
     dispatch_source_set_timer(_timerWait, dispatch_walltime(NULL, 0), 1.0 * NSEC_PER_SEC, 0);
     
     dispatch_source_set_event_handler(_timerWait, ^{
-        if (_waitTime <= 0) {
-            _flag = YES;
-            dispatch_source_cancel(_timerWait);
+        if (self->_waitTime <= 0) {
+            self->_flag = YES;
+            dispatch_source_cancel(self->_timerWait);
             dispatch_async(dispatch_get_main_queue(), ^{
                 [self dismiss];                         // 关闭界面
             });
         } else {
-            _waitTime--;
+            self->_waitTime--;
         }
     });
     dispatch_resume(_timerWait);
