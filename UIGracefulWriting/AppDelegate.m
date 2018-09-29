@@ -51,7 +51,7 @@
 - (void)addADView {
     WCYADImageView *adView = [[WCYADImageView alloc] init];
     adView.duration = 5;
-    adView.waitTime = 1;
+    adView.waitTime = 0.5f;
     adView.skipType = SkipButtonTypeCircleAnimationTest;
     [adView reloadAdImageWithUrl: @"http://s8.mogucdn.com/p2/170223/28n_4eb3la6b6b0h78c23d2kf65dj1a92_750x1334.jpg"];
     adView.adImageTapBlock = ^(NSString *content) {

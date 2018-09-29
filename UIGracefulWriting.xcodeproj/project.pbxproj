@@ -292,6 +292,9 @@
 		42BF81AE211A89D90090E612 /* CQDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A2211A89D90090E612 /* CQDetailViewController.m */; };
 		42BF81AF211A89D90090E612 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A7211A89D90090E612 /* UIView+Util.m */; };
 		42BF81B0211A89D90090E612 /* UIView+FrameHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A8211A89D90090E612 /* UIView+FrameHelper.m */; };
+		42C4DEFC215F108D00247949 /* JKCountDownLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DEFA215F108D00247949 /* JKCountDownLable.m */; };
+		42C4DF01215F138D00247949 /* JKCountDownDateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DEFE215F138C00247949 /* JKCountDownDateButton.m */; };
+		42C4DF02215F138D00247949 /* JKCountDownNumberButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DF00215F138D00247949 /* JKCountDownNumberButton.m */; };
 		42C519DC211C3E3500742239 /* XMGDeal.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C519D9211C3E3400742239 /* XMGDeal.m */; };
 		42C519DD211C3E3500742239 /* XMGDealCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C519DA211C3E3400742239 /* XMGDealCell.m */; };
 		42C519DF211C3E5400742239 /* deals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42C519DE211C3E5400742239 /* deals.plist */; };
@@ -1052,6 +1055,12 @@
 		42BF81AA211A89D90090E612 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
 		42BF81AB211A89D90090E612 /* UIView+FrameHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameHelper.h"; sourceTree = "<group>"; };
 		42BF81B1211A8B0C0090E612 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		42C4DEFA215F108D00247949 /* JKCountDownLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCountDownLable.m; sourceTree = "<group>"; };
+		42C4DEFB215F108D00247949 /* JKCountDownLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCountDownLable.h; sourceTree = "<group>"; };
+		42C4DEFD215F138C00247949 /* JKCountDownNumberButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCountDownNumberButton.h; sourceTree = "<group>"; };
+		42C4DEFE215F138C00247949 /* JKCountDownDateButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCountDownDateButton.m; sourceTree = "<group>"; };
+		42C4DEFF215F138D00247949 /* JKCountDownDateButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCountDownDateButton.h; sourceTree = "<group>"; };
+		42C4DF00215F138D00247949 /* JKCountDownNumberButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCountDownNumberButton.m; sourceTree = "<group>"; };
 		42C519D8211C3E3400742239 /* XMGDeal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMGDeal.h; sourceTree = "<group>"; };
 		42C519D9211C3E3400742239 /* XMGDeal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDeal.m; sourceTree = "<group>"; };
 		42C519DA211C3E3400742239 /* XMGDealCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMGDealCell.m; sourceTree = "<group>"; };
@@ -2475,16 +2484,10 @@
 		429CB1BD21043C3E0063A0D8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				42B182822106D83700C1E682 /* UIView+Extension.h */,
-				42B182832106D83700C1E682 /* UIView+Extension.m */,
-				429CB1BF21043C3E0063A0D8 /* UIControl+Category.m */,
-				429CB1C121043C3E0063A0D8 /* UIControl+Category.h */,
-				429CB1BE21043C3E0063A0D8 /* UIImage+Category.m */,
-				429CB1C021043C3E0063A0D8 /* UIImage+Category.h */,
-				42B573EB213FD11C0089CFDF /* UIButton+Category.h */,
-				42B573EC213FD11C0089CFDF /* UIButton+Category.m */,
-				42CFD902215E008C005792BD /* UIColor+Category.h */,
-				42CFD903215E008C005792BD /* UIColor+Category.m */,
+				42C4DEF8215F070000247949 /* CommonMethod */,
+				42C4DEF7215F06A600247949 /* Macro */,
+				42C4DEF6215F056700247949 /* Const */,
+				42C4DEF5215F053900247949 /* Category */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -2525,6 +2528,8 @@
 		42B1826D2106CA9E00C1E682 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				42BF815B211A79680090E612 /* Common_ViewController.h */,
+				42BF815C211A79680090E612 /* Common_ViewController.m */,
 				42B1826E2106CAD200C1E682 /* TextFieldViewController.h */,
 				42B1826F2106CAD200C1E682 /* TextFieldViewController.m */,
 				42981CE52105C4DF0052CCC3 /* CommonViewController.h */,
@@ -2566,6 +2571,7 @@
 		42B1827A2106D13A00C1E682 /* #3_label相关 */ = {
 			isa = PBXGroup;
 			children = (
+				42C4DEF9215F105D00247949 /* 3,倒计时label */,
 				42B1827B2106D13A00C1E682 /* 1,可点击label */,
 				42CB7E6421391C77003397FB /* 2,文字调整边距label */,
 			);
@@ -2826,14 +2832,6 @@
 				429CB1BD21043C3E0063A0D8 /* Resources */,
 				42BB66EA20D1231A007BE2CF /* ViewController.h */,
 				42BB66EB20D1231A007BE2CF /* ViewController.m */,
-				42BF815B211A79680090E612 /* Common_ViewController.h */,
-				42BF815C211A79680090E612 /* Common_ViewController.m */,
-				42CFD8FF215DCB45005792BD /* IPhoneDeviceInfo.h */,
-				42CFD900215DCB45005792BD /* IPhoneDeviceInfo.m */,
-				42789C5D2154EC5400F85994 /* IPhoneSize.h */,
-				42204D77215CC1F7002447BF /* IPhoneColor.h */,
-				42789C5E2154EEAA00F85994 /* CommonMethod.h */,
-				42789C5F2154EEAB00F85994 /* CommonMethod.m */,
 				42BF81B1211A8B0C0090E612 /* PrefixHeader.pch */,
 				42204D75215CB941002447BF /* Images.xcassets */,
 				42BB66ED20D1231A007BE2CF /* Main.storyboard */,
@@ -3041,6 +3039,59 @@
 				42BF81AB211A89D90090E612 /* UIView+FrameHelper.h */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		42C4DEF5215F053900247949 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				42B182822106D83700C1E682 /* UIView+Extension.h */,
+				42B182832106D83700C1E682 /* UIView+Extension.m */,
+				429CB1BF21043C3E0063A0D8 /* UIControl+Category.m */,
+				429CB1C121043C3E0063A0D8 /* UIControl+Category.h */,
+				429CB1BE21043C3E0063A0D8 /* UIImage+Category.m */,
+				429CB1C021043C3E0063A0D8 /* UIImage+Category.h */,
+				42B573EB213FD11C0089CFDF /* UIButton+Category.h */,
+				42B573EC213FD11C0089CFDF /* UIButton+Category.m */,
+				42CFD902215E008C005792BD /* UIColor+Category.h */,
+				42CFD903215E008C005792BD /* UIColor+Category.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		42C4DEF6215F056700247949 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		42C4DEF7215F06A600247949 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				42789C5D2154EC5400F85994 /* IPhoneSize.h */,
+				42204D77215CC1F7002447BF /* IPhoneColor.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		42C4DEF8215F070000247949 /* CommonMethod */ = {
+			isa = PBXGroup;
+			children = (
+				42CFD8FF215DCB45005792BD /* IPhoneDeviceInfo.h */,
+				42CFD900215DCB45005792BD /* IPhoneDeviceInfo.m */,
+				42789C5E2154EEAA00F85994 /* CommonMethod.h */,
+				42789C5F2154EEAB00F85994 /* CommonMethod.m */,
+			);
+			path = CommonMethod;
+			sourceTree = "<group>";
+		};
+		42C4DEF9215F105D00247949 /* 3,倒计时label */ = {
+			isa = PBXGroup;
+			children = (
+				42C4DEFB215F108D00247949 /* JKCountDownLable.h */,
+				42C4DEFA215F108D00247949 /* JKCountDownLable.m */,
+			);
+			path = "3,倒计时label";
 			sourceTree = "<group>";
 		};
 		42C5B46B21422C9200563794 /* 3，TextKit系列 */ = {
@@ -3592,6 +3643,10 @@
 			children = (
 				42C787D8213D2BA40012188E /* SGCountdownVC.h */,
 				42C787D7213D2BA40012188E /* SGCountdownVC.m */,
+				42C4DEFF215F138D00247949 /* JKCountDownDateButton.h */,
+				42C4DEFE215F138C00247949 /* JKCountDownDateButton.m */,
+				42C4DEFD215F138C00247949 /* JKCountDownNumberButton.h */,
+				42C4DF00215F138D00247949 /* JKCountDownNumberButton.m */,
 				42C787D9213D2BA50012188E /* SGCountdownVC.xib */,
 				42C787D4213D2B660012188E /* UIButton+SGCountdown.h */,
 				42C787D5213D2B670012188E /* UIButton+SGCountdown.m */,
@@ -4308,6 +4363,8 @@
 				422788A92145F431002B9C13 /* JXCategoryBaseView.m in Sources */,
 				42CFD901215DCB45005792BD /* IPhoneDeviceInfo.m in Sources */,
 				42C7838E213CC45B0012188E /* FeedItemSectionController.m in Sources */,
+				42C4DF01215F138D00247949 /* JKCountDownDateButton.m in Sources */,
+				42C4DEFC215F108D00247949 /* JKCountDownLable.m in Sources */,
 				42C7838C213CC45B0012188E /* DemoSectionController.m in Sources */,
 				422788A62145F431002B9C13 /* JXCategoryFactory.m in Sources */,
 				422788962145F431002B9C13 /* JXCategoryIndicatorView.m in Sources */,
@@ -4354,6 +4411,7 @@
 				42BF81B0211A89D90090E612 /* UIView+FrameHelper.m in Sources */,
 				422789332145F44F002B9C13 /* AttributeViewViewController.m in Sources */,
 				422789262145F44F002B9C13 /* ListViewController.m in Sources */,
+				42C4DF02215F138D00247949 /* JKCountDownNumberButton.m in Sources */,
 				422788942145F431002B9C13 /* JXCategoryIndicatorCellModel.m in Sources */,
 				42B1828B2107105800C1E682 /* UIButton+category2.m in Sources */,
 				42BF8161211A808C0090E612 /* UILabel+MoneyAnimation.m in Sources */,

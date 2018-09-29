@@ -13,23 +13,88 @@
 @property (nonatomic, weak) UILabel *countDownLabel;
 @property (nonatomic, strong) NSTimer *timer;
 @property (nonatomic, assign) NSInteger restTime;
+//  进度条
+@property (nonatomic,strong) UIView  *progressLine;
+
 @end
 
 @implementation Test2ViewController
-- (void)loadView {
-    [super loadView];
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor yellowColor];
+    
+//  弹出动画框
     UIView *maskView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
     maskView.backgroundColor = [UIColor whiteColor];
     [self.view bringSubviewToFront:maskView];
-     self.navigationController.navigationBar.hidden = YES;
+    self.navigationController.navigationBar.hidden = YES;
     [self addTopElements:maskView];
     [self addCenterElements:maskView];
     self.restTime = 2.f;
     self.timer = [NSTimer scheduledTimerWithTimeInterval:1.f target:self selector:@selector(updateCountDownDisplay) userInfo:nil repeats:YES];
     [self.view addSubview:maskView];
-     _maskView = maskView;
+    _maskView = maskView;
+    
+//  进度条
+    [self creatProgressLine];
+    [self startLoadingAnimation];
+    
+//   示例view
+    UIView *maskView1 = [[UIView alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
+    maskView1.backgroundColor = [UIColor blueColor];
+    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pop)];
+    [maskView1 addGestureRecognizer:gesture];
+    [self.view addSubview:maskView1];
+    
+    UIView *maskView2 = [[UIView alloc] initWithFrame:CGRectMake(150, 100, 100, 100)];
+    maskView2.backgroundColor = [UIColor orangeColor];
+    UITapGestureRecognizer *gesture2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
+    [maskView2 addGestureRecognizer:gesture2];
+    [self.view addSubview:maskView2];
+    
 }
 
+#pragma mark - 创建进度条
+- (void)creatProgressLine
+{
+    self.progressLine = [[UIView alloc] init];
+    self.progressLine.backgroundColor = [UIColor orangeColor];
+    self.progressLine.frame = CGRectMake(0, 64, 0, 3.0);
+    [self.maskView addSubview:self.progressLine];
+}
+
+#pragma mark - 进度条开始动画
+- (void)startLoadingAnimation
+{
+    GJWeakSelf;
+    [UIView animateWithDuration:0.6 animations:^{
+        weakSelf.progressLine.width = SCREEN_WIDTH * 0.55;
+    } completion:^(BOOL finished) {
+        if (finished) {
+            [UIView animateWithDuration:0.4 animations:^{
+                weakSelf.progressLine.width = SCREEN_WIDTH * 0.8;
+            }];
+        }
+    }];
+}
+
+#pragma mark - 进度条结束动画
+- (void)endLoadingAnimation
+{
+    GJWeakSelf;
+    // 延时1s避免开始动画还没结束，结束动画走起
+//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [UIView animateWithDuration:0.4 animations:^{
+            weakSelf.progressLine.width = SCREEN_WIDTH;
+        } completion:^(BOOL finished) {
+            if (finished) {
+                weakSelf.progressLine.hidden = YES;
+                weakSelf.progressLine.width = 0.0;
+            }
+        }];
+//    });
+
+}
 #pragma mark -  添加顶部界面元素
 - (void)addTopElements:(UIView *)maskView {
     
@@ -78,6 +143,7 @@
 
 #pragma mark -  消失
 - (void)dismiss:(UIView *)view {
+    [self endLoadingAnimation];
     GJWeakSelf;
 
     [UIView animateWithDuration:0.5f animations:^{
@@ -106,23 +172,6 @@
     self.timer = nil;
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    self.view.backgroundColor = [UIColor yellowColor];
-    
-    UIView *maskView = [[UIView alloc] initWithFrame:CGRectMake(0, 100, 100, 100)];
-    maskView.backgroundColor = [UIColor blueColor];
-    UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(pop)];
-    [maskView addGestureRecognizer:gesture];
-    [self.view addSubview:maskView];
-    
-    UIView *maskView2 = [[UIView alloc] initWithFrame:CGRectMake(150, 100, 100, 100)];
-    maskView2.backgroundColor = [UIColor orangeColor];
-    UITapGestureRecognizer *gesture2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
-    [maskView2 addGestureRecognizer:gesture2];
-    [self.view addSubview:maskView2];
-    
-}
 
 - (void)tap {
     [self.navigationController popToRootViewControllerAnimated:YES];

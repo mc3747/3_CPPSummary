@@ -9,6 +9,7 @@
 #import "SGCountdownVC.h"
 #import "UIButton+SGCountdown.h"
 #import "UIButton+SGImagePosition.h"
+#import "JKCountDownDateButton.h"
 
 @interface SGCountdownVC ()
 
@@ -18,8 +19,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+    JKCountDownDateButton *countDownBtn = [[JKCountDownDateButton alloc] initWithFrame:CGRectMake(50, 300, 300, 50)];
+    [countDownBtn setBackgroundColor:LBRandomColor];
+    countDownBtn.titleLabel.textColor = [UIColor orangeColor];
+    countDownBtn.titleLabel.text  = @"00 : 00 : 00 : 00";
+    [countDownBtn countDownWithDate:[NSDate dateWithTimeIntervalSinceNow:10]];
+//    变化
+    [countDownBtn countDownChanging:^NSString *(JKCountDownDateButton *countDownLable, NSDate *endTime, NSTimeInterval seconds, NSDictionary *DHMSInfo, NSString *defaultText) {
+        //自己格式化
+        NSInteger D = [[DHMSInfo objectForKey:@"D"] integerValue];
+        NSInteger H = [[DHMSInfo objectForKey:@"H"] integerValue];
+        NSInteger M = [[DHMSInfo objectForKey:@"M"] integerValue];
+        NSInteger S = [[DHMSInfo objectForKey:@"S"] integerValue];
+        
+        return [NSString stringWithFormat:@"%0.2zd : %0.2zd : %0.2zd : %0.2zd",D, H,M,S];
+    }];
+    
+//    结束
+    [countDownBtn countDownFinished:^NSString *(JKCountDownDateButton *countDownLable, NSDate *endTime, NSTimeInterval seconds, NSString *defaultText) {
+        [countDownLable setBackgroundColor:LBRandomColor];
+        return @"00 : 00 : 00 : 00";
+    }];
+    
+//    点击
+    [countDownBtn countDownClick:^(JKCountDownDateButton *countDownButton) {
+        NSLog(@"点击了按钮");
+    }];
+    
+    [self.view addSubview:countDownBtn];
 }
 
 - (IBAction)countdownBtn_action:(UIButton *)sender {
