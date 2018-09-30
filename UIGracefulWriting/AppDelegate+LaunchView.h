@@ -11,6 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AppDelegate (LaunchView)
+//启动图片
 -(void)initLaunchView:(UIApplication *)application WithOption:(NSDictionary *)launchOptions;
 
 @end

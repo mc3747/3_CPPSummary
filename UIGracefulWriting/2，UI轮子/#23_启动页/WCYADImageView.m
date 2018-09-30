@@ -196,8 +196,13 @@
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)];
     [self addGestureRecognizer:tap];
     CATransition *animation = [CATransition animation];
-    animation.duration = 0.2;                           //动画执行时间
-    animation.timingFunction = UIViewAnimationCurveEaseInOut;
+    animation.duration = 0.2;
+//    用下列方法会崩
+//    CAMediaTimingFunction *fn  = [CAMediaTimingFunction functionWithName:@"kCAMediaTimingFunctionEaseIn"];
+//    animation.timingFunction = fn;
+    
+    [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+    
     animation.type = kCATransitionFade;
     [self.layer addAnimation:animation forKey:@"animation"];
     
