@@ -135,6 +135,9 @@
 		42789BF3215475AB00F85994 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BF2215475AB00F85994 /* Test2ViewController.m */; };
 		42789C602154EEAB00F85994 /* CommonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789C5F2154EEAB00F85994 /* CommonMethod.m */; };
 		42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42981CE62105C4DF0052CCC3 /* CommonViewController.m */; };
+		429B14DE2160B95800F595FC /* MCDataSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B14D82160B95600F595FC /* MCDataSafety.m */; };
+		429B14DF2160B95800F595FC /* MCDataJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B14DB2160B95700F595FC /* MCDataJudge.m */; };
+		429B14E02160B95800F595FC /* MCDataConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B14DD2160B95700F595FC /* MCDataConversion.m */; };
 		429CB0F0210436960063A0D8 /* CustomBannerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CAF8E210436950063A0D8 /* CustomBannerScrollView.m */; };
 		429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CAF90210436950063A0D8 /* BannerDemoVC.m */; };
 		429CB0F2210436960063A0D8 /* TYCyclePagerViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CAF93210436950063A0D8 /* TYCyclePagerViewCell.m */; };
@@ -770,6 +773,12 @@
 		42789C5F2154EEAB00F85994 /* CommonMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonMethod.m; sourceTree = "<group>"; };
 		42981CE52105C4DF0052CCC3 /* CommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
 		42981CE62105C4DF0052CCC3 /* CommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
+		429B14D82160B95600F595FC /* MCDataSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDataSafety.m; sourceTree = "<group>"; };
+		429B14D92160B95600F595FC /* MCDataSafety.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDataSafety.h; sourceTree = "<group>"; };
+		429B14DA2160B95600F595FC /* MCDataJudge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDataJudge.h; sourceTree = "<group>"; };
+		429B14DB2160B95700F595FC /* MCDataJudge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDataJudge.m; sourceTree = "<group>"; };
+		429B14DC2160B95700F595FC /* MCDataConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDataConversion.h; sourceTree = "<group>"; };
+		429B14DD2160B95700F595FC /* MCDataConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDataConversion.m; sourceTree = "<group>"; };
 		429CAF8D210436950063A0D8 /* CustomBannerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBannerScrollView.h; sourceTree = "<group>"; };
 		429CAF8E210436950063A0D8 /* CustomBannerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBannerScrollView.m; sourceTree = "<group>"; };
 		429CAF90210436950063A0D8 /* BannerDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerDemoVC.m; sourceTree = "<group>"; };
@@ -3113,6 +3122,12 @@
 		42C4DEF8215F070000247949 /* CommonMethod */ = {
 			isa = PBXGroup;
 			children = (
+				429B14DC2160B95700F595FC /* MCDataConversion.h */,
+				429B14DD2160B95700F595FC /* MCDataConversion.m */,
+				429B14DA2160B95600F595FC /* MCDataJudge.h */,
+				429B14DB2160B95700F595FC /* MCDataJudge.m */,
+				429B14D92160B95600F595FC /* MCDataSafety.h */,
+				429B14D82160B95600F595FC /* MCDataSafety.m */,
 				42CFD8FF215DCB45005792BD /* IPhoneDeviceInfo.h */,
 				42CFD900215DCB45005792BD /* IPhoneDeviceInfo.m */,
 				42789C5E2154EEAA00F85994 /* CommonMethod.h */,
@@ -4272,6 +4287,7 @@
 				422788902145F431002B9C13 /* JXCategoryIndicatorImageView.m in Sources */,
 				42CB7E8B213939C3003397FB /* RWBasicTableViewCell.m in Sources */,
 				429CB1AB210436960063A0D8 /* Demo5ViewController.m in Sources */,
+				429B14DE2160B95800F595FC /* MCDataSafety.m in Sources */,
 				42C78352213CC45B0012188E /* MonthTitleViewModel.m in Sources */,
 				42BB66F720D1231B007BE2CF /* main.m in Sources */,
 				42B573C1213FC1FE0089CFDF /* DefaultAttributedTitleVC.m in Sources */,
@@ -4472,6 +4488,7 @@
 				42BF81AF211A89D90090E612 /* UIView+Util.m in Sources */,
 				42C5B6AD2142699B00563794 /* UIColor+Separate.m in Sources */,
 				425901072140BDE400304394 /* AllShareView.m in Sources */,
+				429B14DF2160B95800F595FC /* MCDataJudge.m in Sources */,
 				42789BF3215475AB00F85994 /* Test2ViewController.m in Sources */,
 				425900ED2140BD8100304394 /* ActionSheetTableViewController.m in Sources */,
 				42C78374213CC45B0012188E /* ManuallySelfSizingCell.m in Sources */,
@@ -4596,6 +4613,7 @@
 				42BF8199211A88BB0090E612 /* CQCategoryModel.m in Sources */,
 				422789222145F44F002B9C13 /* JXPagingView.m in Sources */,
 				42C78360213CC45B0012188E /* MixedDataViewController.m in Sources */,
+				429B14E02160B95800F595FC /* MCDataConversion.m in Sources */,
 				42C78384213CC45B0012188E /* ListeningSectionController.m in Sources */,
 				42BF819B211A88BB0090E612 /* CQJigsawViewController.m in Sources */,
 				425901092140BDE400304394 /* SelectedListModel.m in Sources */,

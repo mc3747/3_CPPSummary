@@ -25,7 +25,9 @@
 #import "IPhoneColor.h"
 #import "IPhoneDeviceInfo.h"
 #import "CommonMethod.h"
-
+#import "MCDataConversion.h"
+#import "MCDataJudge.h"
+#import "MCDataSafety.h"
 
 // 强弱引用
 #define GJWeakSelf  __weak typeof(self) weakSelf = self;
