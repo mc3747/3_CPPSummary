@@ -11,6 +11,7 @@
 
 @interface Common_ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, assign) BOOL isSelfDefined;
 @end
 
 @implementation Common_ViewController
@@ -49,7 +50,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     /*cell重用 */
     static NSString *cellIndentifier = @"LoginAndRegistContractVCCell";
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIndentifier];
     if (!cell) {
         cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIndentifier];
     }
@@ -87,7 +88,14 @@
     //选中阴影消失
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    //跳转到Demo_ViewController
+    if (_isSelfDefined) {
+        if (self.clickBlock) {
+            self.clickBlock(indexPath);
+        };
+        return;
+    }
+    
+//    //跳转到Demo_ViewController
     NSString *className = self.vcNameArray[indexPath.section][indexPath.row];
     Class class = NSClassFromString(className);
     if (class) {
@@ -97,7 +105,10 @@
         [self.navigationController pushViewController:ctrl animated:YES];
     };
 }
-
+- (void)getSelfDefinedBlock:(ClickCellBlock)clickBlock with:(BOOL)isSelfDefined{
+    _clickBlock = clickBlock;
+    _isSelfDefined = isSelfDefined;
+}
 #pragma mark - tableView懒加载
 - (UITableView *)tableView
 {

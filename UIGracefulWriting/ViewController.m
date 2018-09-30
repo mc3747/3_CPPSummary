@@ -234,13 +234,13 @@
     vc.vcNameArray = @[@[@"ShadeEffectVC",@"MoneyAnimationVC",@"CQFilterViewController",@"CQJigsawViewController",@"DimImageViewController",@"IconFontViewController",@"ScreenShotVC",@"RichTextVC",@"MemoTableViewController",@"DemosViewController",@"WonderfulColorVC"],
   @[@"DropDownViewController",@"YZDropViewController"],
   @[@"AlertViewController",@"AlertTableViewController",@"ActionSheetTableViewController",@"ShowViewController"],
-  @[@"FatherAndSonVC",@"Switch2_ViewController",@"Switch3_ViewController",@"Switch4_ViewController"],
+  @[@"FatherAndSonVC",@"Switch2_ViewController",@"Switch3_ViewController",@"Switch4_ViewController",@"STListController"],
   @[@"TestViewController",@"NoDataTableViewVC"]];
     
     vc.subtitleArray = @[@[@"渐变效果",@"金额跳动效果",@"模态弹窗",@"比例拼图",@"模糊效果",@"IconFont的使用",@"截屏展示",@"富文本总结",@"便签效果",@"IGListKit的Demo",@"完美颜色"],
                          @[@"仿美团二级菜单",@"袁崢二级菜单"],
   @[@"系统alert和sheet",@"LEE的alert",@"LEE的sheet",@"JXT的Alert汇总"],
-  @[@"父子控制器",@"袁崢切换",@"SGPagingView横向切换",@"JXCategory横向切换"],
+  @[@"父子控制器",@"袁崢切换",@"SGPagingView横向切换",@"JXCategory横向切换",@"ST顶部可滚动切换"],
   @[@"测试控制器跳转过渡页",@"tableView无数据过渡页动画"]];
     
     [self.navigationController pushViewController:vc animated:YES];

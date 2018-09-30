@@ -20,6 +20,7 @@
 #import "UILabel+LXLabel.h"
 #import "UIView+Frame.h"
 #import "UIButton+Category.h"
+#import "Common_ViewController.h"
 
 #import "IPhoneSize.h"
 #import "IPhoneColor.h"
