@@ -81,6 +81,10 @@
 		422789362145F44F002B9C13 /* JXCategoryTitleAttributeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227890C2145F44E002B9C13 /* JXCategoryTitleAttributeCell.m */; };
 		422789372145F44F002B9C13 /* JXCategoryIndicatorDotLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227890F2145F44E002B9C13 /* JXCategoryIndicatorDotLineView.m */; };
 		422789392145F539002B9C13 /* Switch4_ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422789382145F539002B9C13 /* Switch4_ViewController.storyboard */; };
+		422AB7002174278A0019F1D9 /* LabelAlignVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AB6FA217427890019F1D9 /* LabelAlignVC.m */; };
+		422AB7012174278A0019F1D9 /* ARAlignLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AB6FC217427890019F1D9 /* ARAlignLabel.m */; };
+		422AB7022174278A0019F1D9 /* LabelAlignDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AB6FF2174278A0019F1D9 /* LabelAlignDetailVC.m */; };
+		422AB70621742BEF0019F1D9 /* LabelLeaveSpaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AB70521742BEF0019F1D9 /* LabelLeaveSpaceVC.m */; };
 		4238B92C2125534200AF272E /* DimImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4238B92B2125534200AF272E /* DimImageViewController.m */; };
 		4238B92E2125547F00AF272E /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4238B92D2125547E00AF272E /* img1.jpg */; };
 		4238B93121255B4A00AF272E /* ImgTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4238B92F21255B4A00AF272E /* ImgTool.m */; };
@@ -678,6 +682,14 @@
 		4227890E2145F44E002B9C13 /* JXCategoryIndicatorDotLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryIndicatorDotLineView.h; sourceTree = "<group>"; };
 		4227890F2145F44E002B9C13 /* JXCategoryIndicatorDotLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JXCategoryIndicatorDotLineView.m; sourceTree = "<group>"; };
 		422789382145F539002B9C13 /* Switch4_ViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Switch4_ViewController.storyboard; sourceTree = "<group>"; };
+		422AB6FA217427890019F1D9 /* LabelAlignVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelAlignVC.m; sourceTree = "<group>"; };
+		422AB6FB217427890019F1D9 /* LabelAlignDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelAlignDetailVC.h; sourceTree = "<group>"; };
+		422AB6FC217427890019F1D9 /* ARAlignLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARAlignLabel.m; sourceTree = "<group>"; };
+		422AB6FD2174278A0019F1D9 /* ARAlignLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARAlignLabel.h; sourceTree = "<group>"; };
+		422AB6FE2174278A0019F1D9 /* LabelAlignVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LabelAlignVC.h; sourceTree = "<group>"; };
+		422AB6FF2174278A0019F1D9 /* LabelAlignDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelAlignDetailVC.m; sourceTree = "<group>"; };
+		422AB70421742BEF0019F1D9 /* LabelLeaveSpaceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelLeaveSpaceVC.h; sourceTree = "<group>"; };
+		422AB70521742BEF0019F1D9 /* LabelLeaveSpaceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelLeaveSpaceVC.m; sourceTree = "<group>"; };
 		4238B92A2125534200AF272E /* DimImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DimImageViewController.h; sourceTree = "<group>"; };
 		4238B92B2125534200AF272E /* DimImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DimImageViewController.m; sourceTree = "<group>"; };
 		4238B92D2125547E00AF272E /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
@@ -1931,6 +1943,28 @@
 			path = IndicatorDotLine;
 			sourceTree = "<group>";
 		};
+		422AB6F9217427270019F1D9 /* 4,label文字对齐各种方式 */ = {
+			isa = PBXGroup;
+			children = (
+				422AB6FD2174278A0019F1D9 /* ARAlignLabel.h */,
+				422AB6FC217427890019F1D9 /* ARAlignLabel.m */,
+				422AB6FB217427890019F1D9 /* LabelAlignDetailVC.h */,
+				422AB6FF2174278A0019F1D9 /* LabelAlignDetailVC.m */,
+				422AB6FE2174278A0019F1D9 /* LabelAlignVC.h */,
+				422AB6FA217427890019F1D9 /* LabelAlignVC.m */,
+			);
+			path = "4,label文字对齐各种方式";
+			sourceTree = "<group>";
+		};
+		422AB70321742BB20019F1D9 /* 5,label留白问题 */ = {
+			isa = PBXGroup;
+			children = (
+				422AB70421742BEF0019F1D9 /* LabelLeaveSpaceVC.h */,
+				422AB70521742BEF0019F1D9 /* LabelLeaveSpaceVC.m */,
+			);
+			path = "5,label留白问题";
+			sourceTree = "<group>";
+		};
 		4238B927212551A600AF272E /* #12_模糊效果 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2238,7 +2272,7 @@
 			path = CCTableDataSource;
 			sourceTree = "<group>";
 		};
-		42981CE12105C42B0052CCC3 /* #4_按钮相关 */ = {
+		42981CE12105C42B0052CCC3 /* #4_button相关 */ = {
 			isa = PBXGroup;
 			children = (
 				42B182732106D07800C1E682 /* 1，扩大按钮点击 */,
@@ -2247,7 +2281,7 @@
 				42B1828521070BD300C1E682 /* 4，按钮重复点击 */,
 				42C787D3213D2B4E0012188E /* 5，倒计时按钮 */,
 			);
-			path = "#4_按钮相关";
+			path = "#4_button相关";
 			sourceTree = "<group>";
 		};
 		42981CE82105C7C30052CCC3 /* 1，UI简介 */ = {
@@ -2339,7 +2373,7 @@
 				429CAF8B210436950063A0D8 /* #1_轮播器 */,
 				429CAFE5210436950063A0D8 /* #2_CollectionView应用 */,
 				42B1827A2106D13A00C1E682 /* #3_label相关 */,
-				42981CE12105C42B0052CCC3 /* #4_按钮相关 */,
+				42981CE12105C42B0052CCC3 /* #4_button相关 */,
 				42B182502106C61800C1E682 /* #5_TextField输入浮动效果 */,
 				42BAFEF6210876CD003CFD9A /* #6_TextView设置下划线 */,
 				42EFA8262109BA0E00AFC827 /* #7_UITableView */,
@@ -2737,9 +2771,11 @@
 		42B1827A2106D13A00C1E682 /* #3_label相关 */ = {
 			isa = PBXGroup;
 			children = (
-				42C4DEF9215F105D00247949 /* 3,倒计时label */,
 				42B1827B2106D13A00C1E682 /* 1,可点击label */,
-				42CB7E6421391C77003397FB /* 2,文字调整边距label */,
+				42CB7E6421391C77003397FB /* 2,label调整缩进 */,
+				42C4DEF9215F105D00247949 /* 3,倒计时label */,
+				422AB6F9217427270019F1D9 /* 4,label文字对齐各种方式 */,
+				422AB70321742BB20019F1D9 /* 5,label留白问题 */,
 			);
 			path = "#3_label相关";
 			sourceTree = "<group>";
@@ -3969,13 +4005,13 @@
 			path = "2，HTML系列";
 			sourceTree = "<group>";
 		};
-		42CB7E6421391C77003397FB /* 2,文字调整边距label */ = {
+		42CB7E6421391C77003397FB /* 2,label调整缩进 */ = {
 			isa = PBXGroup;
 			children = (
 				42CB7E6621391CBF003397FB /* MCLabel.h */,
 				42CB7E6521391CBF003397FB /* MCLabel.m */,
 			);
-			path = "2,文字调整边距label";
+			path = "2,label调整缩进";
 			sourceTree = "<group>";
 		};
 		42CB7E6821391F3E003397FB /* View */ = {
@@ -4377,6 +4413,7 @@
 				42C783D0213CCBFF0012188E /* YZCover.m in Sources */,
 				42C78368213CC45B0012188E /* CalendarViewController.m in Sources */,
 				4227891E2145F44F002B9C13 /* PagingViewController.m in Sources */,
+				422AB7002174278A0019F1D9 /* LabelAlignVC.m in Sources */,
 				422788952145F431002B9C13 /* JXCategoryIndicatorCell.m in Sources */,
 				422788A02145F431002B9C13 /* JXCategoryImageView.m in Sources */,
 				42BF81AE211A89D90090E612 /* CQDetailViewController.m in Sources */,
@@ -4479,6 +4516,7 @@
 				429CB101210436960063A0D8 /* CustomCollectionViewCell.m in Sources */,
 				42CB7E372138DCEB003397FB /* TestPushVC.m in Sources */,
 				4242B942212A72C400C3A2C5 /* FullChildViewController.m in Sources */,
+				422AB7022174278A0019F1D9 /* LabelAlignDetailVC.m in Sources */,
 				422789312145F44F002B9C13 /* BackgroundImageViewController.m in Sources */,
 				42B573CD213FC1FE0089CFDF /* ChildVCSix.m in Sources */,
 				422788A12145F431002B9C13 /* JXCategoryImageCell.m in Sources */,
@@ -4526,6 +4564,7 @@
 				42C5B4BE21422F5300563794 /* SimpleTextViewController.m in Sources */,
 				42C7838A213CC45B0012188E /* WorkingRangeSectionController.m in Sources */,
 				422789272145F44F002B9C13 /* JXBaseViewController.m in Sources */,
+				422AB7012174278A0019F1D9 /* ARAlignLabel.m in Sources */,
 				429B15122160C2FC00F595FC /* STRefreshHeader.m in Sources */,
 				42CB7E7A21391F3F003397FB /* WebviewCell.m in Sources */,
 				4238B93121255B4A00AF272E /* ImgTool.m in Sources */,
@@ -4579,6 +4618,7 @@
 				42B573CF213FC1FE0089CFDF /* ChildVCTwo.m in Sources */,
 				422789142145F44F002B9C13 /* VerticalSectionCategoryHeaderView.m in Sources */,
 				4227892F2145F44F002B9C13 /* SegmentedControlViewController.m in Sources */,
+				422AB70621742BEF0019F1D9 /* LabelLeaveSpaceVC.m in Sources */,
 				422788992145F431002B9C13 /* JXCategoryDotCellModel.m in Sources */,
 				42B573C9213FC1FE0089CFDF /* ChildVCFull.m in Sources */,
 				42C7835F213CC45B0012188E /* ObjcDemoViewController.m in Sources */,
