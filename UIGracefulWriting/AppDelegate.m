@@ -44,6 +44,10 @@
         self.visualEffectView.frame = self.window.frame;
     };
     
+#if DEBUG
+    id overlayClass = NSClassFromString(@"UIDebuggingInformationOverlay");
+    [overlayClass performSelector:NSSelectorFromString(@"prepareDebuggingOverlay")];
+#endif
     
     return YES;
 }

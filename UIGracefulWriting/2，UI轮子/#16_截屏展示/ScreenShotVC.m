@@ -90,7 +90,7 @@
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     [window addSubview:backView];
     
-    [UIView animateWithDuration:1.0 animations:^{
+    [UIView animateWithDuration:0.5 animations:^{
         imgV.transform = CGAffineTransformMakeScale(0.8, 0.8);
         shareBtn.transform = CGAffineTransformMakeTranslation(0, -50);
     }];

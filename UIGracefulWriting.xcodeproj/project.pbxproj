@@ -106,6 +106,8 @@
 		4242B957212A959B00C3A2C5 /* UIImage+IconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 4242B953212A959A00C3A2C5 /* UIImage+IconFont.m */; };
 		4242B958212A959B00C3A2C5 /* IconFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4242B955212A959A00C3A2C5 /* IconFontViewController.m */; };
 		4242B99F212A9CC500C3A2C5 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4242B99E212A9CC500C3A2C5 /* iconfont.ttf */; };
+		424E3D432175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E3D422175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m */; };
+		424E3D492175C6C800D61820 /* UIWindow+PrivateMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E3D482175C6C800D61820 /* UIWindow+PrivateMethods.m */; };
 		425900EC2140BD8100304394 /* AlertTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900E92140BD8000304394 /* AlertTableViewController.m */; };
 		425900ED2140BD8100304394 /* ActionSheetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900EA2140BD8000304394 /* ActionSheetTableViewController.m */; };
 		425901042140BDE400304394 /* FontSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900F12140BDE400304394 /* FontSizeView.m */; };
@@ -504,6 +506,7 @@
 		42CFD904215E008C005792BD /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD903215E008C005792BD /* UIColor+Category.m */; };
 		42CFD907215E14F6005792BD /* AppDelegate+LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD906215E14F6005792BD /* AppDelegate+LaunchView.m */; };
 		42CFD943215E1E27005792BD /* WCYADImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD941215E1E27005792BD /* WCYADImageView.m */; };
+		42D04E9B2176DC7A0075ECEF /* FakeWindowClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E3D452175C67800D61820 /* FakeWindowClass.m */; };
 		42EFA82F2109BBBD00AFC827 /* TabView_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA82E2109BBBD00AFC827 /* TabView_1_ViewController.m */; };
 		42EFA8322109BBCC00AFC827 /* TabView_2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8312109BBCC00AFC827 /* TabView_2_ViewController.m */; };
 		42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8342109BBD800AFC827 /* TabView_3_ViewController.m */; };
@@ -731,6 +734,12 @@
 		4242B955212A959A00C3A2C5 /* IconFontViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconFontViewController.m; sourceTree = "<group>"; };
 		4242B956212A959A00C3A2C5 /* UIImage+IconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+IconFont.h"; sourceTree = "<group>"; };
 		4242B99E212A9CC500C3A2C5 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = iconfont.ttf; path = font_9rmno8jjb38/iconfont.ttf; sourceTree = "<group>"; };
+		424E3D412175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+UIDebuggingInformationOverlayEnable.h"; sourceTree = "<group>"; };
+		424E3D422175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UIDebuggingInformationOverlayEnable.m"; sourceTree = "<group>"; };
+		424E3D442175C67800D61820 /* FakeWindowClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeWindowClass.h; sourceTree = "<group>"; };
+		424E3D452175C67800D61820 /* FakeWindowClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeWindowClass.m; sourceTree = "<group>"; };
+		424E3D472175C6C800D61820 /* UIWindow+PrivateMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+PrivateMethods.h"; sourceTree = "<group>"; };
+		424E3D482175C6C800D61820 /* UIWindow+PrivateMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+PrivateMethods.m"; sourceTree = "<group>"; };
 		425900E82140BD8000304394 /* AlertTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableViewController.h; sourceTree = "<group>"; };
 		425900E92140BD8000304394 /* AlertTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewController.m; sourceTree = "<group>"; };
 		425900EA2140BD8000304394 /* ActionSheetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetTableViewController.m; sourceTree = "<group>"; };
@@ -2126,6 +2135,19 @@
 				4242B953212A959A00C3A2C5 /* UIImage+IconFont.m */,
 			);
 			path = "#15_IconFont的使用";
+			sourceTree = "<group>";
+		};
+		424E3D4A2175CFCA00D61820 /* 2，苹果调试浮球神器 */ = {
+			isa = PBXGroup;
+			children = (
+				424E3D472175C6C800D61820 /* UIWindow+PrivateMethods.h */,
+				424E3D482175C6C800D61820 /* UIWindow+PrivateMethods.m */,
+				424E3D442175C67800D61820 /* FakeWindowClass.h */,
+				424E3D452175C67800D61820 /* FakeWindowClass.m */,
+				424E3D412175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.h */,
+				424E3D422175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m */,
+			);
+			path = "2，苹果调试浮球神器";
 			sourceTree = "<group>";
 		};
 		425900E62140BCF700304394 /* 1，系统 */ = {
@@ -3576,6 +3598,7 @@
 		42C782B8213CC3CD0012188E /* 3，重量级UI框架 */ = {
 			isa = PBXGroup;
 			children = (
+				424E3D4A2175CFCA00D61820 /* 2，苹果调试浮球神器 */,
 				42C782B9213CC3FD0012188E /* 1，IGListKit */,
 			);
 			path = "3，重量级UI框架";
@@ -4399,6 +4422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D04E9B2176DC7A0075ECEF /* FakeWindowClass.m in Sources */,
 				42CB7E8121391F3F003397FB /* TextviewLoadingHtmlController.m in Sources */,
 				42B182682106C72300C1E682 /* JuroTextField.m in Sources */,
 				4227889C2145F431002B9C13 /* JXCategoryTitleImageCellModel.m in Sources */,
@@ -4688,6 +4712,7 @@
 				42C5B6AF2142699B00563794 /* SXColorGradientView.m in Sources */,
 				42C5B6A62142699B00563794 /* SXColorLblDemoPage.m in Sources */,
 				42B573CC213FC1FE0089CFDF /* ChildFourthPopGestureNextVC.m in Sources */,
+				424E3D432175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m in Sources */,
 				429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */,
 				42C78357213CC45B0012188E /* AnnouncingDepsViewController.m in Sources */,
 				42B573C3213FC1FE0089CFDF /* NavigationBarVC.m in Sources */,
@@ -4737,6 +4762,7 @@
 				42C78377213CC45B0012188E /* MonthTitleCell.m in Sources */,
 				4227891F2145F44F002B9C13 /* TestListBaseView.m in Sources */,
 				4227889F2145F431002B9C13 /* JXCategoryTitleView.m in Sources */,
+				424E3D492175C6C800D61820 /* UIWindow+PrivateMethods.m in Sources */,
 				429CB1B4210436960063A0D8 /* Demo1Cell.m in Sources */,
 				422788A22145F431002B9C13 /* JXCategoryImageCellModel.m in Sources */,
 				42C51A29211C445D00742239 /* XMGStatusCell.m in Sources */,
