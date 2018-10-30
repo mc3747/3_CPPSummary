@@ -17,6 +17,15 @@
 #define kScaleH      (SCREEN_HEIGHT/667.0)
 #define kScaleW      (SCREEN_WIDTH/375.0)
 
+//中文字体
+#define CHINESE_FONT_NAME  @"Heiti SC"
+#define CHINESE_SYSTEM(x) [UIFont fontWithName:CHINESE_FONT_NAME size:x]
+
+//字体随着屏幕的大小更改：R为默认字体大小
+#define AdaptedFontSize(R)     CHINESE_SYSTEM(AdaptedWidth(R))
+#define AdaptedWidth(x)  ceilf((x) * kScaleW)
+#define AdaptedHeight(x) ceilf((x) * kScaleH)
+
 /**常用屏幕宽高******************************/
 
 #define IS_IPHONEX_Serial (IS_IPHONE && [[UIScreen mainScreen] bounds].size.height >= 812.0)

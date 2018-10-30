@@ -19,11 +19,14 @@
 #import "LxButton.h"
 #import "UILabel+LXLabel.h"
 #import "UIView+Frame.h"
+#import "UIView+Extension.h"
 #import "UIButton+Category.h"
 #import "Common_ViewController.h"
 
 #import "IPhoneSize.h"
 #import "IPhoneColor.h"
+#import "OtherMacro.h"
+
 #import "IPhoneDeviceInfo.h"
 #import "CommonMethod.h"
 #import "MCDataConversion.h"
