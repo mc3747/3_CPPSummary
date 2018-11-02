@@ -7,7 +7,8 @@
 //
 
 #import "NineGridUsingCollectionVC.h"
-
+#import "BaseCollectionVC.h"
+#import "PackageCollectionVC.h"
 @interface NineGridUsingCollectionVC ()
 
 @end
@@ -16,17 +17,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)baseAction:(id)sender {
+    BaseCollectionVC *vc = [[BaseCollectionVC alloc] initWithNibName:@"NineGridUsingCollectionVC" bundle:nil];
+    [self.navigationController pushViewController:vc animated:YES];
 }
-*/
+
+- (IBAction)packageAction:(id)sender {
+    PackageCollectionVC *vc = [[PackageCollectionVC alloc] init];
+    GJSPushViewController(vc, YES);
+}
+
 
 @end

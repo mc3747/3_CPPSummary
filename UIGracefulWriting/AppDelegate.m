@@ -11,6 +11,7 @@
 #import "ScreenBlurry.h"
 #import "AppDelegate+LaunchView.h"
 #import "WCYADImageView.h"
+#import "CHD_ListView_Structure.h"
  /*1,毛玻璃效果：
     1，加载完毕后初始化visualEffectView
     2，进入后台后
@@ -44,11 +45,15 @@
         self.visualEffectView.frame = self.window.frame;
     };
     
+
+    
 #if DEBUG
     id overlayClass = NSClassFromString(@"UIDebuggingInformationOverlay");
     [overlayClass performSelector:NSSelectorFromString(@"prepareDebuggingOverlay")];
 #endif
-    
+  
+//显示list
+    [CHD_ListView_Structure openStructureShow_TableV:YES collectionV:YES];
     return YES;
 }
 

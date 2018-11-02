@@ -108,6 +108,23 @@
 		4242B99F212A9CC500C3A2C5 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4242B99E212A9CC500C3A2C5 /* iconfont.ttf */; };
 		424E3D432175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E3D422175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m */; };
 		424E3D492175C6C800D61820 /* UIWindow+PrivateMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E3D482175C6C800D61820 /* UIWindow+PrivateMethods.m */; };
+		42523F35218BDD540038CEE3 /* BaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F30218BDD530038CEE3 /* BaseCollectionCell.m */; };
+		42523F36218BDD540038CEE3 /* BaseCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F32218BDD540038CEE3 /* BaseCollectionVC.m */; };
+		42523F37218BDD540038CEE3 /* BaseCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42523F34218BDD540038CEE3 /* BaseCollectionCell.xib */; };
+		42523F39218BDEAD0038CEE3 /* NineGridUsingCollectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42523F38218BDEAD0038CEE3 /* NineGridUsingCollectionVC.xib */; };
+		42523F44218BF8F50038CEE3 /* HYBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F3F218BF8F30038CEE3 /* HYBBaseViewController.m */; };
+		42523F45218BF8F50038CEE3 /* HYBGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F40218BF8F40038CEE3 /* HYBGridCell.m */; };
+		42523F46218BF8F50038CEE3 /* HYBGridModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F43218BF8F40038CEE3 /* HYBGridModel.m */; };
+		42523F4E218BF9190038CEE3 /* HYBCardFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F49218BF9190038CEE3 /* HYBCardFlowLayout.m */; };
+		42523F4F218BF9190038CEE3 /* HYBCardCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F4C218BF9190038CEE3 /* HYBCardCollectionViewCell.m */; };
+		42523F54218BF9350038CEE3 /* HYBCardScaleFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F50218BF9350038CEE3 /* HYBCardScaleFlowLayout.m */; };
+		42523F55218BF9350038CEE3 /* HYBCardScaleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F52218BF9350038CEE3 /* HYBCardScaleViewController.m */; };
+		42523F5A218BF9440038CEE3 /* HYBCardVerticalScaleLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F56218BF9430038CEE3 /* HYBCardVerticalScaleLayout.m */; };
+		42523F5B218BF9440038CEE3 /* HYBCardVeticalScaleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F59218BF9440038CEE3 /* HYBCardVeticalScaleController.m */; };
+		42523F5F218BF96C0038CEE3 /* HYBGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F5E218BF96B0038CEE3 /* HYBGridViewController.m */; };
+		42523F62218BF98D0038CEE3 /* PackageCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F61218BF98D0038CEE3 /* PackageCollectionVC.m */; };
+		42523F65218BFA1A0038CEE3 /* HYBCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F64218BFA1A0038CEE3 /* HYBCardViewController.m */; };
+		42523F68218BFE8A0038CEE3 /* CHD_ListView_Structure.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F66218BFE8A0038CEE3 /* CHD_ListView_Structure.m */; };
 		425900EC2140BD8100304394 /* AlertTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900E92140BD8000304394 /* AlertTableViewController.m */; };
 		425900ED2140BD8100304394 /* ActionSheetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900EA2140BD8000304394 /* ActionSheetTableViewController.m */; };
 		425901042140BDE400304394 /* FontSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900F12140BDE400304394 /* FontSizeView.m */; };
@@ -749,6 +766,38 @@
 		424E3D452175C67800D61820 /* FakeWindowClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeWindowClass.m; sourceTree = "<group>"; };
 		424E3D472175C6C800D61820 /* UIWindow+PrivateMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+PrivateMethods.h"; sourceTree = "<group>"; };
 		424E3D482175C6C800D61820 /* UIWindow+PrivateMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+PrivateMethods.m"; sourceTree = "<group>"; };
+		42523F30218BDD530038CEE3 /* BaseCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionCell.m; sourceTree = "<group>"; };
+		42523F31218BDD530038CEE3 /* BaseCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionCell.h; sourceTree = "<group>"; };
+		42523F32218BDD540038CEE3 /* BaseCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionVC.m; sourceTree = "<group>"; };
+		42523F33218BDD540038CEE3 /* BaseCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionVC.h; sourceTree = "<group>"; };
+		42523F34218BDD540038CEE3 /* BaseCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseCollectionCell.xib; sourceTree = "<group>"; };
+		42523F38218BDEAD0038CEE3 /* NineGridUsingCollectionVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NineGridUsingCollectionVC.xib; sourceTree = "<group>"; };
+		42523F3E218BF8F30038CEE3 /* HYBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBBaseViewController.h; sourceTree = "<group>"; };
+		42523F3F218BF8F30038CEE3 /* HYBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBBaseViewController.m; sourceTree = "<group>"; };
+		42523F40218BF8F40038CEE3 /* HYBGridCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBGridCell.m; sourceTree = "<group>"; };
+		42523F41218BF8F40038CEE3 /* HYBGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBGridCell.h; sourceTree = "<group>"; };
+		42523F42218BF8F40038CEE3 /* HYBGridModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBGridModel.h; sourceTree = "<group>"; };
+		42523F43218BF8F40038CEE3 /* HYBGridModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBGridModel.m; sourceTree = "<group>"; };
+		42523F49218BF9190038CEE3 /* HYBCardFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBCardFlowLayout.m; sourceTree = "<group>"; };
+		42523F4A218BF9190038CEE3 /* HYBCardFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBCardFlowLayout.h; sourceTree = "<group>"; };
+		42523F4B218BF9190038CEE3 /* HYBCardCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBCardCollectionViewCell.h; sourceTree = "<group>"; };
+		42523F4C218BF9190038CEE3 /* HYBCardCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBCardCollectionViewCell.m; sourceTree = "<group>"; };
+		42523F50218BF9350038CEE3 /* HYBCardScaleFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBCardScaleFlowLayout.m; sourceTree = "<group>"; };
+		42523F51218BF9350038CEE3 /* HYBCardScaleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBCardScaleViewController.h; sourceTree = "<group>"; };
+		42523F52218BF9350038CEE3 /* HYBCardScaleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBCardScaleViewController.m; sourceTree = "<group>"; };
+		42523F53218BF9350038CEE3 /* HYBCardScaleFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBCardScaleFlowLayout.h; sourceTree = "<group>"; };
+		42523F56218BF9430038CEE3 /* HYBCardVerticalScaleLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBCardVerticalScaleLayout.m; sourceTree = "<group>"; };
+		42523F57218BF9430038CEE3 /* HYBCardVeticalScaleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBCardVeticalScaleController.h; sourceTree = "<group>"; };
+		42523F58218BF9440038CEE3 /* HYBCardVerticalScaleLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBCardVerticalScaleLayout.h; sourceTree = "<group>"; };
+		42523F59218BF9440038CEE3 /* HYBCardVeticalScaleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBCardVeticalScaleController.m; sourceTree = "<group>"; };
+		42523F5D218BF96B0038CEE3 /* HYBGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBGridViewController.h; sourceTree = "<group>"; };
+		42523F5E218BF96B0038CEE3 /* HYBGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBGridViewController.m; sourceTree = "<group>"; };
+		42523F60218BF98D0038CEE3 /* PackageCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageCollectionVC.h; sourceTree = "<group>"; };
+		42523F61218BF98D0038CEE3 /* PackageCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageCollectionVC.m; sourceTree = "<group>"; };
+		42523F63218BFA1A0038CEE3 /* HYBCardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYBCardViewController.h; sourceTree = "<group>"; };
+		42523F64218BFA1A0038CEE3 /* HYBCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBCardViewController.m; sourceTree = "<group>"; };
+		42523F66218BFE8A0038CEE3 /* CHD_ListView_Structure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHD_ListView_Structure.m; sourceTree = "<group>"; };
+		42523F67218BFE8A0038CEE3 /* CHD_ListView_Structure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHD_ListView_Structure.h; sourceTree = "<group>"; };
 		425900E82140BD8000304394 /* AlertTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableViewController.h; sourceTree = "<group>"; };
 		425900E92140BD8000304394 /* AlertTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewController.m; sourceTree = "<group>"; };
 		425900EA2140BD8000304394 /* ActionSheetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetTableViewController.m; sourceTree = "<group>"; };
@@ -2177,6 +2226,98 @@
 			path = "2，苹果调试浮球神器";
 			sourceTree = "<group>";
 		};
+		42523F2D218BDCA30038CEE3 /* 3，查看list的结构工具 */ = {
+			isa = PBXGroup;
+			children = (
+				42523F67218BFE8A0038CEE3 /* CHD_ListView_Structure.h */,
+				42523F66218BFE8A0038CEE3 /* CHD_ListView_Structure.m */,
+			);
+			path = "3，查看list的结构工具";
+			sourceTree = "<group>";
+		};
+		42523F2E218BDCB60038CEE3 /* 2，炫酷封装 */ = {
+			isa = PBXGroup;
+			children = (
+				42523F60218BF98D0038CEE3 /* PackageCollectionVC.h */,
+				42523F61218BF98D0038CEE3 /* PackageCollectionVC.m */,
+				42523F5C218BF94F0038CEE3 /* BaseVC */,
+				42523F3D218BF8520038CEE3 /* 1，GridStyle */,
+				42523F3C218BF84F0038CEE3 /* 2，CardStyle */,
+				42523F3B218BF8490038CEE3 /* 3，CardScaleStyle */,
+				42523F3A218BF8450038CEE3 /* 4，CardScaleVerticalStyle */,
+			);
+			path = "2，炫酷封装";
+			sourceTree = "<group>";
+		};
+		42523F2F218BDCBD0038CEE3 /* 1，基本使用 */ = {
+			isa = PBXGroup;
+			children = (
+				42523F33218BDD540038CEE3 /* BaseCollectionVC.h */,
+				42523F32218BDD540038CEE3 /* BaseCollectionVC.m */,
+				42523F31218BDD530038CEE3 /* BaseCollectionCell.h */,
+				42523F30218BDD530038CEE3 /* BaseCollectionCell.m */,
+				42523F34218BDD540038CEE3 /* BaseCollectionCell.xib */,
+			);
+			path = "1，基本使用";
+			sourceTree = "<group>";
+		};
+		42523F3A218BF8450038CEE3 /* 4，CardScaleVerticalStyle */ = {
+			isa = PBXGroup;
+			children = (
+				42523F58218BF9440038CEE3 /* HYBCardVerticalScaleLayout.h */,
+				42523F56218BF9430038CEE3 /* HYBCardVerticalScaleLayout.m */,
+				42523F57218BF9430038CEE3 /* HYBCardVeticalScaleController.h */,
+				42523F59218BF9440038CEE3 /* HYBCardVeticalScaleController.m */,
+			);
+			path = "4，CardScaleVerticalStyle";
+			sourceTree = "<group>";
+		};
+		42523F3B218BF8490038CEE3 /* 3，CardScaleStyle */ = {
+			isa = PBXGroup;
+			children = (
+				42523F53218BF9350038CEE3 /* HYBCardScaleFlowLayout.h */,
+				42523F50218BF9350038CEE3 /* HYBCardScaleFlowLayout.m */,
+				42523F51218BF9350038CEE3 /* HYBCardScaleViewController.h */,
+				42523F52218BF9350038CEE3 /* HYBCardScaleViewController.m */,
+			);
+			path = "3，CardScaleStyle";
+			sourceTree = "<group>";
+		};
+		42523F3C218BF84F0038CEE3 /* 2，CardStyle */ = {
+			isa = PBXGroup;
+			children = (
+				42523F4B218BF9190038CEE3 /* HYBCardCollectionViewCell.h */,
+				42523F4C218BF9190038CEE3 /* HYBCardCollectionViewCell.m */,
+				42523F4A218BF9190038CEE3 /* HYBCardFlowLayout.h */,
+				42523F49218BF9190038CEE3 /* HYBCardFlowLayout.m */,
+				42523F63218BFA1A0038CEE3 /* HYBCardViewController.h */,
+				42523F64218BFA1A0038CEE3 /* HYBCardViewController.m */,
+			);
+			path = "2，CardStyle";
+			sourceTree = "<group>";
+		};
+		42523F3D218BF8520038CEE3 /* 1，GridStyle */ = {
+			isa = PBXGroup;
+			children = (
+				42523F5D218BF96B0038CEE3 /* HYBGridViewController.h */,
+				42523F5E218BF96B0038CEE3 /* HYBGridViewController.m */,
+				42523F41218BF8F40038CEE3 /* HYBGridCell.h */,
+				42523F40218BF8F40038CEE3 /* HYBGridCell.m */,
+				42523F42218BF8F40038CEE3 /* HYBGridModel.h */,
+				42523F43218BF8F40038CEE3 /* HYBGridModel.m */,
+			);
+			path = "1，GridStyle";
+			sourceTree = "<group>";
+		};
+		42523F5C218BF94F0038CEE3 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				42523F3E218BF8F30038CEE3 /* HYBBaseViewController.h */,
+				42523F3F218BF8F30038CEE3 /* HYBBaseViewController.m */,
+			);
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
 		425900E62140BCF700304394 /* 1，系统 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3476,6 +3617,10 @@
 			children = (
 				42C52C1E2187E29D001D7A07 /* NineGridUsingCollectionVC.h */,
 				42C52C1F2187E29D001D7A07 /* NineGridUsingCollectionVC.m */,
+				42523F38218BDEAD0038CEE3 /* NineGridUsingCollectionVC.xib */,
+				42523F2F218BDCBD0038CEE3 /* 1，基本使用 */,
+				42523F2E218BDCB60038CEE3 /* 2，炫酷封装 */,
+				42523F2D218BDCA30038CEE3 /* 3，查看list的结构工具 */,
 			);
 			path = "4，UICollection方式";
 			sourceTree = "<group>";
@@ -4403,6 +4548,7 @@
 				42204D76215CB941002447BF /* Images.xcassets in Resources */,
 				429CB0FB210436960063A0D8 /* pageControlDot@3x.png in Resources */,
 				42C519DF211C3E5400742239 /* deals.plist in Resources */,
+				42523F37218BDD540038CEE3 /* BaseCollectionCell.xib in Resources */,
 				42C787DB213D2BA50012188E /* SGCountdownVC.xib in Resources */,
 				429CB0FA210436960063A0D8 /* pageControlCurrentDot@3x.png in Resources */,
 				429CB0FF210436960063A0D8 /* pageControlDot@2x.png in Resources */,
@@ -4420,6 +4566,7 @@
 				42B573C7213FC1FE0089CFDF /* ChildFourthPopGestureNextVC.xib in Resources */,
 				4242B99F212A9CC500C3A2C5 /* iconfont.ttf in Resources */,
 				429CB0FC210436960063A0D8 /* h4.jpg in Resources */,
+				42523F39218BDEAD0038CEE3 /* NineGridUsingCollectionVC.xib in Resources */,
 				429CB0F7210436960063A0D8 /* placeholder@2x.png in Resources */,
 				42B573D8213FC1FE0089CFDF /* ChildVCTwo.xib in Resources */,
 				429CB0F9210436960063A0D8 /* 005.jpg in Resources */,
@@ -4559,6 +4706,7 @@
 				42CB7E8021391F3F003397FB /* WebviewLoadingHtmlController.m in Sources */,
 				425901062140BDE400304394 /* ShareView.m in Sources */,
 				42B573BE213FC1FE0089CFDF /* DefaultImageVC.m in Sources */,
+				42523F5B218BF9440038CEE3 /* HYBCardVeticalScaleController.m in Sources */,
 				42B182702106CAD200C1E682 /* TextFieldViewController.m in Sources */,
 				429CB1B9210436960063A0D8 /* Demo7ViewController.m in Sources */,
 				42BB66EC20D1231A007BE2CF /* ViewController.m in Sources */,
@@ -4569,6 +4717,8 @@
 				429B14DE2160B95800F595FC /* MCDataSafety.m in Sources */,
 				42C78352213CC45B0012188E /* MonthTitleViewModel.m in Sources */,
 				42BB66F720D1231B007BE2CF /* main.m in Sources */,
+				42523F62218BF98D0038CEE3 /* PackageCollectionVC.m in Sources */,
+				42523F65218BFA1A0038CEE3 /* HYBCardViewController.m in Sources */,
 				42B573C1213FC1FE0089CFDF /* DefaultAttributedTitleVC.m in Sources */,
 				4227889D2145F431002B9C13 /* JXCategoryTitleCellModel.m in Sources */,
 				42C787E4213D2BC60012188E /* SGImagePositionVC.m in Sources */,
@@ -4587,6 +4737,7 @@
 				425901132140BE7700304394 /* UIView+SDAutoLayout.m in Sources */,
 				42C78362213CC45B0012188E /* WorkingRangeViewController.m in Sources */,
 				422788982145F431002B9C13 /* JXCategoryDotView.m in Sources */,
+				42523F55218BF9350038CEE3 /* HYBCardScaleViewController.m in Sources */,
 				429CB109210436960063A0D8 /* TAAbstractDotView.m in Sources */,
 				42B573DC213FC1FE0089CFDF /* Switch3_ViewController.m in Sources */,
 				42C5B48B21422D4500563794 /* MYSubCoretextResult.m in Sources */,
@@ -4612,6 +4763,7 @@
 				429CB103210436960063A0D8 /* SDCycleScrollView.m in Sources */,
 				42B182692106C72300C1E682 /* YoshikoTextField.m in Sources */,
 				42CB7E8A213939C3003397FB /* UIAlertView+RWBlock.m in Sources */,
+				42523F46218BF8F50038CEE3 /* HYBGridModel.m in Sources */,
 				42C7837D213CC45B0012188E /* NibCell.m in Sources */,
 				42B573D4213FC1FE0089CFDF /* ChildVCOne.m in Sources */,
 				42C519DC211C3E3500742239 /* XMGDeal.m in Sources */,
@@ -4642,6 +4794,7 @@
 				422789202145F44F002B9C13 /* PartnerListView.m in Sources */,
 				42B573B6213FC1FE0089CFDF /* DefaultThreeCoverVC.m in Sources */,
 				42BF819C211A88BB0090E612 /* CQCategoryItemCell.m in Sources */,
+				42523F35218BDD540038CEE3 /* BaseCollectionCell.m in Sources */,
 				42C51A27211C445D00742239 /* XMGStatus.m in Sources */,
 				429B15192160C2FD00F595FC /* STImageController.m in Sources */,
 				422788AB2145F431002B9C13 /* JXCategoryBaseCellModel.m in Sources */,
@@ -4659,6 +4812,7 @@
 				429CB1BB210436960063A0D8 /* RPSlidingMenuCell.m in Sources */,
 				42C787D2213D2B420012188E /* UIButton+SGImagePosition.m in Sources */,
 				425901052140BDE400304394 /* ShareButton.m in Sources */,
+				42523F36218BDD540038CEE3 /* BaseCollectionVC.m in Sources */,
 				422788442145F3E1002B9C13 /* Switch4_ViewController.m in Sources */,
 				42C78370213CC45B0012188E /* EmbeddedCollectionViewCell.m in Sources */,
 				42C7837A213CC45B0012188E /* StoryboardCell.m in Sources */,
@@ -4723,6 +4877,7 @@
 				42B573C6213FC1FE0089CFDF /* ChildFirstPopGestureNextVC.m in Sources */,
 				42BF81AC211A89D90090E612 /* CQBaseViewController.m in Sources */,
 				42C783C1213CCB6A0012188E /* YZMoreMenuViewController.m in Sources */,
+				42523F4F218BF9190038CEE3 /* HYBCardCollectionViewCell.m in Sources */,
 				42C7834D213CC45B0012188E /* User.m in Sources */,
 				429CB1AD210436960063A0D8 /* Demo2ViewController.m in Sources */,
 				429CB1BA210436960063A0D8 /* RPSlidingMenuLayout.m in Sources */,
@@ -4815,6 +4970,8 @@
 				424E3D432175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m in Sources */,
 				429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */,
 				42C78357213CC45B0012188E /* AnnouncingDepsViewController.m in Sources */,
+				42523F45218BF8F50038CEE3 /* HYBGridCell.m in Sources */,
+				42523F44218BF8F50038CEE3 /* HYBBaseViewController.m in Sources */,
 				42B573C3213FC1FE0089CFDF /* NavigationBarVC.m in Sources */,
 				42C78380213CC45B0012188E /* LabelSectionController.m in Sources */,
 				42C78390213CC45B0012188E /* GridSectionController.m in Sources */,
@@ -4827,12 +4984,14 @@
 				42C78366213CC45B0012188E /* NestedAdapterViewController.m in Sources */,
 				4242B943212A72C400C3A2C5 /* ChildViewController.m in Sources */,
 				42CB7E5A2138F3C8003397FB /* RichTextVC.m in Sources */,
+				42523F5F218BF96C0038CEE3 /* HYBGridViewController.m in Sources */,
 				42BF8153211A75010090E612 /* UIImage+Transform.m in Sources */,
 				42C787DF213D2BB10012188E /* SGEventVC.m in Sources */,
 				422789182145F44F002B9C13 /* TitleImageViewController.m in Sources */,
 				42B573E7213FCD7C0089CFDF /* AlertViewController.m in Sources */,
 				422789162145F44F002B9C13 /* VerticalListCellModel.m in Sources */,
 				42BF8182211A88680090E612 /* CQFilterRequest.m in Sources */,
+				42523F4E218BF9190038CEE3 /* HYBCardFlowLayout.m in Sources */,
 				42C5B6A02142699B00563794 /* SXDataSource.m in Sources */,
 				4227891C2145F44F002B9C13 /* PagingViewTableHeaderView.m in Sources */,
 				429CB1B2210436960063A0D8 /* WaterfallCell.m in Sources */,
@@ -4897,6 +5056,7 @@
 				42C52C232187E9F4001D7A07 /* NineGridFrameView.m in Sources */,
 				429B15112160C2FC00F595FC /* UIScrollView+STRefresh.m in Sources */,
 				42C5B6AB2142699B00563794 /* SXColorLabel.m in Sources */,
+				42523F5A218BF9440038CEE3 /* HYBCardVerticalScaleLayout.m in Sources */,
 				42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */,
 				42B1826B2106C72300C1E682 /* PulsingHaloLayer.m in Sources */,
 				422789122145F44F002B9C13 /* VerticalListCell.m in Sources */,
@@ -4918,6 +5078,7 @@
 				42BF819B211A88BB0090E612 /* CQJigsawViewController.m in Sources */,
 				425901092140BDE400304394 /* SelectedListModel.m in Sources */,
 				42C783C2213CCB6A0012188E /* YZMoreMenuCell.m in Sources */,
+				42523F54218BF9350038CEE3 /* HYBCardScaleFlowLayout.m in Sources */,
 				42C5B6A82142699B00563794 /* SXColorListPage.m in Sources */,
 				422789132145F44F002B9C13 /* VerticalListViewController.m in Sources */,
 				42C7836A213CC45B0012188E /* NibSelfSizingCell.m in Sources */,
@@ -4928,6 +5089,7 @@
 				429CB0F5210436960063A0D8 /* TYCyclePagerTransformLayout.m in Sources */,
 				42BB66E920D1231A007BE2CF /* AppDelegate.m in Sources */,
 				429CB1AF210436960063A0D8 /* Demo3Cell.m in Sources */,
+				42523F68218BFE8A0038CEE3 /* CHD_ListView_Structure.m in Sources */,
 				42C78387213CC45B0012188E /* PostSectionController.m in Sources */,
 				426707312121301400046FE6 /* CCBaseTableViewCell.m in Sources */,
 				42789C602154EEAB00F85994 /* CommonMethod.m in Sources */,
