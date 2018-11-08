@@ -541,6 +541,30 @@
 		42EFA83E2109BC0600AFC827 /* TabView_6_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA83D2109BC0600AFC827 /* TabView_6_ViewController.m */; };
 		42F772162193CDCC00FFD237 /* NSObject+size.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772132193CDCB00FFD237 /* NSObject+size.m */; };
 		42F772172193CDCC00FFD237 /* AdjustSizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772152193CDCC00FFD237 /* AdjustSizeVC.m */; };
+		42F772522193D0DD00FFD237 /* JMRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7721B2193D0D800FFD237 /* JMRadioButton.m */; };
+		42F772532193D0DD00FFD237 /* JMBootstrapButtonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7721F2193D0D800FFD237 /* JMBootstrapButtonConfig.m */; };
+		42F772542193D0DD00FFD237 /* JMBootstrapButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772202193D0D800FFD237 /* JMBootstrapButton.m */; };
+		42F772552193D0DD00FFD237 /* JMBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772252193D0D800FFD237 /* JMBaseButton.m */; };
+		42F772562193D0DD00FFD237 /* JMBaseButtonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772272193D0D800FFD237 /* JMBaseButtonConfig.m */; };
+		42F772572193D0DD00FFD237 /* JMWaveButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7722B2193D0D800FFD237 /* JMWaveButton.m */; };
+		42F772582193D0DD00FFD237 /* JMWaveButtonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7722C2193D0D800FFD237 /* JMWaveButtonConfig.m */; };
+		42F772592193D0DD00FFD237 /* JMNumberButtonConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7722F2193D0D800FFD237 /* JMNumberButtonConfig.m */; };
+		42F7725A2193D0DD00FFD237 /* JMNumberButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772322193D0D800FFD237 /* JMNumberButton.m */; };
+		42F7725B2193D0DD00FFD237 /* JMButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772332193D0D800FFD237 /* JMButton.m */; };
+		42F7725C2193D0DD00FFD237 /* JMRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772372193D0D800FFD237 /* JMRuntime.m */; };
+		42F7725D2193D0DD00FFD237 /* UIView+JM.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772382193D0D800FFD237 /* UIView+JM.m */; };
+		42F7725E2193D0DD00FFD237 /* JMBaseButton+CountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7723A2193D0D800FFD237 /* JMBaseButton+CountDown.m */; };
+		42F7725F2193D0DD00FFD237 /* UIColor+JM.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7723E2193D0D800FFD237 /* UIColor+JM.m */; };
+		42F772602193D0DD00FFD237 /* JMBadgeValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7723F2193D0D800FFD237 /* JMBadgeValue.m */; };
+		42F772612193D0DD00FFD237 /* JMBadgeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772412193D0D900FFD237 /* JMBadgeViewController.m */; };
+		42F772622193D0DD00FFD237 /* JMNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772422193D0D900FFD237 /* JMNumberViewController.m */; };
+		42F772632193D0DD00FFD237 /* JMBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772472193D0DA00FFD237 /* JMBasicViewController.m */; };
+		42F772642193D0DD00FFD237 /* JMRadioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772482193D0DA00FFD237 /* JMRadioViewController.m */; };
+		42F772652193D0DD00FFD237 /* JMWaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7724B2193D0DB00FFD237 /* JMWaveViewController.m */; };
+		42F772662193D0DD00FFD237 /* JMCustomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7724C2193D0DC00FFD237 /* JMCustomViewController.m */; };
+		42F772672193D0DD00FFD237 /* JMBootstrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7724D2193D0DC00FFD237 /* JMBootstrapViewController.m */; };
+		42F772682193D0DD00FFD237 /* JMButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7724F2193D0DC00FFD237 /* JMButtonVC.m */; };
+		42F772692193D0DD00FFD237 /* JMCountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772502193D0DC00FFD237 /* JMCountDownViewController.m */; };
 		7AAE78BAA5A74D93D9F72D30 /* libPods-UIGracefulWriting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14963D90AB1CDCB894329DCE /* libPods-UIGracefulWriting.a */; };
 /* End PBXBuildFile section */
 
@@ -1600,6 +1624,56 @@
 		42F772132193CDCB00FFD237 /* NSObject+size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+size.m"; sourceTree = "<group>"; };
 		42F772142193CDCC00FFD237 /* AdjustSizeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustSizeVC.h; sourceTree = "<group>"; };
 		42F772152193CDCC00FFD237 /* AdjustSizeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustSizeVC.m; sourceTree = "<group>"; };
+		42F7721B2193D0D800FFD237 /* JMRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMRadioButton.m; sourceTree = "<group>"; };
+		42F7721C2193D0D800FFD237 /* JMRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRadioButton.h; sourceTree = "<group>"; };
+		42F7721D2193D0D800FFD237 /* JMButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMButton.h; sourceTree = "<group>"; };
+		42F7721F2193D0D800FFD237 /* JMBootstrapButtonConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBootstrapButtonConfig.m; sourceTree = "<group>"; };
+		42F772202193D0D800FFD237 /* JMBootstrapButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBootstrapButton.m; sourceTree = "<group>"; };
+		42F772212193D0D800FFD237 /* JMBootstrapButtonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBootstrapButtonConfig.h; sourceTree = "<group>"; };
+		42F772222193D0D800FFD237 /* JMBootstrapButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBootstrapButton.h; sourceTree = "<group>"; };
+		42F772242193D0D800FFD237 /* JMBaseButtonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBaseButtonConfig.h; sourceTree = "<group>"; };
+		42F772252193D0D800FFD237 /* JMBaseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBaseButton.m; sourceTree = "<group>"; };
+		42F772262193D0D800FFD237 /* JMBaseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBaseButton.h; sourceTree = "<group>"; };
+		42F772272193D0D800FFD237 /* JMBaseButtonConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBaseButtonConfig.m; sourceTree = "<group>"; };
+		42F772282193D0D800FFD237 /* JMBadgeValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBadgeValue.h; sourceTree = "<group>"; };
+		42F7722A2193D0D800FFD237 /* JMWaveButtonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMWaveButtonConfig.h; sourceTree = "<group>"; };
+		42F7722B2193D0D800FFD237 /* JMWaveButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMWaveButton.m; sourceTree = "<group>"; };
+		42F7722C2193D0D800FFD237 /* JMWaveButtonConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMWaveButtonConfig.m; sourceTree = "<group>"; };
+		42F7722D2193D0D800FFD237 /* JMWaveButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMWaveButton.h; sourceTree = "<group>"; };
+		42F7722F2193D0D800FFD237 /* JMNumberButtonConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMNumberButtonConfig.m; sourceTree = "<group>"; };
+		42F772302193D0D800FFD237 /* JMNumberButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMNumberButton.h; sourceTree = "<group>"; };
+		42F772312193D0D800FFD237 /* JMNumberButtonConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMNumberButtonConfig.h; sourceTree = "<group>"; };
+		42F772322193D0D800FFD237 /* JMNumberButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMNumberButton.m; sourceTree = "<group>"; };
+		42F772332193D0D800FFD237 /* JMButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMButton.m; sourceTree = "<group>"; };
+		42F772342193D0D800FFD237 /* JMButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMButtons.h; sourceTree = "<group>"; };
+		42F772362193D0D800FFD237 /* JMBaseButton+CountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JMBaseButton+CountDown.h"; sourceTree = "<group>"; };
+		42F772372193D0D800FFD237 /* JMRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMRuntime.m; sourceTree = "<group>"; };
+		42F772382193D0D800FFD237 /* UIView+JM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JM.m"; sourceTree = "<group>"; };
+		42F772392193D0D800FFD237 /* UIColor+JM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JM.h"; sourceTree = "<group>"; };
+		42F7723A2193D0D800FFD237 /* JMBaseButton+CountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "JMBaseButton+CountDown.m"; sourceTree = "<group>"; };
+		42F7723B2193D0D800FFD237 /* UIView+JM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JM.h"; sourceTree = "<group>"; };
+		42F7723C2193D0D800FFD237 /* JMDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMDefine.h; sourceTree = "<group>"; };
+		42F7723D2193D0D800FFD237 /* JMRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRuntime.h; sourceTree = "<group>"; };
+		42F7723E2193D0D800FFD237 /* UIColor+JM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JM.m"; sourceTree = "<group>"; };
+		42F7723F2193D0D800FFD237 /* JMBadgeValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBadgeValue.m; sourceTree = "<group>"; };
+		42F772402193D0D800FFD237 /* JMCountDownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMCountDownViewController.h; sourceTree = "<group>"; };
+		42F772412193D0D900FFD237 /* JMBadgeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBadgeViewController.m; sourceTree = "<group>"; };
+		42F772422193D0D900FFD237 /* JMNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMNumberViewController.m; sourceTree = "<group>"; };
+		42F772432193D0D900FFD237 /* JMNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMNumberViewController.h; sourceTree = "<group>"; };
+		42F772442193D0D900FFD237 /* JMBootstrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBootstrapViewController.h; sourceTree = "<group>"; };
+		42F772452193D0D900FFD237 /* JMBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBasicViewController.h; sourceTree = "<group>"; };
+		42F772462193D0DA00FFD237 /* JMBadgeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMBadgeViewController.h; sourceTree = "<group>"; };
+		42F772472193D0DA00FFD237 /* JMBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBasicViewController.m; sourceTree = "<group>"; };
+		42F772482193D0DA00FFD237 /* JMRadioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMRadioViewController.m; sourceTree = "<group>"; };
+		42F772492193D0DB00FFD237 /* JMWaveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMWaveViewController.h; sourceTree = "<group>"; };
+		42F7724A2193D0DB00FFD237 /* JMRadioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRadioViewController.h; sourceTree = "<group>"; };
+		42F7724B2193D0DB00FFD237 /* JMWaveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMWaveViewController.m; sourceTree = "<group>"; };
+		42F7724C2193D0DC00FFD237 /* JMCustomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMCustomViewController.m; sourceTree = "<group>"; };
+		42F7724D2193D0DC00FFD237 /* JMBootstrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMBootstrapViewController.m; sourceTree = "<group>"; };
+		42F7724E2193D0DC00FFD237 /* JMButtonVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMButtonVC.h; sourceTree = "<group>"; };
+		42F7724F2193D0DC00FFD237 /* JMButtonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMButtonVC.m; sourceTree = "<group>"; };
+		42F772502193D0DC00FFD237 /* JMCountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMCountDownViewController.m; sourceTree = "<group>"; };
+		42F772512193D0DD00FFD237 /* JMCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMCustomViewController.h; sourceTree = "<group>"; };
 		738B0AD82298246E9B0FD270 /* Pods-UIGracefulWriting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIGracefulWriting.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting.release.xcconfig"; sourceTree = "<group>"; };
 		80C7864567D28FF1398761C7 /* Pods-UIGracefulWriting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIGracefulWriting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2476,6 +2550,7 @@
 				42B182722106D07800C1E682 /* 3，带下划线的按钮 */,
 				42B1828521070BD300C1E682 /* 4，按钮重复点击 */,
 				42C787D3213D2B4E0012188E /* 5，倒计时按钮 */,
+				42F772182193D0A200FFD237 /* 6，各种样式button的封装 */,
 			);
 			path = "#4_button相关";
 			sourceTree = "<group>";
@@ -2969,12 +3044,12 @@
 		42B1827A2106D13A00C1E682 /* #3_label相关 */ = {
 			isa = PBXGroup;
 			children = (
-				42F772112193CD9600FFD237 /* 6,自适应宽高的label */,
 				42B1827B2106D13A00C1E682 /* 1,可点击label */,
 				42CB7E6421391C77003397FB /* 2,label调整缩进 */,
 				42C4DEF9215F105D00247949 /* 3,倒计时label */,
 				422AB6F9217427270019F1D9 /* 4,label文字对齐各种方式 */,
 				422AB70321742BB20019F1D9 /* 5,label留白问题 */,
+				42F772112193CD9600FFD237 /* 6,自适应宽高的label */,
 			);
 			path = "#3_label相关";
 			sourceTree = "<group>";
@@ -4444,6 +4519,127 @@
 			path = "6,自适应宽高的label";
 			sourceTree = "<group>";
 		};
+		42F772182193D0A200FFD237 /* 6，各种样式button的封装 */ = {
+			isa = PBXGroup;
+			children = (
+				42F7724E2193D0DC00FFD237 /* JMButtonVC.h */,
+				42F7724F2193D0DC00FFD237 /* JMButtonVC.m */,
+				42F7726A2193D0E900FFD237 /* JMController */,
+				42F772192193D0D800FFD237 /* JMButton */,
+			);
+			path = "6，各种样式button的封装";
+			sourceTree = "<group>";
+		};
+		42F772192193D0D800FFD237 /* JMButton */ = {
+			isa = PBXGroup;
+			children = (
+				42F7721A2193D0D800FFD237 /* RadioButton */,
+				42F7721D2193D0D800FFD237 /* JMButton.h */,
+				42F7721E2193D0D800FFD237 /* BootstrapButton */,
+				42F772232193D0D800FFD237 /* BaseButton */,
+				42F772282193D0D800FFD237 /* JMBadgeValue.h */,
+				42F772292193D0D800FFD237 /* WaveButton */,
+				42F7722E2193D0D800FFD237 /* NumberButton */,
+				42F772332193D0D800FFD237 /* JMButton.m */,
+				42F772342193D0D800FFD237 /* JMButtons.h */,
+				42F772352193D0D800FFD237 /* JMCategroy */,
+				42F7723F2193D0D800FFD237 /* JMBadgeValue.m */,
+			);
+			path = JMButton;
+			sourceTree = "<group>";
+		};
+		42F7721A2193D0D800FFD237 /* RadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				42F7721B2193D0D800FFD237 /* JMRadioButton.m */,
+				42F7721C2193D0D800FFD237 /* JMRadioButton.h */,
+			);
+			path = RadioButton;
+			sourceTree = "<group>";
+		};
+		42F7721E2193D0D800FFD237 /* BootstrapButton */ = {
+			isa = PBXGroup;
+			children = (
+				42F7721F2193D0D800FFD237 /* JMBootstrapButtonConfig.m */,
+				42F772202193D0D800FFD237 /* JMBootstrapButton.m */,
+				42F772212193D0D800FFD237 /* JMBootstrapButtonConfig.h */,
+				42F772222193D0D800FFD237 /* JMBootstrapButton.h */,
+			);
+			path = BootstrapButton;
+			sourceTree = "<group>";
+		};
+		42F772232193D0D800FFD237 /* BaseButton */ = {
+			isa = PBXGroup;
+			children = (
+				42F772242193D0D800FFD237 /* JMBaseButtonConfig.h */,
+				42F772252193D0D800FFD237 /* JMBaseButton.m */,
+				42F772262193D0D800FFD237 /* JMBaseButton.h */,
+				42F772272193D0D800FFD237 /* JMBaseButtonConfig.m */,
+			);
+			path = BaseButton;
+			sourceTree = "<group>";
+		};
+		42F772292193D0D800FFD237 /* WaveButton */ = {
+			isa = PBXGroup;
+			children = (
+				42F7722A2193D0D800FFD237 /* JMWaveButtonConfig.h */,
+				42F7722B2193D0D800FFD237 /* JMWaveButton.m */,
+				42F7722C2193D0D800FFD237 /* JMWaveButtonConfig.m */,
+				42F7722D2193D0D800FFD237 /* JMWaveButton.h */,
+			);
+			path = WaveButton;
+			sourceTree = "<group>";
+		};
+		42F7722E2193D0D800FFD237 /* NumberButton */ = {
+			isa = PBXGroup;
+			children = (
+				42F7722F2193D0D800FFD237 /* JMNumberButtonConfig.m */,
+				42F772302193D0D800FFD237 /* JMNumberButton.h */,
+				42F772312193D0D800FFD237 /* JMNumberButtonConfig.h */,
+				42F772322193D0D800FFD237 /* JMNumberButton.m */,
+			);
+			path = NumberButton;
+			sourceTree = "<group>";
+		};
+		42F772352193D0D800FFD237 /* JMCategroy */ = {
+			isa = PBXGroup;
+			children = (
+				42F772362193D0D800FFD237 /* JMBaseButton+CountDown.h */,
+				42F772372193D0D800FFD237 /* JMRuntime.m */,
+				42F772382193D0D800FFD237 /* UIView+JM.m */,
+				42F772392193D0D800FFD237 /* UIColor+JM.h */,
+				42F7723A2193D0D800FFD237 /* JMBaseButton+CountDown.m */,
+				42F7723B2193D0D800FFD237 /* UIView+JM.h */,
+				42F7723C2193D0D800FFD237 /* JMDefine.h */,
+				42F7723D2193D0D800FFD237 /* JMRuntime.h */,
+				42F7723E2193D0D800FFD237 /* UIColor+JM.m */,
+			);
+			path = JMCategroy;
+			sourceTree = "<group>";
+		};
+		42F7726A2193D0E900FFD237 /* JMController */ = {
+			isa = PBXGroup;
+			children = (
+				42F772462193D0DA00FFD237 /* JMBadgeViewController.h */,
+				42F772412193D0D900FFD237 /* JMBadgeViewController.m */,
+				42F772452193D0D900FFD237 /* JMBasicViewController.h */,
+				42F772402193D0D800FFD237 /* JMCountDownViewController.h */,
+				42F772502193D0DC00FFD237 /* JMCountDownViewController.m */,
+				42F772512193D0DD00FFD237 /* JMCustomViewController.h */,
+				42F7724C2193D0DC00FFD237 /* JMCustomViewController.m */,
+				42F772432193D0D900FFD237 /* JMNumberViewController.h */,
+				42F772422193D0D900FFD237 /* JMNumberViewController.m */,
+				42F7724A2193D0DB00FFD237 /* JMRadioViewController.h */,
+				42F772482193D0DA00FFD237 /* JMRadioViewController.m */,
+				42F772492193D0DB00FFD237 /* JMWaveViewController.h */,
+				42F7724B2193D0DB00FFD237 /* JMWaveViewController.m */,
+				42F772472193D0DA00FFD237 /* JMBasicViewController.m */,
+				42F772442193D0D900FFD237 /* JMBootstrapViewController.h */,
+				42F7724D2193D0DC00FFD237 /* JMBootstrapViewController.m */,
+			);
+			path = JMController;
+			sourceTree = "<group>";
+		};
 		E735A50B206D935B3AD216D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -4714,6 +4910,7 @@
 				429CB1A7210436960063A0D8 /* BaseViewController.m in Sources */,
 				4242B951212A72D800C3A2C5 /* YZDisplayViewController.m in Sources */,
 				42C5B6B2214269B700563794 /* WonderfulColorVC.m in Sources */,
+				42F7725C2193D0DD00FFD237 /* JMRuntime.m in Sources */,
 				429CB0F3210436960063A0D8 /* TYPageControl.m in Sources */,
 				422788A82145F431002B9C13 /* UIColor+JXAdd.m in Sources */,
 				422789322145F44F002B9C13 /* NestViewController.m in Sources */,
@@ -4746,6 +4943,7 @@
 				429CB1B5210436960063A0D8 /* Demo1ViewController.m in Sources */,
 				4259010B2140BDE400304394 /* SignFinishView.m in Sources */,
 				42C7836E213CC45B0012188E /* InteractiveCell.m in Sources */,
+				42F772662193D0DD00FFD237 /* JMCustomViewController.m in Sources */,
 				429B151C2160C2FD00F595FC /* STCollectionView.m in Sources */,
 				4259011B2140D41400304394 /* Son1_ViewController.m in Sources */,
 				42B182642106C72300C1E682 /* IchiroTextField.m in Sources */,
@@ -4755,10 +4953,13 @@
 				425901132140BE7700304394 /* UIView+SDAutoLayout.m in Sources */,
 				42C78362213CC45B0012188E /* WorkingRangeViewController.m in Sources */,
 				422788982145F431002B9C13 /* JXCategoryDotView.m in Sources */,
+				42F772642193D0DD00FFD237 /* JMRadioViewController.m in Sources */,
 				42523F55218BF9350038CEE3 /* HYBCardScaleViewController.m in Sources */,
 				429CB109210436960063A0D8 /* TAAbstractDotView.m in Sources */,
+				42F772652193D0DD00FFD237 /* JMWaveViewController.m in Sources */,
 				42B573DC213FC1FE0089CFDF /* Switch3_ViewController.m in Sources */,
 				42C5B48B21422D4500563794 /* MYSubCoretextResult.m in Sources */,
+				42F772572193D0DD00FFD237 /* JMWaveButton.m in Sources */,
 				42C7836C213CC45B0012188E /* CalendarDayCell.m in Sources */,
 				42EFA83B2109BBF700AFC827 /* TabView_5_ViewController.m in Sources */,
 				42C7835C213CC45B0012188E /* SearchViewController.m in Sources */,
@@ -4766,6 +4967,7 @@
 				422788972145F431002B9C13 /* JXCategoryDotCell.m in Sources */,
 				4227889B2145F431002B9C13 /* JXCategoryTitleImageCell.m in Sources */,
 				42B573B8213FC1FE0089CFDF /* DefaultDynamicVC.m in Sources */,
+				42F772562193D0DD00FFD237 /* JMBaseButtonConfig.m in Sources */,
 				42C5B48421422D4500563794 /* KeywordViewController.m in Sources */,
 				429CB1B0210436960063A0D8 /* Demo3HeaderView.m in Sources */,
 				42C5B6AE2142699B00563794 /* UILabel+Wonderful.m in Sources */,
@@ -4819,6 +5021,7 @@
 				426707302121301400046FE6 /* UIView+CCUtil.m in Sources */,
 				42C4DF24215F2B3000247949 /* UIView+TABLayerout.m in Sources */,
 				426707362121301400046FE6 /* CCTableDataItem.m in Sources */,
+				42F7725D2193D0DD00FFD237 /* UIView+JM.m in Sources */,
 				429CB1AC210436960063A0D8 /* YYNews.m in Sources */,
 				42C5B69E2142699B00563794 /* SXCLEntity.m in Sources */,
 				42C78356213CC45B0012188E /* SingleSectionViewController.m in Sources */,
@@ -4892,12 +5095,14 @@
 				42CB7E7B21391F3F003397FB /* UIView+Frame.m in Sources */,
 				42C5B48721422D4500563794 /* DetailViewController.m in Sources */,
 				42BF8155211A75010090E612 /* UIView+Gradient.m in Sources */,
+				42F772692193D0DD00FFD237 /* JMCountDownViewController.m in Sources */,
 				42B573C6213FC1FE0089CFDF /* ChildFirstPopGestureNextVC.m in Sources */,
 				42BF81AC211A89D90090E612 /* CQBaseViewController.m in Sources */,
 				42C783C1213CCB6A0012188E /* YZMoreMenuViewController.m in Sources */,
 				42523F4F218BF9190038CEE3 /* HYBCardCollectionViewCell.m in Sources */,
 				42C7834D213CC45B0012188E /* User.m in Sources */,
 				429CB1AD210436960063A0D8 /* Demo2ViewController.m in Sources */,
+				42F772582193D0DD00FFD237 /* JMWaveButtonConfig.m in Sources */,
 				429CB1BA210436960063A0D8 /* RPSlidingMenuLayout.m in Sources */,
 				42C78361213CC45B0012188E /* SelfSizingCellsViewController.m in Sources */,
 				42C78389213CC45B0012188E /* SearchSectionCotroller.m in Sources */,
@@ -4953,6 +5158,7 @@
 				42BF81AF211A89D90090E612 /* UIView+Util.m in Sources */,
 				42C5B6AD2142699B00563794 /* UIColor+Separate.m in Sources */,
 				42C55CBC218AF0AD00454598 /* OAUIStackViewViewController.m in Sources */,
+				42F772612193D0DD00FFD237 /* JMBadgeViewController.m in Sources */,
 				425901072140BDE400304394 /* AllShareView.m in Sources */,
 				429B14DF2160B95800F595FC /* MCDataJudge.m in Sources */,
 				42789BF3215475AB00F85994 /* Test2ViewController.m in Sources */,
@@ -4961,6 +5167,7 @@
 				42B573C8213FC1FE0089CFDF /* ChildFourthPopGestureVC.m in Sources */,
 				422788A92145F431002B9C13 /* JXCategoryBaseView.m in Sources */,
 				42CFD901215DCB45005792BD /* IPhoneDeviceInfo.m in Sources */,
+				42F772532193D0DD00FFD237 /* JMBootstrapButtonConfig.m in Sources */,
 				42C52C202187E29D001D7A07 /* NineGridUsingCollectionVC.m in Sources */,
 				42C7838E213CC45B0012188E /* FeedItemSectionController.m in Sources */,
 				42C4DF01215F138D00247949 /* JKCountDownDateButton.m in Sources */,
@@ -4972,6 +5179,7 @@
 				42C783C3213CCB6A0012188E /* YZSortViewController.m in Sources */,
 				42B573BF213FC1FE0089CFDF /* DefaultStaticVC.m in Sources */,
 				422788922145F431002B9C13 /* JXCategoryIndicatorComponentView.m in Sources */,
+				42F7725F2193D0DD00FFD237 /* UIColor+JM.m in Sources */,
 				42C787D6213D2B670012188E /* UIButton+SGCountdown.m in Sources */,
 				42C78391213CC45B0012188E /* RemoveSectionController.m in Sources */,
 				429CB1B3210436960063A0D8 /* Demo4ViewController.m in Sources */,
@@ -5010,7 +5218,9 @@
 				42B573E7213FCD7C0089CFDF /* AlertViewController.m in Sources */,
 				422789162145F44F002B9C13 /* VerticalListCellModel.m in Sources */,
 				42BF8182211A88680090E612 /* CQFilterRequest.m in Sources */,
+				42F772602193D0DD00FFD237 /* JMBadgeValue.m in Sources */,
 				42F772162193CDCC00FFD237 /* NSObject+size.m in Sources */,
+				42F772592193D0DD00FFD237 /* JMNumberButtonConfig.m in Sources */,
 				42523F4E218BF9190038CEE3 /* HYBCardFlowLayout.m in Sources */,
 				42C5B6A02142699B00563794 /* SXDataSource.m in Sources */,
 				4227891C2145F44F002B9C13 /* PagingViewTableHeaderView.m in Sources */,
@@ -5019,6 +5229,7 @@
 				42BF81B0211A89D90090E612 /* UIView+FrameHelper.m in Sources */,
 				422789332145F44F002B9C13 /* AttributeViewViewController.m in Sources */,
 				422789262145F44F002B9C13 /* ListViewController.m in Sources */,
+				42F7725A2193D0DD00FFD237 /* JMNumberButton.m in Sources */,
 				42C4DF02215F138D00247949 /* JKCountDownNumberButton.m in Sources */,
 				422788942145F431002B9C13 /* JXCategoryIndicatorCellModel.m in Sources */,
 				42B1828B2107105800C1E682 /* UIButton+category2.m in Sources */,
@@ -5033,8 +5244,10 @@
 				42B182662106C72300C1E682 /* UIFloatLabelTextField.m in Sources */,
 				42B182792106D0B000C1E682 /* CommonUnderlineButton.m in Sources */,
 				42BAFEF92108772D003CFD9A /* TextViewViewController.m in Sources */,
+				42F772632193D0DD00FFD237 /* JMBasicViewController.m in Sources */,
 				42C5B48921422D4500563794 /* MYCoretextResultTool.m in Sources */,
 				42BF8156211A75010090E612 /* NSString+Number.m in Sources */,
+				42F772522193D0DD00FFD237 /* JMRadioButton.m in Sources */,
 				42B573C4213FC1FE0089CFDF /* NavigationBarTitleView11.m in Sources */,
 				42B573D7213FC1FE0089CFDF /* ChildVCThree.m in Sources */,
 				42C7834C213CC45B0012188E /* DemoItem.m in Sources */,
@@ -5043,6 +5256,7 @@
 				4227889F2145F431002B9C13 /* JXCategoryTitleView.m in Sources */,
 				424E3D492175C6C800D61820 /* UIWindow+PrivateMethods.m in Sources */,
 				429CB1B4210436960063A0D8 /* Demo1Cell.m in Sources */,
+				42F772682193D0DD00FFD237 /* JMButtonVC.m in Sources */,
 				422788A22145F431002B9C13 /* JXCategoryImageCellModel.m in Sources */,
 				42C51A29211C445D00742239 /* XMGStatusCell.m in Sources */,
 				42C7838D213CC45B0012188E /* SpinnerSectionController.m in Sources */,
@@ -5051,6 +5265,7 @@
 				42B573BD213FC1FE0089CFDF /* DefaultTwoCoverVC.m in Sources */,
 				42C78379213CC45B0012188E /* UserInfoCell.m in Sources */,
 				42C5B4BB21422F5300563794 /* AutoLayoutTableViewController.m in Sources */,
+				42F772622193D0DD00FFD237 /* JMNumberViewController.m in Sources */,
 				42C7837F213CC45B0012188E /* SpinnerCell.m in Sources */,
 				42C5B4BA21422F5300563794 /* AddViewTextViewController.m in Sources */,
 				4242B94E212A72D800C3A2C5 /* YZDisplayTitleLabel.m in Sources */,
@@ -5062,6 +5277,7 @@
 				429B15152160C2FC00F595FC /* CustomSegmentControl.m in Sources */,
 				42C5B6A92142699B00563794 /* SXHeadLine.m in Sources */,
 				42C78381213CC45B0012188E /* EmbeddedSectionController.m in Sources */,
+				42F7725B2193D0DD00FFD237 /* JMButton.m in Sources */,
 				42B573DE213FC1FE0089CFDF /* UIView+SGPagingView.m in Sources */,
 				42C5B4BC21422F5300563794 /* LabelXibViewController.m in Sources */,
 				42C7835D213CC45B0012188E /* StoryboardViewController.m in Sources */,
@@ -5089,6 +5305,7 @@
 				42C5B48521422D4500563794 /* ImageViewController.m in Sources */,
 				42C52C172187E24D001D7A07 /* NineGridUsingFrameVC.m in Sources */,
 				42C78364213CC45B0012188E /* SingleSectionStoryboardViewController.m in Sources */,
+				42F772552193D0DD00FFD237 /* JMBaseButton.m in Sources */,
 				42C78355213CC45B0012188E /* StackedViewController.m in Sources */,
 				42BF8199211A88BB0090E612 /* CQCategoryModel.m in Sources */,
 				422789222145F44F002B9C13 /* JXPagingView.m in Sources */,
@@ -5111,6 +5328,7 @@
 				429CB1AF210436960063A0D8 /* Demo3Cell.m in Sources */,
 				42523F68218BFE8A0038CEE3 /* CHD_ListView_Structure.m in Sources */,
 				42C78387213CC45B0012188E /* PostSectionController.m in Sources */,
+				42F7725E2193D0DD00FFD237 /* JMBaseButton+CountDown.m in Sources */,
 				426707312121301400046FE6 /* CCBaseTableViewCell.m in Sources */,
 				42789C602154EEAB00F85994 /* CommonMethod.m in Sources */,
 				42C5B4DC214251E700563794 /* JXTAlertView.m in Sources */,
@@ -5120,12 +5338,14 @@
 				42C7836F213CC45B0012188E /* SearchCell.m in Sources */,
 				42C5B6A42142699B00563794 /* SXColorWonderfulDemoPage.m in Sources */,
 				42B1827E2106D13A00C1E682 /* ClickableLabel.m in Sources */,
+				42F772672193D0DD00FFD237 /* JMBootstrapViewController.m in Sources */,
 				42C5B48221422D4500563794 /* MYCoreTextViewController.m in Sources */,
 				42C5B48A21422D4500563794 /* MYCoreTextLabel.m in Sources */,
 				42B573C5213FC1FE0089CFDF /* NavigationBarTitleView.m in Sources */,
 				42B573B9213FC1FE0089CFDF /* DefaultPopGestureVC.m in Sources */,
 				42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */,
 				4259010A2140BDE400304394 /* SelectedListView.m in Sources */,
+				42F772542193D0DD00FFD237 /* JMBootstrapButton.m in Sources */,
 				42C7837B213CC45B0012188E /* PhotoCell.m in Sources */,
 				42C78358213CC45B0012188E /* DiffTableViewController.m in Sources */,
 				42C5B48321422D4500563794 /* showCell.m in Sources */,
