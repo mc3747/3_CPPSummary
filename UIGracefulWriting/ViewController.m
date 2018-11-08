@@ -231,13 +231,13 @@
     
     vc.title = @"其他UI效果";
     
-    vc.vcNameArray = @[@[@"LabelLeaveSpaceVC",@"LabelAlignVC",@"ShadeEffectVC",@"MoneyAnimationVC",@"CQFilterViewController",@"CQJigsawViewController",@"DimImageViewController",@"IconFontViewController",@"ScreenShotVC",@"RichTextVC",@"MemoTableViewController",@"DemosViewController",@"WonderfulColorVC"],
+    vc.vcNameArray = @[@[@"LabelLeaveSpaceVC",@"LabelAlignVC",@"ShadeEffectVC",@"MoneyAnimationVC",@"CQFilterViewController",@"CQJigsawViewController",@"DimImageViewController",@"IconFontViewController",@"ScreenShotVC",@"RichTextVC",@"MemoTableViewController",@"DemosViewController",@"WonderfulColorVC",@"AdjustSizeVC"],
   @[@"DropDownViewController",@"YZDropViewController"],
   @[@"AlertViewController",@"AlertTableViewController",@"ActionSheetTableViewController",@"ShowViewController"],
   @[@"FatherAndSonVC",@"Switch2_ViewController",@"Switch3_ViewController",@"Switch4_ViewController",@"STListController"],
   @[@"TestViewController",@"NoDataTableViewVC",@"NineGridVC"]];
     
-    vc.subtitleArray = @[@[@"label留白",@"label文字对齐各种效果",@"渐变效果",@"金额跳动效果",@"模态弹窗",@"比例拼图",@"模糊效果",@"IconFont的使用",@"截屏展示",@"富文本总结",@"便签效果",@"IGListKit的Demo",@"完美颜色"],
+    vc.subtitleArray = @[@[@"label留白",@"label文字对齐各种效果",@"渐变效果",@"金额跳动效果",@"模态弹窗",@"比例拼图",@"模糊效果",@"IconFont的使用",@"截屏展示",@"富文本总结",@"便签效果",@"IGListKit的Demo",@"完美颜色",@"自适应宽高的label"],
                          @[@"仿美团二级菜单",@"袁崢二级菜单"],
   @[@"系统alert和sheet",@"LEE的alert",@"LEE的sheet",@"JXT的Alert汇总"],
   @[@"父子控制器",@"袁崢切换",@"SGPagingView横向切换",@"JXCategory横向切换",@"ST顶部可滚动切换"],

@@ -539,6 +539,8 @@
 		42EFA8382109BBEA00AFC827 /* TabView_4_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8372109BBEA00AFC827 /* TabView_4_ViewController.m */; };
 		42EFA83B2109BBF700AFC827 /* TabView_5_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA83A2109BBF700AFC827 /* TabView_5_ViewController.m */; };
 		42EFA83E2109BC0600AFC827 /* TabView_6_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA83D2109BC0600AFC827 /* TabView_6_ViewController.m */; };
+		42F772162193CDCC00FFD237 /* NSObject+size.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772132193CDCB00FFD237 /* NSObject+size.m */; };
+		42F772172193CDCC00FFD237 /* AdjustSizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772152193CDCC00FFD237 /* AdjustSizeVC.m */; };
 		7AAE78BAA5A74D93D9F72D30 /* libPods-UIGracefulWriting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14963D90AB1CDCB894329DCE /* libPods-UIGracefulWriting.a */; };
 /* End PBXBuildFile section */
 
@@ -1594,6 +1596,10 @@
 		42EFA83A2109BBF700AFC827 /* TabView_5_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabView_5_ViewController.m; sourceTree = "<group>"; };
 		42EFA83C2109BC0600AFC827 /* TabView_6_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabView_6_ViewController.h; sourceTree = "<group>"; };
 		42EFA83D2109BC0600AFC827 /* TabView_6_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabView_6_ViewController.m; sourceTree = "<group>"; };
+		42F772122193CDCB00FFD237 /* NSObject+size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+size.h"; sourceTree = "<group>"; };
+		42F772132193CDCB00FFD237 /* NSObject+size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+size.m"; sourceTree = "<group>"; };
+		42F772142193CDCC00FFD237 /* AdjustSizeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustSizeVC.h; sourceTree = "<group>"; };
+		42F772152193CDCC00FFD237 /* AdjustSizeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdjustSizeVC.m; sourceTree = "<group>"; };
 		738B0AD82298246E9B0FD270 /* Pods-UIGracefulWriting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIGracefulWriting.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting.release.xcconfig"; sourceTree = "<group>"; };
 		80C7864567D28FF1398761C7 /* Pods-UIGracefulWriting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIGracefulWriting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -2963,6 +2969,7 @@
 		42B1827A2106D13A00C1E682 /* #3_label相关 */ = {
 			isa = PBXGroup;
 			children = (
+				42F772112193CD9600FFD237 /* 6,自适应宽高的label */,
 				42B1827B2106D13A00C1E682 /* 1,可点击label */,
 				42CB7E6421391C77003397FB /* 2,label调整缩进 */,
 				42C4DEF9215F105D00247949 /* 3,倒计时label */,
@@ -4426,6 +4433,17 @@
 			path = "6，性能优化";
 			sourceTree = "<group>";
 		};
+		42F772112193CD9600FFD237 /* 6,自适应宽高的label */ = {
+			isa = PBXGroup;
+			children = (
+				42F772122193CDCB00FFD237 /* NSObject+size.h */,
+				42F772132193CDCB00FFD237 /* NSObject+size.m */,
+				42F772142193CDCC00FFD237 /* AdjustSizeVC.h */,
+				42F772152193CDCC00FFD237 /* AdjustSizeVC.m */,
+			);
+			path = "6,自适应宽高的label";
+			sourceTree = "<group>";
+		};
 		E735A50B206D935B3AD216D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -4903,6 +4921,7 @@
 				42B573DB213FC1FE0089CFDF /* ChildVCEight.m in Sources */,
 				42BF81AD211A89D90090E612 /* CQBaseModel.m in Sources */,
 				42C5B4DB214251E700563794 /* JXTAlertController.m in Sources */,
+				42F772172193CDCC00FFD237 /* AdjustSizeVC.m in Sources */,
 				426707422121325B00046FE6 /* ExampleHeaderView.m in Sources */,
 				429CB1BC210436960063A0D8 /* DDCollectionViewFlowLayout.m in Sources */,
 				42C5B4C321422F5300563794 /* TextContainerViewController.m in Sources */,
@@ -4991,6 +5010,7 @@
 				42B573E7213FCD7C0089CFDF /* AlertViewController.m in Sources */,
 				422789162145F44F002B9C13 /* VerticalListCellModel.m in Sources */,
 				42BF8182211A88680090E612 /* CQFilterRequest.m in Sources */,
+				42F772162193CDCC00FFD237 /* NSObject+size.m in Sources */,
 				42523F4E218BF9190038CEE3 /* HYBCardFlowLayout.m in Sources */,
 				42C5B6A02142699B00563794 /* SXDataSource.m in Sources */,
 				4227891C2145F44F002B9C13 /* PagingViewTableHeaderView.m in Sources */,
