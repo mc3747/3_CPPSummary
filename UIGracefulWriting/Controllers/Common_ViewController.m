@@ -101,7 +101,7 @@
     if (class) {
         UIViewController *ctrl = class.new;
         ctrl.title = _subtitleArray[indexPath.section][indexPath.row];
-        ctrl.view.backgroundColor = [UIColor lightGrayColor];
+        ctrl.view.backgroundColor = [UIColor lavender];
         [self.navigationController pushViewController:ctrl animated:YES];
     };
 }

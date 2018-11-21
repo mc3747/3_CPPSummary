@@ -36,7 +36,7 @@
     [self.window makeKeyAndVisible];
 
 //    启动图片：采用分类的形式
-    [self initLaunchView:application WithOption:launchOptions];
+//    [self initLaunchView:application WithOption:launchOptions];
     
 //    毛玻璃效果：加载
     if (!self.visualEffectView) {
@@ -53,7 +53,7 @@
 #endif
   
 //显示list
-    [CHD_ListView_Structure openStructureShow_TableV:YES collectionV:YES];
+//    [CHD_ListView_Structure openStructureShow_TableV:YES collectionV:YES];
     return YES;
 }
 

@@ -22,6 +22,7 @@
 #import "UIView+Extension.h"
 #import "UIButton+Category.h"
 #import "Common_ViewController.h"
+#import "CommonViewController.h"
 
 #import "IPhoneSize.h"
 #import "IPhoneColor.h"

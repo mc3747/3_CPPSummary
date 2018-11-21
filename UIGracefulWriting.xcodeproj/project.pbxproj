@@ -527,6 +527,12 @@
 		42CB7E8A213939C3003397FB /* UIAlertView+RWBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E84213939C1003397FB /* UIAlertView+RWBlock.m */; };
 		42CB7E8B213939C3003397FB /* RWBasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E85213939C1003397FB /* RWBasicTableViewCell.m */; };
 		42CB7E8C213939C3003397FB /* MemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E89213939C3003397FB /* MemoTableViewController.m */; };
+		42CF2C0B21A5498100951C6D /* InputFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C0921A5498100951C6D /* InputFilterVC.m */; };
+		42CF2C1221A54A7D00951C6D /* TextFieldNonPackageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C1121A54A7D00951C6D /* TextFieldNonPackageVC.m */; };
+		42CF2C1921A54B9000951C6D /* TextFieldAndTextViewPackageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C1321A54B8F00951C6D /* TextFieldAndTextViewPackageVC.m */; };
+		42CF2C1A21A54B9000951C6D /* ZLYTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C1421A54B8F00951C6D /* ZLYTextField.m */; };
+		42CF2C1B21A54B9000951C6D /* ZLYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C1821A54B9000951C6D /* ZLYTextView.m */; };
+		42CF2C1E21A54BFC00951C6D /* TextViewNonPackageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C1D21A54BFC00951C6D /* TextViewNonPackageVC.m */; };
 		42CFD901215DCB45005792BD /* IPhoneDeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD900215DCB45005792BD /* IPhoneDeviceInfo.m */; };
 		42CFD904215E008C005792BD /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD903215E008C005792BD /* UIColor+Category.m */; };
 		42CFD907215E14F6005792BD /* AppDelegate+LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD906215E14F6005792BD /* AppDelegate+LaunchView.m */; };
@@ -1598,6 +1604,18 @@
 		42CB7E87213939C2003397FB /* RWBasicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWBasicTableViewCell.h; sourceTree = "<group>"; };
 		42CB7E88213939C3003397FB /* MemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoTableViewController.h; sourceTree = "<group>"; };
 		42CB7E89213939C3003397FB /* MemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoTableViewController.m; sourceTree = "<group>"; };
+		42CF2C0821A5498100951C6D /* InputFilterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputFilterVC.h; sourceTree = "<group>"; };
+		42CF2C0921A5498100951C6D /* InputFilterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputFilterVC.m; sourceTree = "<group>"; };
+		42CF2C1021A54A7D00951C6D /* TextFieldNonPackageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldNonPackageVC.h; sourceTree = "<group>"; };
+		42CF2C1121A54A7D00951C6D /* TextFieldNonPackageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldNonPackageVC.m; sourceTree = "<group>"; };
+		42CF2C1321A54B8F00951C6D /* TextFieldAndTextViewPackageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextFieldAndTextViewPackageVC.m; sourceTree = "<group>"; };
+		42CF2C1421A54B8F00951C6D /* ZLYTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLYTextField.m; sourceTree = "<group>"; };
+		42CF2C1521A54B8F00951C6D /* TextFieldAndTextViewPackageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldAndTextViewPackageVC.h; sourceTree = "<group>"; };
+		42CF2C1621A54B9000951C6D /* ZLYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLYTextView.h; sourceTree = "<group>"; };
+		42CF2C1721A54B9000951C6D /* ZLYTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZLYTextField.h; sourceTree = "<group>"; };
+		42CF2C1821A54B9000951C6D /* ZLYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZLYTextView.m; sourceTree = "<group>"; };
+		42CF2C1C21A54BFC00951C6D /* TextViewNonPackageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewNonPackageVC.h; sourceTree = "<group>"; };
+		42CF2C1D21A54BFC00951C6D /* TextViewNonPackageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewNonPackageVC.m; sourceTree = "<group>"; };
 		42CFD8FF215DCB45005792BD /* IPhoneDeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPhoneDeviceInfo.h; sourceTree = "<group>"; };
 		42CFD900215DCB45005792BD /* IPhoneDeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPhoneDeviceInfo.m; sourceTree = "<group>"; };
 		42CFD902215E008C005792BD /* UIColor+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
@@ -2667,7 +2685,7 @@
 				42C4DF03215F2A6C00247949 /* #24_无数据动画tableview */,
 				429B14EE2160C2A600F595FC /* #25_头部滚动tableView */,
 				42C52C0D2187DEB7001D7A07 /* #26_九宫格 */,
-				42DD7F8C2189314800E3B6F3 /* #27_动画王国 */,
+				42DD7F8C2189314800E3B6F3 /* #27_输入过滤 */,
 			);
 			path = "2，UI轮子";
 			sourceTree = "<group>";
@@ -4403,6 +4421,37 @@
 			path = "#18_便签效果";
 			sourceTree = "<group>";
 		};
+		42CF2C0D21A549F900951C6D /* 1，textField未封装 */ = {
+			isa = PBXGroup;
+			children = (
+				42CF2C1021A54A7D00951C6D /* TextFieldNonPackageVC.h */,
+				42CF2C1121A54A7D00951C6D /* TextFieldNonPackageVC.m */,
+			);
+			path = "1，textField未封装";
+			sourceTree = "<group>";
+		};
+		42CF2C0E21A54A0900951C6D /* 2，textView未封装 */ = {
+			isa = PBXGroup;
+			children = (
+				42CF2C1C21A54BFC00951C6D /* TextViewNonPackageVC.h */,
+				42CF2C1D21A54BFC00951C6D /* TextViewNonPackageVC.m */,
+			);
+			path = "2，textView未封装";
+			sourceTree = "<group>";
+		};
+		42CF2C0F21A54A1600951C6D /* 3，textField和textView封装 */ = {
+			isa = PBXGroup;
+			children = (
+				42CF2C1521A54B8F00951C6D /* TextFieldAndTextViewPackageVC.h */,
+				42CF2C1321A54B8F00951C6D /* TextFieldAndTextViewPackageVC.m */,
+				42CF2C1721A54B9000951C6D /* ZLYTextField.h */,
+				42CF2C1421A54B8F00951C6D /* ZLYTextField.m */,
+				42CF2C1621A54B9000951C6D /* ZLYTextView.h */,
+				42CF2C1821A54B9000951C6D /* ZLYTextView.m */,
+			);
+			path = "3，textField和textView封装";
+			sourceTree = "<group>";
+		};
 		42CFD940215E1DF8005792BD /* #23_启动页 */ = {
 			isa = PBXGroup;
 			children = (
@@ -4412,11 +4461,16 @@
 			path = "#23_启动页";
 			sourceTree = "<group>";
 		};
-		42DD7F8C2189314800E3B6F3 /* #27_动画王国 */ = {
+		42DD7F8C2189314800E3B6F3 /* #27_输入过滤 */ = {
 			isa = PBXGroup;
 			children = (
+				42CF2C0821A5498100951C6D /* InputFilterVC.h */,
+				42CF2C0921A5498100951C6D /* InputFilterVC.m */,
+				42CF2C0D21A549F900951C6D /* 1，textField未封装 */,
+				42CF2C0E21A54A0900951C6D /* 2，textView未封装 */,
+				42CF2C0F21A54A1600951C6D /* 3，textField和textView封装 */,
 			);
-			path = "#27_动画王国";
+			path = "#27_输入过滤";
 			sourceTree = "<group>";
 		};
 		42EFA8262109BA0E00AFC827 /* #7_UITableView */ = {
@@ -4902,11 +4956,13 @@
 				426707452121325B00046FE6 /* ExampleDynamicHeightCell.m in Sources */,
 				422789212145F44F002B9C13 /* JXPagingListContainerView.m in Sources */,
 				42C5B4C921422F5300563794 /* AttributedLabelCell.m in Sources */,
+				42CF2C1B21A54B9000951C6D /* ZLYTextView.m in Sources */,
 				4227888E2145F430002B9C13 /* JXCategoryIndicatorLineView.m in Sources */,
 				4227892E2145F44F002B9C13 /* SegmentedListViewController.m in Sources */,
 				42CFD907215E14F6005792BD /* AppDelegate+LaunchView.m in Sources */,
 				42B573B5213FC1FE0089CFDF /* DefaultSystemVC.m in Sources */,
 				429CB1B6210436960063A0D8 /* Demo6Cell.m in Sources */,
+				42CF2C1921A54B9000951C6D /* TextFieldAndTextViewPackageVC.m in Sources */,
 				429CB1A7210436960063A0D8 /* BaseViewController.m in Sources */,
 				4242B951212A72D800C3A2C5 /* YZDisplayViewController.m in Sources */,
 				42C5B6B2214269B700563794 /* WonderfulColorVC.m in Sources */,
@@ -5018,6 +5074,7 @@
 				42C51A27211C445D00742239 /* XMGStatus.m in Sources */,
 				429B15192160C2FD00F595FC /* STImageController.m in Sources */,
 				422788AB2145F431002B9C13 /* JXCategoryBaseCellModel.m in Sources */,
+				42CF2C0B21A5498100951C6D /* InputFilterVC.m in Sources */,
 				426707302121301400046FE6 /* UIView+CCUtil.m in Sources */,
 				42C4DF24215F2B3000247949 /* UIView+TABLayerout.m in Sources */,
 				426707362121301400046FE6 /* CCTableDataItem.m in Sources */,
@@ -5066,6 +5123,7 @@
 				42C7837E213CC45B0012188E /* FullWidthSelfSizingCell.m in Sources */,
 				429B15102160C2FC00F595FC /* STTransitions.m in Sources */,
 				42BF817E211A88680090E612 /* CQFilterCell.m in Sources */,
+				42CF2C1A21A54B9000951C6D /* ZLYTextField.m in Sources */,
 				4259011E2140D42400304394 /* Son2_ViewController.m in Sources */,
 				42C78388213CC45B0012188E /* StoryboardLabelSectionController.m in Sources */,
 				42C5B4DD214251E700563794 /* ShowViewController.m in Sources */,
@@ -5116,6 +5174,7 @@
 				42BF815A211A75860090E612 /* ShadeEffectVC.m in Sources */,
 				42B573CF213FC1FE0089CFDF /* ChildVCTwo.m in Sources */,
 				422789142145F44F002B9C13 /* VerticalSectionCategoryHeaderView.m in Sources */,
+				42CF2C1221A54A7D00951C6D /* TextFieldNonPackageVC.m in Sources */,
 				4227892F2145F44F002B9C13 /* SegmentedControlViewController.m in Sources */,
 				422AB70621742BEF0019F1D9 /* LabelLeaveSpaceVC.m in Sources */,
 				422788992145F431002B9C13 /* JXCategoryDotCellModel.m in Sources */,
@@ -5274,6 +5333,7 @@
 				42C78367213CC45B0012188E /* SupplementaryViewController.m in Sources */,
 				42C5B4CA21422F5300563794 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				42BF819D211A88BB0090E612 /* CQCategoryView.m in Sources */,
+				42CF2C1E21A54BFC00951C6D /* TextViewNonPackageVC.m in Sources */,
 				429B15152160C2FC00F595FC /* CustomSegmentControl.m in Sources */,
 				42C5B6A92142699B00563794 /* SXHeadLine.m in Sources */,
 				42C78381213CC45B0012188E /* EmbeddedSectionController.m in Sources */,
