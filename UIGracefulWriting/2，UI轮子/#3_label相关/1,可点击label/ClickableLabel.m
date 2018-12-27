@@ -127,22 +127,19 @@
     for (int i = 0; i<elementStrings.count; i++) {
         
         NSRange range = [attributedString.string rangeOfString:elementStrings[i]];
-        
+        //字体
         UIFont *font = [UIFont systemFontOfSize:[elementFonts[i] floatValue]];
-        
         [attributedString addAttribute:NSFontAttributeName value:font range:range];
-        
-        if (IPhone5) {
-            [attributedString addAttribute:NSForegroundColorAttributeName value:elementColors[i] range:range];
-        }
-        
-        [attributedString addAttribute:NSUnderlineStyleAttributeName value: @(NSUnderlineStyleSingle) range:range];
-        
-        [attributedString addAttribute:NSUnderlineColorAttributeName value:elementUnderLineColors[i] range:range];
-        
+        //颜色
+        [attributedString addAttribute:NSForegroundColorAttributeName value:elementColors[i] range:range];
+
+//        if (IPhone5) {
+//                    [attributedString addAttribute:NSUnderlineStyleAttributeName value: @(NSUnderlineStyleSingle) range:range];
+//            
+//                    [attributedString addAttribute:NSUnderlineColorAttributeName value:elementUnderLineColors[i] range:range];
+//        };
         NSValue *rangValue = [NSValue valueWithRange:range];
         [self.rangeArray addObject:rangValue];
-        
         
     };
     self.attributedText = attributedString;
@@ -329,9 +326,11 @@
             UIColor *textColor = _clickTextColor?_clickTextColor:[UIColor lightGrayColor];
             UIColor *backgroundColor = _clickBackgroundColor?_clickBackgroundColor:[UIColor lightGrayColor];
             [subAtt addAttribute:NSForegroundColorAttributeName value:textColor range:NSMakeRange(0, subAtt.string.length)];
-            if (IPhone5) {
-                [subAtt addAttribute:NSUnderlineColorAttributeName value:textColor range:NSMakeRange(0, subAtt.string.length)];
-            };
+            
+//            if (IPhone5) {
+//                [subAtt addAttribute:NSUnderlineColorAttributeName value:textColor range:NSMakeRange(0, subAtt.string.length)];
+//            };
+            
             [subAtt addAttribute:NSBackgroundColorAttributeName value:backgroundColor range:NSMakeRange(0, subAtt.string.length)];
             _updateLineColor = _clickTextColor;
             _updateLineRange = range;
@@ -394,14 +393,14 @@
 #pragma mark -  绘制下划线
 - (void) drawRect:(CGRect)rect {
     [super drawRect:rect];
-    if (!IPhone5) {
-        [self.rangeArray enumerateObjectsUsingBlock:^(NSValue * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-            NSValue *rangValue = (NSValue *)obj;
-            NSRange range = [rangValue rangeValue];
-            [self drawUnderlinePath:range isClick:NO];
-        }];
-        [self drawUnderlinePath:_updateLineRange isClick:YES];
-    };
+//    if (!IPhone5) {
+//        [self.rangeArray enumerateObjectsUsingBlock:^(NSValue * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//            NSValue *rangValue = (NSValue *)obj;
+//            NSRange range = [rangValue rangeValue];
+//            [self drawUnderlinePath:range isClick:NO];
+//        }];
+//        [self drawUnderlinePath:_updateLineRange isClick:YES];
+//    };
 }
 
 #pragma mark -  绘制

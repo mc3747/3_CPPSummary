@@ -21,7 +21,7 @@
     [super viewDidLoad];
    
 //    普通label宽度适应内容
-    UILabel *normalLabel1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, 200, 50)];
+    UILabel *normalLabel1 = [[UILabel alloc] initWithFrame:CGRectMake(0, 66, 200, 50)];
     normalLabel1.backgroundColor = [UIColor cyanColor];
     
     normalLabel1.text = @"普通label宽度适应内容:我已知晓,且已阅读并同意以上条款";
