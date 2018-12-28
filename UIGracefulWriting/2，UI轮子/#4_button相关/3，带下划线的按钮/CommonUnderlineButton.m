@@ -8,7 +8,7 @@
 
 #import "CommonUnderlineButton.h"
 #import "UIView+Extension.h"
-#import "UIButton+category2.h"
+
 
 @interface CommonUnderlineButton()
 @property (nonatomic, assign) BOOL isHighLightClick;
