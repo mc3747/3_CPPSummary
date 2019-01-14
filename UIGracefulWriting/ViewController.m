@@ -17,7 +17,6 @@
 #import "RightViewController.h"
 #import "SWRevealViewController.h"
 #import "Demo1ViewController.h"
-#import "ClickableLabel.h"
 #import "CommonUnderlineButton.h"
 #import "TextViewViewController.h"
 
@@ -32,8 +31,12 @@
 #import "SGEventVC.h"
 #import "SGCountdownVC.h"
 #import "SGImagePositionVC.h"
+#import "TTTAttributeLabelView.h"
+#import "ConfigAttributedString.h"
+#import "NSString+RichText.h"
 
-@interface ViewController ()
+@interface ViewController ()<TTTAttributeLabelViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
 @property (weak, nonatomic) IBOutlet UIButton *btn2;
 @property (weak, nonatomic) IBOutlet UIButton *btn3;
@@ -121,29 +124,45 @@
 }
 #pragma mark -  5,label可以点击和带下划线
 - (void)test5 {
-//常见属性
-    ClickableLabel *ybLabel2 = [[ClickableLabel alloc] initWithFrame:CGRectMake(10, 200, self.view.bounds.size.width - 20, 40)];
-    ybLabel2.backgroundColor = [UIColor whiteColor];
-    ybLabel2.numberOfLines = 2;
+    // 创建富文本
+    NSString *string = @"Between the husband and earth, each master. All Gou Fei Wu, although a little and Mo to take. YouXianMing but the river breeze, and the mountain of the moon, ear and sound, eyes meet and fineness. Take no ban, be inexhaustible. Is also the creator of the endless Tibet, and I and the children were appropriate.\n夫天地之间，物各有主。苟非吾之所有，虽一毫而莫取。惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色。 取之无禁，用之不竭。是造物者之无尽藏也，而吾与子之所共适。";
+    NSMutableParagraphStyle *style = [NSMutableParagraphStyle new];
+    style.lineSpacing              = 4.f;
+    style.paragraphSpacing         = style.lineSpacing * 4;
+    style.alignment                = NSTextAlignmentCenter;
+    NSAttributedString *attributedString  = \
+    [string createAttributedStringAndConfig:@[[ConfigAttributedString foregroundColor:[UIColor whiteColor] range:string.range],
+                                              [ConfigAttributedString paragraphStyle:style range:string.range],
+                                              [ConfigAttributedString font:[UIFont fontWithName:@"AppleSDGothicNeo-UltraLight" size:14.f] range:string.range]]];
     
-//富文本显示属性
-    NSString *label_text2 = @"我已阅读 借款协议 和 风险及禁止性行为提示 并同意签署";
-    NSArray *stringArray = @[@"借款协议",@"风险及禁止性行为提示"];
-    NSArray <NSNumber *> *elementfonts = @[@14,@14];
-    NSArray <UIColor *> *elementcolors = @[[UIColor redColor],[UIColor grayColor]];
-    NSArray <UIColor *> *elementunderLineColors = @[[UIColor redColor],[UIColor grayColor]];
-    [ybLabel2 gjs_addAttributeString:label_text2 totalFont:@14 totalColor:[UIColor grayColor] elementStrings:stringArray elementFonts:elementfonts elementColors:elementcolors elementUnderLineColors:elementunderLineColors];
+    // 初始化对象
+    TTTAttributeLabelView *attributeLabelView                    = [[TTTAttributeLabelView alloc] initWithFrame:CGRectMake(10, 50, 300, 0)];
+    attributeLabelView.attributedString   = attributedString;
+    attributeLabelView.delegate           = self;
+    attributeLabelView.linkColor          = [UIColor cyanColor];
     
-//点击属性
-    [ybLabel2 gjs_addAttributeTapActionWithStrings:stringArray enabledTapEffect:YES clickTextColor:[UIColor blueColor] clickBackgroundColor:[UIColor clearColor] tapClicked:^(NSString *string, NSRange range, NSInteger index) {
-        NSString *message = [NSString stringWithFormat:@"点击了“%@”字符\nrange: %@\nindex: %ld",string,NSStringFromRange(range),index];
-        NSLog(@"%@",message);
-    }];
-
-    [self pushVCWithView:ybLabel2];
+    // 添加超链接
+    NSRange range1 = [string rangeOfString:@"YouXianMing"];
+    [attributeLabelView addLinkStringRange:range1 flag:@"link1"];
     
-   
+    NSRange range2 = [string rangeOfString:@"inexhaustible"];
+    [attributeLabelView addLinkStringRange:range2 flag:@"link2"];
+    
+    NSRange range3 = [string rangeOfString:@"耳得之而为声，目遇之而成色。"];
+    [attributeLabelView addLinkStringRange:range3 flag:@"link3"];
+    
+    // 进行渲染
+    [attributeLabelView render];
+    [attributeLabelView resetSize];
+    [self.view addSubview:attributeLabelView];
+    
+     [self pushVCWithView:attributeLabelView];
 }
+- (void)TTTAttributeLabelView:(TTTAttributeLabelView *)attributeLabelView linkFlag:(NSString *)flag {
+    
+    NSLog(@"%@", flag);
+}
+
 #pragma mark -  6，textfield相关见storyboard
 //直接在stroyboard中跳转展示
 

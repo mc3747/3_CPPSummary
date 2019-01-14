@@ -241,7 +241,6 @@
 		42B182702106CAD200C1E682 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1826F2106CAD200C1E682 /* TextFieldViewController.m */; };
 		42B182762106D07800C1E682 /* UIButton+Enlarge.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182742106D07800C1E682 /* UIButton+Enlarge.m */; };
 		42B182792106D0B000C1E682 /* CommonUnderlineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182772106D0B000C1E682 /* CommonUnderlineButton.m */; };
-		42B1827E2106D13A00C1E682 /* ClickableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1827C2106D13A00C1E682 /* ClickableLabel.m */; };
 		42B182842106D83700C1E682 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182832106D83700C1E682 /* UIView+Extension.m */; };
 		42B1828821070BEF00C1E682 /* CustomFirstRateClickableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1828721070BEF00C1E682 /* CustomFirstRateClickableButton.m */; };
 		42B1828B2107105800C1E682 /* UIButton+category2.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182892107105800C1E682 /* UIButton+category2.m */; };
@@ -604,6 +603,10 @@
 		42F772672193D0DD00FFD237 /* JMBootstrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7724D2193D0DC00FFD237 /* JMBootstrapViewController.m */; };
 		42F772682193D0DD00FFD237 /* JMButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7724F2193D0DC00FFD237 /* JMButtonVC.m */; };
 		42F772692193D0DD00FFD237 /* JMCountDownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772502193D0DC00FFD237 /* JMCountDownViewController.m */; };
+		42F8D91121EC664E005D0120 /* TTTAttributeLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F8D90A21EC664D005D0120 /* TTTAttributeLabelView.m */; };
+		42F8D91221EC664F005D0120 /* ConfigAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F8D90E21EC664E005D0120 /* ConfigAttributedString.m */; };
+		42F8D91321EC664F005D0120 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F8D90F21EC664E005D0120 /* TTTAttributedLabel.m */; };
+		42F8D91421EC664F005D0120 /* NSString+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F8D91021EC664E005D0120 /* NSString+RichText.m */; };
 		7AAE78BAA5A74D93D9F72D30 /* libPods-UIGracefulWriting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14963D90AB1CDCB894329DCE /* libPods-UIGracefulWriting.a */; };
 /* End PBXBuildFile section */
 
@@ -1087,8 +1090,6 @@
 		42B182752106D07800C1E682 /* UIButton+Enlarge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Enlarge.h"; sourceTree = "<group>"; };
 		42B182772106D0B000C1E682 /* CommonUnderlineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUnderlineButton.m; sourceTree = "<group>"; };
 		42B182782106D0B000C1E682 /* CommonUnderlineButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUnderlineButton.h; sourceTree = "<group>"; };
-		42B1827C2106D13A00C1E682 /* ClickableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickableLabel.m; sourceTree = "<group>"; };
-		42B1827D2106D13A00C1E682 /* ClickableLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickableLabel.h; sourceTree = "<group>"; };
 		42B182822106D83700C1E682 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		42B182832106D83700C1E682 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		42B1828621070BEF00C1E682 /* CustomFirstRateClickableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFirstRateClickableButton.h; sourceTree = "<group>"; };
@@ -1784,6 +1785,14 @@
 		42F7724F2193D0DC00FFD237 /* JMButtonVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMButtonVC.m; sourceTree = "<group>"; };
 		42F772502193D0DC00FFD237 /* JMCountDownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMCountDownViewController.m; sourceTree = "<group>"; };
 		42F772512193D0DD00FFD237 /* JMCustomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMCustomViewController.h; sourceTree = "<group>"; };
+		42F8D90921EC664D005D0120 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		42F8D90A21EC664D005D0120 /* TTTAttributeLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributeLabelView.m; sourceTree = "<group>"; };
+		42F8D90B21EC664E005D0120 /* ConfigAttributedString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigAttributedString.h; sourceTree = "<group>"; };
+		42F8D90C21EC664E005D0120 /* NSString+RichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+RichText.h"; sourceTree = "<group>"; };
+		42F8D90D21EC664E005D0120 /* TTTAttributeLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributeLabelView.h; sourceTree = "<group>"; };
+		42F8D90E21EC664E005D0120 /* ConfigAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigAttributedString.m; sourceTree = "<group>"; };
+		42F8D90F21EC664E005D0120 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		42F8D91021EC664E005D0120 /* NSString+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RichText.m"; sourceTree = "<group>"; };
 		738B0AD82298246E9B0FD270 /* Pods-UIGracefulWriting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIGracefulWriting.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting.release.xcconfig"; sourceTree = "<group>"; };
 		80C7864567D28FF1398761C7 /* Pods-UIGracefulWriting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIGracefulWriting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -3171,8 +3180,14 @@
 		42B1827B2106D13A00C1E682 /* 1,可点击label */ = {
 			isa = PBXGroup;
 			children = (
-				42B1827D2106D13A00C1E682 /* ClickableLabel.h */,
-				42B1827C2106D13A00C1E682 /* ClickableLabel.m */,
+				42F8D90B21EC664E005D0120 /* ConfigAttributedString.h */,
+				42F8D90E21EC664E005D0120 /* ConfigAttributedString.m */,
+				42F8D90C21EC664E005D0120 /* NSString+RichText.h */,
+				42F8D91021EC664E005D0120 /* NSString+RichText.m */,
+				42F8D90921EC664D005D0120 /* TTTAttributedLabel.h */,
+				42F8D90F21EC664E005D0120 /* TTTAttributedLabel.m */,
+				42F8D90D21EC664E005D0120 /* TTTAttributeLabelView.h */,
+				42F8D90A21EC664D005D0120 /* TTTAttributeLabelView.m */,
 			);
 			path = "1,可点击label";
 			sourceTree = "<group>";
@@ -5303,7 +5318,9 @@
 				42B573B6213FC1FE0089CFDF /* DefaultThreeCoverVC.m in Sources */,
 				42BF819C211A88BB0090E612 /* CQCategoryItemCell.m in Sources */,
 				42523F35218BDD540038CEE3 /* BaseCollectionCell.m in Sources */,
+				42F8D91221EC664F005D0120 /* ConfigAttributedString.m in Sources */,
 				42DD8DC521A7ACA300CB04A5 /* AAPLCrossDissolveSecondViewController.m in Sources */,
+				42F8D91421EC664F005D0120 /* NSString+RichText.m in Sources */,
 				42C51A27211C445D00742239 /* XMGStatus.m in Sources */,
 				429B15192160C2FD00F595FC /* STImageController.m in Sources */,
 				422788AB2145F431002B9C13 /* JXCategoryBaseCellModel.m in Sources */,
@@ -5331,6 +5348,7 @@
 				4242B93C212A72C400C3A2C5 /* YZTXViewController.m in Sources */,
 				429CB0F2210436960063A0D8 /* TYCyclePagerViewCell.m in Sources */,
 				426707442121325B00046FE6 /* ExampleCell.m in Sources */,
+				42F8D91321EC664F005D0120 /* TTTAttributedLabel.m in Sources */,
 				422789192145F44F002B9C13 /* TitleViewController.m in Sources */,
 				42C7835B213CC45B0012188E /* EmptyViewController.m in Sources */,
 				42B573BB213FC1FE0089CFDF /* DefaultGradientEffectVC.m in Sources */,
@@ -5500,6 +5518,7 @@
 				42523F44218BF8F50038CEE3 /* HYBBaseViewController.m in Sources */,
 				42B573C3213FC1FE0089CFDF /* NavigationBarVC.m in Sources */,
 				42C78380213CC45B0012188E /* LabelSectionController.m in Sources */,
+				42F8D91121EC664E005D0120 /* TTTAttributeLabelView.m in Sources */,
 				42C78390213CC45B0012188E /* GridSectionController.m in Sources */,
 				422789302145F44F002B9C13 /* IndicatorImageViewViewController.m in Sources */,
 				422789362145F44F002B9C13 /* JXCategoryTitleAttributeCell.m in Sources */,
@@ -5642,7 +5661,6 @@
 				4242B94F212A72D800C3A2C5 /* YZFlowLayout.m in Sources */,
 				42C7836F213CC45B0012188E /* SearchCell.m in Sources */,
 				42C5B6A42142699B00563794 /* SXColorWonderfulDemoPage.m in Sources */,
-				42B1827E2106D13A00C1E682 /* ClickableLabel.m in Sources */,
 				42F772672193D0DD00FFD237 /* JMBootstrapViewController.m in Sources */,
 				42C5B48221422D4500563794 /* MYCoreTextViewController.m in Sources */,
 				42C5B48A21422D4500563794 /* MYCoreTextLabel.m in Sources */,
