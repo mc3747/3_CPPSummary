@@ -12,6 +12,7 @@
 #define SXRGB16Color(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 #define SXRGBAColor(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 
+//色系：使用颜色阶梯，颜色越来越深
 #define Wonderful_RedColor1 [UIColor mistyRose]
 #define Wonderful_RedColor2 [UIColor lightSalmon]
 #define Wonderful_RedColor3 [UIColor lightCoral]
