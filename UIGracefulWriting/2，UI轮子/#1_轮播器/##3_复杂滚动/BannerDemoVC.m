@@ -19,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.2];
+    self.view.backgroundColor = Wonderful_YelloeColor3;
     [self addBanner];
     [self addCycleView];
     [self addAutoView];

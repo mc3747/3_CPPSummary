@@ -80,7 +80,7 @@
     UIViewController *VC = [[UIViewController alloc] init];
     VC.view.backgroundColor = [UIColor blueColor];
     CustomBannerScrollView *bannerView = [[CustomBannerScrollView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 150) ];
-    [bannerView configPictures:@[@"home_ad_1",@"home_ad_2",@"home_ad_3"]];
+    [bannerView configPictures:@[@"0_full",@"1_full",@"2_full"]];
     [VC.view addSubview:bannerView];
     [self.navigationController pushViewController:VC animated:YES];
 }

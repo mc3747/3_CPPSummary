@@ -21,7 +21,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = Wonderful_YelloeColor5;
     
     NSString *contentStr = @"鲸属于脊索动物门,脊椎动物亚门，哺乳纲，真兽亚纲，包含了大约98种生活在海洋、河流中的胎生哺乳动物。中国海域就有30余种。“鲸”本身定义比较模糊，鲸目可以包含所有鲸类，还有特定科的鲸类。";
     

@@ -2799,8 +2799,8 @@
 			isa = PBXGroup;
 			children = (
 				429CAF8C210436950063A0D8 /* ##1_普通滚动 */,
-				429CAF8F210436950063A0D8 /* ##3_复杂滚动 */,
 				429CAF9E210436950063A0D8 /* ##2_循环滚动 */,
+				429CAF8F210436950063A0D8 /* ##3_复杂滚动 */,
 			);
 			path = "#1_轮播器";
 			sourceTree = "<group>";
@@ -2853,11 +2853,11 @@
 			isa = PBXGroup;
 			children = (
 				429CAF9F210436950063A0D8 /* SDViewController.h */,
-				429CAFA0210436950063A0D8 /* SDImage */,
-				429CAFAB210436950063A0D8 /* CustomCollectionViewCell.m */,
 				429CAFAC210436950063A0D8 /* SDViewController.m */,
-				429CAFAD210436950063A0D8 /* SDCycleScrollView */,
 				429CAFE4210436950063A0D8 /* CustomCollectionViewCell.h */,
+				429CAFAB210436950063A0D8 /* CustomCollectionViewCell.m */,
+				429CAFA0210436950063A0D8 /* SDImage */,
+				429CAFAD210436950063A0D8 /* SDCycleScrollView */,
 			);
 			path = "##2_循环滚动";
 			sourceTree = "<group>";
@@ -3651,8 +3651,8 @@
 			children = (
 				42B182822106D83700C1E682 /* UIView+Extension.h */,
 				42B182832106D83700C1E682 /* UIView+Extension.m */,
-				429CB1BF21043C3E0063A0D8 /* UIControl+Category.m */,
 				429CB1C121043C3E0063A0D8 /* UIControl+Category.h */,
+				429CB1BF21043C3E0063A0D8 /* UIControl+Category.m */,
 				429CB1BE21043C3E0063A0D8 /* UIImage+Category.m */,
 				429CB1C021043C3E0063A0D8 /* UIImage+Category.h */,
 				42B573EB213FD11C0089CFDF /* UIButton+Category.h */,

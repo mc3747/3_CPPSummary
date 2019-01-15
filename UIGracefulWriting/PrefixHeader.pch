@@ -33,6 +33,7 @@
 #import "MCDataConversion.h"
 #import "MCDataJudge.h"
 #import "MCDataSafety.h"
+#import "UIColor+Wonderful.h"
 
 // 强弱引用
 #define GJWeakSelf  __weak typeof(self) weakSelf = self;
