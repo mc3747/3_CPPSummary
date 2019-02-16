@@ -16,22 +16,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = Wonderful_GreenColor4;
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(0, 100, 200, 80)];
+    [button setTitle:@"点击进入" forState:UIControlStateNormal];
+    [button setBackgroundColor:[UIColor orangeColor] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(pushVC) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    
+    
+   
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)pushVC {
+    Common_ViewController *vc = [[Common_ViewController alloc] init];
+    vc.subtitleArray = @[@[@"1_点击折叠cell",@"2_滑动cell编辑",@"3_点击动画打开cell"]];
+    vc.vcNameArray = @[@[@"FoldCellVC",@"SwipEditorCellVC",@"FoldCellAnimateVC"]];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

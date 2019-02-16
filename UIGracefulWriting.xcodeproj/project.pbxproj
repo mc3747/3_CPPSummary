@@ -332,6 +332,22 @@
 		42BF81AE211A89D90090E612 /* CQDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A2211A89D90090E612 /* CQDetailViewController.m */; };
 		42BF81AF211A89D90090E612 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A7211A89D90090E612 /* UIView+Util.m */; };
 		42BF81B0211A89D90090E612 /* UIView+FrameHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A8211A89D90090E612 /* UIView+FrameHelper.m */; };
+		42C444752217F666004983B3 /* YUFoldingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C444682217F662004983B3 /* YUFoldingTableView.m */; };
+		42C444762217F666004983B3 /* YUFoldingSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C444692217F662004983B3 /* YUFoldingSectionHeader.m */; };
+		42C444772217F666004983B3 /* YUFolding_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 42C4446B2217F662004983B3 /* YUFolding_arrow.png */; };
+		42C444782217F666004983B3 /* YUCustomTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4446F2217F663004983B3 /* YUCustomTestController.m */; };
+		42C444792217F666004983B3 /* FoldCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C444702217F664004983B3 /* FoldCellVC.m */; };
+		42C4447A2217F666004983B3 /* YUCustomHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C444722217F664004983B3 /* YUCustomHeaderView.m */; };
+		42C4447B2217F666004983B3 /* YUTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C444732217F665004983B3 /* YUTestViewController.m */; };
+		42C444892217F9B2004983B3 /* DemoFoldingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4447C2217F9B1004983B3 /* DemoFoldingCell.m */; };
+		42C4448B2217F9B2004983B3 /* UIView+SnapShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4447F2217F9B2004983B3 /* UIView+SnapShot.m */; };
+		42C4448C2217F9B2004983B3 /* HSFolderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C444802217F9B2004983B3 /* HSFolderCell.m */; };
+		42C4448D2217F9B2004983B3 /* HSRotatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C444812217F9B2004983B3 /* HSRotatedView.m */; };
+		42C4448E2217F9B2004983B3 /* FoldCellAnimateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C444852217F9B2004983B3 /* FoldCellAnimateVC.m */; };
+		42C4449222184DBD004983B3 /* SwipEditorCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4449022184DBD004983B3 /* SwipEditorCellVC.m */; };
+		42C4449322184DBD004983B3 /* SwipEditorCellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42C4449122184DBD004983B3 /* SwipEditorCellVC.xib */; };
+		42C4449822184E5F004983B3 /* PLCustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4449422184E5E004983B3 /* PLCustomTableViewController.m */; };
+		42C4449922184E5F004983B3 /* PLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4449722184E5F004983B3 /* PLTableViewController.m */; };
 		42C4DEFC215F108D00247949 /* JKCountDownLable.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DEFA215F108D00247949 /* JKCountDownLable.m */; };
 		42C4DF01215F138D00247949 /* JKCountDownDateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DEFE215F138C00247949 /* JKCountDownDateButton.m */; };
 		42C4DF02215F138D00247949 /* JKCountDownNumberButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42C4DF00215F138D00247949 /* JKCountDownNumberButton.m */; };
@@ -1265,6 +1281,36 @@
 		42BF81AA211A89D90090E612 /* UIView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Util.h"; sourceTree = "<group>"; };
 		42BF81AB211A89D90090E612 /* UIView+FrameHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FrameHelper.h"; sourceTree = "<group>"; };
 		42BF81B1211A8B0C0090E612 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		42C444682217F662004983B3 /* YUFoldingTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUFoldingTableView.m; sourceTree = "<group>"; };
+		42C444692217F662004983B3 /* YUFoldingSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUFoldingSectionHeader.m; sourceTree = "<group>"; };
+		42C4446A2217F662004983B3 /* YUFoldingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUFoldingTableView.h; sourceTree = "<group>"; };
+		42C4446B2217F662004983B3 /* YUFolding_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YUFolding_arrow.png; sourceTree = "<group>"; };
+		42C4446C2217F662004983B3 /* YUFoldingSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUFoldingSectionHeader.h; sourceTree = "<group>"; };
+		42C4446D2217F662004983B3 /* YUCustomHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUCustomHeaderView.h; sourceTree = "<group>"; };
+		42C4446E2217F663004983B3 /* YUTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUTestViewController.h; sourceTree = "<group>"; };
+		42C4446F2217F663004983B3 /* YUCustomTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUCustomTestController.m; sourceTree = "<group>"; };
+		42C444702217F664004983B3 /* FoldCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldCellVC.m; sourceTree = "<group>"; };
+		42C444712217F664004983B3 /* FoldCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldCellVC.h; sourceTree = "<group>"; };
+		42C444722217F664004983B3 /* YUCustomHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUCustomHeaderView.m; sourceTree = "<group>"; };
+		42C444732217F665004983B3 /* YUTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUTestViewController.m; sourceTree = "<group>"; };
+		42C444742217F666004983B3 /* YUCustomTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUCustomTestController.h; sourceTree = "<group>"; };
+		42C4447C2217F9B1004983B3 /* DemoFoldingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoFoldingCell.m; sourceTree = "<group>"; };
+		42C4447F2217F9B2004983B3 /* UIView+SnapShot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SnapShot.m"; sourceTree = "<group>"; };
+		42C444802217F9B2004983B3 /* HSFolderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSFolderCell.m; sourceTree = "<group>"; };
+		42C444812217F9B2004983B3 /* HSRotatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSRotatedView.m; sourceTree = "<group>"; };
+		42C444822217F9B2004983B3 /* UIView+SnapShot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SnapShot.h"; sourceTree = "<group>"; };
+		42C444832217F9B2004983B3 /* HSRotatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSRotatedView.h; sourceTree = "<group>"; };
+		42C444842217F9B2004983B3 /* HSFolderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSFolderCell.h; sourceTree = "<group>"; };
+		42C444852217F9B2004983B3 /* FoldCellAnimateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoldCellAnimateVC.m; sourceTree = "<group>"; };
+		42C444872217F9B2004983B3 /* FoldCellAnimateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoldCellAnimateVC.h; sourceTree = "<group>"; };
+		42C444882217F9B2004983B3 /* DemoFoldingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoFoldingCell.h; sourceTree = "<group>"; };
+		42C4448F22184DBD004983B3 /* SwipEditorCellVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwipEditorCellVC.h; sourceTree = "<group>"; };
+		42C4449022184DBD004983B3 /* SwipEditorCellVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipEditorCellVC.m; sourceTree = "<group>"; };
+		42C4449122184DBD004983B3 /* SwipEditorCellVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwipEditorCellVC.xib; sourceTree = "<group>"; };
+		42C4449422184E5E004983B3 /* PLCustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLCustomTableViewController.m; sourceTree = "<group>"; };
+		42C4449522184E5E004983B3 /* PLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLTableViewController.h; sourceTree = "<group>"; };
+		42C4449622184E5E004983B3 /* PLCustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PLCustomTableViewController.h; sourceTree = "<group>"; };
+		42C4449722184E5F004983B3 /* PLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PLTableViewController.m; sourceTree = "<group>"; };
 		42C4DEFA215F108D00247949 /* JKCountDownLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCountDownLable.m; sourceTree = "<group>"; };
 		42C4DEFB215F108D00247949 /* JKCountDownLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCountDownLable.h; sourceTree = "<group>"; };
 		42C4DEFD215F138C00247949 /* JKCountDownNumberButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCountDownNumberButton.h; sourceTree = "<group>"; };
@@ -3646,6 +3692,73 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		42C444642217F5FC004983B3 /* 1-点击折叠cell */ = {
+			isa = PBXGroup;
+			children = (
+				42C444712217F664004983B3 /* FoldCellVC.h */,
+				42C444702217F664004983B3 /* FoldCellVC.m */,
+				42C4446D2217F662004983B3 /* YUCustomHeaderView.h */,
+				42C444722217F664004983B3 /* YUCustomHeaderView.m */,
+				42C444742217F666004983B3 /* YUCustomTestController.h */,
+				42C4446F2217F663004983B3 /* YUCustomTestController.m */,
+				42C444672217F662004983B3 /* YUFoldingTableView */,
+				42C4446E2217F663004983B3 /* YUTestViewController.h */,
+				42C444732217F665004983B3 /* YUTestViewController.m */,
+			);
+			path = "1-点击折叠cell";
+			sourceTree = "<group>";
+		};
+		42C444652217F610004983B3 /* 2-滑动编辑 */ = {
+			isa = PBXGroup;
+			children = (
+				42C4448F22184DBD004983B3 /* SwipEditorCellVC.h */,
+				42C4449022184DBD004983B3 /* SwipEditorCellVC.m */,
+				42C4449122184DBD004983B3 /* SwipEditorCellVC.xib */,
+				42C4449522184E5E004983B3 /* PLTableViewController.h */,
+				42C4449722184E5F004983B3 /* PLTableViewController.m */,
+				42C4449622184E5E004983B3 /* PLCustomTableViewController.h */,
+				42C4449422184E5E004983B3 /* PLCustomTableViewController.m */,
+			);
+			path = "2-滑动编辑";
+			sourceTree = "<group>";
+		};
+		42C444662217F62D004983B3 /* 3-点击动画展开 */ = {
+			isa = PBXGroup;
+			children = (
+				42C444872217F9B2004983B3 /* FoldCellAnimateVC.h */,
+				42C444852217F9B2004983B3 /* FoldCellAnimateVC.m */,
+				42C444882217F9B2004983B3 /* DemoFoldingCell.h */,
+				42C4447C2217F9B1004983B3 /* DemoFoldingCell.m */,
+				42C4447E2217F9B2004983B3 /* HSFolderCell */,
+			);
+			path = "3-点击动画展开";
+			sourceTree = "<group>";
+		};
+		42C444672217F662004983B3 /* YUFoldingTableView */ = {
+			isa = PBXGroup;
+			children = (
+				42C444682217F662004983B3 /* YUFoldingTableView.m */,
+				42C444692217F662004983B3 /* YUFoldingSectionHeader.m */,
+				42C4446A2217F662004983B3 /* YUFoldingTableView.h */,
+				42C4446B2217F662004983B3 /* YUFolding_arrow.png */,
+				42C4446C2217F662004983B3 /* YUFoldingSectionHeader.h */,
+			);
+			path = YUFoldingTableView;
+			sourceTree = "<group>";
+		};
+		42C4447E2217F9B2004983B3 /* HSFolderCell */ = {
+			isa = PBXGroup;
+			children = (
+				42C4447F2217F9B2004983B3 /* UIView+SnapShot.m */,
+				42C444802217F9B2004983B3 /* HSFolderCell.m */,
+				42C444812217F9B2004983B3 /* HSRotatedView.m */,
+				42C444822217F9B2004983B3 /* UIView+SnapShot.h */,
+				42C444832217F9B2004983B3 /* HSRotatedView.h */,
+				42C444842217F9B2004983B3 /* HSFolderCell.h */,
+			);
+			path = HSFolderCell;
+			sourceTree = "<group>";
+		};
 		42C4DEF5215F053900247949 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -4779,6 +4892,9 @@
 			children = (
 				42EFA8392109BBF700AFC827 /* TabView_5_ViewController.h */,
 				42EFA83A2109BBF700AFC827 /* TabView_5_ViewController.m */,
+				42C444642217F5FC004983B3 /* 1-点击折叠cell */,
+				42C444652217F610004983B3 /* 2-滑动编辑 */,
+				42C444662217F62D004983B3 /* 3-点击动画展开 */,
 			);
 			path = "5，炫酷效果";
 			sourceTree = "<group>";
@@ -5051,6 +5167,7 @@
 				429CB0FA210436960063A0D8 /* pageControlCurrentDot@3x.png in Resources */,
 				42DD8DCF21A7ACA400CB04A5 /* Swipe.storyboard in Resources */,
 				429CB0FF210436960063A0D8 /* pageControlDot@2x.png in Resources */,
+				42C444772217F666004983B3 /* YUFolding_arrow.png in Resources */,
 				42C7836D213CC45B0012188E /* UserHeaderView.xib in Resources */,
 				42B573CB213FC1FE0089CFDF /* ChildFourthPopGestureVC.xib in Resources */,
 				42DD8DC821A7ACA400CB04A5 /* CrossDissolve.storyboard in Resources */,
@@ -5079,6 +5196,7 @@
 				42DD8DD521A7ACA400CB04A5 /* Checkerboard.storyboard in Resources */,
 				42C783C4213CCB6A0012188E /* YZSortCell.xib in Resources */,
 				429B15132160C2FC00F595FC /* github.png in Resources */,
+				42C4449322184DBD004983B3 /* SwipEditorCellVC.xib in Resources */,
 				42C5B6F621426E9800563794 /* WonderfulColor.storyboard in Resources */,
 				42C4DF2A215F2B3000247949 /* head.jpg in Resources */,
 				42DD8DC421A7ACA300CB04A5 /* Slide.storyboard in Resources */,
@@ -5234,6 +5352,7 @@
 				42523F62218BF98D0038CEE3 /* PackageCollectionVC.m in Sources */,
 				42523F65218BFA1A0038CEE3 /* HYBCardViewController.m in Sources */,
 				42B573C1213FC1FE0089CFDF /* DefaultAttributedTitleVC.m in Sources */,
+				42C4448E2217F9B2004983B3 /* FoldCellAnimateVC.m in Sources */,
 				4227889D2145F431002B9C13 /* JXCategoryTitleCellModel.m in Sources */,
 				42C787E4213D2BC60012188E /* SGImagePositionVC.m in Sources */,
 				426707462121325B00046FE6 /* ExampleFooterView.m in Sources */,
@@ -5255,6 +5374,7 @@
 				422788982145F431002B9C13 /* JXCategoryDotView.m in Sources */,
 				42F772642193D0DD00FFD237 /* JMRadioViewController.m in Sources */,
 				42523F55218BF9350038CEE3 /* HYBCardScaleViewController.m in Sources */,
+				42C4449222184DBD004983B3 /* SwipEditorCellVC.m in Sources */,
 				429CB109210436960063A0D8 /* TAAbstractDotView.m in Sources */,
 				42F772652193D0DD00FFD237 /* JMWaveViewController.m in Sources */,
 				42B573DC213FC1FE0089CFDF /* Switch3_ViewController.m in Sources */,
@@ -5318,6 +5438,7 @@
 				42B573B6213FC1FE0089CFDF /* DefaultThreeCoverVC.m in Sources */,
 				42BF819C211A88BB0090E612 /* CQCategoryItemCell.m in Sources */,
 				42523F35218BDD540038CEE3 /* BaseCollectionCell.m in Sources */,
+				42C444782217F666004983B3 /* YUCustomTestController.m in Sources */,
 				42F8D91221EC664F005D0120 /* ConfigAttributedString.m in Sources */,
 				42DD8DC521A7ACA300CB04A5 /* AAPLCrossDissolveSecondViewController.m in Sources */,
 				42F8D91421EC664F005D0120 /* NSString+RichText.m in Sources */,
@@ -5337,6 +5458,7 @@
 				429CB1C221043C3E0063A0D8 /* UIImage+Category.m in Sources */,
 				4267072F2121301400046FE6 /* CCBaseTableHeaderView.m in Sources */,
 				42C5B4C721422F5300563794 /* RegexKitLite.m in Sources */,
+				42C444792217F666004983B3 /* FoldCellVC.m in Sources */,
 				429CB1BB210436960063A0D8 /* RPSlidingMenuCell.m in Sources */,
 				42C787D2213D2B420012188E /* UIButton+SGImagePosition.m in Sources */,
 				425901052140BDE400304394 /* ShareButton.m in Sources */,
@@ -5379,6 +5501,7 @@
 				42C78388213CC45B0012188E /* StoryboardLabelSectionController.m in Sources */,
 				42C5B4DD214251E700563794 /* ShowViewController.m in Sources */,
 				42789BF02154759900F85994 /* Test1ViewController.m in Sources */,
+				42C4449922184E5F004983B3 /* PLTableViewController.m in Sources */,
 				425900EC2140BD8100304394 /* AlertTableViewController.m in Sources */,
 				42BF8154211A75010090E612 /* NSDate+InternetDateTime.m in Sources */,
 				42C7838B213CC45B0012188E /* SelfSizingSectionController.m in Sources */,
@@ -5460,6 +5583,7 @@
 				429B15182160C2FD00F595FC /* STListController.m in Sources */,
 				42C7834E213CC45B0012188E /* DayViewModel.m in Sources */,
 				429CB107210436960063A0D8 /* TAPageControl.m in Sources */,
+				42C4448C2217F9B2004983B3 /* HSFolderCell.m in Sources */,
 				42C4DF23215F2B3000247949 /* UIView+Animated.m in Sources */,
 				42CB7E7E21391F3F003397FB /* HtmlViewController.m in Sources */,
 				42B573C2213FC1FE0089CFDF /* DefaultZoomVC.m in Sources */,
@@ -5493,6 +5617,7 @@
 				422788962145F431002B9C13 /* JXCategoryIndicatorView.m in Sources */,
 				422789282145F44F002B9C13 /* CellCustomizeViewController.m in Sources */,
 				42C783C3213CCB6A0012188E /* YZSortViewController.m in Sources */,
+				42C4448B2217F9B2004983B3 /* UIView+SnapShot.m in Sources */,
 				42B573BF213FC1FE0089CFDF /* DefaultStaticVC.m in Sources */,
 				422788922145F431002B9C13 /* JXCategoryIndicatorComponentView.m in Sources */,
 				42F7725F2193D0DD00FFD237 /* UIColor+JM.m in Sources */,
@@ -5507,6 +5632,7 @@
 				42C78386213CC45B0012188E /* UserSectionController.m in Sources */,
 				42C783C9213CCB6A0012188E /* YZAllCourseViewController.m in Sources */,
 				42C52C142187DF93001D7A07 /* NineGridVC.m in Sources */,
+				42C444752217F666004983B3 /* YUFoldingTableView.m in Sources */,
 				42C5B6AF2142699B00563794 /* SXColorGradientView.m in Sources */,
 				42C5B6A62142699B00563794 /* SXColorLblDemoPage.m in Sources */,
 				42B573CC213FC1FE0089CFDF /* ChildFourthPopGestureNextVC.m in Sources */,
@@ -5525,7 +5651,9 @@
 				42C5B6AC2142699B00563794 /* SXMarquee.m in Sources */,
 				42BF8184211A88680090E612 /* CQFilterViewController.m in Sources */,
 				422788A32145F431002B9C13 /* JXCategoryNumberView.m in Sources */,
+				42C444762217F666004983B3 /* YUFoldingSectionHeader.m in Sources */,
 				4227891D2145F44F002B9C13 /* PowerListView.m in Sources */,
+				42C4447B2217F666004983B3 /* YUTestViewController.m in Sources */,
 				42C78366213CC45B0012188E /* NestedAdapterViewController.m in Sources */,
 				4242B943212A72C400C3A2C5 /* ChildViewController.m in Sources */,
 				42CB7E5A2138F3C8003397FB /* RichTextVC.m in Sources */,
@@ -5536,6 +5664,7 @@
 				42B573E7213FCD7C0089CFDF /* AlertViewController.m in Sources */,
 				422789162145F44F002B9C13 /* VerticalListCellModel.m in Sources */,
 				42DD8DD021A7ACA400CB04A5 /* AAPLSwipeTransitionAnimator.m in Sources */,
+				42C4449822184E5F004983B3 /* PLCustomTableViewController.m in Sources */,
 				42BF8182211A88680090E612 /* CQFilterRequest.m in Sources */,
 				42F772602193D0DD00FFD237 /* JMBadgeValue.m in Sources */,
 				42F772162193CDCC00FFD237 /* NSObject+size.m in Sources */,
@@ -5557,6 +5686,7 @@
 				429CB106210436960063A0D8 /* TADotView.m in Sources */,
 				42C783A2213CC99E0012188E /* DropDownViewController.m in Sources */,
 				42BF8185211A88680090E612 /* CQFilterBaseModel.m in Sources */,
+				42C4448D2217F9B2004983B3 /* HSRotatedView.m in Sources */,
 				425901212140D43300304394 /* Son3_ViewController.m in Sources */,
 				42B573E2213FC1FE0089CFDF /* SGPageTitleViewConfigure.m in Sources */,
 				42CFD904215E008C005792BD /* UIColor+Category.m in Sources */,
@@ -5639,6 +5769,7 @@
 				425901092140BDE400304394 /* SelectedListModel.m in Sources */,
 				42C783C2213CCB6A0012188E /* YZMoreMenuCell.m in Sources */,
 				42523F54218BF9350038CEE3 /* HYBCardScaleFlowLayout.m in Sources */,
+				42C444892217F9B2004983B3 /* DemoFoldingCell.m in Sources */,
 				42C5B6A82142699B00563794 /* SXColorListPage.m in Sources */,
 				422789132145F44F002B9C13 /* VerticalListViewController.m in Sources */,
 				42C7836A213CC45B0012188E /* NibSelfSizingCell.m in Sources */,
@@ -5677,6 +5808,7 @@
 				429B151D2160C2FD00F595FC /* STHeaderView.m in Sources */,
 				426707352121301400046FE6 /* CCBaseTableFooterView.m in Sources */,
 				42C5B4CB21422F5300563794 /* TExamTextField.m in Sources */,
+				42C4447A2217F666004983B3 /* YUCustomHeaderView.m in Sources */,
 				425901082140BDE400304394 /* OpenPushView.m in Sources */,
 				42C5B6A52142699B00563794 /* SXColorGradientDemoPage.m in Sources */,
 				42EFA82F2109BBBD00AFC827 /* TabView_1_ViewController.m in Sources */,

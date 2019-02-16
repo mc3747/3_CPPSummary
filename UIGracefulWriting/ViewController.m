@@ -201,35 +201,44 @@
 #pragma mark -  11,textView相关
 - (void)test10 {
     TextViewViewController *vc = [[TextViewViewController alloc] init];
+     vc.title = @"textView相关";
     [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark -  12,tableView常用设置
 - (void)test11 {
     TabView_1_ViewController *vc = [[TabView_1_ViewController alloc] init];
+     vc.title = @"tableView常用设置";
     [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark -  13,tableView自定义等高
 - (void)test12 {
     TabView_2_ViewController *vc = [[TabView_2_ViewController alloc] init];
+     vc.title = @"tableView自定义等高";
     [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark -  14,tableView自定义不等高
 - (void)test13 {
     TabView_3_ViewController *vc = [[TabView_3_ViewController alloc] init];
+     vc.title = @"tableView自定义不等高";
     [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark -  15,tableView优雅地写
 - (void)test14 {
     TabView_4_ViewController *vc = [[TabView_4_ViewController alloc] init];
+    vc.title = @"tableView优雅地写";
     [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark -  16,炫酷效果
 - (void)test15 {
-    
+    TabView_5_ViewController *vc = [[TabView_5_ViewController alloc] init];
+     vc.title = @"tableView炫酷效果";
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark -  17,性能优化
 - (void)test16 {
-    
+    TabView_6_ViewController *vc = [[TabView_6_ViewController alloc] init];
+     vc.title = @"tableView性能优化";
+    [self.navigationController pushViewController:vc animated:YES];
 }
 #pragma mark -  18,备用
 - (void)test17 {

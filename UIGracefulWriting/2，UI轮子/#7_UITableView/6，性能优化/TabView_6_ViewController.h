@@ -6,8 +6,9 @@
 //  Copyright © 2018年 macheng. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 
-@interface TabView_6_ViewController : UIViewController
+#import "Common_ViewController.h"
+
+@interface TabView_6_ViewController : Common_ViewController
 
 @end
