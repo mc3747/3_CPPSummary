@@ -587,6 +587,9 @@
 		42DD8DDA21A7ACA400CB04A5 /* AAPLAdaptivePresentationFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD8DBE21A7ACA300CB04A5 /* AAPLAdaptivePresentationFirstViewController.m */; };
 		42DD8DDB21A7ACA400CB04A5 /* AAPLAdaptivePresentationSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD8DBF21A7ACA300CB04A5 /* AAPLAdaptivePresentationSecondViewController.m */; };
 		42DD8DDD21A7AEA600CB04A5 /* AAPLMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DD8DDC21A7AEA600CB04A5 /* AAPLMenuViewController.storyboard */; };
+		42E8E116221A84E100A04331 /* PageLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E8E115221A84E100A04331 /* PageLoadingVC.m */; };
+		42E8E119221A92F900A04331 /* PageLoadingDemo1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E8E118221A92F900A04331 /* PageLoadingDemo1VC.m */; };
+		42E8E11C221A982F00A04331 /* PageLoadingDemo2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E8E11B221A982F00A04331 /* PageLoadingDemo2VC.m */; };
 		42EFA82F2109BBBD00AFC827 /* TabView_1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA82E2109BBBD00AFC827 /* TabView_1_ViewController.m */; };
 		42EFA8322109BBCC00AFC827 /* TabView_2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8312109BBCC00AFC827 /* TabView_2_ViewController.m */; };
 		42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8342109BBD800AFC827 /* TabView_3_ViewController.m */; };
@@ -1765,6 +1768,12 @@
 		42DD8DBE21A7ACA300CB04A5 /* AAPLAdaptivePresentationFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLAdaptivePresentationFirstViewController.m; sourceTree = "<group>"; };
 		42DD8DBF21A7ACA300CB04A5 /* AAPLAdaptivePresentationSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLAdaptivePresentationSecondViewController.m; sourceTree = "<group>"; };
 		42DD8DDC21A7AEA600CB04A5 /* AAPLMenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AAPLMenuViewController.storyboard; sourceTree = "<group>"; };
+		42E8E114221A84E100A04331 /* PageLoadingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageLoadingVC.h; sourceTree = "<group>"; };
+		42E8E115221A84E100A04331 /* PageLoadingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageLoadingVC.m; sourceTree = "<group>"; };
+		42E8E117221A92F900A04331 /* PageLoadingDemo1VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageLoadingDemo1VC.h; sourceTree = "<group>"; };
+		42E8E118221A92F900A04331 /* PageLoadingDemo1VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageLoadingDemo1VC.m; sourceTree = "<group>"; };
+		42E8E11A221A982F00A04331 /* PageLoadingDemo2VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageLoadingDemo2VC.h; sourceTree = "<group>"; };
+		42E8E11B221A982F00A04331 /* PageLoadingDemo2VC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageLoadingDemo2VC.m; sourceTree = "<group>"; };
 		42EFA82D2109BBBD00AFC827 /* TabView_1_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabView_1_ViewController.h; sourceTree = "<group>"; };
 		42EFA82E2109BBBD00AFC827 /* TabView_1_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabView_1_ViewController.m; sourceTree = "<group>"; };
 		42EFA8302109BBCC00AFC827 /* TabView_2_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabView_2_ViewController.h; sourceTree = "<group>"; };
@@ -4816,6 +4825,19 @@
 			path = "Adaptive Presentation";
 			sourceTree = "<group>";
 		};
+		42E8E113221A84A700A04331 /* 1，分页加载 */ = {
+			isa = PBXGroup;
+			children = (
+				42E8E114221A84E100A04331 /* PageLoadingVC.h */,
+				42E8E115221A84E100A04331 /* PageLoadingVC.m */,
+				42E8E117221A92F900A04331 /* PageLoadingDemo1VC.h */,
+				42E8E118221A92F900A04331 /* PageLoadingDemo1VC.m */,
+				42E8E11A221A982F00A04331 /* PageLoadingDemo2VC.h */,
+				42E8E11B221A982F00A04331 /* PageLoadingDemo2VC.m */,
+			);
+			path = "1，分页加载";
+			sourceTree = "<group>";
+		};
 		42EFA8262109BA0E00AFC827 /* #7_UITableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -4904,6 +4926,7 @@
 			children = (
 				42EFA83C2109BC0600AFC827 /* TabView_6_ViewController.h */,
 				42EFA83D2109BC0600AFC827 /* TabView_6_ViewController.m */,
+				42E8E113221A84A700A04331 /* 1，分页加载 */,
 			);
 			path = "6，性能优化";
 			sourceTree = "<group>";
@@ -5475,6 +5498,7 @@
 				42C7835B213CC45B0012188E /* EmptyViewController.m in Sources */,
 				42B573BB213FC1FE0089CFDF /* DefaultGradientEffectVC.m in Sources */,
 				422789372145F44F002B9C13 /* JXCategoryIndicatorDotLineView.m in Sources */,
+				42E8E116221A84E100A04331 /* PageLoadingVC.m in Sources */,
 				42C5B4C621422F5300563794 /* TYTextStorageParser.m in Sources */,
 				422788912145F431002B9C13 /* JXCategoryIndicatorBallView.m in Sources */,
 				42CB7E7F21391F3F003397FB /* LabelLoadingHtmlController.m in Sources */,
@@ -5812,6 +5836,7 @@
 				425901082140BDE400304394 /* OpenPushView.m in Sources */,
 				42C5B6A52142699B00563794 /* SXColorGradientDemoPage.m in Sources */,
 				42EFA82F2109BBBD00AFC827 /* TabView_1_ViewController.m in Sources */,
+				42E8E11C221A982F00A04331 /* PageLoadingDemo2VC.m in Sources */,
 				42C5B48621422D4500563794 /* LinksViewController.m in Sources */,
 				42BF815D211A79680090E612 /* Common_ViewController.m in Sources */,
 				4227889A2145F431002B9C13 /* JXCategoryTitleImageView.m in Sources */,
@@ -5826,6 +5851,7 @@
 				429B15142160C2FC00F595FC /* CustomTableView.m in Sources */,
 				42C5B4C821422F5300563794 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				4200C8792159C45800FCD77D /* TestViewController.m in Sources */,
+				42E8E119221A92F900A04331 /* PageLoadingDemo1VC.m in Sources */,
 				4242B93E212A72C400C3A2C5 /* RequesCover.m in Sources */,
 				42C787DA213D2BA50012188E /* SGCountdownVC.m in Sources */,
 				422789342145F44F002B9C13 /* JXCategoryTitleAttributeView.m in Sources */,

@@ -27,8 +27,8 @@
 
 - (void)pushVC {
     Common_ViewController *vc = [[Common_ViewController alloc] init];
-    vc.subtitleArray = @[@"1_UITableViewCell高度自定义计算（孙源大神）"];
-    vc.vcNameArray = @[@[@"FoldCellVC"]];
+    vc.subtitleArray = @[@[@"分页加载",@"UITableViewCell高度自定义计算（孙源大神）"]];
+    vc.vcNameArray = @[@[@"PageLoadingVC",@"FoldCellVC"]];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
