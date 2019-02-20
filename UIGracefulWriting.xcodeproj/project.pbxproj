@@ -154,6 +154,8 @@
 		426707442121325B00046FE6 /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267073C2121325A00046FE6 /* ExampleCell.m */; };
 		426707452121325B00046FE6 /* ExampleDynamicHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267073D2121325A00046FE6 /* ExampleDynamicHeightCell.m */; };
 		426707462121325B00046FE6 /* ExampleFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267073E2121325A00046FE6 /* ExampleFooterView.m */; };
+		426FEE76221CE67000C4491A /* TextViewRichVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FEE75221CE67000C4491A /* TextViewRichVC.m */; };
+		426FEE79221D39EC00C4491A /* ClickTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FEE78221D39EC00C4491A /* ClickTextView.m */; };
 		42789BF02154759900F85994 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BEF2154759900F85994 /* Test1ViewController.m */; };
 		42789BF3215475AB00F85994 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BF2215475AB00F85994 /* Test2ViewController.m */; };
 		42789C602154EEAB00F85994 /* CommonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789C5F2154EEAB00F85994 /* CommonMethod.m */; };
@@ -945,6 +947,10 @@
 		4267073F2121325B00046FE6 /* ExampleFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleFooterView.h; sourceTree = "<group>"; };
 		426707402121325B00046FE6 /* ExampleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleData.h; sourceTree = "<group>"; };
 		426707412121325B00046FE6 /* ExampleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleCell.h; sourceTree = "<group>"; };
+		426FEE74221CE67000C4491A /* TextViewRichVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewRichVC.h; sourceTree = "<group>"; };
+		426FEE75221CE67000C4491A /* TextViewRichVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewRichVC.m; sourceTree = "<group>"; };
+		426FEE77221D39EC00C4491A /* ClickTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickTextView.h; sourceTree = "<group>"; };
+		426FEE78221D39EC00C4491A /* ClickTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickTextView.m; sourceTree = "<group>"; };
 		42789BEE2154759900F85994 /* Test1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
 		42789BEF2154759900F85994 /* Test1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test1ViewController.m; sourceTree = "<group>"; };
 		42789BF1215475AB00F85994 /* Test2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
@@ -2720,6 +2726,17 @@
 			path = CCTableDataSource;
 			sourceTree = "<group>";
 		};
+		426FEE73221CE4F900C4491A /* 3，UITextView系列 */ = {
+			isa = PBXGroup;
+			children = (
+				426FEE74221CE67000C4491A /* TextViewRichVC.h */,
+				426FEE75221CE67000C4491A /* TextViewRichVC.m */,
+				426FEE77221D39EC00C4491A /* ClickTextView.h */,
+				426FEE78221D39EC00C4491A /* ClickTextView.m */,
+			);
+			path = "3，UITextView系列";
+			sourceTree = "<group>";
+		};
 		42981CE12105C42B0052CCC3 /* #4_button相关 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3958,11 +3975,11 @@
 			path = "4，UICollection方式";
 			sourceTree = "<group>";
 		};
-		42C5B46B21422C9200563794 /* 3，TextKit系列 */ = {
+		42C5B46B21422C9200563794 /* 4，TextKit系列 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "3，TextKit系列";
+			path = "4，TextKit系列";
 			sourceTree = "<group>";
 		};
 		42C5B46E21422D4400563794 /* Controllers(各个场景使用说明) */ = {
@@ -4537,11 +4554,12 @@
 				42CB7E592138F3C8003397FB /* RichTextVC.m */,
 				42CB7E5B2139159B003397FB /* 1，UILabel的富文本 */,
 				42CB7E6321391B61003397FB /* 2，HTML系列 */,
-				42C5B46B21422C9200563794 /* 3，TextKit系列 */,
-				42CB7E8221393507003397FB /* 4，TY系列 */,
-				42CB7E5E2139167B003397FB /* 5，注释完备系列 */,
-				42CB7E5C213915D6003397FB /* 6，YY系列 */,
-				42CB7E5D213915E0003397FB /* 7，TTT系列 */,
+				426FEE73221CE4F900C4491A /* 3，UITextView系列 */,
+				42C5B46B21422C9200563794 /* 4，TextKit系列 */,
+				42CB7E8221393507003397FB /* 5，TY系列 */,
+				42CB7E5E2139167B003397FB /* 6，注释完备系列 */,
+				42CB7E5C213915D6003397FB /* 7，YY系列 */,
+				42CB7E5D213915E0003397FB /* 8，TTT系列 */,
 			);
 			path = "#17_富文本总结";
 			sourceTree = "<group>";
@@ -4556,21 +4574,21 @@
 			path = "1，UILabel的富文本";
 			sourceTree = "<group>";
 		};
-		42CB7E5C213915D6003397FB /* 6，YY系列 */ = {
+		42CB7E5C213915D6003397FB /* 7，YY系列 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "6，YY系列";
+			path = "7，YY系列";
 			sourceTree = "<group>";
 		};
-		42CB7E5D213915E0003397FB /* 7，TTT系列 */ = {
+		42CB7E5D213915E0003397FB /* 8，TTT系列 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "7，TTT系列";
+			path = "8，TTT系列";
 			sourceTree = "<group>";
 		};
-		42CB7E5E2139167B003397FB /* 5，注释完备系列 */ = {
+		42CB7E5E2139167B003397FB /* 6，注释完备系列 */ = {
 			isa = PBXGroup;
 			children = (
 				42C5B46E21422D4400563794 /* Controllers(各个场景使用说明) */,
@@ -4578,7 +4596,7 @@
 				42C5B46C21422D4400563794 /* MYCoreTextViewController.h */,
 				42C5B46D21422D4400563794 /* MYCoreTextViewController.m */,
 			);
-			path = "5，注释完备系列";
+			path = "6，注释完备系列";
 			sourceTree = "<group>";
 		};
 		42CB7E6321391B61003397FB /* 2，HTML系列 */ = {
@@ -4629,7 +4647,7 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		42CB7E8221393507003397FB /* 4，TY系列 */ = {
+		42CB7E8221393507003397FB /* 5，TY系列 */ = {
 			isa = PBXGroup;
 			children = (
 				42C5B48C21422F5200563794 /* TYLabelViewController.h */,
@@ -4638,7 +4656,7 @@
 				42C5B4A821422F5300563794 /* Tool */,
 				42C5B4AD21422F5300563794 /* View */,
 			);
-			path = "4，TY系列";
+			path = "5，TY系列";
 			sourceTree = "<group>";
 		};
 		42CB7E8321393900003397FB /* #18_便签效果 */ = {
@@ -5315,6 +5333,7 @@
 				4227889C2145F431002B9C13 /* JXCategoryTitleImageCellModel.m in Sources */,
 				4238B93721255B7F00AF272E /* UIImage+BlurGlass.m in Sources */,
 				429CB1C321043C3E0063A0D8 /* UIControl+Category.m in Sources */,
+				426FEE76221CE67000C4491A /* TextViewRichVC.m in Sources */,
 				42C52C1D2187E284001D7A07 /* NineGridUsingStackVC.m in Sources */,
 				42BF8183211A88680090E612 /* CQFilterAlertController.m in Sources */,
 				42BF8187211A88680090E612 /* CQRegionModel.m in Sources */,
@@ -5733,6 +5752,7 @@
 				42F772682193D0DD00FFD237 /* JMButtonVC.m in Sources */,
 				422788A22145F431002B9C13 /* JXCategoryImageCellModel.m in Sources */,
 				42C51A29211C445D00742239 /* XMGStatusCell.m in Sources */,
+				426FEE79221D39EC00C4491A /* ClickTextView.m in Sources */,
 				42C7838D213CC45B0012188E /* SpinnerSectionController.m in Sources */,
 				42C7834B213CC45B0012188E /* GridItem.m in Sources */,
 				422789112145F44F002B9C13 /* VerticalSectionHeaderView.m in Sources */,
