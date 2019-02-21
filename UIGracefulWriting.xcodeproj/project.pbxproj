@@ -555,6 +555,9 @@
 		42CFD907215E14F6005792BD /* AppDelegate+LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD906215E14F6005792BD /* AppDelegate+LaunchView.m */; };
 		42CFD943215E1E27005792BD /* WCYADImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD941215E1E27005792BD /* WCYADImageView.m */; };
 		42D04E9B2176DC7A0075ECEF /* FakeWindowClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E3D452175C67800D61820 /* FakeWindowClass.m */; };
+		42DB02F0221E4BD2002B5675 /* CreateQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DB02EF221E4BD2002B5675 /* CreateQRCodeVC.m */; };
+		42DB02FB221E50B6002B5675 /* UIImage+HTImageWithCenterLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DB02F7221E50B4002B5675 /* UIImage+HTImageWithCenterLogo.m */; };
+		42DB02FC221E50B6002B5675 /* HTQRCodeCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DB02F9221E50B5002B5675 /* HTQRCodeCreater.m */; };
 		42DD7F8F2189972900E3B6F3 /* NSArray+Sudoku.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD7F8D2189972800E3B6F3 /* NSArray+Sudoku.m */; };
 		42DD8D7C21A7983400CB04A5 /* Test3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD8D7B21A7983400CB04A5 /* Test3ViewController.m */; };
 		42DD8D8021A7A03800CB04A5 /* CustomPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD8D7F21A7A03800CB04A5 /* CustomPresentationController.m */; };
@@ -1713,6 +1716,12 @@
 		42CFD906215E14F6005792BD /* AppDelegate+LaunchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LaunchView.m"; sourceTree = "<group>"; };
 		42CFD941215E1E27005792BD /* WCYADImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCYADImageView.m; sourceTree = "<group>"; };
 		42CFD942215E1E27005792BD /* WCYADImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCYADImageView.h; sourceTree = "<group>"; };
+		42DB02EE221E4BD2002B5675 /* CreateQRCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateQRCodeVC.h; sourceTree = "<group>"; };
+		42DB02EF221E4BD2002B5675 /* CreateQRCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateQRCodeVC.m; sourceTree = "<group>"; };
+		42DB02F7221E50B4002B5675 /* UIImage+HTImageWithCenterLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HTImageWithCenterLogo.m"; sourceTree = "<group>"; };
+		42DB02F8221E50B5002B5675 /* HTQRCodeCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTQRCodeCreater.h; sourceTree = "<group>"; };
+		42DB02F9221E50B5002B5675 /* HTQRCodeCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTQRCodeCreater.m; sourceTree = "<group>"; };
+		42DB02FA221E50B5002B5675 /* UIImage+HTImageWithCenterLogo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+HTImageWithCenterLogo.h"; sourceTree = "<group>"; };
 		42DD7F8D2189972800E3B6F3 /* NSArray+Sudoku.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Sudoku.m"; sourceTree = "<group>"; };
 		42DD7F8E2189972800E3B6F3 /* NSArray+Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Sudoku.h"; sourceTree = "<group>"; };
 		42DD8D7A21A7983400CB04A5 /* Test3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test3ViewController.h; sourceTree = "<group>"; };
@@ -2863,6 +2872,7 @@
 				429B14EE2160C2A600F595FC /* #25_头部滚动tableView */,
 				42C52C0D2187DEB7001D7A07 /* #26_九宫格 */,
 				42DD7F8C2189314800E3B6F3 /* #27_输入过滤 */,
+				42DB02ED221E4B76002B5675 /* #28_生成二维码 */,
 			);
 			path = "2，UI轮子";
 			sourceTree = "<group>";
@@ -4712,6 +4722,19 @@
 			path = "#23_启动页";
 			sourceTree = "<group>";
 		};
+		42DB02ED221E4B76002B5675 /* #28_生成二维码 */ = {
+			isa = PBXGroup;
+			children = (
+				42DB02EE221E4BD2002B5675 /* CreateQRCodeVC.h */,
+				42DB02EF221E4BD2002B5675 /* CreateQRCodeVC.m */,
+				42DB02F8221E50B5002B5675 /* HTQRCodeCreater.h */,
+				42DB02F9221E50B5002B5675 /* HTQRCodeCreater.m */,
+				42DB02FA221E50B5002B5675 /* UIImage+HTImageWithCenterLogo.h */,
+				42DB02F7221E50B4002B5675 /* UIImage+HTImageWithCenterLogo.m */,
+			);
+			path = "#28_生成二维码";
+			sourceTree = "<group>";
+		};
 		42DD7F8C2189314800E3B6F3 /* #27_输入过滤 */ = {
 			isa = PBXGroup;
 			children = (
@@ -5429,6 +5452,7 @@
 				422788972145F431002B9C13 /* JXCategoryDotCell.m in Sources */,
 				4227889B2145F431002B9C13 /* JXCategoryTitleImageCell.m in Sources */,
 				42B573B8213FC1FE0089CFDF /* DefaultDynamicVC.m in Sources */,
+				42DB02F0221E4BD2002B5675 /* CreateQRCodeVC.m in Sources */,
 				42DD8DD321A7ACA400CB04A5 /* AAPLSwipeTransitionInteractionController.m in Sources */,
 				42F772562193D0DD00FFD237 /* JMBaseButtonConfig.m in Sources */,
 				42C5B48421422D4500563794 /* KeywordViewController.m in Sources */,
@@ -5556,6 +5580,7 @@
 				4227889E2145F431002B9C13 /* JXCategoryTitleCell.m in Sources */,
 				42C78373213CC45B0012188E /* CommentCell.m in Sources */,
 				42C5B4C021422F5300563794 /* ImageTextViewController.m in Sources */,
+				42DB02FC221E50B6002B5675 /* HTQRCodeCreater.m in Sources */,
 				42C52C1A2187E270001D7A07 /* NineGridUsingMasonryVC.m in Sources */,
 				42C78371213CC45B0012188E /* DetailLabelCell.m in Sources */,
 				42C78351213CC45B0012188E /* FeedItem.m in Sources */,
@@ -5872,6 +5897,7 @@
 				42C5B4C821422F5300563794 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				4200C8792159C45800FCD77D /* TestViewController.m in Sources */,
 				42E8E119221A92F900A04331 /* PageLoadingDemo1VC.m in Sources */,
+				42DB02FB221E50B6002B5675 /* UIImage+HTImageWithCenterLogo.m in Sources */,
 				4242B93E212A72C400C3A2C5 /* RequesCover.m in Sources */,
 				42C787DA213D2BA50012188E /* SGCountdownVC.m in Sources */,
 				422789342145F44F002B9C13 /* JXCategoryTitleAttributeView.m in Sources */,
