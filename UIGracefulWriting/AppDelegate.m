@@ -12,6 +12,12 @@
 #import "AppDelegate+LaunchView.h"
 #import "WCYADImageView.h"
 #import "CHD_ListView_Structure.h"
+#import <CYLTabBarController.h>
+#import "DWTabBarController.h"
+
+
+
+
  /*1,毛玻璃效果：
     1，加载完毕后初始化visualEffectView
     2，进入后台后
@@ -20,6 +26,7 @@
   */
 
 @interface AppDelegate ()
+
 @property (nonatomic, strong, nullable) UIVisualEffectView *visualEffectView;
 @end
 
@@ -27,12 +34,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ViewController *VC = [storyboard instantiateInitialViewController];
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    ViewController *VC = [storyboard instantiateInitialViewController];
 //    ViewController *VC = [[ViewController alloc] init];
-    UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:VC];
+//    UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:VC];
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.rootViewController = naviVC;
+     self.window.rootViewController = [[DWTabBarController alloc]init];
+//    self.window.rootViewController = naviVC;
     [self.window makeKeyAndVisible];
 
 //    启动图片：采用分类的形式
@@ -98,12 +106,10 @@
 }
 
 
-
-
-
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
 
 
 @end

@@ -246,6 +246,12 @@
 		42B182842106D83700C1E682 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182832106D83700C1E682 /* UIView+Extension.m */; };
 		42B1828821070BEF00C1E682 /* CustomFirstRateClickableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1828721070BEF00C1E682 /* CustomFirstRateClickableButton.m */; };
 		42B1828B2107105800C1E682 /* UIButton+category2.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182892107105800C1E682 /* UIButton+category2.m */; };
+		42B3E1132238D86500379C2D /* Base_4_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3E1122238D86500379C2D /* Base_4_ViewController.m */; };
+		42B3E1162238D87F00379C2D /* Base_3_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3E1152238D87F00379C2D /* Base_3_ViewController.m */; };
+		42B3E1192238D88E00379C2D /* Base_2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3E1182238D88E00379C2D /* Base_2_ViewController.m */; };
+		42B3E1252238D95F00379C2D /* DWPublishButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3E1202238D95F00379C2D /* DWPublishButton.m */; };
+		42B3E1262238D95F00379C2D /* DWTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3E1212238D95F00379C2D /* DWTabBar.m */; };
+		42B3E1272238D95F00379C2D /* DWTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B3E1232238D95F00379C2D /* DWTabBarController.m */; };
 		42B573B5213FC1FE0089CFDF /* DefaultSystemVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B57354213FC1FD0089CFDF /* DefaultSystemVC.m */; };
 		42B573B6213FC1FE0089CFDF /* DefaultThreeCoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B57356213FC1FD0089CFDF /* DefaultThreeCoverVC.m */; };
 		42B573B7213FC1FE0089CFDF /* DefaultCoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B57357213FC1FD0089CFDF /* DefaultCoverVC.m */; };
@@ -1124,6 +1130,18 @@
 		42B1828721070BEF00C1E682 /* CustomFirstRateClickableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomFirstRateClickableButton.m; sourceTree = "<group>"; };
 		42B182892107105800C1E682 /* UIButton+category2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+category2.m"; sourceTree = "<group>"; };
 		42B1828A2107105800C1E682 /* UIButton+category2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+category2.h"; sourceTree = "<group>"; };
+		42B3E1112238D86500379C2D /* Base_4_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base_4_ViewController.h; sourceTree = "<group>"; };
+		42B3E1122238D86500379C2D /* Base_4_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base_4_ViewController.m; sourceTree = "<group>"; };
+		42B3E1142238D87F00379C2D /* Base_3_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base_3_ViewController.h; sourceTree = "<group>"; };
+		42B3E1152238D87F00379C2D /* Base_3_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base_3_ViewController.m; sourceTree = "<group>"; };
+		42B3E1172238D88E00379C2D /* Base_2_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base_2_ViewController.h; sourceTree = "<group>"; };
+		42B3E1182238D88E00379C2D /* Base_2_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Base_2_ViewController.m; sourceTree = "<group>"; };
+		42B3E11E2238D95F00379C2D /* DWPublishButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWPublishButton.h; sourceTree = "<group>"; };
+		42B3E11F2238D95F00379C2D /* DWTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTabBar.h; sourceTree = "<group>"; };
+		42B3E1202238D95F00379C2D /* DWPublishButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWPublishButton.m; sourceTree = "<group>"; };
+		42B3E1212238D95F00379C2D /* DWTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTabBar.m; sourceTree = "<group>"; };
+		42B3E1232238D95F00379C2D /* DWTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DWTabBarController.m; sourceTree = "<group>"; };
+		42B3E1242238D95F00379C2D /* DWTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DWTabBarController.h; sourceTree = "<group>"; };
 		42B57354213FC1FD0089CFDF /* DefaultSystemVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultSystemVC.m; sourceTree = "<group>"; };
 		42B57355213FC1FD0089CFDF /* DefaultScrollVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultScrollVC.h; sourceTree = "<group>"; };
 		42B57356213FC1FD0089CFDF /* DefaultThreeCoverVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultThreeCoverVC.m; sourceTree = "<group>"; };
@@ -2441,8 +2459,8 @@
 		4242B934212A72C300C3A2C5 /* 喜马拉雅下标 */ = {
 			isa = PBXGroup;
 			children = (
-				4242B935212A72C300C3A2C5 /* YZXiMaViewController.m */,
 				4242B936212A72C300C3A2C5 /* YZXiMaViewController.h */,
+				4242B935212A72C300C3A2C5 /* YZXiMaViewController.m */,
 			);
 			path = "喜马拉雅下标";
 			sourceTree = "<group>";
@@ -2759,11 +2777,13 @@
 			path = "#4_button相关";
 			sourceTree = "<group>";
 		};
-		42981CE82105C7C30052CCC3 /* 1，UI简介 */ = {
+		42981CE82105C7C30052CCC3 /* 2，UI拔高 */ = {
 			isa = PBXGroup;
 			children = (
+				42B3E1172238D88E00379C2D /* Base_2_ViewController.h */,
+				42B3E1182238D88E00379C2D /* Base_2_ViewController.m */,
 			);
-			path = "1，UI简介";
+			path = "2，UI拔高";
 			sourceTree = "<group>";
 		};
 		429B14EE2160C2A600F595FC /* #25_头部滚动tableView */ = {
@@ -2842,7 +2862,7 @@
 			path = SwipeTableView;
 			sourceTree = "<group>";
 		};
-		429CAF8A2104365F0063A0D8 /* 2，UI轮子 */ = {
+		429CAF8A2104365F0063A0D8 /* 1，UI大杂烩 */ = {
 			isa = PBXGroup;
 			children = (
 				429CAF8B210436950063A0D8 /* #1_轮播器 */,
@@ -2874,7 +2894,7 @@
 				42DD7F8C2189314800E3B6F3 /* #27_输入过滤 */,
 				42DB02ED221E4B76002B5675 /* #28_生成二维码 */,
 			);
-			path = "2，UI轮子";
+			path = "1，UI大杂烩";
 			sourceTree = "<group>";
 		};
 		429CAF8B210436950063A0D8 /* #1_轮播器 */ = {
@@ -3170,6 +3190,16 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		42A81B9A2238A45700C749F1 /* 3，UI借鉴查询 */ = {
+			isa = PBXGroup;
+			children = (
+				42B3E1142238D87F00379C2D /* Base_3_ViewController.h */,
+				42B3E1152238D87F00379C2D /* Base_3_ViewController.m */,
+			);
+			name = "3，UI借鉴查询";
+			path = ..;
+			sourceTree = "<group>";
+		};
 		42B182502106C61800C1E682 /* #5_TextField输入浮动效果 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3206,12 +3236,11 @@
 		42B1826D2106CA9E00C1E682 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				42BF815B211A79680090E612 /* Common_ViewController.h */,
-				42BF815C211A79680090E612 /* Common_ViewController.m */,
+				42B3E11C2238D91800379C2D /* BaseUIViewController */,
+				42B3E11B2238D90C00379C2D /* BaseTableViewController */,
+				42B3E11A2238D8E100379C2D /* BaseTabBarController */,
 				42B1826E2106CAD200C1E682 /* TextFieldViewController.h */,
 				42B1826F2106CAD200C1E682 /* TextFieldViewController.m */,
-				42981CE52105C4DF0052CCC3 /* CommonViewController.h */,
-				42981CE62105C4DF0052CCC3 /* CommonViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -3286,6 +3315,53 @@
 				42B1828721070BEF00C1E682 /* CustomFirstRateClickableButton.m */,
 			);
 			path = "4，按钮重复点击";
+			sourceTree = "<group>";
+		};
+		42B3E11A2238D8E100379C2D /* BaseTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				42B3E1222238D95F00379C2D /* Controller */,
+				42B3E11D2238D95F00379C2D /* View */,
+			);
+			path = BaseTabBarController;
+			sourceTree = "<group>";
+		};
+		42B3E11B2238D90C00379C2D /* BaseTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				42BF815B211A79680090E612 /* Common_ViewController.h */,
+				42BF815C211A79680090E612 /* Common_ViewController.m */,
+			);
+			path = BaseTableViewController;
+			sourceTree = "<group>";
+		};
+		42B3E11C2238D91800379C2D /* BaseUIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				42981CE52105C4DF0052CCC3 /* CommonViewController.h */,
+				42981CE62105C4DF0052CCC3 /* CommonViewController.m */,
+			);
+			path = BaseUIViewController;
+			sourceTree = "<group>";
+		};
+		42B3E11D2238D95F00379C2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42B3E11E2238D95F00379C2D /* DWPublishButton.h */,
+				42B3E11F2238D95F00379C2D /* DWTabBar.h */,
+				42B3E1202238D95F00379C2D /* DWPublishButton.m */,
+				42B3E1212238D95F00379C2D /* DWTabBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42B3E1222238D95F00379C2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42B3E1242238D95F00379C2D /* DWTabBarController.h */,
+				42B3E1232238D95F00379C2D /* DWTabBarController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		42B57352213FC1180089CFDF /* 3_SGPagingView */ = {
@@ -3508,9 +3584,10 @@
 			isa = PBXGroup;
 			children = (
 				4242B84F212A4EF400C3A2C5 /* Objc-Swift-bridge.h */,
-				42981CE82105C7C30052CCC3 /* 1，UI简介 */,
-				429CAF8A2104365F0063A0D8 /* 2，UI轮子 */,
-				42C782B8213CC3CD0012188E /* 3，重量级UI框架 */,
+				429CAF8A2104365F0063A0D8 /* 1，UI大杂烩 */,
+				42981CE82105C7C30052CCC3 /* 2，UI拔高 */,
+				42A81B9A2238A45700C749F1 /* 3，UI借鉴查询 */,
+				42C782B8213CC3CD0012188E /* 4，UI框架 */,
 				42BB66E720D1231A007BE2CF /* AppDelegate.h */,
 				42BB66E820D1231A007BE2CF /* AppDelegate.m */,
 				42CFD905215E14F6005792BD /* AppDelegate+LaunchView.h */,
@@ -4186,13 +4263,15 @@
 			path = Wonderful;
 			sourceTree = "<group>";
 		};
-		42C782B8213CC3CD0012188E /* 3，重量级UI框架 */ = {
+		42C782B8213CC3CD0012188E /* 4，UI框架 */ = {
 			isa = PBXGroup;
 			children = (
+				42B3E1112238D86500379C2D /* Base_4_ViewController.h */,
+				42B3E1122238D86500379C2D /* Base_4_ViewController.m */,
 				424E3D4A2175CFCA00D61820 /* 2，苹果调试浮球神器 */,
 				42C782B9213CC3FD0012188E /* 1，IGListKit */,
 			);
-			path = "3，重量级UI框架";
+			path = "4，UI框架";
 			sourceTree = "<group>";
 		};
 		42C782B9213CC3FD0012188E /* 1，IGListKit */ = {
@@ -5322,6 +5401,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting-resources.sh",
+				"${PODS_ROOT}/EasyNavigation/EasyNavigation/EasyNavButton.bundle",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
@@ -5331,6 +5411,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EasyNavButton.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
@@ -5384,6 +5465,7 @@
 				42CFD907215E14F6005792BD /* AppDelegate+LaunchView.m in Sources */,
 				42B573B5213FC1FE0089CFDF /* DefaultSystemVC.m in Sources */,
 				429CB1B6210436960063A0D8 /* Demo6Cell.m in Sources */,
+				42B3E1132238D86500379C2D /* Base_4_ViewController.m in Sources */,
 				42CF2C1921A54B9000951C6D /* TextFieldAndTextViewPackageVC.m in Sources */,
 				429CB1A7210436960063A0D8 /* BaseViewController.m in Sources */,
 				4242B951212A72D800C3A2C5 /* YZDisplayViewController.m in Sources */,
@@ -5705,6 +5787,7 @@
 				42C5B6A62142699B00563794 /* SXColorLblDemoPage.m in Sources */,
 				42B573CC213FC1FE0089CFDF /* ChildFourthPopGestureNextVC.m in Sources */,
 				42DD8D7C21A7983400CB04A5 /* Test3ViewController.m in Sources */,
+				42B3E1262238D95F00379C2D /* DWTabBar.m in Sources */,
 				424E3D432175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m in Sources */,
 				429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */,
 				42C78357213CC45B0012188E /* AnnouncingDepsViewController.m in Sources */,
@@ -5738,6 +5821,7 @@
 				42F772162193CDCC00FFD237 /* NSObject+size.m in Sources */,
 				42F772592193D0DD00FFD237 /* JMNumberButtonConfig.m in Sources */,
 				42523F4E218BF9190038CEE3 /* HYBCardFlowLayout.m in Sources */,
+				42B3E1162238D87F00379C2D /* Base_3_ViewController.m in Sources */,
 				42C5B6A02142699B00563794 /* SXDataSource.m in Sources */,
 				4227891C2145F44F002B9C13 /* PagingViewTableHeaderView.m in Sources */,
 				429CB1B2210436960063A0D8 /* WaterfallCell.m in Sources */,
@@ -5813,6 +5897,7 @@
 				42C52C232187E9F4001D7A07 /* NineGridFrameView.m in Sources */,
 				429B15112160C2FC00F595FC /* UIScrollView+STRefresh.m in Sources */,
 				42C5B6AB2142699B00563794 /* SXColorLabel.m in Sources */,
+				42B3E1272238D95F00379C2D /* DWTabBarController.m in Sources */,
 				42523F5A218BF9440038CEE3 /* HYBCardVerticalScaleLayout.m in Sources */,
 				42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */,
 				42B1826B2106C72300C1E682 /* PulsingHaloLayer.m in Sources */,
@@ -5868,6 +5953,7 @@
 				42B573B9213FC1FE0089CFDF /* DefaultPopGestureVC.m in Sources */,
 				42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */,
 				4259010A2140BDE400304394 /* SelectedListView.m in Sources */,
+				42B3E1192238D88E00379C2D /* Base_2_ViewController.m in Sources */,
 				42DD8DC021A7ACA300CB04A5 /* AAPLMenuViewController.m in Sources */,
 				42F772542193D0DD00FFD237 /* JMBootstrapButton.m in Sources */,
 				42C7837B213CC45B0012188E /* PhotoCell.m in Sources */,
@@ -5897,6 +5983,7 @@
 				42C5B4C821422F5300563794 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				4200C8792159C45800FCD77D /* TestViewController.m in Sources */,
 				42E8E119221A92F900A04331 /* PageLoadingDemo1VC.m in Sources */,
+				42B3E1252238D95F00379C2D /* DWPublishButton.m in Sources */,
 				42DB02FB221E50B6002B5675 /* UIImage+HTImageWithCenterLogo.m in Sources */,
 				4242B93E212A72C400C3A2C5 /* RequesCover.m in Sources */,
 				42C787DA213D2BA50012188E /* SGCountdownVC.m in Sources */,
