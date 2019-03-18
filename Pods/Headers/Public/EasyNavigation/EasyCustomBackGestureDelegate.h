@@ -1,1 +1,0 @@
-../../../EasyNavigation/EasyNavigation/EasyCustomBackGestureDelegate.h

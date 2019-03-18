@@ -154,6 +154,24 @@
 		426707442121325B00046FE6 /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267073C2121325A00046FE6 /* ExampleCell.m */; };
 		426707452121325B00046FE6 /* ExampleDynamicHeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267073D2121325A00046FE6 /* ExampleDynamicHeightCell.m */; };
 		426707462121325B00046FE6 /* ExampleFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267073E2121325A00046FE6 /* ExampleFooterView.m */; };
+		426854F8223F2C9400680CDA /* EasyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854D6223F2C9000680CDA /* EasyNavigationController.m */; };
+		426854F9223F2C9400680CDA /* EasyNavigationOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854D7223F2C9000680CDA /* EasyNavigationOptions.m */; };
+		426854FA223F2C9400680CDA /* EasyNavigationView+Scroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854D8223F2C9100680CDA /* EasyNavigationView+Scroll.m */; };
+		426854FB223F2C9400680CDA /* EasyNavigationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854DA223F2C9100680CDA /* EasyNavigationButton.m */; };
+		426854FC223F2C9400680CDA /* UITableViewController+EasyNavigationExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854DE223F2C9200680CDA /* UITableViewController+EasyNavigationExt.m */; };
+		426854FD223F2C9400680CDA /* NSObject+EasyKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854DF223F2C9200680CDA /* NSObject+EasyKVO.m */; };
+		426854FE223F2C9400680CDA /* EasyKVOInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854E1223F2C9200680CDA /* EasyKVOInfo.m */; };
+		426854FF223F2C9400680CDA /* UIView+EasyNavigationExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854E2223F2C9200680CDA /* UIView+EasyNavigationExt.m */; };
+		42685500223F2C9400680CDA /* UIScrollView+EasyNavigationExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854E5223F2C9200680CDA /* UIScrollView+EasyNavigationExt.m */; };
+		42685501223F2C9500680CDA /* UIViewController+EasyNavigationExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854E9223F2C9200680CDA /* UIViewController+EasyNavigationExt.m */; };
+		42685502223F2C9500680CDA /* EasyNavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854EA223F2C9200680CDA /* EasyNavigationView.m */; };
+		42685503223F2C9500680CDA /* EasyNavigationScroll.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854EC223F2C9200680CDA /* EasyNavigationScroll.m */; };
+		42685504223F2C9500680CDA /* EasyNavigationView+LeftButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854EF223F2C9200680CDA /* EasyNavigationView+LeftButton.m */; };
+		42685505223F2C9500680CDA /* EasyNavigationView+RightButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854F0223F2C9200680CDA /* EasyNavigationView+RightButton.m */; };
+		42685506223F2C9500680CDA /* EasyNavButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 426854F1223F2C9200680CDA /* EasyNavButton.bundle */; };
+		42685507223F2C9500680CDA /* EasyNavigationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854F5223F2C9300680CDA /* EasyNavigationUtils.m */; };
+		42685508223F2C9500680CDA /* EasyNavigationView+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854F7223F2C9400680CDA /* EasyNavigationView+Add.m */; };
+		4268550E223F348500680CDA /* JDCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268550D223F348500680CDA /* JDCustomNavigationController.m */; };
 		426FEE76221CE67000C4491A /* TextViewRichVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FEE75221CE67000C4491A /* TextViewRichVC.m */; };
 		426FEE79221D39EC00C4491A /* ClickTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FEE78221D39EC00C4491A /* ClickTextView.m */; };
 		42789BF02154759900F85994 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BEF2154759900F85994 /* Test1ViewController.m */; };
@@ -956,6 +974,42 @@
 		4267073F2121325B00046FE6 /* ExampleFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleFooterView.h; sourceTree = "<group>"; };
 		426707402121325B00046FE6 /* ExampleData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleData.h; sourceTree = "<group>"; };
 		426707412121325B00046FE6 /* ExampleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleCell.h; sourceTree = "<group>"; };
+		426854D4223F2C9000680CDA /* EasyNavigationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyNavigationButton.h; sourceTree = "<group>"; };
+		426854D5223F2C9000680CDA /* EasyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyNavigationController.h; sourceTree = "<group>"; };
+		426854D6223F2C9000680CDA /* EasyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyNavigationController.m; sourceTree = "<group>"; };
+		426854D7223F2C9000680CDA /* EasyNavigationOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyNavigationOptions.m; sourceTree = "<group>"; };
+		426854D8223F2C9100680CDA /* EasyNavigationView+Scroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EasyNavigationView+Scroll.m"; sourceTree = "<group>"; };
+		426854D9223F2C9100680CDA /* EasyNavigationOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyNavigationOptions.h; sourceTree = "<group>"; };
+		426854DA223F2C9100680CDA /* EasyNavigationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyNavigationButton.m; sourceTree = "<group>"; };
+		426854DB223F2C9100680CDA /* EasyNavigationView+Scroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EasyNavigationView+Scroll.h"; sourceTree = "<group>"; };
+		426854DC223F2C9100680CDA /* EasyNavigationView+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EasyNavigationView+Add.h"; sourceTree = "<group>"; };
+		426854DE223F2C9200680CDA /* UITableViewController+EasyNavigationExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+EasyNavigationExt.m"; sourceTree = "<group>"; };
+		426854DF223F2C9200680CDA /* NSObject+EasyKVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EasyKVO.m"; sourceTree = "<group>"; };
+		426854E0223F2C9200680CDA /* UIScrollView+EasyNavigationExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+EasyNavigationExt.h"; sourceTree = "<group>"; };
+		426854E1223F2C9200680CDA /* EasyKVOInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyKVOInfo.m; sourceTree = "<group>"; };
+		426854E2223F2C9200680CDA /* UIView+EasyNavigationExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EasyNavigationExt.m"; sourceTree = "<group>"; };
+		426854E3223F2C9200680CDA /* UIViewController+EasyNavigationExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+EasyNavigationExt.h"; sourceTree = "<group>"; };
+		426854E4223F2C9200680CDA /* EasyKVOInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyKVOInfo.h; sourceTree = "<group>"; };
+		426854E5223F2C9200680CDA /* UIScrollView+EasyNavigationExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+EasyNavigationExt.m"; sourceTree = "<group>"; };
+		426854E6223F2C9200680CDA /* NSObject+EasyKVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+EasyKVO.h"; sourceTree = "<group>"; };
+		426854E7223F2C9200680CDA /* UITableViewController+EasyNavigationExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+EasyNavigationExt.h"; sourceTree = "<group>"; };
+		426854E8223F2C9200680CDA /* UIView+EasyNavigationExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EasyNavigationExt.h"; sourceTree = "<group>"; };
+		426854E9223F2C9200680CDA /* UIViewController+EasyNavigationExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+EasyNavigationExt.m"; sourceTree = "<group>"; };
+		426854EA223F2C9200680CDA /* EasyNavigationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyNavigationView.m; sourceTree = "<group>"; };
+		426854EB223F2C9200680CDA /* EasyNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyNavigation.h; sourceTree = "<group>"; };
+		426854EC223F2C9200680CDA /* EasyNavigationScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyNavigationScroll.m; sourceTree = "<group>"; };
+		426854EE223F2C9200680CDA /* EasyNavigationView+RightButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EasyNavigationView+RightButton.h"; sourceTree = "<group>"; };
+		426854EF223F2C9200680CDA /* EasyNavigationView+LeftButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EasyNavigationView+LeftButton.m"; sourceTree = "<group>"; };
+		426854F0223F2C9200680CDA /* EasyNavigationView+RightButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EasyNavigationView+RightButton.m"; sourceTree = "<group>"; };
+		426854F1223F2C9200680CDA /* EasyNavButton.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = EasyNavButton.bundle; sourceTree = "<group>"; };
+		426854F2223F2C9200680CDA /* EasyNavigationView+LeftButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "EasyNavigationView+LeftButton.h"; sourceTree = "<group>"; };
+		426854F3223F2C9300680CDA /* EasyNavigationUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyNavigationUtils.h; sourceTree = "<group>"; };
+		426854F4223F2C9300680CDA /* EasyNavigationScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyNavigationScroll.h; sourceTree = "<group>"; };
+		426854F5223F2C9300680CDA /* EasyNavigationUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyNavigationUtils.m; sourceTree = "<group>"; };
+		426854F6223F2C9300680CDA /* EasyNavigationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyNavigationView.h; sourceTree = "<group>"; };
+		426854F7223F2C9400680CDA /* EasyNavigationView+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EasyNavigationView+Add.m"; sourceTree = "<group>"; };
+		4268550C223F348500680CDA /* JDCustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomNavigationController.h; sourceTree = "<group>"; };
+		4268550D223F348500680CDA /* JDCustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomNavigationController.m; sourceTree = "<group>"; };
 		426FEE74221CE67000C4491A /* TextViewRichVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewRichVC.h; sourceTree = "<group>"; };
 		426FEE75221CE67000C4491A /* TextViewRichVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewRichVC.m; sourceTree = "<group>"; };
 		426FEE77221D39EC00C4491A /* ClickTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickTextView.h; sourceTree = "<group>"; };
@@ -2753,6 +2807,89 @@
 			path = CCTableDataSource;
 			sourceTree = "<group>";
 		};
+		426854D3223F2BE100680CDA /* BaseNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				4268550A223F327400680CDA /* 系统自带的navi */,
+				4268550B223F328700680CDA /* 自定义的很全navi */,
+			);
+			path = BaseNavigationController;
+			sourceTree = "<group>";
+		};
+		426854DD223F2C9200680CDA /* EasyNavCatogory */ = {
+			isa = PBXGroup;
+			children = (
+				426854ED223F2C9200680CDA /* EasyNavButton */,
+				426854E7223F2C9200680CDA /* UITableViewController+EasyNavigationExt.h */,
+				426854DE223F2C9200680CDA /* UITableViewController+EasyNavigationExt.m */,
+				426854E3223F2C9200680CDA /* UIViewController+EasyNavigationExt.h */,
+				426854E9223F2C9200680CDA /* UIViewController+EasyNavigationExt.m */,
+				426854E6223F2C9200680CDA /* NSObject+EasyKVO.h */,
+				426854DF223F2C9200680CDA /* NSObject+EasyKVO.m */,
+				426854E0223F2C9200680CDA /* UIScrollView+EasyNavigationExt.h */,
+				426854E5223F2C9200680CDA /* UIScrollView+EasyNavigationExt.m */,
+				426854E2223F2C9200680CDA /* UIView+EasyNavigationExt.m */,
+				426854E8223F2C9200680CDA /* UIView+EasyNavigationExt.h */,
+				426854DC223F2C9100680CDA /* EasyNavigationView+Add.h */,
+				426854F7223F2C9400680CDA /* EasyNavigationView+Add.m */,
+				426854DB223F2C9100680CDA /* EasyNavigationView+Scroll.h */,
+				426854D8223F2C9100680CDA /* EasyNavigationView+Scroll.m */,
+			);
+			path = EasyNavCatogory;
+			sourceTree = "<group>";
+		};
+		426854ED223F2C9200680CDA /* EasyNavButton */ = {
+			isa = PBXGroup;
+			children = (
+				426854EE223F2C9200680CDA /* EasyNavigationView+RightButton.h */,
+				426854F0223F2C9200680CDA /* EasyNavigationView+RightButton.m */,
+				426854F2223F2C9200680CDA /* EasyNavigationView+LeftButton.h */,
+				426854EF223F2C9200680CDA /* EasyNavigationView+LeftButton.m */,
+				426854F1223F2C9200680CDA /* EasyNavButton.bundle */,
+			);
+			path = EasyNavButton;
+			sourceTree = "<group>";
+		};
+		42685509223F2D0400680CDA /* EasyNavTool */ = {
+			isa = PBXGroup;
+			children = (
+				426854D4223F2C9000680CDA /* EasyNavigationButton.h */,
+				426854DA223F2C9100680CDA /* EasyNavigationButton.m */,
+				426854D9223F2C9100680CDA /* EasyNavigationOptions.h */,
+				426854D7223F2C9000680CDA /* EasyNavigationOptions.m */,
+				426854F4223F2C9300680CDA /* EasyNavigationScroll.h */,
+				426854EC223F2C9200680CDA /* EasyNavigationScroll.m */,
+				426854F3223F2C9300680CDA /* EasyNavigationUtils.h */,
+				426854F5223F2C9300680CDA /* EasyNavigationUtils.m */,
+				426854F6223F2C9300680CDA /* EasyNavigationView.h */,
+				426854EA223F2C9200680CDA /* EasyNavigationView.m */,
+				426854E4223F2C9200680CDA /* EasyKVOInfo.h */,
+				426854E1223F2C9200680CDA /* EasyKVOInfo.m */,
+			);
+			path = EasyNavTool;
+			sourceTree = "<group>";
+		};
+		4268550A223F327400680CDA /* 系统自带的navi */ = {
+			isa = PBXGroup;
+			children = (
+				4268550C223F348500680CDA /* JDCustomNavigationController.h */,
+				4268550D223F348500680CDA /* JDCustomNavigationController.m */,
+			);
+			path = "系统自带的navi";
+			sourceTree = "<group>";
+		};
+		4268550B223F328700680CDA /* 自定义的很全navi */ = {
+			isa = PBXGroup;
+			children = (
+				426854EB223F2C9200680CDA /* EasyNavigation.h */,
+				426854D5223F2C9000680CDA /* EasyNavigationController.h */,
+				426854D6223F2C9000680CDA /* EasyNavigationController.m */,
+				42685509223F2D0400680CDA /* EasyNavTool */,
+				426854DD223F2C9200680CDA /* EasyNavCatogory */,
+			);
+			path = "自定义的很全navi";
+			sourceTree = "<group>";
+		};
 		426FEE73221CE4F900C4491A /* 3，UITextView系列 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3227,6 +3364,8 @@
 		42B182542106C72300C1E682 /* 1,输入上浮 */ = {
 			isa = PBXGroup;
 			children = (
+				42B1826E2106CAD200C1E682 /* TextFieldViewController.h */,
+				42B1826F2106CAD200C1E682 /* TextFieldViewController.m */,
 				42B182562106C72300C1E682 /* UIFloatLabelTextField.h */,
 				42B182552106C72300C1E682 /* UIFloatLabelTextField.m */,
 			);
@@ -3236,11 +3375,10 @@
 		42B1826D2106CA9E00C1E682 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				426854D3223F2BE100680CDA /* BaseNavigationController */,
 				42B3E11C2238D91800379C2D /* BaseUIViewController */,
 				42B3E11B2238D90C00379C2D /* BaseTableViewController */,
 				42B3E11A2238D8E100379C2D /* BaseTabBarController */,
-				42B1826E2106CAD200C1E682 /* TextFieldViewController.h */,
-				42B1826F2106CAD200C1E682 /* TextFieldViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -3348,8 +3486,8 @@
 			isa = PBXGroup;
 			children = (
 				42B3E11E2238D95F00379C2D /* DWPublishButton.h */,
-				42B3E11F2238D95F00379C2D /* DWTabBar.h */,
 				42B3E1202238D95F00379C2D /* DWPublishButton.m */,
+				42B3E11F2238D95F00379C2D /* DWTabBar.h */,
 				42B3E1212238D95F00379C2D /* DWTabBar.m */,
 			);
 			path = View;
@@ -5344,6 +5482,7 @@
 				42C4DF2A215F2B3000247949 /* head.jpg in Resources */,
 				42DD8DC421A7ACA300CB04A5 /* Slide.storyboard in Resources */,
 				42BF8181211A88680090E612 /* region_list.json in Resources */,
+				42685506223F2C9500680CDA /* EasyNavButton.bundle in Resources */,
 				429CB0FE210436960063A0D8 /* h2.jpg in Resources */,
 				42C78392213CC45B0012188E /* Demo.storyboard in Resources */,
 				42BB66EF20D1231A007BE2CF /* Main.storyboard in Resources */,
@@ -5401,7 +5540,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting-resources.sh",
-				"${PODS_ROOT}/EasyNavigation/EasyNavigation/EasyNavButton.bundle",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
 				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
@@ -5411,7 +5549,6 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EasyNavButton.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
@@ -5448,6 +5585,7 @@
 				42C5B6A22142699B00563794 /* SXColorSeparateDemoPage.m in Sources */,
 				42C783D0213CCBFF0012188E /* YZCover.m in Sources */,
 				42C78368213CC45B0012188E /* CalendarViewController.m in Sources */,
+				4268550E223F348500680CDA /* JDCustomNavigationController.m in Sources */,
 				4227891E2145F44F002B9C13 /* PagingViewController.m in Sources */,
 				422AB7002174278A0019F1D9 /* LabelAlignVC.m in Sources */,
 				422788952145F431002B9C13 /* JXCategoryIndicatorCell.m in Sources */,
@@ -5477,6 +5615,7 @@
 				42B573BA213FC1FE0089CFDF /* DefaultAnimatedVC.m in Sources */,
 				42C783C6213CCB6A0012188E /* YZMenuButton.m in Sources */,
 				42B573ED213FD11C0089CFDF /* UIButton+Category.m in Sources */,
+				426854FC223F2C9400680CDA /* UITableViewController+EasyNavigationExt.m in Sources */,
 				42DD8DCC21A7ACA400CB04A5 /* AAPLCustomPresentationFirstViewController.m in Sources */,
 				422788A42145F431002B9C13 /* JXCategoryNumberCell.m in Sources */,
 				42CB7E8021391F3F003397FB /* WebviewLoadingHtmlController.m in Sources */,
@@ -5507,6 +5646,7 @@
 				42C4DF28215F2B3000247949 /* TestHeadView.m in Sources */,
 				429CB1B5210436960063A0D8 /* Demo1ViewController.m in Sources */,
 				4259010B2140BDE400304394 /* SignFinishView.m in Sources */,
+				426854F8223F2C9400680CDA /* EasyNavigationController.m in Sources */,
 				42C7836E213CC45B0012188E /* InteractiveCell.m in Sources */,
 				42F772662193D0DD00FFD237 /* JMCustomViewController.m in Sources */,
 				429B151C2160C2FD00F595FC /* STCollectionView.m in Sources */,
@@ -5596,6 +5736,7 @@
 				42CF2C0B21A5498100951C6D /* InputFilterVC.m in Sources */,
 				426707302121301400046FE6 /* UIView+CCUtil.m in Sources */,
 				42C4DF24215F2B3000247949 /* UIView+TABLayerout.m in Sources */,
+				42685504223F2C9500680CDA /* EasyNavigationView+LeftButton.m in Sources */,
 				426707362121301400046FE6 /* CCTableDataItem.m in Sources */,
 				42F7725D2193D0DD00FFD237 /* UIView+JM.m in Sources */,
 				429CB1AC210436960063A0D8 /* YYNews.m in Sources */,
@@ -5622,11 +5763,13 @@
 				422789192145F44F002B9C13 /* TitleViewController.m in Sources */,
 				42C7835B213CC45B0012188E /* EmptyViewController.m in Sources */,
 				42B573BB213FC1FE0089CFDF /* DefaultGradientEffectVC.m in Sources */,
+				42685505223F2C9500680CDA /* EasyNavigationView+RightButton.m in Sources */,
 				422789372145F44F002B9C13 /* JXCategoryIndicatorDotLineView.m in Sources */,
 				42E8E116221A84E100A04331 /* PageLoadingVC.m in Sources */,
 				42C5B4C621422F5300563794 /* TYTextStorageParser.m in Sources */,
 				422788912145F431002B9C13 /* JXCategoryIndicatorBallView.m in Sources */,
 				42CB7E7F21391F3F003397FB /* LabelLoadingHtmlController.m in Sources */,
+				42685503223F2C9500680CDA /* EasyNavigationScroll.m in Sources */,
 				422789152145F44F002B9C13 /* VerticalListSectionModel.m in Sources */,
 				42B573D5213FC1FE0089CFDF /* ChildFirstPopGestureVC.m in Sources */,
 				4227888F2145F430002B9C13 /* JXCategoryIndicatorTriangleView.m in Sources */,
@@ -5646,6 +5789,7 @@
 				429B15102160C2FC00F595FC /* STTransitions.m in Sources */,
 				42BF817E211A88680090E612 /* CQFilterCell.m in Sources */,
 				42CF2C1A21A54B9000951C6D /* ZLYTextField.m in Sources */,
+				426854FE223F2C9400680CDA /* EasyKVOInfo.m in Sources */,
 				4259011E2140D42400304394 /* Son2_ViewController.m in Sources */,
 				42C78388213CC45B0012188E /* StoryboardLabelSectionController.m in Sources */,
 				42C5B4DD214251E700563794 /* ShowViewController.m in Sources */,
@@ -5690,8 +5834,10 @@
 				42C78361213CC45B0012188E /* SelfSizingCellsViewController.m in Sources */,
 				42C78389213CC45B0012188E /* SearchSectionCotroller.m in Sources */,
 				42B573D9213FC1FE0089CFDF /* ChildVCNine.m in Sources */,
+				42685500223F2C9400680CDA /* UIScrollView+EasyNavigationExt.m in Sources */,
 				42B573B7213FC1FE0089CFDF /* DefaultCoverVC.m in Sources */,
 				42C78375213CC45B0012188E /* CenterLabelCell.m in Sources */,
+				426854FA223F2C9400680CDA /* EasyNavigationView+Scroll.m in Sources */,
 				422788A72145F431002B9C13 /* JXCategoryCollectionView.m in Sources */,
 				42DD8DCA21A7ACA400CB04A5 /* AAPLCustomPresentationController.m in Sources */,
 				429CB108210436960063A0D8 /* TAAnimatedDotView.m in Sources */,
@@ -5812,6 +5958,7 @@
 				42BF8153211A75010090E612 /* UIImage+Transform.m in Sources */,
 				42C787DF213D2BB10012188E /* SGEventVC.m in Sources */,
 				422789182145F44F002B9C13 /* TitleImageViewController.m in Sources */,
+				426854FB223F2C9400680CDA /* EasyNavigationButton.m in Sources */,
 				42B573E7213FCD7C0089CFDF /* AlertViewController.m in Sources */,
 				422789162145F44F002B9C13 /* VerticalListCellModel.m in Sources */,
 				42DD8DD021A7ACA400CB04A5 /* AAPLSwipeTransitionAnimator.m in Sources */,
@@ -5854,9 +6001,11 @@
 				42C7834C213CC45B0012188E /* DemoItem.m in Sources */,
 				42C78377213CC45B0012188E /* MonthTitleCell.m in Sources */,
 				4227891F2145F44F002B9C13 /* TestListBaseView.m in Sources */,
+				426854FF223F2C9400680CDA /* UIView+EasyNavigationExt.m in Sources */,
 				42DD8DD421A7ACA400CB04A5 /* AAPLCheckerboardTransitionAnimator.m in Sources */,
 				4227889F2145F431002B9C13 /* JXCategoryTitleView.m in Sources */,
 				424E3D492175C6C800D61820 /* UIWindow+PrivateMethods.m in Sources */,
+				426854FD223F2C9400680CDA /* NSObject+EasyKVO.m in Sources */,
 				429CB1B4210436960063A0D8 /* Demo1Cell.m in Sources */,
 				42F772682193D0DD00FFD237 /* JMButtonVC.m in Sources */,
 				422788A22145F431002B9C13 /* JXCategoryImageCellModel.m in Sources */,
@@ -5864,6 +6013,7 @@
 				426FEE79221D39EC00C4491A /* ClickTextView.m in Sources */,
 				42C7838D213CC45B0012188E /* SpinnerSectionController.m in Sources */,
 				42C7834B213CC45B0012188E /* GridItem.m in Sources */,
+				42685507223F2C9500680CDA /* EasyNavigationUtils.m in Sources */,
 				422789112145F44F002B9C13 /* VerticalSectionHeaderView.m in Sources */,
 				42B573BD213FC1FE0089CFDF /* DefaultTwoCoverVC.m in Sources */,
 				42C78379213CC45B0012188E /* UserInfoCell.m in Sources */,
@@ -5914,6 +6064,7 @@
 				42C78364213CC45B0012188E /* SingleSectionStoryboardViewController.m in Sources */,
 				42F772552193D0DD00FFD237 /* JMBaseButton.m in Sources */,
 				42C78355213CC45B0012188E /* StackedViewController.m in Sources */,
+				42685502223F2C9500680CDA /* EasyNavigationView.m in Sources */,
 				42BF8199211A88BB0090E612 /* CQCategoryModel.m in Sources */,
 				422789222145F44F002B9C13 /* JXPagingView.m in Sources */,
 				42C78360213CC45B0012188E /* MixedDataViewController.m in Sources */,
@@ -5955,6 +6106,7 @@
 				4259010A2140BDE400304394 /* SelectedListView.m in Sources */,
 				42B3E1192238D88E00379C2D /* Base_2_ViewController.m in Sources */,
 				42DD8DC021A7ACA300CB04A5 /* AAPLMenuViewController.m in Sources */,
+				42685501223F2C9500680CDA /* UIViewController+EasyNavigationExt.m in Sources */,
 				42F772542193D0DD00FFD237 /* JMBootstrapButton.m in Sources */,
 				42C7837B213CC45B0012188E /* PhotoCell.m in Sources */,
 				42C78358213CC45B0012188E /* DiffTableViewController.m in Sources */,
@@ -5994,8 +6146,10 @@
 				42C7838F213CC45B0012188E /* ExpandableSectionController.m in Sources */,
 				429B151B2160C2FD00F595FC /* UIView+STFrame.m in Sources */,
 				42CFD943215E1E27005792BD /* WCYADImageView.m in Sources */,
+				426854F9223F2C9400680CDA /* EasyNavigationOptions.m in Sources */,
 				42CB7E8C213939C3003397FB /* MemoTableViewController.m in Sources */,
 				42EFA8322109BBCC00AFC827 /* TabView_2_ViewController.m in Sources */,
+				42685508223F2C9500680CDA /* EasyNavigationView+Add.m in Sources */,
 				42DD8D8621A7A11E00CB04A5 /* Transition.m in Sources */,
 				42B573D0213FC1FE0089CFDF /* ChildVCFive.m in Sources */,
 				429CB1B1210436960063A0D8 /* Demo3ViewController.m in Sources */,
@@ -6177,10 +6331,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MQBF47L68X;
 				INFOPLIST_FILE = UIGracefulWriting/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.gjfax.com.UIGracefulWriting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gjfax/Documents/GitHub/3_UIGracefulWriting/UIGracefulWriting/Objc-Swift-bridge.h";
@@ -6199,10 +6350,7 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MQBF47L68X;
 				INFOPLIST_FILE = UIGracefulWriting/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.gjfax.com.UIGracefulWriting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gjfax/Documents/GitHub/3_UIGracefulWriting/UIGracefulWriting/Objc-Swift-bridge.h";
@@ -6217,11 +6365,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIGracefulWritingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.gjfax.com.UIGracefulWritingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6235,11 +6379,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIGracefulWritingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.gjfax.com.UIGracefulWritingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6252,11 +6392,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIGracefulWritingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.gjfax.com.UIGracefulWritingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6269,11 +6405,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIGracefulWritingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.gjfax.com.UIGracefulWritingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

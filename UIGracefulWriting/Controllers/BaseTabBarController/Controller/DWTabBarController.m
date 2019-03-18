@@ -13,9 +13,10 @@
 #import "Base_3_ViewController.h"
 #import "Base_4_ViewController.h"
 
+#import "JDCustomNavigationController.h"
 #import "DWTabBar.h"
 
-#define DWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0] //<<< 用10进制表示颜色，例如（255,255,255）黑色
+#define DWColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define DWRandomColor DWColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
 
 @implementation DWTabBarController
@@ -88,24 +89,24 @@
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ViewController *mainVC = [storyboard instantiateInitialViewController];
     
-    [self addOneChildViewController:[[UINavigationController alloc]initWithRootViewController:mainVC]
+    [self addOneChildViewController:[[JDCustomNavigationController alloc]initWithRootViewController:mainVC]
                           WithTitle:@"UI大杂烩"
                           imageName:@"home_normal"
                   selectedImageName:@"home_highlight"];
     
-    [self addOneChildViewController:[[UINavigationController alloc]initWithRootViewController:[[Base_2_ViewController alloc] init]]
+    [self addOneChildViewController:[[JDCustomNavigationController alloc]initWithRootViewController:[[Base_2_ViewController alloc] init]]
                           WithTitle:@"UI高阶"
                           imageName:@"mycity_normal"
                   selectedImageName:@"mycity_highlight"];
     
     
-    [self addOneChildViewController:[[UINavigationController alloc]initWithRootViewController:[[Base_3_ViewController alloc]init]]
+    [self addOneChildViewController:[[JDCustomNavigationController alloc]initWithRootViewController:[[Base_3_ViewController alloc]init]]
                           WithTitle:@"UI借鉴"
                           imageName:@"message_normal"
                   selectedImageName:@"message_highlight"];
     
     
-    [self addOneChildViewController:[[UINavigationController alloc]initWithRootViewController:[[Base_4_ViewController alloc]init]]
+    [self addOneChildViewController:[[JDCustomNavigationController alloc]initWithRootViewController:[[Base_4_ViewController alloc]init]]
                           WithTitle:@"UI框架"
                           imageName:@"account_normal"
                   selectedImageName:@"account_highlight"];

@@ -38,9 +38,10 @@
 //    ViewController *VC = [storyboard instantiateInitialViewController];
 //    ViewController *VC = [[ViewController alloc] init];
 //    UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:VC];
+//    self.window.rootViewController = naviVC;
+    
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
      self.window.rootViewController = [[DWTabBarController alloc]init];
-//    self.window.rootViewController = naviVC;
     [self.window makeKeyAndVisible];
 
 //    启动图片：采用分类的形式
