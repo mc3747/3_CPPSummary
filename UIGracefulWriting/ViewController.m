@@ -9,7 +9,6 @@
 #import "ViewController.h"
 #import "CommonViewController.h"
 
-#import "CustomBannerScrollView.h"
 #import "BannerDemoVC.h"
 #import "SDViewController.h"
 
@@ -31,11 +30,10 @@
 #import "SGEventVC.h"
 #import "SGCountdownVC.h"
 #import "SGImagePositionVC.h"
-#import "TTTAttributeLabelView.h"
-#import "ConfigAttributedString.h"
-#import "NSString+RichText.h"
 
-@interface ViewController ()<TTTAttributeLabelViewDelegate>
+
+
+@interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *btn1;
 @property (weak, nonatomic) IBOutlet UIButton *btn2;
@@ -77,12 +75,7 @@
 
 #pragma mark -   普通滚动图片
 - (void)test1 {
-    UIViewController *VC = [[UIViewController alloc] init];
-    VC.view.backgroundColor = [UIColor blueColor];
-    CustomBannerScrollView *bannerView = [[CustomBannerScrollView alloc] initWithFrame:CGRectMake(0, 100, [UIScreen mainScreen].bounds.size.width, 150) ];
-    [bannerView configPictures:@[@"0_full",@"1_full",@"2_full"]];
-    [VC.view addSubview:bannerView];
-    [self.navigationController pushViewController:VC animated:YES];
+   
 }
 
 #pragma mark -  循环滚动
@@ -124,43 +117,8 @@
 }
 #pragma mark -  5,label可以点击和带下划线
 - (void)test5 {
-    // 创建富文本
-    NSString *string = @"Between the husband and earth, each master. All Gou Fei Wu, although a little and Mo to take. YouXianMing but the river breeze, and the mountain of the moon, ear and sound, eyes meet and fineness. Take no ban, be inexhaustible. Is also the creator of the endless Tibet, and I and the children were appropriate.\n夫天地之间，物各有主。苟非吾之所有，虽一毫而莫取。惟江上之清风，与山间之明月，耳得之而为声，目遇之而成色。 取之无禁，用之不竭。是造物者之无尽藏也，而吾与子之所共适。";
-    NSMutableParagraphStyle *style = [NSMutableParagraphStyle new];
-    style.lineSpacing              = 4.f;
-    style.paragraphSpacing         = style.lineSpacing * 4;
-    style.alignment                = NSTextAlignmentCenter;
-    NSAttributedString *attributedString  = \
-    [string createAttributedStringAndConfig:@[[ConfigAttributedString foregroundColor:[UIColor whiteColor] range:string.range],
-                                              [ConfigAttributedString paragraphStyle:style range:string.range],
-                                              [ConfigAttributedString font:[UIFont fontWithName:@"AppleSDGothicNeo-UltraLight" size:14.f] range:string.range]]];
+
     
-    // 初始化对象
-    TTTAttributeLabelView *attributeLabelView                    = [[TTTAttributeLabelView alloc] initWithFrame:CGRectMake(10, 50, 300, 0)];
-    attributeLabelView.attributedString   = attributedString;
-    attributeLabelView.delegate           = self;
-    attributeLabelView.linkColor          = [UIColor cyanColor];
-    
-    // 添加超链接
-    NSRange range1 = [string rangeOfString:@"YouXianMing"];
-    [attributeLabelView addLinkStringRange:range1 flag:@"link1"];
-    
-    NSRange range2 = [string rangeOfString:@"inexhaustible"];
-    [attributeLabelView addLinkStringRange:range2 flag:@"link2"];
-    
-    NSRange range3 = [string rangeOfString:@"耳得之而为声，目遇之而成色。"];
-    [attributeLabelView addLinkStringRange:range3 flag:@"link3"];
-    
-    // 进行渲染
-    [attributeLabelView render];
-    [attributeLabelView resetSize];
-    [self.view addSubview:attributeLabelView];
-    
-     [self pushVCWithView:attributeLabelView];
-}
-- (void)TTTAttributeLabelView:(TTTAttributeLabelView *)attributeLabelView linkFlag:(NSString *)flag {
-    
-    NSLog(@"%@", flag);
 }
 
 #pragma mark -  6，textfield相关见storyboard
@@ -259,18 +217,38 @@
     
     vc.title = @"其他UI效果";
     
-    vc.vcNameArray = @[@[@"LabelLeaveSpaceVC",@"LabelAlignVC",@"ShadeEffectVC",@"MoneyAnimationVC",@"CQFilterViewController",@"CQJigsawViewController",@"DimImageViewController",@"IconFontViewController",@"ScreenShotVC",@"RichTextVC",@"MemoTableViewController",@"DemosViewController",@"WonderfulColorVC",@"AdjustSizeVC",@"JMButtonVC"],
-  @[@"DropDownViewController",@"YZDropViewController"],
-  @[@"AlertViewController",@"AlertTableViewController",@"ActionSheetTableViewController",@"ShowViewController"],
-  @[@"FatherAndSonVC",@"Switch2_ViewController",@"Switch3_ViewController",@"Switch4_ViewController",@"STListController"],
-  @[@"TestViewController",@"NoDataTableViewVC",@"NineGridVC",@"InputFilterVC",@"CreateQRCodeVC"]];
+    vc.vcNameArray =
+@[
+@[@"CQJigsawViewController"],
+@[@"ClickableLabelVC",@"LabelLeaveSpaceVC",@"CountDownLabelVC",@"LabelAlignVC",@"AdjustSizeVC",@"MoneyAnimationVC"],
+@[@"EnlargeButtonVC",@"SGImagePositionVC",@"UnderlineButtonVC",@"SGEventVC",@"SGCountdownVC",@"JMButtonVC"],
+@[@"TabView_1_ViewController",@"TabView_2_ViewController",@"TabView_3_ViewController",@"TabView_4_ViewController",@"TabView_5_ViewController",@"TabView_6_ViewController",@"NoDataTableViewVC",@"MemoTableViewController"],
+@[@"ScrollPageVC"],
+@[@"SWRevealViewController"],
+@[@"InputFloatVC",@"InputFilterVC"],
+@[@"ShadeEffectVC",@"CQFilterViewController",@"DimImageViewController",@"IconFontViewController",@"ScreenShotVC",@"RichTextVC",@"MemoTableViewController",@"DemosViewController",@"WonderfulColorVC",@"JMButtonVC"],
+    @[@"DropDownViewController",@"YZDropViewController"],
+    @[@"AlertViewController",@"AlertTableViewController",@"ActionSheetTableViewController",@"ShowViewController"],
+    @[@"FatherAndSonVC",@"Switch2_ViewController",@"Switch3_ViewController",@"Switch4_ViewController",@"STListController"],
+    @[@"TestViewController",@"NoDataTableViewVC",@"NineGridVC",@"InputFilterVC",@"CreateQRCodeVC"]];
     
-    vc.subtitleArray = @[@[@"label留白",@"label文字对齐各种效果",@"渐变效果",@"金额跳动效果",@"模态弹窗",@"比例拼图",@"模糊效果",@"IconFont的使用",@"截屏展示",@"富文本总结",@"便签效果",@"IGListKit的Demo",@"完美颜色",@"自适应宽高的label",@"各种button的封装"],
+    vc.subtitleArray = @[
+@[@"比例拼图"],
+@[@"可点击label",@"label留白",@"倒计时label",@"label文字对齐各种效果",@"自适应宽高的label",@"金额跳动label"],
+@[@"扩大点击button",@"文字图片组合button",@"带下划线button",@"防重复点击button",@"倒计时button",@"各种样式的button"],
+@[@"原生常用",@"自定义等高",@"自定义不等高",@"优雅地写",@"炫酷效果",@"性能优化",@"无数据动画",@"便签效果"],
+@[@"ScrollView相关"],
+@[@"CollectionView相关"],
+@[@"输入上浮",@"输入过滤"],
+@[@"渐变效果",@"模态弹窗",@"模糊效果",@"IconFont的使用",@"截屏展示",@"富文本总结",@"便签效果",@"IGListKit的Demo",@"完美颜色",@"各种button的封装"],
                          @[@"仿美团二级菜单",@"袁崢二级菜单"],
   @[@"系统alert和sheet",@"LEE的alert",@"LEE的sheet",@"JXT的Alert汇总"],
   @[@"父子控制器",@"袁崢切换",@"SGPagingView横向切换",@"JXCategory横向切换",@"ST顶部可滚动切换"],
   @[@"测试控制器跳转过渡页",@"tableView无数据过渡页动画",@"九宫格",@"输入过滤",@"生成二维码"]];
     
+    vc.sectionTitleArray =@[@"view相关",@"lable相关",@"button相关",@"tableView相关",@"scrollView相关",
+                            @"collectionView相关",@"textField相关",@"textView相关",@"颜色总结",@"字体总结",
+                            @"弹框总结",@"富文本总结",@"九宫格总结",@"多级联动总结",@"导航切换总结"];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

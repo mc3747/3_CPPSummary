@@ -249,16 +249,6 @@
 		429CB1BC210436960063A0D8 /* DDCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CB0EF210436960063A0D8 /* DDCollectionViewFlowLayout.m */; };
 		429CB1C221043C3E0063A0D8 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CB1BE21043C3E0063A0D8 /* UIImage+Category.m */; };
 		429CB1C321043C3E0063A0D8 /* UIControl+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 429CB1BF21043C3E0063A0D8 /* UIControl+Category.m */; };
-		42B182642106C72300C1E682 /* IchiroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182522106C72300C1E682 /* IchiroTextField.m */; };
-		42B182652106C72300C1E682 /* NarikoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182532106C72300C1E682 /* NarikoTextField.m */; };
-		42B182662106C72300C1E682 /* UIFloatLabelTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182552106C72300C1E682 /* UIFloatLabelTextField.m */; };
-		42B182672106C72300C1E682 /* MinoruTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182582106C72300C1E682 /* MinoruTextField.m */; };
-		42B182682106C72300C1E682 /* JuroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1825C2106C72300C1E682 /* JuroTextField.m */; };
-		42B182692106C72300C1E682 /* YoshikoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1825D2106C72300C1E682 /* YoshikoTextField.m */; };
-		42B1826A2106C72300C1E682 /* BetaNaoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182602106C72300C1E682 /* BetaNaoTextField.m */; };
-		42B1826B2106C72300C1E682 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182622106C72300C1E682 /* PulsingHaloLayer.m */; };
-		42B1826C2106C72300C1E682 /* KuroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182632106C72300C1E682 /* KuroTextField.m */; };
-		42B182702106CAD200C1E682 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B1826F2106CAD200C1E682 /* TextFieldViewController.m */; };
 		42B182762106D07800C1E682 /* UIButton+Enlarge.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182742106D07800C1E682 /* UIButton+Enlarge.m */; };
 		42B182792106D0B000C1E682 /* CommonUnderlineButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182772106D0B000C1E682 /* CommonUnderlineButton.m */; };
 		42B182842106D83700C1E682 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 42B182832106D83700C1E682 /* UIView+Extension.m */; };
@@ -579,6 +569,13 @@
 		42CFD907215E14F6005792BD /* AppDelegate+LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD906215E14F6005792BD /* AppDelegate+LaunchView.m */; };
 		42CFD943215E1E27005792BD /* WCYADImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD941215E1E27005792BD /* WCYADImageView.m */; };
 		42D04E9B2176DC7A0075ECEF /* FakeWindowClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E3D452175C67800D61820 /* FakeWindowClass.m */; };
+		42D42FC8225C720A00EA4AA8 /* ClickableLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FC7225C720A00EA4AA8 /* ClickableLabelVC.m */; };
+		42D42FCB225C723300EA4AA8 /* CountDownLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FCA225C723300EA4AA8 /* CountDownLabelVC.m */; };
+		42D42FCE225C74FC00EA4AA8 /* EnlargeButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FCD225C74FC00EA4AA8 /* EnlargeButtonVC.m */; };
+		42D42FD1225C751F00EA4AA8 /* UnderlineButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FD0225C751F00EA4AA8 /* UnderlineButtonVC.m */; };
+		42D42FD4225C7C0600EA4AA8 /* CustomBannerScrollVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FD3225C7C0600EA4AA8 /* CustomBannerScrollVC.m */; };
+		42D42FD7225C7C8500EA4AA8 /* ScrollPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FD6225C7C8500EA4AA8 /* ScrollPageVC.m */; };
+		42D42FDA225C7F2700EA4AA8 /* InputFloatVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FD9225C7F2700EA4AA8 /* InputFloatVC.m */; };
 		42DB02F0221E4BD2002B5675 /* CreateQRCodeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DB02EF221E4BD2002B5675 /* CreateQRCodeVC.m */; };
 		42DB02FB221E50B6002B5675 /* UIImage+HTImageWithCenterLogo.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DB02F7221E50B4002B5675 /* UIImage+HTImageWithCenterLogo.m */; };
 		42DB02FC221E50B6002B5675 /* HTQRCodeCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DB02F9221E50B5002B5675 /* HTQRCodeCreater.m */; };
@@ -1154,26 +1151,6 @@
 		429CB1BF21043C3E0063A0D8 /* UIControl+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Category.m"; sourceTree = "<group>"; };
 		429CB1C021043C3E0063A0D8 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
 		429CB1C121043C3E0063A0D8 /* UIControl+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+Category.h"; sourceTree = "<group>"; };
-		42B182512106C72300C1E682 /* YoshikoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoshikoTextField.h; sourceTree = "<group>"; };
-		42B182522106C72300C1E682 /* IchiroTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IchiroTextField.m; sourceTree = "<group>"; };
-		42B182532106C72300C1E682 /* NarikoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NarikoTextField.m; sourceTree = "<group>"; };
-		42B182552106C72300C1E682 /* UIFloatLabelTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFloatLabelTextField.m; sourceTree = "<group>"; };
-		42B182562106C72300C1E682 /* UIFloatLabelTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFloatLabelTextField.h; sourceTree = "<group>"; };
-		42B182572106C72300C1E682 /* NarikoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NarikoTextField.h; sourceTree = "<group>"; };
-		42B182582106C72300C1E682 /* MinoruTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinoruTextField.m; sourceTree = "<group>"; };
-		42B182592106C72300C1E682 /* KuroTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KuroTextField.h; sourceTree = "<group>"; };
-		42B1825A2106C72300C1E682 /* JuroTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuroTextField.h; sourceTree = "<group>"; };
-		42B1825B2106C72300C1E682 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
-		42B1825C2106C72300C1E682 /* JuroTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuroTextField.m; sourceTree = "<group>"; };
-		42B1825D2106C72300C1E682 /* YoshikoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoshikoTextField.m; sourceTree = "<group>"; };
-		42B1825E2106C72300C1E682 /* BetaNaoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BetaNaoTextField.h; sourceTree = "<group>"; };
-		42B1825F2106C72300C1E682 /* IchiroTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IchiroTextField.h; sourceTree = "<group>"; };
-		42B182602106C72300C1E682 /* BetaNaoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BetaNaoTextField.m; sourceTree = "<group>"; };
-		42B182612106C72300C1E682 /* MinoruTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinoruTextField.h; sourceTree = "<group>"; };
-		42B182622106C72300C1E682 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
-		42B182632106C72300C1E682 /* KuroTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KuroTextField.m; sourceTree = "<group>"; };
-		42B1826E2106CAD200C1E682 /* TextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
-		42B1826F2106CAD200C1E682 /* TextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
 		42B182742106D07800C1E682 /* UIButton+Enlarge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Enlarge.m"; sourceTree = "<group>"; };
 		42B182752106D07800C1E682 /* UIButton+Enlarge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Enlarge.h"; sourceTree = "<group>"; };
 		42B182772106D0B000C1E682 /* CommonUnderlineButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUnderlineButton.m; sourceTree = "<group>"; };
@@ -1788,6 +1765,20 @@
 		42CFD906215E14F6005792BD /* AppDelegate+LaunchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LaunchView.m"; sourceTree = "<group>"; };
 		42CFD941215E1E27005792BD /* WCYADImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCYADImageView.m; sourceTree = "<group>"; };
 		42CFD942215E1E27005792BD /* WCYADImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCYADImageView.h; sourceTree = "<group>"; };
+		42D42FC6225C720A00EA4AA8 /* ClickableLabelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickableLabelVC.h; sourceTree = "<group>"; };
+		42D42FC7225C720A00EA4AA8 /* ClickableLabelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickableLabelVC.m; sourceTree = "<group>"; };
+		42D42FC9225C723300EA4AA8 /* CountDownLabelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountDownLabelVC.h; sourceTree = "<group>"; };
+		42D42FCA225C723300EA4AA8 /* CountDownLabelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CountDownLabelVC.m; sourceTree = "<group>"; };
+		42D42FCC225C74FC00EA4AA8 /* EnlargeButtonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnlargeButtonVC.h; sourceTree = "<group>"; };
+		42D42FCD225C74FC00EA4AA8 /* EnlargeButtonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnlargeButtonVC.m; sourceTree = "<group>"; };
+		42D42FCF225C751F00EA4AA8 /* UnderlineButtonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UnderlineButtonVC.h; sourceTree = "<group>"; };
+		42D42FD0225C751F00EA4AA8 /* UnderlineButtonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UnderlineButtonVC.m; sourceTree = "<group>"; };
+		42D42FD2225C7C0600EA4AA8 /* CustomBannerScrollVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBannerScrollVC.h; sourceTree = "<group>"; };
+		42D42FD3225C7C0600EA4AA8 /* CustomBannerScrollVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomBannerScrollVC.m; sourceTree = "<group>"; };
+		42D42FD5225C7C8500EA4AA8 /* ScrollPageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollPageVC.h; sourceTree = "<group>"; };
+		42D42FD6225C7C8500EA4AA8 /* ScrollPageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollPageVC.m; sourceTree = "<group>"; };
+		42D42FD8225C7F2700EA4AA8 /* InputFloatVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputFloatVC.h; sourceTree = "<group>"; };
+		42D42FD9225C7F2700EA4AA8 /* InputFloatVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputFloatVC.m; sourceTree = "<group>"; };
 		42DB02EE221E4BD2002B5675 /* CreateQRCodeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreateQRCodeVC.h; sourceTree = "<group>"; };
 		42DB02EF221E4BD2002B5675 /* CreateQRCodeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreateQRCodeVC.m; sourceTree = "<group>"; };
 		42DB02F7221E50B4002B5675 /* UIImage+HTImageWithCenterLogo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+HTImageWithCenterLogo.m"; sourceTree = "<group>"; };
@@ -2376,23 +2367,25 @@
 		422AB6F9217427270019F1D9 /* 4,label文字对齐各种方式 */ = {
 			isa = PBXGroup;
 			children = (
+				422AB6FE2174278A0019F1D9 /* LabelAlignVC.h */,
+				422AB6FA217427890019F1D9 /* LabelAlignVC.m */,
 				422AB6FD2174278A0019F1D9 /* ARAlignLabel.h */,
 				422AB6FC217427890019F1D9 /* ARAlignLabel.m */,
 				422AB6FB217427890019F1D9 /* LabelAlignDetailVC.h */,
 				422AB6FF2174278A0019F1D9 /* LabelAlignDetailVC.m */,
-				422AB6FE2174278A0019F1D9 /* LabelAlignVC.h */,
-				422AB6FA217427890019F1D9 /* LabelAlignVC.m */,
 			);
 			path = "4,label文字对齐各种方式";
 			sourceTree = "<group>";
 		};
-		422AB70321742BB20019F1D9 /* 5,label留白问题 */ = {
+		422AB70321742BB20019F1D9 /* 2,label留白问题 */ = {
 			isa = PBXGroup;
 			children = (
 				422AB70421742BEF0019F1D9 /* LabelLeaveSpaceVC.h */,
 				422AB70521742BEF0019F1D9 /* LabelLeaveSpaceVC.m */,
+				42CB7E6621391CBF003397FB /* MCLabel.h */,
+				42CB7E6521391CBF003397FB /* MCLabel.m */,
 			);
-			path = "5,label留白问题";
+			path = "2,label留白问题";
 			sourceTree = "<group>";
 		};
 		4238B927212551A600AF272E /* #12_模糊效果 */ = {
@@ -2427,22 +2420,16 @@
 			path = "屏幕模糊";
 			sourceTree = "<group>";
 		};
-		4242B789212A4ABB00C3A2C5 /* #13_横向切换 */ = {
+		4242B789212A4ABB00C3A2C5 /* *15_导航滚动切换总结 */ = {
 			isa = PBXGroup;
 			children = (
 				425901152140D36200304394 /* 1_父子控制器（基础） */,
 				4242B923212A716400C3A2C5 /* 2_袁崢 */,
 				42B57352213FC1180089CFDF /* 3_SGPagingView */,
 				4242B78C212A4C1D00C3A2C5 /* 4_JXCategory */,
+				429B14EE2160C2A600F595FC /* 5_头部滚动tableView */,
 			);
-			path = "#13_横向切换";
-			sourceTree = "<group>";
-		};
-		4242B78A212A4ADC00C3A2C5 /* #14_纵向滚动 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "#14_纵向滚动";
+			path = "*15_导航滚动切换总结";
 			sourceTree = "<group>";
 		};
 		4242B78C212A4C1D00C3A2C5 /* 4_JXCategory */ = {
@@ -2901,7 +2888,7 @@
 			path = "3，UITextView系列";
 			sourceTree = "<group>";
 		};
-		42981CE12105C42B0052CCC3 /* #4_button相关 */ = {
+		42981CE12105C42B0052CCC3 /* *3_button相关 */ = {
 			isa = PBXGroup;
 			children = (
 				42B182732106D07800C1E682 /* 1，扩大按钮点击 */,
@@ -2911,7 +2898,7 @@
 				42C787D3213D2B4E0012188E /* 5，倒计时按钮 */,
 				42F772182193D0A200FFD237 /* 6，各种样式button的封装 */,
 			);
-			path = "#4_button相关";
+			path = "*3_button相关";
 			sourceTree = "<group>";
 		};
 		42981CE82105C7C30052CCC3 /* 2，UI拔高 */ = {
@@ -2923,7 +2910,7 @@
 			path = "2，UI拔高";
 			sourceTree = "<group>";
 		};
-		429B14EE2160C2A600F595FC /* #25_头部滚动tableView */ = {
+		429B14EE2160C2A600F595FC /* 5_头部滚动tableView */ = {
 			isa = PBXGroup;
 			children = (
 				429B15052160C2FC00F595FC /* STListController.h */,
@@ -2934,7 +2921,7 @@
 				429B14F92160C2FC00F595FC /* STView */,
 				429B15072160C2FC00F595FC /* SwipeTableView */,
 			);
-			path = "#25_头部滚动tableView";
+			path = "5_头部滚动tableView";
 			sourceTree = "<group>";
 		};
 		429B14EF2160C2FB00F595FC /* STTransition */ = {
@@ -3002,33 +2989,25 @@
 		429CAF8A2104365F0063A0D8 /* 1，UI大杂烩 */ = {
 			isa = PBXGroup;
 			children = (
-				429CAF8B210436950063A0D8 /* #1_轮播器 */,
-				429CAFE5210436950063A0D8 /* #2_CollectionView应用 */,
-				42B1827A2106D13A00C1E682 /* #3_label相关 */,
-				42981CE12105C42B0052CCC3 /* #4_button相关 */,
-				42B182502106C61800C1E682 /* #5_TextField输入浮动效果 */,
-				42BAFEF6210876CD003CFD9A /* #6_TextView设置下划线 */,
-				42EFA8262109BA0E00AFC827 /* #7_UITableView */,
-				42BF8147211A74B20090E612 /* #8_渐变效果 */,
-				42BF815E211A80660090E612 /* #9_金额跳动动画 */,
-				42BF8165211A872D0090E612 /* #10_模态弹窗 */,
-				42BF8189211A88910090E612 /* #11_比例拼图 */,
+				42D42FBB225C3EEF00EA4AA8 /* *1_view相关 */,
+				42B1827A2106D13A00C1E682 /* *2_label相关 */,
+				42981CE12105C42B0052CCC3 /* *3_button相关 */,
+				42EFA8262109BA0E00AFC827 /* *4_tableView相关 */,
+				42D42FBE225C409000EA4AA8 /* *5_scrollView相关 */,
+				42D42FBF225C40D700EA4AA8 /* *6_collectionView相关 */,
+				42D42FC0225C410F00EA4AA8 /* *7_textField相关 */,
+				42D42FC1225C412400EA4AA8 /* *8_textView相关 */,
+				42D42FC2225C41BD00EA4AA8 /* *9_颜色总结 */,
+				42D42FC3225C41D800EA4AA8 /* *10_字体总结 */,
+				42D42FC4225C431800EA4AA8 /* *11_弹框总结 */,
+				42CB7E572138F200003397FB /* *12_富文本总结 */,
+				42C52C0D2187DEB7001D7A07 /* *13_九宫格总结 */,
+				42C7839A213CC7F80012188E /* *14_多级联动总结 */,
+				4242B789212A4ABB00C3A2C5 /* *15_导航滚动切换总结 */,
+				42D42FC5225C45DE00EA4AA8 /* *16_跳转方案总结 */,
+				42CFD940215E1DF8005792BD /* *17_启动页总结 */,
 				4238B927212551A600AF272E /* #12_模糊效果 */,
-				4242B789212A4ABB00C3A2C5 /* #13_横向切换 */,
-				4242B78A212A4ADC00C3A2C5 /* #14_纵向滚动 */,
-				4242B952212A94F300C3A2C5 /* #15_IconFont的使用 */,
 				42CB7E312138CEB7003397FB /* #16_截屏展示 */,
-				42CB7E572138F200003397FB /* #17_富文本总结 */,
-				42CB7E8321393900003397FB /* #18_便签效果 */,
-				42C7839A213CC7F80012188E /* #19_下拉二级菜单 */,
-				42B573E4213FCCB50089CFDF /* #20_alert和sheet汇总  */,
-				42C5B6762142690300563794 /* #21_好用的颜色 */,
-				4200C87A2159CABA00FCD77D /* #22_跳转过渡页 */,
-				42CFD940215E1DF8005792BD /* #23_启动页 */,
-				42C4DF03215F2A6C00247949 /* #24_无数据动画tableview */,
-				429B14EE2160C2A600F595FC /* #25_头部滚动tableView */,
-				42C52C0D2187DEB7001D7A07 /* #26_九宫格 */,
-				42DD7F8C2189314800E3B6F3 /* #27_输入过滤 */,
 				42DB02ED221E4B76002B5675 /* #28_生成二维码 */,
 			);
 			path = "1，UI大杂烩";
@@ -3037,6 +3016,8 @@
 		429CAF8B210436950063A0D8 /* #1_轮播器 */ = {
 			isa = PBXGroup;
 			children = (
+				42D42FD5225C7C8500EA4AA8 /* ScrollPageVC.h */,
+				42D42FD6225C7C8500EA4AA8 /* ScrollPageVC.m */,
 				429CAF8C210436950063A0D8 /* ##1_普通滚动 */,
 				429CAF9E210436950063A0D8 /* ##2_循环滚动 */,
 				429CAF8F210436950063A0D8 /* ##3_复杂滚动 */,
@@ -3047,6 +3028,8 @@
 		429CAF8C210436950063A0D8 /* ##1_普通滚动 */ = {
 			isa = PBXGroup;
 			children = (
+				42D42FD2225C7C0600EA4AA8 /* CustomBannerScrollVC.h */,
+				42D42FD3225C7C0600EA4AA8 /* CustomBannerScrollVC.m */,
 				429CAF8D210436950063A0D8 /* CustomBannerScrollView.h */,
 				429CAF8E210436950063A0D8 /* CustomBannerScrollView.m */,
 			);
@@ -3147,7 +3130,7 @@
 			path = PageControl;
 			sourceTree = "<group>";
 		};
-		429CAFE5210436950063A0D8 /* #2_CollectionView应用 */ = {
+		429CAFE5210436950063A0D8 /* #1_CollectionView应用 */ = {
 			isa = PBXGroup;
 			children = (
 				429CAFE6210436950063A0D8 /* SWRevealViewController */,
@@ -3155,7 +3138,7 @@
 				429CB0B6210436960063A0D8 /* LeftPage */,
 				429CB0B9210436960063A0D8 /* CenterPage */,
 			);
-			path = "#2_CollectionView应用";
+			path = "#1_CollectionView应用";
 			sourceTree = "<group>";
 		};
 		429CAFE6210436950063A0D8 /* SWRevealViewController */ = {
@@ -3337,39 +3320,13 @@
 			path = ..;
 			sourceTree = "<group>";
 		};
-		42B182502106C61800C1E682 /* #5_TextField输入浮动效果 */ = {
+		42B182502106C61800C1E682 /* #1_TextField输入浮动效果 */ = {
 			isa = PBXGroup;
 			children = (
-				42B182542106C72300C1E682 /* 1,输入上浮 */,
-				42B1825E2106C72300C1E682 /* BetaNaoTextField.h */,
-				42B182602106C72300C1E682 /* BetaNaoTextField.m */,
-				42B1825F2106C72300C1E682 /* IchiroTextField.h */,
-				42B182522106C72300C1E682 /* IchiroTextField.m */,
-				42B1825A2106C72300C1E682 /* JuroTextField.h */,
-				42B1825C2106C72300C1E682 /* JuroTextField.m */,
-				42B182592106C72300C1E682 /* KuroTextField.h */,
-				42B182632106C72300C1E682 /* KuroTextField.m */,
-				42B182612106C72300C1E682 /* MinoruTextField.h */,
-				42B182582106C72300C1E682 /* MinoruTextField.m */,
-				42B182572106C72300C1E682 /* NarikoTextField.h */,
-				42B182532106C72300C1E682 /* NarikoTextField.m */,
-				42B1825B2106C72300C1E682 /* PulsingHaloLayer.h */,
-				42B182622106C72300C1E682 /* PulsingHaloLayer.m */,
-				42B182512106C72300C1E682 /* YoshikoTextField.h */,
-				42B1825D2106C72300C1E682 /* YoshikoTextField.m */,
+				42D42FD8225C7F2700EA4AA8 /* InputFloatVC.h */,
+				42D42FD9225C7F2700EA4AA8 /* InputFloatVC.m */,
 			);
-			path = "#5_TextField输入浮动效果";
-			sourceTree = "<group>";
-		};
-		42B182542106C72300C1E682 /* 1,输入上浮 */ = {
-			isa = PBXGroup;
-			children = (
-				42B1826E2106CAD200C1E682 /* TextFieldViewController.h */,
-				42B1826F2106CAD200C1E682 /* TextFieldViewController.m */,
-				42B182562106C72300C1E682 /* UIFloatLabelTextField.h */,
-				42B182552106C72300C1E682 /* UIFloatLabelTextField.m */,
-			);
-			path = "1,输入上浮";
+			path = "#1_TextField输入浮动效果";
 			sourceTree = "<group>";
 		};
 		42B1826D2106CA9E00C1E682 /* Controllers */ = {
@@ -3398,6 +3355,8 @@
 		42B182722106D07800C1E682 /* 3，带下划线的按钮 */ = {
 			isa = PBXGroup;
 			children = (
+				42D42FCF225C751F00EA4AA8 /* UnderlineButtonVC.h */,
+				42D42FD0225C751F00EA4AA8 /* UnderlineButtonVC.m */,
 				42B182782106D0B000C1E682 /* CommonUnderlineButton.h */,
 				42B182772106D0B000C1E682 /* CommonUnderlineButton.m */,
 			);
@@ -3407,28 +3366,32 @@
 		42B182732106D07800C1E682 /* 1，扩大按钮点击 */ = {
 			isa = PBXGroup;
 			children = (
+				42D42FCC225C74FC00EA4AA8 /* EnlargeButtonVC.h */,
+				42D42FCD225C74FC00EA4AA8 /* EnlargeButtonVC.m */,
 				42B182752106D07800C1E682 /* UIButton+Enlarge.h */,
 				42B182742106D07800C1E682 /* UIButton+Enlarge.m */,
 			);
 			path = "1，扩大按钮点击";
 			sourceTree = "<group>";
 		};
-		42B1827A2106D13A00C1E682 /* #3_label相关 */ = {
+		42B1827A2106D13A00C1E682 /* *2_label相关 */ = {
 			isa = PBXGroup;
 			children = (
 				42B1827B2106D13A00C1E682 /* 1,可点击label */,
-				42CB7E6421391C77003397FB /* 2,label调整缩进 */,
+				422AB70321742BB20019F1D9 /* 2,label留白问题 */,
 				42C4DEF9215F105D00247949 /* 3,倒计时label */,
 				422AB6F9217427270019F1D9 /* 4,label文字对齐各种方式 */,
-				422AB70321742BB20019F1D9 /* 5,label留白问题 */,
-				42F772112193CD9600FFD237 /* 6,自适应宽高的label */,
+				42F772112193CD9600FFD237 /* 5,自适应宽高的label */,
+				42BF815E211A80660090E612 /* 6,金额跳动label */,
 			);
-			path = "#3_label相关";
+			path = "*2_label相关";
 			sourceTree = "<group>";
 		};
 		42B1827B2106D13A00C1E682 /* 1,可点击label */ = {
 			isa = PBXGroup;
 			children = (
+				42D42FC6225C720A00EA4AA8 /* ClickableLabelVC.h */,
+				42D42FC7225C720A00EA4AA8 /* ClickableLabelVC.m */,
 				42F8D90B21EC664E005D0120 /* ConfigAttributedString.h */,
 				42F8D90E21EC664E005D0120 /* ConfigAttributedString.m */,
 				42F8D90C21EC664E005D0120 /* NSString+RichText.h */,
@@ -3687,13 +3650,13 @@
 			path = "#20_alert和sheet汇总 ";
 			sourceTree = "<group>";
 		};
-		42BAFEF6210876CD003CFD9A /* #6_TextView设置下划线 */ = {
+		42BAFEF6210876CD003CFD9A /* #1_TextView设置下划线 */ = {
 			isa = PBXGroup;
 			children = (
 				42BAFEF72108772D003CFD9A /* TextViewViewController.h */,
 				42BAFEF82108772D003CFD9A /* TextViewViewController.m */,
 			);
-			path = "#6_TextView设置下划线";
+			path = "#1_TextView设置下划线";
 			sourceTree = "<group>";
 		};
 		42BB66DB20D1231A007BE2CF = {
@@ -3762,14 +3725,14 @@
 			path = UIGracefulWritingUITests;
 			sourceTree = "<group>";
 		};
-		42BF8147211A74B20090E612 /* #8_渐变效果 */ = {
+		42BF8147211A74B20090E612 /* #2_渐变效果 */ = {
 			isa = PBXGroup;
 			children = (
 				42BF8158211A75860090E612 /* ShadeEffectVC.h */,
 				42BF8159211A75860090E612 /* ShadeEffectVC.m */,
 				42BF8148211A75000090E612 /* AZCategory */,
 			);
-			path = "#8_渐变效果";
+			path = "#2_渐变效果";
 			sourceTree = "<group>";
 		};
 		42BF8148211A75000090E612 /* AZCategory */ = {
@@ -3789,7 +3752,7 @@
 			path = AZCategory;
 			sourceTree = "<group>";
 		};
-		42BF815E211A80660090E612 /* #9_金额跳动动画 */ = {
+		42BF815E211A80660090E612 /* 6,金额跳动label */ = {
 			isa = PBXGroup;
 			children = (
 				42BF8162211A80B50090E612 /* MoneyAnimationVC.h */,
@@ -3797,7 +3760,7 @@
 				42BF815F211A808C0090E612 /* UILabel+MoneyAnimation.h */,
 				42BF8160211A808C0090E612 /* UILabel+MoneyAnimation.m */,
 			);
-			path = "#9_金额跳动动画";
+			path = "6,金额跳动label";
 			sourceTree = "<group>";
 		};
 		42BF8165211A872D0090E612 /* #10_模态弹窗 */ = {
@@ -3866,7 +3829,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		42BF8189211A88910090E612 /* #11_比例拼图 */ = {
+		42BF8189211A88910090E612 /* #1_比例拼图 */ = {
 			isa = PBXGroup;
 			children = (
 				42BF819E211A89D90090E612 /* Base */,
@@ -3875,7 +3838,7 @@
 				42BF818A211A88BB0090E612 /* Model */,
 				42BF8193211A88BB0090E612 /* View */,
 			);
-			path = "#11_比例拼图";
+			path = "#1_比例拼图";
 			sourceTree = "<group>";
 		};
 		42BF818A211A88BB0090E612 /* Model */ = {
@@ -4064,13 +4027,15 @@
 		42C4DEF9215F105D00247949 /* 3,倒计时label */ = {
 			isa = PBXGroup;
 			children = (
+				42D42FC9225C723300EA4AA8 /* CountDownLabelVC.h */,
+				42D42FCA225C723300EA4AA8 /* CountDownLabelVC.m */,
 				42C4DEFB215F108D00247949 /* JKCountDownLable.h */,
 				42C4DEFA215F108D00247949 /* JKCountDownLable.m */,
 			);
 			path = "3,倒计时label";
 			sourceTree = "<group>";
 		};
-		42C4DF03215F2A6C00247949 /* #24_无数据动画tableview */ = {
+		42C4DF03215F2A6C00247949 /* 7，无数据动画tableview */ = {
 			isa = PBXGroup;
 			children = (
 				42C4DF12215F2B2F00247949 /* Controller */,
@@ -4079,7 +4044,7 @@
 				42C4DF04215F2B2F00247949 /* TABAnimated */,
 				42C4DF15215F2B3000247949 /* View */,
 			);
-			path = "#24_无数据动画tableview";
+			path = "7，无数据动画tableview";
 			sourceTree = "<group>";
 		};
 		42C4DF04215F2B2F00247949 /* TABAnimated */ = {
@@ -4140,7 +4105,7 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		42C52C0D2187DEB7001D7A07 /* #26_九宫格 */ = {
+		42C52C0D2187DEB7001D7A07 /* *13_九宫格总结 */ = {
 			isa = PBXGroup;
 			children = (
 				42C52C122187DF93001D7A07 /* NineGridVC.h */,
@@ -4150,7 +4115,7 @@
 				42C52C102187DF00001D7A07 /* 3，stackView方式 */,
 				42C52C112187DF18001D7A07 /* 4，UICollection方式 */,
 			);
-			path = "#26_九宫格";
+			path = "*13_九宫格总结";
 			sourceTree = "<group>";
 		};
 		42C52C0E2187DEE8001D7A07 /* 1，frame方式 */ = {
@@ -4335,7 +4300,7 @@
 			path = AlertView;
 			sourceTree = "<group>";
 		};
-		42C5B6762142690300563794 /* #21_好用的颜色 */ = {
+		42C5B6762142690300563794 /* #1_好用的颜色 */ = {
 			isa = PBXGroup;
 			children = (
 				42C5B6B0214269B700563794 /* WonderfulColorVC.h */,
@@ -4345,7 +4310,7 @@
 				42C5B6802142699B00563794 /* Page */,
 				42C5B68F2142699B00563794 /* Wonderful */,
 			);
-			path = "#21_好用的颜色";
+			path = "#1_好用的颜色";
 			sourceTree = "<group>";
 		};
 		42C5B6772142699A00563794 /* Other */ = {
@@ -4609,13 +4574,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		42C7839A213CC7F80012188E /* #19_下拉二级菜单 */ = {
+		42C7839A213CC7F80012188E /* *14_多级联动总结 */ = {
 			isa = PBXGroup;
 			children = (
 				42C7839B213CC8BF0012188E /* 1，仿美团 */,
 				42C7839C213CC8D00012188E /* 2，袁崢 */,
 			);
-			path = "#19_下拉二级菜单";
+			path = "*14_多级联动总结";
 			sourceTree = "<group>";
 		};
 		42C7839B213CC8BF0012188E /* 1，仿美团 */ = {
@@ -4774,7 +4739,7 @@
 			path = "#16_截屏展示";
 			sourceTree = "<group>";
 		};
-		42CB7E572138F200003397FB /* #17_富文本总结 */ = {
+		42CB7E572138F200003397FB /* *12_富文本总结 */ = {
 			isa = PBXGroup;
 			children = (
 				42CB7E582138F3C8003397FB /* RichTextVC.h */,
@@ -4788,7 +4753,7 @@
 				42CB7E5C213915D6003397FB /* 7，YY系列 */,
 				42CB7E5D213915E0003397FB /* 8，TTT系列 */,
 			);
-			path = "#17_富文本总结";
+			path = "*12_富文本总结";
 			sourceTree = "<group>";
 		};
 		42CB7E5B2139159B003397FB /* 1，UILabel的富文本 */ = {
@@ -4837,15 +4802,6 @@
 			path = "2，HTML系列";
 			sourceTree = "<group>";
 		};
-		42CB7E6421391C77003397FB /* 2,label调整缩进 */ = {
-			isa = PBXGroup;
-			children = (
-				42CB7E6621391CBF003397FB /* MCLabel.h */,
-				42CB7E6521391CBF003397FB /* MCLabel.m */,
-			);
-			path = "2,label调整缩进";
-			sourceTree = "<group>";
-		};
 		42CB7E6821391F3E003397FB /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -4886,7 +4842,7 @@
 			path = "5，TY系列";
 			sourceTree = "<group>";
 		};
-		42CB7E8321393900003397FB /* #18_便签效果 */ = {
+		42CB7E8321393900003397FB /* 8，便签效果 */ = {
 			isa = PBXGroup;
 			children = (
 				42CB7E88213939C3003397FB /* MemoTableViewController.h */,
@@ -4896,7 +4852,7 @@
 				42CB7E86213939C2003397FB /* UIAlertView+RWBlock.h */,
 				42CB7E84213939C1003397FB /* UIAlertView+RWBlock.m */,
 			);
-			path = "#18_便签效果";
+			path = "8，便签效果";
 			sourceTree = "<group>";
 		};
 		42CF2C0D21A549F900951C6D /* 1，textField未封装 */ = {
@@ -4930,13 +4886,88 @@
 			path = "3，textField和textView封装";
 			sourceTree = "<group>";
 		};
-		42CFD940215E1DF8005792BD /* #23_启动页 */ = {
+		42CFD940215E1DF8005792BD /* *17_启动页总结 */ = {
 			isa = PBXGroup;
 			children = (
 				42CFD942215E1E27005792BD /* WCYADImageView.h */,
 				42CFD941215E1E27005792BD /* WCYADImageView.m */,
 			);
-			path = "#23_启动页";
+			path = "*17_启动页总结";
+			sourceTree = "<group>";
+		};
+		42D42FBB225C3EEF00EA4AA8 /* *1_view相关 */ = {
+			isa = PBXGroup;
+			children = (
+				42BF8189211A88910090E612 /* #1_比例拼图 */,
+			);
+			path = "*1_view相关";
+			sourceTree = "<group>";
+		};
+		42D42FBE225C409000EA4AA8 /* *5_scrollView相关 */ = {
+			isa = PBXGroup;
+			children = (
+				429CAF8B210436950063A0D8 /* #1_轮播器 */,
+			);
+			path = "*5_scrollView相关";
+			sourceTree = "<group>";
+		};
+		42D42FBF225C40D700EA4AA8 /* *6_collectionView相关 */ = {
+			isa = PBXGroup;
+			children = (
+				429CAFE5210436950063A0D8 /* #1_CollectionView应用 */,
+			);
+			path = "*6_collectionView相关";
+			sourceTree = "<group>";
+		};
+		42D42FC0225C410F00EA4AA8 /* *7_textField相关 */ = {
+			isa = PBXGroup;
+			children = (
+				42B182502106C61800C1E682 /* #1_TextField输入浮动效果 */,
+				42DD7F8C2189314800E3B6F3 /* #2_输入过滤 */,
+			);
+			path = "*7_textField相关";
+			sourceTree = "<group>";
+		};
+		42D42FC1225C412400EA4AA8 /* *8_textView相关 */ = {
+			isa = PBXGroup;
+			children = (
+				42BAFEF6210876CD003CFD9A /* #1_TextView设置下划线 */,
+			);
+			path = "*8_textView相关";
+			sourceTree = "<group>";
+		};
+		42D42FC2225C41BD00EA4AA8 /* *9_颜色总结 */ = {
+			isa = PBXGroup;
+			children = (
+				42C5B6762142690300563794 /* #1_好用的颜色 */,
+				42BF8147211A74B20090E612 /* #2_渐变效果 */,
+			);
+			path = "*9_颜色总结";
+			sourceTree = "<group>";
+		};
+		42D42FC3225C41D800EA4AA8 /* *10_字体总结 */ = {
+			isa = PBXGroup;
+			children = (
+				4242B952212A94F300C3A2C5 /* #15_IconFont的使用 */,
+			);
+			path = "*10_字体总结";
+			sourceTree = "<group>";
+		};
+		42D42FC4225C431800EA4AA8 /* *11_弹框总结 */ = {
+			isa = PBXGroup;
+			children = (
+				42B573E4213FCCB50089CFDF /* #20_alert和sheet汇总  */,
+				42BF8165211A872D0090E612 /* #10_模态弹窗 */,
+			);
+			path = "*11_弹框总结";
+			sourceTree = "<group>";
+		};
+		42D42FC5225C45DE00EA4AA8 /* *16_跳转方案总结 */ = {
+			isa = PBXGroup;
+			children = (
+				4200C87A2159CABA00FCD77D /* #22_跳转过渡页 */,
+			);
+			path = "*16_跳转方案总结";
 			sourceTree = "<group>";
 		};
 		42DB02ED221E4B76002B5675 /* #28_生成二维码 */ = {
@@ -4952,7 +4983,7 @@
 			path = "#28_生成二维码";
 			sourceTree = "<group>";
 		};
-		42DD7F8C2189314800E3B6F3 /* #27_输入过滤 */ = {
+		42DD7F8C2189314800E3B6F3 /* #2_输入过滤 */ = {
 			isa = PBXGroup;
 			children = (
 				42CF2C0821A5498100951C6D /* InputFilterVC.h */,
@@ -4961,7 +4992,7 @@
 				42CF2C0E21A54A0900951C6D /* 2，textView未封装 */,
 				42CF2C0F21A54A1600951C6D /* 3，textField和textView封装 */,
 			);
-			path = "#27_输入过滤";
+			path = "#2_输入过滤";
 			sourceTree = "<group>";
 		};
 		42DD8D7D21A7A01200CB04A5 /* 简单自定义modal动画 */ = {
@@ -5096,7 +5127,7 @@
 			path = "1，分页加载";
 			sourceTree = "<group>";
 		};
-		42EFA8262109BA0E00AFC827 /* #7_UITableView */ = {
+		42EFA8262109BA0E00AFC827 /* *4_tableView相关 */ = {
 			isa = PBXGroup;
 			children = (
 				42EFA8272109BAA900AFC827 /* 1，原生常用 */,
@@ -5105,8 +5136,10 @@
 				42EFA82A2109BAE200AFC827 /* 4，优雅地写 */,
 				42EFA82B2109BAFD00AFC827 /* 5，炫酷效果 */,
 				42EFA82C2109BB1700AFC827 /* 6，性能优化 */,
+				42C4DF03215F2A6C00247949 /* 7，无数据动画tableview */,
+				42CB7E8321393900003397FB /* 8，便签效果 */,
 			);
-			path = "#7_UITableView";
+			path = "*4_tableView相关";
 			sourceTree = "<group>";
 		};
 		42EFA8272109BAA900AFC827 /* 1，原生常用 */ = {
@@ -5189,15 +5222,15 @@
 			path = "6，性能优化";
 			sourceTree = "<group>";
 		};
-		42F772112193CD9600FFD237 /* 6,自适应宽高的label */ = {
+		42F772112193CD9600FFD237 /* 5,自适应宽高的label */ = {
 			isa = PBXGroup;
 			children = (
-				42F772122193CDCB00FFD237 /* NSObject+size.h */,
-				42F772132193CDCB00FFD237 /* NSObject+size.m */,
 				42F772142193CDCC00FFD237 /* AdjustSizeVC.h */,
 				42F772152193CDCC00FFD237 /* AdjustSizeVC.m */,
+				42F772122193CDCB00FFD237 /* NSObject+size.h */,
+				42F772132193CDCB00FFD237 /* NSObject+size.m */,
 			);
-			path = "6,自适应宽高的label";
+			path = "5,自适应宽高的label";
 			sourceTree = "<group>";
 		};
 		42F772182193D0A200FFD237 /* 6，各种样式button的封装 */ = {
@@ -5214,17 +5247,17 @@
 		42F772192193D0D800FFD237 /* JMButton */ = {
 			isa = PBXGroup;
 			children = (
-				42F7721A2193D0D800FFD237 /* RadioButton */,
+				42F772342193D0D800FFD237 /* JMButtons.h */,
+				42F772282193D0D800FFD237 /* JMBadgeValue.h */,
+				42F7723F2193D0D800FFD237 /* JMBadgeValue.m */,
 				42F7721D2193D0D800FFD237 /* JMButton.h */,
+				42F772332193D0D800FFD237 /* JMButton.m */,
+				42F7721A2193D0D800FFD237 /* RadioButton */,
 				42F7721E2193D0D800FFD237 /* BootstrapButton */,
 				42F772232193D0D800FFD237 /* BaseButton */,
-				42F772282193D0D800FFD237 /* JMBadgeValue.h */,
 				42F772292193D0D800FFD237 /* WaveButton */,
 				42F7722E2193D0D800FFD237 /* NumberButton */,
-				42F772332193D0D800FFD237 /* JMButton.m */,
-				42F772342193D0D800FFD237 /* JMButtons.h */,
 				42F772352193D0D800FFD237 /* JMCategroy */,
-				42F7723F2193D0D800FFD237 /* JMBadgeValue.m */,
 			);
 			path = JMButton;
 			sourceTree = "<group>";
@@ -5570,7 +5603,6 @@
 			files = (
 				42D04E9B2176DC7A0075ECEF /* FakeWindowClass.m in Sources */,
 				42CB7E8121391F3F003397FB /* TextviewLoadingHtmlController.m in Sources */,
-				42B182682106C72300C1E682 /* JuroTextField.m in Sources */,
 				4227889C2145F431002B9C13 /* JXCategoryTitleImageCellModel.m in Sources */,
 				4238B93721255B7F00AF272E /* UIImage+BlurGlass.m in Sources */,
 				429CB1C321043C3E0063A0D8 /* UIControl+Category.m in Sources */,
@@ -5624,7 +5656,6 @@
 				42DD8D8021A7A03800CB04A5 /* CustomPresentationController.m in Sources */,
 				42523F5B218BF9440038CEE3 /* HYBCardVeticalScaleController.m in Sources */,
 				42DD8DC921A7ACA400CB04A5 /* AAPLExternalStoryboardSegue.m in Sources */,
-				42B182702106CAD200C1E682 /* TextFieldViewController.m in Sources */,
 				429CB1B9210436960063A0D8 /* Demo7ViewController.m in Sources */,
 				42BB66EC20D1231A007BE2CF /* ViewController.m in Sources */,
 				42C783C5213CCB6A0012188E /* YZSortCell.m in Sources */,
@@ -5651,7 +5682,6 @@
 				42F772662193D0DD00FFD237 /* JMCustomViewController.m in Sources */,
 				429B151C2160C2FD00F595FC /* STCollectionView.m in Sources */,
 				4259011B2140D41400304394 /* Son1_ViewController.m in Sources */,
-				42B182642106C72300C1E682 /* IchiroTextField.m in Sources */,
 				42BF8157211A75010090E612 /* UIViewController+PushAndPop.m in Sources */,
 				429CB0F6210436960063A0D8 /* CustomBannerView.m in Sources */,
 				4242B926212A727300C3A2C5 /* Switch2_ViewController.m in Sources */,
@@ -5684,15 +5714,14 @@
 				42C4DF20215F2B3000247949 /* TABMethod.m in Sources */,
 				42C519DD211C3E3500742239 /* XMGDealCell.m in Sources */,
 				429CB1AE210436960063A0D8 /* YYCell.m in Sources */,
-				42B182652106C72300C1E682 /* NarikoTextField.m in Sources */,
 				422789172145F44F002B9C13 /* TitleImageSettingViewController.m in Sources */,
 				42C5B6AA2142699B00563794 /* UIColor+Wonderful.m in Sources */,
 				42C783A1213CC99E0012188E /* DOPDropDownMenu.m in Sources */,
 				42C5B4CC21422F5300563794 /* AutoLayoutAttributedLabelCell.m in Sources */,
 				429CB103210436960063A0D8 /* SDCycleScrollView.m in Sources */,
-				42B182692106C72300C1E682 /* YoshikoTextField.m in Sources */,
 				42CB7E8A213939C3003397FB /* UIAlertView+RWBlock.m in Sources */,
 				42523F46218BF8F50038CEE3 /* HYBGridModel.m in Sources */,
+				42D42FDA225C7F2700EA4AA8 /* InputFloatVC.m in Sources */,
 				42C7837D213CC45B0012188E /* NibCell.m in Sources */,
 				42B573D4213FC1FE0089CFDF /* ChildVCOne.m in Sources */,
 				42C519DC211C3E3500742239 /* XMGDeal.m in Sources */,
@@ -5779,6 +5808,8 @@
 				42C7835E213CC45B0012188E /* DemosViewController.m in Sources */,
 				422789292145F44F002B9C13 /* SpecialCustomizeViewController.m in Sources */,
 				42C5B4BE21422F5300563794 /* SimpleTextViewController.m in Sources */,
+				42D42FD1225C751F00EA4AA8 /* UnderlineButtonVC.m in Sources */,
+				42D42FCE225C74FC00EA4AA8 /* EnlargeButtonVC.m in Sources */,
 				42C7838A213CC45B0012188E /* WorkingRangeSectionController.m in Sources */,
 				422789272145F44F002B9C13 /* JXBaseViewController.m in Sources */,
 				422AB7012174278A0019F1D9 /* ARAlignLabel.m in Sources */,
@@ -5816,7 +5847,6 @@
 				42C78376213CC45B0012188E /* UserHeaderView.m in Sources */,
 				42C78398213CC4970012188E /* NSArray+Number.m in Sources */,
 				42B573DF213FC1FE0089CFDF /* SGPageContentScrollView.m in Sources */,
-				42B1826A2106C72300C1E682 /* BetaNaoTextField.m in Sources */,
 				42C4DF22215F2B3000247949 /* TABViewAnimated.m in Sources */,
 				42CB7E7B21391F3F003397FB /* UIView+Frame.m in Sources */,
 				42C5B48721422D4500563794 /* DetailViewController.m in Sources */,
@@ -5865,7 +5895,6 @@
 				42C5B4C321422F5300563794 /* TextContainerViewController.m in Sources */,
 				42C78385213CC45B0012188E /* DisplaySectionController.m in Sources */,
 				42BF8186211A88680090E612 /* CQDepartmentModel.m in Sources */,
-				42B1826C2106C72300C1E682 /* KuroTextField.m in Sources */,
 				42DD8DDB21A7ACA400CB04A5 /* AAPLAdaptivePresentationSecondViewController.m in Sources */,
 				4227891A2145F44F002B9C13 /* FootballViewController.m in Sources */,
 				42C7834F213CC45B0012188E /* SelectionModel.m in Sources */,
@@ -5924,6 +5953,7 @@
 				42C4DF21215F2B3000247949 /* UITableView+Animated.m in Sources */,
 				42BF8198211A88BB0090E612 /* CQCategoryItemModel.m in Sources */,
 				4242B950212A72D800C3A2C5 /* UIView+Frame.m in Sources */,
+				42D42FD4225C7C0600EA4AA8 /* CustomBannerScrollVC.m in Sources */,
 				42C5B69F2142699B00563794 /* SXColorListCell.m in Sources */,
 				42C78386213CC45B0012188E /* UserSectionController.m in Sources */,
 				42C783C9213CCB6A0012188E /* YZAllCourseViewController.m in Sources */,
@@ -5935,6 +5965,7 @@
 				42DD8D7C21A7983400CB04A5 /* Test3ViewController.m in Sources */,
 				42B3E1262238D95F00379C2D /* DWTabBar.m in Sources */,
 				424E3D432175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m in Sources */,
+				42D42FD7225C7C8500EA4AA8 /* ScrollPageVC.m in Sources */,
 				429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */,
 				42C78357213CC45B0012188E /* AnnouncingDepsViewController.m in Sources */,
 				42523F45218BF8F50038CEE3 /* HYBGridCell.m in Sources */,
@@ -5954,6 +5985,7 @@
 				42C78366213CC45B0012188E /* NestedAdapterViewController.m in Sources */,
 				4242B943212A72C400C3A2C5 /* ChildViewController.m in Sources */,
 				42CB7E5A2138F3C8003397FB /* RichTextVC.m in Sources */,
+				42D42FC8225C720A00EA4AA8 /* ClickableLabelVC.m in Sources */,
 				42523F5F218BF96C0038CEE3 /* HYBGridViewController.m in Sources */,
 				42BF8153211A75010090E612 /* UIImage+Transform.m in Sources */,
 				42C787DF213D2BB10012188E /* SGEventVC.m in Sources */,
@@ -5989,7 +6021,7 @@
 				425901212140D43300304394 /* Son3_ViewController.m in Sources */,
 				42B573E2213FC1FE0089CFDF /* SGPageTitleViewConfigure.m in Sources */,
 				42CFD904215E008C005792BD /* UIColor+Category.m in Sources */,
-				42B182662106C72300C1E682 /* UIFloatLabelTextField.m in Sources */,
+				42D42FCB225C723300EA4AA8 /* CountDownLabelVC.m in Sources */,
 				42B182792106D0B000C1E682 /* CommonUnderlineButton.m in Sources */,
 				42BAFEF92108772D003CFD9A /* TextViewViewController.m in Sources */,
 				42F772632193D0DD00FFD237 /* JMBasicViewController.m in Sources */,
@@ -6050,9 +6082,7 @@
 				42B3E1272238D95F00379C2D /* DWTabBarController.m in Sources */,
 				42523F5A218BF9440038CEE3 /* HYBCardVerticalScaleLayout.m in Sources */,
 				42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */,
-				42B1826B2106C72300C1E682 /* PulsingHaloLayer.m in Sources */,
 				422789122145F44F002B9C13 /* VerticalListCell.m in Sources */,
-				42B182672106C72300C1E682 /* MinoruTextField.m in Sources */,
 				42C5B4B921422F5300563794 /* AutoLayoutLinkImageTextViewController.m in Sources */,
 				42BF8164211A80B50090E612 /* MoneyAnimationVC.m in Sources */,
 				42CB7E6721391CBF003397FB /* MCLabel.m in Sources */,
@@ -6331,7 +6361,10 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MQBF47L68X;
 				INFOPLIST_FILE = UIGracefulWriting/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.gjfax.com.UIGracefulWriting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gjfax/Documents/GitHub/3_UIGracefulWriting/UIGracefulWriting/Objc-Swift-bridge.h";
@@ -6350,7 +6383,10 @@
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MQBF47L68X;
 				INFOPLIST_FILE = UIGracefulWriting/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.gjfax.com.UIGracefulWriting;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "/Users/gjfax/Documents/GitHub/3_UIGracefulWriting/UIGracefulWriting/Objc-Swift-bridge.h";
@@ -6365,7 +6401,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIGracefulWritingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.gjfax.com.UIGracefulWritingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6379,7 +6419,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIGracefulWritingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.gjfax.com.UIGracefulWritingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6392,7 +6436,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIGracefulWritingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.gjfax.com.UIGracefulWritingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -6405,7 +6453,11 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = UIGracefulWritingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.gjfax.com.UIGracefulWritingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

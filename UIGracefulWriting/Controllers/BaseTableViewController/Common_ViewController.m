@@ -7,34 +7,44 @@
 //
 
 #import "Common_ViewController.h"
+static NSString const *imgArr[3] = {
+    @"引导页1",
+    @"引导页2",
+    @"引导页3"
+};
 
 
 @interface Common_ViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, assign) BOOL isSelfDefined;
+@property (nonatomic, strong) NSArray *colorArray;
 @end
 
 @implementation Common_ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _colorArray = @[SXRGB16Color(0x70b5ff),SXRGB16Color(0xfff64a),SXRGB16Color(0xa8ff75),SXRGB16Color(0xff7070)];
     [self.view addSubview:self.tableView];
 }
 #pragma mark -  数据源
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0.01f;
+    return 20.f;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 10.f;
+    return 0.01f;
 }
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-   
-    return nil;
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH - 10, 20)];
+    UIColor *color = [self getColor:section];
+    label.backgroundColor = color;
+    label.text = FMT_STR(@"%li,%@",(long)section,self.sectionTitleArray[section]);
+    label.textColor = [color reverseColor];
+    return label;
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
     UIView *footView= [UIView new];
-    footView.backgroundColor = LBRandomColor;
     return footView;
 }
 
@@ -123,5 +133,12 @@
     }
     
     return _tableView;
+}
+
+- (UIColor *)getColor:(NSInteger )section {
+   
+    NSInteger index =  section % 4;
+    return _colorArray[index];
+    
 }
 @end
