@@ -28,6 +28,7 @@
     
     [super viewDidLoad];
     
+// tabBar设置
     // 设置 TabBarItemTestAttributes 的颜色。
     [self setUpTabBarItemTextAttributes];
     
@@ -41,15 +42,16 @@
     
     //去除 TabBar 自带的顶部阴影
     [[UITabBar appearance] setShadowImage:[[UIImage alloc] init]];
-    
+ 
+// navigationBar设置
     //设置导航控制器颜色为黄色
     [[UINavigationBar appearance] setBackgroundImage:[self imageWithColor:DWColor(253, 218, 68)] forBarMetrics:UIBarMetricsDefault];
 
-    
+    //设置导航控制器文字颜色
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[DWColor(253, 218, 68) reverseColor]}];
     
 }
 
-#pragma mark -
 #pragma mark - Private Methods
 
 /**
@@ -86,11 +88,12 @@
  *  添加子控制器，我这里值添加了4个，没有占位自控制器
  */
 - (void)setUpChildViewController{
-    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    ViewController *mainVC = [storyboard instantiateInitialViewController];
+//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    ViewController *mainVC = [storyboard instantiateInitialViewController];
+    UIViewController *mainVC = [self getMainVC];
     
     [self addOneChildViewController:[[JDCustomNavigationController alloc]initWithRootViewController:mainVC]
-                          WithTitle:@"UI大杂烩"
+                          WithTitle:@"UI总结"
                           imageName:@"home_normal"
                   selectedImageName:@"home_highlight"];
     
@@ -112,7 +115,55 @@
                   selectedImageName:@"account_highlight"];
     
 }
-
+#pragma mark -  返回主控制器
+- (UIViewController *)getMainVC {
+    Common_ViewController *vc = [[Common_ViewController alloc] init];
+    vc.title = @"UI总结";
+    vc.vcNameArray =
+@[
+@[@"CQJigsawViewController"],
+@[@"ClickableLabelVC",@"LabelLeaveSpaceVC",@"CountDownLabelVC",@"LabelAlignVC",@"AdjustSizeVC",@"MoneyAnimationVC"],
+@[@"EnlargeButtonVC",@"SGImagePositionVC",@"UnderlineButtonVC",@"SGEventVC",@"SGCountdownVC",@"JMButtonVC"],
+@[@"TabView_1_ViewController",@"TabView_2_ViewController",@"TabView_3_ViewController",@"TabView_4_ViewController",@"TabView_5_ViewController",@"TabView_6_ViewController",@"NoDataTableViewVC",@"MemoTableViewController"],
+  @[@"ScrollPageVC"],
+  @[@"SWRevealVC"],
+  @[@"InputFloatVC",@"InputFilterVC"],
+  @[@"TextViewViewController"],
+  @[@"WonderfulColorVC",@"ShadeEffectVC"],
+  @[@"IconFontViewController"],
+@[@"AlertViewController",@"AlertTableViewController",@"ActionSheetTableViewController",@"ShowViewController"],
+  @[@"RichTextVC"],
+  @[@"NineGridVC"],
+  @[@"SelfCascadeVC",@"YZDropViewController",@"DropDownViewController",],
+  @[@"FatherAndSonVC",@"Switch2_ViewController",@"Switch3_ViewController",@"Switch4_ViewController",@"STListController"],
+  @[@"TestViewController"],
+  @[@"DimImageViewController",@"ScreenShotVC",@"CreateQRCodeVC"]];
+    
+vc.subtitleArray = @[
+  @[@"比例拼图"],
+@[@"可点击label",@"label留白",@"倒计时label",@"label文字对齐各种效果",@"自适应宽高的label",@"金额跳动label"],
+@[@"扩大点击button",@"文字图片组合button",@"带下划线button",@"防重复点击button",@"倒计时button",@"各种样式的button"],
+@[@"原生常用",@"自定义等高",@"自定义不等高",@"优雅地写",@"炫酷效果",@"性能优化",@"无数据动画",@"便签效果"],
+  @[@"ScrollView相关"],
+  @[@"CollectionView相关"],
+  @[@"输入上浮",@"输入过滤"],
+  @[@"textview设置下划线"],
+  @[@"完美颜色",@"渐变效果"],
+  @[@"IconFont的使用"],
+  @[@"系统alert和sheet",@"LEE的alert",@"LEE的sheet",@"JXT的Alert汇总"],
+  @[@"富文本总结"],
+  @[@"九宫格总结"],
+  @[@"自己总结",@"袁崢二级菜单",@"仿美团二级菜单",],
+  @[@"父子控制器",@"袁崢切换",@"SGPagingView横向切换",@"JXCategory横向切换",@"ST顶部可滚动切换"],
+  @[@"测试控制器跳转过渡页"],
+  @[@"模糊效果",@"截屏展示",@"生成二维码"]];
+    
+    
+    vc.sectionTitleArray =@[@"view相关",@"lable相关",@"button相关",@"tableView相关",@"scrollView相关",
+                            @"collectionView相关",@"textField相关",@"textView相关",@"颜色总结",@"字体总结",
+                            @"弹框总结",@"富文本总结",@"九宫格总结",@"多级联动总结",@"导航切换总结",@"跳转方案总结",@"其他效果"];
+    return vc;
+}
 /**
  *  添加一个子控制器
  *

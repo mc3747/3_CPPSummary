@@ -125,6 +125,8 @@
 		42523F62218BF98D0038CEE3 /* PackageCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F61218BF98D0038CEE3 /* PackageCollectionVC.m */; };
 		42523F65218BFA1A0038CEE3 /* HYBCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F64218BFA1A0038CEE3 /* HYBCardViewController.m */; };
 		42523F68218BFE8A0038CEE3 /* CHD_ListView_Structure.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F66218BFE8A0038CEE3 /* CHD_ListView_Structure.m */; };
+		42551D5E225EDF89003DF389 /* SelfCascadeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42551D5D225EDF89003DF389 /* SelfCascadeVC.m */; };
+		42551D61225EE826003DF389 /* SWRevealVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42551D60225EE826003DF389 /* SWRevealVC.m */; };
 		425900EC2140BD8100304394 /* AlertTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900E92140BD8000304394 /* AlertTableViewController.m */; };
 		425900ED2140BD8100304394 /* ActionSheetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900EA2140BD8000304394 /* ActionSheetTableViewController.m */; };
 		425901042140BDE400304394 /* FontSizeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425900F12140BDE400304394 /* FontSizeView.m */; };
@@ -911,6 +913,10 @@
 		42523F64218BFA1A0038CEE3 /* HYBCardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYBCardViewController.m; sourceTree = "<group>"; };
 		42523F66218BFE8A0038CEE3 /* CHD_ListView_Structure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHD_ListView_Structure.m; sourceTree = "<group>"; };
 		42523F67218BFE8A0038CEE3 /* CHD_ListView_Structure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHD_ListView_Structure.h; sourceTree = "<group>"; };
+		42551D5C225EDF89003DF389 /* SelfCascadeVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfCascadeVC.h; sourceTree = "<group>"; };
+		42551D5D225EDF89003DF389 /* SelfCascadeVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfCascadeVC.m; sourceTree = "<group>"; };
+		42551D5F225EE826003DF389 /* SWRevealVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SWRevealVC.h; sourceTree = "<group>"; };
+		42551D60225EE826003DF389 /* SWRevealVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SWRevealVC.m; sourceTree = "<group>"; };
 		425900E82140BD8000304394 /* AlertTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertTableViewController.h; sourceTree = "<group>"; };
 		425900E92140BD8000304394 /* AlertTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertTableViewController.m; sourceTree = "<group>"; };
 		425900EA2140BD8000304394 /* ActionSheetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetTableViewController.m; sourceTree = "<group>"; };
@@ -1966,7 +1972,7 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		4200C87A2159CABA00FCD77D /* #22_跳转过渡页 */ = {
+		4200C87A2159CABA00FCD77D /* #1_跳转过渡页 */ = {
 			isa = PBXGroup;
 			children = (
 				4200C8772159C45800FCD77D /* TestViewController.h */,
@@ -1980,7 +1986,7 @@
 				42DD8D8721A7AC6400CB04A5 /* 详细自定义modal动画 */,
 				42DD8D7D21A7A01200CB04A5 /* 简单自定义modal动画 */,
 			);
-			path = "#22_跳转过渡页";
+			path = "#1_跳转过渡页";
 			sourceTree = "<group>";
 		};
 		422788452145F430002B9C13 /* Sources */ = {
@@ -2533,7 +2539,7 @@
 			path = YZDisplayViewController;
 			sourceTree = "<group>";
 		};
-		4242B952212A94F300C3A2C5 /* #15_IconFont的使用 */ = {
+		4242B952212A94F300C3A2C5 /* #1_IconFont的使用 */ = {
 			isa = PBXGroup;
 			children = (
 				4242B99E212A9CC500C3A2C5 /* iconfont.ttf */,
@@ -2542,7 +2548,7 @@
 				4242B956212A959A00C3A2C5 /* UIImage+IconFont.h */,
 				4242B953212A959A00C3A2C5 /* UIImage+IconFont.m */,
 			);
-			path = "#15_IconFont的使用";
+			path = "#1_IconFont的使用";
 			sourceTree = "<group>";
 		};
 		424E3D4A2175CFCA00D61820 /* 2，苹果调试浮球神器 */ = {
@@ -2648,6 +2654,15 @@
 				42523F3F218BF8F30038CEE3 /* HYBBaseViewController.m */,
 			);
 			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		42551D5B225EDCB4003DF389 /* 1，自己总结 */ = {
+			isa = PBXGroup;
+			children = (
+				42551D5C225EDF89003DF389 /* SelfCascadeVC.h */,
+				42551D5D225EDF89003DF389 /* SelfCascadeVC.m */,
+			);
+			path = "1，自己总结";
 			sourceTree = "<group>";
 		};
 		425900E62140BCF700304394 /* 1，系统 */ = {
@@ -3133,6 +3148,8 @@
 		429CAFE5210436950063A0D8 /* #1_CollectionView应用 */ = {
 			isa = PBXGroup;
 			children = (
+				42551D5F225EE826003DF389 /* SWRevealVC.h */,
+				42551D60225EE826003DF389 /* SWRevealVC.m */,
 				429CAFE6210436950063A0D8 /* SWRevealViewController */,
 				429CB0B3210436960063A0D8 /* RightPage */,
 				429CB0B6210436960063A0D8 /* LeftPage */,
@@ -3310,13 +3327,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		42A81B9A2238A45700C749F1 /* 3，UI借鉴查询 */ = {
+		42A81B9A2238A45700C749F1 /* 3，UI借鉴 */ = {
 			isa = PBXGroup;
 			children = (
 				42B3E1142238D87F00379C2D /* Base_3_ViewController.h */,
 				42B3E1152238D87F00379C2D /* Base_3_ViewController.m */,
 			);
-			name = "3，UI借鉴查询";
+			name = "3，UI借鉴";
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -3640,14 +3657,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		42B573E4213FCCB50089CFDF /* #20_alert和sheet汇总  */ = {
+		42B573E4213FCCB50089CFDF /* #1_alert和sheet汇总  */ = {
 			isa = PBXGroup;
 			children = (
 				425900E62140BCF700304394 /* 1，系统 */,
 				425900E72140BD0100304394 /* 2，第三方LEEAlert */,
 				42C5B4D02142519E00563794 /* 3，第三方JXTAlert */,
 			);
-			path = "#20_alert和sheet汇总 ";
+			path = "#1_alert和sheet汇总 ";
 			sourceTree = "<group>";
 		};
 		42BAFEF6210876CD003CFD9A /* #1_TextView设置下划线 */ = {
@@ -3687,7 +3704,7 @@
 				4242B84F212A4EF400C3A2C5 /* Objc-Swift-bridge.h */,
 				429CAF8A2104365F0063A0D8 /* 1，UI大杂烩 */,
 				42981CE82105C7C30052CCC3 /* 2，UI拔高 */,
-				42A81B9A2238A45700C749F1 /* 3，UI借鉴查询 */,
+				42A81B9A2238A45700C749F1 /* 3，UI借鉴 */,
 				42C782B8213CC3CD0012188E /* 4，UI框架 */,
 				42BB66E720D1231A007BE2CF /* AppDelegate.h */,
 				42BB66E820D1231A007BE2CF /* AppDelegate.m */,
@@ -3763,7 +3780,7 @@
 			path = "6,金额跳动label";
 			sourceTree = "<group>";
 		};
-		42BF8165211A872D0090E612 /* #10_模态弹窗 */ = {
+		42BF8165211A872D0090E612 /* #2_模态弹窗 */ = {
 			isa = PBXGroup;
 			children = (
 				42BF816F211A88670090E612 /* Alert */,
@@ -3772,7 +3789,7 @@
 				42BF8169211A88670090E612 /* Request */,
 				42BF8166211A88670090E612 /* View */,
 			);
-			path = "#10_模态弹窗";
+			path = "#2_模态弹窗";
 			sourceTree = "<group>";
 		};
 		42BF8166211A88670090E612 /* View */ = {
@@ -4577,13 +4594,14 @@
 		42C7839A213CC7F80012188E /* *14_多级联动总结 */ = {
 			isa = PBXGroup;
 			children = (
-				42C7839B213CC8BF0012188E /* 1，仿美团 */,
+				42551D5B225EDCB4003DF389 /* 1，自己总结 */,
 				42C7839C213CC8D00012188E /* 2，袁崢 */,
+				42C7839B213CC8BF0012188E /* 3，仿美团 */,
 			);
 			path = "*14_多级联动总结";
 			sourceTree = "<group>";
 		};
-		42C7839B213CC8BF0012188E /* 1，仿美团 */ = {
+		42C7839B213CC8BF0012188E /* 3，仿美团 */ = {
 			isa = PBXGroup;
 			children = (
 				42C7839D213CC99E0012188E /* DropDownViewController.h */,
@@ -4591,7 +4609,7 @@
 				42C7839E213CC99E0012188E /* DOPDropDownMenu.h */,
 				42C7839F213CC99E0012188E /* DOPDropDownMenu.m */,
 			);
-			path = "1，仿美团";
+			path = "3，仿美团";
 			sourceTree = "<group>";
 		};
 		42C7839C213CC8D00012188E /* 2，袁崢 */ = {
@@ -4820,12 +4838,12 @@
 		42CB7E7221391F3E003397FB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				42CB7E7621391F3E003397FB /* LabelLoadingHtmlController.h */,
 				42CB7E7321391F3E003397FB /* LabelLoadingHtmlController.m */,
+				42CB7E7821391F3E003397FB /* WebviewLoadingHtmlController.h */,
 				42CB7E7421391F3E003397FB /* WebviewLoadingHtmlController.m */,
 				42CB7E7521391F3E003397FB /* TextviewLoadingHtmlController.m */,
-				42CB7E7621391F3E003397FB /* LabelLoadingHtmlController.h */,
 				42CB7E7721391F3E003397FB /* TextviewLoadingHtmlController.h */,
-				42CB7E7821391F3E003397FB /* WebviewLoadingHtmlController.h */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -4948,7 +4966,7 @@
 		42D42FC3225C41D800EA4AA8 /* *10_字体总结 */ = {
 			isa = PBXGroup;
 			children = (
-				4242B952212A94F300C3A2C5 /* #15_IconFont的使用 */,
+				4242B952212A94F300C3A2C5 /* #1_IconFont的使用 */,
 			);
 			path = "*10_字体总结";
 			sourceTree = "<group>";
@@ -4956,8 +4974,8 @@
 		42D42FC4225C431800EA4AA8 /* *11_弹框总结 */ = {
 			isa = PBXGroup;
 			children = (
-				42B573E4213FCCB50089CFDF /* #20_alert和sheet汇总  */,
-				42BF8165211A872D0090E612 /* #10_模态弹窗 */,
+				42B573E4213FCCB50089CFDF /* #1_alert和sheet汇总  */,
+				42BF8165211A872D0090E612 /* #2_模态弹窗 */,
 			);
 			path = "*11_弹框总结";
 			sourceTree = "<group>";
@@ -4965,7 +4983,7 @@
 		42D42FC5225C45DE00EA4AA8 /* *16_跳转方案总结 */ = {
 			isa = PBXGroup;
 			children = (
-				4200C87A2159CABA00FCD77D /* #22_跳转过渡页 */,
+				4200C87A2159CABA00FCD77D /* #1_跳转过渡页 */,
 			);
 			path = "*16_跳转方案总结";
 			sourceTree = "<group>";
@@ -5859,6 +5877,7 @@
 				42C7834D213CC45B0012188E /* User.m in Sources */,
 				429CB1AD210436960063A0D8 /* Demo2ViewController.m in Sources */,
 				42F772582193D0DD00FFD237 /* JMWaveButtonConfig.m in Sources */,
+				42551D5E225EDF89003DF389 /* SelfCascadeVC.m in Sources */,
 				42DD8DD221A7ACA400CB04A5 /* AAPLSwipeTransitionDelegate.m in Sources */,
 				429CB1BA210436960063A0D8 /* RPSlidingMenuLayout.m in Sources */,
 				42C78361213CC45B0012188E /* SelfSizingCellsViewController.m in Sources */,
@@ -5945,6 +5964,7 @@
 				42C4448B2217F9B2004983B3 /* UIView+SnapShot.m in Sources */,
 				42B573BF213FC1FE0089CFDF /* DefaultStaticVC.m in Sources */,
 				422788922145F431002B9C13 /* JXCategoryIndicatorComponentView.m in Sources */,
+				42551D61225EE826003DF389 /* SWRevealVC.m in Sources */,
 				42F7725F2193D0DD00FFD237 /* UIColor+JM.m in Sources */,
 				42C787D6213D2B670012188E /* UIButton+SGCountdown.m in Sources */,
 				42C78391213CC45B0012188E /* RemoveSectionController.m in Sources */,

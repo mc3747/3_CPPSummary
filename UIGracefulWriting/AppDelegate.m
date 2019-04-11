@@ -40,6 +40,7 @@
 //    UINavigationController *naviVC = [[UINavigationController alloc] initWithRootViewController:VC];
 //    self.window.rootViewController = naviVC;
     
+//DWTabBarController中设置启动主控制器
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
      self.window.rootViewController = [[DWTabBarController alloc]init];
     [self.window makeKeyAndVisible];

@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = @"UI高阶";
     self.subtitleArray =
 @[
   @[@"通用TabBarController",@"NavigationController总结",@"通用弹框",@"通用loading框",@"通用无数据页面",@"通用刷新控件",@"通用UIViewController",@"通用UITableViewController"],

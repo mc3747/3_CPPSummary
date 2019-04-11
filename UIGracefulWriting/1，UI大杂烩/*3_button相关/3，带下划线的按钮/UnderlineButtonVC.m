@@ -7,6 +7,7 @@
 //
 
 #import "UnderlineButtonVC.h"
+#import "CommonUnderlineButton.h"
 
 @interface UnderlineButtonVC ()
 
@@ -16,17 +17,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    CommonUnderlineButton *btn = [[CommonUnderlineButton alloc]
+                                  initWithButtonFrame: CGRectMake(10, 100, 200, 50)
+                                  textNormalColor:[UIColor yellowColor]
+                                  textHighlightColor:[UIColor blueColor]
+                                  lineNormalColor:[UIColor yellowColor]
+                                  lineHighlightColor:[UIColor redColor]
+                                  underDistance:5.f clickBlock:^(CommonUnderlineButton *button) {
+                                      NSLog(@"点击了");
+                                  }];
+    
+    [btn setTitle:@"带下划线的button" forState:UIControlStateNormal];
+    
+    [self pushVCWithView:btn];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark -  push出通用控制器
+- (void)pushVCWithView:(UIView *)view {
+    CommonViewController *vc = [[CommonViewController alloc] init];
+    [vc.view addSubview:view];
+    [self.navigationController pushViewController:vc animated:YES];
 }
-*/
+
 
 @end
