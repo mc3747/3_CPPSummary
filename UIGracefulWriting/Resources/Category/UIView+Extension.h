@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 typedef void(^UIViewClickHandle)(UIView *view);
-
+typedef NS_ENUM(NSInteger, UIViewBorderLineType) {
+    UIViewBorderLineTypeTop,
+    UIViewBorderLineTypeRight,
+    UIViewBorderLineTypeBottom,
+    UIViewBorderLineTypeLeft,
+};
 @interface UIView (Extension)
 //  view的x
 @property (nonatomic, assign) CGFloat x;
@@ -46,4 +51,9 @@ typedef void(^UIViewClickHandle)(UIView *view);
  *  增加UIView的点击事件
  */
 -(void)GJSHandleClick:(UIViewClickHandle)handle;
+#pragma mark -  设置四周的边框和圆角
+-(void)setViewBorderColor:(UIColor *)color radius:(float)radius border:(float)border;
+
+#pragma mark -  设置四周的边框和圆角
+-(void)setViewBorderColor:(UIColor *)color border:(float)border type:(UIViewBorderLineType)borderLineType;
 @end

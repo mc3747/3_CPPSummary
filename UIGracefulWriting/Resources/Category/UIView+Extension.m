@@ -188,5 +188,49 @@ static char *viewClickKey;
 {
     return YES;
 }
+#pragma mark -  设置四周的边框和圆角
+-(void)setViewBorderColor:(UIColor *)color radius:(float)radius border:(float)border{
+    //设置layer
+    CALayer *layer=[self layer];
+    //是否设置边框以及是否可见
+    [layer setMasksToBounds:YES];
+    //设置边框圆角的弧度
+    [layer setCornerRadius:radius];
+    //设置边框线的宽
+    [layer setBorderWidth:border];
+    //设置边框线的颜色
+    [layer setBorderColor:[color CGColor]];
+    
+}
 
+#pragma mark -  设置四周的边框和圆角
+-(void)setViewBorderColor:(UIColor *)color border:(float)border type:(UIViewBorderLineType)borderLineType{
+    CALayer *lineLayer = [CALayer layer];
+    lineLayer.backgroundColor = color.CGColor;
+    switch (borderLineType) {
+        case UIViewBorderLineTypeTop:{
+            lineLayer.frame = CGRectMake(0, 0, self.frame.size.width, border);
+            break;
+        }
+        case UIViewBorderLineTypeRight:{
+            lineLayer.frame = CGRectMake(self.frame.size.width, 0, border, self.frame.size.height);
+            break;
+        }
+        case UIViewBorderLineTypeBottom:{
+            lineLayer.frame = CGRectMake(0, self.frame.size.height, self.frame.size.width,border);
+            break;
+        }
+        case UIViewBorderLineTypeLeft:{
+            lineLayer.frame = CGRectMake(0, 0, border, self.frame.size.height);
+            break;
+        }
+            
+        default:{
+            lineLayer.frame = CGRectMake(0, 0, self.frame.size.width-42, border);
+            break;
+        }
+    }
+    
+    [self.layer addSublayer:lineLayer];
+}
 @end

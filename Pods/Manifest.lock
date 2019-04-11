@@ -1,5 +1,8 @@
 PODS:
   - CYLTabBarController (1.19.2)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - GPUImage (0.1.7)
   - IGListKit (3.4.0):
     - IGListKit/Default (= 3.4.0)
@@ -18,6 +21,7 @@ PODS:
 
 DEPENDENCIES:
   - CYLTabBarController
+  - FMDB
   - GPUImage (~> 0.1.7)
   - IGListKit
   - JSONModel
@@ -31,6 +35,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - CYLTabBarController
+    - FMDB
     - GPUImage
     - IGListKit
     - JSONModel
@@ -43,6 +48,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   CYLTabBarController: 5b364d6be617331a07f3f3f0ea537f7950501042
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
@@ -53,6 +59,6 @@ SPEC CHECKSUMS:
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
   TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
 
-PODFILE CHECKSUM: 01943a4577890845cbeaa28111166c394f8649b1
+PODFILE CHECKSUM: 9cdfeb2273dcc4dedfd51efbb94c87bcca4eab4b
 
 COCOAPODS: 1.5.0.beta.1

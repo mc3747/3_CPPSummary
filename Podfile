@@ -12,6 +12,6 @@ pod 'TYAttributedLabel', '~> 2.6.2'
 pod 'SDWebImage'
 pod 'SWTableViewCell'
 pod 'CYLTabBarController'
-
+pod 'FMDB'
 
 end
