@@ -609,6 +609,11 @@
 		42CD429C22606F2700652FA6 /* PopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD429922606F2700652FA6 /* PopoverAction.m */; };
 		42CD429D22606F2700652FA6 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD429A22606F2700652FA6 /* PopoverView.m */; };
 		42CD429E22606F2700652FA6 /* PopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD429B22606F2700652FA6 /* PopoverViewCell.m */; };
+		42CD436D22609C3800652FA6 /* UIImage+QQCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD436722609C3600652FA6 /* UIImage+QQCorner.m */; };
+		42CD436E22609C3800652FA6 /* QQCornerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD436822609C3700652FA6 /* QQCornerModel.m */; };
+		42CD436F22609C3800652FA6 /* CALayer+QQCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD436922609C3700652FA6 /* CALayer+QQCorner.m */; };
+		42CD437022609C3800652FA6 /* UIView+QQCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD436B22609C3700652FA6 /* UIView+QQCorner.m */; };
+		42CD437322609C6800652FA6 /* QQCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD437122609C6700652FA6 /* QQCornerViewController.m */; };
 		42CF2C0B21A5498100951C6D /* InputFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C0921A5498100951C6D /* InputFilterVC.m */; };
 		42CF2C1221A54A7D00951C6D /* TextFieldNonPackageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C1121A54A7D00951C6D /* TextFieldNonPackageVC.m */; };
 		42CF2C1921A54B9000951C6D /* TextFieldAndTextViewPackageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C1321A54B8F00951C6D /* TextFieldAndTextViewPackageVC.m */; };
@@ -1896,6 +1901,17 @@
 		42CD429922606F2700652FA6 /* PopoverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverAction.m; sourceTree = "<group>"; };
 		42CD429A22606F2700652FA6 /* PopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
 		42CD429B22606F2700652FA6 /* PopoverViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewCell.m; sourceTree = "<group>"; };
+		42CD436422609C3500652FA6 /* CALayer+QQCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+QQCorner.h"; sourceTree = "<group>"; };
+		42CD436522609C3500652FA6 /* QQCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQCorner.h; sourceTree = "<group>"; };
+		42CD436622609C3600652FA6 /* QQCornerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQCornerModel.h; sourceTree = "<group>"; };
+		42CD436722609C3600652FA6 /* UIImage+QQCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+QQCorner.m"; sourceTree = "<group>"; };
+		42CD436822609C3700652FA6 /* QQCornerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQCornerModel.m; sourceTree = "<group>"; };
+		42CD436922609C3700652FA6 /* CALayer+QQCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+QQCorner.m"; sourceTree = "<group>"; };
+		42CD436A22609C3700652FA6 /* UIImage+QQCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+QQCorner.h"; sourceTree = "<group>"; };
+		42CD436B22609C3700652FA6 /* UIView+QQCorner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+QQCorner.m"; sourceTree = "<group>"; };
+		42CD436C22609C3800652FA6 /* UIView+QQCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QQCorner.h"; sourceTree = "<group>"; };
+		42CD437122609C6700652FA6 /* QQCornerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQCornerViewController.m; sourceTree = "<group>"; };
+		42CD437222609C6800652FA6 /* QQCornerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQCornerViewController.h; sourceTree = "<group>"; };
 		42CF2C0821A5498100951C6D /* InputFilterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputFilterVC.h; sourceTree = "<group>"; };
 		42CF2C0921A5498100951C6D /* InputFilterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputFilterVC.m; sourceTree = "<group>"; };
 		42CF2C1021A54A7D00951C6D /* TextFieldNonPackageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldNonPackageVC.h; sourceTree = "<group>"; };
@@ -3176,6 +3192,7 @@
 			children = (
 				42B3E1172238D88E00379C2D /* Base_2_ViewController.h */,
 				42B3E1182238D88E00379C2D /* Base_2_ViewController.m */,
+				42CD429F22609AFD00652FA6 /* 1，高效处理圆角 */,
 			);
 			path = "2，UI拔高";
 			sourceTree = "<group>";
@@ -5317,6 +5334,32 @@
 			path = PopoverView;
 			sourceTree = "<group>";
 		};
+		42CD429F22609AFD00652FA6 /* 1，高效处理圆角 */ = {
+			isa = PBXGroup;
+			children = (
+				42CD437222609C6800652FA6 /* QQCornerViewController.h */,
+				42CD437122609C6700652FA6 /* QQCornerViewController.m */,
+				42CD42A022609BF700652FA6 /* QQCorner */,
+			);
+			path = "1，高效处理圆角";
+			sourceTree = "<group>";
+		};
+		42CD42A022609BF700652FA6 /* QQCorner */ = {
+			isa = PBXGroup;
+			children = (
+				42CD436422609C3500652FA6 /* CALayer+QQCorner.h */,
+				42CD436922609C3700652FA6 /* CALayer+QQCorner.m */,
+				42CD436522609C3500652FA6 /* QQCorner.h */,
+				42CD436622609C3600652FA6 /* QQCornerModel.h */,
+				42CD436822609C3700652FA6 /* QQCornerModel.m */,
+				42CD436A22609C3700652FA6 /* UIImage+QQCorner.h */,
+				42CD436722609C3600652FA6 /* UIImage+QQCorner.m */,
+				42CD436C22609C3800652FA6 /* UIView+QQCorner.h */,
+				42CD436B22609C3700652FA6 /* UIView+QQCorner.m */,
+			);
+			path = QQCorner;
+			sourceTree = "<group>";
+		};
 		42CF2C0D21A549F900951C6D /* 1，textField未封装 */ = {
 			isa = PBXGroup;
 			children = (
@@ -6078,6 +6121,7 @@
 				4227889C2145F431002B9C13 /* JXCategoryTitleImageCellModel.m in Sources */,
 				4238B93721255B7F00AF272E /* UIImage+BlurGlass.m in Sources */,
 				429CB1C321043C3E0063A0D8 /* UIControl+Category.m in Sources */,
+				42CD437322609C6800652FA6 /* QQCornerViewController.m in Sources */,
 				426FEE76221CE67000C4491A /* TextViewRichVC.m in Sources */,
 				42C52C1D2187E284001D7A07 /* NineGridUsingStackVC.m in Sources */,
 				42BF8183211A88680090E612 /* CQFilterAlertController.m in Sources */,
@@ -6247,6 +6291,7 @@
 				422788AB2145F431002B9C13 /* JXCategoryBaseCellModel.m in Sources */,
 				42CF2C0B21A5498100951C6D /* InputFilterVC.m in Sources */,
 				426707302121301400046FE6 /* UIView+CCUtil.m in Sources */,
+				42CD436D22609C3800652FA6 /* UIImage+QQCorner.m in Sources */,
 				42C4DF24215F2B3000247949 /* UIView+TABLayerout.m in Sources */,
 				42685504223F2C9500680CDA /* EasyNavigationView+LeftButton.m in Sources */,
 				426707362121301400046FE6 /* CCTableDataItem.m in Sources */,
@@ -6442,6 +6487,7 @@
 				42B573BF213FC1FE0089CFDF /* DefaultStaticVC.m in Sources */,
 				422788922145F431002B9C13 /* JXCategoryIndicatorComponentView.m in Sources */,
 				42551D61225EE826003DF389 /* SWRevealVC.m in Sources */,
+				42CD436E22609C3800652FA6 /* QQCornerModel.m in Sources */,
 				42F7725F2193D0DD00FFD237 /* UIColor+JM.m in Sources */,
 				42C787D6213D2B670012188E /* UIButton+SGCountdown.m in Sources */,
 				42CD427E2260674B00652FA6 /* JCAlertButtonItem.m in Sources */,
@@ -6460,6 +6506,7 @@
 				42C5B6AF2142699B00563794 /* SXColorGradientView.m in Sources */,
 				42C5B6A62142699B00563794 /* SXColorLblDemoPage.m in Sources */,
 				42CD425B226043A200652FA6 /* TextViewCategoryVC.m in Sources */,
+				42CD437022609C3800652FA6 /* UIView+QQCorner.m in Sources */,
 				42CD42812260674B00652FA6 /* UIWindow+JCBlur.m in Sources */,
 				42B573CC213FC1FE0089CFDF /* ChildFourthPopGestureNextVC.m in Sources */,
 				42DD8D7C21A7983400CB04A5 /* Test3ViewController.m in Sources */,
@@ -6639,6 +6686,7 @@
 				42F772672193D0DD00FFD237 /* JMBootstrapViewController.m in Sources */,
 				42C5B48221422D4500563794 /* MYCoreTextViewController.m in Sources */,
 				42C5B48A21422D4500563794 /* MYCoreTextLabel.m in Sources */,
+				42CD436F22609C3800652FA6 /* CALayer+QQCorner.m in Sources */,
 				42B573C5213FC1FE0089CFDF /* NavigationBarTitleView.m in Sources */,
 				42B573B9213FC1FE0089CFDF /* DefaultPopGestureVC.m in Sources */,
 				42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */,

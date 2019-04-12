@@ -16,7 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-      self.title = @"UI借鉴";
+    self.title = @"UI借鉴";
+    self.subtitleArray = @[@[@"IGListKit案例"],@[]];
+    self.vcNameArray = @[@[@"DemosViewController"],@[@""]];
+    
 }
 
 @end
