@@ -132,7 +132,7 @@
         weakSelf.center = point;
     } completion:^(BOOL finished) {
         if (!weakSelf.result) {
-            weakSelf.result = weakSelf.array[0];
+            weakSelf.result = weakSelf.array[0].province;
         }
         if (weakSelf.pickBlock) {
             weakSelf.pickBlock(weakSelf.result);
@@ -170,13 +170,13 @@
 // 返回第component列第row行的标题
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return self.array[row];
+    return self.array[row].province;
 }
 
 // 选中第component第row的时候调用
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
 {
-    self.result = self.array[row];
+    self.result = self.array[row].province;
 }
 
 

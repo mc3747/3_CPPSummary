@@ -22,7 +22,14 @@
     }
     return self;
 }
-
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self addTarget:self action:@selector(showPicktool) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return self;
+}
 #pragma mark -  选择工具
 - (SexPickerTool *)pickTool
 {

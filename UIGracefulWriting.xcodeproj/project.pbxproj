@@ -575,6 +575,16 @@
 		42CB7E8A213939C3003397FB /* UIAlertView+RWBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E84213939C1003397FB /* UIAlertView+RWBlock.m */; };
 		42CB7E8B213939C3003397FB /* RWBasicTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E85213939C1003397FB /* RWBasicTableViewCell.m */; };
 		42CB7E8C213939C3003397FB /* MemoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CB7E89213939C3003397FB /* MemoTableViewController.m */; };
+		42CD41EE2260378E00652FA6 /* WSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD41EC2260378E00652FA6 /* WSTextField.m */; };
+		42CD423222603A9800652FA6 /* JuroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD422E22603A9700652FA6 /* JuroTextField.m */; };
+		42CD423322603A9800652FA6 /* IchiroTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD423022603A9700652FA6 /* IchiroTextField.m */; };
+		42CD423822603ACA00652FA6 /* YoshikoTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD423422603AC900652FA6 /* YoshikoTextField.m */; };
+		42CD423922603ACA00652FA6 /* MinoruTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD423722603AC900652FA6 /* MinoruTextField.m */; };
+		42CD423C22603B6100652FA6 /* CorverUpKeyboardVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD423B22603B6100652FA6 /* CorverUpKeyboardVC.m */; };
+		42CD424422603B8400652FA6 /* UIView+FloatKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD423F22603B8400652FA6 /* UIView+FloatKeyboard.m */; };
+		42CD424522603B8400652FA6 /* FKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD424222603B8400652FA6 /* FKTextField.m */; };
+		42CD424622603B8400652FA6 /* FKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD424322603B8400652FA6 /* FKTextView.m */; };
+		42CD424922603CE100652FA6 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD424722603CE100652FA6 /* PulsingHaloLayer.m */; };
 		42CF2C0B21A5498100951C6D /* InputFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C0921A5498100951C6D /* InputFilterVC.m */; };
 		42CF2C1221A54A7D00951C6D /* TextFieldNonPackageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C1121A54A7D00951C6D /* TextFieldNonPackageVC.m */; };
 		42CF2C1921A54B9000951C6D /* TextFieldAndTextViewPackageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C1321A54B8F00951C6D /* TextFieldAndTextViewPackageVC.m */; };
@@ -1794,6 +1804,26 @@
 		42CB7E87213939C2003397FB /* RWBasicTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWBasicTableViewCell.h; sourceTree = "<group>"; };
 		42CB7E88213939C3003397FB /* MemoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoTableViewController.h; sourceTree = "<group>"; };
 		42CB7E89213939C3003397FB /* MemoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoTableViewController.m; sourceTree = "<group>"; };
+		42CD41EC2260378E00652FA6 /* WSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSTextField.m; sourceTree = "<group>"; };
+		42CD41ED2260378E00652FA6 /* WSTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSTextField.h; sourceTree = "<group>"; };
+		42CD422E22603A9700652FA6 /* JuroTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuroTextField.m; sourceTree = "<group>"; };
+		42CD422F22603A9700652FA6 /* JuroTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuroTextField.h; sourceTree = "<group>"; };
+		42CD423022603A9700652FA6 /* IchiroTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IchiroTextField.m; sourceTree = "<group>"; };
+		42CD423122603A9800652FA6 /* IchiroTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IchiroTextField.h; sourceTree = "<group>"; };
+		42CD423422603AC900652FA6 /* YoshikoTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoshikoTextField.m; sourceTree = "<group>"; };
+		42CD423522603AC900652FA6 /* YoshikoTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoshikoTextField.h; sourceTree = "<group>"; };
+		42CD423622603AC900652FA6 /* MinoruTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinoruTextField.h; sourceTree = "<group>"; };
+		42CD423722603AC900652FA6 /* MinoruTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MinoruTextField.m; sourceTree = "<group>"; };
+		42CD423A22603B6100652FA6 /* CorverUpKeyboardVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CorverUpKeyboardVC.h; sourceTree = "<group>"; };
+		42CD423B22603B6100652FA6 /* CorverUpKeyboardVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CorverUpKeyboardVC.m; sourceTree = "<group>"; };
+		42CD423E22603B8400652FA6 /* FKTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKTextField.h; sourceTree = "<group>"; };
+		42CD423F22603B8400652FA6 /* UIView+FloatKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FloatKeyboard.m"; sourceTree = "<group>"; };
+		42CD424022603B8400652FA6 /* FKTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FKTextView.h; sourceTree = "<group>"; };
+		42CD424122603B8400652FA6 /* UIView+FloatKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FloatKeyboard.h"; sourceTree = "<group>"; };
+		42CD424222603B8400652FA6 /* FKTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKTextField.m; sourceTree = "<group>"; };
+		42CD424322603B8400652FA6 /* FKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKTextView.m; sourceTree = "<group>"; };
+		42CD424722603CE100652FA6 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
+		42CD424822603CE100652FA6 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
 		42CF2C0821A5498100951C6D /* InputFilterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputFilterVC.h; sourceTree = "<group>"; };
 		42CF2C0921A5498100951C6D /* InputFilterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputFilterVC.m; sourceTree = "<group>"; };
 		42CF2C1021A54A7D00951C6D /* TextFieldNonPackageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldNonPackageVC.h; sourceTree = "<group>"; };
@@ -2744,11 +2774,11 @@
 		42551D73225F1518003DF389 /* 性别SexPickerTool */ = {
 			isa = PBXGroup;
 			children = (
-				42551D74225F1518003DF389 /* SexPickerTool.m */,
 				42551D75225F1518003DF389 /* SexPickerButton.h */,
-				42551D76225F1518003DF389 /* SexPickerTool.xib */,
-				42551D77225F1518003DF389 /* SexPickerTool.h */,
 				42551D78225F1518003DF389 /* SexPickerButton.m */,
+				42551D77225F1518003DF389 /* SexPickerTool.h */,
+				42551D74225F1518003DF389 /* SexPickerTool.m */,
+				42551D76225F1518003DF389 /* SexPickerTool.xib */,
 			);
 			path = "性别SexPickerTool";
 			sourceTree = "<group>";
@@ -2756,11 +2786,11 @@
 		42551D79225F1518003DF389 /* 日期DatePickerTool */ = {
 			isa = PBXGroup;
 			children = (
-				42551D7A225F1518003DF389 /* DatePickerButton.m */,
-				42551D7B225F1518003DF389 /* DatePickerTool.xib */,
-				42551D7C225F1518003DF389 /* DatePickerTool.m */,
 				42551D7D225F1518003DF389 /* DatePickerButton.h */,
+				42551D7A225F1518003DF389 /* DatePickerButton.m */,
 				42551D7E225F1518003DF389 /* DatePickerTool.h */,
+				42551D7C225F1518003DF389 /* DatePickerTool.m */,
+				42551D7B225F1518003DF389 /* DatePickerTool.xib */,
 			);
 			path = "日期DatePickerTool";
 			sourceTree = "<group>";
@@ -2768,9 +2798,9 @@
 		42551D7F225F1519003DF389 /* 地区ThreeLevelTool */ = {
 			isa = PBXGroup;
 			children = (
+				42551D86225F1519003DF389 /* ThreeArrData */,
 				42551D80225F1519003DF389 /* TwoArrData */,
 				42551D83225F1519003DF389 /* OneArrData */,
-				42551D86225F1519003DF389 /* ThreeArrData */,
 			);
 			path = "地区ThreeLevelTool";
 			sourceTree = "<group>";
@@ -2787,8 +2817,8 @@
 		42551D83225F1519003DF389 /* OneArrData */ = {
 			isa = PBXGroup;
 			children = (
-				42551D84225F1519003DF389 /* YLSOnePickerView.m */,
 				42551D85225F1519003DF389 /* YLSOnePickerView.h */,
+				42551D84225F1519003DF389 /* YLSOnePickerView.m */,
 			);
 			path = OneArrData;
 			sourceTree = "<group>";
@@ -2796,8 +2826,8 @@
 		42551D86225F1519003DF389 /* ThreeArrData */ = {
 			isa = PBXGroup;
 			children = (
-				42551D87225F1519003DF389 /* YLSThreePickerView.m */,
 				42551D88225F1519003DF389 /* YLSThreePickerView.h */,
+				42551D87225F1519003DF389 /* YLSThreePickerView.m */,
 			);
 			path = ThreeArrData;
 			sourceTree = "<group>";
@@ -3493,6 +3523,8 @@
 			children = (
 				42D42FD8225C7F2700EA4AA8 /* InputFloatVC.h */,
 				42D42FD9225C7F2700EA4AA8 /* InputFloatVC.m */,
+				42CD41EA2260377600652FA6 /* 简单封装 */,
+				42CD41EB2260377E00652FA6 /* 炫酷封装 */,
 			);
 			path = "#1_TextField输入浮动效果";
 			sourceTree = "<group>";
@@ -5024,6 +5056,55 @@
 			path = "8，便签效果";
 			sourceTree = "<group>";
 		};
+		42CD41E9226033CE00652FA6 /* #3_键盘遮挡问题 */ = {
+			isa = PBXGroup;
+			children = (
+				42CD423D22603B8400652FA6 /* FloatableKeyboard */,
+				42CD423A22603B6100652FA6 /* CorverUpKeyboardVC.h */,
+				42CD423B22603B6100652FA6 /* CorverUpKeyboardVC.m */,
+			);
+			path = "#3_键盘遮挡问题";
+			sourceTree = "<group>";
+		};
+		42CD41EA2260377600652FA6 /* 简单封装 */ = {
+			isa = PBXGroup;
+			children = (
+				42CD41ED2260378E00652FA6 /* WSTextField.h */,
+				42CD41EC2260378E00652FA6 /* WSTextField.m */,
+			);
+			path = "简单封装";
+			sourceTree = "<group>";
+		};
+		42CD41EB2260377E00652FA6 /* 炫酷封装 */ = {
+			isa = PBXGroup;
+			children = (
+				42CD424822603CE100652FA6 /* PulsingHaloLayer.h */,
+				42CD424722603CE100652FA6 /* PulsingHaloLayer.m */,
+				42CD423622603AC900652FA6 /* MinoruTextField.h */,
+				42CD423722603AC900652FA6 /* MinoruTextField.m */,
+				42CD423522603AC900652FA6 /* YoshikoTextField.h */,
+				42CD423422603AC900652FA6 /* YoshikoTextField.m */,
+				42CD423122603A9800652FA6 /* IchiroTextField.h */,
+				42CD423022603A9700652FA6 /* IchiroTextField.m */,
+				42CD422F22603A9700652FA6 /* JuroTextField.h */,
+				42CD422E22603A9700652FA6 /* JuroTextField.m */,
+			);
+			path = "炫酷封装";
+			sourceTree = "<group>";
+		};
+		42CD423D22603B8400652FA6 /* FloatableKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				42CD423E22603B8400652FA6 /* FKTextField.h */,
+				42CD424222603B8400652FA6 /* FKTextField.m */,
+				42CD424022603B8400652FA6 /* FKTextView.h */,
+				42CD424322603B8400652FA6 /* FKTextView.m */,
+				42CD424122603B8400652FA6 /* UIView+FloatKeyboard.h */,
+				42CD423F22603B8400652FA6 /* UIView+FloatKeyboard.m */,
+			);
+			path = FloatableKeyboard;
+			sourceTree = "<group>";
+		};
 		42CF2C0D21A549F900951C6D /* 1，textField未封装 */ = {
 			isa = PBXGroup;
 			children = (
@@ -5093,6 +5174,7 @@
 			children = (
 				42B182502106C61800C1E682 /* #1_TextField输入浮动效果 */,
 				42DD7F8C2189314800E3B6F3 /* #2_输入过滤 */,
+				42CD41E9226033CE00652FA6 /* #3_键盘遮挡问题 */,
 			);
 			path = "*7_textField相关";
 			sourceTree = "<group>";
@@ -5832,6 +5914,7 @@
 				429CB1B9210436960063A0D8 /* Demo7ViewController.m in Sources */,
 				42BB66EC20D1231A007BE2CF /* ViewController.m in Sources */,
 				42C783C5213CCB6A0012188E /* YZSortCell.m in Sources */,
+				42CD423C22603B6100652FA6 /* CorverUpKeyboardVC.m in Sources */,
 				422788902145F431002B9C13 /* JXCategoryIndicatorImageView.m in Sources */,
 				42551D9E225F1647003DF389 /* PickPlaceView.m in Sources */,
 				42CB7E8B213939C3003397FB /* RWBasicTableViewCell.m in Sources */,
@@ -5886,6 +5969,7 @@
 				42C5B48421422D4500563794 /* KeywordViewController.m in Sources */,
 				429CB1B0210436960063A0D8 /* Demo3HeaderView.m in Sources */,
 				42C5B6AE2142699B00563794 /* UILabel+Wonderful.m in Sources */,
+				42CD423222603A9800652FA6 /* JuroTextField.m in Sources */,
 				4227892A2145F44F002B9C13 /* IndicatorCustomizeViewController.m in Sources */,
 				42C4DF20215F2B3000247949 /* TABMethod.m in Sources */,
 				42C519DD211C3E3500742239 /* XMGDealCell.m in Sources */,
@@ -5912,6 +5996,7 @@
 				42B573CA213FC1FE0089CFDF /* ChildTempPopGestureVC.m in Sources */,
 				42C5B4C121422F5300563794 /* LinkTextViewController.m in Sources */,
 				42C78372213CC45B0012188E /* RemoveCell.m in Sources */,
+				42CD423822603ACA00652FA6 /* YoshikoTextField.m in Sources */,
 				42DD8DD621A7ACA400CB04A5 /* AAPLCheckerboardFirstViewController.m in Sources */,
 				42C783C7213CCB6A0012188E /* UIView+YZCategory.m in Sources */,
 				429CB1B8210436960063A0D8 /* TiltedLayout.m in Sources */,
@@ -5952,6 +6037,7 @@
 				429CB1C221043C3E0063A0D8 /* UIImage+Category.m in Sources */,
 				4267072F2121301400046FE6 /* CCBaseTableHeaderView.m in Sources */,
 				42C5B4C721422F5300563794 /* RegexKitLite.m in Sources */,
+				42CD424422603B8400652FA6 /* UIView+FloatKeyboard.m in Sources */,
 				42C444792217F666004983B3 /* FoldCellVC.m in Sources */,
 				429CB1BB210436960063A0D8 /* RPSlidingMenuCell.m in Sources */,
 				42C787D2213D2B420012188E /* UIButton+SGImagePosition.m in Sources */,
@@ -6016,7 +6102,9 @@
 				42C78373213CC45B0012188E /* CommentCell.m in Sources */,
 				42C5B4C021422F5300563794 /* ImageTextViewController.m in Sources */,
 				42DB02FC221E50B6002B5675 /* HTQRCodeCreater.m in Sources */,
+				42CD41EE2260378E00652FA6 /* WSTextField.m in Sources */,
 				42C52C1A2187E270001D7A07 /* NineGridUsingMasonryVC.m in Sources */,
+				42CD424622603B8400652FA6 /* FKTextView.m in Sources */,
 				42C78371213CC45B0012188E /* DetailLabelCell.m in Sources */,
 				42C78351213CC45B0012188E /* FeedItem.m in Sources */,
 				425901182140D3E900304394 /* FatherAndSonVC.m in Sources */,
@@ -6254,6 +6342,7 @@
 				42C5B4BC21422F5300563794 /* LabelXibViewController.m in Sources */,
 				42C7835D213CC45B0012188E /* StoryboardViewController.m in Sources */,
 				4227892C2145F44F002B9C13 /* LoadDataViewController.m in Sources */,
+				42CD424522603B8400652FA6 /* FKTextField.m in Sources */,
 				422788A52145F431002B9C13 /* JXCategoryNumberCellModel.m in Sources */,
 				429CB11D210436960063A0D8 /* SWRevealViewController.m in Sources */,
 				422789242145F44F002B9C13 /* JXImageViewController.m in Sources */,
@@ -6307,6 +6396,7 @@
 				42F7725E2193D0DD00FFD237 /* JMBaseButton+CountDown.m in Sources */,
 				426707312121301400046FE6 /* CCBaseTableViewCell.m in Sources */,
 				42789C602154EEAB00F85994 /* CommonMethod.m in Sources */,
+				42CD423322603A9800652FA6 /* IchiroTextField.m in Sources */,
 				42C5B4DC214251E700563794 /* JXTAlertView.m in Sources */,
 				429B151A2160C2FD00F595FC /* SwipeTableView.m in Sources */,
 				42B182842106D83700C1E682 /* UIView+Extension.m in Sources */,
@@ -6330,6 +6420,7 @@
 				42C5B4C221422F5300563794 /* TextTableViewController.m in Sources */,
 				429B151D2160C2FD00F595FC /* STHeaderView.m in Sources */,
 				426707352121301400046FE6 /* CCBaseTableFooterView.m in Sources */,
+				42CD423922603ACA00652FA6 /* MinoruTextField.m in Sources */,
 				42C5B4CB21422F5300563794 /* TExamTextField.m in Sources */,
 				42C4447A2217F666004983B3 /* YUCustomHeaderView.m in Sources */,
 				425901082140BDE400304394 /* OpenPushView.m in Sources */,
@@ -6358,6 +6449,7 @@
 				422789342145F44F002B9C13 /* JXCategoryTitleAttributeView.m in Sources */,
 				42DD8DC221A7ACA300CB04A5 /* AAPLSlideTransitionDelegate.m in Sources */,
 				42B573E1213FC1FE0089CFDF /* SGPageTitleView.m in Sources */,
+				42CD424922603CE100652FA6 /* PulsingHaloLayer.m in Sources */,
 				42EFA8382109BBEA00AFC827 /* TabView_4_ViewController.m in Sources */,
 				42C7838F213CC45B0012188E /* ExpandableSectionController.m in Sources */,
 				429B151B2160C2FD00F595FC /* UIView+STFrame.m in Sources */,

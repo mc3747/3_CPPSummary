@@ -217,14 +217,15 @@
 {
     if (component == 0){
      
-        NSString *twoKey = self.oneArr[row];
-        NSDictionary *selectOneDic = self.array[row];
-        NSDictionary *selectTwoDic  = [selectOneDic objectForKey:twoKey];
         [self.twoArr removeAllObjects];
-        self.twoArr = [NSMutableArray arrayWithArray:selectTwoDic.allKeys];
-        NSString *threeKey = self.twoArr[0];
+        for (int i = 0; i<self.array[row].cityArr.count; i++) {
+            [self.twoArr addObject:self.array[row].cityArr[i].city];
+        }
+        
         [self.threeArr removeAllObjects];
-        self.threeArr = [NSMutableArray arrayWithArray:[selectTwoDic objectForKey:threeKey]];
+        for (int i = 0; i<self.array[row].cityArr[0].districtArr.count; i++) {
+            [self.threeArr addObject:self.array[row].cityArr[0].districtArr[i].district];
+        }
     
         self.result1 = self.oneArr[row];
         self.result2 = self.twoArr[0];
@@ -239,17 +240,16 @@
         
     }else if(component == 1){
         
-        NSDictionary *firstDic = self.array[self.oneIndex];
-        NSDictionary *secondDic = firstDic.allValues[0];
-        NSString *selectTwo = self.twoArr[row];
         [self.threeArr removeAllObjects];
-        self.threeArr  =   [NSMutableArray arrayWithArray:[secondDic objectForKey:selectTwo]];
+        for (int i = 0; i<self.array[_oneIndex].cityArr[row].districtArr.count; i++) {
+            [self.threeArr addObject:self.array[_oneIndex].cityArr[row].districtArr[i].district];
+        }
         
         self.result2 = self.twoArr[row];
         self.result3 = self.threeArr[0];
         self.twoIndex = row;
         
-         [self.pickerView reloadComponent:2];
+        [self.pickerView reloadComponent:2];
         [self.pickerView selectRow:0 inComponent:2 animated:YES];
       
     }else{
@@ -259,7 +259,7 @@
 }
 
 #pragma mark -  重写setter方法
-- (void)setArray:(NSArray *)array {
+- (void)setArray:(NSMutableArray<Province *> *)array {
     _array = array;
     [self returnOneArr];
     [self returnTwoArr];
@@ -271,9 +271,8 @@
 {
     self.oneArr = [[NSMutableArray alloc] init];
     for (int i = 0; i<self.array.count; i++) {
-       NSDictionary *dic =  (NSDictionary *)self.array[i];
-        NSString *key = dic.allKeys[0];
-        [self.oneArr addObject:key];
+       NSString *province =  self.array[i].province;
+        [self.oneArr addObject:province];
     }
     self.oneIndex = 0;
     self.result1 = self.oneArr[0];
@@ -281,18 +280,22 @@
 
 -(void)returnTwoArr
 {
-    NSDictionary *firstDic = self.array[0];
-    NSDictionary *secondDic =  firstDic.allValues[0];
-    self.twoArr  = [[NSMutableArray alloc] initWithArray:secondDic.allKeys];
+    self.twoArr = [[NSMutableArray alloc] init];
+    for (int i = 0; i<self.array[0].cityArr.count; i++) {
+        NSString *city =  self.array[0].cityArr[i].city;
+        [self.twoArr addObject:city];
+    }
+    
     self.twoIndex = 0;
     self.result2 = self.twoArr[0];
 }
 -(void)returnThreeArr
 {
     self.threeArr = [[NSMutableArray alloc] init];
-    NSDictionary *firstDic = self.array[0];
-    NSDictionary *secondDic =  firstDic.allValues[0];
-    self.threeArr = [[NSMutableArray alloc] initWithArray:secondDic.allValues[0]];
+    for (int i = 0; i<self.array[0].cityArr[0].districtArr.count; i++) {
+        NSString *district =  self.array[0].cityArr[0].districtArr[0].district;
+        [self.threeArr addObject:district];
+    }
     self.threeIndex = 0;
     self.result3 = self.threeArr[0];
 }

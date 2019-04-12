@@ -207,12 +207,12 @@
 {
     if (component == 0)
     {
-        NSString *selectOne = self.oneArr[row];
-        NSDictionary *selectDict = self.array[row];
-        NSArray *array = [selectDict objectForKey:selectOne];
-        self.twoArr = [[NSMutableArray alloc] initWithArray:array];
-        self.result1 = self.oneArr[row];
+        [self.twoArr removeAllObjects];
+        for (int i = 0; i<self.array[row].cityArr.count; i++) {
+            [self.twoArr addObject:self.array[row].cityArr[i].city];
+        }
         
+        self.result1 = self.oneArr[row];
         [self.pickerView reloadComponent:1];
         [self.pickerView selectRow:0 inComponent:1 animated:YES];
         
@@ -223,29 +223,31 @@
 }
 
 
-//懒加载
--(NSMutableArray *)oneArr
-{
-    if (!_oneArr)
-    {
-        _oneArr = [[NSMutableArray alloc] init];
-        for (int i = 0; i<self.array.count; i++) {
-            NSDictionary *dic = self.array[i];
-            [_oneArr addObject:dic.allKeys[0]];
-        };
-    }
-    return _oneArr;
+#pragma mark -  重写setter方法
+- (void)setArray:(NSMutableArray<Province *> *)array {
+    _array = array;
+    [self returnOneArr];
+    [self returnTwoArr];
 }
 
--(NSMutableArray *)twoArr
+-(void)returnOneArr
 {
-    if (!_twoArr)
-    {
-         _twoArr = [[NSMutableArray alloc] init];
-        NSDictionary *dic = self.array[0];
-        _twoArr = [[NSMutableArray alloc] initWithArray:dic.allValues[0]];
+    self.oneArr = [[NSMutableArray alloc] init];
+    for (int i = 0; i<self.array.count; i++) {
+        NSString *province =  self.array[i].province;
+        [self.oneArr addObject:province];
     }
-    return _twoArr;
+    self.result1 = self.oneArr[0];
+}
+
+-(void)returnTwoArr
+{
+    self.twoArr = [[NSMutableArray alloc] init];
+    for (int i = 0; i<self.array[0].cityArr.count; i++) {
+        NSString *city =  self.array[0].cityArr[i].city;
+        [self.twoArr addObject:city];
+    }
+      self.result2 = self.twoArr[0];
 }
 #pragma mark -  背景view
 - (UIView *)bgView

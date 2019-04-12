@@ -7,13 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "PlaceModel.h"
 NS_ASSUME_NONNULL_BEGIN
 typedef void(^ThreePickerBlock)(NSString * pickString);
 
 @interface YLSThreePickerView : UIView
 /** array */
-@property (nonatomic,strong) NSArray *array;
+@property (nonatomic,strong) NSMutableArray<Province*>  *array;
 /** title */
 @property (nonatomic,strong) NSString *title;
 /** 回调block */
