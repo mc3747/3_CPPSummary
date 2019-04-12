@@ -585,6 +585,30 @@
 		42CD424522603B8400652FA6 /* FKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD424222603B8400652FA6 /* FKTextField.m */; };
 		42CD424622603B8400652FA6 /* FKTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD424322603B8400652FA6 /* FKTextView.m */; };
 		42CD424922603CE100652FA6 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD424722603CE100652FA6 /* PulsingHaloLayer.m */; };
+		42CD424D22603F2800652FA6 /* InputWithSpaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD424C22603F2800652FA6 /* InputWithSpaceVC.m */; };
+		42CD425022603F3B00652FA6 /* UITextField+NumberFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD424F22603F3A00652FA6 /* UITextField+NumberFormat.m */; };
+		42CD425B226043A200652FA6 /* TextViewCategoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD4252226043A000652FA6 /* TextViewCategoryVC.m */; };
+		42CD425C226043A200652FA6 /* UITextView+WZB.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD4253226043A000652FA6 /* UITextView+WZB.m */; };
+		42CD425D226043A200652FA6 /* TextViewCategoryDemoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD4254226043A000652FA6 /* TextViewCategoryDemoVC.m */; };
+		42CD425E226043A200652FA6 /* UITextView+WZB.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD4257226043A100652FA6 /* UITextView+WZB.m */; };
+		42CD42632260672800652FA6 /* MoreAlertManageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD42622260672800652FA6 /* MoreAlertManageVC.m */; };
+		42CD427E2260674B00652FA6 /* JCAlertButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD42672260674B00652FA6 /* JCAlertButtonItem.m */; };
+		42CD427F2260674B00652FA6 /* JCPresentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD426A2260674B00652FA6 /* JCPresentController.m */; };
+		42CD42802260674B00652FA6 /* UIViewController+JCPresentQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD426B2260674B00652FA6 /* UIViewController+JCPresentQueue.m */; };
+		42CD42812260674B00652FA6 /* UIWindow+JCBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD426F2260674B00652FA6 /* UIWindow+JCBlur.m */; };
+		42CD42822260674B00652FA6 /* UIColor+JCHightlightedColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD42702260674B00652FA6 /* UIColor+JCHightlightedColor.m */; };
+		42CD42832260674B00652FA6 /* UIImage+JCColor2Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD42752260674B00652FA6 /* UIImage+JCColor2Image.m */; };
+		42CD42842260674B00652FA6 /* NSAttributedString+JCCalculateSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD42762260674B00652FA6 /* NSAttributedString+JCCalculateSize.m */; };
+		42CD42852260674B00652FA6 /* JCAlertStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD42782260674B00652FA6 /* JCAlertStyle.m */; };
+		42CD42862260674B00652FA6 /* JCAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD427A2260674B00652FA6 /* JCAlertController.m */; };
+		42CD42872260674B00652FA6 /* JCAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD427C2260674B00652FA6 /* JCAlertView.m */; };
+		42CD428C2260679100652FA6 /* NormalVCForPresentation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD42892260679000652FA6 /* NormalVCForPresentation.m */; };
+		42CD428D2260679100652FA6 /* NSObject+BlockSEL.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD428B2260679100652FA6 /* NSObject+BlockSEL.m */; };
+		42CD4290226067CA00652FA6 /* MoreAlertManageTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD428F226067CA00652FA6 /* MoreAlertManageTableVC.m */; };
+		42CD429422606E2800652FA6 /* RightUpPullDownVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD429322606E2800652FA6 /* RightUpPullDownVC.m */; };
+		42CD429C22606F2700652FA6 /* PopoverAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD429922606F2700652FA6 /* PopoverAction.m */; };
+		42CD429D22606F2700652FA6 /* PopoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD429A22606F2700652FA6 /* PopoverView.m */; };
+		42CD429E22606F2700652FA6 /* PopoverViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD429B22606F2700652FA6 /* PopoverViewCell.m */; };
 		42CF2C0B21A5498100951C6D /* InputFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C0921A5498100951C6D /* InputFilterVC.m */; };
 		42CF2C1221A54A7D00951C6D /* TextFieldNonPackageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C1121A54A7D00951C6D /* TextFieldNonPackageVC.m */; };
 		42CF2C1921A54B9000951C6D /* TextFieldAndTextViewPackageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C1321A54B8F00951C6D /* TextFieldAndTextViewPackageVC.m */; };
@@ -1824,6 +1848,54 @@
 		42CD424322603B8400652FA6 /* FKTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FKTextView.m; sourceTree = "<group>"; };
 		42CD424722603CE100652FA6 /* PulsingHaloLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PulsingHaloLayer.m; sourceTree = "<group>"; };
 		42CD424822603CE100652FA6 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PulsingHaloLayer.h; sourceTree = "<group>"; };
+		42CD424B22603F2800652FA6 /* InputWithSpaceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputWithSpaceVC.h; sourceTree = "<group>"; };
+		42CD424C22603F2800652FA6 /* InputWithSpaceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputWithSpaceVC.m; sourceTree = "<group>"; };
+		42CD424E22603F3A00652FA6 /* UITextField+NumberFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+NumberFormat.h"; sourceTree = "<group>"; };
+		42CD424F22603F3A00652FA6 /* UITextField+NumberFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+NumberFormat.m"; sourceTree = "<group>"; };
+		42CD4252226043A000652FA6 /* TextViewCategoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewCategoryVC.m; sourceTree = "<group>"; };
+		42CD4253226043A000652FA6 /* UITextView+WZB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+WZB.m"; sourceTree = "<group>"; };
+		42CD4254226043A000652FA6 /* TextViewCategoryDemoVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextViewCategoryDemoVC.m; sourceTree = "<group>"; };
+		42CD4255226043A100652FA6 /* TextViewCategoryDemoVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewCategoryDemoVC.h; sourceTree = "<group>"; };
+		42CD4257226043A100652FA6 /* UITextView+WZB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+WZB.m"; sourceTree = "<group>"; };
+		42CD4258226043A100652FA6 /* UITextView+WZB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+WZB.h"; sourceTree = "<group>"; };
+		42CD4259226043A100652FA6 /* UITextView+WZB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+WZB.h"; sourceTree = "<group>"; };
+		42CD425A226043A200652FA6 /* TextViewCategoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextViewCategoryVC.h; sourceTree = "<group>"; };
+		42CD42612260672800652FA6 /* MoreAlertManageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoreAlertManageVC.h; sourceTree = "<group>"; };
+		42CD42622260672800652FA6 /* MoreAlertManageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoreAlertManageVC.m; sourceTree = "<group>"; };
+		42CD42662260674B00652FA6 /* JCAlertButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAlertButtonItem.h; sourceTree = "<group>"; };
+		42CD42672260674B00652FA6 /* JCAlertButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAlertButtonItem.m; sourceTree = "<group>"; };
+		42CD42692260674B00652FA6 /* UIViewController+JCPresentQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JCPresentQueue.h"; sourceTree = "<group>"; };
+		42CD426A2260674B00652FA6 /* JCPresentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCPresentController.m; sourceTree = "<group>"; };
+		42CD426B2260674B00652FA6 /* UIViewController+JCPresentQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JCPresentQueue.m"; sourceTree = "<group>"; };
+		42CD426C2260674B00652FA6 /* JCPresentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCPresentController.h; sourceTree = "<group>"; };
+		42CD426D2260674B00652FA6 /* JCAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAlertController.h; sourceTree = "<group>"; };
+		42CD426F2260674B00652FA6 /* UIWindow+JCBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+JCBlur.m"; sourceTree = "<group>"; };
+		42CD42702260674B00652FA6 /* UIColor+JCHightlightedColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JCHightlightedColor.m"; sourceTree = "<group>"; };
+		42CD42712260674B00652FA6 /* NSAttributedString+JCCalculateSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+JCCalculateSize.h"; sourceTree = "<group>"; };
+		42CD42722260674B00652FA6 /* UIImage+JCColor2Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JCColor2Image.h"; sourceTree = "<group>"; };
+		42CD42732260674B00652FA6 /* UIWindow+JCBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+JCBlur.h"; sourceTree = "<group>"; };
+		42CD42742260674B00652FA6 /* UIColor+JCHightlightedColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+JCHightlightedColor.h"; sourceTree = "<group>"; };
+		42CD42752260674B00652FA6 /* UIImage+JCColor2Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JCColor2Image.m"; sourceTree = "<group>"; };
+		42CD42762260674B00652FA6 /* NSAttributedString+JCCalculateSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+JCCalculateSize.m"; sourceTree = "<group>"; };
+		42CD42782260674B00652FA6 /* JCAlertStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAlertStyle.m; sourceTree = "<group>"; };
+		42CD42792260674B00652FA6 /* JCAlertStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAlertStyle.h; sourceTree = "<group>"; };
+		42CD427A2260674B00652FA6 /* JCAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAlertController.m; sourceTree = "<group>"; };
+		42CD427C2260674B00652FA6 /* JCAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAlertView.m; sourceTree = "<group>"; };
+		42CD427D2260674B00652FA6 /* JCAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAlertView.h; sourceTree = "<group>"; };
+		42CD42882260679000652FA6 /* NSObject+BlockSEL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+BlockSEL.h"; sourceTree = "<group>"; };
+		42CD42892260679000652FA6 /* NormalVCForPresentation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NormalVCForPresentation.m; sourceTree = "<group>"; };
+		42CD428A2260679100652FA6 /* NormalVCForPresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NormalVCForPresentation.h; sourceTree = "<group>"; };
+		42CD428B2260679100652FA6 /* NSObject+BlockSEL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BlockSEL.m"; sourceTree = "<group>"; };
+		42CD428E226067C900652FA6 /* MoreAlertManageTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreAlertManageTableVC.h; sourceTree = "<group>"; };
+		42CD428F226067CA00652FA6 /* MoreAlertManageTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreAlertManageTableVC.m; sourceTree = "<group>"; };
+		42CD429222606E2800652FA6 /* RightUpPullDownVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RightUpPullDownVC.h; sourceTree = "<group>"; };
+		42CD429322606E2800652FA6 /* RightUpPullDownVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RightUpPullDownVC.m; sourceTree = "<group>"; };
+		42CD429622606F2600652FA6 /* PopoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverView.h; sourceTree = "<group>"; };
+		42CD429722606F2700652FA6 /* PopoverViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverViewCell.h; sourceTree = "<group>"; };
+		42CD429822606F2700652FA6 /* PopoverAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverAction.h; sourceTree = "<group>"; };
+		42CD429922606F2700652FA6 /* PopoverAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverAction.m; sourceTree = "<group>"; };
+		42CD429A22606F2700652FA6 /* PopoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverView.m; sourceTree = "<group>"; };
+		42CD429B22606F2700652FA6 /* PopoverViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverViewCell.m; sourceTree = "<group>"; };
 		42CF2C0821A5498100951C6D /* InputFilterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputFilterVC.h; sourceTree = "<group>"; };
 		42CF2C0921A5498100951C6D /* InputFilterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputFilterVC.m; sourceTree = "<group>"; };
 		42CF2C1021A54A7D00951C6D /* TextFieldNonPackageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldNonPackageVC.h; sourceTree = "<group>"; };
@@ -5105,6 +5177,146 @@
 			path = FloatableKeyboard;
 			sourceTree = "<group>";
 		};
+		42CD424A22603EE700652FA6 /* #4_输入带空格的封装 */ = {
+			isa = PBXGroup;
+			children = (
+				42CD424B22603F2800652FA6 /* InputWithSpaceVC.h */,
+				42CD424C22603F2800652FA6 /* InputWithSpaceVC.m */,
+				42CD424E22603F3A00652FA6 /* UITextField+NumberFormat.h */,
+				42CD424F22603F3A00652FA6 /* UITextField+NumberFormat.m */,
+			);
+			path = "#4_输入带空格的封装";
+			sourceTree = "<group>";
+		};
+		42CD42512260436100652FA6 /* #2_占位符+添加图片+自动调整高度 */ = {
+			isa = PBXGroup;
+			children = (
+				42CD425A226043A200652FA6 /* TextViewCategoryVC.h */,
+				42CD4252226043A000652FA6 /* TextViewCategoryVC.m */,
+				42CD4255226043A100652FA6 /* TextViewCategoryDemoVC.h */,
+				42CD4254226043A000652FA6 /* TextViewCategoryDemoVC.m */,
+				42CD4259226043A100652FA6 /* UITextView+WZB.h */,
+				42CD4253226043A000652FA6 /* UITextView+WZB.m */,
+				42CD4256226043A100652FA6 /* WZBTextView */,
+			);
+			path = "#2_占位符+添加图片+自动调整高度";
+			sourceTree = "<group>";
+		};
+		42CD4256226043A100652FA6 /* WZBTextView */ = {
+			isa = PBXGroup;
+			children = (
+				42CD4257226043A100652FA6 /* UITextView+WZB.m */,
+				42CD4258226043A100652FA6 /* UITextView+WZB.h */,
+			);
+			path = WZBTextView;
+			sourceTree = "<group>";
+		};
+		42CD42602260670800652FA6 /* #3_多级弹窗控制 */ = {
+			isa = PBXGroup;
+			children = (
+				42CD42612260672800652FA6 /* MoreAlertManageVC.h */,
+				42CD42622260672800652FA6 /* MoreAlertManageVC.m */,
+				42CD428E226067C900652FA6 /* MoreAlertManageTableVC.h */,
+				42CD428F226067CA00652FA6 /* MoreAlertManageTableVC.m */,
+				42CD42642260674B00652FA6 /* JCAlertController */,
+			);
+			path = "#3_多级弹窗控制";
+			sourceTree = "<group>";
+		};
+		42CD42642260674B00652FA6 /* JCAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				42CD426D2260674B00652FA6 /* JCAlertController.h */,
+				42CD427A2260674B00652FA6 /* JCAlertController.m */,
+				42CD428A2260679100652FA6 /* NormalVCForPresentation.h */,
+				42CD42892260679000652FA6 /* NormalVCForPresentation.m */,
+				42CD42882260679000652FA6 /* NSObject+BlockSEL.h */,
+				42CD428B2260679100652FA6 /* NSObject+BlockSEL.m */,
+				42CD42652260674B00652FA6 /* ButtonItem */,
+				42CD42682260674B00652FA6 /* JCPresentQueue */,
+				42CD426E2260674B00652FA6 /* Category */,
+				42CD42772260674B00652FA6 /* Style */,
+				42CD427B2260674B00652FA6 /* AlertView */,
+			);
+			path = JCAlertController;
+			sourceTree = "<group>";
+		};
+		42CD42652260674B00652FA6 /* ButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				42CD42662260674B00652FA6 /* JCAlertButtonItem.h */,
+				42CD42672260674B00652FA6 /* JCAlertButtonItem.m */,
+			);
+			path = ButtonItem;
+			sourceTree = "<group>";
+		};
+		42CD42682260674B00652FA6 /* JCPresentQueue */ = {
+			isa = PBXGroup;
+			children = (
+				42CD42692260674B00652FA6 /* UIViewController+JCPresentQueue.h */,
+				42CD426A2260674B00652FA6 /* JCPresentController.m */,
+				42CD426B2260674B00652FA6 /* UIViewController+JCPresentQueue.m */,
+				42CD426C2260674B00652FA6 /* JCPresentController.h */,
+			);
+			path = JCPresentQueue;
+			sourceTree = "<group>";
+		};
+		42CD426E2260674B00652FA6 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				42CD426F2260674B00652FA6 /* UIWindow+JCBlur.m */,
+				42CD42702260674B00652FA6 /* UIColor+JCHightlightedColor.m */,
+				42CD42712260674B00652FA6 /* NSAttributedString+JCCalculateSize.h */,
+				42CD42722260674B00652FA6 /* UIImage+JCColor2Image.h */,
+				42CD42732260674B00652FA6 /* UIWindow+JCBlur.h */,
+				42CD42742260674B00652FA6 /* UIColor+JCHightlightedColor.h */,
+				42CD42752260674B00652FA6 /* UIImage+JCColor2Image.m */,
+				42CD42762260674B00652FA6 /* NSAttributedString+JCCalculateSize.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		42CD42772260674B00652FA6 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				42CD42782260674B00652FA6 /* JCAlertStyle.m */,
+				42CD42792260674B00652FA6 /* JCAlertStyle.h */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		42CD427B2260674B00652FA6 /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				42CD427C2260674B00652FA6 /* JCAlertView.m */,
+				42CD427D2260674B00652FA6 /* JCAlertView.h */,
+			);
+			path = AlertView;
+			sourceTree = "<group>";
+		};
+		42CD429122606B9F00652FA6 /* #4_仿微信右上角加号下拉 */ = {
+			isa = PBXGroup;
+			children = (
+				42CD429222606E2800652FA6 /* RightUpPullDownVC.h */,
+				42CD429322606E2800652FA6 /* RightUpPullDownVC.m */,
+				42CD429522606F2600652FA6 /* PopoverView */,
+			);
+			path = "#4_仿微信右上角加号下拉";
+			sourceTree = "<group>";
+		};
+		42CD429522606F2600652FA6 /* PopoverView */ = {
+			isa = PBXGroup;
+			children = (
+				42CD429622606F2600652FA6 /* PopoverView.h */,
+				42CD429722606F2700652FA6 /* PopoverViewCell.h */,
+				42CD429822606F2700652FA6 /* PopoverAction.h */,
+				42CD429922606F2700652FA6 /* PopoverAction.m */,
+				42CD429A22606F2700652FA6 /* PopoverView.m */,
+				42CD429B22606F2700652FA6 /* PopoverViewCell.m */,
+			);
+			path = PopoverView;
+			sourceTree = "<group>";
+		};
 		42CF2C0D21A549F900951C6D /* 1，textField未封装 */ = {
 			isa = PBXGroup;
 			children = (
@@ -5175,6 +5387,7 @@
 				42B182502106C61800C1E682 /* #1_TextField输入浮动效果 */,
 				42DD7F8C2189314800E3B6F3 /* #2_输入过滤 */,
 				42CD41E9226033CE00652FA6 /* #3_键盘遮挡问题 */,
+				42CD424A22603EE700652FA6 /* #4_输入带空格的封装 */,
 			);
 			path = "*7_textField相关";
 			sourceTree = "<group>";
@@ -5183,6 +5396,7 @@
 			isa = PBXGroup;
 			children = (
 				42BAFEF6210876CD003CFD9A /* #1_TextView设置下划线 */,
+				42CD42512260436100652FA6 /* #2_占位符+添加图片+自动调整高度 */,
 			);
 			path = "*8_textView相关";
 			sourceTree = "<group>";
@@ -5209,6 +5423,8 @@
 			children = (
 				42B573E4213FCCB50089CFDF /* #1_alert和sheet汇总  */,
 				42BF8165211A872D0090E612 /* #2_模态弹窗 */,
+				42CD42602260670800652FA6 /* #3_多级弹窗控制 */,
+				42CD429122606B9F00652FA6 /* #4_仿微信右上角加号下拉 */,
 			);
 			path = "*11_弹框总结";
 			sourceTree = "<group>";
@@ -5858,6 +6074,7 @@
 				42D04E9B2176DC7A0075ECEF /* FakeWindowClass.m in Sources */,
 				42551D9D225F1647003DF389 /* ZFButton.m in Sources */,
 				42CB7E8121391F3F003397FB /* TextviewLoadingHtmlController.m in Sources */,
+				42CD425C226043A200652FA6 /* UITextView+WZB.m in Sources */,
 				4227889C2145F431002B9C13 /* JXCategoryTitleImageCellModel.m in Sources */,
 				4238B93721255B7F00AF272E /* UIImage+BlurGlass.m in Sources */,
 				429CB1C321043C3E0063A0D8 /* UIControl+Category.m in Sources */,
@@ -5897,10 +6114,12 @@
 				42C5B6B2214269B700563794 /* WonderfulColorVC.m in Sources */,
 				42F7725C2193D0DD00FFD237 /* JMRuntime.m in Sources */,
 				429CB0F3210436960063A0D8 /* TYPageControl.m in Sources */,
+				42CD429C22606F2700652FA6 /* PopoverAction.m in Sources */,
 				422788A82145F431002B9C13 /* UIColor+JXAdd.m in Sources */,
 				422789322145F44F002B9C13 /* NestViewController.m in Sources */,
 				42B573BA213FC1FE0089CFDF /* DefaultAnimatedVC.m in Sources */,
 				42C783C6213CCB6A0012188E /* YZMenuButton.m in Sources */,
+				42CD428D2260679100652FA6 /* NSObject+BlockSEL.m in Sources */,
 				42B573ED213FD11C0089CFDF /* UIButton+Category.m in Sources */,
 				426854FC223F2C9400680CDA /* UITableViewController+EasyNavigationExt.m in Sources */,
 				42DD8DCC21A7ACA400CB04A5 /* AAPLCustomPresentationFirstViewController.m in Sources */,
@@ -5918,6 +6137,7 @@
 				422788902145F431002B9C13 /* JXCategoryIndicatorImageView.m in Sources */,
 				42551D9E225F1647003DF389 /* PickPlaceView.m in Sources */,
 				42CB7E8B213939C3003397FB /* RWBasicTableViewCell.m in Sources */,
+				42CD429E22606F2700652FA6 /* PopoverViewCell.m in Sources */,
 				429CB1AB210436960063A0D8 /* Demo5ViewController.m in Sources */,
 				42DD8DD121A7ACA400CB04A5 /* AAPLSwipeFirstViewController.m in Sources */,
 				429B14DE2160B95800F595FC /* MCDataSafety.m in Sources */,
@@ -5979,10 +6199,12 @@
 				42C783A1213CC99E0012188E /* DOPDropDownMenu.m in Sources */,
 				42C5B4CC21422F5300563794 /* AutoLayoutAttributedLabelCell.m in Sources */,
 				429CB103210436960063A0D8 /* SDCycleScrollView.m in Sources */,
+				42CD42862260674B00652FA6 /* JCAlertController.m in Sources */,
 				42CB7E8A213939C3003397FB /* UIAlertView+RWBlock.m in Sources */,
 				42523F46218BF8F50038CEE3 /* HYBGridModel.m in Sources */,
 				42D42FDA225C7F2700EA4AA8 /* InputFloatVC.m in Sources */,
 				42C7837D213CC45B0012188E /* NibCell.m in Sources */,
+				42CD429422606E2800652FA6 /* RightUpPullDownVC.m in Sources */,
 				42B573D4213FC1FE0089CFDF /* ChildVCOne.m in Sources */,
 				42C519DC211C3E3500742239 /* XMGDeal.m in Sources */,
 				4242B940212A72C400C3A2C5 /* YZJRViewController.m in Sources */,
@@ -6115,6 +6337,7 @@
 				42B573DF213FC1FE0089CFDF /* SGPageContentScrollView.m in Sources */,
 				42C4DF22215F2B3000247949 /* TABViewAnimated.m in Sources */,
 				42CB7E7B21391F3F003397FB /* UIView+Frame.m in Sources */,
+				42CD42822260674B00652FA6 /* UIColor+JCHightlightedColor.m in Sources */,
 				42C5B48721422D4500563794 /* DetailViewController.m in Sources */,
 				42BF8155211A75010090E612 /* UIView+Gradient.m in Sources */,
 				42F772692193D0DD00FFD237 /* JMCountDownViewController.m in Sources */,
@@ -6141,6 +6364,7 @@
 				429CB108210436960063A0D8 /* TAAnimatedDotView.m in Sources */,
 				429CB105210436960063A0D8 /* SDCollectionViewCell.m in Sources */,
 				42DD8DC621A7ACA400CB04A5 /* AAPLCrossDissolveFirstViewController.m in Sources */,
+				42CD424D22603F2800652FA6 /* InputWithSpaceVC.m in Sources */,
 				429CB0F4210436960063A0D8 /* TYCyclePagerView.m in Sources */,
 				42BF815A211A75860090E612 /* ShadeEffectVC.m in Sources */,
 				42B573CF213FC1FE0089CFDF /* ChildVCTwo.m in Sources */,
@@ -6199,6 +6423,7 @@
 				425900ED2140BD8100304394 /* ActionSheetTableViewController.m in Sources */,
 				42C78374213CC45B0012188E /* ManuallySelfSizingCell.m in Sources */,
 				42B573C8213FC1FE0089CFDF /* ChildFourthPopGestureVC.m in Sources */,
+				42CD42632260672800652FA6 /* MoreAlertManageVC.m in Sources */,
 				422788A92145F431002B9C13 /* JXCategoryBaseView.m in Sources */,
 				42CFD901215DCB45005792BD /* IPhoneDeviceInfo.m in Sources */,
 				42F772532193D0DD00FFD237 /* JMBootstrapButtonConfig.m in Sources */,
@@ -6211,6 +6436,7 @@
 				422788A62145F431002B9C13 /* JXCategoryFactory.m in Sources */,
 				422788962145F431002B9C13 /* JXCategoryIndicatorView.m in Sources */,
 				422789282145F44F002B9C13 /* CellCustomizeViewController.m in Sources */,
+				42CD428C2260679100652FA6 /* NormalVCForPresentation.m in Sources */,
 				42C783C3213CCB6A0012188E /* YZSortViewController.m in Sources */,
 				42C4448B2217F9B2004983B3 /* UIView+SnapShot.m in Sources */,
 				42B573BF213FC1FE0089CFDF /* DefaultStaticVC.m in Sources */,
@@ -6218,6 +6444,7 @@
 				42551D61225EE826003DF389 /* SWRevealVC.m in Sources */,
 				42F7725F2193D0DD00FFD237 /* UIColor+JM.m in Sources */,
 				42C787D6213D2B670012188E /* UIButton+SGCountdown.m in Sources */,
+				42CD427E2260674B00652FA6 /* JCAlertButtonItem.m in Sources */,
 				42C78391213CC45B0012188E /* RemoveSectionController.m in Sources */,
 				429CB1B3210436960063A0D8 /* Demo4ViewController.m in Sources */,
 				429CB0F0210436960063A0D8 /* CustomBannerScrollView.m in Sources */,
@@ -6232,6 +6459,8 @@
 				42C444752217F666004983B3 /* YUFoldingTableView.m in Sources */,
 				42C5B6AF2142699B00563794 /* SXColorGradientView.m in Sources */,
 				42C5B6A62142699B00563794 /* SXColorLblDemoPage.m in Sources */,
+				42CD425B226043A200652FA6 /* TextViewCategoryVC.m in Sources */,
+				42CD42812260674B00652FA6 /* UIWindow+JCBlur.m in Sources */,
 				42B573CC213FC1FE0089CFDF /* ChildFourthPopGestureNextVC.m in Sources */,
 				42DD8D7C21A7983400CB04A5 /* Test3ViewController.m in Sources */,
 				42B3E1262238D95F00379C2D /* DWTabBar.m in Sources */,
@@ -6265,6 +6494,7 @@
 				42B573E7213FCD7C0089CFDF /* AlertViewController.m in Sources */,
 				422789162145F44F002B9C13 /* VerticalListCellModel.m in Sources */,
 				42DD8DD021A7ACA400CB04A5 /* AAPLSwipeTransitionAnimator.m in Sources */,
+				42CD42852260674B00652FA6 /* JCAlertStyle.m in Sources */,
 				42C4449822184E5F004983B3 /* PLCustomTableViewController.m in Sources */,
 				42BF8182211A88680090E612 /* CQFilterRequest.m in Sources */,
 				42F772602193D0DD00FFD237 /* JMBadgeValue.m in Sources */,
@@ -6298,6 +6528,7 @@
 				42F772632193D0DD00FFD237 /* JMBasicViewController.m in Sources */,
 				42C5B48921422D4500563794 /* MYCoretextResultTool.m in Sources */,
 				42BF8156211A75010090E612 /* NSString+Number.m in Sources */,
+				42CD425D226043A200652FA6 /* TextViewCategoryDemoVC.m in Sources */,
 				42F772522193D0DD00FFD237 /* JMRadioButton.m in Sources */,
 				42B573C4213FC1FE0089CFDF /* NavigationBarTitleView11.m in Sources */,
 				42B573D7213FC1FE0089CFDF /* ChildVCThree.m in Sources */,
@@ -6327,6 +6558,7 @@
 				42C5B4BA21422F5300563794 /* AddViewTextViewController.m in Sources */,
 				4242B94E212A72D800C3A2C5 /* YZDisplayTitleLabel.m in Sources */,
 				42C4DF26215F2B3000247949 /* NoDataTableViewVC.m in Sources */,
+				42CD42832260674B00652FA6 /* UIImage+JCColor2Image.m in Sources */,
 				42DD8DD821A7ACA400CB04A5 /* AAPLAdaptivePresentationController.m in Sources */,
 				4227892D2145F44F002B9C13 /* NaviSegmentedControlViewController.m in Sources */,
 				42C78367213CC45B0012188E /* SupplementaryViewController.m in Sources */,
@@ -6394,6 +6626,7 @@
 				42523F68218BFE8A0038CEE3 /* CHD_ListView_Structure.m in Sources */,
 				42C78387213CC45B0012188E /* PostSectionController.m in Sources */,
 				42F7725E2193D0DD00FFD237 /* JMBaseButton+CountDown.m in Sources */,
+				42CD4290226067CA00652FA6 /* MoreAlertManageTableVC.m in Sources */,
 				426707312121301400046FE6 /* CCBaseTableViewCell.m in Sources */,
 				42789C602154EEAB00F85994 /* CommonMethod.m in Sources */,
 				42CD423322603A9800652FA6 /* IchiroTextField.m in Sources */,
@@ -6410,19 +6643,24 @@
 				42B573B9213FC1FE0089CFDF /* DefaultPopGestureVC.m in Sources */,
 				42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */,
 				4259010A2140BDE400304394 /* SelectedListView.m in Sources */,
+				42CD42842260674B00652FA6 /* NSAttributedString+JCCalculateSize.m in Sources */,
 				42B3E1192238D88E00379C2D /* Base_2_ViewController.m in Sources */,
 				42DD8DC021A7ACA300CB04A5 /* AAPLMenuViewController.m in Sources */,
 				42685501223F2C9500680CDA /* UIViewController+EasyNavigationExt.m in Sources */,
 				42F772542193D0DD00FFD237 /* JMBootstrapButton.m in Sources */,
+				42CD42802260674B00652FA6 /* UIViewController+JCPresentQueue.m in Sources */,
 				42C7837B213CC45B0012188E /* PhotoCell.m in Sources */,
 				42C78358213CC45B0012188E /* DiffTableViewController.m in Sources */,
 				42C5B48321422D4500563794 /* showCell.m in Sources */,
 				42C5B4C221422F5300563794 /* TextTableViewController.m in Sources */,
 				429B151D2160C2FD00F595FC /* STHeaderView.m in Sources */,
+				42CD42872260674B00652FA6 /* JCAlertView.m in Sources */,
 				426707352121301400046FE6 /* CCBaseTableFooterView.m in Sources */,
 				42CD423922603ACA00652FA6 /* MinoruTextField.m in Sources */,
 				42C5B4CB21422F5300563794 /* TExamTextField.m in Sources */,
+				42CD425E226043A200652FA6 /* UITextView+WZB.m in Sources */,
 				42C4447A2217F666004983B3 /* YUCustomHeaderView.m in Sources */,
+				42CD425022603F3B00652FA6 /* UITextField+NumberFormat.m in Sources */,
 				425901082140BDE400304394 /* OpenPushView.m in Sources */,
 				42C5B6A52142699B00563794 /* SXColorGradientDemoPage.m in Sources */,
 				42EFA82F2109BBBD00AFC827 /* TabView_1_ViewController.m in Sources */,
@@ -6451,6 +6689,7 @@
 				42B573E1213FC1FE0089CFDF /* SGPageTitleView.m in Sources */,
 				42CD424922603CE100652FA6 /* PulsingHaloLayer.m in Sources */,
 				42EFA8382109BBEA00AFC827 /* TabView_4_ViewController.m in Sources */,
+				42CD429D22606F2700652FA6 /* PopoverView.m in Sources */,
 				42C7838F213CC45B0012188E /* ExpandableSectionController.m in Sources */,
 				429B151B2160C2FD00F595FC /* UIView+STFrame.m in Sources */,
 				42CFD943215E1E27005792BD /* WCYADImageView.m in Sources */,
@@ -6459,6 +6698,7 @@
 				42EFA8322109BBCC00AFC827 /* TabView_2_ViewController.m in Sources */,
 				42685508223F2C9500680CDA /* EasyNavigationView+Add.m in Sources */,
 				42DD8D8621A7A11E00CB04A5 /* Transition.m in Sources */,
+				42CD427F2260674B00652FA6 /* JCPresentController.m in Sources */,
 				42B573D0213FC1FE0089CFDF /* ChildVCFive.m in Sources */,
 				429CB1B1210436960063A0D8 /* Demo3ViewController.m in Sources */,
 			);
