@@ -194,6 +194,11 @@
 		42789BF02154759900F85994 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BEF2154759900F85994 /* Test1ViewController.m */; };
 		42789BF3215475AB00F85994 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BF2215475AB00F85994 /* Test2ViewController.m */; };
 		42789C602154EEAB00F85994 /* CommonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789C5F2154EEAB00F85994 /* CommonMethod.m */; };
+		4291629322637CEC005C8626 /* UIImageView+LMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291628922637CEB005C8626 /* UIImageView+LMExtension.m */; };
+		4291629422637CEC005C8626 /* UIView+LMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291628A22637CEB005C8626 /* UIView+LMExtension.m */; };
+		4291629522637CEC005C8626 /* CornerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291628E22637CEB005C8626 /* CornerTableViewCell.m */; };
+		4291629622637CEC005C8626 /* JPFPSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291629222637CEB005C8626 /* JPFPSStatus.m */; };
+		4291629922637CF7005C8626 /* EffectiveCornerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291629822637CF7005C8626 /* EffectiveCornerVC.m */; };
 		42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42981CE62105C4DF0052CCC3 /* CommonViewController.m */; };
 		429B14DE2160B95800F595FC /* MCDataSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B14D82160B95600F595FC /* MCDataSafety.m */; };
 		429B14DF2160B95800F595FC /* MCDataJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B14DB2160B95700F595FC /* MCDataJudge.m */; };
@@ -1106,6 +1111,16 @@
 		42789C5D2154EC5400F85994 /* IPhoneSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPhoneSize.h; sourceTree = "<group>"; };
 		42789C5E2154EEAA00F85994 /* CommonMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMethod.h; sourceTree = "<group>"; };
 		42789C5F2154EEAB00F85994 /* CommonMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonMethod.m; sourceTree = "<group>"; };
+		4291628922637CEB005C8626 /* UIImageView+LMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LMExtension.m"; sourceTree = "<group>"; };
+		4291628A22637CEB005C8626 /* UIView+LMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LMExtension.m"; sourceTree = "<group>"; };
+		4291628B22637CEB005C8626 /* UIView+LMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LMExtension.h"; sourceTree = "<group>"; };
+		4291628C22637CEB005C8626 /* UIImageView+LMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LMExtension.h"; sourceTree = "<group>"; };
+		4291628E22637CEB005C8626 /* CornerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CornerTableViewCell.m; sourceTree = "<group>"; };
+		4291628F22637CEB005C8626 /* CornerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CornerTableViewCell.h; sourceTree = "<group>"; };
+		4291629122637CEB005C8626 /* JPFPSStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPFPSStatus.h; sourceTree = "<group>"; };
+		4291629222637CEB005C8626 /* JPFPSStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPFPSStatus.m; sourceTree = "<group>"; };
+		4291629722637CF6005C8626 /* EffectiveCornerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectiveCornerVC.h; sourceTree = "<group>"; };
+		4291629822637CF7005C8626 /* EffectiveCornerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EffectiveCornerVC.m; sourceTree = "<group>"; };
 		42981CE52105C4DF0052CCC3 /* CommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
 		42981CE62105C4DF0052CCC3 /* CommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
 		429B14D82160B95600F595FC /* MCDataSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDataSafety.m; sourceTree = "<group>"; };
@@ -3174,6 +3189,47 @@
 			path = "3，UITextView系列";
 			sourceTree = "<group>";
 		};
+		4291628722637CD7005C8626 /* 2，高性能处理圆角 */ = {
+			isa = PBXGroup;
+			children = (
+				4291629722637CF6005C8626 /* EffectiveCornerVC.h */,
+				4291629822637CF7005C8626 /* EffectiveCornerVC.m */,
+				4291628822637CEB005C8626 /* CornerCategory */,
+				4291629022637CEB005C8626 /* JPFPSStatus */,
+				4291628D22637CEB005C8626 /* View */,
+			);
+			path = "2，高性能处理圆角";
+			sourceTree = "<group>";
+		};
+		4291628822637CEB005C8626 /* CornerCategory */ = {
+			isa = PBXGroup;
+			children = (
+				4291628922637CEB005C8626 /* UIImageView+LMExtension.m */,
+				4291628A22637CEB005C8626 /* UIView+LMExtension.m */,
+				4291628B22637CEB005C8626 /* UIView+LMExtension.h */,
+				4291628C22637CEB005C8626 /* UIImageView+LMExtension.h */,
+			);
+			path = CornerCategory;
+			sourceTree = "<group>";
+		};
+		4291628D22637CEB005C8626 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4291628E22637CEB005C8626 /* CornerTableViewCell.m */,
+				4291628F22637CEB005C8626 /* CornerTableViewCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4291629022637CEB005C8626 /* JPFPSStatus */ = {
+			isa = PBXGroup;
+			children = (
+				4291629122637CEB005C8626 /* JPFPSStatus.h */,
+				4291629222637CEB005C8626 /* JPFPSStatus.m */,
+			);
+			path = JPFPSStatus;
+			sourceTree = "<group>";
+		};
 		42981CE12105C42B0052CCC3 /* *3_button相关 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3193,6 +3249,7 @@
 				42B3E1172238D88E00379C2D /* Base_2_ViewController.h */,
 				42B3E1182238D88E00379C2D /* Base_2_ViewController.m */,
 				42CD429F22609AFD00652FA6 /* 1，高效处理圆角 */,
+				4291628722637CD7005C8626 /* 2，高性能处理圆角 */,
 			);
 			path = "2，UI拔高";
 			sourceTree = "<group>";
@@ -6267,6 +6324,7 @@
 				42C783C7213CCB6A0012188E /* UIView+YZCategory.m in Sources */,
 				429CB1B8210436960063A0D8 /* TiltedLayout.m in Sources */,
 				426707332121301400046FE6 /* CCTableViewDataSource.m in Sources */,
+				4291629422637CEC005C8626 /* UIView+LMExtension.m in Sources */,
 				42B573D2213FC1FE0089CFDF /* ChildVCFour.m in Sources */,
 				429B15162160C2FC00F595FC /* CustomCollectionView.m in Sources */,
 				4227891B2145F44F002B9C13 /* HobbyListView.m in Sources */,
@@ -6323,6 +6381,7 @@
 				422789192145F44F002B9C13 /* TitleViewController.m in Sources */,
 				42C7835B213CC45B0012188E /* EmptyViewController.m in Sources */,
 				42B573BB213FC1FE0089CFDF /* DefaultGradientEffectVC.m in Sources */,
+				4291629322637CEC005C8626 /* UIImageView+LMExtension.m in Sources */,
 				42685505223F2C9500680CDA /* EasyNavigationView+RightButton.m in Sources */,
 				422789372145F44F002B9C13 /* JXCategoryIndicatorDotLineView.m in Sources */,
 				42E8E116221A84E100A04331 /* PageLoadingVC.m in Sources */,
@@ -6346,6 +6405,7 @@
 				422AB7012174278A0019F1D9 /* ARAlignLabel.m in Sources */,
 				429B15122160C2FC00F595FC /* STRefreshHeader.m in Sources */,
 				42CB7E7A21391F3F003397FB /* WebviewCell.m in Sources */,
+				4291629922637CF7005C8626 /* EffectiveCornerVC.m in Sources */,
 				4238B93121255B4A00AF272E /* ImgTool.m in Sources */,
 				42C7837E213CC45B0012188E /* FullWidthSelfSizingCell.m in Sources */,
 				429B15102160C2FC00F595FC /* STTransitions.m in Sources */,
@@ -6634,6 +6694,7 @@
 				42C5B6AB2142699B00563794 /* SXColorLabel.m in Sources */,
 				42B3E1272238D95F00379C2D /* DWTabBarController.m in Sources */,
 				42523F5A218BF9440038CEE3 /* HYBCardVerticalScaleLayout.m in Sources */,
+				4291629522637CEC005C8626 /* CornerTableViewCell.m in Sources */,
 				42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */,
 				422789122145F44F002B9C13 /* VerticalListCell.m in Sources */,
 				42C5B4B921422F5300563794 /* AutoLayoutLinkImageTextViewController.m in Sources */,
@@ -6728,6 +6789,7 @@
 				42C5B4C821422F5300563794 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				4200C8792159C45800FCD77D /* TestViewController.m in Sources */,
 				42E8E119221A92F900A04331 /* PageLoadingDemo1VC.m in Sources */,
+				4291629622637CEC005C8626 /* JPFPSStatus.m in Sources */,
 				42B3E1252238D95F00379C2D /* DWPublishButton.m in Sources */,
 				42DB02FB221E50B6002B5675 /* UIImage+HTImageWithCenterLogo.m in Sources */,
 				4242B93E212A72C400C3A2C5 /* RequesCover.m in Sources */,
