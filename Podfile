@@ -13,5 +13,6 @@ pod 'SDWebImage'
 pod 'SWTableViewCell'
 pod 'CYLTabBarController'
 pod 'FMDB'
-
+pod 'YYKit', '~> 1.0.7'
+pod 'AsyncDisplayKit', '~> 1.9.90'
 end

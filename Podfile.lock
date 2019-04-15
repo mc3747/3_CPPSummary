@@ -1,4 +1,13 @@
 PODS:
+  - AsyncDisplayKit (1.9.92):
+    - AsyncDisplayKit/PINRemoteImage (= 1.9.92)
+  - AsyncDisplayKit/ASDealloc2MainObject (1.9.92)
+  - AsyncDisplayKit/Core (1.9.92):
+    - AsyncDisplayKit/ASDealloc2MainObject
+  - AsyncDisplayKit/PINRemoteImage (1.9.92):
+    - AsyncDisplayKit/Core
+    - PINCache (= 3.0.1-beta)
+    - PINRemoteImage/iOS (= 3.0.0-beta.3)
   - CYLTabBarController (1.19.2)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
@@ -12,14 +21,23 @@ PODS:
   - JSONModel (1.8.0)
   - LEEAlert (1.2.1)
   - Masonry (1.1.0)
+  - PINCache (3.0.1-beta)
+  - PINRemoteImage/Core (3.0.0-beta.3):
+    - PINCache (>= 3.0.0-beta)
+  - PINRemoteImage/iOS (3.0.0-beta.3):
+    - PINRemoteImage/Core
   - SDWebImage (4.4.6):
     - SDWebImage/Core (= 4.4.6)
   - SDWebImage/Core (4.4.6)
   - SVProgressHUD (2.2.5)
   - SWTableViewCell (0.3.7)
   - TYAttributedLabel (2.6.6)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
+  - AsyncDisplayKit (~> 1.9.90)
   - CYLTabBarController
   - FMDB
   - GPUImage (~> 0.1.7)
@@ -31,9 +49,11 @@ DEPENDENCIES:
   - SVProgressHUD
   - SWTableViewCell
   - TYAttributedLabel (~> 2.6.2)
+  - YYKit (~> 1.0.7)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - AsyncDisplayKit
     - CYLTabBarController
     - FMDB
     - GPUImage
@@ -41,12 +61,16 @@ SPEC REPOS:
     - JSONModel
     - LEEAlert
     - Masonry
+    - PINCache
+    - PINRemoteImage
     - SDWebImage
     - SVProgressHUD
     - SWTableViewCell
     - TYAttributedLabel
+    - YYKit
 
 SPEC CHECKSUMS:
+  AsyncDisplayKit: 49d94f5739669d666ff7cdc3430f43f0b2cfbeaf
   CYLTabBarController: 5b364d6be617331a07f3f3f0ea537f7950501042
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
@@ -54,11 +78,14 @@ SPEC CHECKSUMS:
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   LEEAlert: 325078be70d9234e318d69703ba2f2cd01d8974a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  PINCache: 6911fe422a633e18b3d3ddf2bd4f0e55e36e2892
+  PINRemoteImage: 308731aa6534500e58fc211b9cc2bb7252df25ba
   SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
   TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 9cdfeb2273dcc4dedfd51efbb94c87bcca4eab4b
+PODFILE CHECKSUM: 2d5ce3a30252735ce9163b1421d3c6d1a47e4d39
 
 COCOAPODS: 1.5.0.beta.1
