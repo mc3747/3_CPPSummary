@@ -107,7 +107,6 @@
 		4242B958212A959B00C3A2C5 /* IconFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4242B955212A959A00C3A2C5 /* IconFontViewController.m */; };
 		4242B99F212A9CC500C3A2C5 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4242B99E212A9CC500C3A2C5 /* iconfont.ttf */; };
 		424E3D432175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E3D422175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m */; };
-		424E3D492175C6C800D61820 /* UIWindow+PrivateMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E3D482175C6C800D61820 /* UIWindow+PrivateMethods.m */; };
 		42523F35218BDD540038CEE3 /* BaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F30218BDD530038CEE3 /* BaseCollectionCell.m */; };
 		42523F36218BDD540038CEE3 /* BaseCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F32218BDD540038CEE3 /* BaseCollectionVC.m */; };
 		42523F37218BDD540038CEE3 /* BaseCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42523F34218BDD540038CEE3 /* BaseCollectionCell.xib */; };
@@ -629,7 +628,7 @@
 		42CFD904215E008C005792BD /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD903215E008C005792BD /* UIColor+Category.m */; };
 		42CFD907215E14F6005792BD /* AppDelegate+LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD906215E14F6005792BD /* AppDelegate+LaunchView.m */; };
 		42CFD943215E1E27005792BD /* WCYADImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD941215E1E27005792BD /* WCYADImageView.m */; };
-		42D04E9B2176DC7A0075ECEF /* FakeWindowClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E3D452175C67800D61820 /* FakeWindowClass.m */; };
+		42D04E9B2176DC7A0075ECEF /* OverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E3D452175C67800D61820 /* OverlayWindow.m */; };
 		42D42FC8225C720A00EA4AA8 /* ClickableLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FC7225C720A00EA4AA8 /* ClickableLabelVC.m */; };
 		42D42FCB225C723300EA4AA8 /* CountDownLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FCA225C723300EA4AA8 /* CountDownLabelVC.m */; };
 		42D42FCE225C74FC00EA4AA8 /* EnlargeButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FCD225C74FC00EA4AA8 /* EnlargeButtonVC.m */; };
@@ -674,6 +673,8 @@
 		42DD8DDA21A7ACA400CB04A5 /* AAPLAdaptivePresentationFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD8DBE21A7ACA300CB04A5 /* AAPLAdaptivePresentationFirstViewController.m */; };
 		42DD8DDB21A7ACA400CB04A5 /* AAPLAdaptivePresentationSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DD8DBF21A7ACA300CB04A5 /* AAPLAdaptivePresentationSecondViewController.m */; };
 		42DD8DDD21A7AEA600CB04A5 /* AAPLMenuViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42DD8DDC21A7AEA600CB04A5 /* AAPLMenuViewController.storyboard */; };
+		42DE3A4D2264576400422577 /* FakeWindowClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE3A4C2264576400422577 /* FakeWindowClass.m */; };
+		42DE3A50226458F300422577 /* UIWindow+PrivateMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE3A4F226458F300422577 /* UIWindow+PrivateMethods.m */; };
 		42E8E116221A84E100A04331 /* PageLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E8E115221A84E100A04331 /* PageLoadingVC.m */; };
 		42E8E119221A92F900A04331 /* PageLoadingDemo1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E8E118221A92F900A04331 /* PageLoadingDemo1VC.m */; };
 		42E8E11C221A982F00A04331 /* PageLoadingDemo2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E8E11B221A982F00A04331 /* PageLoadingDemo2VC.m */; };
@@ -936,10 +937,8 @@
 		4242B99E212A9CC500C3A2C5 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = iconfont.ttf; path = font_9rmno8jjb38/iconfont.ttf; sourceTree = "<group>"; };
 		424E3D412175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+UIDebuggingInformationOverlayEnable.h"; sourceTree = "<group>"; };
 		424E3D422175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UIDebuggingInformationOverlayEnable.m"; sourceTree = "<group>"; };
-		424E3D442175C67800D61820 /* FakeWindowClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeWindowClass.h; sourceTree = "<group>"; };
-		424E3D452175C67800D61820 /* FakeWindowClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeWindowClass.m; sourceTree = "<group>"; };
-		424E3D472175C6C800D61820 /* UIWindow+PrivateMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+PrivateMethods.h"; sourceTree = "<group>"; };
-		424E3D482175C6C800D61820 /* UIWindow+PrivateMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+PrivateMethods.m"; sourceTree = "<group>"; };
+		424E3D442175C67800D61820 /* OverlayWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayWindow.h; sourceTree = "<group>"; };
+		424E3D452175C67800D61820 /* OverlayWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayWindow.m; sourceTree = "<group>"; };
 		42523F30218BDD530038CEE3 /* BaseCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionCell.m; sourceTree = "<group>"; };
 		42523F31218BDD530038CEE3 /* BaseCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionCell.h; sourceTree = "<group>"; };
 		42523F32218BDD540038CEE3 /* BaseCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionVC.m; sourceTree = "<group>"; };
@@ -2028,6 +2027,10 @@
 		42DD8DBE21A7ACA300CB04A5 /* AAPLAdaptivePresentationFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLAdaptivePresentationFirstViewController.m; sourceTree = "<group>"; };
 		42DD8DBF21A7ACA300CB04A5 /* AAPLAdaptivePresentationSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLAdaptivePresentationSecondViewController.m; sourceTree = "<group>"; };
 		42DD8DDC21A7AEA600CB04A5 /* AAPLMenuViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AAPLMenuViewController.storyboard; sourceTree = "<group>"; };
+		42DE3A4B2264576400422577 /* FakeWindowClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FakeWindowClass.h; sourceTree = "<group>"; };
+		42DE3A4C2264576400422577 /* FakeWindowClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FakeWindowClass.m; sourceTree = "<group>"; };
+		42DE3A4E226458C700422577 /* UIWindow+PrivateMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+PrivateMethods.h"; sourceTree = "<group>"; };
+		42DE3A4F226458F300422577 /* UIWindow+PrivateMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+PrivateMethods.m"; sourceTree = "<group>"; };
 		42E8E114221A84E100A04331 /* PageLoadingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageLoadingVC.h; sourceTree = "<group>"; };
 		42E8E115221A84E100A04331 /* PageLoadingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageLoadingVC.m; sourceTree = "<group>"; };
 		42E8E117221A92F900A04331 /* PageLoadingDemo1VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageLoadingDemo1VC.h; sourceTree = "<group>"; };
@@ -2727,17 +2730,19 @@
 			path = "#1_IconFont的使用";
 			sourceTree = "<group>";
 		};
-		424E3D4A2175CFCA00D61820 /* 2，苹果调试浮球神器 */ = {
+		424E3D4A2175CFCA00D61820 /* 1，弹框UI层级调试 */ = {
 			isa = PBXGroup;
 			children = (
-				424E3D472175C6C800D61820 /* UIWindow+PrivateMethods.h */,
-				424E3D482175C6C800D61820 /* UIWindow+PrivateMethods.m */,
-				424E3D442175C67800D61820 /* FakeWindowClass.h */,
-				424E3D452175C67800D61820 /* FakeWindowClass.m */,
+				42DE3A4E226458C700422577 /* UIWindow+PrivateMethods.h */,
+				42DE3A4F226458F300422577 /* UIWindow+PrivateMethods.m */,
+				42DE3A4B2264576400422577 /* FakeWindowClass.h */,
+				42DE3A4C2264576400422577 /* FakeWindowClass.m */,
+				424E3D442175C67800D61820 /* OverlayWindow.h */,
+				424E3D452175C67800D61820 /* OverlayWindow.m */,
 				424E3D412175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.h */,
 				424E3D422175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m */,
 			);
-			path = "2，苹果调试浮球神器";
+			path = "1，弹框UI层级调试";
 			sourceTree = "<group>";
 		};
 		42523F2D218BDCA30038CEE3 /* 3，查看list的结构工具 */ = {
@@ -4035,6 +4040,7 @@
 				42981CE82105C7C30052CCC3 /* 2，UI拔高 */,
 				42A81B9A2238A45700C749F1 /* 3，UI借鉴 */,
 				42C782B8213CC3CD0012188E /* 4，UI框架 */,
+				42DE3A4A22644F0100422577 /* 5，调试神器 */,
 				42BB66E720D1231A007BE2CF /* AppDelegate.h */,
 				42BB66E820D1231A007BE2CF /* AppDelegate.m */,
 				42CFD905215E14F6005792BD /* AppDelegate+LaunchView.h */,
@@ -4717,7 +4723,6 @@
 			children = (
 				42B3E1112238D86500379C2D /* Base_4_ViewController.h */,
 				42B3E1122238D86500379C2D /* Base_4_ViewController.m */,
-				424E3D4A2175CFCA00D61820 /* 2，苹果调试浮球神器 */,
 				42C782B9213CC3FD0012188E /* 1，IGListKit */,
 			);
 			path = "4，UI框架";
@@ -5681,6 +5686,22 @@
 			path = "Adaptive Presentation";
 			sourceTree = "<group>";
 		};
+		42DE3A4A22644F0100422577 /* 5，调试神器 */ = {
+			isa = PBXGroup;
+			children = (
+				424E3D4A2175CFCA00D61820 /* 1，弹框UI层级调试 */,
+				42DE3A51226459AB00422577 /* 2，浮球UI分界调试 */,
+			);
+			path = "5，调试神器";
+			sourceTree = "<group>";
+		};
+		42DE3A51226459AB00422577 /* 2，浮球UI分界调试 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "2，浮球UI分界调试";
+			sourceTree = "<group>";
+		};
 		42E8E113221A84A700A04331 /* 1，分页加载 */ = {
 			isa = PBXGroup;
 			children = (
@@ -6171,7 +6192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42D04E9B2176DC7A0075ECEF /* FakeWindowClass.m in Sources */,
+				42D04E9B2176DC7A0075ECEF /* OverlayWindow.m in Sources */,
 				42551D9D225F1647003DF389 /* ZFButton.m in Sources */,
 				42CB7E8121391F3F003397FB /* TextviewLoadingHtmlController.m in Sources */,
 				42CD425C226043A200652FA6 /* UITextView+WZB.m in Sources */,
@@ -6572,6 +6593,7 @@
 				42DD8D7C21A7983400CB04A5 /* Test3ViewController.m in Sources */,
 				42B3E1262238D95F00379C2D /* DWTabBar.m in Sources */,
 				424E3D432175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m in Sources */,
+				42DE3A4D2264576400422577 /* FakeWindowClass.m in Sources */,
 				42D42FD7225C7C8500EA4AA8 /* ScrollPageVC.m in Sources */,
 				429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */,
 				42C78357213CC45B0012188E /* AnnouncingDepsViewController.m in Sources */,
@@ -6646,13 +6668,13 @@
 				426854FF223F2C9400680CDA /* UIView+EasyNavigationExt.m in Sources */,
 				42DD8DD421A7ACA400CB04A5 /* AAPLCheckerboardTransitionAnimator.m in Sources */,
 				4227889F2145F431002B9C13 /* JXCategoryTitleView.m in Sources */,
-				424E3D492175C6C800D61820 /* UIWindow+PrivateMethods.m in Sources */,
 				426854FD223F2C9400680CDA /* NSObject+EasyKVO.m in Sources */,
 				429CB1B4210436960063A0D8 /* Demo1Cell.m in Sources */,
 				42F772682193D0DD00FFD237 /* JMButtonVC.m in Sources */,
 				422788A22145F431002B9C13 /* JXCategoryImageCellModel.m in Sources */,
 				42C51A29211C445D00742239 /* XMGStatusCell.m in Sources */,
 				426FEE79221D39EC00C4491A /* ClickTextView.m in Sources */,
+				42DE3A50226458F300422577 /* UIWindow+PrivateMethods.m in Sources */,
 				42C7838D213CC45B0012188E /* SpinnerSectionController.m in Sources */,
 				42C7834B213CC45B0012188E /* GridItem.m in Sources */,
 				42685507223F2C9500680CDA /* EasyNavigationUtils.m in Sources */,

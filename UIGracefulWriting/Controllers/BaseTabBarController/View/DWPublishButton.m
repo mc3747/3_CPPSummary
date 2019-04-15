@@ -7,6 +7,7 @@
 //
 
 #import "DWPublishButton.h"
+#import "OverlayWindow.h"
 
 @interface DWPublishButton ()<UIActionSheetDelegate>
 
@@ -90,7 +91,7 @@
                                                             delegate:self
                                                     cancelButtonTitle:@"取消"
                                                destructiveButtonTitle:nil
-                                                    otherButtonTitles:@"拍照", @"从相册选取", @"淘宝一键转卖", nil];
+                                                    otherButtonTitles:@"1，弹框UI调试", @"2，浮球-双击状态栏", @"淘宝一键转卖", nil];
     [actionSheet showInView:viewController.view];
 }
 
@@ -98,6 +99,32 @@
 
 - (void)actionSheet:(UIActionSheet *)actionSheet didDismissWithButtonIndex:(NSInteger)buttonIndex {
     NSLog(@"buttonIndex = %ld", buttonIndex);
+    if (buttonIndex == 0) {
+#if DEBUG
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+        if (@available(iOS 11.0, *)) {
+            // Simulate two finger click status bar events
+            // 模拟两个手指点击状态栏的事件
+            id overlayClass = NSClassFromString(@"UIDebuggingInformationOverlay");
+            [overlayClass performSelector:NSSelectorFromString(@"overlay")];
+            id handlerClass = NSClassFromString(@"UIDebuggingInformationOverlayInvokeGestureHandler");
+            
+            id handler = [handlerClass performSelector:NSSelectorFromString(@"mainHandler")];
+            [handler performSelector:NSSelectorFromString(@"_handleActivationGesture:") withObject:[[OverlayWindow alloc] init]];
+        } else {
+            id overlayClass = NSClassFromString(@"UIDebuggingInformationOverlay");
+            id overlay = [overlayClass performSelector:NSSelectorFromString(@"overlay")];
+            [overlay performSelector:NSSelectorFromString(@"toggleVisibility")];
+        };
+#pragma clang diagnostic pop
+#endif
+
+    }else if(buttonIndex == 1){
+        
+    }else{
+        
+    }
 }
 
 

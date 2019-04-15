@@ -10,6 +10,13 @@
 #import "FakeWindowClass.h"
 #import <objc/runtime.h>
 
+#if defined(DEBUG) && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_11_0
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wincomplete-implementation"
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
+
+
 @implementation NSObject (UIDebuggingInformationOverlayEnable)
 + (void)load {
     static dispatch_once_t onceToken;
@@ -19,6 +26,7 @@
         [self swizzleSelector:@selector(prepareDebuggingOverlay) newSelector:@selector(prepareDebuggingOverlaySwizzled) forClass:cls isClassMethod:YES];
     });
 }
+
 + (void)swizzleSelector:(SEL)originalSelector newSelector:(SEL)swizzledSelector forClass:(Class)class isClassMethod:(BOOL)isClassMethod {
     Method originalMethod = NULL;
     Method swizzledMethod = NULL;
@@ -45,4 +53,8 @@
     UIView *statusBarWindow = [[UIApplication sharedApplication] valueForKey:@"statusBarWindow"];
     [statusBarWindow addGestureRecognizer:tapGesture];
 }
+
 @end
+#pragma clang diagnostic pop
+
+#endif

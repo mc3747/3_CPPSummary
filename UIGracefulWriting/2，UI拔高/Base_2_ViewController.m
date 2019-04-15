@@ -22,7 +22,9 @@
   @[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@""],
   @[@"",@"",@"",@""],
   @[@"QQCornerViewController",@"EffectiveCornerVC"],
-  @[@"",@"",@""]];
+  @[@"",@"",@""],
+  @[@""]
+  ];
     
     self.subtitleArray =
 @[
@@ -32,11 +34,12 @@
 
 @[@"高效处理圆角",@"高性能处理圆角"],
 
-@[@"文本展示",@"label和tableViewCell不等高",@"TableView"]
+@[@"文本展示",@"label和tableViewCell不等高",@"TableView"],
 
+@[@"UI封装"]
   ];
     
-    self.sectionTitleArray = @[@"通用控件",@"常用资源",@"UI性能优化",@"常见难点"];
+    self.sectionTitleArray = @[@"通用控件",@"常用资源",@"UI性能优化",@"常见难点",@"UI规范"];
 }
 
 

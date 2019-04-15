@@ -55,15 +55,19 @@
         self.visualEffectView.frame = self.window.frame;
     };
     
-
-    
+//调试UI的调试弹框：UI层级关系：（点击中间加号第一个）
 #if DEBUG
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
     id overlayClass = NSClassFromString(@"UIDebuggingInformationOverlay");
     [overlayClass performSelector:NSSelectorFromString(@"prepareDebuggingOverlay")];
+#pragma clang diagnostic pop
 #endif
+    
+//调试UI的调试球：UI分界显示：（放开注释双击状态栏）
+    [CHD_ListView_Structure openStructureShow_TableV:YES collectionV:YES];
   
-//显示list
-//    [CHD_ListView_Structure openStructureShow_TableV:YES collectionV:YES];
+
     return YES;
 }
 
