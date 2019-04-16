@@ -157,6 +157,17 @@
 		4259011B2140D41400304394 /* Son1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4259011A2140D41400304394 /* Son1_ViewController.m */; };
 		4259011E2140D42400304394 /* Son2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4259011D2140D42400304394 /* Son2_ViewController.m */; };
 		425901212140D43300304394 /* Son3_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425901202140D43300304394 /* Son3_ViewController.m */; };
+		4265FAC52265C3C900EA45CE /* NavigationSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FAC42265C3C900EA45CE /* NavigationSummaryVC.m */; };
+		4265FB0A2265C41D00EA45CE /* NavigationBarAddSegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FAFA2265C41900EA45CE /* NavigationBarAddSegmentController.m */; };
+		4265FB0B2265C41D00EA45CE /* NavigationBackgroundImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FAFC2265C41900EA45CE /* NavigationBackgroundImageController.m */; };
+		4265FB0C2265C41D00EA45CE /* NavigationBarHideLineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FAFF2265C41A00EA45CE /* NavigationBarHideLineController.m */; };
+		4265FB0D2265C41D00EA45CE /* NavigationBarMoreButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FB012265C41A00EA45CE /* NavigationBarMoreButtonController.m */; };
+		4265FB0E2265C41D00EA45CE /* NavigationBarBottomLineColorController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FB032265C41B00EA45CE /* NavigationBarBottomLineColorController.m */; };
+		4265FB0F2265C41D00EA45CE /* NavigationBarBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FB062265C41C00EA45CE /* NavigationBarBackgroundViewController.m */; };
+		4265FB102265C41D00EA45CE /* NavigationBarChangeBackgroundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FB082265C41D00EA45CE /* NavigationBarChangeBackgroundViewController.m */; };
+		4265FB112265C41D00EA45CE /* NavigationBarWithBackButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FB092265C41D00EA45CE /* NavigationBarWithBackButtonController.m */; };
+		4265FB1C2265C5C700EA45CE /* UIBarButtonItem+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FB192265C5C600EA45CE /* UIBarButtonItem+Custom.m */; };
+		4265FB1D2265C5C700EA45CE /* DataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4265FB1A2265C5C600EA45CE /* DataSource.plist */; };
 		4267072F2121301400046FE6 /* CCBaseTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */; };
 		426707302121301400046FE6 /* UIView+CCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071F2121301400046FE6 /* UIView+CCUtil.m */; };
 		426707312121301400046FE6 /* CCBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426707232121301400046FE6 /* CCBaseTableViewCell.m */; };
@@ -1059,6 +1070,27 @@
 		4259011D2140D42400304394 /* Son2_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son2_ViewController.m; sourceTree = "<group>"; };
 		4259011F2140D43300304394 /* Son3_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son3_ViewController.h; sourceTree = "<group>"; };
 		425901202140D43300304394 /* Son3_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son3_ViewController.m; sourceTree = "<group>"; };
+		4265FAC32265C3C900EA45CE /* NavigationSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationSummaryVC.h; sourceTree = "<group>"; };
+		4265FAC42265C3C900EA45CE /* NavigationSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationSummaryVC.m; sourceTree = "<group>"; };
+		4265FAFA2265C41900EA45CE /* NavigationBarAddSegmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarAddSegmentController.m; sourceTree = "<group>"; };
+		4265FAFB2265C41900EA45CE /* NavigationBarHideLineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarHideLineController.h; sourceTree = "<group>"; };
+		4265FAFC2265C41900EA45CE /* NavigationBackgroundImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBackgroundImageController.m; sourceTree = "<group>"; };
+		4265FAFD2265C41900EA45CE /* NavigationBackgroundImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBackgroundImageController.h; sourceTree = "<group>"; };
+		4265FAFE2265C41A00EA45CE /* NavigationBarMoreButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarMoreButtonController.h; sourceTree = "<group>"; };
+		4265FAFF2265C41A00EA45CE /* NavigationBarHideLineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarHideLineController.m; sourceTree = "<group>"; };
+		4265FB002265C41A00EA45CE /* NavigationBarBottomLineColorController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarBottomLineColorController.h; sourceTree = "<group>"; };
+		4265FB012265C41A00EA45CE /* NavigationBarMoreButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarMoreButtonController.m; sourceTree = "<group>"; };
+		4265FB022265C41B00EA45CE /* NavigationBarChangeBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarChangeBackgroundViewController.h; sourceTree = "<group>"; };
+		4265FB032265C41B00EA45CE /* NavigationBarBottomLineColorController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarBottomLineColorController.m; sourceTree = "<group>"; };
+		4265FB042265C41B00EA45CE /* NavigationBarAddSegmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarAddSegmentController.h; sourceTree = "<group>"; };
+		4265FB052265C41C00EA45CE /* NavigationBarBackgroundViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarBackgroundViewController.h; sourceTree = "<group>"; };
+		4265FB062265C41C00EA45CE /* NavigationBarBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarBackgroundViewController.m; sourceTree = "<group>"; };
+		4265FB072265C41C00EA45CE /* NavigationBarWithBackButtonController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationBarWithBackButtonController.h; sourceTree = "<group>"; };
+		4265FB082265C41D00EA45CE /* NavigationBarChangeBackgroundViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarChangeBackgroundViewController.m; sourceTree = "<group>"; };
+		4265FB092265C41D00EA45CE /* NavigationBarWithBackButtonController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarWithBackButtonController.m; sourceTree = "<group>"; };
+		4265FB192265C5C600EA45CE /* UIBarButtonItem+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Custom.m"; sourceTree = "<group>"; };
+		4265FB1A2265C5C600EA45CE /* DataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataSource.plist; sourceTree = "<group>"; };
+		4265FB1B2265C5C700EA45CE /* UIBarButtonItem+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Custom.h"; sourceTree = "<group>"; };
 		4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableHeaderView.m; sourceTree = "<group>"; };
 		4267071D2121301400046FE6 /* CCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTableViewDataSource.h; sourceTree = "<group>"; };
 		4267071E2121301400046FE6 /* CCBaseTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableFooterView.h; sourceTree = "<group>"; };
@@ -3139,6 +3171,50 @@
 			path = "1_父子控制器（基础）";
 			sourceTree = "<group>";
 		};
+		4265FAC22265C32600EA45CE /* 4，导航控制器总结 */ = {
+			isa = PBXGroup;
+			children = (
+				4265FAC32265C3C900EA45CE /* NavigationSummaryVC.h */,
+				4265FAC42265C3C900EA45CE /* NavigationSummaryVC.m */,
+				4265FB132265C56E00EA45CE /* Sources */,
+				4265FAF92265C40600EA45CE /* Demos */,
+			);
+			path = "4，导航控制器总结";
+			sourceTree = "<group>";
+		};
+		4265FAF92265C40600EA45CE /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				4265FAFD2265C41900EA45CE /* NavigationBackgroundImageController.h */,
+				4265FAFC2265C41900EA45CE /* NavigationBackgroundImageController.m */,
+				4265FB042265C41B00EA45CE /* NavigationBarAddSegmentController.h */,
+				4265FAFA2265C41900EA45CE /* NavigationBarAddSegmentController.m */,
+				4265FB052265C41C00EA45CE /* NavigationBarBackgroundViewController.h */,
+				4265FB062265C41C00EA45CE /* NavigationBarBackgroundViewController.m */,
+				4265FB002265C41A00EA45CE /* NavigationBarBottomLineColorController.h */,
+				4265FB032265C41B00EA45CE /* NavigationBarBottomLineColorController.m */,
+				4265FB022265C41B00EA45CE /* NavigationBarChangeBackgroundViewController.h */,
+				4265FB082265C41D00EA45CE /* NavigationBarChangeBackgroundViewController.m */,
+				4265FAFB2265C41900EA45CE /* NavigationBarHideLineController.h */,
+				4265FAFF2265C41A00EA45CE /* NavigationBarHideLineController.m */,
+				4265FAFE2265C41A00EA45CE /* NavigationBarMoreButtonController.h */,
+				4265FB012265C41A00EA45CE /* NavigationBarMoreButtonController.m */,
+				4265FB072265C41C00EA45CE /* NavigationBarWithBackButtonController.h */,
+				4265FB092265C41D00EA45CE /* NavigationBarWithBackButtonController.m */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		4265FB132265C56E00EA45CE /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4265FB1A2265C5C600EA45CE /* DataSource.plist */,
+				4265FB1B2265C5C700EA45CE /* UIBarButtonItem+Custom.h */,
+				4265FB192265C5C600EA45CE /* UIBarButtonItem+Custom.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		4267071B2121301400046FE6 /* CCTableDataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -3316,6 +3392,7 @@
 			children = (
 				42B3E1172238D88E00379C2D /* Base_2_ViewController.h */,
 				42B3E1182238D88E00379C2D /* Base_2_ViewController.m */,
+				4265FAC22265C32600EA45CE /* 4，导航控制器总结 */,
 				42DE3C192264872B00422577 /* 3，5种不同的不等高tablecell写法 */,
 				42CD429F22609AFD00652FA6 /* 1，高效处理圆角 */,
 				4291628722637CD7005C8626 /* 2，高性能处理圆角 */,
@@ -6349,6 +6426,7 @@
 				42C51A2B211C456A00742239 /* XMGStatusCell.xib in Resources */,
 				42C787E0213D2BB10012188E /* SGEventVC.xib in Resources */,
 				42C4DF29215F2B3000247949 /* test.jpg in Resources */,
+				4265FB1D2265C5C700EA45CE /* DataSource.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6476,6 +6554,7 @@
 				422789322145F44F002B9C13 /* NestViewController.m in Sources */,
 				42B573BA213FC1FE0089CFDF /* DefaultAnimatedVC.m in Sources */,
 				42C783C6213CCB6A0012188E /* YZMenuButton.m in Sources */,
+				4265FB0A2265C41D00EA45CE /* NavigationBarAddSegmentController.m in Sources */,
 				42CD428D2260679100652FA6 /* NSObject+BlockSEL.m in Sources */,
 				42B573ED213FD11C0089CFDF /* UIButton+Category.m in Sources */,
 				426854FC223F2C9400680CDA /* UITableViewController+EasyNavigationExt.m in Sources */,
@@ -6491,6 +6570,7 @@
 				42BB66EC20D1231A007BE2CF /* ViewController.m in Sources */,
 				42C783C5213CCB6A0012188E /* YZSortCell.m in Sources */,
 				42CD423C22603B6100652FA6 /* CorverUpKeyboardVC.m in Sources */,
+				4265FB0D2265C41D00EA45CE /* NavigationBarMoreButtonController.m in Sources */,
 				422788902145F431002B9C13 /* JXCategoryIndicatorImageView.m in Sources */,
 				42551D9E225F1647003DF389 /* PickPlaceView.m in Sources */,
 				42CB7E8B213939C3003397FB /* RWBasicTableViewCell.m in Sources */,
@@ -6524,6 +6604,7 @@
 				4242B926212A727300C3A2C5 /* Switch2_ViewController.m in Sources */,
 				425901132140BE7700304394 /* UIView+SDAutoLayout.m in Sources */,
 				42C78362213CC45B0012188E /* WorkingRangeViewController.m in Sources */,
+				4265FB0C2265C41D00EA45CE /* NavigationBarHideLineController.m in Sources */,
 				42DD8D8321A7A07700CB04A5 /* CustomAnimationTransition.m in Sources */,
 				422788982145F431002B9C13 /* JXCategoryDotView.m in Sources */,
 				42F772642193D0DD00FFD237 /* JMRadioViewController.m in Sources */,
@@ -6651,6 +6732,7 @@
 				422789152145F44F002B9C13 /* VerticalListSectionModel.m in Sources */,
 				42B573D5213FC1FE0089CFDF /* ChildFirstPopGestureVC.m in Sources */,
 				4227888F2145F430002B9C13 /* JXCategoryIndicatorTriangleView.m in Sources */,
+				4265FB102265C41D00EA45CE /* NavigationBarChangeBackgroundViewController.m in Sources */,
 				42C5B4C521422F5300563794 /* TYLabelViewController.m in Sources */,
 				42B182762106D07800C1E682 /* UIButton+Enlarge.m in Sources */,
 				42C783D1213CCBFF0012188E /* YZPullDownMenu.m in Sources */,
@@ -6718,6 +6800,7 @@
 				429CB1BA210436960063A0D8 /* RPSlidingMenuLayout.m in Sources */,
 				42551D8B225F1519003DF389 /* SexPickerButton.m in Sources */,
 				42C78361213CC45B0012188E /* SelfSizingCellsViewController.m in Sources */,
+				4265FB0E2265C41D00EA45CE /* NavigationBarBottomLineColorController.m in Sources */,
 				42C78389213CC45B0012188E /* SearchSectionCotroller.m in Sources */,
 				42DE3C3B226487AA00422577 /* SuperTableViewCell.m in Sources */,
 				42B573D9213FC1FE0089CFDF /* ChildVCNine.m in Sources */,
@@ -6743,6 +6826,7 @@
 				42B573C9213FC1FE0089CFDF /* ChildVCFull.m in Sources */,
 				42C7835F213CC45B0012188E /* ObjcDemoViewController.m in Sources */,
 				42C7835A213CC45B0012188E /* DisplayViewController.m in Sources */,
+				4265FAC52265C3C900EA45CE /* NavigationSummaryVC.m in Sources */,
 				42C78399213CC4970012188E /* IncrementAnnouncer.m in Sources */,
 				42B573DB213FC1FE0089CFDF /* ChildVCEight.m in Sources */,
 				42DD8DC121A7ACA300CB04A5 /* AAPLSlideTransitionInteractionController.m in Sources */,
@@ -6891,6 +6975,7 @@
 				42BF8185211A88680090E612 /* CQFilterBaseModel.m in Sources */,
 				42C4448D2217F9B2004983B3 /* HSRotatedView.m in Sources */,
 				425901212140D43300304394 /* Son3_ViewController.m in Sources */,
+				4265FB0B2265C41D00EA45CE /* NavigationBackgroundImageController.m in Sources */,
 				42B573E2213FC1FE0089CFDF /* SGPageTitleViewConfigure.m in Sources */,
 				42CFD904215E008C005792BD /* UIColor+Category.m in Sources */,
 				42D42FCB225C723300EA4AA8 /* CountDownLabelVC.m in Sources */,
@@ -6983,6 +7068,7 @@
 				42BF819B211A88BB0090E612 /* CQJigsawViewController.m in Sources */,
 				42551DA0225F1647003DF389 /* PickPlaceMenu.m in Sources */,
 				425901092140BDE400304394 /* SelectedListModel.m in Sources */,
+				4265FB112265C41D00EA45CE /* NavigationBarWithBackButtonController.m in Sources */,
 				42C783C2213CCB6A0012188E /* YZMoreMenuCell.m in Sources */,
 				42523F54218BF9350038CEE3 /* HYBCardScaleFlowLayout.m in Sources */,
 				42C444892217F9B2004983B3 /* DemoFoldingCell.m in Sources */,
@@ -6990,6 +7076,7 @@
 				422789132145F44F002B9C13 /* VerticalListViewController.m in Sources */,
 				42C7836A213CC45B0012188E /* NibSelfSizingCell.m in Sources */,
 				42C78353213CC45B0012188E /* Post.m in Sources */,
+				4265FB1C2265C5C700EA45CE /* UIBarButtonItem+Custom.m in Sources */,
 				42DE3C45226487AA00422577 /* AsyncDisplayKitTableViewCell.m in Sources */,
 				42C783CA213CCB6A0012188E /* YZDropViewController.m in Sources */,
 				42CB7E7D21391F3F003397FB /* LxButton.m in Sources */,
@@ -7062,6 +7149,7 @@
 				4242B93E212A72C400C3A2C5 /* RequesCover.m in Sources */,
 				42C787DA213D2BA50012188E /* SGCountdownVC.m in Sources */,
 				422789342145F44F002B9C13 /* JXCategoryTitleAttributeView.m in Sources */,
+				4265FB0F2265C41D00EA45CE /* NavigationBarBackgroundViewController.m in Sources */,
 				42DD8DC221A7ACA300CB04A5 /* AAPLSlideTransitionDelegate.m in Sources */,
 				42B573E1213FC1FE0089CFDF /* SGPageTitleView.m in Sources */,
 				42CD424922603CE100652FA6 /* PulsingHaloLayer.m in Sources */,
