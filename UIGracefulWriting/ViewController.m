@@ -115,7 +115,7 @@ vc.subtitleArray = @[
 @[@"系统alert和sheet",@"LEE的alert",@"LEE的sheet",@"JXT的Alert汇总"],
 @[@"富文本总结"],
 @[@"九宫格总结"],
-@[@"自己总结",@"袁崢二级菜单",@"仿美团二级菜单",],
+@[@"自己总结",@"袁崢二级菜单",@"仿美团二级菜单"],
 @[@"父子控制器",@"袁崢切换",@"SGPagingView横向切换",@"JXCategory横向切换",@"ST顶部可滚动切换"],
 @[@"测试控制器跳转过渡页"],
 @[@"模糊效果",@"截屏展示",@"生成二维码"]];
@@ -123,6 +123,7 @@ vc.subtitleArray = @[
     
     vc.sectionTitleArray =@[@"view相关",@"lable相关",@"button相关",@"tableView相关",@"scrollView相关",
                             @"collectionView相关",@"textField相关",@"textView相关",@"颜色总结",@"字体总结",
+
                             @"弹框总结",@"富文本总结",@"九宫格总结",@"多级联动总结",@"导航切换总结",@"跳转方案总结",@"其他效果"];
     [self.navigationController pushViewController:vc animated:YES];
 }
