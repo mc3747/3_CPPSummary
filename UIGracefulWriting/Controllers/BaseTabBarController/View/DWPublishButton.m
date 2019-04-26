@@ -91,9 +91,10 @@
                                                             delegate:self
                                                     cancelButtonTitle:@"取消"
                                                destructiveButtonTitle:nil
-                                                    otherButtonTitles:@"1，弹框UI调试", @"2，浮球-双击状态栏", @"3，显示日志-见importPoints的app",
+                                                    otherButtonTitles:@"1，弹框UI调试-苹果开源", @"2，浮球-双击状态栏", @"3，显示日志-见importPoints的app",
                                                         @"4，滴滴开源的DoraemonKit-见大厂的app",
                                   @"5，美图开源的MTHawkeye",
+                                  @"6，陈奕龙的GodEye-swift写的",
                                   nil];
     [actionSheet showInView:viewController.view];
 }
