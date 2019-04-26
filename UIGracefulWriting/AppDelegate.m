@@ -65,7 +65,7 @@
 #endif
     
 //调试UI的调试球：UI分界显示：（放开注释双击状态栏）
-    [CHD_ListView_Structure openStructureShow_TableV:YES collectionV:YES];
+//    [CHD_ListView_Structure openStructureShow_TableV:YES collectionV:YES];
   
 
     return YES;
