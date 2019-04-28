@@ -107,6 +107,9 @@
 		4242B958212A959B00C3A2C5 /* IconFontViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4242B955212A959A00C3A2C5 /* IconFontViewController.m */; };
 		4242B99F212A9CC500C3A2C5 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4242B99E212A9CC500C3A2C5 /* iconfont.ttf */; };
 		424E3D432175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E3D422175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m */; };
+		424F05A32275B5CB0039CD62 /* DAAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 424F05A22275B5CB0039CD62 /* DAAttributedLabel.m */; };
+		424F05A72275B5E50039CD62 /* DAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 424F05A52275B5E50039CD62 /* DAViewController.m */; };
+		424F05A82275B5E50039CD62 /* DAViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 424F05A62275B5E50039CD62 /* DAViewController.xib */; };
 		42523F35218BDD540038CEE3 /* BaseCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F30218BDD530038CEE3 /* BaseCollectionCell.m */; };
 		42523F36218BDD540038CEE3 /* BaseCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42523F32218BDD540038CEE3 /* BaseCollectionVC.m */; };
 		42523F37218BDD540038CEE3 /* BaseCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42523F34218BDD540038CEE3 /* BaseCollectionCell.xib */; };
@@ -982,6 +985,11 @@
 		424E3D422175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UIDebuggingInformationOverlayEnable.m"; sourceTree = "<group>"; };
 		424E3D442175C67800D61820 /* OverlayWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayWindow.h; sourceTree = "<group>"; };
 		424E3D452175C67800D61820 /* OverlayWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayWindow.m; sourceTree = "<group>"; };
+		424F05A12275B5CB0039CD62 /* DAAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DAAttributedLabel.h; sourceTree = "<group>"; };
+		424F05A22275B5CB0039CD62 /* DAAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DAAttributedLabel.m; sourceTree = "<group>"; };
+		424F05A42275B5E50039CD62 /* DAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DAViewController.h; sourceTree = "<group>"; };
+		424F05A52275B5E50039CD62 /* DAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DAViewController.m; sourceTree = "<group>"; };
+		424F05A62275B5E50039CD62 /* DAViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DAViewController.xib; sourceTree = "<group>"; };
 		42523F30218BDD530038CEE3 /* BaseCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionCell.m; sourceTree = "<group>"; };
 		42523F31218BDD530038CEE3 /* BaseCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectionCell.h; sourceTree = "<group>"; };
 		42523F32218BDD540038CEE3 /* BaseCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectionVC.m; sourceTree = "<group>"; };
@@ -2867,6 +2875,18 @@
 			path = "1，弹框UI层级调试";
 			sourceTree = "<group>";
 		};
+		424F05A02275B5390039CD62 /* 7，可点击label（继承label） */ = {
+			isa = PBXGroup;
+			children = (
+				424F05A42275B5E50039CD62 /* DAViewController.h */,
+				424F05A52275B5E50039CD62 /* DAViewController.m */,
+				424F05A62275B5E50039CD62 /* DAViewController.xib */,
+				424F05A12275B5CB0039CD62 /* DAAttributedLabel.h */,
+				424F05A22275B5CB0039CD62 /* DAAttributedLabel.m */,
+			);
+			path = "7，可点击label（继承label）";
+			sourceTree = "<group>";
+		};
 		42523F2D218BDCA30038CEE3 /* 3，查看list的结构工具 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3918,6 +3938,7 @@
 		42B1827A2106D13A00C1E682 /* *2_label相关 */ = {
 			isa = PBXGroup;
 			children = (
+				424F05A02275B5390039CD62 /* 7，可点击label（继承label） */,
 				42B1827B2106D13A00C1E682 /* 1,可点击label */,
 				422AB70321742BB20019F1D9 /* 2,label留白问题 */,
 				42C4DEF9215F105D00247949 /* 3,倒计时label */,
@@ -6482,6 +6503,7 @@
 				42C78369213CC45B0012188E /* NibCell.xib in Resources */,
 				42B573C7213FC1FE0089CFDF /* ChildFourthPopGestureNextVC.xib in Resources */,
 				4242B99F212A9CC500C3A2C5 /* iconfont.ttf in Resources */,
+				424F05A82275B5E50039CD62 /* DAViewController.xib in Resources */,
 				42DD8DCB21A7ACA400CB04A5 /* CustomPresentation.storyboard in Resources */,
 				42DE3C5F226487E100422577 /* 5.jpg in Resources */,
 				429CB0FC210436960063A0D8 /* h4.jpg in Resources */,
@@ -6954,6 +6976,7 @@
 				42C4DF23215F2B3000247949 /* UIView+Animated.m in Sources */,
 				42CB7E7E21391F3F003397FB /* HtmlViewController.m in Sources */,
 				42B573C2213FC1FE0089CFDF /* DefaultZoomVC.m in Sources */,
+				424F05A32275B5CB0039CD62 /* DAAttributedLabel.m in Sources */,
 				4238B93621255B7F00AF272E /* ScreenBlurry.m in Sources */,
 				42C4DF27215F2B3000247949 /* TestTableViewCell.m in Sources */,
 				4227892B2145F44F002B9C13 /* LoadDataListBaseViewController.m in Sources */,
@@ -7241,6 +7264,7 @@
 				42C78378213CC45B0012188E /* LabelCell.m in Sources */,
 				42C5B4BD21422F5300563794 /* ParseTextViewController.m in Sources */,
 				426707432121325B00046FE6 /* ExampleData.m in Sources */,
+				424F05A72275B5E50039CD62 /* DAViewController.m in Sources */,
 				429B15142160C2FC00F595FC /* CustomTableView.m in Sources */,
 				42C5B4C821422F5300563794 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				4200C8792159C45800FCD77D /* TestViewController.m in Sources */,

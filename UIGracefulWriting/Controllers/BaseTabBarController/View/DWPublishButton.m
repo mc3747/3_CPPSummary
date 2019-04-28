@@ -95,6 +95,7 @@
                                                         @"4，滴滴开源的DoraemonKit-见大厂的app",
                                   @"5，美图开源的MTHawkeye",
                                   @"6，陈奕龙的GodEye-swift写的",
+                                  @"7,Flex工具-老外写的",
                                   nil];
     [actionSheet showInView:viewController.view];
 }

@@ -122,7 +122,7 @@
     vc.vcNameArray =
 @[
 @[@"CQJigsawViewController"],
-@[@"ClickableLabelVC",@"LabelLeaveSpaceVC",@"CountDownLabelVC",@"LabelAlignVC",@"AdjustSizeVC",@"MoneyAnimationVC"],
+@[@"ClickableLabelVC",@"DAViewController",@"LabelLeaveSpaceVC",@"CountDownLabelVC",@"LabelAlignVC",@"AdjustSizeVC",@"MoneyAnimationVC"],
 @[@"EnlargeButtonVC",@"SGImagePositionVC",@"UnderlineButtonVC",@"SGEventVC",@"SGCountdownVC",@"JMButtonVC"],
 @[@"TabView_1_ViewController",@"TabView_2_ViewController",@"TabView_3_ViewController",@"TabView_4_ViewController",@"TabView_5_ViewController",@"TabView_6_ViewController",@"NoDataTableViewVC",@"MemoTableViewController"],
   @[@"ScrollPageVC"],
@@ -141,7 +141,7 @@
     
 vc.subtitleArray = @[
   @[@"比例拼图"],
-@[@"可点击label",@"label留白",@"倒计时label",@"label文字对齐各种效果",@"自适应宽高的label",@"金额跳动label"],
+@[@"可点击label",@"可点击label（轻量型）",@"label留白",@"倒计时label",@"label文字对齐各种效果",@"自适应宽高的label",@"金额跳动label"],
 @[@"扩大点击button",@"文字图片组合button",@"带下划线button",@"防重复点击button",@"倒计时button",@"各种样式的button"],
 @[@"原生常用",@"自定义等高",@"自定义不等高",@"优雅地写",@"炫酷效果",@"性能优化",@"无数据动画",@"便签效果"],
   @[@"ScrollView相关"],
