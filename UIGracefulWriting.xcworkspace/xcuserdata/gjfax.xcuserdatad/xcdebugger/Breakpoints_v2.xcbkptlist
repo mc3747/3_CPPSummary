@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UIGracefulWriting/1&#xff0c;UI&#x5927;&#x6742;&#x70e9;/*2_label&#x76f8;&#x5173;/7&#xff0c;&#x53ef;&#x70b9;&#x51fb;label&#xff08;&#x7ee7;&#x627f;label&#xff09;/DAViewController.m"
-            timestampString = "578140197.5466059"
+            timestampString = "578212510.102322"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "43"
@@ -26,12 +26,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "UIGracefulWriting/1&#xff0c;UI&#x5927;&#x6742;&#x70e9;/*2_label&#x76f8;&#x5173;/7&#xff0c;&#x53ef;&#x70b9;&#x51fb;label&#xff08;&#x7ee7;&#x627f;label&#xff09;/DAViewController.m"
-            timestampString = "578140210.914168"
+            timestampString = "578212510.102465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "47"
             endingLineNumber = "47"
             landmarkName = "-addCustomViewAttachment:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIGracefulWriting/1&#xff0c;UI&#x5927;&#x6742;&#x70e9;/*2_label&#x76f8;&#x5173;/7&#xff0c;&#x53ef;&#x70b9;&#x51fb;label&#xff08;&#x7ee7;&#x627f;label&#xff09;/DAViewController.m"
+            timestampString = "578212510.102524"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "-attributedLabel:didTapLinkWithURL:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
