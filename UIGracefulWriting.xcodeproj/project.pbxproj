@@ -714,6 +714,16 @@
 		42DE3C64226487E100422577 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE3C55226487E000422577 /* ImageCache.m */; };
 		42DE3C65226487E100422577 /* FPSDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE3C59226487E000422577 /* FPSDisplay.m */; };
 		42DE3C66226487E100422577 /* TestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE3C5C226487E000422577 /* TestDataModel.m */; };
+		42E740C62276F7F500859877 /* CommonCoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E740C42276F7F500859877 /* CommonCoverVC.m */; };
+		42E740C72276F7F500859877 /* CommonCoverVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E740C52276F7F500859877 /* CommonCoverVC.xib */; };
+		42E740CC2276F83700859877 /* CoverDemoVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E740CA2276F83700859877 /* CoverDemoVC1.m */; };
+		42E740CD2276F83700859877 /* CoverDemoVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E740CB2276F83700859877 /* CoverDemoVC1.xib */; };
+		42E740D12276F85100859877 /* CoverDemoVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E740CF2276F85100859877 /* CoverDemoVC2.m */; };
+		42E740D22276F85100859877 /* CoverDemoVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E740D02276F85100859877 /* CoverDemoVC2.xib */; };
+		42E740D62276F86B00859877 /* CoverDemoVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E740D42276F86B00859877 /* CoverDemoVC3.m */; };
+		42E740D72276F86B00859877 /* CoverDemoVC3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E740D52276F86B00859877 /* CoverDemoVC3.xib */; };
+		42E740DF2276F9A900859877 /* UIView+GKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E740DB2276F9A900859877 /* UIView+GKExtension.m */; };
+		42E740E02276F9A900859877 /* GKCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E740DE2276F9A900859877 /* GKCover.m */; };
 		42E8E116221A84E100A04331 /* PageLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E8E115221A84E100A04331 /* PageLoadingVC.m */; };
 		42E8E119221A92F900A04331 /* PageLoadingDemo1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E8E118221A92F900A04331 /* PageLoadingDemo1VC.m */; };
 		42E8E11C221A982F00A04331 /* PageLoadingDemo2VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E8E11B221A982F00A04331 /* PageLoadingDemo2VC.m */; };
@@ -2147,6 +2157,23 @@
 		42DE3C59226487E000422577 /* FPSDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSDisplay.m; sourceTree = "<group>"; };
 		42DE3C5B226487E000422577 /* TestDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDataModel.h; sourceTree = "<group>"; };
 		42DE3C5C226487E000422577 /* TestDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDataModel.m; sourceTree = "<group>"; };
+		42E740C32276F7F500859877 /* CommonCoverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonCoverVC.h; sourceTree = "<group>"; };
+		42E740C42276F7F500859877 /* CommonCoverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonCoverVC.m; sourceTree = "<group>"; };
+		42E740C52276F7F500859877 /* CommonCoverVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonCoverVC.xib; sourceTree = "<group>"; };
+		42E740C92276F83700859877 /* CoverDemoVC1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverDemoVC1.h; sourceTree = "<group>"; };
+		42E740CA2276F83700859877 /* CoverDemoVC1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverDemoVC1.m; sourceTree = "<group>"; };
+		42E740CB2276F83700859877 /* CoverDemoVC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverDemoVC1.xib; sourceTree = "<group>"; };
+		42E740CE2276F85100859877 /* CoverDemoVC2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverDemoVC2.h; sourceTree = "<group>"; };
+		42E740CF2276F85100859877 /* CoverDemoVC2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverDemoVC2.m; sourceTree = "<group>"; };
+		42E740D02276F85100859877 /* CoverDemoVC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverDemoVC2.xib; sourceTree = "<group>"; };
+		42E740D32276F86B00859877 /* CoverDemoVC3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverDemoVC3.h; sourceTree = "<group>"; };
+		42E740D42276F86B00859877 /* CoverDemoVC3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverDemoVC3.m; sourceTree = "<group>"; };
+		42E740D52276F86B00859877 /* CoverDemoVC3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverDemoVC3.xib; sourceTree = "<group>"; };
+		42E740D92276F9A900859877 /* GKCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCover.h; sourceTree = "<group>"; };
+		42E740DB2276F9A900859877 /* UIView+GKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GKExtension.m"; sourceTree = "<group>"; };
+		42E740DC2276F9A900859877 /* UIView+GKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GKExtension.h"; sourceTree = "<group>"; };
+		42E740DD2276F9A900859877 /* GKCoverEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCoverEnum.h; sourceTree = "<group>"; };
+		42E740DE2276F9A900859877 /* GKCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKCover.m; sourceTree = "<group>"; };
 		42E8E114221A84E100A04331 /* PageLoadingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageLoadingVC.h; sourceTree = "<group>"; };
 		42E8E115221A84E100A04331 /* PageLoadingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PageLoadingVC.m; sourceTree = "<group>"; };
 		42E8E117221A92F900A04331 /* PageLoadingDemo1VC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PageLoadingDemo1VC.h; sourceTree = "<group>"; };
@@ -3458,6 +3485,7 @@
 			children = (
 				42B3E1172238D88E00379C2D /* Base_2_ViewController.h */,
 				42B3E1182238D88E00379C2D /* Base_2_ViewController.m */,
+				42E740C22276F59700859877 /* 8，封装的遮罩 */,
 				42E9FA4A226FF3C900D840A2 /* 7，封装的collectionView */,
 				42E9FA49226FF3C000D840A2 /* 6，封装的tableView */,
 				4291607C226EEBD8005B7902 /* 5，通用toast */,
@@ -6073,6 +6101,54 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		42E740C22276F59700859877 /* 8，封装的遮罩 */ = {
+			isa = PBXGroup;
+			children = (
+				42E740D82276F9A900859877 /* GKCover */,
+				42E740C82276F81200859877 /* Demos */,
+				42E740C32276F7F500859877 /* CommonCoverVC.h */,
+				42E740C42276F7F500859877 /* CommonCoverVC.m */,
+				42E740C52276F7F500859877 /* CommonCoverVC.xib */,
+			);
+			path = "8，封装的遮罩";
+			sourceTree = "<group>";
+		};
+		42E740C82276F81200859877 /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				42E740C92276F83700859877 /* CoverDemoVC1.h */,
+				42E740CA2276F83700859877 /* CoverDemoVC1.m */,
+				42E740CB2276F83700859877 /* CoverDemoVC1.xib */,
+				42E740CE2276F85100859877 /* CoverDemoVC2.h */,
+				42E740CF2276F85100859877 /* CoverDemoVC2.m */,
+				42E740D02276F85100859877 /* CoverDemoVC2.xib */,
+				42E740D32276F86B00859877 /* CoverDemoVC3.h */,
+				42E740D42276F86B00859877 /* CoverDemoVC3.m */,
+				42E740D52276F86B00859877 /* CoverDemoVC3.xib */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
+		42E740D82276F9A900859877 /* GKCover */ = {
+			isa = PBXGroup;
+			children = (
+				42E740D92276F9A900859877 /* GKCover.h */,
+				42E740DA2276F9A900859877 /* Category */,
+				42E740DD2276F9A900859877 /* GKCoverEnum.h */,
+				42E740DE2276F9A900859877 /* GKCover.m */,
+			);
+			path = GKCover;
+			sourceTree = "<group>";
+		};
+		42E740DA2276F9A900859877 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				42E740DB2276F9A900859877 /* UIView+GKExtension.m */,
+				42E740DC2276F9A900859877 /* UIView+GKExtension.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		42E8E113221A84A700A04331 /* 1，分页加载 */ = {
 			isa = PBXGroup;
 			children = (
@@ -6491,6 +6567,7 @@
 				42DD8DC821A7ACA400CB04A5 /* CrossDissolve.storyboard in Resources */,
 				42DD8DD921A7ACA400CB04A5 /* AdaptivePresentation.storyboard in Resources */,
 				42BB66F420D1231B007BE2CF /* LaunchScreen.storyboard in Resources */,
+				42E740CD2276F83700859877 /* CoverDemoVC1.xib in Resources */,
 				42C55CBD218AF0AD00454598 /* OAUIStackViewViewController.xib in Resources */,
 				429B151F2160C34600F595FC /* onepiece_kiudai.png in Resources */,
 				42DE3C61226487E100422577 /* 3.jpg in Resources */,
@@ -6512,6 +6589,7 @@
 				42B573D8213FC1FE0089CFDF /* ChildVCTwo.xib in Resources */,
 				429CB0F9210436960063A0D8 /* 005.jpg in Resources */,
 				42DE3C5E226487E100422577 /* 4.jpg in Resources */,
+				42E740D22276F85100859877 /* CoverDemoVC2.xib in Resources */,
 				42B573D1213FC1FE0089CFDF /* ChildVCFull.xib in Resources */,
 				42B573CE213FC1FE0089CFDF /* ChildFirstPopGestureNextVC.xib in Resources */,
 				42DD8DDD21A7AEA600CB04A5 /* AAPLMenuViewController.storyboard in Resources */,
@@ -6526,6 +6604,7 @@
 				42DD8DC421A7ACA300CB04A5 /* Slide.storyboard in Resources */,
 				42BF8181211A88680090E612 /* region_list.json in Resources */,
 				42685506223F2C9500680CDA /* EasyNavButton.bundle in Resources */,
+				42E740C72276F7F500859877 /* CommonCoverVC.xib in Resources */,
 				429CB0FE210436960063A0D8 /* h2.jpg in Resources */,
 				42C78392213CC45B0012188E /* Demo.storyboard in Resources */,
 				42BB66EF20D1231A007BE2CF /* Main.storyboard in Resources */,
@@ -6536,6 +6615,7 @@
 				42C783C0213CCB6A0012188E /* YZMoreMenuViewController.xib in Resources */,
 				429CB0F8210436960063A0D8 /* pageControlCurrentDot@2x.png in Resources */,
 				42B573D6213FC1FE0089CFDF /* ChildVCThree.xib in Resources */,
+				42E740D72276F86B00859877 /* CoverDemoVC3.xib in Resources */,
 				42C787E5213D2BC60012188E /* SGImagePositionVC.xib in Resources */,
 				42DE3C63226487E100422577 /* 0.jpg in Resources */,
 				42C51A2B211C456A00742239 /* XMGStatusCell.xib in Resources */,
@@ -6678,6 +6758,8 @@
 				42DD8DCC21A7ACA400CB04A5 /* AAPLCustomPresentationFirstViewController.m in Sources */,
 				422788A42145F431002B9C13 /* JXCategoryNumberCell.m in Sources */,
 				42CB7E8021391F3F003397FB /* WebviewLoadingHtmlController.m in Sources */,
+				42E740CC2276F83700859877 /* CoverDemoVC1.m in Sources */,
+				42E740DF2276F9A900859877 /* UIView+GKExtension.m in Sources */,
 				425901062140BDE400304394 /* ShareView.m in Sources */,
 				42B573BE213FC1FE0089CFDF /* DefaultImageVC.m in Sources */,
 				42DD8D8021A7A03800CB04A5 /* CustomPresentationController.m in Sources */,
@@ -6709,6 +6791,7 @@
 				42C4DF28215F2B3000247949 /* TestHeadView.m in Sources */,
 				429CB1B5210436960063A0D8 /* Demo1ViewController.m in Sources */,
 				4259010B2140BDE400304394 /* SignFinishView.m in Sources */,
+				42E740C62276F7F500859877 /* CommonCoverVC.m in Sources */,
 				426854F8223F2C9400680CDA /* EasyNavigationController.m in Sources */,
 				42C7836E213CC45B0012188E /* InteractiveCell.m in Sources */,
 				42F772662193D0DD00FFD237 /* JMCustomViewController.m in Sources */,
@@ -6760,6 +6843,7 @@
 				42CB7E8A213939C3003397FB /* UIAlertView+RWBlock.m in Sources */,
 				42523F46218BF8F50038CEE3 /* HYBGridModel.m in Sources */,
 				42D42FDA225C7F2700EA4AA8 /* InputFloatVC.m in Sources */,
+				42E740D12276F85100859877 /* CoverDemoVC2.m in Sources */,
 				42C7837D213CC45B0012188E /* NibCell.m in Sources */,
 				42CD429422606E2800652FA6 /* RightUpPullDownVC.m in Sources */,
 				42B573D4213FC1FE0089CFDF /* ChildVCOne.m in Sources */,
@@ -6824,6 +6908,7 @@
 				42CD424422603B8400652FA6 /* UIView+FloatKeyboard.m in Sources */,
 				42C444792217F666004983B3 /* FoldCellVC.m in Sources */,
 				429CB1BB210436960063A0D8 /* RPSlidingMenuCell.m in Sources */,
+				42E740E02276F9A900859877 /* GKCover.m in Sources */,
 				42C787D2213D2B420012188E /* UIButton+SGImagePosition.m in Sources */,
 				425901052140BDE400304394 /* ShareButton.m in Sources */,
 				42551D8E225F1519003DF389 /* DatePickerTool.m in Sources */,
@@ -7187,6 +7272,7 @@
 				42685502223F2C9500680CDA /* EasyNavigationView.m in Sources */,
 				42BF8199211A88BB0090E612 /* CQCategoryModel.m in Sources */,
 				422789222145F44F002B9C13 /* JXPagingView.m in Sources */,
+				42E740D62276F86B00859877 /* CoverDemoVC3.m in Sources */,
 				42C78360213CC45B0012188E /* MixedDataViewController.m in Sources */,
 				429B14E02160B95800F595FC /* MCDataConversion.m in Sources */,
 				42C78384213CC45B0012188E /* ListeningSectionController.m in Sources */,
