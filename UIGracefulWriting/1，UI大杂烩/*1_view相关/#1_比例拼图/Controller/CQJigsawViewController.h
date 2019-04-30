@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CQJigsawViewController : CQBaseViewController
+@interface CQJigsawViewController : CQPercentBaseViewController
 
 @end

@@ -6,14 +6,14 @@
 //  Copyright © 2018年 蔡强. All rights reserved.
 //
 
-#import "CQBaseViewController.h"
+#import "CQPercentBaseViewController.h"
 #import "CQDetailViewController.h"
 
-@interface CQBaseViewController ()
+@interface CQPercentBaseViewController ()
 
 @end
 
-@implementation CQBaseViewController
+@implementation CQPercentBaseViewController
 
 #pragma mark - Life Cycle
 

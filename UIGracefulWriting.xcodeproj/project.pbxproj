@@ -380,7 +380,7 @@
 		42BF819B211A88BB0090E612 /* CQJigsawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF8191211A88BB0090E612 /* CQJigsawViewController.m */; };
 		42BF819C211A88BB0090E612 /* CQCategoryItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF8194211A88BB0090E612 /* CQCategoryItemCell.m */; };
 		42BF819D211A88BB0090E612 /* CQCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF8197211A88BB0090E612 /* CQCategoryView.m */; };
-		42BF81AC211A89D90090E612 /* CQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A0211A89D90090E612 /* CQBaseViewController.m */; };
+		42BF81AC211A89D90090E612 /* CQPercentBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A0211A89D90090E612 /* CQPercentBaseViewController.m */; };
 		42BF81AD211A89D90090E612 /* CQBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A1211A89D90090E612 /* CQBaseModel.m */; };
 		42BF81AE211A89D90090E612 /* CQDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A2211A89D90090E612 /* CQDetailViewController.m */; };
 		42BF81AF211A89D90090E612 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 42BF81A7211A89D90090E612 /* UIView+Util.m */; };
@@ -645,6 +645,69 @@
 		42CFD907215E14F6005792BD /* AppDelegate+LaunchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD906215E14F6005792BD /* AppDelegate+LaunchView.m */; };
 		42CFD943215E1E27005792BD /* WCYADImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CFD941215E1E27005792BD /* WCYADImageView.m */; };
 		42D04E9B2176DC7A0075ECEF /* OverlayWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E3D452175C67800D61820 /* OverlayWindow.m */; };
+		42D1C5F62277E1D4001F170F /* CommonLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C5F42277E1D4001F170F /* CommonLoadingVC.m */; };
+		42D1C5F72277E1D4001F170F /* CommonLoadingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C5F52277E1D4001F170F /* CommonLoadingVC.xib */; };
+		42D1C6012277E46A001F170F /* BSYLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C5FF2277E46A001F170F /* BSYLoading.m */; };
+		42D1C6022277E46A001F170F /* loading.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C6002277E46A001F170F /* loading.png */; };
+		42D1C6052277E476001F170F /* LightLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6032277E476001F170F /* LightLoadingVC.m */; };
+		42D1C6192277E4E6001F170F /* SettingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6062277E4E5001F170F /* SettingModel.m */; };
+		42D1C61A2277E4E6001F170F /* UIView+MFFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C60C2277E4E6001F170F /* UIView+MFFrame.m */; };
+		42D1C61B2277E4E6001F170F /* NSTimer+MFWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C60D2277E4E6001F170F /* NSTimer+MFWeakTimer.m */; };
+		42D1C61C2277E4E6001F170F /* MFNotificationHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6142277E4E6001F170F /* MFNotificationHUD.m */; };
+		42D1C61D2277E4E7001F170F /* MFHUDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6152277E4E6001F170F /* MFHUDManager.m */; };
+		42D1C61E2277E4E7001F170F /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6172277E4E6001F170F /* SettingViewController.m */; };
+		42D1C61F2277E4E7001F170F /* LightLoadingDropVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6182277E4E6001F170F /* LightLoadingDropVC.m */; };
+		42D1C6532277E719001F170F /* EasyLoadingTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6232277E718001F170F /* EasyLoadingTypes.m */; };
+		42D1C6542277E719001F170F /* EasyTextConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6262277E718001F170F /* EasyTextConfig.m */; };
+		42D1C6552277E719001F170F /* EasyAlertTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6272277E718001F170F /* EasyAlertTypes.m */; };
+		42D1C6562277E719001F170F /* EasyTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6282277E718001F170F /* EasyTextView.m */; };
+		42D1C6572277E719001F170F /* EasyEmptyConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C62A2277E718001F170F /* EasyEmptyConfig.m */; };
+		42D1C6582277E719001F170F /* EasyEmptyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C62B2277E718001F170F /* EasyEmptyView.m */; };
+		42D1C6592277E719001F170F /* EasyShowUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C62E2277E718001F170F /* EasyShowUtils.m */; };
+		42D1C65A2277E719001F170F /* EasyShowLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6322277E718001F170F /* EasyShowLabel.m */; };
+		42D1C65B2277E719001F170F /* EasyLoadingConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6342277E718001F170F /* EasyLoadingConfig.m */; };
+		42D1C65C2277E719001F170F /* EasyAlertItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6352277E718001F170F /* EasyAlertItem.m */; };
+		42D1C65D2277E719001F170F /* EasyAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6362277E718001F170F /* EasyAlertView.m */; };
+		42D1C65E2277E719001F170F /* EasyTextGlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6372277E718001F170F /* EasyTextGlobalConfig.m */; };
+		42D1C65F2277E719001F170F /* EasyLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6382277E718001F170F /* EasyLoadingView.m */; };
+		42D1C6602277E719001F170F /* EasyEmptyPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C63B2277E718001F170F /* EasyEmptyPart.m */; };
+		42D1C6612277E719001F170F /* UIView+EasyShowExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C63C2277E718001F170F /* UIView+EasyShowExt.m */; };
+		42D1C6622277E719001F170F /* EasyLoadingGlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C63E2277E718001F170F /* EasyLoadingGlobalConfig.m */; };
+		42D1C6632277E719001F170F /* EasyTextBgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C63F2277E718001F170F /* EasyTextBgView.m */; };
+		42D1C6642277E719001F170F /* EasyTextTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6402277E718001F170F /* EasyTextTypes.m */; };
+		42D1C6652277E719001F170F /* EasyAlertConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6422277E718001F170F /* EasyAlertConfig.m */; };
+		42D1C6662277E719001F170F /* EasyEmptyGlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6472277E718001F170F /* EasyEmptyGlobalConfig.m */; };
+		42D1C6672277E719001F170F /* EasyAlertGlobalConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6492277E718001F170F /* EasyAlertGlobalConfig.m */; };
+		42D1C6682277E719001F170F /* EasyEmptyTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C64A2277E718001F170F /* EasyEmptyTypes.m */; };
+		42D1C6692277E719001F170F /* EasyAlertPart.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C64C2277E718001F170F /* EasyAlertPart.m */; };
+		42D1C66A2277E719001F170F /* StrongLoadingEasyShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6512277E719001F170F /* StrongLoadingEasyShowVC.m */; };
+		42D1C66D2277E750001F170F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C66B2277E74F001F170F /* SecondViewController.m */; };
+		42D1C6B62277E835001F170F /* CQAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6712277E833001F170F /* CQAlertViewController.m */; };
+		42D1C6B72277E835001F170F /* CQPlaceholderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6732277E833001F170F /* CQPlaceholderViewController.m */; };
+		42D1C6B82277E835001F170F /* CQLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6772277E833001F170F /* CQLoadingViewController.m */; };
+		42D1C6B92277E835001F170F /* CQHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6792277E833001F170F /* CQHUDViewController.m */; };
+		42D1C6BA2277E835001F170F /* CQToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C67D2277E833001F170F /* CQToastViewController.m */; };
+		42D1C6BB2277E835001F170F /* CQContentsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C67F2277E833001F170F /* CQContentsModel.m */; };
+		42D1C6BC2277E835001F170F /* CQBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6802277E833001F170F /* CQBaseViewController.m */; };
+		42D1C6BD2277E835001F170F /* CQHomeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6852277E833001F170F /* CQHomeTabBarController.m */; };
+		42D1C6BE2277E835001F170F /* CQLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6872277E834001F170F /* CQLoading.m */; };
+		42D1C6BF2277E836001F170F /* CQBlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C68C2277E834001F170F /* CQBlockAlertView.m */; };
+		42D1C6C02277E836001F170F /* CQColorfulAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C68F2277E834001F170F /* CQColorfulAlertView.m */; };
+		42D1C6C12277E836001F170F /* CQImageBlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6922277E834001F170F /* CQImageBlockAlertView.m */; };
+		42D1C6C22277E836001F170F /* IChuAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6942277E834001F170F /* IChuAlertView.m */; };
+		42D1C6C32277E836001F170F /* CQDeclareAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6972277E834001F170F /* CQDeclareAlertView.m */; };
+		42D1C6C42277E836001F170F /* CQWeChatItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C69C2277E834001F170F /* CQWeChatItemCell.m */; };
+		42D1C6C52277E836001F170F /* CQWeChatMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C69D2277E834001F170F /* CQWeChatMenuView.m */; };
+		42D1C6C62277E836001F170F /* CQWeChatItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C69E2277E834001F170F /* CQWeChatItemModel.m */; };
+		42D1C6C72277E836001F170F /* CQPointsRuleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6A12277E834001F170F /* CQPointsRuleView.m */; };
+		42D1C6C82277E836001F170F /* CQToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6A42277E835001F170F /* CQToast.m */; };
+		42D1C6C92277E836001F170F /* zan.png in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C6A52277E835001F170F /* zan.png */; };
+		42D1C6CA2277E836001F170F /* CQPlaceholderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6A82277E835001F170F /* CQPlaceholderView.m */; };
+		42D1C6CB2277E836001F170F /* CQHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6AB2277E835001F170F /* CQHUD.m */; };
+		42D1C6CC2277E836001F170F /* CQLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6AE2277E835001F170F /* CQLoadingView.m */; };
+		42D1C6CD2277E836001F170F /* UIButton+CQBlockSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6B02277E835001F170F /* UIButton+CQBlockSupport.m */; };
+		42D1C6CE2277E836001F170F /* UIView+frameAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6B22277E835001F170F /* UIView+frameAdjust.m */; };
+		42D1C6CF2277E836001F170F /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6B32277E835001F170F /* UIColor+Util.m */; };
 		42D42FC8225C720A00EA4AA8 /* ClickableLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FC7225C720A00EA4AA8 /* ClickableLabelVC.m */; };
 		42D42FCB225C723300EA4AA8 /* CountDownLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FCA225C723300EA4AA8 /* CountDownLabelVC.m */; };
 		42D42FCE225C74FC00EA4AA8 /* EnlargeButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FCD225C74FC00EA4AA8 /* EnlargeButtonVC.m */; };
@@ -1519,10 +1582,10 @@
 		42BF8196211A88BB0090E612 /* CQCategoryItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQCategoryItemCell.h; sourceTree = "<group>"; };
 		42BF8197211A88BB0090E612 /* CQCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQCategoryView.m; sourceTree = "<group>"; };
 		42BF819F211A89D90090E612 /* CQDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQDetailViewController.h; sourceTree = "<group>"; };
-		42BF81A0211A89D90090E612 /* CQBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQBaseViewController.m; sourceTree = "<group>"; };
+		42BF81A0211A89D90090E612 /* CQPercentBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQPercentBaseViewController.m; sourceTree = "<group>"; };
 		42BF81A1211A89D90090E612 /* CQBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQBaseModel.m; sourceTree = "<group>"; };
 		42BF81A2211A89D90090E612 /* CQDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQDetailViewController.m; sourceTree = "<group>"; };
-		42BF81A3211A89D90090E612 /* CQBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQBaseViewController.h; sourceTree = "<group>"; };
+		42BF81A3211A89D90090E612 /* CQPercentBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQPercentBaseViewController.h; sourceTree = "<group>"; };
 		42BF81A4211A89D90090E612 /* CQBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQBaseModel.h; sourceTree = "<group>"; };
 		42BF81A7211A89D90090E612 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
 		42BF81A8211A89D90090E612 /* UIView+FrameHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FrameHelper.m"; sourceTree = "<group>"; };
@@ -2032,6 +2095,131 @@
 		42CFD906215E14F6005792BD /* AppDelegate+LaunchView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+LaunchView.m"; sourceTree = "<group>"; };
 		42CFD941215E1E27005792BD /* WCYADImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WCYADImageView.m; sourceTree = "<group>"; };
 		42CFD942215E1E27005792BD /* WCYADImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCYADImageView.h; sourceTree = "<group>"; };
+		42D1C5F32277E1D4001F170F /* CommonLoadingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonLoadingVC.h; sourceTree = "<group>"; };
+		42D1C5F42277E1D4001F170F /* CommonLoadingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonLoadingVC.m; sourceTree = "<group>"; };
+		42D1C5F52277E1D4001F170F /* CommonLoadingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonLoadingVC.xib; sourceTree = "<group>"; };
+		42D1C5FE2277E46A001F170F /* BSYLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYLoading.h; sourceTree = "<group>"; };
+		42D1C5FF2277E46A001F170F /* BSYLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYLoading.m; sourceTree = "<group>"; };
+		42D1C6002277E46A001F170F /* loading.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loading.png; sourceTree = "<group>"; };
+		42D1C6032277E476001F170F /* LightLoadingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightLoadingVC.m; sourceTree = "<group>"; };
+		42D1C6042277E476001F170F /* LightLoadingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightLoadingVC.h; sourceTree = "<group>"; };
+		42D1C6062277E4E5001F170F /* SettingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingModel.m; sourceTree = "<group>"; };
+		42D1C6072277E4E5001F170F /* LightLoadingDropVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightLoadingDropVC.h; sourceTree = "<group>"; };
+		42D1C6082277E4E5001F170F /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		42D1C60B2277E4E6001F170F /* NSTimer+MFWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+MFWeakTimer.h"; sourceTree = "<group>"; };
+		42D1C60C2277E4E6001F170F /* UIView+MFFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MFFrame.m"; sourceTree = "<group>"; };
+		42D1C60D2277E4E6001F170F /* NSTimer+MFWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+MFWeakTimer.m"; sourceTree = "<group>"; };
+		42D1C60E2277E4E6001F170F /* UIView+MFFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MFFrame.h"; sourceTree = "<group>"; };
+		42D1C6102277E4E6001F170F /* MFMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFMacro.h; sourceTree = "<group>"; };
+		42D1C6122277E4E6001F170F /* MFNotificationHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFNotificationHUD.h; sourceTree = "<group>"; };
+		42D1C6132277E4E6001F170F /* MFHUDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFHUDManager.h; sourceTree = "<group>"; };
+		42D1C6142277E4E6001F170F /* MFNotificationHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFNotificationHUD.m; sourceTree = "<group>"; };
+		42D1C6152277E4E6001F170F /* MFHUDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFHUDManager.m; sourceTree = "<group>"; };
+		42D1C6162277E4E6001F170F /* SettingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingModel.h; sourceTree = "<group>"; };
+		42D1C6172277E4E6001F170F /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		42D1C6182277E4E6001F170F /* LightLoadingDropVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightLoadingDropVC.m; sourceTree = "<group>"; };
+		42D1C6222277E718001F170F /* EasyLoadingGlobalConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyLoadingGlobalConfig.h; sourceTree = "<group>"; };
+		42D1C6232277E718001F170F /* EasyLoadingTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyLoadingTypes.m; sourceTree = "<group>"; };
+		42D1C6242277E718001F170F /* UIView+EasyShowExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+EasyShowExt.h"; sourceTree = "<group>"; };
+		42D1C6252277E718001F170F /* EasyEmptyPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyEmptyPart.h; sourceTree = "<group>"; };
+		42D1C6262277E718001F170F /* EasyTextConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyTextConfig.m; sourceTree = "<group>"; };
+		42D1C6272277E718001F170F /* EasyAlertTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyAlertTypes.m; sourceTree = "<group>"; };
+		42D1C6282277E718001F170F /* EasyTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyTextView.m; sourceTree = "<group>"; };
+		42D1C6292277E718001F170F /* EasyAlertConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyAlertConfig.h; sourceTree = "<group>"; };
+		42D1C62A2277E718001F170F /* EasyEmptyConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyEmptyConfig.m; sourceTree = "<group>"; };
+		42D1C62B2277E718001F170F /* EasyEmptyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyEmptyView.m; sourceTree = "<group>"; };
+		42D1C62C2277E718001F170F /* EasyTextTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyTextTypes.h; sourceTree = "<group>"; };
+		42D1C62D2277E718001F170F /* EasyTextBgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyTextBgView.h; sourceTree = "<group>"; };
+		42D1C62E2277E718001F170F /* EasyShowUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyShowUtils.m; sourceTree = "<group>"; };
+		42D1C62F2277E718001F170F /* EasyAlertPart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyAlertPart.h; sourceTree = "<group>"; };
+		42D1C6302277E718001F170F /* EasyEmptyTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyEmptyTypes.h; sourceTree = "<group>"; };
+		42D1C6312277E718001F170F /* EasyAlertGlobalConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyAlertGlobalConfig.h; sourceTree = "<group>"; };
+		42D1C6322277E718001F170F /* EasyShowLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyShowLabel.m; sourceTree = "<group>"; };
+		42D1C6332277E718001F170F /* EasyEmptyGlobalConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyEmptyGlobalConfig.h; sourceTree = "<group>"; };
+		42D1C6342277E718001F170F /* EasyLoadingConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyLoadingConfig.m; sourceTree = "<group>"; };
+		42D1C6352277E718001F170F /* EasyAlertItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyAlertItem.m; sourceTree = "<group>"; };
+		42D1C6362277E718001F170F /* EasyAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyAlertView.m; sourceTree = "<group>"; };
+		42D1C6372277E718001F170F /* EasyTextGlobalConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyTextGlobalConfig.m; sourceTree = "<group>"; };
+		42D1C6382277E718001F170F /* EasyLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyLoadingView.m; sourceTree = "<group>"; };
+		42D1C6392277E718001F170F /* EasyAlertTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyAlertTypes.h; sourceTree = "<group>"; };
+		42D1C63A2277E718001F170F /* EasyTextConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyTextConfig.h; sourceTree = "<group>"; };
+		42D1C63B2277E718001F170F /* EasyEmptyPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyEmptyPart.m; sourceTree = "<group>"; };
+		42D1C63C2277E718001F170F /* UIView+EasyShowExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+EasyShowExt.m"; sourceTree = "<group>"; };
+		42D1C63D2277E718001F170F /* EasyLoadingTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyLoadingTypes.h; sourceTree = "<group>"; };
+		42D1C63E2277E718001F170F /* EasyLoadingGlobalConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyLoadingGlobalConfig.m; sourceTree = "<group>"; };
+		42D1C63F2277E718001F170F /* EasyTextBgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyTextBgView.m; sourceTree = "<group>"; };
+		42D1C6402277E718001F170F /* EasyTextTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyTextTypes.m; sourceTree = "<group>"; };
+		42D1C6412277E718001F170F /* EasyEmptyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyEmptyView.h; sourceTree = "<group>"; };
+		42D1C6422277E718001F170F /* EasyAlertConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyAlertConfig.m; sourceTree = "<group>"; };
+		42D1C6432277E718001F170F /* EasyEmptyConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyEmptyConfig.h; sourceTree = "<group>"; };
+		42D1C6442277E718001F170F /* EasyTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyTextView.h; sourceTree = "<group>"; };
+		42D1C6452277E718001F170F /* EasyAlertItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyAlertItem.h; sourceTree = "<group>"; };
+		42D1C6462277E718001F170F /* EasyLoadingConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyLoadingConfig.h; sourceTree = "<group>"; };
+		42D1C6472277E718001F170F /* EasyEmptyGlobalConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyEmptyGlobalConfig.m; sourceTree = "<group>"; };
+		42D1C6482277E718001F170F /* EasyShowLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyShowLabel.h; sourceTree = "<group>"; };
+		42D1C6492277E718001F170F /* EasyAlertGlobalConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyAlertGlobalConfig.m; sourceTree = "<group>"; };
+		42D1C64A2277E718001F170F /* EasyEmptyTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyEmptyTypes.m; sourceTree = "<group>"; };
+		42D1C64B2277E718001F170F /* EasyShowUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyShowUtils.h; sourceTree = "<group>"; };
+		42D1C64C2277E718001F170F /* EasyAlertPart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EasyAlertPart.m; sourceTree = "<group>"; };
+		42D1C64D2277E718001F170F /* EasyShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyShowView.h; sourceTree = "<group>"; };
+		42D1C64E2277E718001F170F /* EasyLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyLoadingView.h; sourceTree = "<group>"; };
+		42D1C64F2277E718001F170F /* EasyTextGlobalConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyTextGlobalConfig.h; sourceTree = "<group>"; };
+		42D1C6502277E718001F170F /* EasyAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyAlertView.h; sourceTree = "<group>"; };
+		42D1C6512277E719001F170F /* StrongLoadingEasyShowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StrongLoadingEasyShowVC.m; sourceTree = "<group>"; };
+		42D1C6522277E719001F170F /* StrongLoadingEasyShowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StrongLoadingEasyShowVC.h; sourceTree = "<group>"; };
+		42D1C66B2277E74F001F170F /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		42D1C66C2277E74F001F170F /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		42D1C6702277E833001F170F /* CQAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQAlertViewController.h; sourceTree = "<group>"; };
+		42D1C6712277E833001F170F /* CQAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQAlertViewController.m; sourceTree = "<group>"; };
+		42D1C6732277E833001F170F /* CQPlaceholderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQPlaceholderViewController.m; sourceTree = "<group>"; };
+		42D1C6742277E833001F170F /* CQPlaceholderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQPlaceholderViewController.h; sourceTree = "<group>"; };
+		42D1C6762277E833001F170F /* CQLoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQLoadingViewController.h; sourceTree = "<group>"; };
+		42D1C6772277E833001F170F /* CQLoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQLoadingViewController.m; sourceTree = "<group>"; };
+		42D1C6792277E833001F170F /* CQHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQHUDViewController.m; sourceTree = "<group>"; };
+		42D1C67A2277E833001F170F /* CQHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQHUDViewController.h; sourceTree = "<group>"; };
+		42D1C67C2277E833001F170F /* CQToastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQToastViewController.h; sourceTree = "<group>"; };
+		42D1C67D2277E833001F170F /* CQToastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQToastViewController.m; sourceTree = "<group>"; };
+		42D1C67F2277E833001F170F /* CQContentsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQContentsModel.m; sourceTree = "<group>"; };
+		42D1C6802277E833001F170F /* CQBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQBaseViewController.m; sourceTree = "<group>"; };
+		42D1C6812277E833001F170F /* CQContentsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQContentsModel.h; sourceTree = "<group>"; };
+		42D1C6822277E833001F170F /* CQBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQBaseViewController.h; sourceTree = "<group>"; };
+		42D1C6842277E833001F170F /* CQHomeTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQHomeTabBarController.h; sourceTree = "<group>"; };
+		42D1C6852277E833001F170F /* CQHomeTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQHomeTabBarController.m; sourceTree = "<group>"; };
+		42D1C6872277E834001F170F /* CQLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQLoading.m; sourceTree = "<group>"; };
+		42D1C6882277E834001F170F /* CQLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQLoading.h; sourceTree = "<group>"; };
+		42D1C68B2277E834001F170F /* CQBlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQBlockAlertView.h; sourceTree = "<group>"; };
+		42D1C68C2277E834001F170F /* CQBlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQBlockAlertView.m; sourceTree = "<group>"; };
+		42D1C68E2277E834001F170F /* CQColorfulAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQColorfulAlertView.h; sourceTree = "<group>"; };
+		42D1C68F2277E834001F170F /* CQColorfulAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQColorfulAlertView.m; sourceTree = "<group>"; };
+		42D1C6912277E834001F170F /* CQImageBlockAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQImageBlockAlertView.h; sourceTree = "<group>"; };
+		42D1C6922277E834001F170F /* CQImageBlockAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQImageBlockAlertView.m; sourceTree = "<group>"; };
+		42D1C6942277E834001F170F /* IChuAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IChuAlertView.m; sourceTree = "<group>"; };
+		42D1C6952277E834001F170F /* IChuAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IChuAlertView.h; sourceTree = "<group>"; };
+		42D1C6972277E834001F170F /* CQDeclareAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQDeclareAlertView.m; sourceTree = "<group>"; };
+		42D1C6982277E834001F170F /* CQDeclareAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQDeclareAlertView.h; sourceTree = "<group>"; };
+		42D1C69A2277E834001F170F /* CQWeChatItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQWeChatItemModel.h; sourceTree = "<group>"; };
+		42D1C69B2277E834001F170F /* CQWeChatMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQWeChatMenuView.h; sourceTree = "<group>"; };
+		42D1C69C2277E834001F170F /* CQWeChatItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQWeChatItemCell.m; sourceTree = "<group>"; };
+		42D1C69D2277E834001F170F /* CQWeChatMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQWeChatMenuView.m; sourceTree = "<group>"; };
+		42D1C69E2277E834001F170F /* CQWeChatItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQWeChatItemModel.m; sourceTree = "<group>"; };
+		42D1C69F2277E834001F170F /* CQWeChatItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQWeChatItemCell.h; sourceTree = "<group>"; };
+		42D1C6A12277E834001F170F /* CQPointsRuleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQPointsRuleView.m; sourceTree = "<group>"; };
+		42D1C6A22277E834001F170F /* CQPointsRuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQPointsRuleView.h; sourceTree = "<group>"; };
+		42D1C6A42277E835001F170F /* CQToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQToast.m; sourceTree = "<group>"; };
+		42D1C6A52277E835001F170F /* zan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zan.png; sourceTree = "<group>"; };
+		42D1C6A62277E835001F170F /* CQToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQToast.h; sourceTree = "<group>"; };
+		42D1C6A82277E835001F170F /* CQPlaceholderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQPlaceholderView.m; sourceTree = "<group>"; };
+		42D1C6A92277E835001F170F /* CQPlaceholderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQPlaceholderView.h; sourceTree = "<group>"; };
+		42D1C6AB2277E835001F170F /* CQHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQHUD.m; sourceTree = "<group>"; };
+		42D1C6AC2277E835001F170F /* CQLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQLoadingView.h; sourceTree = "<group>"; };
+		42D1C6AD2277E835001F170F /* CQHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CQHUD.h; sourceTree = "<group>"; };
+		42D1C6AE2277E835001F170F /* CQLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CQLoadingView.m; sourceTree = "<group>"; };
+		42D1C6B02277E835001F170F /* UIButton+CQBlockSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CQBlockSupport.m"; sourceTree = "<group>"; };
+		42D1C6B12277E835001F170F /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
+		42D1C6B22277E835001F170F /* UIView+frameAdjust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frameAdjust.m"; sourceTree = "<group>"; };
+		42D1C6B32277E835001F170F /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
+		42D1C6B42277E835001F170F /* UIButton+CQBlockSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CQBlockSupport.h"; sourceTree = "<group>"; };
+		42D1C6B52277E835001F170F /* UIView+frameAdjust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frameAdjust.h"; sourceTree = "<group>"; };
 		42D42FC6225C720A00EA4AA8 /* ClickableLabelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickableLabelVC.h; sourceTree = "<group>"; };
 		42D42FC7225C720A00EA4AA8 /* ClickableLabelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickableLabelVC.m; sourceTree = "<group>"; };
 		42D42FC9225C723300EA4AA8 /* CountDownLabelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountDownLabelVC.h; sourceTree = "<group>"; };
@@ -3485,14 +3673,15 @@
 			children = (
 				42B3E1172238D88E00379C2D /* Base_2_ViewController.h */,
 				42B3E1182238D88E00379C2D /* Base_2_ViewController.m */,
+				42D1C5F22277E082001F170F /* 9，封装的loading框 */,
 				42E740C22276F59700859877 /* 8，封装的遮罩 */,
 				42E9FA4A226FF3C900D840A2 /* 7，封装的collectionView */,
 				42E9FA49226FF3C000D840A2 /* 6，封装的tableView */,
 				4291607C226EEBD8005B7902 /* 5，通用toast */,
 				4265FAC22265C32600EA45CE /* 4，导航控制器总结 */,
 				42DE3C192264872B00422577 /* 3，5种不同的不等高tablecell写法 */,
-				42CD429F22609AFD00652FA6 /* 1，高效处理圆角 */,
 				4291628722637CD7005C8626 /* 2，高性能处理圆角 */,
+				42CD429F22609AFD00652FA6 /* 1，高效处理圆角 */,
 			);
 			path = "2，UI拔高";
 			sourceTree = "<group>";
@@ -4467,11 +4656,11 @@
 		42BF819E211A89D90090E612 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				42BF81A3211A89D90090E612 /* CQPercentBaseViewController.h */,
+				42BF81A0211A89D90090E612 /* CQPercentBaseViewController.m */,
 				42BF819F211A89D90090E612 /* CQDetailViewController.h */,
-				42BF81A0211A89D90090E612 /* CQBaseViewController.m */,
-				42BF81A1211A89D90090E612 /* CQBaseModel.m */,
 				42BF81A2211A89D90090E612 /* CQDetailViewController.m */,
-				42BF81A3211A89D90090E612 /* CQBaseViewController.h */,
+				42BF81A1211A89D90090E612 /* CQBaseModel.m */,
 				42BF81A4211A89D90090E612 /* CQBaseModel.h */,
 			);
 			path = Base;
@@ -5701,6 +5890,394 @@
 			path = "*17_启动页总结";
 			sourceTree = "<group>";
 		};
+		42D1C5F22277E082001F170F /* 9，封装的loading框 */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C5FC2277E451001F170F /* 4，重量级AlertToast */,
+				42D1C5FB2277E446001F170F /* 3，重量级EasyShow */,
+				42D1C5FA2277E43B001F170F /* 2，轻量级loading下落 */,
+				42D1C5F82277E429001F170F /* 1，轻量级loading */,
+				42D1C5F32277E1D4001F170F /* CommonLoadingVC.h */,
+				42D1C5F42277E1D4001F170F /* CommonLoadingVC.m */,
+				42D1C5F52277E1D4001F170F /* CommonLoadingVC.xib */,
+			);
+			path = "9，封装的loading框";
+			sourceTree = "<group>";
+		};
+		42D1C5F82277E429001F170F /* 1，轻量级loading */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6042277E476001F170F /* LightLoadingVC.h */,
+				42D1C6032277E476001F170F /* LightLoadingVC.m */,
+				42D1C5FD2277E46A001F170F /* BSYLoading */,
+			);
+			path = "1，轻量级loading";
+			sourceTree = "<group>";
+		};
+		42D1C5FA2277E43B001F170F /* 2，轻量级loading下落 */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6092277E4E6001F170F /* Classes */,
+				42D1C6082277E4E5001F170F /* SettingViewController.h */,
+				42D1C6172277E4E6001F170F /* SettingViewController.m */,
+				42D1C6072277E4E5001F170F /* LightLoadingDropVC.h */,
+				42D1C6182277E4E6001F170F /* LightLoadingDropVC.m */,
+			);
+			path = "2，轻量级loading下落";
+			sourceTree = "<group>";
+		};
+		42D1C5FB2277E446001F170F /* 3，重量级EasyShow */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6522277E719001F170F /* StrongLoadingEasyShowVC.h */,
+				42D1C6512277E719001F170F /* StrongLoadingEasyShowVC.m */,
+				42D1C66C2277E74F001F170F /* SecondViewController.h */,
+				42D1C66B2277E74F001F170F /* SecondViewController.m */,
+				42D1C6212277E718001F170F /* EasyShowView */,
+			);
+			path = "3，重量级EasyShow";
+			sourceTree = "<group>";
+		};
+		42D1C5FC2277E451001F170F /* 4，重量级AlertToast */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6892277E834001F170F /* Alert */,
+				42D1C6AF2277E835001F170F /* Category */,
+				42D1C66E2277E833001F170F /* Controllers */,
+				42D1C6AA2277E835001F170F /* HUD */,
+				42D1C6862277E834001F170F /* Loading */,
+				42D1C6A72277E835001F170F /* PlaceholderView */,
+				42D1C6A32277E835001F170F /* Toast */,
+			);
+			path = "4，重量级AlertToast";
+			sourceTree = "<group>";
+		};
+		42D1C5FD2277E46A001F170F /* BSYLoading */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C5FE2277E46A001F170F /* BSYLoading.h */,
+				42D1C5FF2277E46A001F170F /* BSYLoading.m */,
+				42D1C6002277E46A001F170F /* loading.png */,
+			);
+			path = BSYLoading;
+			sourceTree = "<group>";
+		};
+		42D1C6092277E4E6001F170F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6202277E4F5001F170F /* Model */,
+				42D1C60A2277E4E6001F170F /* Category */,
+				42D1C60F2277E4E6001F170F /* Macro */,
+				42D1C6112277E4E6001F170F /* HUD */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		42D1C60A2277E4E6001F170F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C60B2277E4E6001F170F /* NSTimer+MFWeakTimer.h */,
+				42D1C60C2277E4E6001F170F /* UIView+MFFrame.m */,
+				42D1C60D2277E4E6001F170F /* NSTimer+MFWeakTimer.m */,
+				42D1C60E2277E4E6001F170F /* UIView+MFFrame.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		42D1C60F2277E4E6001F170F /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6102277E4E6001F170F /* MFMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		42D1C6112277E4E6001F170F /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6122277E4E6001F170F /* MFNotificationHUD.h */,
+				42D1C6132277E4E6001F170F /* MFHUDManager.h */,
+				42D1C6142277E4E6001F170F /* MFNotificationHUD.m */,
+				42D1C6152277E4E6001F170F /* MFHUDManager.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		42D1C6202277E4F5001F170F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6162277E4E6001F170F /* SettingModel.h */,
+				42D1C6062277E4E5001F170F /* SettingModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42D1C6212277E718001F170F /* EasyShowView */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6222277E718001F170F /* EasyLoadingGlobalConfig.h */,
+				42D1C6232277E718001F170F /* EasyLoadingTypes.m */,
+				42D1C6242277E718001F170F /* UIView+EasyShowExt.h */,
+				42D1C6252277E718001F170F /* EasyEmptyPart.h */,
+				42D1C6262277E718001F170F /* EasyTextConfig.m */,
+				42D1C6272277E718001F170F /* EasyAlertTypes.m */,
+				42D1C6282277E718001F170F /* EasyTextView.m */,
+				42D1C6292277E718001F170F /* EasyAlertConfig.h */,
+				42D1C62A2277E718001F170F /* EasyEmptyConfig.m */,
+				42D1C62B2277E718001F170F /* EasyEmptyView.m */,
+				42D1C62C2277E718001F170F /* EasyTextTypes.h */,
+				42D1C62D2277E718001F170F /* EasyTextBgView.h */,
+				42D1C62E2277E718001F170F /* EasyShowUtils.m */,
+				42D1C62F2277E718001F170F /* EasyAlertPart.h */,
+				42D1C6302277E718001F170F /* EasyEmptyTypes.h */,
+				42D1C6312277E718001F170F /* EasyAlertGlobalConfig.h */,
+				42D1C6322277E718001F170F /* EasyShowLabel.m */,
+				42D1C6332277E718001F170F /* EasyEmptyGlobalConfig.h */,
+				42D1C6342277E718001F170F /* EasyLoadingConfig.m */,
+				42D1C6352277E718001F170F /* EasyAlertItem.m */,
+				42D1C6362277E718001F170F /* EasyAlertView.m */,
+				42D1C6372277E718001F170F /* EasyTextGlobalConfig.m */,
+				42D1C6382277E718001F170F /* EasyLoadingView.m */,
+				42D1C6392277E718001F170F /* EasyAlertTypes.h */,
+				42D1C63A2277E718001F170F /* EasyTextConfig.h */,
+				42D1C63B2277E718001F170F /* EasyEmptyPart.m */,
+				42D1C63C2277E718001F170F /* UIView+EasyShowExt.m */,
+				42D1C63D2277E718001F170F /* EasyLoadingTypes.h */,
+				42D1C63E2277E718001F170F /* EasyLoadingGlobalConfig.m */,
+				42D1C63F2277E718001F170F /* EasyTextBgView.m */,
+				42D1C6402277E718001F170F /* EasyTextTypes.m */,
+				42D1C6412277E718001F170F /* EasyEmptyView.h */,
+				42D1C6422277E718001F170F /* EasyAlertConfig.m */,
+				42D1C6432277E718001F170F /* EasyEmptyConfig.h */,
+				42D1C6442277E718001F170F /* EasyTextView.h */,
+				42D1C6452277E718001F170F /* EasyAlertItem.h */,
+				42D1C6462277E718001F170F /* EasyLoadingConfig.h */,
+				42D1C6472277E718001F170F /* EasyEmptyGlobalConfig.m */,
+				42D1C6482277E718001F170F /* EasyShowLabel.h */,
+				42D1C6492277E718001F170F /* EasyAlertGlobalConfig.m */,
+				42D1C64A2277E718001F170F /* EasyEmptyTypes.m */,
+				42D1C64B2277E718001F170F /* EasyShowUtils.h */,
+				42D1C64C2277E718001F170F /* EasyAlertPart.m */,
+				42D1C64D2277E718001F170F /* EasyShowView.h */,
+				42D1C64E2277E718001F170F /* EasyLoadingView.h */,
+				42D1C64F2277E718001F170F /* EasyTextGlobalConfig.h */,
+				42D1C6502277E718001F170F /* EasyAlertView.h */,
+			);
+			path = EasyShowView;
+			sourceTree = "<group>";
+		};
+		42D1C66E2277E833001F170F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C66F2277E833001F170F /* AlertController */,
+				42D1C6722277E833001F170F /* PlaceholderViewController */,
+				42D1C6752277E833001F170F /* LoadingController */,
+				42D1C6782277E833001F170F /* HudController */,
+				42D1C67B2277E833001F170F /* ToastController */,
+				42D1C67E2277E833001F170F /* Base */,
+				42D1C6832277E833001F170F /* TabBarController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		42D1C66F2277E833001F170F /* AlertController */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6702277E833001F170F /* CQAlertViewController.h */,
+				42D1C6712277E833001F170F /* CQAlertViewController.m */,
+			);
+			path = AlertController;
+			sourceTree = "<group>";
+		};
+		42D1C6722277E833001F170F /* PlaceholderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6732277E833001F170F /* CQPlaceholderViewController.m */,
+				42D1C6742277E833001F170F /* CQPlaceholderViewController.h */,
+			);
+			path = PlaceholderViewController;
+			sourceTree = "<group>";
+		};
+		42D1C6752277E833001F170F /* LoadingController */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6762277E833001F170F /* CQLoadingViewController.h */,
+				42D1C6772277E833001F170F /* CQLoadingViewController.m */,
+			);
+			path = LoadingController;
+			sourceTree = "<group>";
+		};
+		42D1C6782277E833001F170F /* HudController */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C67A2277E833001F170F /* CQHUDViewController.h */,
+				42D1C6792277E833001F170F /* CQHUDViewController.m */,
+			);
+			path = HudController;
+			sourceTree = "<group>";
+		};
+		42D1C67B2277E833001F170F /* ToastController */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C67C2277E833001F170F /* CQToastViewController.h */,
+				42D1C67D2277E833001F170F /* CQToastViewController.m */,
+			);
+			path = ToastController;
+			sourceTree = "<group>";
+		};
+		42D1C67E2277E833001F170F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C67F2277E833001F170F /* CQContentsModel.m */,
+				42D1C6822277E833001F170F /* CQBaseViewController.h */,
+				42D1C6802277E833001F170F /* CQBaseViewController.m */,
+				42D1C6812277E833001F170F /* CQContentsModel.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		42D1C6832277E833001F170F /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6842277E833001F170F /* CQHomeTabBarController.h */,
+				42D1C6852277E833001F170F /* CQHomeTabBarController.m */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		42D1C6862277E834001F170F /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6872277E834001F170F /* CQLoading.m */,
+				42D1C6882277E834001F170F /* CQLoading.h */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		42D1C6892277E834001F170F /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C68A2277E834001F170F /* 带block回调的弹窗 */,
+				42D1C68D2277E834001F170F /* 炫彩UIAlertView */,
+				42D1C6902277E834001F170F /* 带网络图片与block回调的弹窗 */,
+				42D1C6932277E834001F170F /* iChu app的整套弹窗 */,
+				42D1C6962277E834001F170F /* 申报异常弹窗 */,
+				42D1C6992277E834001F170F /* 微信菜单弹窗 */,
+				42D1C6A02277E834001F170F /* 积分规则说明弹窗 */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		42D1C68A2277E834001F170F /* 带block回调的弹窗 */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C68B2277E834001F170F /* CQBlockAlertView.h */,
+				42D1C68C2277E834001F170F /* CQBlockAlertView.m */,
+			);
+			path = "带block回调的弹窗";
+			sourceTree = "<group>";
+		};
+		42D1C68D2277E834001F170F /* 炫彩UIAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C68E2277E834001F170F /* CQColorfulAlertView.h */,
+				42D1C68F2277E834001F170F /* CQColorfulAlertView.m */,
+			);
+			path = "炫彩UIAlertView";
+			sourceTree = "<group>";
+		};
+		42D1C6902277E834001F170F /* 带网络图片与block回调的弹窗 */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6912277E834001F170F /* CQImageBlockAlertView.h */,
+				42D1C6922277E834001F170F /* CQImageBlockAlertView.m */,
+			);
+			path = "带网络图片与block回调的弹窗";
+			sourceTree = "<group>";
+		};
+		42D1C6932277E834001F170F /* iChu app的整套弹窗 */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6942277E834001F170F /* IChuAlertView.m */,
+				42D1C6952277E834001F170F /* IChuAlertView.h */,
+			);
+			path = "iChu app的整套弹窗";
+			sourceTree = "<group>";
+		};
+		42D1C6962277E834001F170F /* 申报异常弹窗 */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6972277E834001F170F /* CQDeclareAlertView.m */,
+				42D1C6982277E834001F170F /* CQDeclareAlertView.h */,
+			);
+			path = "申报异常弹窗";
+			sourceTree = "<group>";
+		};
+		42D1C6992277E834001F170F /* 微信菜单弹窗 */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C69A2277E834001F170F /* CQWeChatItemModel.h */,
+				42D1C69B2277E834001F170F /* CQWeChatMenuView.h */,
+				42D1C69C2277E834001F170F /* CQWeChatItemCell.m */,
+				42D1C69D2277E834001F170F /* CQWeChatMenuView.m */,
+				42D1C69E2277E834001F170F /* CQWeChatItemModel.m */,
+				42D1C69F2277E834001F170F /* CQWeChatItemCell.h */,
+			);
+			path = "微信菜单弹窗";
+			sourceTree = "<group>";
+		};
+		42D1C6A02277E834001F170F /* 积分规则说明弹窗 */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6A12277E834001F170F /* CQPointsRuleView.m */,
+				42D1C6A22277E834001F170F /* CQPointsRuleView.h */,
+			);
+			path = "积分规则说明弹窗";
+			sourceTree = "<group>";
+		};
+		42D1C6A32277E835001F170F /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6A42277E835001F170F /* CQToast.m */,
+				42D1C6A52277E835001F170F /* zan.png */,
+				42D1C6A62277E835001F170F /* CQToast.h */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		42D1C6A72277E835001F170F /* PlaceholderView */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6A82277E835001F170F /* CQPlaceholderView.m */,
+				42D1C6A92277E835001F170F /* CQPlaceholderView.h */,
+			);
+			path = PlaceholderView;
+			sourceTree = "<group>";
+		};
+		42D1C6AA2277E835001F170F /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6AB2277E835001F170F /* CQHUD.m */,
+				42D1C6AC2277E835001F170F /* CQLoadingView.h */,
+				42D1C6AD2277E835001F170F /* CQHUD.h */,
+				42D1C6AE2277E835001F170F /* CQLoadingView.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
+		42D1C6AF2277E835001F170F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C6B02277E835001F170F /* UIButton+CQBlockSupport.m */,
+				42D1C6B12277E835001F170F /* UIColor+Util.h */,
+				42D1C6B22277E835001F170F /* UIView+frameAdjust.m */,
+				42D1C6B32277E835001F170F /* UIColor+Util.m */,
+				42D1C6B42277E835001F170F /* UIButton+CQBlockSupport.h */,
+				42D1C6B52277E835001F170F /* UIView+frameAdjust.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		42D42FBB225C3EEF00EA4AA8 /* *1_view相关 */ = {
 			isa = PBXGroup;
 			children = (
@@ -6552,12 +7129,14 @@
 				429CB100210436960063A0D8 /* h1.jpg in Resources */,
 				429CB0FD210436960063A0D8 /* h3.jpg in Resources */,
 				4238B92E2125547F00AF272E /* img1.jpg in Resources */,
+				42D1C6C92277E836001F170F /* zan.png in Resources */,
 				42DE3C41226487AA00422577 /* AutolayoutTableViewCell.xib in Resources */,
 				42204D76215CB941002447BF /* Images.xcassets in Resources */,
 				429CB0FB210436960063A0D8 /* pageControlDot@3x.png in Resources */,
 				42C519DF211C3E5400742239 /* deals.plist in Resources */,
 				42523F37218BDD540038CEE3 /* BaseCollectionCell.xib in Resources */,
 				42C787DB213D2BA50012188E /* SGCountdownVC.xib in Resources */,
+				42D1C6022277E46A001F170F /* loading.png in Resources */,
 				429CB0FA210436960063A0D8 /* pageControlCurrentDot@3x.png in Resources */,
 				42DD8DCF21A7ACA400CB04A5 /* Swipe.storyboard in Resources */,
 				429CB0FF210436960063A0D8 /* pageControlDot@2x.png in Resources */,
@@ -6618,6 +7197,7 @@
 				42E740D72276F86B00859877 /* CoverDemoVC3.xib in Resources */,
 				42C787E5213D2BC60012188E /* SGImagePositionVC.xib in Resources */,
 				42DE3C63226487E100422577 /* 0.jpg in Resources */,
+				42D1C5F72277E1D4001F170F /* CommonLoadingVC.xib in Resources */,
 				42C51A2B211C456A00742239 /* XMGStatusCell.xib in Resources */,
 				42C787E0213D2BB10012188E /* SGEventVC.xib in Resources */,
 				42C4DF29215F2B3000247949 /* test.jpg in Resources */,
@@ -6702,13 +7282,17 @@
 				4227889C2145F431002B9C13 /* JXCategoryTitleImageCellModel.m in Sources */,
 				4238B93721255B7F00AF272E /* UIImage+BlurGlass.m in Sources */,
 				429CB1C321043C3E0063A0D8 /* UIControl+Category.m in Sources */,
+				42D1C6CF2277E836001F170F /* UIColor+Util.m in Sources */,
 				42CD437322609C6800652FA6 /* QQCornerViewController.m in Sources */,
 				426FEE76221CE67000C4491A /* TextViewRichVC.m in Sources */,
 				42C52C1D2187E284001D7A07 /* NineGridUsingStackVC.m in Sources */,
 				42BF8183211A88680090E612 /* CQFilterAlertController.m in Sources */,
 				42DE3C42226487AA00422577 /* FrameCountTableViewController.m in Sources */,
+				42D1C61F2277E4E7001F170F /* LightLoadingDropVC.m in Sources */,
+				42D1C6B62277E835001F170F /* CQAlertViewController.m in Sources */,
 				42BF8187211A88680090E612 /* CQRegionModel.m in Sources */,
 				426707342121301400046FE6 /* CCTableViewDelegate.m in Sources */,
+				42D1C6C32277E836001F170F /* CQDeclareAlertView.m in Sources */,
 				42C78383213CC45B0012188E /* MonthSectionController.m in Sources */,
 				42DD8DCE21A7ACA400CB04A5 /* AAPLSwipeSecondViewController.m in Sources */,
 				422788AA2145F431002B9C13 /* JXCategoryBaseCell.m in Sources */,
@@ -6738,6 +7322,7 @@
 				42CF2C1921A54B9000951C6D /* TextFieldAndTextViewPackageVC.m in Sources */,
 				429CB1A7210436960063A0D8 /* BaseViewController.m in Sources */,
 				42E9FA48226FEF7200D840A2 /* InputHistoryVC.m in Sources */,
+				42D1C6C12277E836001F170F /* CQImageBlockAlertView.m in Sources */,
 				42DE3C3D226487AA00422577 /* YYKitTableViewController.m in Sources */,
 				4242B951212A72D800C3A2C5 /* YZDisplayViewController.m in Sources */,
 				42C5B6B2214269B700563794 /* WonderfulColorVC.m in Sources */,
@@ -6750,6 +7335,7 @@
 				422789322145F44F002B9C13 /* NestViewController.m in Sources */,
 				42B573BA213FC1FE0089CFDF /* DefaultAnimatedVC.m in Sources */,
 				42C783C6213CCB6A0012188E /* YZMenuButton.m in Sources */,
+				42D1C6662277E719001F170F /* EasyEmptyGlobalConfig.m in Sources */,
 				4265FB0A2265C41D00EA45CE /* NavigationBarAddSegmentController.m in Sources */,
 				42916080226EEC08005B7902 /* BSYAlertBox.m in Sources */,
 				42CD428D2260679100652FA6 /* NSObject+BlockSEL.m in Sources */,
@@ -6757,7 +7343,9 @@
 				426854FC223F2C9400680CDA /* UITableViewController+EasyNavigationExt.m in Sources */,
 				42DD8DCC21A7ACA400CB04A5 /* AAPLCustomPresentationFirstViewController.m in Sources */,
 				422788A42145F431002B9C13 /* JXCategoryNumberCell.m in Sources */,
+				42D1C6562277E719001F170F /* EasyTextView.m in Sources */,
 				42CB7E8021391F3F003397FB /* WebviewLoadingHtmlController.m in Sources */,
+				42D1C6CD2277E836001F170F /* UIButton+CQBlockSupport.m in Sources */,
 				42E740CC2276F83700859877 /* CoverDemoVC1.m in Sources */,
 				42E740DF2276F9A900859877 /* UIView+GKExtension.m in Sources */,
 				425901062140BDE400304394 /* ShareView.m in Sources */,
@@ -6766,6 +7354,8 @@
 				42523F5B218BF9440038CEE3 /* HYBCardVeticalScaleController.m in Sources */,
 				42DD8DC921A7ACA400CB04A5 /* AAPLExternalStoryboardSegue.m in Sources */,
 				429CB1B9210436960063A0D8 /* Demo7ViewController.m in Sources */,
+				42D1C6542277E719001F170F /* EasyTextConfig.m in Sources */,
+				42D1C6552277E719001F170F /* EasyAlertTypes.m in Sources */,
 				42BB66EC20D1231A007BE2CF /* ViewController.m in Sources */,
 				42C783C5213CCB6A0012188E /* YZSortCell.m in Sources */,
 				42CD423C22603B6100652FA6 /* CorverUpKeyboardVC.m in Sources */,
@@ -6781,7 +7371,9 @@
 				42BB66F720D1231B007BE2CF /* main.m in Sources */,
 				42523F62218BF98D0038CEE3 /* PackageCollectionVC.m in Sources */,
 				42523F65218BFA1A0038CEE3 /* HYBCardViewController.m in Sources */,
+				42D1C6582277E719001F170F /* EasyEmptyView.m in Sources */,
 				42B573C1213FC1FE0089CFDF /* DefaultAttributedTitleVC.m in Sources */,
+				42D1C6B92277E835001F170F /* CQHUDViewController.m in Sources */,
 				42C4448E2217F9B2004983B3 /* FoldCellAnimateVC.m in Sources */,
 				4227889D2145F431002B9C13 /* JXCategoryTitleCellModel.m in Sources */,
 				42C787E4213D2BC60012188E /* SGImagePositionVC.m in Sources */,
@@ -6800,6 +7392,7 @@
 				42BF8157211A75010090E612 /* UIViewController+PushAndPop.m in Sources */,
 				42551D89225F1519003DF389 /* SexPickerTool.m in Sources */,
 				429CB0F6210436960063A0D8 /* CustomBannerView.m in Sources */,
+				42D1C6CB2277E836001F170F /* CQHUD.m in Sources */,
 				42551D91225F1519003DF389 /* YLSThreePickerView.m in Sources */,
 				4242B926212A727300C3A2C5 /* Switch2_ViewController.m in Sources */,
 				425901132140BE7700304394 /* UIView+SDAutoLayout.m in Sources */,
@@ -6821,6 +7414,7 @@
 				4238B92C2125534200AF272E /* DimImageViewController.m in Sources */,
 				422788972145F431002B9C13 /* JXCategoryDotCell.m in Sources */,
 				4227889B2145F431002B9C13 /* JXCategoryTitleImageCell.m in Sources */,
+				42D1C65C2277E719001F170F /* EasyAlertItem.m in Sources */,
 				42B573B8213FC1FE0089CFDF /* DefaultDynamicVC.m in Sources */,
 				42DB02F0221E4BD2002B5675 /* CreateQRCodeVC.m in Sources */,
 				42DD8DD321A7ACA400CB04A5 /* AAPLSwipeTransitionInteractionController.m in Sources */,
@@ -6828,6 +7422,7 @@
 				42C5B48421422D4500563794 /* KeywordViewController.m in Sources */,
 				429CB1B0210436960063A0D8 /* Demo3HeaderView.m in Sources */,
 				42C5B6AE2142699B00563794 /* UILabel+Wonderful.m in Sources */,
+				42D1C61B2277E4E6001F170F /* NSTimer+MFWeakTimer.m in Sources */,
 				42CD423222603A9800652FA6 /* JuroTextField.m in Sources */,
 				4227892A2145F44F002B9C13 /* IndicatorCustomizeViewController.m in Sources */,
 				42C4DF20215F2B3000247949 /* TABMethod.m in Sources */,
@@ -6856,8 +7451,10 @@
 				422788932145F431002B9C13 /* JXCategoryIndicatorBackgroundView.m in Sources */,
 				42CB7E61213916EA003397FB /* UILabelRichTextVC.m in Sources */,
 				429B15172160C2FC00F595FC /* STViewController.m in Sources */,
+				42D1C6C02277E836001F170F /* CQColorfulAlertView.m in Sources */,
 				42CB7E342138CF45003397FB /* ScreenShotVC.m in Sources */,
 				42B573CA213FC1FE0089CFDF /* ChildTempPopGestureVC.m in Sources */,
+				42D1C6692277E719001F170F /* EasyAlertPart.m in Sources */,
 				42C5B4C121422F5300563794 /* LinkTextViewController.m in Sources */,
 				42C78372213CC45B0012188E /* RemoveCell.m in Sources */,
 				42CD423822603ACA00652FA6 /* YoshikoTextField.m in Sources */,
@@ -6879,12 +7476,14 @@
 				42DE3C3C226487AA00422577 /* YYKitTableViewCell.m in Sources */,
 				42B573CD213FC1FE0089CFDF /* ChildVCSix.m in Sources */,
 				422788A12145F431002B9C13 /* JXCategoryImageCell.m in Sources */,
+				42D1C61E2277E4E7001F170F /* SettingViewController.m in Sources */,
 				422789202145F44F002B9C13 /* PartnerListView.m in Sources */,
 				42B573B6213FC1FE0089CFDF /* DefaultThreeCoverVC.m in Sources */,
 				42BF819C211A88BB0090E612 /* CQCategoryItemCell.m in Sources */,
 				42523F35218BDD540038CEE3 /* BaseCollectionCell.m in Sources */,
 				42C444782217F666004983B3 /* YUCustomTestController.m in Sources */,
 				42F8D91221EC664F005D0120 /* ConfigAttributedString.m in Sources */,
+				42D1C6C52277E836001F170F /* CQWeChatMenuView.m in Sources */,
 				42DD8DC521A7ACA300CB04A5 /* AAPLCrossDissolveSecondViewController.m in Sources */,
 				42F8D91421EC664F005D0120 /* NSString+RichText.m in Sources */,
 				42C51A27211C445D00742239 /* XMGStatus.m in Sources */,
@@ -6899,9 +7498,12 @@
 				42F7725D2193D0DD00FFD237 /* UIView+JM.m in Sources */,
 				429CB1AC210436960063A0D8 /* YYNews.m in Sources */,
 				42C5B69E2142699B00563794 /* SXCLEntity.m in Sources */,
+				42D1C6BE2277E835001F170F /* CQLoading.m in Sources */,
 				42C78356213CC45B0012188E /* SingleSectionViewController.m in Sources */,
+				42D1C6C62277E836001F170F /* CQWeChatItemModel.m in Sources */,
 				42C78350213CC45B0012188E /* Month.m in Sources */,
 				42DD7F8F2189972900E3B6F3 /* NSArray+Sudoku.m in Sources */,
+				42D1C61D2277E4E7001F170F /* MFHUDManager.m in Sources */,
 				429CB1C221043C3E0063A0D8 /* UIImage+Category.m in Sources */,
 				4267072F2121301400046FE6 /* CCBaseTableHeaderView.m in Sources */,
 				42C5B4C721422F5300563794 /* RegexKitLite.m in Sources */,
@@ -6918,15 +7520,19 @@
 				42C7837A213CC45B0012188E /* StoryboardCell.m in Sources */,
 				4242B941212A72C400C3A2C5 /* YZXiMaViewController.m in Sources */,
 				4242B93C212A72C400C3A2C5 /* YZTXViewController.m in Sources */,
+				42D1C6B82277E835001F170F /* CQLoadingViewController.m in Sources */,
 				429CB0F2210436960063A0D8 /* TYCyclePagerViewCell.m in Sources */,
 				426707442121325B00046FE6 /* ExampleCell.m in Sources */,
 				42551D8F225F1519003DF389 /* YLSTwoPickerView.m in Sources */,
+				42D1C65B2277E719001F170F /* EasyLoadingConfig.m in Sources */,
 				42F8D91321EC664F005D0120 /* TTTAttributedLabel.m in Sources */,
 				422789192145F44F002B9C13 /* TitleViewController.m in Sources */,
+				42D1C6652277E719001F170F /* EasyAlertConfig.m in Sources */,
 				42C7835B213CC45B0012188E /* EmptyViewController.m in Sources */,
 				42B573BB213FC1FE0089CFDF /* DefaultGradientEffectVC.m in Sources */,
 				4291629322637CEC005C8626 /* UIImageView+LMExtension.m in Sources */,
 				42685505223F2C9500680CDA /* EasyNavigationView+RightButton.m in Sources */,
+				42D1C6BA2277E835001F170F /* CQToastViewController.m in Sources */,
 				422789372145F44F002B9C13 /* JXCategoryIndicatorDotLineView.m in Sources */,
 				42E8E116221A84E100A04331 /* PageLoadingVC.m in Sources */,
 				42C5B4C621422F5300563794 /* TYTextStorageParser.m in Sources */,
@@ -6938,6 +7544,7 @@
 				4227888F2145F430002B9C13 /* JXCategoryIndicatorTriangleView.m in Sources */,
 				4265FB102265C41D00EA45CE /* NavigationBarChangeBackgroundViewController.m in Sources */,
 				42C5B4C521422F5300563794 /* TYLabelViewController.m in Sources */,
+				42D1C6532277E719001F170F /* EasyLoadingTypes.m in Sources */,
 				42B182762106D07800C1E682 /* UIButton+Enlarge.m in Sources */,
 				42C783D1213CCBFF0012188E /* YZPullDownMenu.m in Sources */,
 				42C7835E213CC45B0012188E /* DemosViewController.m in Sources */,
@@ -6959,6 +7566,7 @@
 				426854FE223F2C9400680CDA /* EasyKVOInfo.m in Sources */,
 				4259011E2140D42400304394 /* Son2_ViewController.m in Sources */,
 				42C78388213CC45B0012188E /* StoryboardLabelSectionController.m in Sources */,
+				42D1C6192277E4E6001F170F /* SettingModel.m in Sources */,
 				42C5B4DD214251E700563794 /* ShowViewController.m in Sources */,
 				42789BF02154759900F85994 /* Test1ViewController.m in Sources */,
 				42C4449922184E5F004983B3 /* PLTableViewController.m in Sources */,
@@ -6984,6 +7592,7 @@
 				4242B957212A959B00C3A2C5 /* UIImage+IconFont.m in Sources */,
 				42916083226EEC0F005B7902 /* CommonToastVC.m in Sources */,
 				42C78376213CC45B0012188E /* UserHeaderView.m in Sources */,
+				42D1C6622277E719001F170F /* EasyLoadingGlobalConfig.m in Sources */,
 				42C78398213CC4970012188E /* NSArray+Number.m in Sources */,
 				42B573DF213FC1FE0089CFDF /* SGPageContentScrollView.m in Sources */,
 				42C4DF22215F2B3000247949 /* TABViewAnimated.m in Sources */,
@@ -6993,7 +7602,7 @@
 				42BF8155211A75010090E612 /* UIView+Gradient.m in Sources */,
 				42F772692193D0DD00FFD237 /* JMCountDownViewController.m in Sources */,
 				42B573C6213FC1FE0089CFDF /* ChildFirstPopGestureNextVC.m in Sources */,
-				42BF81AC211A89D90090E612 /* CQBaseViewController.m in Sources */,
+				42BF81AC211A89D90090E612 /* CQPercentBaseViewController.m in Sources */,
 				42C783C1213CCB6A0012188E /* YZMoreMenuViewController.m in Sources */,
 				42523F4F218BF9190038CEE3 /* HYBCardCollectionViewCell.m in Sources */,
 				42C7834D213CC45B0012188E /* User.m in Sources */,
@@ -7008,6 +7617,7 @@
 				4265FB0E2265C41D00EA45CE /* NavigationBarBottomLineColorController.m in Sources */,
 				42C78389213CC45B0012188E /* SearchSectionCotroller.m in Sources */,
 				42DE3C3B226487AA00422577 /* SuperTableViewCell.m in Sources */,
+				42D1C65A2277E719001F170F /* EasyShowLabel.m in Sources */,
 				42B573D9213FC1FE0089CFDF /* ChildVCNine.m in Sources */,
 				42685500223F2C9400680CDA /* UIScrollView+EasyNavigationExt.m in Sources */,
 				42B573B7213FC1FE0089CFDF /* DefaultCoverVC.m in Sources */,
@@ -7015,6 +7625,7 @@
 				42E9FA53226FF50C00D840A2 /* HActiveTableView.m in Sources */,
 				426854FA223F2C9400680CDA /* EasyNavigationView+Scroll.m in Sources */,
 				422788A72145F431002B9C13 /* JXCategoryCollectionView.m in Sources */,
+				42D1C6672277E719001F170F /* EasyAlertGlobalConfig.m in Sources */,
 				42DD8DCA21A7ACA400CB04A5 /* AAPLCustomPresentationController.m in Sources */,
 				429CB108210436960063A0D8 /* TAAnimatedDotView.m in Sources */,
 				429CB105210436960063A0D8 /* SDCollectionViewCell.m in Sources */,
@@ -7025,6 +7636,7 @@
 				42B573CF213FC1FE0089CFDF /* ChildVCTwo.m in Sources */,
 				422789142145F44F002B9C13 /* VerticalSectionCategoryHeaderView.m in Sources */,
 				42CF2C1221A54A7D00951C6D /* TextFieldNonPackageVC.m in Sources */,
+				42D1C6572277E719001F170F /* EasyEmptyConfig.m in Sources */,
 				42DE3C3A226487AA00422577 /* SuperTableViewController.m in Sources */,
 				4227892F2145F44F002B9C13 /* SegmentedControlViewController.m in Sources */,
 				422AB70621742BEF0019F1D9 /* LabelLeaveSpaceVC.m in Sources */,
@@ -7042,6 +7654,7 @@
 				426707422121325B00046FE6 /* ExampleHeaderView.m in Sources */,
 				429CB1BC210436960063A0D8 /* DDCollectionViewFlowLayout.m in Sources */,
 				42C5B4C321422F5300563794 /* TextContainerViewController.m in Sources */,
+				42D1C66D2277E750001F170F /* SecondViewController.m in Sources */,
 				42C78385213CC45B0012188E /* DisplaySectionController.m in Sources */,
 				42BF8186211A88680090E612 /* CQDepartmentModel.m in Sources */,
 				42DD8DDB21A7ACA400CB04A5 /* AAPLAdaptivePresentationSecondViewController.m in Sources */,
@@ -7060,6 +7673,7 @@
 				42C4448C2217F9B2004983B3 /* HSFolderCell.m in Sources */,
 				42C4DF23215F2B3000247949 /* UIView+Animated.m in Sources */,
 				42CB7E7E21391F3F003397FB /* HtmlViewController.m in Sources */,
+				42D1C6BF2277E836001F170F /* CQBlockAlertView.m in Sources */,
 				42B573C2213FC1FE0089CFDF /* DefaultZoomVC.m in Sources */,
 				424F05A32275B5CB0039CD62 /* DAAttributedLabel.m in Sources */,
 				4238B93621255B7F00AF272E /* ScreenBlurry.m in Sources */,
@@ -7094,10 +7708,12 @@
 				422788A62145F431002B9C13 /* JXCategoryFactory.m in Sources */,
 				422788962145F431002B9C13 /* JXCategoryIndicatorView.m in Sources */,
 				422789282145F44F002B9C13 /* CellCustomizeViewController.m in Sources */,
+				42D1C6012277E46A001F170F /* BSYLoading.m in Sources */,
 				42CD428C2260679100652FA6 /* NormalVCForPresentation.m in Sources */,
 				42C783C3213CCB6A0012188E /* YZSortViewController.m in Sources */,
 				42C4448B2217F9B2004983B3 /* UIView+SnapShot.m in Sources */,
 				42B573BF213FC1FE0089CFDF /* DefaultStaticVC.m in Sources */,
+				42D1C6632277E719001F170F /* EasyTextBgView.m in Sources */,
 				422788922145F431002B9C13 /* JXCategoryIndicatorComponentView.m in Sources */,
 				42E9FA4D226FF45900D840A2 /* PackageCollectionViewVC.m in Sources */,
 				42551D61225EE826003DF389 /* SWRevealVC.m in Sources */,
@@ -7106,6 +7722,7 @@
 				42C787D6213D2B670012188E /* UIButton+SGCountdown.m in Sources */,
 				42CD427E2260674B00652FA6 /* JCAlertButtonItem.m in Sources */,
 				42C78391213CC45B0012188E /* RemoveSectionController.m in Sources */,
+				42D1C6BC2277E835001F170F /* CQBaseViewController.m in Sources */,
 				429CB1B3210436960063A0D8 /* Demo4ViewController.m in Sources */,
 				429CB0F0210436960063A0D8 /* CustomBannerScrollView.m in Sources */,
 				42C4DF21215F2B3000247949 /* UITableView+Animated.m in Sources */,
@@ -7130,6 +7747,7 @@
 				42DE3A4D2264576400422577 /* FakeWindowClass.m in Sources */,
 				42D42FD7225C7C8500EA4AA8 /* ScrollPageVC.m in Sources */,
 				429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */,
+				42D1C65F2277E719001F170F /* EasyLoadingView.m in Sources */,
 				42C78357213CC45B0012188E /* AnnouncingDepsViewController.m in Sources */,
 				42523F45218BF8F50038CEE3 /* HYBGridCell.m in Sources */,
 				42523F44218BF8F50038CEE3 /* HYBBaseViewController.m in Sources */,
@@ -7151,11 +7769,13 @@
 				42D42FC8225C720A00EA4AA8 /* ClickableLabelVC.m in Sources */,
 				42523F5F218BF96C0038CEE3 /* HYBGridViewController.m in Sources */,
 				42BF8153211A75010090E612 /* UIImage+Transform.m in Sources */,
+				42D1C6C82277E836001F170F /* CQToast.m in Sources */,
 				42C787DF213D2BB10012188E /* SGEventVC.m in Sources */,
 				422789182145F44F002B9C13 /* TitleImageViewController.m in Sources */,
 				426854FB223F2C9400680CDA /* EasyNavigationButton.m in Sources */,
 				42B573E7213FCD7C0089CFDF /* AlertViewController.m in Sources */,
 				422789162145F44F002B9C13 /* VerticalListCellModel.m in Sources */,
+				42D1C6CC2277E836001F170F /* CQLoadingView.m in Sources */,
 				42DD8DD021A7ACA400CB04A5 /* AAPLSwipeTransitionAnimator.m in Sources */,
 				42CD42852260674B00652FA6 /* JCAlertStyle.m in Sources */,
 				42C4449822184E5F004983B3 /* PLCustomTableViewController.m in Sources */,
@@ -7181,8 +7801,10 @@
 				429CB106210436960063A0D8 /* TADotView.m in Sources */,
 				42C783A2213CC99E0012188E /* DropDownViewController.m in Sources */,
 				42BF8185211A88680090E612 /* CQFilterBaseModel.m in Sources */,
+				42D1C66A2277E719001F170F /* StrongLoadingEasyShowVC.m in Sources */,
 				42C4448D2217F9B2004983B3 /* HSRotatedView.m in Sources */,
 				425901212140D43300304394 /* Son3_ViewController.m in Sources */,
+				42D1C6C42277E836001F170F /* CQWeChatItemCell.m in Sources */,
 				4265FB0B2265C41D00EA45CE /* NavigationBackgroundImageController.m in Sources */,
 				42B573E2213FC1FE0089CFDF /* SGPageTitleViewConfigure.m in Sources */,
 				42CFD904215E008C005792BD /* UIColor+Category.m in Sources */,
@@ -7226,16 +7848,19 @@
 				42CD42832260674B00652FA6 /* UIImage+JCColor2Image.m in Sources */,
 				42DD8DD821A7ACA400CB04A5 /* AAPLAdaptivePresentationController.m in Sources */,
 				4227892D2145F44F002B9C13 /* NaviSegmentedControlViewController.m in Sources */,
+				42D1C6CE2277E836001F170F /* UIView+frameAdjust.m in Sources */,
 				42C78367213CC45B0012188E /* SupplementaryViewController.m in Sources */,
 				42C5B4CA21422F5300563794 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				42BF819D211A88BB0090E612 /* CQCategoryView.m in Sources */,
 				42CF2C1E21A54BFC00951C6D /* TextViewNonPackageVC.m in Sources */,
 				429B15152160C2FC00F595FC /* CustomSegmentControl.m in Sources */,
+				42D1C6682277E719001F170F /* EasyEmptyTypes.m in Sources */,
 				42C5B6A92142699B00563794 /* SXHeadLine.m in Sources */,
 				42DE3C66226487E100422577 /* TestDataModel.m in Sources */,
 				42C78381213CC45B0012188E /* EmbeddedSectionController.m in Sources */,
 				42F7725B2193D0DD00FFD237 /* JMButton.m in Sources */,
 				42B573DE213FC1FE0089CFDF /* UIView+SGPagingView.m in Sources */,
+				42D1C5F62277E1D4001F170F /* CommonLoadingVC.m in Sources */,
 				42551D8C225F1519003DF389 /* DatePickerButton.m in Sources */,
 				42C5B4BC21422F5300563794 /* LabelXibViewController.m in Sources */,
 				42C7835D213CC45B0012188E /* StoryboardViewController.m in Sources */,
@@ -7244,17 +7869,23 @@
 				422788A52145F431002B9C13 /* JXCategoryNumberCellModel.m in Sources */,
 				429CB11D210436960063A0D8 /* SWRevealViewController.m in Sources */,
 				422789242145F44F002B9C13 /* JXImageViewController.m in Sources */,
+				42D1C61C2277E4E6001F170F /* MFNotificationHUD.m in Sources */,
 				42B573BC213FC1FE0089CFDF /* DefaultFixedVC.m in Sources */,
 				426707322121301400046FE6 /* UITableView+CCUtil.m in Sources */,
+				42D1C6592277E719001F170F /* EasyShowUtils.m in Sources */,
 				42C78363213CC45B0012188E /* CollectionViewController.m in Sources */,
 				425901042140BDE400304394 /* FontSizeView.m in Sources */,
 				42C52C232187E9F4001D7A07 /* NineGridFrameView.m in Sources */,
 				429B15112160C2FC00F595FC /* UIScrollView+STRefresh.m in Sources */,
 				42C5B6AB2142699B00563794 /* SXColorLabel.m in Sources */,
+				42D1C61A2277E4E6001F170F /* UIView+MFFrame.m in Sources */,
 				42E9FA47226FEF7200D840A2 /* AutoCompleteTextView.m in Sources */,
 				42B3E1272238D95F00379C2D /* DWTabBarController.m in Sources */,
 				42523F5A218BF9440038CEE3 /* HYBCardVerticalScaleLayout.m in Sources */,
 				4291629522637CEC005C8626 /* CornerTableViewCell.m in Sources */,
+				42D1C6BD2277E835001F170F /* CQHomeTabBarController.m in Sources */,
+				42D1C6642277E719001F170F /* EasyTextTypes.m in Sources */,
+				42D1C65E2277E719001F170F /* EasyTextGlobalConfig.m in Sources */,
 				42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */,
 				422789122145F44F002B9C13 /* VerticalListCell.m in Sources */,
 				42C5B4B921422F5300563794 /* AutoLayoutLinkImageTextViewController.m in Sources */,
@@ -7284,6 +7915,7 @@
 				42523F54218BF9350038CEE3 /* HYBCardScaleFlowLayout.m in Sources */,
 				42C444892217F9B2004983B3 /* DemoFoldingCell.m in Sources */,
 				42C5B6A82142699B00563794 /* SXColorListPage.m in Sources */,
+				42D1C6B72277E835001F170F /* CQPlaceholderViewController.m in Sources */,
 				422789132145F44F002B9C13 /* VerticalListViewController.m in Sources */,
 				42C7836A213CC45B0012188E /* NibSelfSizingCell.m in Sources */,
 				42C78353213CC45B0012188E /* Post.m in Sources */,
@@ -7293,6 +7925,7 @@
 				42CB7E7D21391F3F003397FB /* LxButton.m in Sources */,
 				422789102145F44F002B9C13 /* DotViewController.m in Sources */,
 				429CB0F5210436960063A0D8 /* TYCyclePagerTransformLayout.m in Sources */,
+				42D1C6CA2277E836001F170F /* CQPlaceholderView.m in Sources */,
 				42BB66E920D1231A007BE2CF /* AppDelegate.m in Sources */,
 				429CB1AF210436960063A0D8 /* Demo3Cell.m in Sources */,
 				42DD8DC321A7ACA300CB04A5 /* AAPLSlideTransitionAnimator.m in Sources */,
@@ -7308,6 +7941,7 @@
 				42B182842106D83700C1E682 /* UIView+Extension.m in Sources */,
 				4242B94F212A72D800C3A2C5 /* YZFlowLayout.m in Sources */,
 				42C7836F213CC45B0012188E /* SearchCell.m in Sources */,
+				42D1C6602277E719001F170F /* EasyEmptyPart.m in Sources */,
 				42C5B6A42142699B00563794 /* SXColorWonderfulDemoPage.m in Sources */,
 				42F772672193D0DD00FFD237 /* JMBootstrapViewController.m in Sources */,
 				42C5B48221422D4500563794 /* MYCoreTextViewController.m in Sources */,
@@ -7319,6 +7953,7 @@
 				4259010A2140BDE400304394 /* SelectedListView.m in Sources */,
 				42CD42842260674B00652FA6 /* NSAttributedString+JCCalculateSize.m in Sources */,
 				42B3E1192238D88E00379C2D /* Base_2_ViewController.m in Sources */,
+				42D1C6C72277E836001F170F /* CQPointsRuleView.m in Sources */,
 				42DD8DC021A7ACA300CB04A5 /* AAPLMenuViewController.m in Sources */,
 				42685501223F2C9500680CDA /* UIViewController+EasyNavigationExt.m in Sources */,
 				42F772542193D0DD00FFD237 /* JMBootstrapButton.m in Sources */,
@@ -7326,9 +7961,11 @@
 				42C7837B213CC45B0012188E /* PhotoCell.m in Sources */,
 				42C78358213CC45B0012188E /* DiffTableViewController.m in Sources */,
 				42C5B48321422D4500563794 /* showCell.m in Sources */,
+				42D1C6052277E476001F170F /* LightLoadingVC.m in Sources */,
 				42C5B4C221422F5300563794 /* TextTableViewController.m in Sources */,
 				429B151D2160C2FD00F595FC /* STHeaderView.m in Sources */,
 				42CD42872260674B00652FA6 /* JCAlertView.m in Sources */,
+				42D1C65D2277E719001F170F /* EasyAlertView.m in Sources */,
 				426707352121301400046FE6 /* CCBaseTableFooterView.m in Sources */,
 				42CD423922603ACA00652FA6 /* MinoruTextField.m in Sources */,
 				42C5B4CB21422F5300563794 /* TExamTextField.m in Sources */,
@@ -7360,6 +7997,7 @@
 				42DB02FB221E50B6002B5675 /* UIImage+HTImageWithCenterLogo.m in Sources */,
 				4242B93E212A72C400C3A2C5 /* RequesCover.m in Sources */,
 				42C787DA213D2BA50012188E /* SGCountdownVC.m in Sources */,
+				42D1C6BB2277E835001F170F /* CQContentsModel.m in Sources */,
 				422789342145F44F002B9C13 /* JXCategoryTitleAttributeView.m in Sources */,
 				4265FB0F2265C41D00EA45CE /* NavigationBarBackgroundViewController.m in Sources */,
 				42DD8DC221A7ACA300CB04A5 /* AAPLSlideTransitionDelegate.m in Sources */,
@@ -7372,8 +8010,10 @@
 				42CFD943215E1E27005792BD /* WCYADImageView.m in Sources */,
 				426854F9223F2C9400680CDA /* EasyNavigationOptions.m in Sources */,
 				42CB7E8C213939C3003397FB /* MemoTableViewController.m in Sources */,
+				42D1C6612277E719001F170F /* UIView+EasyShowExt.m in Sources */,
 				42EFA8322109BBCC00AFC827 /* TabView_2_ViewController.m in Sources */,
 				42685508223F2C9500680CDA /* EasyNavigationView+Add.m in Sources */,
+				42D1C6C22277E836001F170F /* IChuAlertView.m in Sources */,
 				42DD8D8621A7A11E00CB04A5 /* Transition.m in Sources */,
 				42CD427F2260674B00652FA6 /* JCPresentController.m in Sources */,
 				42B573D0213FC1FE0089CFDF /* ChildVCFive.m in Sources */,

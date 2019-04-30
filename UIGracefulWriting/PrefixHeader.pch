@@ -15,6 +15,7 @@
 #import "Categories.h"
 #import "CQBaseModel.h"
 #import "CQBaseViewController.h"
+#import "CQPercentBaseViewController.h"
 
 #import "LxButton.h"
 #import "UILabel+LXLabel.h"

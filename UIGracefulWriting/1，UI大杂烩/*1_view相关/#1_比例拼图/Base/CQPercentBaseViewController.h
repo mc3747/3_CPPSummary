@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CQBaseViewController : UIViewController
+@interface CQPercentBaseViewController : UIViewController
 
 /** 简书链接 */
 @property (nonatomic, copy) NSString *jianshuURL;

@@ -77,12 +77,11 @@ static NSString *const cellId = @"CELLID";
         if ([self respondsToSelector:@selector(automaticallyAdjustsScrollViewInsets)]) {
             self.automaticallyAdjustsScrollViewInsets = NO;
         }
-        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 49 - 64) style:UITableViewStyleGrouped];
+        _tableView.tableHeaderView.height = 0.01f;
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.backgroundColor = [UIColor whiteColor];
-        _tableView.contentInset = UIEdgeInsetsMake(64, 0, 0, 0);
-        _tableView.scrollIndicatorInsets = UIEdgeInsetsMake(64, 0, 0, 0);
         
         if (@available(iOS 11.0, *)) {
             _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;

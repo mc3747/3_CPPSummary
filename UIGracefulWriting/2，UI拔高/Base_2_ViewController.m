@@ -19,7 +19,7 @@
     self.title = @"UI高阶";
     
     self.vcNameArray = @[
-  @[@"",@"NavigationSummaryVC",@"",@"",@"",@"PackageTableViewVC",@"PackageCollectionViewVC",@"",@"CommonToastVC",@"",@"",@"",@"CommonCoverVC"],
+  @[@"",@"NavigationSummaryVC",@"",@"",@"",@"PackageTableViewVC",@"PackageCollectionViewVC",@"",@"CommonToastVC",@"CommonLoadingVC",@"",@"",@"CommonCoverVC"],
   @[@"",@"",@"",@""],
   @[@"QQCornerViewController",@"EffectiveCornerVC"],
   @[@"",@"",@"",@"NotEquelCellHeightVC"],
