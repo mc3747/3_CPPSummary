@@ -708,6 +708,17 @@
 		42D1C6CD2277E836001F170F /* UIButton+CQBlockSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6B02277E835001F170F /* UIButton+CQBlockSupport.m */; };
 		42D1C6CE2277E836001F170F /* UIView+frameAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6B22277E835001F170F /* UIView+frameAdjust.m */; };
 		42D1C6CF2277E836001F170F /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C6B32277E835001F170F /* UIColor+Util.m */; };
+		42D1C76F22783F39001F170F /* CoverKeyboardHeavyClassVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C76D22783F39001F170F /* CoverKeyboardHeavyClassVC.m */; };
+		42D1C77022783F39001F170F /* CoverKeyboardHeavyClassVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C76E22783F39001F170F /* CoverKeyboardHeavyClassVC.xib */; };
+		42D1C77822783F55001F170F /* NSObject+WHC_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C77222783F55001F170F /* NSObject+WHC_Extension.m */; };
+		42D1C77922783F55001F170F /* WHC_KeyboardHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C77622783F55001F170F /* WHC_KeyboardHeaderView.m */; };
+		42D1C77A22783F55001F170F /* WHC_KeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C77722783F55001F170F /* WHC_KeyboardManager.m */; };
+		42D1C78522783F7C001F170F /* StyleVC3.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C77C22783F78001F170F /* StyleVC3.m */; };
+		42D1C78622783F7C001F170F /* StyleVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C77D22783F78001F170F /* StyleVC1.xib */; };
+		42D1C78722783F7C001F170F /* StyleVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C77F22783F79001F170F /* StyleVC2.m */; };
+		42D1C78822783F7C001F170F /* StyleVC3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C78022783F7A001F170F /* StyleVC3.xib */; };
+		42D1C78922783F7C001F170F /* StyleVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D1C78322783F7B001F170F /* StyleVC1.m */; };
+		42D1C78A22783F7C001F170F /* StyleVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42D1C78422783F7B001F170F /* StyleVC2.xib */; };
 		42D42FC8225C720A00EA4AA8 /* ClickableLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FC7225C720A00EA4AA8 /* ClickableLabelVC.m */; };
 		42D42FCB225C723300EA4AA8 /* CountDownLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FCA225C723300EA4AA8 /* CountDownLabelVC.m */; };
 		42D42FCE225C74FC00EA4AA8 /* EnlargeButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D42FCD225C74FC00EA4AA8 /* EnlargeButtonVC.m */; };
@@ -2220,6 +2231,24 @@
 		42D1C6B32277E835001F170F /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
 		42D1C6B42277E835001F170F /* UIButton+CQBlockSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CQBlockSupport.h"; sourceTree = "<group>"; };
 		42D1C6B52277E835001F170F /* UIView+frameAdjust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+frameAdjust.h"; sourceTree = "<group>"; };
+		42D1C76C22783F39001F170F /* CoverKeyboardHeavyClassVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverKeyboardHeavyClassVC.h; sourceTree = "<group>"; };
+		42D1C76D22783F39001F170F /* CoverKeyboardHeavyClassVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverKeyboardHeavyClassVC.m; sourceTree = "<group>"; };
+		42D1C76E22783F39001F170F /* CoverKeyboardHeavyClassVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverKeyboardHeavyClassVC.xib; sourceTree = "<group>"; };
+		42D1C77222783F55001F170F /* NSObject+WHC_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+WHC_Extension.m"; sourceTree = "<group>"; };
+		42D1C77322783F55001F170F /* WHC_KeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHC_KeyboardManager.h; sourceTree = "<group>"; };
+		42D1C77422783F55001F170F /* WHC_KeyboardHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHC_KeyboardHeaderView.h; sourceTree = "<group>"; };
+		42D1C77522783F55001F170F /* NSObject+WHC_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+WHC_Extension.h"; sourceTree = "<group>"; };
+		42D1C77622783F55001F170F /* WHC_KeyboardHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHC_KeyboardHeaderView.m; sourceTree = "<group>"; };
+		42D1C77722783F55001F170F /* WHC_KeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHC_KeyboardManager.m; sourceTree = "<group>"; };
+		42D1C77C22783F78001F170F /* StyleVC3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleVC3.m; sourceTree = "<group>"; };
+		42D1C77D22783F78001F170F /* StyleVC1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StyleVC1.xib; sourceTree = "<group>"; };
+		42D1C77E22783F79001F170F /* StyleVC2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleVC2.h; sourceTree = "<group>"; };
+		42D1C77F22783F79001F170F /* StyleVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleVC2.m; sourceTree = "<group>"; };
+		42D1C78022783F7A001F170F /* StyleVC3.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StyleVC3.xib; sourceTree = "<group>"; };
+		42D1C78122783F7A001F170F /* StyleVC3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleVC3.h; sourceTree = "<group>"; };
+		42D1C78222783F7A001F170F /* StyleVC1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleVC1.h; sourceTree = "<group>"; };
+		42D1C78322783F7B001F170F /* StyleVC1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StyleVC1.m; sourceTree = "<group>"; };
+		42D1C78422783F7B001F170F /* StyleVC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StyleVC2.xib; sourceTree = "<group>"; };
 		42D42FC6225C720A00EA4AA8 /* ClickableLabelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickableLabelVC.h; sourceTree = "<group>"; };
 		42D42FC7225C720A00EA4AA8 /* ClickableLabelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickableLabelVC.m; sourceTree = "<group>"; };
 		42D42FC9225C723300EA4AA8 /* CountDownLabelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountDownLabelVC.h; sourceTree = "<group>"; };
@@ -5635,14 +5664,14 @@
 			path = "8，便签效果";
 			sourceTree = "<group>";
 		};
-		42CD41E9226033CE00652FA6 /* #3_键盘遮挡问题 */ = {
+		42CD41E9226033CE00652FA6 /* #3_键盘遮挡问题（轻量级） */ = {
 			isa = PBXGroup;
 			children = (
 				42CD423D22603B8400652FA6 /* FloatableKeyboard */,
 				42CD423A22603B6100652FA6 /* CorverUpKeyboardVC.h */,
 				42CD423B22603B6100652FA6 /* CorverUpKeyboardVC.m */,
 			);
-			path = "#3_键盘遮挡问题";
+			path = "#3_键盘遮挡问题（轻量级）";
 			sourceTree = "<group>";
 		};
 		42CD41EA2260377600652FA6 /* 简单封装 */ = {
@@ -6278,6 +6307,47 @@
 			path = Category;
 			sourceTree = "<group>";
 		};
+		42D1C76B22783EBE001F170F /* #6_键盘遮挡问题（中量级） */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C77B22783F6C001F170F /* Demos */,
+				42D1C77122783F55001F170F /* WHC_KeyboradManager(OC) */,
+				42D1C76C22783F39001F170F /* CoverKeyboardHeavyClassVC.h */,
+				42D1C76D22783F39001F170F /* CoverKeyboardHeavyClassVC.m */,
+				42D1C76E22783F39001F170F /* CoverKeyboardHeavyClassVC.xib */,
+			);
+			path = "#6_键盘遮挡问题（中量级）";
+			sourceTree = "<group>";
+		};
+		42D1C77122783F55001F170F /* WHC_KeyboradManager(OC) */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C77222783F55001F170F /* NSObject+WHC_Extension.m */,
+				42D1C77322783F55001F170F /* WHC_KeyboardManager.h */,
+				42D1C77422783F55001F170F /* WHC_KeyboardHeaderView.h */,
+				42D1C77522783F55001F170F /* NSObject+WHC_Extension.h */,
+				42D1C77622783F55001F170F /* WHC_KeyboardHeaderView.m */,
+				42D1C77722783F55001F170F /* WHC_KeyboardManager.m */,
+			);
+			path = "WHC_KeyboradManager(OC)";
+			sourceTree = "<group>";
+		};
+		42D1C77B22783F6C001F170F /* Demos */ = {
+			isa = PBXGroup;
+			children = (
+				42D1C78222783F7A001F170F /* StyleVC1.h */,
+				42D1C78322783F7B001F170F /* StyleVC1.m */,
+				42D1C77D22783F78001F170F /* StyleVC1.xib */,
+				42D1C77E22783F79001F170F /* StyleVC2.h */,
+				42D1C77F22783F79001F170F /* StyleVC2.m */,
+				42D1C78422783F7B001F170F /* StyleVC2.xib */,
+				42D1C78122783F7A001F170F /* StyleVC3.h */,
+				42D1C77C22783F78001F170F /* StyleVC3.m */,
+				42D1C78022783F7A001F170F /* StyleVC3.xib */,
+			);
+			path = Demos;
+			sourceTree = "<group>";
+		};
 		42D42FBB225C3EEF00EA4AA8 /* *1_view相关 */ = {
 			isa = PBXGroup;
 			children = (
@@ -6307,9 +6377,10 @@
 			children = (
 				42B182502106C61800C1E682 /* #1_TextField输入浮动效果 */,
 				42DD7F8C2189314800E3B6F3 /* #2_输入过滤 */,
-				42CD41E9226033CE00652FA6 /* #3_键盘遮挡问题 */,
+				42CD41E9226033CE00652FA6 /* #3_键盘遮挡问题（轻量级） */,
 				42CD424A22603EE700652FA6 /* #4_输入带空格的封装 */,
 				42E9FA3E226FEF4000D840A2 /* #5_输入值记录联想 */,
+				42D1C76B22783EBE001F170F /* #6_键盘遮挡问题（中量级） */,
 			);
 			path = "*7_textField相关";
 			sourceTree = "<group>";
@@ -7133,6 +7204,7 @@
 				42DE3C41226487AA00422577 /* AutolayoutTableViewCell.xib in Resources */,
 				42204D76215CB941002447BF /* Images.xcassets in Resources */,
 				429CB0FB210436960063A0D8 /* pageControlDot@3x.png in Resources */,
+				42D1C77022783F39001F170F /* CoverKeyboardHeavyClassVC.xib in Resources */,
 				42C519DF211C3E5400742239 /* deals.plist in Resources */,
 				42523F37218BDD540038CEE3 /* BaseCollectionCell.xib in Resources */,
 				42C787DB213D2BA50012188E /* SGCountdownVC.xib in Resources */,
@@ -7153,6 +7225,7 @@
 				4242B93F212A72C400C3A2C5 /* RequesCover.xib in Resources */,
 				42C51A28211C445D00742239 /* statuses.plist in Resources */,
 				42551D8D225F1519003DF389 /* DatePickerTool.xib in Resources */,
+				42D1C78A22783F7C001F170F /* StyleVC2.xib in Resources */,
 				42BF819A211A88BB0090E612 /* jigsaw_list.json in Resources */,
 				42BF817F211A88680090E612 /* house_list.json in Resources */,
 				42C5B4B821422F5300563794 /* LabelXibViewController.xib in Resources */,
@@ -7184,6 +7257,7 @@
 				42BF8181211A88680090E612 /* region_list.json in Resources */,
 				42685506223F2C9500680CDA /* EasyNavButton.bundle in Resources */,
 				42E740C72276F7F500859877 /* CommonCoverVC.xib in Resources */,
+				42D1C78622783F7C001F170F /* StyleVC1.xib in Resources */,
 				429CB0FE210436960063A0D8 /* h2.jpg in Resources */,
 				42C78392213CC45B0012188E /* Demo.storyboard in Resources */,
 				42BB66EF20D1231A007BE2CF /* Main.storyboard in Resources */,
@@ -7195,6 +7269,7 @@
 				429CB0F8210436960063A0D8 /* pageControlCurrentDot@2x.png in Resources */,
 				42B573D6213FC1FE0089CFDF /* ChildVCThree.xib in Resources */,
 				42E740D72276F86B00859877 /* CoverDemoVC3.xib in Resources */,
+				42D1C78822783F7C001F170F /* StyleVC3.xib in Resources */,
 				42C787E5213D2BC60012188E /* SGImagePositionVC.xib in Resources */,
 				42DE3C63226487E100422577 /* 0.jpg in Resources */,
 				42D1C5F72277E1D4001F170F /* CommonLoadingVC.xib in Resources */,
@@ -7307,6 +7382,7 @@
 				42BF81AE211A89D90090E612 /* CQDetailViewController.m in Sources */,
 				425901142140BE7700304394 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				42DD8DC721A7ACA400CB04A5 /* AAPLCrossDissolveTransitionAnimator.m in Sources */,
+				42D1C77922783F55001F170F /* WHC_KeyboardHeaderView.m in Sources */,
 				42C4DF25215F2B3000247949 /* UITableViewCell+Animated.m in Sources */,
 				426707452121325B00046FE6 /* ExampleDynamicHeightCell.m in Sources */,
 				42DE3C44226487AA00422577 /* AsyncDisplayKitTableViewController.m in Sources */,
@@ -7411,6 +7487,7 @@
 				42C7836C213CC45B0012188E /* CalendarDayCell.m in Sources */,
 				42EFA83B2109BBF700AFC827 /* TabView_5_ViewController.m in Sources */,
 				42C7835C213CC45B0012188E /* SearchViewController.m in Sources */,
+				42D1C77822783F55001F170F /* NSObject+WHC_Extension.m in Sources */,
 				4238B92C2125534200AF272E /* DimImageViewController.m in Sources */,
 				422788972145F431002B9C13 /* JXCategoryDotCell.m in Sources */,
 				4227889B2145F431002B9C13 /* JXCategoryTitleImageCell.m in Sources */,
@@ -7509,6 +7586,7 @@
 				42C5B4C721422F5300563794 /* RegexKitLite.m in Sources */,
 				42CD424422603B8400652FA6 /* UIView+FloatKeyboard.m in Sources */,
 				42C444792217F666004983B3 /* FoldCellVC.m in Sources */,
+				42D1C78922783F7C001F170F /* StyleVC1.m in Sources */,
 				429CB1BB210436960063A0D8 /* RPSlidingMenuCell.m in Sources */,
 				42E740E02276F9A900859877 /* GKCover.m in Sources */,
 				42C787D2213D2B420012188E /* UIButton+SGImagePosition.m in Sources */,
@@ -7592,6 +7670,7 @@
 				4242B957212A959B00C3A2C5 /* UIImage+IconFont.m in Sources */,
 				42916083226EEC0F005B7902 /* CommonToastVC.m in Sources */,
 				42C78376213CC45B0012188E /* UserHeaderView.m in Sources */,
+				42D1C78522783F7C001F170F /* StyleVC3.m in Sources */,
 				42D1C6622277E719001F170F /* EasyLoadingGlobalConfig.m in Sources */,
 				42C78398213CC4970012188E /* NSArray+Number.m in Sources */,
 				42B573DF213FC1FE0089CFDF /* SGPageContentScrollView.m in Sources */,
@@ -7713,6 +7792,7 @@
 				42C783C3213CCB6A0012188E /* YZSortViewController.m in Sources */,
 				42C4448B2217F9B2004983B3 /* UIView+SnapShot.m in Sources */,
 				42B573BF213FC1FE0089CFDF /* DefaultStaticVC.m in Sources */,
+				42D1C78722783F7C001F170F /* StyleVC2.m in Sources */,
 				42D1C6632277E719001F170F /* EasyTextBgView.m in Sources */,
 				422788922145F431002B9C13 /* JXCategoryIndicatorComponentView.m in Sources */,
 				42E9FA4D226FF45900D840A2 /* PackageCollectionViewVC.m in Sources */,
@@ -7786,6 +7866,7 @@
 				42523F4E218BF9190038CEE3 /* HYBCardFlowLayout.m in Sources */,
 				42B3E1162238D87F00379C2D /* Base_3_ViewController.m in Sources */,
 				42C5B6A02142699B00563794 /* SXDataSource.m in Sources */,
+				42D1C77A22783F55001F170F /* WHC_KeyboardManager.m in Sources */,
 				4227891C2145F44F002B9C13 /* PagingViewTableHeaderView.m in Sources */,
 				429CB1B2210436960063A0D8 /* WaterfallCell.m in Sources */,
 				42C5B48821422D4500563794 /* tableViewModel.m in Sources */,
@@ -7987,6 +8068,7 @@
 				42C78378213CC45B0012188E /* LabelCell.m in Sources */,
 				42C5B4BD21422F5300563794 /* ParseTextViewController.m in Sources */,
 				426707432121325B00046FE6 /* ExampleData.m in Sources */,
+				42D1C76F22783F39001F170F /* CoverKeyboardHeavyClassVC.m in Sources */,
 				424F05A72275B5E50039CD62 /* DAViewController.m in Sources */,
 				429B15142160C2FC00F595FC /* CustomTableView.m in Sources */,
 				42C5B4C821422F5300563794 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,

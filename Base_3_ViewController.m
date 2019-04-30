@@ -17,9 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"UI借鉴";
-    self.vcNameArray = @[@[@"DemosViewController",@""],@[@"",@"",@""]];
+    self.vcNameArray = @[@[@"DemosViewController",@""],@[@"",@"",@"",@""]];
     
-    self.subtitleArray = @[@[@"IGListKit案例",@"MJRefresh"],@[@"BSY.com封装的很好",@"BAUIKit非常好",@"CaiWanFeng封装的不错"]];
+    self.subtitleArray = @[@[@"IGListKit案例",@"MJRefresh"],@[@"BSY.com封装的很好",@"BAUIKit非常好",@"CaiWanFeng封装的不错",@"吴海超(WHC)不错"]];
     
     
 }
