@@ -19,9 +19,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [self.view setBackgroundColor:[UIColor brownColor]];
     self.title = @"QQCorner";
-    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:self.view.bounds];
+    UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - 49 - 64)];
     [self.view addSubview:scrollView];
     self.scrollView = scrollView;
     [self configureSubviews];

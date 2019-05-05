@@ -20,10 +20,15 @@
     
     self.vcNameArray = @[
   @[@"",@"NavigationSummaryVC",@"",@"",@"",@"PackageTableViewVC",@"PackageCollectionViewVC",@"",@"CommonToastVC",@"CommonLoadingVC",@"",@"",@"CommonCoverVC"],
+  
   @[@"",@"",@"",@""],
-  @[@"QQCornerViewController",@"EffectiveCornerVC"],
+  
+  @[@"RoundCornerSummaryVC",@"ImageCacheVC"],
+  
   @[@"",@"",@"",@"NotEquelCellHeightVC"],
+  
   @[@"",@""]
+  
   ];
     
     self.subtitleArray =
@@ -32,7 +37,7 @@
 
 @[@"工具类",@"分类",@"常用颜色",@"常用字体"],
 
-@[@"高效处理圆角",@"高性能处理圆角"],
+@[@"圆角总结",@"图片缓存总结"],
 
 @[@"文本展示",@"label和tableViewCell不等高",@"TableView封装数据源",@"TableViewCell不等高的5种写法"],
 

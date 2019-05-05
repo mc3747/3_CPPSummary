@@ -207,6 +207,21 @@
 		42789BF02154759900F85994 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BEF2154759900F85994 /* Test1ViewController.m */; };
 		42789BF3215475AB00F85994 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BF2215475AB00F85994 /* Test2ViewController.m */; };
 		42789C602154EEAB00F85994 /* CommonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789C5F2154EEAB00F85994 /* CommonMethod.m */; };
+		427B493F227E76B200675542 /* RoundCornerSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B493D227E76B200675542 /* RoundCornerSummaryVC.m */; };
+		427B4940227E76B200675542 /* RoundCornerSummaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427B493E227E76B200675542 /* RoundCornerSummaryVC.xib */; };
+		427B4945227E889400675542 /* ImageCacheVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B4943227E889400675542 /* ImageCacheVC.m */; };
+		427B4946227E889400675542 /* ImageCacheVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427B4944227E889400675542 /* ImageCacheVC.xib */; };
+		427B494E227EB75B00675542 /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 427B4949227EB75A00675542 /* apps.plist */; };
+		427B494F227EB75B00675542 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 427B494A227EB75A00675542 /* 1.png */; };
+		427B4950227EB75B00675542 /* MemoryAndDiskCacheVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B494C227EB75A00675542 /* MemoryAndDiskCacheVC.m */; };
+		427B4951227EB75B00675542 /* ZWJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B494D227EB75B00675542 /* ZWJModel.m */; };
+		427B4981227EC32300675542 /* MemoryAndDiskCachePackageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B497F227EC32200675542 /* MemoryAndDiskCachePackageVC.m */; };
+		427B4983227EE6DF00675542 /* MemoryAndDiskCachePackageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427B4982227EE6DE00675542 /* MemoryAndDiskCachePackageVC.xib */; };
+		427B4993227EEB1D00675542 /* LDSDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B4986227EEB1C00675542 /* LDSDownloaderOperation.m */; };
+		427B4994227EEB1D00675542 /* LDSYImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B4988227EEB1C00675542 /* LDSYImageDownloader.m */; };
+		427B4995227EEB1D00675542 /* UIImageView+Cache.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B498B227EEB1C00675542 /* UIImageView+Cache.m */; };
+		427B4996227EEB1D00675542 /* LDSCacheManage.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B498E227EEB1C00675542 /* LDSCacheManage.m */; };
+		427B4997227EEB1D00675542 /* LDSImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B4992227EEB1D00675542 /* LDSImageCache.m */; };
 		42916080226EEC08005B7902 /* BSYAlertBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291607E226EEC08005B7902 /* BSYAlertBox.m */; };
 		42916083226EEC0F005B7902 /* CommonToastVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42916082226EEC0F005B7902 /* CommonToastVC.m */; };
 		4291629322637CEC005C8626 /* UIImageView+LMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291628922637CEB005C8626 /* UIImageView+LMExtension.m */; };
@@ -1266,6 +1281,31 @@
 		42789C5D2154EC5400F85994 /* IPhoneSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPhoneSize.h; sourceTree = "<group>"; };
 		42789C5E2154EEAA00F85994 /* CommonMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMethod.h; sourceTree = "<group>"; };
 		42789C5F2154EEAB00F85994 /* CommonMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonMethod.m; sourceTree = "<group>"; };
+		427B493C227E76B200675542 /* RoundCornerSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundCornerSummaryVC.h; sourceTree = "<group>"; };
+		427B493D227E76B200675542 /* RoundCornerSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundCornerSummaryVC.m; sourceTree = "<group>"; };
+		427B493E227E76B200675542 /* RoundCornerSummaryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundCornerSummaryVC.xib; sourceTree = "<group>"; };
+		427B4942227E889400675542 /* ImageCacheVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCacheVC.h; sourceTree = "<group>"; };
+		427B4943227E889400675542 /* ImageCacheVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCacheVC.m; sourceTree = "<group>"; };
+		427B4944227E889400675542 /* ImageCacheVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCacheVC.xib; sourceTree = "<group>"; };
+		427B4948227EB75A00675542 /* ZWJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWJModel.h; sourceTree = "<group>"; };
+		427B4949227EB75A00675542 /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
+		427B494A227EB75A00675542 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		427B494B227EB75A00675542 /* MemoryAndDiskCacheVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryAndDiskCacheVC.h; sourceTree = "<group>"; };
+		427B494C227EB75A00675542 /* MemoryAndDiskCacheVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryAndDiskCacheVC.m; sourceTree = "<group>"; };
+		427B494D227EB75B00675542 /* ZWJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWJModel.m; sourceTree = "<group>"; };
+		427B497F227EC32200675542 /* MemoryAndDiskCachePackageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemoryAndDiskCachePackageVC.m; sourceTree = "<group>"; };
+		427B4980227EC32200675542 /* MemoryAndDiskCachePackageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemoryAndDiskCachePackageVC.h; sourceTree = "<group>"; };
+		427B4982227EE6DE00675542 /* MemoryAndDiskCachePackageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoryAndDiskCachePackageVC.xib; sourceTree = "<group>"; };
+		427B4986227EEB1C00675542 /* LDSDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSDownloaderOperation.m; sourceTree = "<group>"; };
+		427B4987227EEB1C00675542 /* LDSImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSImageDownloader.h; sourceTree = "<group>"; };
+		427B4988227EEB1C00675542 /* LDSYImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSYImageDownloader.m; sourceTree = "<group>"; };
+		427B4989227EEB1C00675542 /* LDSDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSDownloaderOperation.h; sourceTree = "<group>"; };
+		427B498B227EEB1C00675542 /* UIImageView+Cache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Cache.m"; sourceTree = "<group>"; };
+		427B498C227EEB1C00675542 /* UIImageView+Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Cache.h"; sourceTree = "<group>"; };
+		427B498E227EEB1C00675542 /* LDSCacheManage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSCacheManage.m; sourceTree = "<group>"; };
+		427B498F227EEB1C00675542 /* LDSCacheManage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSCacheManage.h; sourceTree = "<group>"; };
+		427B4991227EEB1D00675542 /* LDSImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSImageCache.h; sourceTree = "<group>"; };
+		427B4992227EEB1D00675542 /* LDSImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSImageCache.m; sourceTree = "<group>"; };
 		4291607E226EEC08005B7902 /* BSYAlertBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSYAlertBox.m; sourceTree = "<group>"; };
 		4291607F226EEC08005B7902 /* BSYAlertBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSYAlertBox.h; sourceTree = "<group>"; };
 		42916081226EEC0F005B7902 /* CommonToastVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonToastVC.h; sourceTree = "<group>"; };
@@ -3624,6 +3664,131 @@
 			path = "3，UITextView系列";
 			sourceTree = "<group>";
 		};
+		427B493B227E763000675542 /* 1，圆角总结 */ = {
+			isa = PBXGroup;
+			children = (
+				427B493C227E76B200675542 /* RoundCornerSummaryVC.h */,
+				427B493D227E76B200675542 /* RoundCornerSummaryVC.m */,
+				427B493E227E76B200675542 /* RoundCornerSummaryVC.xib */,
+				42CD429F22609AFD00652FA6 /* 1，高效圆角1-QQCorner */,
+				4291628722637CD7005C8626 /* 2，高效圆角2-分类 */,
+			);
+			path = "1，圆角总结";
+			sourceTree = "<group>";
+		};
+		427B4941227E885F00675542 /* 2，图片缓存 */ = {
+			isa = PBXGroup;
+			children = (
+				427B4942227E889400675542 /* ImageCacheVC.h */,
+				427B4943227E889400675542 /* ImageCacheVC.m */,
+				427B4944227E889400675542 /* ImageCacheVC.xib */,
+				427B4947227EB71600675542 /* 1，内存缓存和磁盘缓存思路案例 */,
+				427B4954227EC2D900675542 /* 2，内存缓存和磁盘缓存小封装 */,
+			);
+			path = "2，图片缓存";
+			sourceTree = "<group>";
+		};
+		427B4947227EB71600675542 /* 1，内存缓存和磁盘缓存思路案例 */ = {
+			isa = PBXGroup;
+			children = (
+				427B494B227EB75A00675542 /* MemoryAndDiskCacheVC.h */,
+				427B494C227EB75A00675542 /* MemoryAndDiskCacheVC.m */,
+				427B4953227EB77400675542 /* Model */,
+				427B4952227EB76500675542 /* Sources */,
+			);
+			path = "1，内存缓存和磁盘缓存思路案例";
+			sourceTree = "<group>";
+		};
+		427B4952227EB76500675542 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				427B494A227EB75A00675542 /* 1.png */,
+				427B4949227EB75A00675542 /* apps.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		427B4953227EB77400675542 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				427B4948227EB75A00675542 /* ZWJModel.h */,
+				427B494D227EB75B00675542 /* ZWJModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		427B4954227EC2D900675542 /* 2，内存缓存和磁盘缓存小封装 */ = {
+			isa = PBXGroup;
+			children = (
+				427B4980227EC32200675542 /* MemoryAndDiskCachePackageVC.h */,
+				427B497F227EC32200675542 /* MemoryAndDiskCachePackageVC.m */,
+				427B4982227EE6DE00675542 /* MemoryAndDiskCachePackageVC.xib */,
+				427B4955227EC31600675542 /* LYCache */,
+			);
+			path = "2，内存缓存和磁盘缓存小封装";
+			sourceTree = "<group>";
+		};
+		427B4955227EC31600675542 /* LYCache */ = {
+			isa = PBXGroup;
+			children = (
+				427B4990227EEB1D00675542 /* Cache */,
+				427B498A227EEB1C00675542 /* Category */,
+				427B4984227EEB1C00675542 /* LYCacheImage */,
+				427B498D227EEB1C00675542 /* Manage */,
+			);
+			path = LYCache;
+			sourceTree = "<group>";
+		};
+		427B4984227EEB1C00675542 /* LYCacheImage */ = {
+			isa = PBXGroup;
+			children = (
+				427B4985227EEB1C00675542 /* DownImage */,
+			);
+			name = LYCacheImage;
+			path = "../../../../../../../../Downloads/LDSImageCache-master/LYCache/LYCacheImage";
+			sourceTree = "<group>";
+		};
+		427B4985227EEB1C00675542 /* DownImage */ = {
+			isa = PBXGroup;
+			children = (
+				427B4986227EEB1C00675542 /* LDSDownloaderOperation.m */,
+				427B4987227EEB1C00675542 /* LDSImageDownloader.h */,
+				427B4988227EEB1C00675542 /* LDSYImageDownloader.m */,
+				427B4989227EEB1C00675542 /* LDSDownloaderOperation.h */,
+			);
+			path = DownImage;
+			sourceTree = "<group>";
+		};
+		427B498A227EEB1C00675542 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				427B498B227EEB1C00675542 /* UIImageView+Cache.m */,
+				427B498C227EEB1C00675542 /* UIImageView+Cache.h */,
+			);
+			name = Category;
+			path = "../../../../../../../../Downloads/LDSImageCache-master/LYCache/Category";
+			sourceTree = "<group>";
+		};
+		427B498D227EEB1C00675542 /* Manage */ = {
+			isa = PBXGroup;
+			children = (
+				427B498E227EEB1C00675542 /* LDSCacheManage.m */,
+				427B498F227EEB1C00675542 /* LDSCacheManage.h */,
+			);
+			name = Manage;
+			path = "../../../../../../../../Downloads/LDSImageCache-master/LYCache/Manage";
+			sourceTree = "<group>";
+		};
+		427B4990227EEB1D00675542 /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				427B4991227EEB1D00675542 /* LDSImageCache.h */,
+				427B4992227EEB1D00675542 /* LDSImageCache.m */,
+			);
+			name = Cache;
+			path = "../../../../../../../../Downloads/LDSImageCache-master/LYCache/Cache";
+			sourceTree = "<group>";
+		};
 		4291607C226EEBD8005B7902 /* 5，通用toast */ = {
 			isa = PBXGroup;
 			children = (
@@ -3643,7 +3808,7 @@
 			path = BSYAlertBox;
 			sourceTree = "<group>";
 		};
-		4291628722637CD7005C8626 /* 2，高性能处理圆角 */ = {
+		4291628722637CD7005C8626 /* 2，高效圆角2-分类 */ = {
 			isa = PBXGroup;
 			children = (
 				4291629722637CF6005C8626 /* EffectiveCornerVC.h */,
@@ -3652,16 +3817,16 @@
 				4291629022637CEB005C8626 /* JPFPSStatus */,
 				4291628D22637CEB005C8626 /* View */,
 			);
-			path = "2，高性能处理圆角";
+			path = "2，高效圆角2-分类";
 			sourceTree = "<group>";
 		};
 		4291628822637CEB005C8626 /* CornerCategory */ = {
 			isa = PBXGroup;
 			children = (
-				4291628922637CEB005C8626 /* UIImageView+LMExtension.m */,
-				4291628A22637CEB005C8626 /* UIView+LMExtension.m */,
-				4291628B22637CEB005C8626 /* UIView+LMExtension.h */,
 				4291628C22637CEB005C8626 /* UIImageView+LMExtension.h */,
+				4291628922637CEB005C8626 /* UIImageView+LMExtension.m */,
+				4291628B22637CEB005C8626 /* UIView+LMExtension.h */,
+				4291628A22637CEB005C8626 /* UIView+LMExtension.m */,
 			);
 			path = CornerCategory;
 			sourceTree = "<group>";
@@ -3709,8 +3874,8 @@
 				4291607C226EEBD8005B7902 /* 5，通用toast */,
 				4265FAC22265C32600EA45CE /* 4，导航控制器总结 */,
 				42DE3C192264872B00422577 /* 3，5种不同的不等高tablecell写法 */,
-				4291628722637CD7005C8626 /* 2，高性能处理圆角 */,
-				42CD429F22609AFD00652FA6 /* 1，高效处理圆角 */,
+				427B4941227E885F00675542 /* 2，图片缓存 */,
+				427B493B227E763000675542 /* 1，圆角总结 */,
 			);
 			path = "2，UI拔高";
 			sourceTree = "<group>";
@@ -5853,14 +6018,14 @@
 			path = PopoverView;
 			sourceTree = "<group>";
 		};
-		42CD429F22609AFD00652FA6 /* 1，高效处理圆角 */ = {
+		42CD429F22609AFD00652FA6 /* 1，高效圆角1-QQCorner */ = {
 			isa = PBXGroup;
 			children = (
 				42CD437222609C6800652FA6 /* QQCornerViewController.h */,
 				42CD437122609C6700652FA6 /* QQCornerViewController.m */,
 				42CD42A022609BF700652FA6 /* QQCorner */,
 			);
-			path = "1，高效处理圆角";
+			path = "1，高效圆角1-QQCorner";
 			sourceTree = "<group>";
 		};
 		42CD42A022609BF700652FA6 /* QQCorner */ = {
@@ -7208,6 +7373,7 @@
 				42C519DF211C3E5400742239 /* deals.plist in Resources */,
 				42523F37218BDD540038CEE3 /* BaseCollectionCell.xib in Resources */,
 				42C787DB213D2BA50012188E /* SGCountdownVC.xib in Resources */,
+				427B4940227E76B200675542 /* RoundCornerSummaryVC.xib in Resources */,
 				42D1C6022277E46A001F170F /* loading.png in Resources */,
 				429CB0FA210436960063A0D8 /* pageControlCurrentDot@3x.png in Resources */,
 				42DD8DCF21A7ACA400CB04A5 /* Swipe.storyboard in Resources */,
@@ -7236,6 +7402,7 @@
 				42DD8DCB21A7ACA400CB04A5 /* CustomPresentation.storyboard in Resources */,
 				42DE3C5F226487E100422577 /* 5.jpg in Resources */,
 				429CB0FC210436960063A0D8 /* h4.jpg in Resources */,
+				427B4946227E889400675542 /* ImageCacheVC.xib in Resources */,
 				42523F39218BDEAD0038CEE3 /* NineGridUsingCollectionVC.xib in Resources */,
 				429CB0F7210436960063A0D8 /* placeholder@2x.png in Resources */,
 				42B573D8213FC1FE0089CFDF /* ChildVCTwo.xib in Resources */,
@@ -7243,6 +7410,7 @@
 				42DE3C5E226487E100422577 /* 4.jpg in Resources */,
 				42E740D22276F85100859877 /* CoverDemoVC2.xib in Resources */,
 				42B573D1213FC1FE0089CFDF /* ChildVCFull.xib in Resources */,
+				427B494F227EB75B00675542 /* 1.png in Resources */,
 				42B573CE213FC1FE0089CFDF /* ChildFirstPopGestureNextVC.xib in Resources */,
 				42DD8DDD21A7AEA600CB04A5 /* AAPLMenuViewController.storyboard in Resources */,
 				422789392145F539002B9C13 /* Switch4_ViewController.storyboard in Resources */,
@@ -7252,6 +7420,7 @@
 				42C4449322184DBD004983B3 /* SwipEditorCellVC.xib in Resources */,
 				42C5B6F621426E9800563794 /* WonderfulColor.storyboard in Resources */,
 				42551D8A225F1519003DF389 /* SexPickerTool.xib in Resources */,
+				427B4983227EE6DF00675542 /* MemoryAndDiskCachePackageVC.xib in Resources */,
 				42C4DF2A215F2B3000247949 /* head.jpg in Resources */,
 				42DD8DC421A7ACA300CB04A5 /* Slide.storyboard in Resources */,
 				42BF8181211A88680090E612 /* region_list.json in Resources */,
@@ -7262,6 +7431,7 @@
 				42C78392213CC45B0012188E /* Demo.storyboard in Resources */,
 				42BB66EF20D1231A007BE2CF /* Main.storyboard in Resources */,
 				42B573DA213FC1FE0089CFDF /* ChildVCFour.xib in Resources */,
+				427B494E227EB75B00675542 /* apps.plist in Resources */,
 				42C7836B213CC45B0012188E /* NibSelfSizingCell.xib in Resources */,
 				42DE3C62226487E100422577 /* 1.jpg in Resources */,
 				42DE3C60226487E100422577 /* 2.jpg in Resources */,
@@ -7354,6 +7524,7 @@
 				42551D9D225F1647003DF389 /* ZFButton.m in Sources */,
 				42CB7E8121391F3F003397FB /* TextviewLoadingHtmlController.m in Sources */,
 				42CD425C226043A200652FA6 /* UITextView+WZB.m in Sources */,
+				427B4993227EEB1D00675542 /* LDSDownloaderOperation.m in Sources */,
 				4227889C2145F431002B9C13 /* JXCategoryTitleImageCellModel.m in Sources */,
 				4238B93721255B7F00AF272E /* UIImage+BlurGlass.m in Sources */,
 				429CB1C321043C3E0063A0D8 /* UIControl+Category.m in Sources */,
@@ -7375,6 +7546,7 @@
 				42C783D0213CCBFF0012188E /* YZCover.m in Sources */,
 				42C78368213CC45B0012188E /* CalendarViewController.m in Sources */,
 				4268550E223F348500680CDA /* JDCustomNavigationController.m in Sources */,
+				427B4997227EEB1D00675542 /* LDSImageCache.m in Sources */,
 				4227891E2145F44F002B9C13 /* PagingViewController.m in Sources */,
 				422AB7002174278A0019F1D9 /* LabelAlignVC.m in Sources */,
 				422788952145F431002B9C13 /* JXCategoryIndicatorCell.m in Sources */,
@@ -7401,6 +7573,7 @@
 				42D1C6C12277E836001F170F /* CQImageBlockAlertView.m in Sources */,
 				42DE3C3D226487AA00422577 /* YYKitTableViewController.m in Sources */,
 				4242B951212A72D800C3A2C5 /* YZDisplayViewController.m in Sources */,
+				427B4995227EEB1D00675542 /* UIImageView+Cache.m in Sources */,
 				42C5B6B2214269B700563794 /* WonderfulColorVC.m in Sources */,
 				42F7725C2193D0DD00FFD237 /* JMRuntime.m in Sources */,
 				429CB0F3210436960063A0D8 /* TYPageControl.m in Sources */,
@@ -7556,6 +7729,7 @@
 				42D1C61E2277E4E7001F170F /* SettingViewController.m in Sources */,
 				422789202145F44F002B9C13 /* PartnerListView.m in Sources */,
 				42B573B6213FC1FE0089CFDF /* DefaultThreeCoverVC.m in Sources */,
+				427B493F227E76B200675542 /* RoundCornerSummaryVC.m in Sources */,
 				42BF819C211A88BB0090E612 /* CQCategoryItemCell.m in Sources */,
 				42523F35218BDD540038CEE3 /* BaseCollectionCell.m in Sources */,
 				42C444782217F666004983B3 /* YUCustomTestController.m in Sources */,
@@ -7606,6 +7780,7 @@
 				42F8D91321EC664F005D0120 /* TTTAttributedLabel.m in Sources */,
 				422789192145F44F002B9C13 /* TitleViewController.m in Sources */,
 				42D1C6652277E719001F170F /* EasyAlertConfig.m in Sources */,
+				427B4994227EEB1D00675542 /* LDSYImageDownloader.m in Sources */,
 				42C7835B213CC45B0012188E /* EmptyViewController.m in Sources */,
 				42B573BB213FC1FE0089CFDF /* DefaultGradientEffectVC.m in Sources */,
 				4291629322637CEC005C8626 /* UIImageView+LMExtension.m in Sources */,
@@ -7661,6 +7836,7 @@
 				42C5B4C021422F5300563794 /* ImageTextViewController.m in Sources */,
 				42DB02FC221E50B6002B5675 /* HTQRCodeCreater.m in Sources */,
 				42CD41EE2260378E00652FA6 /* WSTextField.m in Sources */,
+				427B4996227EEB1D00675542 /* LDSCacheManage.m in Sources */,
 				42C52C1A2187E270001D7A07 /* NineGridUsingMasonryVC.m in Sources */,
 				42CD424622603B8400652FA6 /* FKTextView.m in Sources */,
 				42C78371213CC45B0012188E /* DetailLabelCell.m in Sources */,
@@ -7801,6 +7977,7 @@
 				42F7725F2193D0DD00FFD237 /* UIColor+JM.m in Sources */,
 				42C787D6213D2B670012188E /* UIButton+SGCountdown.m in Sources */,
 				42CD427E2260674B00652FA6 /* JCAlertButtonItem.m in Sources */,
+				427B4981227EC32300675542 /* MemoryAndDiskCachePackageVC.m in Sources */,
 				42C78391213CC45B0012188E /* RemoveSectionController.m in Sources */,
 				42D1C6BC2277E835001F170F /* CQBaseViewController.m in Sources */,
 				429CB1B3210436960063A0D8 /* Demo4ViewController.m in Sources */,
@@ -7901,6 +8078,7 @@
 				42B573D7213FC1FE0089CFDF /* ChildVCThree.m in Sources */,
 				42551D9F225F1647003DF389 /* PlaceModel.m in Sources */,
 				42C7834C213CC45B0012188E /* DemoItem.m in Sources */,
+				427B4950227EB75B00675542 /* MemoryAndDiskCacheVC.m in Sources */,
 				42C78377213CC45B0012188E /* MonthTitleCell.m in Sources */,
 				4227891F2145F44F002B9C13 /* TestListBaseView.m in Sources */,
 				426854FF223F2C9400680CDA /* UIView+EasyNavigationExt.m in Sources */,
@@ -7965,6 +8143,7 @@
 				42523F5A218BF9440038CEE3 /* HYBCardVerticalScaleLayout.m in Sources */,
 				4291629522637CEC005C8626 /* CornerTableViewCell.m in Sources */,
 				42D1C6BD2277E835001F170F /* CQHomeTabBarController.m in Sources */,
+				427B4951227EB75B00675542 /* ZWJModel.m in Sources */,
 				42D1C6642277E719001F170F /* EasyTextTypes.m in Sources */,
 				42D1C65E2277E719001F170F /* EasyTextGlobalConfig.m in Sources */,
 				42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */,
@@ -8065,6 +8244,7 @@
 				422789232145F44F002B9C13 /* JXPagingMainTableView.m in Sources */,
 				42C7837C213CC45B0012188E /* ImageCell.m in Sources */,
 				42B573E0213FC1FE0089CFDF /* SGPageContentCollectionView.m in Sources */,
+				427B4945227E889400675542 /* ImageCacheVC.m in Sources */,
 				42C78378213CC45B0012188E /* LabelCell.m in Sources */,
 				42C5B4BD21422F5300563794 /* ParseTextViewController.m in Sources */,
 				426707432121325B00046FE6 /* ExampleData.m in Sources */,
