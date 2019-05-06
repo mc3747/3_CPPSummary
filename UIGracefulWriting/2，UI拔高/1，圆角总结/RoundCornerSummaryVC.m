@@ -9,6 +9,7 @@
 #import "RoundCornerSummaryVC.h"
 #import "QQCornerViewController.h"
 #import "EffectiveCornerVC.h"
+#import "JMCornerViewController.h"
 
 @interface RoundCornerSummaryVC ()
 @property (weak, nonatomic) IBOutlet UIImageView *imageView1;
@@ -92,6 +93,10 @@
     [self.navigationController pushViewController:vc animated:YES];
 }
 
+- (IBAction)test3:(id)sender {
+    JMCornerViewController *vc = [JMCornerViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 #pragma mark -  处理image圆角的方法
 //方法1
 - (UIImage *)imageWithRoundedCornersSize:(float)cornerRadius usingImage:(UIImage *)original

@@ -124,7 +124,7 @@
 @[@"CQJigsawViewController"],
 @[@"ClickableLabelVC",@"DAViewController",@"LabelLeaveSpaceVC",@"CountDownLabelVC",@"LabelAlignVC",@"AdjustSizeVC",@"MoneyAnimationVC"],
 @[@"EnlargeButtonVC",@"SGImagePositionVC",@"UnderlineButtonVC",@"SGEventVC",@"SGCountdownVC",@"JMButtonVC"],
-@[@"TabView_1_ViewController",@"TabView_2_ViewController",@"TabView_3_ViewController",@"TabView_4_ViewController",@"TabView_5_ViewController",@"TabView_6_ViewController",@"NoDataTableViewVC",@"MemoTableViewController"],
+@[@"TabView_1_ViewController",@"TabView_2_ViewController",@"TabView_3_ViewController",@"GracefulTableViewVC",@"TabView_5_ViewController",@"TabView_6_ViewController",@"NoDataTableViewVC",@"MemoTableViewController"],
   @[@"ScrollPageVC"],
   @[@"SWRevealVC"],
   @[@"InputFloatVC",@"InputFilterVC",@"CorverUpKeyboardVC",@"CoverKeyboardHeavyClassVC",@"InputWithSpaceVC",@"InputHistoryVC"],

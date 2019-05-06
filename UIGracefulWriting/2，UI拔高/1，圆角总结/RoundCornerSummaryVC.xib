@@ -78,7 +78,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jg9-mS-h2V">
-                    <rect key="frame" x="0.0" y="374" width="414" height="150"/>
+                    <rect key="frame" x="0.0" y="374" width="414" height="300"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3，第三方通用圆角和高效圆角" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qtq-KG-C4O">
                             <rect key="frame" x="8" y="8" width="236" height="21"/>
@@ -87,7 +87,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anq-Fb-aeJ">
-                            <rect key="frame" x="0.0" y="49" width="414" height="50"/>
+                            <rect key="frame" x="0.0" y="39" width="414" height="50"/>
                             <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="Ahc-ee-xNH"/>
@@ -98,7 +98,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YV-uw-LuQ">
-                            <rect key="frame" x="0.0" y="119" width="414" height="50"/>
+                            <rect key="frame" x="0.0" y="99" width="414" height="50"/>
                             <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="sDx-a8-21j"/>
@@ -108,17 +108,31 @@
                                 <action selector="test2:" destination="-1" eventType="touchUpInside" id="lor-0v-3o5"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wy-Kb-Dtr">
+                            <rect key="frame" x="0.0" y="159" width="414" height="50"/>
+                            <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fg8-B9-7eb"/>
+                            </constraints>
+                            <state key="normal" title="3，高效圆角3示例"/>
+                            <connections>
+                                <action selector="test3:" destination="-1" eventType="touchUpInside" id="GOE-ho-ovE"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.087506058469999995" green="0.79567833129999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
-                        <constraint firstItem="anq-Fb-aeJ" firstAttribute="top" secondItem="Qtq-KG-C4O" secondAttribute="bottom" constant="20" id="1lO-4e-XhH"/>
-                        <constraint firstItem="6YV-uw-LuQ" firstAttribute="top" secondItem="anq-Fb-aeJ" secondAttribute="bottom" constant="20" id="5Qs-dd-Crb"/>
+                        <constraint firstItem="anq-Fb-aeJ" firstAttribute="top" secondItem="Qtq-KG-C4O" secondAttribute="bottom" constant="10" id="1lO-4e-XhH"/>
+                        <constraint firstItem="6YV-uw-LuQ" firstAttribute="top" secondItem="anq-Fb-aeJ" secondAttribute="bottom" constant="10" id="5Qs-dd-Crb"/>
+                        <constraint firstItem="2wy-Kb-Dtr" firstAttribute="leading" secondItem="Jg9-mS-h2V" secondAttribute="leading" id="LRe-Ng-a9B"/>
+                        <constraint firstItem="2wy-Kb-Dtr" firstAttribute="top" secondItem="6YV-uw-LuQ" secondAttribute="bottom" constant="10" id="LZd-4t-30F"/>
                         <constraint firstAttribute="trailing" secondItem="anq-Fb-aeJ" secondAttribute="trailing" id="QFj-xx-4Nh"/>
                         <constraint firstAttribute="trailing" secondItem="6YV-uw-LuQ" secondAttribute="trailing" id="RtC-PI-qFw"/>
                         <constraint firstItem="anq-Fb-aeJ" firstAttribute="leading" secondItem="Jg9-mS-h2V" secondAttribute="leading" id="VDD-iW-MO5"/>
                         <constraint firstItem="6YV-uw-LuQ" firstAttribute="leading" secondItem="Jg9-mS-h2V" secondAttribute="leading" id="Y1V-Tn-4Ei"/>
-                        <constraint firstAttribute="height" constant="150" id="em1-5T-eah"/>
+                        <constraint firstAttribute="height" constant="300" id="em1-5T-eah"/>
                         <constraint firstItem="Qtq-KG-C4O" firstAttribute="leading" secondItem="Jg9-mS-h2V" secondAttribute="leadingMargin" id="jUE-0H-3eu"/>
+                        <constraint firstAttribute="trailing" secondItem="2wy-Kb-Dtr" secondAttribute="trailing" id="kWx-vv-Rme"/>
                         <constraint firstItem="Qtq-KG-C4O" firstAttribute="top" secondItem="Jg9-mS-h2V" secondAttribute="topMargin" id="t7v-1M-JAD"/>
                     </constraints>
                 </view>
