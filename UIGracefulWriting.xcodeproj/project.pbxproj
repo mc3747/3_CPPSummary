@@ -864,6 +864,13 @@
 		42DE3C64226487E100422577 /* ImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE3C55226487E000422577 /* ImageCache.m */; };
 		42DE3C65226487E100422577 /* FPSDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE3C59226487E000422577 /* FPSDisplay.m */; };
 		42DE3C66226487E100422577 /* TestDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42DE3C5C226487E000422577 /* TestDataModel.m */; };
+		42E574C32282ACAE00DA5E83 /* ModuleACellConfigHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E574B42282ACAD00DA5E83 /* ModuleACellConfigHelper.m */; };
+		42E574C42282ACAE00DA5E83 /* KTModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E574B72282ACAD00DA5E83 /* KTModel.m */; };
+		42E574C52282ACAE00DA5E83 /* KTTableViewCell02.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E574BA2282ACAE00DA5E83 /* KTTableViewCell02.m */; };
+		42E574C62282ACAE00DA5E83 /* KTTableViewCell01.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E574BC2282ACAE00DA5E83 /* KTTableViewCell01.m */; };
+		42E574C72282ACAE00DA5E83 /* KTTableViewCell00.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E574BE2282ACAE00DA5E83 /* KTTableViewCell00.m */; };
+		42E574C82282ACAE00DA5E83 /* KTTableViewCell03.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E574C02282ACAE00DA5E83 /* KTTableViewCell03.m */; };
+		42E574C92282ACAE00DA5E83 /* KTDecouplingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E574C22282ACAE00DA5E83 /* KTDecouplingVC.m */; };
 		42E740C62276F7F500859877 /* CommonCoverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E740C42276F7F500859877 /* CommonCoverVC.m */; };
 		42E740C72276F7F500859877 /* CommonCoverVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E740C52276F7F500859877 /* CommonCoverVC.xib */; };
 		42E740CC2276F83700859877 /* CoverDemoVC1.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E740CA2276F83700859877 /* CoverDemoVC1.m */; };
@@ -2595,6 +2602,20 @@
 		42DE3C59226487E000422577 /* FPSDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPSDisplay.m; sourceTree = "<group>"; };
 		42DE3C5B226487E000422577 /* TestDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestDataModel.h; sourceTree = "<group>"; };
 		42DE3C5C226487E000422577 /* TestDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestDataModel.m; sourceTree = "<group>"; };
+		42E574B42282ACAD00DA5E83 /* ModuleACellConfigHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleACellConfigHelper.m; sourceTree = "<group>"; };
+		42E574B52282ACAD00DA5E83 /* KTModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTModel.h; sourceTree = "<group>"; };
+		42E574B62282ACAD00DA5E83 /* ModuleACellConfigHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleACellConfigHelper.h; sourceTree = "<group>"; };
+		42E574B72282ACAD00DA5E83 /* KTModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTModel.m; sourceTree = "<group>"; };
+		42E574B92282ACAE00DA5E83 /* KTTableViewCell00.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTableViewCell00.h; sourceTree = "<group>"; };
+		42E574BA2282ACAE00DA5E83 /* KTTableViewCell02.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTableViewCell02.m; sourceTree = "<group>"; };
+		42E574BB2282ACAE00DA5E83 /* KTTableViewCell03.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTableViewCell03.h; sourceTree = "<group>"; };
+		42E574BC2282ACAE00DA5E83 /* KTTableViewCell01.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTableViewCell01.m; sourceTree = "<group>"; };
+		42E574BD2282ACAE00DA5E83 /* KTTableViewCell02.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTableViewCell02.h; sourceTree = "<group>"; };
+		42E574BE2282ACAE00DA5E83 /* KTTableViewCell00.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTableViewCell00.m; sourceTree = "<group>"; };
+		42E574BF2282ACAE00DA5E83 /* KTTableViewCell01.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTTableViewCell01.h; sourceTree = "<group>"; };
+		42E574C02282ACAE00DA5E83 /* KTTableViewCell03.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTTableViewCell03.m; sourceTree = "<group>"; };
+		42E574C12282ACAE00DA5E83 /* KTDecouplingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KTDecouplingVC.h; sourceTree = "<group>"; };
+		42E574C22282ACAE00DA5E83 /* KTDecouplingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KTDecouplingVC.m; sourceTree = "<group>"; };
 		42E740C32276F7F500859877 /* CommonCoverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonCoverVC.h; sourceTree = "<group>"; };
 		42E740C42276F7F500859877 /* CommonCoverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonCoverVC.m; sourceTree = "<group>"; };
 		42E740C52276F7F500859877 /* CommonCoverVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommonCoverVC.xib; sourceTree = "<group>"; };
@@ -2766,6 +2787,10 @@
 		42166F29227FE26A006724CD /* 2，tableview解耦 */ = {
 			isa = PBXGroup;
 			children = (
+				42E574B82282ACAE00DA5E83 /* Cell */,
+				42E574B32282ACAD00DA5E83 /* ModuleA */,
+				42E574C12282ACAE00DA5E83 /* KTDecouplingVC.h */,
+				42E574C22282ACAE00DA5E83 /* KTDecouplingVC.m */,
 			);
 			path = "2，tableview解耦";
 			sourceTree = "<group>";
@@ -7432,6 +7457,32 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		42E574B32282ACAD00DA5E83 /* ModuleA */ = {
+			isa = PBXGroup;
+			children = (
+				42E574B42282ACAD00DA5E83 /* ModuleACellConfigHelper.m */,
+				42E574B52282ACAD00DA5E83 /* KTModel.h */,
+				42E574B62282ACAD00DA5E83 /* ModuleACellConfigHelper.h */,
+				42E574B72282ACAD00DA5E83 /* KTModel.m */,
+			);
+			path = ModuleA;
+			sourceTree = "<group>";
+		};
+		42E574B82282ACAE00DA5E83 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				42E574B92282ACAE00DA5E83 /* KTTableViewCell00.h */,
+				42E574BA2282ACAE00DA5E83 /* KTTableViewCell02.m */,
+				42E574BB2282ACAE00DA5E83 /* KTTableViewCell03.h */,
+				42E574BC2282ACAE00DA5E83 /* KTTableViewCell01.m */,
+				42E574BD2282ACAE00DA5E83 /* KTTableViewCell02.h */,
+				42E574BE2282ACAE00DA5E83 /* KTTableViewCell00.m */,
+				42E574BF2282ACAE00DA5E83 /* KTTableViewCell01.h */,
+				42E574C02282ACAE00DA5E83 /* KTTableViewCell03.m */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		42E740C22276F59700859877 /* 8，封装的遮罩 */ = {
 			isa = PBXGroup;
 			children = (
@@ -8149,12 +8200,14 @@
 				42D1C6B92277E835001F170F /* CQHUDViewController.m in Sources */,
 				42C4448E2217F9B2004983B3 /* FoldCellAnimateVC.m in Sources */,
 				421670132280136A006724CD /* HSSetTableInfoController.m in Sources */,
+				42E574C42282ACAE00DA5E83 /* KTModel.m in Sources */,
 				4227889D2145F431002B9C13 /* JXCategoryTitleCellModel.m in Sources */,
 				42C787E4213D2BC60012188E /* SGImagePositionVC.m in Sources */,
 				426707462121325B00046FE6 /* ExampleFooterView.m in Sources */,
 				4242B958212A959B00C3A2C5 /* IconFontViewController.m in Sources */,
 				42DE3C65226487E100422577 /* FPSDisplay.m in Sources */,
 				42C4DF28215F2B3000247949 /* TestHeadView.m in Sources */,
+				42E574C62282ACAE00DA5E83 /* KTTableViewCell01.m in Sources */,
 				429CB1B5210436960063A0D8 /* Demo1ViewController.m in Sources */,
 				4259010B2140BDE400304394 /* SignFinishView.m in Sources */,
 				42E740C62276F7F500859877 /* CommonCoverVC.m in Sources */,
@@ -8240,6 +8293,8 @@
 				42C5B4C121422F5300563794 /* LinkTextViewController.m in Sources */,
 				42C78372213CC45B0012188E /* RemoveCell.m in Sources */,
 				42CD423822603ACA00652FA6 /* YoshikoTextField.m in Sources */,
+				42E574C32282ACAE00DA5E83 /* ModuleACellConfigHelper.m in Sources */,
+				42E574C92282ACAE00DA5E83 /* KTDecouplingVC.m in Sources */,
 				42DD8DD621A7ACA400CB04A5 /* AAPLCheckerboardFirstViewController.m in Sources */,
 				42C783C7213CCB6A0012188E /* UIView+YZCategory.m in Sources */,
 				429CB1B8210436960063A0D8 /* TiltedLayout.m in Sources */,
@@ -8476,6 +8531,7 @@
 				42C4448C2217F9B2004983B3 /* HSFolderCell.m in Sources */,
 				42C4DF23215F2B3000247949 /* UIView+Animated.m in Sources */,
 				42CB7E7E21391F3F003397FB /* HtmlViewController.m in Sources */,
+				42E574C82282ACAE00DA5E83 /* KTTableViewCell03.m in Sources */,
 				42D1C6BF2277E836001F170F /* CQBlockAlertView.m in Sources */,
 				42B573C2213FC1FE0089CFDF /* DefaultZoomVC.m in Sources */,
 				424F05A32275B5CB0039CD62 /* DAAttributedLabel.m in Sources */,
@@ -8692,6 +8748,7 @@
 				42D1C6592277E719001F170F /* EasyShowUtils.m in Sources */,
 				42C78363213CC45B0012188E /* CollectionViewController.m in Sources */,
 				421670292280136A006724CD /* HSHeaderModel.m in Sources */,
+				42E574C72282ACAE00DA5E83 /* KTTableViewCell00.m in Sources */,
 				425901042140BDE400304394 /* FontSizeView.m in Sources */,
 				42C52C232187E9F4001D7A07 /* NineGridFrameView.m in Sources */,
 				429B15112160C2FC00F595FC /* UIScrollView+STRefresh.m in Sources */,
@@ -8821,6 +8878,7 @@
 				426707432121325B00046FE6 /* ExampleData.m in Sources */,
 				42D1C76F22783F39001F170F /* CoverKeyboardHeavyClassVC.m in Sources */,
 				424F05A72275B5E50039CD62 /* DAViewController.m in Sources */,
+				42E574C52282ACAE00DA5E83 /* KTTableViewCell02.m in Sources */,
 				421670172280136A006724CD /* UIView+HSFrame.m in Sources */,
 				429B15142160C2FC00F595FC /* CustomTableView.m in Sources */,
 				42C5B4C821422F5300563794 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
