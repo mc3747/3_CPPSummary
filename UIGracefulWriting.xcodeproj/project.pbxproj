@@ -269,6 +269,9 @@
 		42685507223F2C9500680CDA /* EasyNavigationUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854F5223F2C9300680CDA /* EasyNavigationUtils.m */; };
 		42685508223F2C9500680CDA /* EasyNavigationView+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 426854F7223F2C9400680CDA /* EasyNavigationView+Add.m */; };
 		4268550E223F348500680CDA /* JDCustomNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4268550D223F348500680CDA /* JDCustomNavigationController.m */; };
+		426D55952285847D0060AEF4 /* BZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55942285847D0060AEF4 /* BZBaseViewController.m */; };
+		426D55982285BF2F0060AEF4 /* BZBaseTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55972285BF2F0060AEF4 /* BZBaseTableViewViewController.m */; };
+		426D559B2285BFAD0060AEF4 /* BZBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D559A2285BFAD0060AEF4 /* BZBaseTableViewCell.m */; };
 		426FEE76221CE67000C4491A /* TextViewRichVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FEE75221CE67000C4491A /* TextViewRichVC.m */; };
 		426FEE79221D39EC00C4491A /* ClickTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FEE78221D39EC00C4491A /* ClickTextView.m */; };
 		42789BF02154759900F85994 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BEF2154759900F85994 /* Test1ViewController.m */; };
@@ -1470,6 +1473,12 @@
 		426854F7223F2C9400680CDA /* EasyNavigationView+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "EasyNavigationView+Add.m"; sourceTree = "<group>"; };
 		4268550C223F348500680CDA /* JDCustomNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDCustomNavigationController.h; sourceTree = "<group>"; };
 		4268550D223F348500680CDA /* JDCustomNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDCustomNavigationController.m; sourceTree = "<group>"; };
+		426D55932285847D0060AEF4 /* BZBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BZBaseViewController.h; sourceTree = "<group>"; };
+		426D55942285847D0060AEF4 /* BZBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BZBaseViewController.m; sourceTree = "<group>"; };
+		426D55962285BF2F0060AEF4 /* BZBaseTableViewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BZBaseTableViewViewController.h; sourceTree = "<group>"; };
+		426D55972285BF2F0060AEF4 /* BZBaseTableViewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BZBaseTableViewViewController.m; sourceTree = "<group>"; };
+		426D55992285BFAD0060AEF4 /* BZBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BZBaseTableViewCell.h; sourceTree = "<group>"; };
+		426D559A2285BFAD0060AEF4 /* BZBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BZBaseTableViewCell.m; sourceTree = "<group>"; };
 		426FEE74221CE67000C4491A /* TextViewRichVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewRichVC.h; sourceTree = "<group>"; };
 		426FEE75221CE67000C4491A /* TextViewRichVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewRichVC.m; sourceTree = "<group>"; };
 		426FEE77221D39EC00C4491A /* ClickTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickTextView.h; sourceTree = "<group>"; };
@@ -2787,10 +2796,8 @@
 		42166F29227FE26A006724CD /* 2，tableview解耦 */ = {
 			isa = PBXGroup;
 			children = (
-				42E574B82282ACAE00DA5E83 /* Cell */,
-				42E574B32282ACAD00DA5E83 /* ModuleA */,
-				42E574C12282ACAE00DA5E83 /* KTDecouplingVC.h */,
-				42E574C22282ACAE00DA5E83 /* KTDecouplingVC.m */,
+				426D5590228581E00060AEF4 /* cell事件解耦 */,
+				426D558F228581B90060AEF4 /* 不同cell的解耦 */,
 			);
 			path = "2，tableview解耦";
 			sourceTree = "<group>";
@@ -3189,8 +3196,8 @@
 		421670482280162A006724CD /* 3，UI借鉴 */ = {
 			isa = PBXGroup;
 			children = (
-				421670492280162A006724CD /* Base_3_ViewController.m */,
 				4216704A2280162A006724CD /* Base_3_ViewController.h */,
+				421670492280162A006724CD /* Base_3_ViewController.m */,
 			);
 			path = "3，UI借鉴";
 			sourceTree = "<group>";
@@ -4266,6 +4273,44 @@
 			path = "自定义的很全navi";
 			sourceTree = "<group>";
 		};
+		426D558F228581B90060AEF4 /* 不同cell的解耦 */ = {
+			isa = PBXGroup;
+			children = (
+				42E574B82282ACAE00DA5E83 /* Cell */,
+				42E574B32282ACAD00DA5E83 /* ModuleA */,
+				42E574C12282ACAE00DA5E83 /* KTDecouplingVC.h */,
+				42E574C22282ACAE00DA5E83 /* KTDecouplingVC.m */,
+			);
+			path = "不同cell的解耦";
+			sourceTree = "<group>";
+		};
+		426D5590228581E00060AEF4 /* cell事件解耦 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "cell事件解耦";
+			sourceTree = "<group>";
+		};
+		426D5591228584390060AEF4 /* 10，通用VC（基类） */ = {
+			isa = PBXGroup;
+			children = (
+				426D55932285847D0060AEF4 /* BZBaseViewController.h */,
+				426D55942285847D0060AEF4 /* BZBaseViewController.m */,
+			);
+			path = "10，通用VC（基类）";
+			sourceTree = "<group>";
+		};
+		426D5592228584470060AEF4 /* 11，通用带tableview的VC（基类） */ = {
+			isa = PBXGroup;
+			children = (
+				426D55962285BF2F0060AEF4 /* BZBaseTableViewViewController.h */,
+				426D55972285BF2F0060AEF4 /* BZBaseTableViewViewController.m */,
+				426D55992285BFAD0060AEF4 /* BZBaseTableViewCell.h */,
+				426D559A2285BFAD0060AEF4 /* BZBaseTableViewCell.m */,
+			);
+			path = "11，通用带tableview的VC（基类）";
+			sourceTree = "<group>";
+		};
 		426FEE73221CE4F900C4491A /* 3，UITextView系列 */ = {
 			isa = PBXGroup;
 			children = (
@@ -4420,6 +4465,8 @@
 			children = (
 				42B3E1172238D88E00379C2D /* Base_2_ViewController.h */,
 				42B3E1182238D88E00379C2D /* Base_2_ViewController.m */,
+				426D5592228584470060AEF4 /* 11，通用带tableview的VC（基类） */,
+				426D5591228584390060AEF4 /* 10，通用VC（基类） */,
 				42D1C5F22277E082001F170F /* 9，封装的loading框 */,
 				42E740C22276F59700859877 /* 8，封装的遮罩 */,
 				42E9FA4A226FF3C900D840A2 /* 7，封装的collectionView */,
@@ -8142,6 +8189,7 @@
 				42CF2C1921A54B9000951C6D /* TextFieldAndTextViewPackageVC.m in Sources */,
 				429CB1A7210436960063A0D8 /* BaseViewController.m in Sources */,
 				42E9FA48226FEF7200D840A2 /* InputHistoryVC.m in Sources */,
+				426D559B2285BFAD0060AEF4 /* BZBaseTableViewCell.m in Sources */,
 				42D1C6C12277E836001F170F /* CQImageBlockAlertView.m in Sources */,
 				42DE3C3D226487AA00422577 /* YYKitTableViewController.m in Sources */,
 				4242B951212A72D800C3A2C5 /* YZDisplayViewController.m in Sources */,
@@ -8327,6 +8375,7 @@
 				42D1C6C52277E836001F170F /* CQWeChatMenuView.m in Sources */,
 				42DD8DC521A7ACA300CB04A5 /* AAPLCrossDissolveSecondViewController.m in Sources */,
 				42F8D91421EC664F005D0120 /* NSString+RichText.m in Sources */,
+				426D55952285847D0060AEF4 /* BZBaseViewController.m in Sources */,
 				42C51A27211C445D00742239 /* XMGStatus.m in Sources */,
 				429B15192160C2FD00F595FC /* STImageController.m in Sources */,
 				422788AB2145F431002B9C13 /* JXCategoryBaseCellModel.m in Sources */,
@@ -8644,6 +8693,7 @@
 				422789162145F44F002B9C13 /* VerticalListCellModel.m in Sources */,
 				42D1C6CC2277E836001F170F /* CQLoadingView.m in Sources */,
 				42DD8DD021A7ACA400CB04A5 /* AAPLSwipeTransitionAnimator.m in Sources */,
+				426D55982285BF2F0060AEF4 /* BZBaseTableViewViewController.m in Sources */,
 				42CD42852260674B00652FA6 /* JCAlertStyle.m in Sources */,
 				42C4449822184E5F004983B3 /* PLCustomTableViewController.m in Sources */,
 				42BF8182211A88680090E612 /* CQFilterRequest.m in Sources */,
