@@ -19,7 +19,7 @@
     self.title = @"UI高阶";
     
     self.vcNameArray = @[
-  @[@"",@"NavigationSummaryVC",@"",@"",@"",@"PackageTableViewVC",@"PackageCollectionViewVC",@"",@"CommonToastVC",@"CommonLoadingVC",@"",@"",@"CommonCoverVC"],
+  @[@"",@"NavigationSummaryVC",@"BZBaseViewController",@"BZBaseTableViewViewController",@"",@"",@"PackageCollectionViewVC",@"",@"CommonToastVC",@"CommonLoadingVC",@"",@"",@"CommonCoverVC"],
   
   @[@"",@"",@"",@""],
   
@@ -33,7 +33,7 @@
     
     self.subtitleArray =
 @[
-@[@"通用TabBarController",@"通用NavigationController",@"通用UIViewController",@"通用UITableViewController",@"通用UICollectionViewController",@"封装的tableView",@"封装的collectionView",@"通用弹框",@"通用toast框",@"通用loading框",@"通用无数据页面",@"通用刷新控件",@"通用遮罩"],
+@[@"通用TabBarController",@"通用NavigationController",@"通用UIViewController",@"通用UITableViewController",@"通用UICollectionViewController",@"相册总结",@"封装的collectionView",@"通用弹框",@"通用toast框",@"通用loading框",@"通用无数据页面",@"通用刷新控件",@"通用遮罩"],
 
 @[@"工具类",@"分类",@"常用颜色",@"常用字体"],
 

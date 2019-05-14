@@ -238,6 +238,8 @@
 		4265FB112265C41D00EA45CE /* NavigationBarWithBackButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FB092265C41D00EA45CE /* NavigationBarWithBackButtonController.m */; };
 		4265FB1C2265C5C700EA45CE /* UIBarButtonItem+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FB192265C5C600EA45CE /* UIBarButtonItem+Custom.m */; };
 		4265FB1D2265C5C700EA45CE /* DataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4265FB1A2265C5C600EA45CE /* DataSource.plist */; };
+		42662A99228A6F85000729A5 /* PhotoAndCameraSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42662A97228A6F85000729A5 /* PhotoAndCameraSummaryVC.m */; };
+		42662A9A228A6F85000729A5 /* PhotoAndCameraSummaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42662A98228A6F85000729A5 /* PhotoAndCameraSummaryVC.xib */; };
 		4267072F2121301400046FE6 /* CCBaseTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */; };
 		426707302121301400046FE6 /* UIView+CCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071F2121301400046FE6 /* UIView+CCUtil.m */; };
 		426707312121301400046FE6 /* CCBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426707232121301400046FE6 /* CCBaseTableViewCell.m */; };
@@ -1410,6 +1412,9 @@
 		4265FB192265C5C600EA45CE /* UIBarButtonItem+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Custom.m"; sourceTree = "<group>"; };
 		4265FB1A2265C5C600EA45CE /* DataSource.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DataSource.plist; sourceTree = "<group>"; };
 		4265FB1B2265C5C700EA45CE /* UIBarButtonItem+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Custom.h"; sourceTree = "<group>"; };
+		42662A96228A6F85000729A5 /* PhotoAndCameraSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoAndCameraSummaryVC.h; sourceTree = "<group>"; };
+		42662A97228A6F85000729A5 /* PhotoAndCameraSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoAndCameraSummaryVC.m; sourceTree = "<group>"; };
+		42662A98228A6F85000729A5 /* PhotoAndCameraSummaryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoAndCameraSummaryVC.xib; sourceTree = "<group>"; };
 		4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableHeaderView.m; sourceTree = "<group>"; };
 		4267071D2121301400046FE6 /* CCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTableViewDataSource.h; sourceTree = "<group>"; };
 		4267071E2121301400046FE6 /* CCBaseTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableFooterView.h; sourceTree = "<group>"; };
@@ -3596,7 +3601,7 @@
 			path = "4,label文字对齐各种方式";
 			sourceTree = "<group>";
 		};
-		422AB70321742BB20019F1D9 /* 2,label留白问题 */ = {
+		422AB70321742BB20019F1D9 /* 2,label左右留白问题 */ = {
 			isa = PBXGroup;
 			children = (
 				422AB70421742BEF0019F1D9 /* LabelLeaveSpaceVC.h */,
@@ -3604,7 +3609,7 @@
 				42CB7E6621391CBF003397FB /* MCLabel.h */,
 				42CB7E6521391CBF003397FB /* MCLabel.m */,
 			);
-			path = "2,label留白问题";
+			path = "2,label左右留白问题";
 			sourceTree = "<group>";
 		};
 		4238B927212551A600AF272E /* #1_模糊效果 */ = {
@@ -3779,7 +3784,7 @@
 			path = "1，弹框UI层级调试";
 			sourceTree = "<group>";
 		};
-		424F05A02275B5390039CD62 /* 7，可点击label（继承label） */ = {
+		424F05A02275B5390039CD62 /* 7,可点击label（继承label） */ = {
 			isa = PBXGroup;
 			children = (
 				424F05A42275B5E50039CD62 /* DAViewController.h */,
@@ -3788,7 +3793,7 @@
 				424F05A12275B5CB0039CD62 /* DAAttributedLabel.h */,
 				424F05A22275B5CB0039CD62 /* DAAttributedLabel.m */,
 			);
-			path = "7，可点击label（继承label）";
+			path = "7,可点击label（继承label）";
 			sourceTree = "<group>";
 		};
 		42523F2D218BDCA30038CEE3 /* 3，查看list的结构工具 */ = {
@@ -4166,6 +4171,24 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		42662A95228A6E4B000729A5 /* 6，相册总结 */ = {
+			isa = PBXGroup;
+			children = (
+				42662A9B228A7401000729A5 /* 借鉴QMUI */,
+				42662A96228A6F85000729A5 /* PhotoAndCameraSummaryVC.h */,
+				42662A97228A6F85000729A5 /* PhotoAndCameraSummaryVC.m */,
+				42662A98228A6F85000729A5 /* PhotoAndCameraSummaryVC.xib */,
+			);
+			path = "6，相册总结";
+			sourceTree = "<group>";
+		};
+		42662A9B228A7401000729A5 /* 借鉴QMUI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "借鉴QMUI";
+			sourceTree = "<group>";
+		};
 		4267071B2121301400046FE6 /* CCTableDataSource */ = {
 			isa = PBXGroup;
 			children = (
@@ -4470,7 +4493,7 @@
 				42D1C5F22277E082001F170F /* 9，封装的loading框 */,
 				42E740C22276F59700859877 /* 8，封装的遮罩 */,
 				42E9FA4A226FF3C900D840A2 /* 7，封装的collectionView */,
-				42E9FA49226FF3C000D840A2 /* 6，封装的tableView */,
+				42662A95228A6E4B000729A5 /* 6，相册总结 */,
 				4291607C226EEBD8005B7902 /* 5，通用toast */,
 				4265FAC22265C32600EA45CE /* 4，导航控制器总结 */,
 				42DE3C192264872B00422577 /* 3，5种不同的不等高tablecell写法 */,
@@ -4939,9 +4962,9 @@
 		42B1827A2106D13A00C1E682 /* *2_label相关 */ = {
 			isa = PBXGroup;
 			children = (
-				424F05A02275B5390039CD62 /* 7，可点击label（继承label） */,
+				424F05A02275B5390039CD62 /* 7,可点击label（继承label） */,
 				42B1827B2106D13A00C1E682 /* 1,可点击label */,
-				422AB70321742BB20019F1D9 /* 2,label留白问题 */,
+				422AB70321742BB20019F1D9 /* 2,label左右留白问题 */,
 				42C4DEF9215F105D00247949 /* 3,倒计时label */,
 				422AB6F9217427270019F1D9 /* 4,label文字对齐各种方式 */,
 				42F772112193CD9600FFD237 /* 5,自适应宽高的label */,
@@ -7612,7 +7635,7 @@
 			path = AutoCompleteTextView;
 			sourceTree = "<group>";
 		};
-		42E9FA49226FF3C000D840A2 /* 6，封装的tableView */ = {
+		42E9FA49226FF3C000D840A2 /* 6，一般封装tableView */ = {
 			isa = PBXGroup;
 			children = (
 				42E9FA4E226FF46C00D840A2 /* PackageTableViewVC.h */,
@@ -7620,7 +7643,7 @@
 				42E9FA51226FF50C00D840A2 /* HActiveTableView.h */,
 				42E9FA52226FF50C00D840A2 /* HActiveTableView.m */,
 			);
-			path = "6，封装的tableView";
+			path = "6，一般封装tableView";
 			sourceTree = "<group>";
 		};
 		42E9FA4A226FF3C900D840A2 /* 7，封装的collectionView */ = {
@@ -7692,6 +7715,7 @@
 			children = (
 				421670452280145D006724CD /* GracefulTableViewVC.h */,
 				421670462280145D006724CD /* GracefulTableViewVC.m */,
+				42E9FA49226FF3C000D840A2 /* 6，一般封装tableView */,
 				42166F66228012BF006724CD /* 5，多种cell组合 */,
 				42166F652280128E006724CD /* 4，tableVIewController基类 */,
 				42166F642280124C006724CD /* 3，tableView基类-block写 */,
@@ -8030,6 +8054,7 @@
 				42B573CE213FC1FE0089CFDF /* ChildFirstPopGestureNextVC.xib in Resources */,
 				42166F5E22800997006724CD /* 3.gif in Resources */,
 				42DD8DDD21A7AEA600CB04A5 /* AAPLMenuViewController.storyboard in Resources */,
+				42662A9A228A6F85000729A5 /* PhotoAndCameraSummaryVC.xib in Resources */,
 				422789392145F539002B9C13 /* Switch4_ViewController.storyboard in Resources */,
 				42DD8DD521A7ACA400CB04A5 /* Checkerboard.storyboard in Resources */,
 				42C783C4213CCB6A0012188E /* YZSortCell.xib in Resources */,
@@ -8248,6 +8273,7 @@
 				42D1C6B92277E835001F170F /* CQHUDViewController.m in Sources */,
 				42C4448E2217F9B2004983B3 /* FoldCellAnimateVC.m in Sources */,
 				421670132280136A006724CD /* HSSetTableInfoController.m in Sources */,
+				42662A99228A6F85000729A5 /* PhotoAndCameraSummaryVC.m in Sources */,
 				42E574C42282ACAE00DA5E83 /* KTModel.m in Sources */,
 				4227889D2145F431002B9C13 /* JXCategoryTitleCellModel.m in Sources */,
 				42C787E4213D2BC60012188E /* SGImagePositionVC.m in Sources */,
