@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSArray *buttonNameArray = @[@"1，frame方式",@"2，masonry方式",@"3，stackView方式",@"4，UICollection方式"];
-    NSArray *vcNameArray = @[@"NineGridUsingFrameVC",@"NineGridUsingMasonryVC",@"NineGridUsingStackVC",@"NineGridUsingCollectionVC"];
+    NSArray *buttonNameArray = @[@"1，frame方式",@"2，masonry方式",@"3，stackView方式",@"4，UICollection方式",@"5，第三方BAGridView"];
+    NSArray *vcNameArray = @[@"NineGridUsingFrameVC",@"NineGridUsingMasonryVC",@"NineGridUsingStackVC",@"NineGridUsingCollectionVC",@"BAGridVIewVC"];
     
     for (int i = 0; i < buttonNameArray.count; i++) {
         CGRect buttonRect = CGRectMake(20, 100 + 60 * i, 200, 50);

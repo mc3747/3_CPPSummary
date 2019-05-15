@@ -22,6 +22,7 @@ PODS:
   - JSONModel (1.8.0)
   - LEEAlert (1.2.1)
   - Masonry (1.1.0)
+  - MJExtension (3.0.17)
   - MJRefresh (3.1.16)
   - PINCache (3.0.1-beta)
   - PINRemoteImage/Core (3.0.0-beta.3):
@@ -48,6 +49,7 @@ DEPENDENCIES:
   - JSONModel
   - LEEAlert
   - Masonry
+  - MJExtension
   - MJRefresh
   - SDWebImage
   - SVProgressHUD
@@ -66,6 +68,7 @@ SPEC REPOS:
     - JSONModel
     - LEEAlert
     - Masonry
+    - MJExtension
     - MJRefresh
     - PINCache
     - PINRemoteImage
@@ -85,6 +88,7 @@ SPEC CHECKSUMS:
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
   LEEAlert: 325078be70d9234e318d69703ba2f2cd01d8974a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
   MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
   PINCache: 6911fe422a633e18b3d3ddf2bd4f0e55e36e2892
   PINRemoteImage: 308731aa6534500e58fc211b9cc2bb7252df25ba
@@ -94,6 +98,6 @@ SPEC CHECKSUMS:
   TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: a0f7b0e728daa7bc6fffe0835d419fe20a448d26
+PODFILE CHECKSUM: eb6fd7ead4fc8f20444636acdf3c271e5b45bd89
 
 COCOAPODS: 1.5.0.beta.1

@@ -152,6 +152,14 @@
 		422AB7012174278A0019F1D9 /* ARAlignLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AB6FC217427890019F1D9 /* ARAlignLabel.m */; };
 		422AB7022174278A0019F1D9 /* LabelAlignDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AB6FF2174278A0019F1D9 /* LabelAlignDetailVC.m */; };
 		422AB70621742BEF0019F1D9 /* LabelLeaveSpaceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AB70521742BEF0019F1D9 /* LabelLeaveSpaceVC.m */; };
+		42340A8F228BE7CB00BAF230 /* IndexAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42340A8D228BE7CB00BAF230 /* IndexAnimationVC.m */; };
+		42340A90228BE7CB00BAF230 /* IndexAnimationVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42340A8E228BE7CB00BAF230 /* IndexAnimationVC.xib */; };
+		42340A9D228BE9D500BAF230 /* SectionIndexView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42340A92228BE9D300BAF230 /* SectionIndexView.m */; };
+		42340A9E228BE9D500BAF230 /* THDepModelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 42340A96228BE9D400BAF230 /* THDepModelTool.m */; };
+		42340A9F228BE9D500BAF230 /* FriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42340A98228BE9D400BAF230 /* FriendModel.m */; };
+		42340AA0228BE9D500BAF230 /* SectionIndexItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 42340A99228BE9D400BAF230 /* SectionIndexItem.m */; };
+		42340AA1228BE9D500BAF230 /* IndexAnimationDemo1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42340A9A228BE9D400BAF230 /* IndexAnimationDemo1VC.m */; };
+		42340AA2228BE9D500BAF230 /* friends.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42340A9C228BE9D500BAF230 /* friends.plist */; };
 		4238B92C2125534200AF272E /* DimImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4238B92B2125534200AF272E /* DimImageViewController.m */; };
 		4238B92E2125547F00AF272E /* img1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4238B92D2125547E00AF272E /* img1.jpg */; };
 		4238B93121255B4A00AF272E /* ImgTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4238B92F21255B4A00AF272E /* ImgTool.m */; };
@@ -240,6 +248,13 @@
 		4265FB1D2265C5C700EA45CE /* DataSource.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4265FB1A2265C5C600EA45CE /* DataSource.plist */; };
 		42662A99228A6F85000729A5 /* PhotoAndCameraSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42662A97228A6F85000729A5 /* PhotoAndCameraSummaryVC.m */; };
 		42662A9A228A6F85000729A5 /* PhotoAndCameraSummaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42662A98228A6F85000729A5 /* PhotoAndCameraSummaryVC.xib */; };
+		42662BAF228ACC15000729A5 /* BAGridView_Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 42662BA0228ACC10000729A5 /* BAGridView_Config.m */; };
+		42662BB0228ACC15000729A5 /* BAGridItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42662BA2228ACC10000729A5 /* BAGridItemModel.m */; };
+		42662BB1228ACC15000729A5 /* BAGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42662BA4228ACC11000729A5 /* BAGridView.m */; };
+		42662BB2228ACC15000729A5 /* BAGridViewTypeTitleDescCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42662BA8228ACC13000729A5 /* BAGridViewTypeTitleDescCell.m */; };
+		42662BB3228ACC15000729A5 /* NSString+BAGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42662BAC228ACC14000729A5 /* NSString+BAGridView.m */; };
+		42662BB4228ACC15000729A5 /* BAGridCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42662BAE228ACC15000729A5 /* BAGridCollectionCell.m */; };
+		42662BB7228ACC5F000729A5 /* BAGridVIewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42662BB6228ACC5F000729A5 /* BAGridVIewVC.m */; };
 		4267072F2121301400046FE6 /* CCBaseTableHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */; };
 		426707302121301400046FE6 /* UIView+CCUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267071F2121301400046FE6 /* UIView+CCUtil.m */; };
 		426707312121301400046FE6 /* CCBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426707232121301400046FE6 /* CCBaseTableViewCell.m */; };
@@ -1244,6 +1259,20 @@
 		422AB6FF2174278A0019F1D9 /* LabelAlignDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LabelAlignDetailVC.m; sourceTree = "<group>"; };
 		422AB70421742BEF0019F1D9 /* LabelLeaveSpaceVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelLeaveSpaceVC.h; sourceTree = "<group>"; };
 		422AB70521742BEF0019F1D9 /* LabelLeaveSpaceVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelLeaveSpaceVC.m; sourceTree = "<group>"; };
+		42340A8C228BE7CB00BAF230 /* IndexAnimationVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IndexAnimationVC.h; sourceTree = "<group>"; };
+		42340A8D228BE7CB00BAF230 /* IndexAnimationVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndexAnimationVC.m; sourceTree = "<group>"; };
+		42340A8E228BE7CB00BAF230 /* IndexAnimationVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = IndexAnimationVC.xib; sourceTree = "<group>"; };
+		42340A92228BE9D300BAF230 /* SectionIndexView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionIndexView.m; sourceTree = "<group>"; };
+		42340A93228BE9D300BAF230 /* SectionIndexView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionIndexView.h; sourceTree = "<group>"; };
+		42340A94228BE9D300BAF230 /* THDepModelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDepModelTool.h; sourceTree = "<group>"; };
+		42340A95228BE9D300BAF230 /* IndexAnimationDemo1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndexAnimationDemo1VC.h; sourceTree = "<group>"; };
+		42340A96228BE9D400BAF230 /* THDepModelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDepModelTool.m; sourceTree = "<group>"; };
+		42340A97228BE9D400BAF230 /* FriendModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendModel.h; sourceTree = "<group>"; };
+		42340A98228BE9D400BAF230 /* FriendModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendModel.m; sourceTree = "<group>"; };
+		42340A99228BE9D400BAF230 /* SectionIndexItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionIndexItem.m; sourceTree = "<group>"; };
+		42340A9A228BE9D400BAF230 /* IndexAnimationDemo1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndexAnimationDemo1VC.m; sourceTree = "<group>"; };
+		42340A9B228BE9D400BAF230 /* SectionIndexItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionIndexItem.h; sourceTree = "<group>"; };
+		42340A9C228BE9D500BAF230 /* friends.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = friends.plist; sourceTree = "<group>"; };
 		4238B92A2125534200AF272E /* DimImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DimImageViewController.h; sourceTree = "<group>"; };
 		4238B92B2125534200AF272E /* DimImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DimImageViewController.m; sourceTree = "<group>"; };
 		4238B92D2125547E00AF272E /* img1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img1.jpg; sourceTree = "<group>"; };
@@ -1415,6 +1444,23 @@
 		42662A96228A6F85000729A5 /* PhotoAndCameraSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoAndCameraSummaryVC.h; sourceTree = "<group>"; };
 		42662A97228A6F85000729A5 /* PhotoAndCameraSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoAndCameraSummaryVC.m; sourceTree = "<group>"; };
 		42662A98228A6F85000729A5 /* PhotoAndCameraSummaryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoAndCameraSummaryVC.xib; sourceTree = "<group>"; };
+		42662BA0228ACC10000729A5 /* BAGridView_Config.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAGridView_Config.m; sourceTree = "<group>"; };
+		42662BA1228ACC10000729A5 /* BAGridViewTypeTitleDescCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAGridViewTypeTitleDescCell.h; sourceTree = "<group>"; };
+		42662BA2228ACC10000729A5 /* BAGridItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAGridItemModel.m; sourceTree = "<group>"; };
+		42662BA3228ACC11000729A5 /* NSString+BAGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BAGridView.h"; sourceTree = "<group>"; };
+		42662BA4228ACC11000729A5 /* BAGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAGridView.m; sourceTree = "<group>"; };
+		42662BA5228ACC12000729A5 /* BAGridView_Version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAGridView_Version.h; sourceTree = "<group>"; };
+		42662BA6228ACC12000729A5 /* BAGridCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAGridCollectionCell.h; sourceTree = "<group>"; };
+		42662BA7228ACC12000729A5 /* BAGridView_Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAGridView_Config.h; sourceTree = "<group>"; };
+		42662BA8228ACC13000729A5 /* BAGridViewTypeTitleDescCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAGridViewTypeTitleDescCell.m; sourceTree = "<group>"; };
+		42662BA9228ACC13000729A5 /* BAGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAGridView.h; sourceTree = "<group>"; };
+		42662BAA228ACC14000729A5 /* BAKit_BAGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKit_BAGridView.h; sourceTree = "<group>"; };
+		42662BAB228ACC14000729A5 /* BAKit_ConfigurationDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAKit_ConfigurationDefine.h; sourceTree = "<group>"; };
+		42662BAC228ACC14000729A5 /* NSString+BAGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BAGridView.m"; sourceTree = "<group>"; };
+		42662BAD228ACC15000729A5 /* BAGridItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BAGridItemModel.h; sourceTree = "<group>"; };
+		42662BAE228ACC15000729A5 /* BAGridCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BAGridCollectionCell.m; sourceTree = "<group>"; };
+		42662BB5228ACC5F000729A5 /* BAGridVIewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BAGridVIewVC.h; sourceTree = "<group>"; };
+		42662BB6228ACC5F000729A5 /* BAGridVIewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BAGridVIewVC.m; sourceTree = "<group>"; };
 		4267071C2121301400046FE6 /* CCBaseTableHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCBaseTableHeaderView.m; sourceTree = "<group>"; };
 		4267071D2121301400046FE6 /* CCTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTableViewDataSource.h; sourceTree = "<group>"; };
 		4267071E2121301400046FE6 /* CCBaseTableFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCBaseTableFooterView.h; sourceTree = "<group>"; };
@@ -3612,6 +3658,51 @@
 			path = "2,label左右留白问题";
 			sourceTree = "<group>";
 		};
+		42340A8B228BC0EC00BAF230 /* *18_索引动画总结 */ = {
+			isa = PBXGroup;
+			children = (
+				42340A91228BE93B00BAF230 /* 1，案例1 */,
+				42340A8C228BE7CB00BAF230 /* IndexAnimationVC.h */,
+				42340A8D228BE7CB00BAF230 /* IndexAnimationVC.m */,
+				42340A8E228BE7CB00BAF230 /* IndexAnimationVC.xib */,
+			);
+			path = "*18_索引动画总结";
+			sourceTree = "<group>";
+		};
+		42340A91228BE93B00BAF230 /* 1，案例1 */ = {
+			isa = PBXGroup;
+			children = (
+				42340AA4228BEA0000BAF230 /* Model */,
+				42340AA3228BE9D900BAF230 /* View */,
+				42340A95228BE9D300BAF230 /* IndexAnimationDemo1VC.h */,
+				42340A9A228BE9D400BAF230 /* IndexAnimationDemo1VC.m */,
+			);
+			path = "1，案例1";
+			sourceTree = "<group>";
+		};
+		42340AA3228BE9D900BAF230 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42340A9B228BE9D400BAF230 /* SectionIndexItem.h */,
+				42340A99228BE9D400BAF230 /* SectionIndexItem.m */,
+				42340A93228BE9D300BAF230 /* SectionIndexView.h */,
+				42340A92228BE9D300BAF230 /* SectionIndexView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42340AA4228BEA0000BAF230 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42340A9C228BE9D500BAF230 /* friends.plist */,
+				42340A97228BE9D400BAF230 /* FriendModel.h */,
+				42340A98228BE9D400BAF230 /* FriendModel.m */,
+				42340A94228BE9D300BAF230 /* THDepModelTool.h */,
+				42340A96228BE9D400BAF230 /* THDepModelTool.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		4238B927212551A600AF272E /* #1_模糊效果 */ = {
 			isa = PBXGroup;
 			children = (
@@ -3902,14 +3993,14 @@
 			path = "1，自己总结";
 			sourceTree = "<group>";
 		};
-		42551D62225F1385003DF389 /* *18_其他 */ = {
+		42551D62225F1385003DF389 /* **_其他 */ = {
 			isa = PBXGroup;
 			children = (
 				4238B927212551A600AF272E /* #1_模糊效果 */,
 				42CB7E312138CEB7003397FB /* #2_截屏展示 */,
 				42DB02ED221E4B76002B5675 /* #3_生成二维码 */,
 			);
-			path = "*18_其他";
+			path = "**_其他";
 			sourceTree = "<group>";
 		};
 		42551D63225F1474003DF389 /* 联动下拉 */ = {
@@ -4187,6 +4278,38 @@
 			children = (
 			);
 			path = "借鉴QMUI";
+			sourceTree = "<group>";
+		};
+		42662B9E228ACBBE000729A5 /* 5，第三方BAGridView */ = {
+			isa = PBXGroup;
+			children = (
+				42662B9F228ACC04000729A5 /* BAGridView */,
+				42662BB5228ACC5F000729A5 /* BAGridVIewVC.h */,
+				42662BB6228ACC5F000729A5 /* BAGridVIewVC.m */,
+			);
+			path = "5，第三方BAGridView";
+			sourceTree = "<group>";
+		};
+		42662B9F228ACC04000729A5 /* BAGridView */ = {
+			isa = PBXGroup;
+			children = (
+				42662BA6228ACC12000729A5 /* BAGridCollectionCell.h */,
+				42662BAE228ACC15000729A5 /* BAGridCollectionCell.m */,
+				42662BAD228ACC15000729A5 /* BAGridItemModel.h */,
+				42662BA2228ACC10000729A5 /* BAGridItemModel.m */,
+				42662BA7228ACC12000729A5 /* BAGridView_Config.h */,
+				42662BA0228ACC10000729A5 /* BAGridView_Config.m */,
+				42662BA5228ACC12000729A5 /* BAGridView_Version.h */,
+				42662BA9228ACC13000729A5 /* BAGridView.h */,
+				42662BA4228ACC11000729A5 /* BAGridView.m */,
+				42662BA1228ACC10000729A5 /* BAGridViewTypeTitleDescCell.h */,
+				42662BA8228ACC13000729A5 /* BAGridViewTypeTitleDescCell.m */,
+				42662BAA228ACC14000729A5 /* BAKit_BAGridView.h */,
+				42662BAB228ACC14000729A5 /* BAKit_ConfigurationDefine.h */,
+				42662BA3228ACC11000729A5 /* NSString+BAGridView.h */,
+				42662BAC228ACC14000729A5 /* NSString+BAGridView.m */,
+			);
+			path = BAGridView;
 			sourceTree = "<group>";
 		};
 		4267071B2121301400046FE6 /* CCTableDataSource */ = {
@@ -4599,7 +4722,8 @@
 				4242B789212A4ABB00C3A2C5 /* *15_导航滚动切换总结 */,
 				42D42FC5225C45DE00EA4AA8 /* *16_跳转方案总结 */,
 				42CFD940215E1DF8005792BD /* *17_启动页总结 */,
-				42551D62225F1385003DF389 /* *18_其他 */,
+				42340A8B228BC0EC00BAF230 /* *18_索引动画总结 */,
+				42551D62225F1385003DF389 /* **_其他 */,
 			);
 			path = "1，UI大杂烩";
 			sourceTree = "<group>";
@@ -5697,6 +5821,7 @@
 			children = (
 				42C52C122187DF93001D7A07 /* NineGridVC.h */,
 				42C52C132187DF93001D7A07 /* NineGridVC.m */,
+				42662B9E228ACBBE000729A5 /* 5，第三方BAGridView */,
 				42C52C0E2187DEE8001D7A07 /* 1，frame方式 */,
 				42C52C0F2187DEF3001D7A07 /* 2，masonry方式 */,
 				42C52C102187DF00001D7A07 /* 3，stackView方式 */,
@@ -8011,6 +8136,7 @@
 				42C787DB213D2BA50012188E /* SGCountdownVC.xib in Resources */,
 				427B4940227E76B200675542 /* RoundCornerSummaryVC.xib in Resources */,
 				42D1C6022277E46A001F170F /* loading.png in Resources */,
+				42340A90228BE7CB00BAF230 /* IndexAnimationVC.xib in Resources */,
 				429CB0FA210436960063A0D8 /* pageControlCurrentDot@3x.png in Resources */,
 				42DD8DCF21A7ACA400CB04A5 /* Swipe.storyboard in Resources */,
 				429CB0FF210436960063A0D8 /* pageControlDot@2x.png in Resources */,
@@ -8044,6 +8170,7 @@
 				427B4946227E889400675542 /* ImageCacheVC.xib in Resources */,
 				42523F39218BDEAD0038CEE3 /* NineGridUsingCollectionVC.xib in Resources */,
 				429CB0F7210436960063A0D8 /* placeholder@2x.png in Resources */,
+				42340AA2228BE9D500BAF230 /* friends.plist in Resources */,
 				42B573D8213FC1FE0089CFDF /* ChildVCTwo.xib in Resources */,
 				429CB0F9210436960063A0D8 /* 005.jpg in Resources */,
 				42DE3C5E226487E100422577 /* 4.jpg in Resources */,
@@ -8227,12 +8354,15 @@
 				42DE3C5D226487E100422577 /* DataSupport.m in Sources */,
 				42DE3C3E226487AA00422577 /* CountHeightTableViewController.m in Sources */,
 				422789322145F44F002B9C13 /* NestViewController.m in Sources */,
+				42662BB2228ACC15000729A5 /* BAGridViewTypeTitleDescCell.m in Sources */,
 				42B573BA213FC1FE0089CFDF /* DefaultAnimatedVC.m in Sources */,
 				42C783C6213CCB6A0012188E /* YZMenuButton.m in Sources */,
 				42D1C6662277E719001F170F /* EasyEmptyGlobalConfig.m in Sources */,
 				4265FB0A2265C41D00EA45CE /* NavigationBarAddSegmentController.m in Sources */,
 				42916080226EEC08005B7902 /* BSYAlertBox.m in Sources */,
 				42CD428D2260679100652FA6 /* NSObject+BlockSEL.m in Sources */,
+				42340A8F228BE7CB00BAF230 /* IndexAnimationVC.m in Sources */,
+				42662BB0228ACC15000729A5 /* BAGridItemModel.m in Sources */,
 				42B573ED213FD11C0089CFDF /* UIButton+Category.m in Sources */,
 				426854FC223F2C9400680CDA /* UITableViewController+EasyNavigationExt.m in Sources */,
 				42DD8DCC21A7ACA400CB04A5 /* AAPLCustomPresentationFirstViewController.m in Sources */,
@@ -8292,6 +8422,7 @@
 				429B151C2160C2FD00F595FC /* STCollectionView.m in Sources */,
 				4259011B2140D41400304394 /* Son1_ViewController.m in Sources */,
 				42BF8157211A75010090E612 /* UIViewController+PushAndPop.m in Sources */,
+				42662BB4228ACC15000729A5 /* BAGridCollectionCell.m in Sources */,
 				42551D89225F1519003DF389 /* SexPickerTool.m in Sources */,
 				429CB0F6210436960063A0D8 /* CustomBannerView.m in Sources */,
 				42D1C6CB2277E836001F170F /* CQHUD.m in Sources */,
@@ -8401,6 +8532,7 @@
 				42D1C6C52277E836001F170F /* CQWeChatMenuView.m in Sources */,
 				42DD8DC521A7ACA300CB04A5 /* AAPLCrossDissolveSecondViewController.m in Sources */,
 				42F8D91421EC664F005D0120 /* NSString+RichText.m in Sources */,
+				42340A9E228BE9D500BAF230 /* THDepModelTool.m in Sources */,
 				426D55952285847D0060AEF4 /* BZBaseViewController.m in Sources */,
 				42C51A27211C445D00742239 /* XMGStatus.m in Sources */,
 				429B15192160C2FD00F595FC /* STImageController.m in Sources */,
@@ -8536,6 +8668,7 @@
 				42523F4F218BF9190038CEE3 /* HYBCardCollectionViewCell.m in Sources */,
 				42C7834D213CC45B0012188E /* User.m in Sources */,
 				429CB1AD210436960063A0D8 /* Demo2ViewController.m in Sources */,
+				42662BAF228ACC15000729A5 /* BAGridView_Config.m in Sources */,
 				42F772582193D0DD00FFD237 /* JMWaveButtonConfig.m in Sources */,
 				42551D5E225EDF89003DF389 /* SelfCascadeVC.m in Sources */,
 				42DD8DD221A7ACA400CB04A5 /* AAPLSwipeTransitionDelegate.m in Sources */,
@@ -8594,11 +8727,13 @@
 				4227891A2145F44F002B9C13 /* FootballViewController.m in Sources */,
 				42C7834F213CC45B0012188E /* SelectionModel.m in Sources */,
 				42B573DD213FC1FE0089CFDF /* UIButton+SGPagingView.m in Sources */,
+				42662BB7228ACC5F000729A5 /* BAGridVIewVC.m in Sources */,
 				429CB1AA210436960063A0D8 /* Demo5Cell.m in Sources */,
 				422789252145F44F002B9C13 /* NumberViewController.m in Sources */,
 				429CB102210436960063A0D8 /* SDViewController.m in Sources */,
 				42DD8DD721A7ACA400CB04A5 /* AAPLAdaptivePresentationSegue.m in Sources */,
 				42B1828821070BEF00C1E682 /* CustomFirstRateClickableButton.m in Sources */,
+				42662BB1228ACC15000729A5 /* BAGridView.m in Sources */,
 				422789352145F44F002B9C13 /* JXCategoryTitleAttributeCellModel.m in Sources */,
 				429B15182160C2FD00F595FC /* STListController.m in Sources */,
 				42C7834E213CC45B0012188E /* DayViewModel.m in Sources */,
@@ -8608,6 +8743,7 @@
 				42CB7E7E21391F3F003397FB /* HtmlViewController.m in Sources */,
 				42E574C82282ACAE00DA5E83 /* KTTableViewCell03.m in Sources */,
 				42D1C6BF2277E836001F170F /* CQBlockAlertView.m in Sources */,
+				42340A9D228BE9D500BAF230 /* SectionIndexView.m in Sources */,
 				42B573C2213FC1FE0089CFDF /* DefaultZoomVC.m in Sources */,
 				424F05A32275B5CB0039CD62 /* DAAttributedLabel.m in Sources */,
 				42166F44228006A0006724CD /* JMCornerViewController2.m in Sources */,
@@ -8769,6 +8905,7 @@
 				427B4950227EB75B00675542 /* MemoryAndDiskCacheVC.m in Sources */,
 				42C78377213CC45B0012188E /* MonthTitleCell.m in Sources */,
 				4227891F2145F44F002B9C13 /* TestListBaseView.m in Sources */,
+				42662BB3228ACC15000729A5 /* NSString+BAGridView.m in Sources */,
 				426854FF223F2C9400680CDA /* UIView+EasyNavigationExt.m in Sources */,
 				42DD8DD421A7ACA400CB04A5 /* AAPLCheckerboardTransitionAnimator.m in Sources */,
 				4227889F2145F431002B9C13 /* JXCategoryTitleView.m in Sources */,
@@ -8819,6 +8956,7 @@
 				429CB11D210436960063A0D8 /* SWRevealViewController.m in Sources */,
 				422789242145F44F002B9C13 /* JXImageViewController.m in Sources */,
 				42D1C61C2277E4E6001F170F /* MFNotificationHUD.m in Sources */,
+				42340AA0228BE9D500BAF230 /* SectionIndexItem.m in Sources */,
 				42B573BC213FC1FE0089CFDF /* DefaultFixedVC.m in Sources */,
 				426707322121301400046FE6 /* UITableView+CCUtil.m in Sources */,
 				42D1C6592277E719001F170F /* EasyShowUtils.m in Sources */,
@@ -8957,6 +9095,7 @@
 				42E574C52282ACAE00DA5E83 /* KTTableViewCell02.m in Sources */,
 				421670172280136A006724CD /* UIView+HSFrame.m in Sources */,
 				429B15142160C2FC00F595FC /* CustomTableView.m in Sources */,
+				42340A9F228BE9D500BAF230 /* FriendModel.m in Sources */,
 				42C5B4C821422F5300563794 /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				4200C8792159C45800FCD77D /* TestViewController.m in Sources */,
 				42E8E119221A92F900A04331 /* PageLoadingDemo1VC.m in Sources */,
@@ -8965,6 +9104,7 @@
 				42B3E1252238D95F00379C2D /* DWPublishButton.m in Sources */,
 				42DB02FB221E50B6002B5675 /* UIImage+HTImageWithCenterLogo.m in Sources */,
 				4242B93E212A72C400C3A2C5 /* RequesCover.m in Sources */,
+				42340AA1228BE9D500BAF230 /* IndexAnimationDemo1VC.m in Sources */,
 				42C787DA213D2BA50012188E /* SGCountdownVC.m in Sources */,
 				42166F9122801358006724CD /* LYEmptyBaseView.m in Sources */,
 				42D1C6BB2277E835001F170F /* CQContentsModel.m in Sources */,

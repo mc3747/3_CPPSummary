@@ -16,6 +16,7 @@ pod 'FMDB'
 pod 'YYKit'
 pod 'AsyncDisplayKit', '~> 1.9.90'
 pod 'MJRefresh'
+pod 'MJExtension'
 pod 'DZNEmptyDataSet'
 
 end

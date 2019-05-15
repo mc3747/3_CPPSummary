@@ -51,5 +51,69 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIGracefulWriting/1&#xff0c;UI&#x5927;&#x6742;&#x70e9;/*18_&#x7d22;&#x5f15;&#x52a8;&#x753b;&#x603b;&#x7ed3;/1&#xff0c;&#x6848;&#x4f8b;1/IndexAnimationDemo1VC.m"
+            timestampString = "579596285.027838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "-_createData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIGracefulWriting/1&#xff0c;UI&#x5927;&#x6742;&#x70e9;/*18_&#x7d22;&#x5f15;&#x52a8;&#x753b;&#x603b;&#x7ed3;/1&#xff0c;&#x6848;&#x4f8b;1/Model/THDepModelTool.m"
+            timestampString = "579596317.5325511"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "+sortWithDataArray:andPropertyName:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIGracefulWriting/1&#xff0c;UI&#x5927;&#x6742;&#x70e9;/*18_&#x7d22;&#x5f15;&#x52a8;&#x753b;&#x603b;&#x7ed3;/1&#xff0c;&#x6848;&#x4f8b;1/Model/THDepModelTool.m"
+            timestampString = "579596330.067109"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "93"
+            endingLineNumber = "93"
+            landmarkName = "+sortWithDataArray:andPropertyName:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIGracefulWriting/1&#xff0c;UI&#x5927;&#x6742;&#x70e9;/*18_&#x7d22;&#x5f15;&#x52a8;&#x753b;&#x603b;&#x7ed3;/1&#xff0c;&#x6848;&#x4f8b;1/IndexAnimationDemo1VC.m"
+            timestampString = "579596391.19633"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "-_createData"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
