@@ -25,7 +25,7 @@
   
   @[@"RoundCornerSummaryVC",@"ImageCacheVC"],
   
-  @[@"",@"",@"",@"NotEquelCellHeightVC"],
+  @[@"",@"",@"",@"NotEquelCellHeightVC",@"SelfDefineWidgetVC"],
   
   @[@"",@""]
   
@@ -39,7 +39,7 @@
 
 @[@"圆角总结",@"图片缓存总结"],
 
-@[@"文本展示",@"label和tableViewCell不等高",@"TableView封装数据源",@"TableViewCell不等高的5种写法"],
+@[@"文本展示",@"label和tableViewCell不等高",@"TableView封装数据源",@"TableViewCell不等高的5种写法",@"自定义控件的写法"],
 
 @[@"UI封装",@"UI的优雅写法"],
 

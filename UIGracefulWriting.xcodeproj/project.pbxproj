@@ -235,6 +235,15 @@
 		4259011B2140D41400304394 /* Son1_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4259011A2140D41400304394 /* Son1_ViewController.m */; };
 		4259011E2140D42400304394 /* Son2_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4259011D2140D42400304394 /* Son2_ViewController.m */; };
 		425901212140D43300304394 /* Son3_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425901202140D43300304394 /* Son3_ViewController.m */; };
+		425FA0F322928C9D00E00B55 /* SelfDefineWidgetVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 425FA0F122928C9D00E00B55 /* SelfDefineWidgetVC.m */; };
+		425FA0F422928C9D00E00B55 /* SelfDefineWidgetVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425FA0F222928C9D00E00B55 /* SelfDefineWidgetVC.xib */; };
+		425FA0FD22928D9E00E00B55 /* PureCodeCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425FA0F722928D9C00E00B55 /* PureCodeCustomView.m */; };
+		425FA0FE22928D9E00E00B55 /* PureCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425FA0F822928D9D00E00B55 /* PureCodeViewController.m */; };
+		425FA0FF22928D9E00E00B55 /* PureCodeCustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 425FA0F922928D9D00E00B55 /* PureCodeCustomModel.m */; };
+		425FA10722928E6100E00B55 /* PureXibCustomModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 425FA10022928E5E00E00B55 /* PureXibCustomModel.m */; };
+		425FA10822928E6100E00B55 /* PureXibCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425FA10222928E5E00E00B55 /* PureXibCustomView.m */; };
+		425FA10922928E6100E00B55 /* PureXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425FA10422928E5F00E00B55 /* PureXibViewController.m */; };
+		425FA10A22928E6100E00B55 /* PureXibCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425FA10522928E6000E00B55 /* PureXibCustomView.xib */; };
 		4265FAC52265C3C900EA45CE /* NavigationSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FAC42265C3C900EA45CE /* NavigationSummaryVC.m */; };
 		4265FB0A2265C41D00EA45CE /* NavigationBarAddSegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FAFA2265C41900EA45CE /* NavigationBarAddSegmentController.m */; };
 		4265FB0B2265C41D00EA45CE /* NavigationBackgroundImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FAFC2265C41900EA45CE /* NavigationBackgroundImageController.m */; };
@@ -1420,6 +1429,22 @@
 		4259011D2140D42400304394 /* Son2_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son2_ViewController.m; sourceTree = "<group>"; };
 		4259011F2140D43300304394 /* Son3_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son3_ViewController.h; sourceTree = "<group>"; };
 		425901202140D43300304394 /* Son3_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son3_ViewController.m; sourceTree = "<group>"; };
+		425FA0F022928C9D00E00B55 /* SelfDefineWidgetVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfDefineWidgetVC.h; sourceTree = "<group>"; };
+		425FA0F122928C9D00E00B55 /* SelfDefineWidgetVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfDefineWidgetVC.m; sourceTree = "<group>"; };
+		425FA0F222928C9D00E00B55 /* SelfDefineWidgetVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelfDefineWidgetVC.xib; sourceTree = "<group>"; };
+		425FA0F722928D9C00E00B55 /* PureCodeCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PureCodeCustomView.m; sourceTree = "<group>"; };
+		425FA0F822928D9D00E00B55 /* PureCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PureCodeViewController.m; sourceTree = "<group>"; };
+		425FA0F922928D9D00E00B55 /* PureCodeCustomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PureCodeCustomModel.m; sourceTree = "<group>"; };
+		425FA0FA22928D9D00E00B55 /* PureCodeCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureCodeCustomView.h; sourceTree = "<group>"; };
+		425FA0FB22928D9D00E00B55 /* PureCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureCodeViewController.h; sourceTree = "<group>"; };
+		425FA0FC22928D9D00E00B55 /* PureCodeCustomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureCodeCustomModel.h; sourceTree = "<group>"; };
+		425FA10022928E5E00E00B55 /* PureXibCustomModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PureXibCustomModel.m; sourceTree = "<group>"; };
+		425FA10122928E5E00E00B55 /* PureXibCustomModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureXibCustomModel.h; sourceTree = "<group>"; };
+		425FA10222928E5E00E00B55 /* PureXibCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PureXibCustomView.m; sourceTree = "<group>"; };
+		425FA10322928E5F00E00B55 /* PureXibViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureXibViewController.h; sourceTree = "<group>"; };
+		425FA10422928E5F00E00B55 /* PureXibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PureXibViewController.m; sourceTree = "<group>"; };
+		425FA10522928E6000E00B55 /* PureXibCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PureXibCustomView.xib; sourceTree = "<group>"; };
+		425FA10622928E6000E00B55 /* PureXibCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureXibCustomView.h; sourceTree = "<group>"; };
 		4265FAC32265C3C900EA45CE /* NavigationSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationSummaryVC.h; sourceTree = "<group>"; };
 		4265FAC42265C3C900EA45CE /* NavigationSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationSummaryVC.m; sourceTree = "<group>"; };
 		4265FAFA2265C41900EA45CE /* NavigationBarAddSegmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarAddSegmentController.m; sourceTree = "<group>"; };
@@ -3180,9 +3205,9 @@
 			isa = PBXGroup;
 			children = (
 				42166FC222801369006724CD /* HSSetTableViewManager.m */,
-				42166FC322801369006724CD /* UIViewController+HSSetTableView.m */,
 				42166FC422801369006724CD /* HSSetTableViewManager.h */,
 				42166FC522801369006724CD /* UIViewController+HSSetTableView.h */,
+				42166FC322801369006724CD /* UIViewController+HSSetTableView.m */,
 			);
 			path = manager;
 			sourceTree = "<group>";
@@ -3232,9 +3257,9 @@
 		421670062280136A006724CD /* custom */ = {
 			isa = PBXGroup;
 			children = (
+				421670092280136A006724CD /* HSHeaderTableViewCell.h */,
 				421670072280136A006724CD /* HSZhiHuCustomCellModel.m */,
 				421670082280136A006724CD /* HSHeaderCellModel.h */,
-				421670092280136A006724CD /* HSHeaderTableViewCell.h */,
 				4216700A2280136A006724CD /* HSZhiHuCustomTableViewCell.h */,
 				4216700B2280136A006724CD /* HSZhiHuCustomCellModel.h */,
 				4216700C2280136A006724CD /* HSHeaderTableViewCell.m */,
@@ -3661,7 +3686,10 @@
 		42340A8B228BC0EC00BAF230 /* *18_索引动画总结 */ = {
 			isa = PBXGroup;
 			children = (
-				42340A91228BE93B00BAF230 /* 1，案例1 */,
+				42E42190228D69B600DBC2E4 /* 4，案例4（弹簧动画） */,
+				42E42175228D0FAB00DBC2E4 /* 3，案例3（最完整） */,
+				42E42173228D0F8300DBC2E4 /* 2，案例2（最简单） */,
+				42340A91228BE93B00BAF230 /* 1，案例1（放大效果） */,
 				42340A8C228BE7CB00BAF230 /* IndexAnimationVC.h */,
 				42340A8D228BE7CB00BAF230 /* IndexAnimationVC.m */,
 				42340A8E228BE7CB00BAF230 /* IndexAnimationVC.xib */,
@@ -3669,7 +3697,7 @@
 			path = "*18_索引动画总结";
 			sourceTree = "<group>";
 		};
-		42340A91228BE93B00BAF230 /* 1，案例1 */ = {
+		42340A91228BE93B00BAF230 /* 1，案例1（放大效果） */ = {
 			isa = PBXGroup;
 			children = (
 				42340AA4228BEA0000BAF230 /* Model */,
@@ -3677,7 +3705,7 @@
 				42340A95228BE9D300BAF230 /* IndexAnimationDemo1VC.h */,
 				42340A9A228BE9D400BAF230 /* IndexAnimationDemo1VC.m */,
 			);
-			path = "1，案例1";
+			path = "1，案例1（放大效果）";
 			sourceTree = "<group>";
 		};
 		42340AA3228BE9D900BAF230 /* View */ = {
@@ -4218,6 +4246,45 @@
 			path = "1_父子控制器（基础）";
 			sourceTree = "<group>";
 		};
+		425FA0EF22928B6700E00B55 /* 12，自定义控件的方式 */ = {
+			isa = PBXGroup;
+			children = (
+				425FA0F622928D7D00E00B55 /* 2，xib */,
+				425FA0F522928D7400E00B55 /* 1，纯代码 */,
+				425FA0F022928C9D00E00B55 /* SelfDefineWidgetVC.h */,
+				425FA0F122928C9D00E00B55 /* SelfDefineWidgetVC.m */,
+				425FA0F222928C9D00E00B55 /* SelfDefineWidgetVC.xib */,
+			);
+			path = "12，自定义控件的方式";
+			sourceTree = "<group>";
+		};
+		425FA0F522928D7400E00B55 /* 1，纯代码 */ = {
+			isa = PBXGroup;
+			children = (
+				425FA0FC22928D9D00E00B55 /* PureCodeCustomModel.h */,
+				425FA0F922928D9D00E00B55 /* PureCodeCustomModel.m */,
+				425FA0FA22928D9D00E00B55 /* PureCodeCustomView.h */,
+				425FA0F722928D9C00E00B55 /* PureCodeCustomView.m */,
+				425FA0FB22928D9D00E00B55 /* PureCodeViewController.h */,
+				425FA0F822928D9D00E00B55 /* PureCodeViewController.m */,
+			);
+			path = "1，纯代码";
+			sourceTree = "<group>";
+		};
+		425FA0F622928D7D00E00B55 /* 2，xib */ = {
+			isa = PBXGroup;
+			children = (
+				425FA10122928E5E00E00B55 /* PureXibCustomModel.h */,
+				425FA10022928E5E00E00B55 /* PureXibCustomModel.m */,
+				425FA10622928E6000E00B55 /* PureXibCustomView.h */,
+				425FA10222928E5E00E00B55 /* PureXibCustomView.m */,
+				425FA10522928E6000E00B55 /* PureXibCustomView.xib */,
+				425FA10322928E5F00E00B55 /* PureXibViewController.h */,
+				425FA10422928E5F00E00B55 /* PureXibViewController.m */,
+			);
+			path = "2，xib";
+			sourceTree = "<group>";
+		};
 		4265FAC22265C32600EA45CE /* 4，导航控制器总结 */ = {
 			isa = PBXGroup;
 			children = (
@@ -4265,7 +4332,8 @@
 		42662A95228A6E4B000729A5 /* 6，相册总结 */ = {
 			isa = PBXGroup;
 			children = (
-				42662A9B228A7401000729A5 /* 借鉴QMUI */,
+				42E42191228D6A6200DBC2E4 /* 自定义相册 */,
+				42662A9B228A7401000729A5 /* 系统相册 */,
 				42662A96228A6F85000729A5 /* PhotoAndCameraSummaryVC.h */,
 				42662A97228A6F85000729A5 /* PhotoAndCameraSummaryVC.m */,
 				42662A98228A6F85000729A5 /* PhotoAndCameraSummaryVC.xib */,
@@ -4273,11 +4341,11 @@
 			path = "6，相册总结";
 			sourceTree = "<group>";
 		};
-		42662A9B228A7401000729A5 /* 借鉴QMUI */ = {
+		42662A9B228A7401000729A5 /* 系统相册 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "借鉴QMUI";
+			path = "系统相册";
 			sourceTree = "<group>";
 		};
 		42662B9E228ACBBE000729A5 /* 5，第三方BAGridView */ = {
@@ -4578,8 +4646,8 @@
 		4291628D22637CEB005C8626 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				4291628E22637CEB005C8626 /* CornerTableViewCell.m */,
 				4291628F22637CEB005C8626 /* CornerTableViewCell.h */,
+				4291628E22637CEB005C8626 /* CornerTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -4611,6 +4679,7 @@
 			children = (
 				42B3E1172238D88E00379C2D /* Base_2_ViewController.h */,
 				42B3E1182238D88E00379C2D /* Base_2_ViewController.m */,
+				425FA0EF22928B6700E00B55 /* 12，自定义控件的方式 */,
 				426D5592228584470060AEF4 /* 11，通用带tableview的VC（基类） */,
 				426D5591228584390060AEF4 /* 10，通用VC（基类） */,
 				42D1C5F22277E082001F170F /* 9，封装的loading框 */,
@@ -7652,6 +7721,34 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		42E42173228D0F8300DBC2E4 /* 2，案例2（最简单） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "2，案例2（最简单）";
+			sourceTree = "<group>";
+		};
+		42E42175228D0FAB00DBC2E4 /* 3，案例3（最完整） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "3，案例3（最完整）";
+			sourceTree = "<group>";
+		};
+		42E42190228D69B600DBC2E4 /* 4，案例4（弹簧动画） */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "4，案例4（弹簧动画）";
+			sourceTree = "<group>";
+		};
+		42E42191228D6A6200DBC2E4 /* 自定义相册 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "自定义相册";
+			sourceTree = "<group>";
+		};
 		42E574B32282ACAD00DA5E83 /* ModuleA */ = {
 			isa = PBXGroup;
 			children = (
@@ -8203,6 +8300,7 @@
 				427B494E227EB75B00675542 /* apps.plist in Resources */,
 				42C7836B213CC45B0012188E /* NibSelfSizingCell.xib in Resources */,
 				42DE3C62226487E100422577 /* 1.jpg in Resources */,
+				425FA10A22928E6100E00B55 /* PureXibCustomView.xib in Resources */,
 				42DE3C60226487E100422577 /* 2.jpg in Resources */,
 				42C783C0213CCB6A0012188E /* YZMoreMenuViewController.xib in Resources */,
 				429CB0F8210436960063A0D8 /* pageControlCurrentDot@2x.png in Resources */,
@@ -8214,6 +8312,7 @@
 				42D1C5F72277E1D4001F170F /* CommonLoadingVC.xib in Resources */,
 				42C51A2B211C456A00742239 /* XMGStatusCell.xib in Resources */,
 				42C787E0213D2BB10012188E /* SGEventVC.xib in Resources */,
+				425FA0F422928C9D00E00B55 /* SelfDefineWidgetVC.xib in Resources */,
 				42C4DF29215F2B3000247949 /* test.jpg in Resources */,
 				4265FB1D2265C5C700EA45CE /* DataSource.plist in Resources */,
 			);
@@ -8618,6 +8717,7 @@
 				42C7837E213CC45B0012188E /* FullWidthSelfSizingCell.m in Sources */,
 				429B15102160C2FC00F595FC /* STTransitions.m in Sources */,
 				42BF817E211A88680090E612 /* CQFilterCell.m in Sources */,
+				425FA0F322928C9D00E00B55 /* SelfDefineWidgetVC.m in Sources */,
 				42CF2C1A21A54B9000951C6D /* ZLYTextField.m in Sources */,
 				426854FE223F2C9400680CDA /* EasyKVOInfo.m in Sources */,
 				4216702E2280136A006724CD /* HSCustomTableViewCell.m in Sources */,
@@ -8763,6 +8863,7 @@
 				425901072140BDE400304394 /* AllShareView.m in Sources */,
 				429B14DF2160B95800F595FC /* MCDataJudge.m in Sources */,
 				42789BF3215475AB00F85994 /* Test2ViewController.m in Sources */,
+				425FA0FD22928D9E00E00B55 /* PureCodeCustomView.m in Sources */,
 				4216702D2280136A006724CD /* HSTitleTableViewCell.m in Sources */,
 				425900ED2140BD8100304394 /* ActionSheetTableViewController.m in Sources */,
 				42C78374213CC45B0012188E /* ManuallySelfSizingCell.m in Sources */,
@@ -8797,6 +8898,7 @@
 				42CD427E2260674B00652FA6 /* JCAlertButtonItem.m in Sources */,
 				427B4981227EC32300675542 /* MemoryAndDiskCachePackageVC.m in Sources */,
 				42C78391213CC45B0012188E /* RemoveSectionController.m in Sources */,
+				425FA10822928E6100E00B55 /* PureXibCustomView.m in Sources */,
 				42D1C6BC2277E835001F170F /* CQBaseViewController.m in Sources */,
 				429CB1B3210436960063A0D8 /* Demo4ViewController.m in Sources */,
 				429CB0F0210436960063A0D8 /* CustomBannerScrollView.m in Sources */,
@@ -8824,6 +8926,7 @@
 				424E3D432175C5EF00D61820 /* NSObject+UIDebuggingInformationOverlayEnable.m in Sources */,
 				42DE3A4D2264576400422577 /* FakeWindowClass.m in Sources */,
 				42D42FD7225C7C8500EA4AA8 /* ScrollPageVC.m in Sources */,
+				425FA0FF22928D9E00E00B55 /* PureCodeCustomModel.m in Sources */,
 				429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */,
 				42D1C65F2277E719001F170F /* EasyLoadingView.m in Sources */,
 				42C78357213CC45B0012188E /* AnnouncingDepsViewController.m in Sources */,
@@ -8873,6 +8976,7 @@
 				422789332145F44F002B9C13 /* AttributeViewViewController.m in Sources */,
 				422789262145F44F002B9C13 /* ListViewController.m in Sources */,
 				42F7725A2193D0DD00FFD237 /* JMNumberButton.m in Sources */,
+				425FA10922928E6100E00B55 /* PureXibViewController.m in Sources */,
 				42C4DF02215F138D00247949 /* JKCountDownNumberButton.m in Sources */,
 				422788942145F431002B9C13 /* JXCategoryIndicatorCellModel.m in Sources */,
 				42B1828B2107105800C1E682 /* UIButton+category2.m in Sources */,
@@ -8950,6 +9054,7 @@
 				42551D8C225F1519003DF389 /* DatePickerButton.m in Sources */,
 				42C5B4BC21422F5300563794 /* LabelXibViewController.m in Sources */,
 				42C7835D213CC45B0012188E /* StoryboardViewController.m in Sources */,
+				425FA10722928E6100E00B55 /* PureXibCustomModel.m in Sources */,
 				4227892C2145F44F002B9C13 /* LoadDataViewController.m in Sources */,
 				42CD424522603B8400652FA6 /* FKTextField.m in Sources */,
 				422788A52145F431002B9C13 /* JXCategoryNumberCellModel.m in Sources */,
@@ -9067,6 +9172,7 @@
 				42D1C65D2277E719001F170F /* EasyAlertView.m in Sources */,
 				426707352121301400046FE6 /* CCBaseTableFooterView.m in Sources */,
 				42CD423922603ACA00652FA6 /* MinoruTextField.m in Sources */,
+				425FA0FE22928D9E00E00B55 /* PureCodeViewController.m in Sources */,
 				42C5B4CB21422F5300563794 /* TExamTextField.m in Sources */,
 				421670112280136A006724CD /* HSSetTableViewQQController.m in Sources */,
 				42CD425E226043A200652FA6 /* UITextView+WZB.m in Sources */,
