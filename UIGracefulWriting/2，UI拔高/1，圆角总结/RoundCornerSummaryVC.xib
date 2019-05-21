@@ -92,7 +92,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="Ahc-ee-xNH"/>
                             </constraints>
-                            <state key="normal" title="1，高效圆角1示例"/>
+                            <state key="normal" title="1，高效圆角1示例-QQCorner"/>
                             <connections>
                                 <action selector="test1:" destination="-1" eventType="touchUpInside" id="vbA-E4-MTU"/>
                             </connections>
@@ -103,7 +103,7 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="sDx-a8-21j"/>
                             </constraints>
-                            <state key="normal" title="2，高效圆角2示例"/>
+                            <state key="normal" title="2，高效圆角2示例-分类"/>
                             <connections>
                                 <action selector="test2:" destination="-1" eventType="touchUpInside" id="lor-0v-3o5"/>
                             </connections>
@@ -114,16 +114,26 @@
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="fg8-B9-7eb"/>
                             </constraints>
-                            <state key="normal" title="3，高效圆角3示例"/>
+                            <state key="normal" title="3，高效圆角3示例-JMCorner"/>
                             <connections>
                                 <action selector="test3:" destination="-1" eventType="touchUpInside" id="GOE-ho-ovE"/>
                             </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRE-hm-sVp">
+                            <rect key="frame" x="0.0" y="219" width="414" height="50"/>
+                            <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="hxc-gu-amh"/>
+                            </constraints>
+                            <state key="normal" title="4，分类+SDImage封装"/>
                         </button>
                     </subviews>
                     <color key="backgroundColor" red="0.087506058469999995" green="0.79567833129999999" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstItem="anq-Fb-aeJ" firstAttribute="top" secondItem="Qtq-KG-C4O" secondAttribute="bottom" constant="10" id="1lO-4e-XhH"/>
+                        <constraint firstAttribute="trailing" secondItem="CRE-hm-sVp" secondAttribute="trailing" id="4rf-EP-IHq"/>
                         <constraint firstItem="6YV-uw-LuQ" firstAttribute="top" secondItem="anq-Fb-aeJ" secondAttribute="bottom" constant="10" id="5Qs-dd-Crb"/>
+                        <constraint firstItem="CRE-hm-sVp" firstAttribute="leading" secondItem="Jg9-mS-h2V" secondAttribute="leading" id="IXp-Fx-LW5"/>
                         <constraint firstItem="2wy-Kb-Dtr" firstAttribute="leading" secondItem="Jg9-mS-h2V" secondAttribute="leading" id="LRe-Ng-a9B"/>
                         <constraint firstItem="2wy-Kb-Dtr" firstAttribute="top" secondItem="6YV-uw-LuQ" secondAttribute="bottom" constant="10" id="LZd-4t-30F"/>
                         <constraint firstAttribute="trailing" secondItem="anq-Fb-aeJ" secondAttribute="trailing" id="QFj-xx-4Nh"/>
@@ -134,6 +144,7 @@
                         <constraint firstItem="Qtq-KG-C4O" firstAttribute="leading" secondItem="Jg9-mS-h2V" secondAttribute="leadingMargin" id="jUE-0H-3eu"/>
                         <constraint firstAttribute="trailing" secondItem="2wy-Kb-Dtr" secondAttribute="trailing" id="kWx-vv-Rme"/>
                         <constraint firstItem="Qtq-KG-C4O" firstAttribute="top" secondItem="Jg9-mS-h2V" secondAttribute="topMargin" id="t7v-1M-JAD"/>
+                        <constraint firstItem="CRE-hm-sVp" firstAttribute="top" secondItem="2wy-Kb-Dtr" secondAttribute="bottom" constant="10" id="xUS-8e-EGG"/>
                     </constraints>
                 </view>
             </subviews>

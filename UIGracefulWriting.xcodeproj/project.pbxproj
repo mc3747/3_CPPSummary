@@ -244,6 +244,8 @@
 		425FA10822928E6100E00B55 /* PureXibCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425FA10222928E5E00E00B55 /* PureXibCustomView.m */; };
 		425FA10922928E6100E00B55 /* PureXibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 425FA10422928E5F00E00B55 /* PureXibViewController.m */; };
 		425FA10A22928E6100E00B55 /* PureXibCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425FA10522928E6000E00B55 /* PureXibCustomView.xib */; };
+		425FA10E229297F500E00B55 /* UIImage+ZZYCircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 425FA10D229297F500E00B55 /* UIImage+ZZYCircleImage.m */; };
+		425FA1112292983600E00B55 /* UIImageView+ZZYImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425FA1102292983600E00B55 /* UIImageView+ZZYImageView.m */; };
 		4265FAC52265C3C900EA45CE /* NavigationSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FAC42265C3C900EA45CE /* NavigationSummaryVC.m */; };
 		4265FB0A2265C41D00EA45CE /* NavigationBarAddSegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FAFA2265C41900EA45CE /* NavigationBarAddSegmentController.m */; };
 		4265FB0B2265C41D00EA45CE /* NavigationBackgroundImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FAFC2265C41900EA45CE /* NavigationBackgroundImageController.m */; };
@@ -1445,6 +1447,10 @@
 		425FA10422928E5F00E00B55 /* PureXibViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PureXibViewController.m; sourceTree = "<group>"; };
 		425FA10522928E6000E00B55 /* PureXibCustomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PureXibCustomView.xib; sourceTree = "<group>"; };
 		425FA10622928E6000E00B55 /* PureXibCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureXibCustomView.h; sourceTree = "<group>"; };
+		425FA10C229297F500E00B55 /* UIImage+ZZYCircleImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZZYCircleImage.h"; sourceTree = "<group>"; };
+		425FA10D229297F500E00B55 /* UIImage+ZZYCircleImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZZYCircleImage.m"; sourceTree = "<group>"; };
+		425FA10F2292983600E00B55 /* UIImageView+ZZYImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZZYImageView.h"; sourceTree = "<group>"; };
+		425FA1102292983600E00B55 /* UIImageView+ZZYImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZZYImageView.m"; sourceTree = "<group>"; };
 		4265FAC32265C3C900EA45CE /* NavigationSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationSummaryVC.h; sourceTree = "<group>"; };
 		4265FAC42265C3C900EA45CE /* NavigationSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationSummaryVC.m; sourceTree = "<group>"; };
 		4265FAFA2265C41900EA45CE /* NavigationBarAddSegmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarAddSegmentController.m; sourceTree = "<group>"; };
@@ -4285,6 +4291,17 @@
 			path = "2，xib";
 			sourceTree = "<group>";
 		};
+		425FA10B2292976400E00B55 /* 4，高效圆角4-QuartZ2D + SDImage */ = {
+			isa = PBXGroup;
+			children = (
+				425FA10F2292983600E00B55 /* UIImageView+ZZYImageView.h */,
+				425FA1102292983600E00B55 /* UIImageView+ZZYImageView.m */,
+				425FA10C229297F500E00B55 /* UIImage+ZZYCircleImage.h */,
+				425FA10D229297F500E00B55 /* UIImage+ZZYCircleImage.m */,
+			);
+			path = "4，高效圆角4-QuartZ2D + SDImage";
+			sourceTree = "<group>";
+		};
 		4265FAC22265C32600EA45CE /* 4，导航控制器总结 */ = {
 			isa = PBXGroup;
 			children = (
@@ -4545,6 +4562,7 @@
 				42CD429F22609AFD00652FA6 /* 1，高效圆角1-QQCorner */,
 				4291628722637CD7005C8626 /* 2，高效圆角2-分类 */,
 				42166F2B2280062C006724CD /* 3，高效圆角3-JMCorner */,
+				425FA10B2292976400E00B55 /* 4，高效圆角4-QuartZ2D + SDImage */,
 			);
 			path = "1，圆角总结";
 			sourceTree = "<group>";
@@ -8474,6 +8492,7 @@
 				42E740DF2276F9A900859877 /* UIView+GKExtension.m in Sources */,
 				425901062140BDE400304394 /* ShareView.m in Sources */,
 				42B573BE213FC1FE0089CFDF /* DefaultImageVC.m in Sources */,
+				425FA10E229297F500E00B55 /* UIImage+ZZYCircleImage.m in Sources */,
 				42DD8D8021A7A03800CB04A5 /* CustomPresentationController.m in Sources */,
 				42523F5B218BF9440038CEE3 /* HYBCardVeticalScaleController.m in Sources */,
 				42DD8DC921A7ACA400CB04A5 /* AAPLExternalStoryboardSegue.m in Sources */,
@@ -8982,6 +9001,7 @@
 				42B1828B2107105800C1E682 /* UIButton+category2.m in Sources */,
 				42BF8161211A808C0090E612 /* UILabel+MoneyAnimation.m in Sources */,
 				429CB1A8210436960063A0D8 /* Demo5HeaderView.m in Sources */,
+				425FA1112292983600E00B55 /* UIImageView+ZZYImageView.m in Sources */,
 				429CB106210436960063A0D8 /* TADotView.m in Sources */,
 				4216702F2280136A006724CD /* HSSwitchTableViewCell.m in Sources */,
 				42C783A2213CC99E0012188E /* DropDownViewController.m in Sources */,

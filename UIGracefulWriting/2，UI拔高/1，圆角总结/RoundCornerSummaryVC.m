@@ -82,6 +82,7 @@
     maskLayer.path = maskPath.CGPath;
     self.imageView3.layer.mask = maskLayer;
 }
+
 #pragma mark -  第三方示例
 - (IBAction)test1:(id)sender {
     QQCornerViewController *vc = [QQCornerViewController new];
@@ -97,6 +98,8 @@
     JMCornerViewController *vc = [JMCornerViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+
 #pragma mark -  处理image圆角的方法
 //方法1
 - (UIImage *)imageWithRoundedCornersSize:(float)cornerRadius usingImage:(UIImage *)original
