@@ -302,6 +302,12 @@
 		426D559B2285BFAD0060AEF4 /* BZBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D559A2285BFAD0060AEF4 /* BZBaseTableViewCell.m */; };
 		426FEE76221CE67000C4491A /* TextViewRichVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FEE75221CE67000C4491A /* TextViewRichVC.m */; };
 		426FEE79221D39EC00C4491A /* ClickTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FEE78221D39EC00C4491A /* ClickTextView.m */; };
+		427487042330784D0089B749 /* FourElementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427487032330784D0089B749 /* FourElementViewController.m */; };
+		4274870723308CDC0089B749 /* BaseInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4274870623308CDC0089B749 /* BaseInputView.m */; };
+		4274870A23308D2D0089B749 /* BankcardInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4274870923308D2D0089B749 /* BankcardInputView.m */; };
+		4274870D23308D430089B749 /* NameInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4274870C23308D430089B749 /* NameInputView.m */; };
+		4274871023308D8A0089B749 /* IdentifycardInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4274870F23308D8A0089B749 /* IdentifycardInputView.m */; };
+		4274871323308D9F0089B749 /* PhoneInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4274871223308D9F0089B749 /* PhoneInputView.m */; };
 		42789BF02154759900F85994 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BEF2154759900F85994 /* Test1ViewController.m */; };
 		42789BF3215475AB00F85994 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BF2215475AB00F85994 /* Test2ViewController.m */; };
 		42789C602154EEAB00F85994 /* CommonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789C5F2154EEAB00F85994 /* CommonMethod.m */; };
@@ -741,6 +747,8 @@
 		42CD436F22609C3800652FA6 /* CALayer+QQCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD436922609C3700652FA6 /* CALayer+QQCorner.m */; };
 		42CD437022609C3800652FA6 /* UIView+QQCorner.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD436B22609C3700652FA6 /* UIView+QQCorner.m */; };
 		42CD437322609C6800652FA6 /* QQCornerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CD437122609C6700652FA6 /* QQCornerViewController.m */; };
+		42CDE76E2330B4CF001F7731 /* CustomTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CDE76D2330B4CF001F7731 /* CustomTriangleView.m */; };
+		42CDE7712330BBF4001F7731 /* UIBezierPath+BasicShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CDE76F2330BBF3001F7731 /* UIBezierPath+BasicShapes.m */; };
 		42CF2C0B21A5498100951C6D /* InputFilterVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C0921A5498100951C6D /* InputFilterVC.m */; };
 		42CF2C1221A54A7D00951C6D /* TextFieldNonPackageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C1121A54A7D00951C6D /* TextFieldNonPackageVC.m */; };
 		42CF2C1921A54B9000951C6D /* TextFieldAndTextViewPackageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42CF2C1321A54B8F00951C6D /* TextFieldAndTextViewPackageVC.m */; };
@@ -1565,6 +1573,18 @@
 		426FEE75221CE67000C4491A /* TextViewRichVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewRichVC.m; sourceTree = "<group>"; };
 		426FEE77221D39EC00C4491A /* ClickTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickTextView.h; sourceTree = "<group>"; };
 		426FEE78221D39EC00C4491A /* ClickTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickTextView.m; sourceTree = "<group>"; };
+		427487022330784D0089B749 /* FourElementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourElementViewController.h; sourceTree = "<group>"; };
+		427487032330784D0089B749 /* FourElementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourElementViewController.m; sourceTree = "<group>"; };
+		4274870523308CDC0089B749 /* BaseInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseInputView.h; sourceTree = "<group>"; };
+		4274870623308CDC0089B749 /* BaseInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseInputView.m; sourceTree = "<group>"; };
+		4274870823308D2D0089B749 /* BankcardInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BankcardInputView.h; sourceTree = "<group>"; };
+		4274870923308D2D0089B749 /* BankcardInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BankcardInputView.m; sourceTree = "<group>"; };
+		4274870B23308D430089B749 /* NameInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameInputView.h; sourceTree = "<group>"; };
+		4274870C23308D430089B749 /* NameInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameInputView.m; sourceTree = "<group>"; };
+		4274870E23308D8A0089B749 /* IdentifycardInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IdentifycardInputView.h; sourceTree = "<group>"; };
+		4274870F23308D8A0089B749 /* IdentifycardInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IdentifycardInputView.m; sourceTree = "<group>"; };
+		4274871123308D9F0089B749 /* PhoneInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhoneInputView.h; sourceTree = "<group>"; };
+		4274871223308D9F0089B749 /* PhoneInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhoneInputView.m; sourceTree = "<group>"; };
 		42789BEE2154759900F85994 /* Test1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
 		42789BEF2154759900F85994 /* Test1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test1ViewController.m; sourceTree = "<group>"; };
 		42789BF1215475AB00F85994 /* Test2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
@@ -2405,6 +2425,10 @@
 		42CD436C22609C3800652FA6 /* UIView+QQCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+QQCorner.h"; sourceTree = "<group>"; };
 		42CD437122609C6700652FA6 /* QQCornerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQCornerViewController.m; sourceTree = "<group>"; };
 		42CD437222609C6800652FA6 /* QQCornerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQCornerViewController.h; sourceTree = "<group>"; };
+		42CDE76C2330B4CF001F7731 /* CustomTriangleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTriangleView.h; sourceTree = "<group>"; };
+		42CDE76D2330B4CF001F7731 /* CustomTriangleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTriangleView.m; sourceTree = "<group>"; };
+		42CDE76F2330BBF3001F7731 /* UIBezierPath+BasicShapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+BasicShapes.m"; sourceTree = "<group>"; };
+		42CDE7702330BBF3001F7731 /* UIBezierPath+BasicShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+BasicShapes.h"; sourceTree = "<group>"; };
 		42CF2C0821A5498100951C6D /* InputFilterVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputFilterVC.h; sourceTree = "<group>"; };
 		42CF2C0921A5498100951C6D /* InputFilterVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputFilterVC.m; sourceTree = "<group>"; };
 		42CF2C1021A54A7D00951C6D /* TextFieldNonPackageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldNonPackageVC.h; sourceTree = "<group>"; };
@@ -4551,6 +4575,45 @@
 				426FEE78221D39EC00C4491A /* ClickTextView.m */,
 			);
 			path = "3，UITextView系列";
+			sourceTree = "<group>";
+		};
+		427487012330780D0089B749 /* #7_银行四要素验证范例 */ = {
+			isa = PBXGroup;
+			children = (
+				427487022330784D0089B749 /* FourElementViewController.h */,
+				427487032330784D0089B749 /* FourElementViewController.m */,
+				427487152330B1B40089B749 /* textfield */,
+				427487142330B1820089B749 /* tool */,
+			);
+			path = "#7_银行四要素验证范例";
+			sourceTree = "<group>";
+		};
+		427487142330B1820089B749 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				4274870523308CDC0089B749 /* BaseInputView.h */,
+				4274870623308CDC0089B749 /* BaseInputView.m */,
+				42CDE76C2330B4CF001F7731 /* CustomTriangleView.h */,
+				42CDE76D2330B4CF001F7731 /* CustomTriangleView.m */,
+				42CDE7702330BBF3001F7731 /* UIBezierPath+BasicShapes.h */,
+				42CDE76F2330BBF3001F7731 /* UIBezierPath+BasicShapes.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		427487152330B1B40089B749 /* textfield */ = {
+			isa = PBXGroup;
+			children = (
+				4274870823308D2D0089B749 /* BankcardInputView.h */,
+				4274870923308D2D0089B749 /* BankcardInputView.m */,
+				4274870B23308D430089B749 /* NameInputView.h */,
+				4274870C23308D430089B749 /* NameInputView.m */,
+				4274870E23308D8A0089B749 /* IdentifycardInputView.h */,
+				4274870F23308D8A0089B749 /* IdentifycardInputView.m */,
+				4274871123308D9F0089B749 /* PhoneInputView.h */,
+				4274871223308D9F0089B749 /* PhoneInputView.m */,
+			);
+			path = textfield;
 			sourceTree = "<group>";
 		};
 		427B493B227E763000675542 /* 1，圆角总结 */ = {
@@ -7371,6 +7434,7 @@
 				42CD424A22603EE700652FA6 /* #4_输入带空格的封装 */,
 				42E9FA3E226FEF4000D840A2 /* #5_输入值记录联想 */,
 				42D1C76B22783EBE001F170F /* #6_键盘遮挡问题（中量级） */,
+				427487012330780D0089B749 /* #7_银行四要素验证范例 */,
 			);
 			path = "*7_textField相关";
 			sourceTree = "<group>";
@@ -8654,6 +8718,7 @@
 				426D55952285847D0060AEF4 /* BZBaseViewController.m in Sources */,
 				42C51A27211C445D00742239 /* XMGStatus.m in Sources */,
 				429B15192160C2FD00F595FC /* STImageController.m in Sources */,
+				427487042330784D0089B749 /* FourElementViewController.m in Sources */,
 				422788AB2145F431002B9C13 /* JXCategoryBaseCellModel.m in Sources */,
 				42CF2C0B21A5498100951C6D /* InputFilterVC.m in Sources */,
 				421670302280136A006724CD /* HSImageTableViewCell.m in Sources */,
@@ -8713,6 +8778,7 @@
 				4227888F2145F430002B9C13 /* JXCategoryIndicatorTriangleView.m in Sources */,
 				4265FB102265C41D00EA45CE /* NavigationBarChangeBackgroundViewController.m in Sources */,
 				421670152280136A006724CD /* HSCategoryViewController.m in Sources */,
+				42CDE7712330BBF4001F7731 /* UIBezierPath+BasicShapes.m in Sources */,
 				42C5B4C521422F5300563794 /* TYLabelViewController.m in Sources */,
 				42D1C6532277E719001F170F /* EasyLoadingTypes.m in Sources */,
 				42166F9422801358006724CD /* LYEmptyView.m in Sources */,
@@ -8879,6 +8945,7 @@
 				42C5B6AD2142699B00563794 /* UIColor+Separate.m in Sources */,
 				42C55CBC218AF0AD00454598 /* OAUIStackViewViewController.m in Sources */,
 				42F772612193D0DD00FFD237 /* JMBadgeViewController.m in Sources */,
+				4274871323308D9F0089B749 /* PhoneInputView.m in Sources */,
 				425901072140BDE400304394 /* AllShareView.m in Sources */,
 				429B14DF2160B95800F595FC /* MCDataJudge.m in Sources */,
 				42789BF3215475AB00F85994 /* Test2ViewController.m in Sources */,
@@ -8947,6 +9014,7 @@
 				42D42FD7225C7C8500EA4AA8 /* ScrollPageVC.m in Sources */,
 				425FA0FF22928D9E00E00B55 /* PureCodeCustomModel.m in Sources */,
 				429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */,
+				4274870723308CDC0089B749 /* BaseInputView.m in Sources */,
 				42D1C65F2277E719001F170F /* EasyLoadingView.m in Sources */,
 				42C78357213CC45B0012188E /* AnnouncingDepsViewController.m in Sources */,
 				42523F45218BF8F50038CEE3 /* HYBGridCell.m in Sources */,
@@ -8991,6 +9059,7 @@
 				429CB1B2210436960063A0D8 /* WaterfallCell.m in Sources */,
 				42C5B48821422D4500563794 /* tableViewModel.m in Sources */,
 				42BF81B0211A89D90090E612 /* UIView+FrameHelper.m in Sources */,
+				4274870A23308D2D0089B749 /* BankcardInputView.m in Sources */,
 				4216701B2280136A006724CD /* NSString+HSHeight.m in Sources */,
 				422789332145F44F002B9C13 /* AttributeViewViewController.m in Sources */,
 				422789262145F44F002B9C13 /* ListViewController.m in Sources */,
@@ -9141,6 +9210,7 @@
 				42C7836A213CC45B0012188E /* NibSelfSizingCell.m in Sources */,
 				42C78353213CC45B0012188E /* Post.m in Sources */,
 				4265FB1C2265C5C700EA45CE /* UIBarButtonItem+Custom.m in Sources */,
+				4274870D23308D430089B749 /* NameInputView.m in Sources */,
 				42DE3C45226487AA00422577 /* AsyncDisplayKitTableViewCell.m in Sources */,
 				42C783CA213CCB6A0012188E /* YZDropViewController.m in Sources */,
 				42CB7E7D21391F3F003397FB /* LxButton.m in Sources */,
@@ -9153,6 +9223,7 @@
 				429CB1AF210436960063A0D8 /* Demo3Cell.m in Sources */,
 				42DD8DC321A7ACA300CB04A5 /* AAPLSlideTransitionAnimator.m in Sources */,
 				42523F68218BFE8A0038CEE3 /* CHD_ListView_Structure.m in Sources */,
+				42CDE76E2330B4CF001F7731 /* CustomTriangleView.m in Sources */,
 				42C78387213CC45B0012188E /* PostSectionController.m in Sources */,
 				42F7725E2193D0DD00FFD237 /* JMBaseButton+CountDown.m in Sources */,
 				42CD4290226067CA00652FA6 /* MoreAlertManageTableVC.m in Sources */,
@@ -9218,6 +9289,7 @@
 				426707432121325B00046FE6 /* ExampleData.m in Sources */,
 				42D1C76F22783F39001F170F /* CoverKeyboardHeavyClassVC.m in Sources */,
 				424F05A72275B5E50039CD62 /* DAViewController.m in Sources */,
+				4274871023308D8A0089B749 /* IdentifycardInputView.m in Sources */,
 				42E574C52282ACAE00DA5E83 /* KTTableViewCell02.m in Sources */,
 				421670172280136A006724CD /* UIView+HSFrame.m in Sources */,
 				429B15142160C2FC00F595FC /* CustomTableView.m in Sources */,
