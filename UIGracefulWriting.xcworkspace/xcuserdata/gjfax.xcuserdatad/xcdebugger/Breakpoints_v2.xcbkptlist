@@ -83,5 +83,21 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "UIGracefulWriting/1&#xff0c;UI&#x5927;&#x6742;&#x70e9;/*7_textField&#x76f8;&#x5173;/#7_&#x94f6;&#x884c;&#x56db;&#x8981;&#x7d20;&#x9a8c;&#x8bc1;&#x8303;&#x4f8b;/FourElementViewController.m"
+            timestampString = "590481343.808949"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "159"
+            endingLineNumber = "159"
+            landmarkName = "-textFieldDidEndEditing:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

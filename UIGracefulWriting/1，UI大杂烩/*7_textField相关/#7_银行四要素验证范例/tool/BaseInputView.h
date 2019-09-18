@@ -7,16 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CustomTriangleView.h"
 #import "MCLabel.h"
-#import "UIBezierPath+BasicShapes.h"
+
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseInputView : UIView
 @property (nonatomic, weak) UILabel *titleLabel;
 @property (nonatomic, weak) UITextField *textField;
-@property (nonatomic, weak) CustomTriangleView *triangleView;
+@property (nonatomic, weak) UIView *triangleView;
 @property (nonatomic, weak) MCLabel *errorTipsLabel;
 
 - (void)showTips:(NSString *)tips;
