@@ -16,8 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.subtitleArray = @[@[@"cctableView",@"table基类-代理写",@"table基类-block写",@"tableViewController基类",@"多种cell组合",@"一般的小型封装"]];
-    self.vcNameArray = @[@[@"TabView_4_ViewController",@"BaseTableViewDelegateVC",@"BaseTableViewBlockVC",@"",@"TableViewDemosVC",@"PackageTableViewVC"]];
+    self.subtitleArray = @[@[@"cctableView",@"table基类-代理写",@"table基类-block写",@"tableViewController基类",@"多种cell组合",@"一般的小型封装",@"mvvm实现多种cell组合"]];
+    self.vcNameArray = @[@[@"TabView_4_ViewController",@"BaseTableViewDelegateVC",@"BaseTableViewBlockVC",@"",@"TableViewDemosVC",@"PackageTableViewVC",@"WellKnownSayingController"]];
     
 }
 

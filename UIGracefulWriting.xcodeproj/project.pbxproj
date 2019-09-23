@@ -246,6 +246,26 @@
 		425FA10A22928E6100E00B55 /* PureXibCustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425FA10522928E6000E00B55 /* PureXibCustomView.xib */; };
 		425FA10E229297F500E00B55 /* UIImage+ZZYCircleImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 425FA10D229297F500E00B55 /* UIImage+ZZYCircleImage.m */; };
 		425FA1112292983600E00B55 /* UIImageView+ZZYImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 425FA1102292983600E00B55 /* UIImageView+ZZYImageView.m */; };
+		426018AC2338A85900AF656A /* YBHTableCellConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260189F2338A85900AF656A /* YBHTableCellConfig.m */; };
+		426018AD2338A85900AF656A /* YBHTableHeaderFooterConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018A12338A85900AF656A /* YBHTableHeaderFooterConfig.m */; };
+		426018AE2338A85900AF656A /* UITableView+YBHandyList.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018A42338A85900AF656A /* UITableView+YBHandyList.m */; };
+		426018AF2338A85900AF656A /* YBHandyTableIMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018A72338A85900AF656A /* YBHandyTableIMP.m */; };
+		426018B02338A85900AF656A /* YBHTableSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018A82338A85900AF656A /* YBHTableSection.m */; };
+		426018B12338A85900AF656A /* YBHTCommonInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018AB2338A85900AF656A /* YBHTCommonInfo.m */; };
+		426018CB2338A89A00AF656A /* WellKnownSayingTwoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 426018B42338A89800AF656A /* WellKnownSayingTwoCell.xib */; };
+		426018CC2338A89A00AF656A /* WellKnownSayingTwoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018B52338A89900AF656A /* WellKnownSayingTwoCell.m */; };
+		426018CD2338A89A00AF656A /* WellKnownSayingThreeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018B62338A89900AF656A /* WellKnownSayingThreeCell.m */; };
+		426018CE2338A89A00AF656A /* WellKnownSayingThreeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 426018B72338A89900AF656A /* WellKnownSayingThreeCell.xib */; };
+		426018CF2338A89A00AF656A /* WellKnownSayingOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 426018B82338A89900AF656A /* WellKnownSayingOneCell.xib */; };
+		426018D02338A89A00AF656A /* WellKnownSayingOneCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018B92338A89900AF656A /* WellKnownSayingOneCell.m */; };
+		426018D12338A89A00AF656A /* WellKnownSayingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018BD2338A89900AF656A /* WellKnownSayingModel.m */; };
+		426018D22338A89A00AF656A /* WellKnownSayingThreeCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018C12338A89900AF656A /* WellKnownSayingThreeCellModel.m */; };
+		426018D32338A89A00AF656A /* WellKnownSayingOneCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018C22338A89900AF656A /* WellKnownSayingOneCellModel.m */; };
+		426018D42338A89A00AF656A /* WellKnownSayingTwoCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018C42338A89900AF656A /* WellKnownSayingTwoCellModel.m */; };
+		426018D52338A89A00AF656A /* WellKnownSayingControllerViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018C62338A89900AF656A /* WellKnownSayingControllerViewModel.m */; };
+		426018D62338A89A00AF656A /* WellKnownSayingTableIMP.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018C92338A89A00AF656A /* WellKnownSayingTableIMP.m */; };
+		426018D82338A8A000AF656A /* WellKnownSaying.plist in Resources */ = {isa = PBXBuildFile; fileRef = 426018D72338A8A000AF656A /* WellKnownSaying.plist */; };
+		426018DB2338A8A900AF656A /* WellKnownSayingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426018DA2338A8A900AF656A /* WellKnownSayingController.m */; };
 		4265FAC52265C3C900EA45CE /* NavigationSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FAC42265C3C900EA45CE /* NavigationSummaryVC.m */; };
 		4265FB0A2265C41D00EA45CE /* NavigationBarAddSegmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FAFA2265C41900EA45CE /* NavigationBarAddSegmentController.m */; };
 		4265FB0B2265C41D00EA45CE /* NavigationBackgroundImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4265FAFC2265C41900EA45CE /* NavigationBackgroundImageController.m */; };
@@ -1454,6 +1474,45 @@
 		425FA10D229297F500E00B55 /* UIImage+ZZYCircleImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZZYCircleImage.m"; sourceTree = "<group>"; };
 		425FA10F2292983600E00B55 /* UIImageView+ZZYImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+ZZYImageView.h"; sourceTree = "<group>"; };
 		425FA1102292983600E00B55 /* UIImageView+ZZYImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+ZZYImageView.m"; sourceTree = "<group>"; };
+		4260189B2338A85900AF656A /* UITableView+YBHandyList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+YBHandyList.h"; sourceTree = "<group>"; };
+		4260189C2338A85900AF656A /* YBHTableSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBHTableSection.h; sourceTree = "<group>"; };
+		4260189E2338A85900AF656A /* YBHTableHeaderFooterConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBHTableHeaderFooterConfig.h; sourceTree = "<group>"; };
+		4260189F2338A85900AF656A /* YBHTableCellConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBHTableCellConfig.m; sourceTree = "<group>"; };
+		426018A02338A85900AF656A /* YBHTableHeaderFooterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBHTableHeaderFooterProtocol.h; sourceTree = "<group>"; };
+		426018A12338A85900AF656A /* YBHTableHeaderFooterConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBHTableHeaderFooterConfig.m; sourceTree = "<group>"; };
+		426018A22338A85900AF656A /* YBHTableCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBHTableCellProtocol.h; sourceTree = "<group>"; };
+		426018A32338A85900AF656A /* YBHTableCellConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBHTableCellConfig.h; sourceTree = "<group>"; };
+		426018A42338A85900AF656A /* UITableView+YBHandyList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+YBHandyList.m"; sourceTree = "<group>"; };
+		426018A62338A85900AF656A /* YBHandyTableIMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBHandyTableIMP.h; sourceTree = "<group>"; };
+		426018A72338A85900AF656A /* YBHandyTableIMP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBHandyTableIMP.m; sourceTree = "<group>"; };
+		426018A82338A85900AF656A /* YBHTableSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBHTableSection.m; sourceTree = "<group>"; };
+		426018AA2338A85900AF656A /* YBHTCommonInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YBHTCommonInfo.h; sourceTree = "<group>"; };
+		426018AB2338A85900AF656A /* YBHTCommonInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YBHTCommonInfo.m; sourceTree = "<group>"; };
+		426018B32338A89800AF656A /* WellKnownSayingOneCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellKnownSayingOneCell.h; sourceTree = "<group>"; };
+		426018B42338A89800AF656A /* WellKnownSayingTwoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WellKnownSayingTwoCell.xib; sourceTree = "<group>"; };
+		426018B52338A89900AF656A /* WellKnownSayingTwoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellKnownSayingTwoCell.m; sourceTree = "<group>"; };
+		426018B62338A89900AF656A /* WellKnownSayingThreeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellKnownSayingThreeCell.m; sourceTree = "<group>"; };
+		426018B72338A89900AF656A /* WellKnownSayingThreeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WellKnownSayingThreeCell.xib; sourceTree = "<group>"; };
+		426018B82338A89900AF656A /* WellKnownSayingOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WellKnownSayingOneCell.xib; sourceTree = "<group>"; };
+		426018B92338A89900AF656A /* WellKnownSayingOneCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellKnownSayingOneCell.m; sourceTree = "<group>"; };
+		426018BA2338A89900AF656A /* WellKnownSayingThreeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellKnownSayingThreeCell.h; sourceTree = "<group>"; };
+		426018BB2338A89900AF656A /* WellKnownSayingTwoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellKnownSayingTwoCell.h; sourceTree = "<group>"; };
+		426018BD2338A89900AF656A /* WellKnownSayingModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellKnownSayingModel.m; sourceTree = "<group>"; };
+		426018BE2338A89900AF656A /* WellKnownSayingModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellKnownSayingModel.h; sourceTree = "<group>"; };
+		426018C02338A89900AF656A /* WellKnownSayingTwoCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellKnownSayingTwoCellModel.h; sourceTree = "<group>"; };
+		426018C12338A89900AF656A /* WellKnownSayingThreeCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellKnownSayingThreeCellModel.m; sourceTree = "<group>"; };
+		426018C22338A89900AF656A /* WellKnownSayingOneCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellKnownSayingOneCellModel.m; sourceTree = "<group>"; };
+		426018C32338A89900AF656A /* WellKnownSayingControllerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellKnownSayingControllerViewModel.h; sourceTree = "<group>"; };
+		426018C42338A89900AF656A /* WellKnownSayingTwoCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellKnownSayingTwoCellModel.m; sourceTree = "<group>"; };
+		426018C52338A89900AF656A /* WellKnownSayingThreeCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellKnownSayingThreeCellModel.h; sourceTree = "<group>"; };
+		426018C62338A89900AF656A /* WellKnownSayingControllerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellKnownSayingControllerViewModel.m; sourceTree = "<group>"; };
+		426018C72338A89900AF656A /* WellKnownSayingOneCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellKnownSayingOneCellModel.h; sourceTree = "<group>"; };
+		426018C92338A89A00AF656A /* WellKnownSayingTableIMP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellKnownSayingTableIMP.m; sourceTree = "<group>"; };
+		426018CA2338A89A00AF656A /* WellKnownSayingTableIMP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellKnownSayingTableIMP.h; sourceTree = "<group>"; };
+		426018D72338A8A000AF656A /* WellKnownSaying.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WellKnownSaying.plist; sourceTree = "<group>"; };
+		426018D92338A8A900AF656A /* WellKnownSayingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WellKnownSayingController.h; sourceTree = "<group>"; };
+		426018DA2338A8A900AF656A /* WellKnownSayingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WellKnownSayingController.m; sourceTree = "<group>"; };
+		426018DC2338A92A00AF656A /* YBHandyList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YBHandyList.h; sourceTree = "<group>"; };
 		4265FAC32265C3C900EA45CE /* NavigationSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationSummaryVC.h; sourceTree = "<group>"; };
 		4265FAC42265C3C900EA45CE /* NavigationSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationSummaryVC.m; sourceTree = "<group>"; };
 		4265FAFA2265C41900EA45CE /* NavigationBarAddSegmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationBarAddSegmentController.m; sourceTree = "<group>"; };
@@ -4309,6 +4368,116 @@
 				425FA10D229297F500E00B55 /* UIImage+ZZYCircleImage.m */,
 			);
 			path = "4，高效圆角4-QuartZ2D + SDImage";
+			sourceTree = "<group>";
+		};
+		426018992338A80700AF656A /* 7，mvvm实现多种cell组合 */ = {
+			isa = PBXGroup;
+			children = (
+				426018D92338A8A900AF656A /* WellKnownSayingController.h */,
+				426018DA2338A8A900AF656A /* WellKnownSayingController.m */,
+				426018D72338A8A000AF656A /* WellKnownSaying.plist */,
+				426018BC2338A89900AF656A /* Model */,
+				426018C82338A89A00AF656A /* TableIMP */,
+				426018B22338A89800AF656A /* View */,
+				426018BF2338A89900AF656A /* ViewModel */,
+				4260189A2338A85900AF656A /* YBHandyTable */,
+			);
+			path = "7，mvvm实现多种cell组合";
+			sourceTree = "<group>";
+		};
+		4260189A2338A85900AF656A /* YBHandyTable */ = {
+			isa = PBXGroup;
+			children = (
+				426018DC2338A92A00AF656A /* YBHandyList.h */,
+				4260189B2338A85900AF656A /* UITableView+YBHandyList.h */,
+				426018A42338A85900AF656A /* UITableView+YBHandyList.m */,
+				4260189C2338A85900AF656A /* YBHTableSection.h */,
+				4260189D2338A85900AF656A /* Protocol */,
+				426018A52338A85900AF656A /* Implement */,
+				426018A82338A85900AF656A /* YBHTableSection.m */,
+				426018A92338A85900AF656A /* Helper */,
+			);
+			path = YBHandyTable;
+			sourceTree = "<group>";
+		};
+		4260189D2338A85900AF656A /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4260189E2338A85900AF656A /* YBHTableHeaderFooterConfig.h */,
+				4260189F2338A85900AF656A /* YBHTableCellConfig.m */,
+				426018A02338A85900AF656A /* YBHTableHeaderFooterProtocol.h */,
+				426018A12338A85900AF656A /* YBHTableHeaderFooterConfig.m */,
+				426018A22338A85900AF656A /* YBHTableCellProtocol.h */,
+				426018A32338A85900AF656A /* YBHTableCellConfig.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		426018A52338A85900AF656A /* Implement */ = {
+			isa = PBXGroup;
+			children = (
+				426018A62338A85900AF656A /* YBHandyTableIMP.h */,
+				426018A72338A85900AF656A /* YBHandyTableIMP.m */,
+			);
+			path = Implement;
+			sourceTree = "<group>";
+		};
+		426018A92338A85900AF656A /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				426018AA2338A85900AF656A /* YBHTCommonInfo.h */,
+				426018AB2338A85900AF656A /* YBHTCommonInfo.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		426018B22338A89800AF656A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				426018B32338A89800AF656A /* WellKnownSayingOneCell.h */,
+				426018B42338A89800AF656A /* WellKnownSayingTwoCell.xib */,
+				426018B52338A89900AF656A /* WellKnownSayingTwoCell.m */,
+				426018B62338A89900AF656A /* WellKnownSayingThreeCell.m */,
+				426018B72338A89900AF656A /* WellKnownSayingThreeCell.xib */,
+				426018B82338A89900AF656A /* WellKnownSayingOneCell.xib */,
+				426018B92338A89900AF656A /* WellKnownSayingOneCell.m */,
+				426018BA2338A89900AF656A /* WellKnownSayingThreeCell.h */,
+				426018BB2338A89900AF656A /* WellKnownSayingTwoCell.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		426018BC2338A89900AF656A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				426018BD2338A89900AF656A /* WellKnownSayingModel.m */,
+				426018BE2338A89900AF656A /* WellKnownSayingModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		426018BF2338A89900AF656A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				426018C02338A89900AF656A /* WellKnownSayingTwoCellModel.h */,
+				426018C12338A89900AF656A /* WellKnownSayingThreeCellModel.m */,
+				426018C22338A89900AF656A /* WellKnownSayingOneCellModel.m */,
+				426018C32338A89900AF656A /* WellKnownSayingControllerViewModel.h */,
+				426018C42338A89900AF656A /* WellKnownSayingTwoCellModel.m */,
+				426018C52338A89900AF656A /* WellKnownSayingThreeCellModel.h */,
+				426018C62338A89900AF656A /* WellKnownSayingControllerViewModel.m */,
+				426018C72338A89900AF656A /* WellKnownSayingOneCellModel.h */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		426018C82338A89A00AF656A /* TableIMP */ = {
+			isa = PBXGroup;
+			children = (
+				426018C92338A89A00AF656A /* WellKnownSayingTableIMP.m */,
+				426018CA2338A89A00AF656A /* WellKnownSayingTableIMP.h */,
+			);
+			path = TableIMP;
 			sourceTree = "<group>";
 		};
 		4265FAC22265C32600EA45CE /* 4，导航控制器总结 */ = {
@@ -7986,6 +8155,7 @@
 			children = (
 				421670452280145D006724CD /* GracefulTableViewVC.h */,
 				421670462280145D006724CD /* GracefulTableViewVC.m */,
+				426018992338A80700AF656A /* 7，mvvm实现多种cell组合 */,
 				42E9FA49226FF3C000D840A2 /* 6，一般封装tableView */,
 				42166F66228012BF006724CD /* 5，多种cell组合 */,
 				42166F652280128E006724CD /* 4，tableVIewController基类 */,
@@ -8282,6 +8452,7 @@
 				42C787DB213D2BA50012188E /* SGCountdownVC.xib in Resources */,
 				427B4940227E76B200675542 /* RoundCornerSummaryVC.xib in Resources */,
 				42D1C6022277E46A001F170F /* loading.png in Resources */,
+				426018CB2338A89A00AF656A /* WellKnownSayingTwoCell.xib in Resources */,
 				42340A90228BE7CB00BAF230 /* IndexAnimationVC.xib in Resources */,
 				429CB0FA210436960063A0D8 /* pageControlCurrentDot@3x.png in Resources */,
 				42DD8DCF21A7ACA400CB04A5 /* Swipe.storyboard in Resources */,
@@ -8302,6 +8473,7 @@
 				42551D8D225F1519003DF389 /* DatePickerTool.xib in Resources */,
 				42D1C78A22783F7C001F170F /* StyleVC2.xib in Resources */,
 				42BF819A211A88BB0090E612 /* jigsaw_list.json in Resources */,
+				426018CE2338A89A00AF656A /* WellKnownSayingThreeCell.xib in Resources */,
 				42BF817F211A88680090E612 /* house_list.json in Resources */,
 				42C5B4B821422F5300563794 /* LabelXibViewController.xib in Resources */,
 				4216701D2280136A006724CD /* ic_hs_tableView_arrow@3x.png in Resources */,
@@ -8328,6 +8500,7 @@
 				42166F5E22800997006724CD /* 3.gif in Resources */,
 				42DD8DDD21A7AEA600CB04A5 /* AAPLMenuViewController.storyboard in Resources */,
 				42662A9A228A6F85000729A5 /* PhotoAndCameraSummaryVC.xib in Resources */,
+				426018CF2338A89A00AF656A /* WellKnownSayingOneCell.xib in Resources */,
 				422789392145F539002B9C13 /* Switch4_ViewController.storyboard in Resources */,
 				42DD8DD521A7ACA400CB04A5 /* Checkerboard.storyboard in Resources */,
 				42C783C4213CCB6A0012188E /* YZSortCell.xib in Resources */,
@@ -8346,6 +8519,7 @@
 				42C78392213CC45B0012188E /* Demo.storyboard in Resources */,
 				42BB66EF20D1231A007BE2CF /* Main.storyboard in Resources */,
 				42B573DA213FC1FE0089CFDF /* ChildVCFour.xib in Resources */,
+				426018D82338A8A000AF656A /* WellKnownSaying.plist in Resources */,
 				427B494E227EB75B00675542 /* apps.plist in Resources */,
 				42C7836B213CC45B0012188E /* NibSelfSizingCell.xib in Resources */,
 				42DE3C62226487E100422577 /* 1.jpg in Resources */,
@@ -8554,6 +8728,7 @@
 				42C4448E2217F9B2004983B3 /* FoldCellAnimateVC.m in Sources */,
 				421670132280136A006724CD /* HSSetTableInfoController.m in Sources */,
 				42662A99228A6F85000729A5 /* PhotoAndCameraSummaryVC.m in Sources */,
+				426018AE2338A85900AF656A /* UITableView+YBHandyList.m in Sources */,
 				42E574C42282ACAE00DA5E83 /* KTModel.m in Sources */,
 				4227889D2145F431002B9C13 /* JXCategoryTitleCellModel.m in Sources */,
 				42C787E4213D2BC60012188E /* SGImagePositionVC.m in Sources */,
@@ -8592,6 +8767,7 @@
 				429CB109210436960063A0D8 /* TAAbstractDotView.m in Sources */,
 				42F772652193D0DD00FFD237 /* JMWaveViewController.m in Sources */,
 				42B573DC213FC1FE0089CFDF /* Switch3_ViewController.m in Sources */,
+				426018D52338A89A00AF656A /* WellKnownSayingControllerViewModel.m in Sources */,
 				42C5B48B21422D4500563794 /* MYSubCoretextResult.m in Sources */,
 				42F772572193D0DD00FFD237 /* JMWaveButton.m in Sources */,
 				42C7836C213CC45B0012188E /* CalendarDayCell.m in Sources */,
@@ -8623,6 +8799,7 @@
 				429CB103210436960063A0D8 /* SDCycleScrollView.m in Sources */,
 				42CD42862260674B00652FA6 /* JCAlertController.m in Sources */,
 				42CB7E8A213939C3003397FB /* UIAlertView+RWBlock.m in Sources */,
+				426018D02338A89A00AF656A /* WellKnownSayingOneCell.m in Sources */,
 				42523F46218BF8F50038CEE3 /* HYBGridModel.m in Sources */,
 				42D42FDA225C7F2700EA4AA8 /* InputFloatVC.m in Sources */,
 				42E740D12276F85100859877 /* CoverDemoVC2.m in Sources */,
@@ -8935,6 +9112,7 @@
 				422789282145F44F002B9C13 /* CellCustomizeViewController.m in Sources */,
 				42D1C6012277E46A001F170F /* BSYLoading.m in Sources */,
 				42CD428C2260679100652FA6 /* NormalVCForPresentation.m in Sources */,
+				426018AC2338A85900AF656A /* YBHTableCellConfig.m in Sources */,
 				42C783C3213CCB6A0012188E /* YZSortViewController.m in Sources */,
 				42166F7722801300006724CD /* BaseEmptyTableView.m in Sources */,
 				42C4448B2217F9B2004983B3 /* UIView+SnapShot.m in Sources */,
@@ -8979,6 +9157,7 @@
 				42DE3A4D2264576400422577 /* FakeWindowClass.m in Sources */,
 				42D42FD7225C7C8500EA4AA8 /* ScrollPageVC.m in Sources */,
 				425FA0FF22928D9E00E00B55 /* PureCodeCustomModel.m in Sources */,
+				426018D42338A89A00AF656A /* WellKnownSayingTwoCellModel.m in Sources */,
 				429CB0F1210436960063A0D8 /* BannerDemoVC.m in Sources */,
 				4274870723308CDC0089B749 /* BaseInputView.m in Sources */,
 				42D1C65F2277E719001F170F /* EasyLoadingView.m in Sources */,
@@ -8990,8 +9169,12 @@
 				42F8D91121EC664E005D0120 /* TTTAttributeLabelView.m in Sources */,
 				42C78390213CC45B0012188E /* GridSectionController.m in Sources */,
 				422789302145F44F002B9C13 /* IndicatorImageViewViewController.m in Sources */,
+				426018B12338A85900AF656A /* YBHTCommonInfo.m in Sources */,
+				426018D12338A89A00AF656A /* WellKnownSayingModel.m in Sources */,
 				422789362145F44F002B9C13 /* JXCategoryTitleAttributeCell.m in Sources */,
 				42C5B6AC2142699B00563794 /* SXMarquee.m in Sources */,
+				426018AD2338A85900AF656A /* YBHTableHeaderFooterConfig.m in Sources */,
+				426018D22338A89A00AF656A /* WellKnownSayingThreeCellModel.m in Sources */,
 				42BF8184211A88680090E612 /* CQFilterViewController.m in Sources */,
 				422788A32145F431002B9C13 /* JXCategoryNumberView.m in Sources */,
 				42C444762217F666004983B3 /* YUFoldingSectionHeader.m in Sources */,
@@ -9000,6 +9183,7 @@
 				42C78366213CC45B0012188E /* NestedAdapterViewController.m in Sources */,
 				4242B943212A72C400C3A2C5 /* ChildViewController.m in Sources */,
 				42CB7E5A2138F3C8003397FB /* RichTextVC.m in Sources */,
+				426018D62338A89A00AF656A /* WellKnownSayingTableIMP.m in Sources */,
 				42D42FC8225C720A00EA4AA8 /* ClickableLabelVC.m in Sources */,
 				42523F5F218BF96C0038CEE3 /* HYBGridViewController.m in Sources */,
 				42BF8153211A75010090E612 /* UIImage+Transform.m in Sources */,
@@ -9017,6 +9201,7 @@
 				42BF8182211A88680090E612 /* CQFilterRequest.m in Sources */,
 				42F772602193D0DD00FFD237 /* JMBadgeValue.m in Sources */,
 				42F772162193CDCC00FFD237 /* NSObject+size.m in Sources */,
+				426018CD2338A89A00AF656A /* WellKnownSayingThreeCell.m in Sources */,
 				42F772592193D0DD00FFD237 /* JMNumberButtonConfig.m in Sources */,
 				42523F4E218BF9190038CEE3 /* HYBCardFlowLayout.m in Sources */,
 				42C5B6A02142699B00563794 /* SXDataSource.m in Sources */,
@@ -9025,6 +9210,7 @@
 				429CB1B2210436960063A0D8 /* WaterfallCell.m in Sources */,
 				42C5B48821422D4500563794 /* tableViewModel.m in Sources */,
 				42BF81B0211A89D90090E612 /* UIView+FrameHelper.m in Sources */,
+				426018AF2338A85900AF656A /* YBHandyTableIMP.m in Sources */,
 				4216701B2280136A006724CD /* NSString+HSHeight.m in Sources */,
 				422789332145F44F002B9C13 /* AttributeViewViewController.m in Sources */,
 				422789262145F44F002B9C13 /* ListViewController.m in Sources */,
@@ -9037,6 +9223,7 @@
 				429CB1A8210436960063A0D8 /* Demo5HeaderView.m in Sources */,
 				425FA1112292983600E00B55 /* UIImageView+ZZYImageView.m in Sources */,
 				429CB106210436960063A0D8 /* TADotView.m in Sources */,
+				426018DB2338A8A900AF656A /* WellKnownSayingController.m in Sources */,
 				4216702F2280136A006724CD /* HSSwitchTableViewCell.m in Sources */,
 				42C783A2213CC99E0012188E /* DropDownViewController.m in Sources */,
 				42BF8185211A88680090E612 /* CQFilterBaseModel.m in Sources */,
@@ -9243,12 +9430,15 @@
 				42C5B4C421422F5300563794 /* AttributedTextViewController.m in Sources */,
 				42B573D3213FC1FE0089CFDF /* ChildVCSeven.m in Sources */,
 				422789232145F44F002B9C13 /* JXPagingMainTableView.m in Sources */,
+				426018CC2338A89A00AF656A /* WellKnownSayingTwoCell.m in Sources */,
+				426018B02338A85900AF656A /* YBHTableSection.m in Sources */,
 				42C7837C213CC45B0012188E /* ImageCell.m in Sources */,
 				42B573E0213FC1FE0089CFDF /* SGPageContentCollectionView.m in Sources */,
 				427B4945227E889400675542 /* ImageCacheVC.m in Sources */,
 				42C78378213CC45B0012188E /* LabelCell.m in Sources */,
 				42166F9322801358006724CD /* UIView+LYExtension.m in Sources */,
 				42C5B4BD21422F5300563794 /* ParseTextViewController.m in Sources */,
+				426018D32338A89A00AF656A /* WellKnownSayingOneCellModel.m in Sources */,
 				426707432121325B00046FE6 /* ExampleData.m in Sources */,
 				42D1C76F22783F39001F170F /* CoverKeyboardHeavyClassVC.m in Sources */,
 				424F05A72275B5E50039CD62 /* DAViewController.m in Sources */,
