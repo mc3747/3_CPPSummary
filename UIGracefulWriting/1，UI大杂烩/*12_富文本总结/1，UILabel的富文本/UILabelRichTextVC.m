@@ -83,14 +83,22 @@
 
 #pragma mark - 富文本的创建方法3：创建富文本对象的同时就添加属性
 - (NSMutableAttributedString *)returenAttributedString3 {
+    NSString *textString = @"3，我们都有一个家名字叫中国";
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+       [paragraphStyle setAlignment:NSTextAlignmentLeft];
+       [paragraphStyle setLineSpacing:5];
+       [paragraphStyle setLineBreakMode:NSLineBreakByWordWrapping];
     //富文本的属性通过字典的形式传入
     NSDictionary *attributeDict = [NSDictionary dictionaryWithObjectsAndKeys:
                                    [UIFont systemFontOfSize:16.0],NSFontAttributeName,//字体大小
                                    [UIColor redColor],NSForegroundColorAttributeName,//字体颜色
                                    @(NSUnderlineStyleSingle),NSUnderlineStyleAttributeName,//下划线
+                                   
+                                        @5,NSKernAttributeName,//字间距
+                                   paragraphStyle,NSParagraphStyleAttributeName,//行间距
                                    nil];
     //初始化富文本对象的同时设置富文本对象的属性
-    NSMutableAttributedString * attributedStr = [[NSMutableAttributedString alloc]initWithString:@"3，我们都有一个家名字叫中国" attributes:attributeDict];
+    NSMutableAttributedString * attributedStr = [[NSMutableAttributedString alloc]initWithString:textString attributes:attributeDict];
     return attributedStr;
 };
 
