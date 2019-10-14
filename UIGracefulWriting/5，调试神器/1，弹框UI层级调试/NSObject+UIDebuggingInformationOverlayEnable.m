@@ -50,8 +50,21 @@
     tapGesture.numberOfTapsRequired = 1;
     tapGesture.delegate = handler;
     
-    UIView *statusBarWindow = [[UIApplication sharedApplication] valueForKey:@"statusBarWindow"];
-    [statusBarWindow addGestureRecognizer:tapGesture];
+    if(@available(iOS 13.0, *)){
+        UIStatusBarManager *statusBarManager = [UIApplication sharedApplication].keyWindow.windowScene.statusBarManager;
+        id _statusBar = nil;
+          if ([statusBarManager respondsToSelector:@selector(createLocalStatusBar)]) {
+              UIView *_localStatusBar = [statusBarManager performSelector:@selector(createLocalStatusBar)];
+              if ([_localStatusBar respondsToSelector:@selector(statusBar)]) {
+                  _statusBar = [_localStatusBar performSelector:@selector(statusBar)];
+                      [_statusBar addGestureRecognizer:tapGesture];
+              }
+          }
+    }else {
+            UIView *statusBarWindow = [[[UIApplication sharedApplication] valueForKey:@"statusBarWindow"] valueForKey:@"statusBar"];
+            [statusBarWindow addGestureRecognizer:tapGesture];
+    }
+
 }
 
 @end

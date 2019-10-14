@@ -10,6 +10,7 @@
 #import "CoverDemoVC1.h"
 #import "CoverDemoVC2.h"
 #import "CoverDemoVC3.h"
+#import "CoverDemoVC4.h"
 
 @interface CommonCoverVC ()
 
@@ -33,6 +34,10 @@
 
 - (IBAction)demo3Action:(id)sender {
     CoverDemoVC3 *vc =  [CoverDemoVC3 new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)demo4Action:(id)sender {
+    CoverDemoVC4 *vc =  [CoverDemoVC4 new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

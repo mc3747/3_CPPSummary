@@ -76,6 +76,16 @@
 		421670472280145D006724CD /* GracefulTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 421670462280145D006724CD /* GracefulTableViewVC.m */; };
 		4216704B2280162B006724CD /* Base_3_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 421670492280162A006724CD /* Base_3_ViewController.m */; };
 		42204D76215CB941002447BF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42204D75215CB941002447BF /* Images.xcassets */; };
+		4227315E23544CD7007D22B7 /* LoadingButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227315D23544CD7007D22B7 /* LoadingButtonVC.m */; };
+		4227316123544CFE007D22B7 /* AnimatingButtonVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227316023544CFE007D22B7 /* AnimatingButtonVC.m */; };
+		4227316623544D1E007D22B7 /* IANActivityIndicatorButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227316423544D1D007D22B7 /* IANActivityIndicatorButton.m */; };
+		4227316723544D1E007D22B7 /* UIButton+IANActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227316523544D1E007D22B7 /* UIButton+IANActivityView.m */; };
+		4227317023544DDB007D22B7 /* DeformationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227316A23544DD9007D22B7 /* DeformationButton.m */; };
+		4227317123544DDB007D22B7 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227316B23544DD9007D22B7 /* MMMaterialDesignSpinner.m */; };
+		4227317223544DDB007D22B7 /* 微博logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4227316C23544DDA007D22B7 /* 微博logo@2x.png */; };
+		4227317323544DDB007D22B7 /* 微信logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4227316E23544DDB007D22B7 /* 微信logo@2x.png */; };
+		42273177235451D3007D22B7 /* CoverDemoVC4.m in Sources */ = {isa = PBXBuildFile; fileRef = 42273175235451D3007D22B7 /* CoverDemoVC4.m */; };
+		42273178235451D3007D22B7 /* CoverDemoVC4.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42273176235451D3007D22B7 /* CoverDemoVC4.xib */; };
 		422788442145F3E1002B9C13 /* Switch4_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422788432145F3E1002B9C13 /* Switch4_ViewController.m */; };
 		4227888E2145F430002B9C13 /* JXCategoryIndicatorLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227884B2145F430002B9C13 /* JXCategoryIndicatorLineView.m */; };
 		4227888F2145F430002B9C13 /* JXCategoryIndicatorTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4227884C2145F430002B9C13 /* JXCategoryIndicatorTriangleView.m */; };
@@ -1139,6 +1149,23 @@
 		4216704A2280162A006724CD /* Base_3_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base_3_ViewController.h; sourceTree = "<group>"; };
 		42204D75215CB941002447BF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		42204D77215CC1F7002447BF /* IPhoneColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPhoneColor.h; sourceTree = "<group>"; };
+		4227315C23544CD7007D22B7 /* LoadingButtonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingButtonVC.h; sourceTree = "<group>"; };
+		4227315D23544CD7007D22B7 /* LoadingButtonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingButtonVC.m; sourceTree = "<group>"; };
+		4227315F23544CFE007D22B7 /* AnimatingButtonVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatingButtonVC.h; sourceTree = "<group>"; };
+		4227316023544CFE007D22B7 /* AnimatingButtonVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatingButtonVC.m; sourceTree = "<group>"; };
+		4227316223544D1C007D22B7 /* IANActivityIndicatorButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IANActivityIndicatorButton.h; sourceTree = "<group>"; };
+		4227316323544D1D007D22B7 /* UIButton+IANActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+IANActivityView.h"; sourceTree = "<group>"; };
+		4227316423544D1D007D22B7 /* IANActivityIndicatorButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IANActivityIndicatorButton.m; sourceTree = "<group>"; };
+		4227316523544D1E007D22B7 /* UIButton+IANActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+IANActivityView.m"; sourceTree = "<group>"; };
+		4227316A23544DD9007D22B7 /* DeformationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeformationButton.m; sourceTree = "<group>"; };
+		4227316B23544DD9007D22B7 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
+		4227316C23544DDA007D22B7 /* 微博logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "微博logo@2x.png"; sourceTree = "<group>"; };
+		4227316D23544DDA007D22B7 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		4227316E23544DDB007D22B7 /* 微信logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "微信logo@2x.png"; sourceTree = "<group>"; };
+		4227316F23544DDB007D22B7 /* DeformationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeformationButton.h; sourceTree = "<group>"; };
+		42273174235451D3007D22B7 /* CoverDemoVC4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverDemoVC4.h; sourceTree = "<group>"; };
+		42273175235451D3007D22B7 /* CoverDemoVC4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverDemoVC4.m; sourceTree = "<group>"; };
+		42273176235451D3007D22B7 /* CoverDemoVC4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoverDemoVC4.xib; sourceTree = "<group>"; };
 		422788422145F3E1002B9C13 /* Switch4_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Switch4_ViewController.h; sourceTree = "<group>"; };
 		422788432145F3E1002B9C13 /* Switch4_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Switch4_ViewController.m; sourceTree = "<group>"; };
 		422788472145F430002B9C13 /* JXCategoryIndicatorCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JXCategoryIndicatorCell.h; sourceTree = "<group>"; };
@@ -3352,6 +3379,50 @@
 			path = "3，UI借鉴";
 			sourceTree = "<group>";
 		};
+		4227315A23544C16007D22B7 /* 7，按钮带loading */ = {
+			isa = PBXGroup;
+			children = (
+				4227315C23544CD7007D22B7 /* LoadingButtonVC.h */,
+				4227315D23544CD7007D22B7 /* LoadingButtonVC.m */,
+				4227316823544D34007D22B7 /* Source */,
+			);
+			path = "7，按钮带loading";
+			sourceTree = "<group>";
+		};
+		4227315B23544C31007D22B7 /* 8，按钮点击变形动画 */ = {
+			isa = PBXGroup;
+			children = (
+				4227315F23544CFE007D22B7 /* AnimatingButtonVC.h */,
+				4227316023544CFE007D22B7 /* AnimatingButtonVC.m */,
+				4227316923544DC9007D22B7 /* Source */,
+			);
+			path = "8，按钮点击变形动画";
+			sourceTree = "<group>";
+		};
+		4227316823544D34007D22B7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4227316223544D1C007D22B7 /* IANActivityIndicatorButton.h */,
+				4227316423544D1D007D22B7 /* IANActivityIndicatorButton.m */,
+				4227316323544D1D007D22B7 /* UIButton+IANActivityView.h */,
+				4227316523544D1E007D22B7 /* UIButton+IANActivityView.m */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		4227316923544DC9007D22B7 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				4227316F23544DDB007D22B7 /* DeformationButton.h */,
+				4227316A23544DD9007D22B7 /* DeformationButton.m */,
+				4227316D23544DDA007D22B7 /* MMMaterialDesignSpinner.h */,
+				4227316B23544DD9007D22B7 /* MMMaterialDesignSpinner.m */,
+				4227316E23544DDB007D22B7 /* 微信logo@2x.png */,
+				4227316C23544DDA007D22B7 /* 微博logo@2x.png */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		422788452145F430002B9C13 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -4881,6 +4952,8 @@
 		42981CE12105C42B0052CCC3 /* *3_button相关 */ = {
 			isa = PBXGroup;
 			children = (
+				4227315B23544C31007D22B7 /* 8，按钮点击变形动画 */,
+				4227315A23544C16007D22B7 /* 7，按钮带loading */,
 				42B182732106D07800C1E682 /* 1，扩大按钮点击 */,
 				42B182712106D07800C1E682 /* 2，按钮文字图片组合 */,
 				42B182722106D07800C1E682 /* 3，带下划线的按钮 */,
@@ -8017,6 +8090,9 @@
 				42E740D32276F86B00859877 /* CoverDemoVC3.h */,
 				42E740D42276F86B00859877 /* CoverDemoVC3.m */,
 				42E740D52276F86B00859877 /* CoverDemoVC3.xib */,
+				42273174235451D3007D22B7 /* CoverDemoVC4.h */,
+				42273175235451D3007D22B7 /* CoverDemoVC4.m */,
+				42273176235451D3007D22B7 /* CoverDemoVC4.xib */,
 			);
 			path = Demos;
 			sourceTree = "<group>";
@@ -8449,6 +8525,7 @@
 				42D1C77022783F39001F170F /* CoverKeyboardHeavyClassVC.xib in Resources */,
 				42C519DF211C3E5400742239 /* deals.plist in Resources */,
 				42523F37218BDD540038CEE3 /* BaseCollectionCell.xib in Resources */,
+				42273178235451D3007D22B7 /* CoverDemoVC4.xib in Resources */,
 				42C787DB213D2BA50012188E /* SGCountdownVC.xib in Resources */,
 				427B4940227E76B200675542 /* RoundCornerSummaryVC.xib in Resources */,
 				42D1C6022277E46A001F170F /* loading.png in Resources */,
@@ -8478,6 +8555,7 @@
 				42C5B4B821422F5300563794 /* LabelXibViewController.xib in Resources */,
 				4216701D2280136A006724CD /* ic_hs_tableView_arrow@3x.png in Resources */,
 				4216701E2280136A006724CD /* HSSetTableViewController.bundle in Resources */,
+				4227317323544DDB007D22B7 /* 微信logo@2x.png in Resources */,
 				42C78369213CC45B0012188E /* NibCell.xib in Resources */,
 				42B573C7213FC1FE0089CFDF /* ChildFourthPopGestureNextVC.xib in Resources */,
 				4242B99F212A9CC500C3A2C5 /* iconfont.ttf in Resources */,
@@ -8505,6 +8583,7 @@
 				42DD8DD521A7ACA400CB04A5 /* Checkerboard.storyboard in Resources */,
 				42C783C4213CCB6A0012188E /* YZSortCell.xib in Resources */,
 				429B15132160C2FC00F595FC /* github.png in Resources */,
+				4227317223544DDB007D22B7 /* 微博logo@2x.png in Resources */,
 				42C4449322184DBD004983B3 /* SwipEditorCellVC.xib in Resources */,
 				42C5B6F621426E9800563794 /* WonderfulColor.storyboard in Resources */,
 				42551D8A225F1519003DF389 /* SexPickerTool.xib in Resources */,
@@ -8764,6 +8843,7 @@
 				42523F55218BF9350038CEE3 /* HYBCardScaleViewController.m in Sources */,
 				42C4449222184DBD004983B3 /* SwipEditorCellVC.m in Sources */,
 				42166F7622801300006724CD /* FirstViewController.m in Sources */,
+				4227315E23544CD7007D22B7 /* LoadingButtonVC.m in Sources */,
 				429CB109210436960063A0D8 /* TAAbstractDotView.m in Sources */,
 				42F772652193D0DD00FFD237 /* JMWaveViewController.m in Sources */,
 				42B573DC213FC1FE0089CFDF /* Switch3_ViewController.m in Sources */,
@@ -8804,6 +8884,7 @@
 				42D42FDA225C7F2700EA4AA8 /* InputFloatVC.m in Sources */,
 				42E740D12276F85100859877 /* CoverDemoVC2.m in Sources */,
 				42C7837D213CC45B0012188E /* NibCell.m in Sources */,
+				4227317023544DDB007D22B7 /* DeformationButton.m in Sources */,
 				421670232280136A006724CD /* HSBaseCellModel.m in Sources */,
 				42CD429422606E2800652FA6 /* RightUpPullDownVC.m in Sources */,
 				42B573D4213FC1FE0089CFDF /* ChildVCOne.m in Sources */,
@@ -8838,6 +8919,7 @@
 				429B15162160C2FC00F595FC /* CustomCollectionView.m in Sources */,
 				4227891B2145F44F002B9C13 /* HobbyListView.m in Sources */,
 				429CB101210436960063A0D8 /* CustomCollectionViewCell.m in Sources */,
+				4227316123544CFE007D22B7 /* AnimatingButtonVC.m in Sources */,
 				42CB7E372138DCEB003397FB /* TestPushVC.m in Sources */,
 				4242B942212A72C400C3A2C5 /* FullChildViewController.m in Sources */,
 				422AB7022174278A0019F1D9 /* LabelAlignDetailVC.m in Sources */,
@@ -8911,6 +8993,7 @@
 				42B573BB213FC1FE0089CFDF /* DefaultGradientEffectVC.m in Sources */,
 				4291629322637CEC005C8626 /* UIImageView+LMExtension.m in Sources */,
 				42685505223F2C9500680CDA /* EasyNavigationView+RightButton.m in Sources */,
+				4227316723544D1E007D22B7 /* UIButton+IANActivityView.m in Sources */,
 				42D1C6BA2277E835001F170F /* CQToastViewController.m in Sources */,
 				422789372145F44F002B9C13 /* JXCategoryIndicatorDotLineView.m in Sources */,
 				42E8E116221A84E100A04331 /* PageLoadingVC.m in Sources */,
@@ -9284,6 +9367,7 @@
 				42C5B4CA21422F5300563794 /* TPKeyboardAvoidingScrollView.m in Sources */,
 				42BF819D211A88BB0090E612 /* CQCategoryView.m in Sources */,
 				42CF2C1E21A54BFC00951C6D /* TextViewNonPackageVC.m in Sources */,
+				4227317123544DDB007D22B7 /* MMMaterialDesignSpinner.m in Sources */,
 				429B15152160C2FC00F595FC /* CustomSegmentControl.m in Sources */,
 				42D1C6682277E719001F170F /* EasyEmptyTypes.m in Sources */,
 				42C5B6A92142699B00563794 /* SXHeadLine.m in Sources */,
@@ -9314,6 +9398,7 @@
 				429B15112160C2FC00F595FC /* UIScrollView+STRefresh.m in Sources */,
 				42C5B6AB2142699B00563794 /* SXColorLabel.m in Sources */,
 				42D1C61A2277E4E6001F170F /* UIView+MFFrame.m in Sources */,
+				42273177235451D3007D22B7 /* CoverDemoVC4.m in Sources */,
 				42E9FA47226FEF7200D840A2 /* AutoCompleteTextView.m in Sources */,
 				42B3E1272238D95F00379C2D /* DWTabBarController.m in Sources */,
 				42523F5A218BF9440038CEE3 /* HYBCardVerticalScaleLayout.m in Sources */,
@@ -9464,6 +9549,7 @@
 				42B573E1213FC1FE0089CFDF /* SGPageTitleView.m in Sources */,
 				42CD424922603CE100652FA6 /* PulsingHaloLayer.m in Sources */,
 				42EFA8382109BBEA00AFC827 /* TabView_4_ViewController.m in Sources */,
+				4227316623544D1E007D22B7 /* IANActivityIndicatorButton.m in Sources */,
 				42CD429D22606F2700652FA6 /* PopoverView.m in Sources */,
 				42C7838F213CC45B0012188E /* ExpandableSectionController.m in Sources */,
 				429B151B2160C2FD00F595FC /* UIView+STFrame.m in Sources */,
