@@ -42,8 +42,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"富文本总结";
-    self.vcNameArray = @[@[@"UILabelRichTextVC",@"HtmlViewController",@"TextViewRichVC",@"",@"TYLabelViewController",@"MYCoreTextViewController",@"",@""]];
-    self.subtitleArray = @[@[@"UIlabel的富文本",@"html系列",@"TextView富文本",@"TextKit系列",@"TY系列",@"注释完备系列",@"YY系列",@"TT系列"]];
+    self.vcNameArray = @[@[@"UILabelRichTextVC",@"HtmlViewController",@"TextViewRichVC",@"",@"TYLabelViewController",@"MYCoreTextViewController",@"",@"",@"MyAttributedStringBuilderVC"]];
+    self.subtitleArray = @[@[@"UIlabel的富文本",@"html系列",@"TextView富文本",@"TextKit系列",@"TY系列",@"注释完备系列",@"YY系列",@"TT系列",@"富文本快速构造器"]];
 }
 
 

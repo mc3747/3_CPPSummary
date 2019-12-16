@@ -991,6 +991,9 @@
 		42F8D91221EC664F005D0120 /* ConfigAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F8D90E21EC664E005D0120 /* ConfigAttributedString.m */; };
 		42F8D91321EC664F005D0120 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F8D90F21EC664E005D0120 /* TTTAttributedLabel.m */; };
 		42F8D91421EC664F005D0120 /* NSString+RichText.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F8D91021EC664E005D0120 /* NSString+RichText.m */; };
+		42FB50BB23A7776F00C5E315 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FB50B723A7776D00C5E315 /* test@2x.png */; };
+		42FB50BC23A7776F00C5E315 /* MyAttributedStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB50B923A7776E00C5E315 /* MyAttributedStringBuilder.m */; };
+		42FB50BD23A7776F00C5E315 /* MyAttributedStringBuilderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB50BA23A7776F00C5E315 /* MyAttributedStringBuilderVC.m */; };
 		7AAE78BAA5A74D93D9F72D30 /* libPods-UIGracefulWriting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14963D90AB1CDCB894329DCE /* libPods-UIGracefulWriting.a */; };
 /* End PBXBuildFile section */
 
@@ -2913,6 +2916,11 @@
 		42F8D90E21EC664E005D0120 /* ConfigAttributedString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigAttributedString.m; sourceTree = "<group>"; };
 		42F8D90F21EC664E005D0120 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
 		42F8D91021EC664E005D0120 /* NSString+RichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RichText.m"; sourceTree = "<group>"; };
+		42FB50B623A7776D00C5E315 /* MyAttributedStringBuilderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAttributedStringBuilderVC.h; sourceTree = "<group>"; };
+		42FB50B723A7776D00C5E315 /* test@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "test@2x.png"; sourceTree = "<group>"; };
+		42FB50B823A7776E00C5E315 /* MyAttributedStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAttributedStringBuilder.h; sourceTree = "<group>"; };
+		42FB50B923A7776E00C5E315 /* MyAttributedStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAttributedStringBuilder.m; sourceTree = "<group>"; };
+		42FB50BA23A7776F00C5E315 /* MyAttributedStringBuilderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAttributedStringBuilderVC.m; sourceTree = "<group>"; };
 		738B0AD82298246E9B0FD270 /* Pods-UIGracefulWriting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIGracefulWriting.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting.release.xcconfig"; sourceTree = "<group>"; };
 		80C7864567D28FF1398761C7 /* Pods-UIGracefulWriting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIGracefulWriting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -6815,6 +6823,7 @@
 			children = (
 				42CB7E582138F3C8003397FB /* RichTextVC.h */,
 				42CB7E592138F3C8003397FB /* RichTextVC.m */,
+				42FB50B523A7774100C5E315 /* 9，富文本构造器 */,
 				42CB7E5B2139159B003397FB /* 1，UILabel的富文本 */,
 				42CB7E6321391B61003397FB /* 2，HTML系列 */,
 				426FEE73221CE4F900C4491A /* 3，UITextView系列 */,
@@ -8398,6 +8407,18 @@
 			path = JMController;
 			sourceTree = "<group>";
 		};
+		42FB50B523A7774100C5E315 /* 9，富文本构造器 */ = {
+			isa = PBXGroup;
+			children = (
+				42FB50B823A7776E00C5E315 /* MyAttributedStringBuilder.h */,
+				42FB50B923A7776E00C5E315 /* MyAttributedStringBuilder.m */,
+				42FB50B723A7776D00C5E315 /* test@2x.png */,
+				42FB50B623A7776D00C5E315 /* MyAttributedStringBuilderVC.h */,
+				42FB50BA23A7776F00C5E315 /* MyAttributedStringBuilderVC.m */,
+			);
+			path = "9，富文本构造器";
+			sourceTree = "<group>";
+		};
 		E735A50B206D935B3AD216D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -8586,6 +8607,7 @@
 				4227317223544DDB007D22B7 /* 微博logo@2x.png in Resources */,
 				42C4449322184DBD004983B3 /* SwipEditorCellVC.xib in Resources */,
 				42C5B6F621426E9800563794 /* WonderfulColor.storyboard in Resources */,
+				42FB50BB23A7776F00C5E315 /* test@2x.png in Resources */,
 				42551D8A225F1519003DF389 /* SexPickerTool.xib in Resources */,
 				427B4983227EE6DF00675542 /* MemoryAndDiskCachePackageVC.xib in Resources */,
 				42C4DF2A215F2B3000247949 /* head.jpg in Resources */,
@@ -8840,6 +8862,7 @@
 				42DD8D8321A7A07700CB04A5 /* CustomAnimationTransition.m in Sources */,
 				422788982145F431002B9C13 /* JXCategoryDotView.m in Sources */,
 				42F772642193D0DD00FFD237 /* JMRadioViewController.m in Sources */,
+				42FB50BD23A7776F00C5E315 /* MyAttributedStringBuilderVC.m in Sources */,
 				42523F55218BF9350038CEE3 /* HYBCardScaleViewController.m in Sources */,
 				42C4449222184DBD004983B3 /* SwipEditorCellVC.m in Sources */,
 				42166F7622801300006724CD /* FirstViewController.m in Sources */,
@@ -9329,6 +9352,7 @@
 				42B573C4213FC1FE0089CFDF /* NavigationBarTitleView11.m in Sources */,
 				42B573D7213FC1FE0089CFDF /* ChildVCThree.m in Sources */,
 				42551D9F225F1647003DF389 /* PlaceModel.m in Sources */,
+				42FB50BC23A7776F00C5E315 /* MyAttributedStringBuilder.m in Sources */,
 				42C7834C213CC45B0012188E /* DemoItem.m in Sources */,
 				427B4950227EB75B00675542 /* MemoryAndDiskCacheVC.m in Sources */,
 				42C78377213CC45B0012188E /* MonthTitleCell.m in Sources */,
