@@ -994,6 +994,16 @@
 		42FB50BB23A7776F00C5E315 /* test@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42FB50B723A7776D00C5E315 /* test@2x.png */; };
 		42FB50BC23A7776F00C5E315 /* MyAttributedStringBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB50B923A7776E00C5E315 /* MyAttributedStringBuilder.m */; };
 		42FB50BD23A7776F00C5E315 /* MyAttributedStringBuilderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB50BA23A7776F00C5E315 /* MyAttributedStringBuilderVC.m */; };
+		42FB510823A8D34700C5E315 /* FirstDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB50FA23A8D34100C5E315 /* FirstDetailViewController.m */; };
+		42FB510923A8D34700C5E315 /* SecondDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42FB50FC23A8D34200C5E315 /* SecondDetailViewController.xib */; };
+		42FB510A23A8D34700C5E315 /* CJLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB50FF23A8D34400C5E315 /* CJLabel.m */; };
+		42FB510B23A8D34700C5E315 /* CJLabelConfigure.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB510023A8D34400C5E315 /* CJLabelConfigure.m */; };
+		42FB510C23A8D34700C5E315 /* FirstDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42FB510223A8D34500C5E315 /* FirstDetailViewController.xib */; };
+		42FB510D23A8D34700C5E315 /* AttributedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42FB510323A8D34500C5E315 /* AttributedTableViewCell.xib */; };
+		42FB510E23A8D34700C5E315 /* SecondDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB510423A8D34600C5E315 /* SecondDetailViewController.m */; };
+		42FB510F23A8D34700C5E315 /* AttributedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB510523A8D34600C5E315 /* AttributedTableViewCell.m */; };
+		42FB511023A8D34700C5E315 /* CJLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42FB510623A8D34700C5E315 /* CJLabelViewController.m */; };
+		42FB511223A8D4A800C5E315 /* Example.json in Resources */ = {isa = PBXBuildFile; fileRef = 42FB511123A8D4A800C5E315 /* Example.json */; };
 		7AAE78BAA5A74D93D9F72D30 /* libPods-UIGracefulWriting.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 14963D90AB1CDCB894329DCE /* libPods-UIGracefulWriting.a */; };
 /* End PBXBuildFile section */
 
@@ -2921,6 +2931,22 @@
 		42FB50B823A7776E00C5E315 /* MyAttributedStringBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyAttributedStringBuilder.h; sourceTree = "<group>"; };
 		42FB50B923A7776E00C5E315 /* MyAttributedStringBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAttributedStringBuilder.m; sourceTree = "<group>"; };
 		42FB50BA23A7776F00C5E315 /* MyAttributedStringBuilderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyAttributedStringBuilderVC.m; sourceTree = "<group>"; };
+		42FB50F623A8D34000C5E315 /* AttributedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedTableViewCell.h; sourceTree = "<group>"; };
+		42FB50F823A8D34000C5E315 /* CJLabelConfigure.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJLabelConfigure.h; sourceTree = "<group>"; };
+		42FB50FA23A8D34100C5E315 /* FirstDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstDetailViewController.m; sourceTree = "<group>"; };
+		42FB50FB23A8D34200C5E315 /* FirstDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstDetailViewController.h; sourceTree = "<group>"; };
+		42FB50FC23A8D34200C5E315 /* SecondDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondDetailViewController.xib; sourceTree = "<group>"; };
+		42FB50FD23A8D34300C5E315 /* CJLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJLabel.h; sourceTree = "<group>"; };
+		42FB50FE23A8D34300C5E315 /* SecondDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondDetailViewController.h; sourceTree = "<group>"; };
+		42FB50FF23A8D34400C5E315 /* CJLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJLabel.m; sourceTree = "<group>"; };
+		42FB510023A8D34400C5E315 /* CJLabelConfigure.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJLabelConfigure.m; sourceTree = "<group>"; };
+		42FB510123A8D34500C5E315 /* CJLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJLabelViewController.h; sourceTree = "<group>"; };
+		42FB510223A8D34500C5E315 /* FirstDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstDetailViewController.xib; sourceTree = "<group>"; };
+		42FB510323A8D34500C5E315 /* AttributedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AttributedTableViewCell.xib; sourceTree = "<group>"; };
+		42FB510423A8D34600C5E315 /* SecondDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondDetailViewController.m; sourceTree = "<group>"; };
+		42FB510523A8D34600C5E315 /* AttributedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedTableViewCell.m; sourceTree = "<group>"; };
+		42FB510623A8D34700C5E315 /* CJLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJLabelViewController.m; sourceTree = "<group>"; };
+		42FB511123A8D4A800C5E315 /* Example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Example.json; sourceTree = "<group>"; };
 		738B0AD82298246E9B0FD270 /* Pods-UIGracefulWriting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIGracefulWriting.release.xcconfig"; path = "Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting.release.xcconfig"; sourceTree = "<group>"; };
 		80C7864567D28FF1398761C7 /* Pods-UIGracefulWriting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UIGracefulWriting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -6273,12 +6299,12 @@
 		42C5B47B21422D4400563794 /* MYCoreTextLabel */ = {
 			isa = PBXGroup;
 			children = (
+				42C5B48121422D4400563794 /* MYCoretextResultTool.h */,
 				42C5B47C21422D4400563794 /* MYCoretextResultTool.m */,
+				42C5B48021422D4400563794 /* MYCoreTextLabel.h */,
 				42C5B47D21422D4400563794 /* MYCoreTextLabel.m */,
 				42C5B47E21422D4400563794 /* MYSubCoretextResult.m */,
 				42C5B47F21422D4400563794 /* MYSubCoretextResult.h */,
-				42C5B48021422D4400563794 /* MYCoreTextLabel.h */,
-				42C5B48121422D4400563794 /* MYCoretextResultTool.h */,
 			);
 			path = MYCoreTextLabel;
 			sourceTree = "<group>";
@@ -6823,15 +6849,16 @@
 			children = (
 				42CB7E582138F3C8003397FB /* RichTextVC.h */,
 				42CB7E592138F3C8003397FB /* RichTextVC.m */,
-				42FB50B523A7774100C5E315 /* 9，富文本构造器 */,
+				42FB50C223A8D27700C5E315 /* 10，小众3-CJ系列 */,
 				42CB7E5B2139159B003397FB /* 1，UILabel的富文本 */,
 				42CB7E6321391B61003397FB /* 2，HTML系列 */,
 				426FEE73221CE4F900C4491A /* 3，UITextView系列 */,
 				42C5B46B21422C9200563794 /* 4，TextKit系列 */,
-				42CB7E8221393507003397FB /* 5，TY系列 */,
-				42CB7E5E2139167B003397FB /* 6，注释完备系列 */,
-				42CB7E5C213915D6003397FB /* 7，YY系列 */,
-				42CB7E5D213915E0003397FB /* 8，TTT系列 */,
+				42CB7E8221393507003397FB /* 5，小众1-TY系列 */,
+				42CB7E5E2139167B003397FB /* 6，小众2-注释完备系列 */,
+				42CB7E5C213915D6003397FB /* 7，大众1-YY系列 */,
+				42CB7E5D213915E0003397FB /* 8，大众2-TTT系列 */,
+				42FB50B523A7774100C5E315 /* 9，富文本构造器 */,
 			);
 			path = "*12_富文本总结";
 			sourceTree = "<group>";
@@ -6846,21 +6873,21 @@
 			path = "1，UILabel的富文本";
 			sourceTree = "<group>";
 		};
-		42CB7E5C213915D6003397FB /* 7，YY系列 */ = {
+		42CB7E5C213915D6003397FB /* 7，大众1-YY系列 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "7，YY系列";
+			path = "7，大众1-YY系列";
 			sourceTree = "<group>";
 		};
-		42CB7E5D213915E0003397FB /* 8，TTT系列 */ = {
+		42CB7E5D213915E0003397FB /* 8，大众2-TTT系列 */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "8，TTT系列";
+			path = "8，大众2-TTT系列";
 			sourceTree = "<group>";
 		};
-		42CB7E5E2139167B003397FB /* 6，注释完备系列 */ = {
+		42CB7E5E2139167B003397FB /* 6，小众2-注释完备系列 */ = {
 			isa = PBXGroup;
 			children = (
 				42C5B46E21422D4400563794 /* Controllers(各个场景使用说明) */,
@@ -6868,7 +6895,7 @@
 				42C5B46C21422D4400563794 /* MYCoreTextViewController.h */,
 				42C5B46D21422D4400563794 /* MYCoreTextViewController.m */,
 			);
-			path = "6，注释完备系列";
+			path = "6，小众2-注释完备系列";
 			sourceTree = "<group>";
 		};
 		42CB7E6321391B61003397FB /* 2，HTML系列 */ = {
@@ -6910,7 +6937,7 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		42CB7E8221393507003397FB /* 5，TY系列 */ = {
+		42CB7E8221393507003397FB /* 5，小众1-TY系列 */ = {
 			isa = PBXGroup;
 			children = (
 				42C5B48C21422F5200563794 /* TYLabelViewController.h */,
@@ -6919,7 +6946,7 @@
 				42C5B4A821422F5300563794 /* Tool */,
 				42C5B4AD21422F5300563794 /* View */,
 			);
-			path = "5，TY系列";
+			path = "5，小众1-TY系列";
 			sourceTree = "<group>";
 		};
 		42CB7E8321393900003397FB /* 8，便签效果 */ = {
@@ -8419,6 +8446,61 @@
 			path = "9，富文本构造器";
 			sourceTree = "<group>";
 		};
+		42FB50C223A8D27700C5E315 /* 10，小众3-CJ系列 */ = {
+			isa = PBXGroup;
+			children = (
+				42FB510123A8D34500C5E315 /* CJLabelViewController.h */,
+				42FB510623A8D34700C5E315 /* CJLabelViewController.m */,
+				42FB511623A8D54700C5E315 /* config */,
+				42FB511423A8D4EB00C5E315 /* view */,
+				42FB511323A8D4D900C5E315 /* Controller */,
+				42FB511523A8D52A00C5E315 /* source */,
+			);
+			path = "10，小众3-CJ系列";
+			sourceTree = "<group>";
+		};
+		42FB511323A8D4D900C5E315 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				42FB50FB23A8D34200C5E315 /* FirstDetailViewController.h */,
+				42FB50FA23A8D34100C5E315 /* FirstDetailViewController.m */,
+				42FB510223A8D34500C5E315 /* FirstDetailViewController.xib */,
+				42FB50FE23A8D34300C5E315 /* SecondDetailViewController.h */,
+				42FB510423A8D34600C5E315 /* SecondDetailViewController.m */,
+				42FB50FC23A8D34200C5E315 /* SecondDetailViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		42FB511423A8D4EB00C5E315 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				42FB50FD23A8D34300C5E315 /* CJLabel.h */,
+				42FB50FF23A8D34400C5E315 /* CJLabel.m */,
+				42FB50F623A8D34000C5E315 /* AttributedTableViewCell.h */,
+				42FB510523A8D34600C5E315 /* AttributedTableViewCell.m */,
+				42FB510323A8D34500C5E315 /* AttributedTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		42FB511523A8D52A00C5E315 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				42FB511123A8D4A800C5E315 /* Example.json */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		42FB511623A8D54700C5E315 /* config */ = {
+			isa = PBXGroup;
+			children = (
+				42FB50F823A8D34000C5E315 /* CJLabelConfigure.h */,
+				42FB510023A8D34400C5E315 /* CJLabelConfigure.m */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
 		E735A50B206D935B3AD216D4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -8554,6 +8636,7 @@
 				42340A90228BE7CB00BAF230 /* IndexAnimationVC.xib in Resources */,
 				429CB0FA210436960063A0D8 /* pageControlCurrentDot@3x.png in Resources */,
 				42DD8DCF21A7ACA400CB04A5 /* Swipe.storyboard in Resources */,
+				42FB510923A8D34700C5E315 /* SecondDetailViewController.xib in Resources */,
 				429CB0FF210436960063A0D8 /* pageControlDot@2x.png in Resources */,
 				42C444772217F666004983B3 /* YUFolding_arrow.png in Resources */,
 				42C7836D213CC45B0012188E /* UserHeaderView.xib in Resources */,
@@ -8582,11 +8665,13 @@
 				4242B99F212A9CC500C3A2C5 /* iconfont.ttf in Resources */,
 				424F05A82275B5E50039CD62 /* DAViewController.xib in Resources */,
 				42DD8DCB21A7ACA400CB04A5 /* CustomPresentation.storyboard in Resources */,
+				42FB511223A8D4A800C5E315 /* Example.json in Resources */,
 				42DE3C5F226487E100422577 /* 5.jpg in Resources */,
 				429CB0FC210436960063A0D8 /* h4.jpg in Resources */,
 				427B4946227E889400675542 /* ImageCacheVC.xib in Resources */,
 				42523F39218BDEAD0038CEE3 /* NineGridUsingCollectionVC.xib in Resources */,
 				429CB0F7210436960063A0D8 /* placeholder@2x.png in Resources */,
+				42FB510C23A8D34700C5E315 /* FirstDetailViewController.xib in Resources */,
 				42340AA2228BE9D500BAF230 /* friends.plist in Resources */,
 				42B573D8213FC1FE0089CFDF /* ChildVCTwo.xib in Resources */,
 				429CB0F9210436960063A0D8 /* 005.jpg in Resources */,
@@ -8610,6 +8695,7 @@
 				42FB50BB23A7776F00C5E315 /* test@2x.png in Resources */,
 				42551D8A225F1519003DF389 /* SexPickerTool.xib in Resources */,
 				427B4983227EE6DF00675542 /* MemoryAndDiskCachePackageVC.xib in Resources */,
+				42FB510D23A8D34700C5E315 /* AttributedTableViewCell.xib in Resources */,
 				42C4DF2A215F2B3000247949 /* head.jpg in Resources */,
 				42DD8DC421A7ACA300CB04A5 /* Slide.storyboard in Resources */,
 				42BF8181211A88680090E612 /* region_list.json in Resources */,
@@ -8795,6 +8881,7 @@
 				42CB7E8021391F3F003397FB /* WebviewLoadingHtmlController.m in Sources */,
 				42D1C6CD2277E836001F170F /* UIButton+CQBlockSupport.m in Sources */,
 				42E740CC2276F83700859877 /* CoverDemoVC1.m in Sources */,
+				42FB510B23A8D34700C5E315 /* CJLabelConfigure.m in Sources */,
 				42E740DF2276F9A900859877 /* UIView+GKExtension.m in Sources */,
 				425901062140BDE400304394 /* ShareView.m in Sources */,
 				42B573BE213FC1FE0089CFDF /* DefaultImageVC.m in Sources */,
@@ -9116,6 +9203,7 @@
 				421670162280136A006724CD /* HSSetTableViewOtherController.m in Sources */,
 				42DE3C3B226487AA00422577 /* SuperTableViewCell.m in Sources */,
 				42D1C65A2277E719001F170F /* EasyShowLabel.m in Sources */,
+				42FB510F23A8D34700C5E315 /* AttributedTableViewCell.m in Sources */,
 				42B573D9213FC1FE0089CFDF /* ChildVCNine.m in Sources */,
 				42685500223F2C9400680CDA /* UIScrollView+EasyNavigationExt.m in Sources */,
 				42B573B7213FC1FE0089CFDF /* DefaultCoverVC.m in Sources */,
@@ -9290,6 +9378,7 @@
 				4242B943212A72C400C3A2C5 /* ChildViewController.m in Sources */,
 				42CB7E5A2138F3C8003397FB /* RichTextVC.m in Sources */,
 				426018D62338A89A00AF656A /* WellKnownSayingTableIMP.m in Sources */,
+				42FB511023A8D34700C5E315 /* CJLabelViewController.m in Sources */,
 				42D42FC8225C720A00EA4AA8 /* ClickableLabelVC.m in Sources */,
 				42523F5F218BF96C0038CEE3 /* HYBGridViewController.m in Sources */,
 				42BF8153211A75010090E612 /* UIImage+Transform.m in Sources */,
@@ -9404,6 +9493,7 @@
 				42C5B4BC21422F5300563794 /* LabelXibViewController.m in Sources */,
 				42C7835D213CC45B0012188E /* StoryboardViewController.m in Sources */,
 				425FA10722928E6100E00B55 /* PureXibCustomModel.m in Sources */,
+				42FB510E23A8D34700C5E315 /* SecondDetailViewController.m in Sources */,
 				4227892C2145F44F002B9C13 /* LoadDataViewController.m in Sources */,
 				42CD424522603B8400652FA6 /* FKTextField.m in Sources */,
 				422788A52145F431002B9C13 /* JXCategoryNumberCellModel.m in Sources */,
@@ -9467,6 +9557,7 @@
 				42D1C6B72277E835001F170F /* CQPlaceholderViewController.m in Sources */,
 				422789132145F44F002B9C13 /* VerticalListViewController.m in Sources */,
 				42166F7A22801300006724CD /* BaseTableViewDelegateVC.m in Sources */,
+				42FB510A23A8D34700C5E315 /* CJLabel.m in Sources */,
 				42166F7B22801300006724CD /* BaseTableView.m in Sources */,
 				42C7836A213CC45B0012188E /* NibSelfSizingCell.m in Sources */,
 				42C78353213CC45B0012188E /* Post.m in Sources */,
@@ -9501,6 +9592,7 @@
 				42C5B48A21422D4500563794 /* MYCoreTextLabel.m in Sources */,
 				42CD436F22609C3800652FA6 /* CALayer+QQCorner.m in Sources */,
 				42B573C5213FC1FE0089CFDF /* NavigationBarTitleView.m in Sources */,
+				42FB510823A8D34700C5E315 /* FirstDetailViewController.m in Sources */,
 				42B573B9213FC1FE0089CFDF /* DefaultPopGestureVC.m in Sources */,
 				42EFA8352109BBD800AFC827 /* TabView_3_ViewController.m in Sources */,
 				4259010A2140BDE400304394 /* SelectedListView.m in Sources */,
