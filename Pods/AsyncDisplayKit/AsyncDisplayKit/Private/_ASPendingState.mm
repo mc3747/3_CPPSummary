@@ -8,13 +8,13 @@
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
 
-#import "_ASPendingState.h"
+#import <AsyncDisplayKit/_ASPendingState.h>
 
-#import "_ASCoreAnimationExtras.h"
-#import "_ASAsyncTransactionContainer.h"
-#import "ASAssert.h"
-#import "ASInternalHelpers.h"
-#import "ASDisplayNodeInternal.h"
+#import <AsyncDisplayKit/_ASCoreAnimationExtras.h>
+#import <AsyncDisplayKit/_ASAsyncTransactionContainer.h>
+#import <AsyncDisplayKit/ASAssert.h>
+#import <AsyncDisplayKit/ASInternalHelpers.h>
+#import <AsyncDisplayKit/ASDisplayNodeInternal.h>
 
 #define __shouldSetNeedsDisplay(layer) (flags.needsDisplay \
   || (flags.setOpaque && opaque != (layer).opaque)\
@@ -56,6 +56,7 @@ typedef struct {
   int setBorderWidth:1;
   int setBorderColor:1;
   int setAsyncTransactionContainer:1;
+  int setAllowsGroupOpacity:1;
   int setAllowsEdgeAntialiasing:1;
   int setEdgeAntialiasingMask:1;
   int setIsAccessibilityElement:1;
@@ -153,6 +154,7 @@ ASDISPLAYNODE_INLINE void ASPendingStateApplyMetricsToLayer(_ASPendingState *sta
 @synthesize contents=contents;
 @synthesize hidden=isHidden;
 @synthesize needsDisplayOnBoundsChange=needsDisplayOnBoundsChange;
+@synthesize allowsGroupOpacity=allowsGroupOpacity;
 @synthesize allowsEdgeAntialiasing=allowsEdgeAntialiasing;
 @synthesize edgeAntialiasingMask=edgeAntialiasingMask;
 @synthesize autoresizesSubviews=autoresizesSubviews;
@@ -180,6 +182,19 @@ ASDISPLAYNODE_INLINE void ASPendingStateApplyMetricsToLayer(_ASPendingState *sta
 
 static CGColorRef blackColorRef = NULL;
 static UIColor *defaultTintColor = nil;
+static BOOL defaultAllowsGroupOpacity = YES;
+static BOOL defaultAllowsEdgeAntialiasing = NO;
+
++ (void)load
+{
+  // Create temporary view to read default values that are based on linked SDK and Info.plist values
+  // Ensure this values cached on the main thread before needed
+  ASDisplayNodeCAssertMainThread();
+  UIView *view = [[UIView alloc] init];
+  defaultAllowsGroupOpacity = view.layer.allowsGroupOpacity;
+  defaultAllowsEdgeAntialiasing = view.layer.allowsEdgeAntialiasing;
+}
+
 
 - (instancetype)init
 {
@@ -207,6 +222,8 @@ static UIColor *defaultTintColor = nil;
   contents = nil;
   isHidden = NO;
   needsDisplayOnBoundsChange = NO;
+  allowsGroupOpacity = defaultAllowsGroupOpacity;
+  allowsEdgeAntialiasing = defaultAllowsEdgeAntialiasing;
   autoresizesSubviews = YES;
   alpha = 1.0f;
   cornerRadius = 0.0f;
@@ -271,6 +288,12 @@ static UIColor *defaultTintColor = nil;
 {
   needsDisplayOnBoundsChange = flag;
   _flags.setNeedsDisplayOnBoundsChange = YES;
+}
+
+- (void)setAllowsGroupOpacity:(BOOL)flag
+{
+  allowsGroupOpacity = flag;
+  _flags.setAllowsGroupOpacity = YES;
 }
 
 - (void)setAllowsEdgeAntialiasing:(BOOL)flag
@@ -728,6 +751,9 @@ static UIColor *defaultTintColor = nil;
 
   if (flags.setNeedsDisplayOnBoundsChange)
     layer.needsDisplayOnBoundsChange = needsDisplayOnBoundsChange;
+  
+  if (flags.setAllowsGroupOpacity)
+    layer.allowsGroupOpacity = allowsGroupOpacity;
 
   if (flags.setAllowsEdgeAntialiasing)
     layer.allowsEdgeAntialiasing = allowsEdgeAntialiasing;
@@ -853,6 +879,9 @@ static UIColor *defaultTintColor = nil;
 
   if (flags.setNeedsDisplayOnBoundsChange)
     layer.needsDisplayOnBoundsChange = needsDisplayOnBoundsChange;
+  
+  if (flags.setAllowsGroupOpacity)
+    layer.allowsGroupOpacity = allowsGroupOpacity;
 
   if (flags.setAllowsEdgeAntialiasing)
     layer.allowsEdgeAntialiasing = allowsEdgeAntialiasing;
@@ -918,10 +947,10 @@ static UIColor *defaultTintColor = nil;
 
   if (flags.setFrame && specialPropertiesHandling) {
     // Frame is only defined when transform is identity because we explicitly diverge from CALayer behavior and define frame without transform
-#if DEBUG
-    // Checking if the transform is identity is expensive, so disable when unnecessary. We have assertions on in Release, so DEBUG is the only way I know of.
-    ASDisplayNodeAssert(CATransform3DIsIdentity(layer.transform), @"-[ASDisplayNode setFrame:] - self.transform must be identity in order to set the frame property.  (From Apple's UIView documentation: If the transform property is not the identity transform, the value of this property is undefined and therefore should be ignored.)");
-#endif
+//#if DEBUG
+//    // Checking if the transform is identity is expensive, so disable when unnecessary. We have assertions on in Release, so DEBUG is the only way I know of.
+//    ASDisplayNodeAssert(CATransform3DIsIdentity(layer.transform), @"-[ASDisplayNode setFrame:] - self.transform must be identity in order to set the frame property.  (From Apple's UIView documentation: If the transform property is not the identity transform, the value of this property is undefined and therefore should be ignored.)");
+//#endif
     view.frame = frame;
   } else {
     ASPendingStateApplyMetricsToLayer(self, layer);
@@ -957,6 +986,7 @@ static UIColor *defaultTintColor = nil;
   pendingState.borderWidth = layer.borderWidth;
   pendingState.borderColor = layer.borderColor;
   pendingState.needsDisplayOnBoundsChange = layer.needsDisplayOnBoundsChange;
+  pendingState.allowsGroupOpacity = layer.allowsGroupOpacity;
   pendingState.allowsEdgeAntialiasing = layer.allowsEdgeAntialiasing;
   pendingState.edgeAntialiasingMask = layer.edgeAntialiasingMask;
   return pendingState;
@@ -1000,6 +1030,7 @@ static UIColor *defaultTintColor = nil;
   pendingState.autoresizingMask = view.autoresizingMask;
   pendingState.autoresizesSubviews = view.autoresizesSubviews;
   pendingState.needsDisplayOnBoundsChange = layer.needsDisplayOnBoundsChange;
+  pendingState.allowsGroupOpacity = layer.allowsGroupOpacity;
   pendingState.allowsEdgeAntialiasing = layer.allowsEdgeAntialiasing;
   pendingState.edgeAntialiasingMask = layer.edgeAntialiasingMask;
   pendingState.isAccessibilityElement = view.isAccessibilityElement;
@@ -1069,6 +1100,7 @@ static UIColor *defaultTintColor = nil;
   || flags.setAutoresizingMask
   || flags.setAutoresizesSubviews
   || flags.setNeedsDisplayOnBoundsChange
+  || flags.setAllowsGroupOpacity
   || flags.setAllowsEdgeAntialiasing
   || flags.setEdgeAntialiasingMask
   || flags.needsDisplay

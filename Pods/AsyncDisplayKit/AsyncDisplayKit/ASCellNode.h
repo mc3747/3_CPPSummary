@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@class ASCellNode;
+@class ASCellNode, ASTextNode;
 
 typedef NSUInteger ASCellNodeAnimation;
 
@@ -75,10 +75,20 @@ typedef NS_ENUM(NSUInteger, ASCellNodeVisibilityEvent) {
 @property (nonatomic, assign) BOOL neverShowPlaceholders;
 
 /*
- * ASTableView uses these properties when configuring UITableViewCells that host ASCellNodes.
+ * The kind of supplementary element this node represents, if any.
+ *
+ * @return The supplementary element kind, or @c nil if this node does not represent a supplementary element.
  */
-//@property (nonatomic, retain) UIColor *backgroundColor;
-@property (nonatomic) UITableViewCellSelectionStyle selectionStyle;
+@property (nonatomic, copy, readonly, nullable) NSString *supplementaryElementKind;
+
+/*
+ * The layout attributes currently assigned to this node, if any.
+ *
+ * @discussion This property is useful because it is set before @c collectionView:willDisplayNode:forItemAtIndexPath:
+ *   is called, when the node is not yet in the hierarchy and its frame cannot be converted to/from other nodes. Instead
+ *   you can use the layout attributes object to learn where and how the cell will be displayed.
+ */
+@property (nonatomic, strong, readonly, nullable) UICollectionViewLayoutAttributes *layoutAttributes;
 
 /**
  * A Boolean value that is synchronized with the underlying collection or tableView cell property.
@@ -91,6 +101,27 @@ typedef NS_ENUM(NSUInteger, ASCellNodeVisibilityEvent) {
  * Setting this value is equivalent to calling highlightItem / unHighlightItem on the collection or table.
  */
 @property (nonatomic, assign, getter=isHighlighted) BOOL highlighted;
+
+/**
+ * The current index path of this cell node, or @c nil if this node is
+ * not a valid item inside a table node or collection node.
+ *
+ * @note This property must be accessed on the main thread.
+ */
+@property (nonatomic, readonly, nullable) NSIndexPath *indexPath;
+
+/**
+ * The backing view controller, or @c nil if the node wasn't initialized with backing view controller
+ * @note This property must be accessed on the main thread.
+ */
+@property (nonatomic, readonly, nullable) UIViewController *viewController;
+
+
+/**
+ * The owning node (ASCollectionNode/ASTableNode) of this cell node, or @c nil if this node is
+ * not a valid item inside a table node or collection node or if those nodes are nil.
+ */
+@property (weak, nonatomic, readonly, nullable) ASDisplayNode *owningNode;
 
 /*
  * ASCellNode must forward touch events in order for UITableView and UICollectionView tap handling to work. Overriding
@@ -120,7 +151,50 @@ typedef NS_ENUM(NSUInteger, ASCellNodeVisibilityEvent) {
  */
 - (instancetype)initWithViewControllerBlock:(ASDisplayNodeViewControllerBlock)viewControllerBlock didLoadBlock:(nullable ASDisplayNodeDidLoadBlock)didLoadBlock;
 
+/**
+ * @abstract Notifies the cell node of certain visibility events, such as changing visible rect.
+ *
+ * @warning In cases where an ASCellNode is used as a plain node – i.e. not returned from the
+ *   nodeBlockForItemAtIndexPath/nodeForItemAtIndexPath data source methods – this method will
+ *   deliver only the `Visible` and `Invisible` events, `scrollView` will be nil, and
+ *   `cellFrame` will be the zero rect.
+ */
 - (void)cellNodeVisibilityEvent:(ASCellNodeVisibilityEvent)event inScrollView:(nullable UIScrollView *)scrollView withCellFrame:(CGRect)cellFrame;
+
+#pragma mark - UITableViewCell specific passthrough properties
+
+/* @abstract The selection style when a tap on a cell occurs
+ * @default UITableViewCellSelectionStyleDefault
+ * ASTableView uses these properties when configuring UITableViewCells that host ASCellNodes.
+ */
+@property (nonatomic) UITableViewCellSelectionStyle selectionStyle;
+
+/* @abstract The view used as the background of the cell when it is selected.
+ * ASTableView uses these properties when configuring UITableViewCells that host ASCellNodes.
+ * ASCollectionView uses these properties when configuring UICollectionViewCells that host ASCellNodes.
+ */
+@property (nonatomic, strong, nullable) UIView *selectedBackgroundView;
+
+/* @abstract The accessory type view on the right side of the cell. Please take care of your ASLayoutSpec so that doesn't overlay the accessoryView
+ * @default UITableViewCellAccessoryNone
+ * ASTableView uses these properties when configuring UITableViewCells that host ASCellNodes.
+ */
+@property (nonatomic) UITableViewCellAccessoryType accessoryType;
+
+/* @abstract The inset of the cell separator line
+ * ASTableView uses these properties when configuring UITableViewCells that host ASCellNodes.
+ */
+@property (nonatomic) UIEdgeInsets separatorInset;
+
+@end
+
+@interface ASCellNode (Unavailable)
+
+- (instancetype)initWithLayerBlock:(ASDisplayNodeLayerBlock)viewBlock didLoadBlock:(nullable ASDisplayNodeDidLoadBlock)didLoadBlock __unavailable;
+
+- (instancetype)initWithViewBlock:(ASDisplayNodeViewBlock)viewBlock didLoadBlock:(nullable ASDisplayNodeDidLoadBlock)didLoadBlock __unavailable;
+
+- (void)setLayerBacked:(BOOL)layerBacked AS_UNAVAILABLE("ASCellNode does not support layer-backing");
 
 @end
 
@@ -149,6 +223,11 @@ typedef NS_ENUM(NSUInteger, ASCellNodeVisibilityEvent) {
  * The text inset or outset for each edge. The default value is 15.0 horizontal and 11.0 vertical padding.
  */
 @property (nonatomic, assign) UIEdgeInsets textInsets;
+
+/**
+ * The text node used by this cell node.
+ */
+@property (nonatomic, strong, readonly) ASTextNode *textNode;
 
 @end
 

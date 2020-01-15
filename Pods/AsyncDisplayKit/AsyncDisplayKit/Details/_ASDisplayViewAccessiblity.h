@@ -9,3 +9,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <AsyncDisplayKit/_ASDisplayView.h>
+
+@interface _ASDisplayView (UIAccessibilityContainer)
+@property (copy, nonatomic) NSArray *accessibleElements;
+@end

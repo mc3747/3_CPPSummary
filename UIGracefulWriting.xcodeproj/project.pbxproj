@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -337,6 +337,7 @@
 		42789BF02154759900F85994 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BEF2154759900F85994 /* Test1ViewController.m */; };
 		42789BF3215475AB00F85994 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BF2215475AB00F85994 /* Test2ViewController.m */; };
 		42789C602154EEAB00F85994 /* CommonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789C5F2154EEAB00F85994 /* CommonMethod.m */; };
+		427B1E6F23CDBB820079FAD1 /* ToastKeyPointVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B1E6E23CDBB820079FAD1 /* ToastKeyPointVC.m */; };
 		427B493F227E76B200675542 /* RoundCornerSummaryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B493D227E76B200675542 /* RoundCornerSummaryVC.m */; };
 		427B4940227E76B200675542 /* RoundCornerSummaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 427B493E227E76B200675542 /* RoundCornerSummaryVC.xib */; };
 		427B4945227E889400675542 /* ImageCacheVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 427B4943227E889400675542 /* ImageCacheVC.m */; };
@@ -355,6 +356,7 @@
 		4291629522637CEC005C8626 /* CornerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291628E22637CEB005C8626 /* CornerTableViewCell.m */; };
 		4291629622637CEC005C8626 /* JPFPSStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291629222637CEB005C8626 /* JPFPSStatus.m */; };
 		4291629922637CF7005C8626 /* EffectiveCornerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4291629822637CF7005C8626 /* EffectiveCornerVC.m */; };
+		429674CC23B43F9000637C82 /* 说明.txt in Resources */ = {isa = PBXBuildFile; fileRef = 429674CB23B43F9000637C82 /* 说明.txt */; };
 		42981CE72105C4DF0052CCC3 /* CommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42981CE62105C4DF0052CCC3 /* CommonViewController.m */; };
 		429B14DE2160B95800F595FC /* MCDataSafety.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B14D82160B95600F595FC /* MCDataSafety.m */; };
 		429B14DF2160B95800F595FC /* MCDataJudge.m in Sources */ = {isa = PBXBuildFile; fileRef = 429B14DB2160B95700F595FC /* MCDataJudge.m */; };
@@ -1678,6 +1680,8 @@
 		42789C5D2154EC5400F85994 /* IPhoneSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPhoneSize.h; sourceTree = "<group>"; };
 		42789C5E2154EEAA00F85994 /* CommonMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMethod.h; sourceTree = "<group>"; };
 		42789C5F2154EEAB00F85994 /* CommonMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonMethod.m; sourceTree = "<group>"; };
+		427B1E6D23CDBB820079FAD1 /* ToastKeyPointVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToastKeyPointVC.h; sourceTree = "<group>"; };
+		427B1E6E23CDBB820079FAD1 /* ToastKeyPointVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToastKeyPointVC.m; sourceTree = "<group>"; };
 		427B493C227E76B200675542 /* RoundCornerSummaryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RoundCornerSummaryVC.h; sourceTree = "<group>"; };
 		427B493D227E76B200675542 /* RoundCornerSummaryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundCornerSummaryVC.m; sourceTree = "<group>"; };
 		427B493E227E76B200675542 /* RoundCornerSummaryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoundCornerSummaryVC.xib; sourceTree = "<group>"; };
@@ -1709,6 +1713,7 @@
 		4291629222637CEB005C8626 /* JPFPSStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPFPSStatus.m; sourceTree = "<group>"; };
 		4291629722637CF6005C8626 /* EffectiveCornerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectiveCornerVC.h; sourceTree = "<group>"; };
 		4291629822637CF7005C8626 /* EffectiveCornerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EffectiveCornerVC.m; sourceTree = "<group>"; };
+		429674CB23B43F9000637C82 /* 说明.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "说明.txt"; sourceTree = "<group>"; };
 		42981CE52105C4DF0052CCC3 /* CommonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonViewController.h; sourceTree = "<group>"; };
 		42981CE62105C4DF0052CCC3 /* CommonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonViewController.m; sourceTree = "<group>"; };
 		429B14D82160B95600F595FC /* MCDataSafety.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDataSafety.m; sourceTree = "<group>"; };
@@ -4203,6 +4208,7 @@
 		42551D62225F1385003DF389 /* **_其他 */ = {
 			isa = PBXGroup;
 			children = (
+				429674CA23B43ED100637C82 /* #4_手势解锁 */,
 				4238B927212551A600AF272E /* #1_模糊效果 */,
 				42CB7E312138CEB7003397FB /* #2_截屏展示 */,
 				42DB02ED221E4B76002B5675 /* #3_生成二维码 */,
@@ -4857,6 +4863,15 @@
 			path = tool;
 			sourceTree = "<group>";
 		};
+		427B1E6C23CDBB410079FAD1 /* 5，toast注意点总结 */ = {
+			isa = PBXGroup;
+			children = (
+				427B1E6D23CDBB820079FAD1 /* ToastKeyPointVC.h */,
+				427B1E6E23CDBB820079FAD1 /* ToastKeyPointVC.m */,
+			);
+			path = "5，toast注意点总结";
+			sourceTree = "<group>";
+		};
 		427B493B227E763000675542 /* 1，圆角总结 */ = {
 			isa = PBXGroup;
 			children = (
@@ -4981,6 +4996,14 @@
 				4291629222637CEB005C8626 /* JPFPSStatus.m */,
 			);
 			path = JPFPSStatus;
+			sourceTree = "<group>";
+		};
+		429674CA23B43ED100637C82 /* #4_手势解锁 */ = {
+			isa = PBXGroup;
+			children = (
+				429674CB23B43F9000637C82 /* 说明.txt */,
+			);
+			path = "#4_手势解锁";
 			sourceTree = "<group>";
 		};
 		42981CE12105C42B0052CCC3 /* *3_button相关 */ = {
@@ -7220,6 +7243,7 @@
 		42D1C5F22277E082001F170F /* 9，封装的loading框 */ = {
 			isa = PBXGroup;
 			children = (
+				427B1E6C23CDBB410079FAD1 /* 5，toast注意点总结 */,
 				42D1C5FC2277E451001F170F /* 4，重量级AlertToast */,
 				42D1C5FB2277E446001F170F /* 3，重量级EasyShow */,
 				42D1C5FA2277E43B001F170F /* 2，轻量级loading下落 */,
@@ -7304,8 +7328,8 @@
 			isa = PBXGroup;
 			children = (
 				42D1C60B2277E4E6001F170F /* NSTimer+MFWeakTimer.h */,
-				42D1C60C2277E4E6001F170F /* UIView+MFFrame.m */,
 				42D1C60D2277E4E6001F170F /* NSTimer+MFWeakTimer.m */,
+				42D1C60C2277E4E6001F170F /* UIView+MFFrame.m */,
 				42D1C60E2277E4E6001F170F /* UIView+MFFrame.h */,
 			);
 			path = Category;
@@ -7323,8 +7347,8 @@
 			isa = PBXGroup;
 			children = (
 				42D1C6122277E4E6001F170F /* MFNotificationHUD.h */,
-				42D1C6132277E4E6001F170F /* MFHUDManager.h */,
 				42D1C6142277E4E6001F170F /* MFNotificationHUD.m */,
+				42D1C6132277E4E6001F170F /* MFHUDManager.h */,
 				42D1C6152277E4E6001F170F /* MFHUDManager.m */,
 			);
 			path = HUD;
@@ -8661,6 +8685,7 @@
 				4216701E2280136A006724CD /* HSSetTableViewController.bundle in Resources */,
 				4227317323544DDB007D22B7 /* 微信logo@2x.png in Resources */,
 				42C78369213CC45B0012188E /* NibCell.xib in Resources */,
+				429674CC23B43F9000637C82 /* 说明.txt in Resources */,
 				42B573C7213FC1FE0089CFDF /* ChildFourthPopGestureNextVC.xib in Resources */,
 				4242B99F212A9CC500C3A2C5 /* iconfont.ttf in Resources */,
 				424F05A82275B5E50039CD62 /* DAViewController.xib in Resources */,
@@ -8768,29 +8793,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting-resources.sh",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup.png",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_amatorka.png",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_miss_etikate.png",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_1.png",
-				"${PODS_ROOT}/GPUImage/framework/Resources/lookup_soft_elegance_2.png",
-				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_amatorka.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_miss_etikate.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_1.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/lookup_soft_elegance_2.png",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UIGracefulWriting/Pods-UIGracefulWriting-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -9152,6 +9164,7 @@
 				425900EC2140BD8100304394 /* AlertTableViewController.m in Sources */,
 				42BF8154211A75010090E612 /* NSDate+InternetDateTime.m in Sources */,
 				42C7838B213CC45B0012188E /* SelfSizingSectionController.m in Sources */,
+				427B1E6F23CDBB820079FAD1 /* ToastKeyPointVC.m in Sources */,
 				429CB104210436960063A0D8 /* UIView+SDExtension.m in Sources */,
 				42166F5F22800997006724CD /* LDSDownloaderOperation.m in Sources */,
 				42CB7E7C21391F3F003397FB /* UILabel+LXLabel.m in Sources */,

@@ -8,8 +8,10 @@
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
 
-#import "ASAbstractLayoutController.h"
-#import "ASAssert.h"
+#import <AsyncDisplayKit/ASAbstractLayoutController.h>
+
+#import <AsyncDisplayKit/ASAssert.h>
+
 #include <vector>
 
 extern ASRangeTuningParameters const ASRangeTuningParametersZero = {};
@@ -17,6 +19,68 @@ extern ASRangeTuningParameters const ASRangeTuningParametersZero = {};
 extern BOOL ASRangeTuningParametersEqualToRangeTuningParameters(ASRangeTuningParameters lhs, ASRangeTuningParameters rhs)
 {
   return lhs.leadingBufferScreenfuls == rhs.leadingBufferScreenfuls && lhs.trailingBufferScreenfuls == rhs.trailingBufferScreenfuls;
+}
+
+extern ASDirectionalScreenfulBuffer ASDirectionalScreenfulBufferHorizontal(ASScrollDirection scrollDirection,
+                                                                    ASRangeTuningParameters rangeTuningParameters)
+{
+  ASDirectionalScreenfulBuffer horizontalBuffer = {0, 0};
+  BOOL movingRight = ASScrollDirectionContainsRight(scrollDirection);
+  
+  horizontalBuffer.positiveDirection = movingRight ? rangeTuningParameters.leadingBufferScreenfuls
+                                                   : rangeTuningParameters.trailingBufferScreenfuls;
+  horizontalBuffer.negativeDirection = movingRight ? rangeTuningParameters.trailingBufferScreenfuls
+                                                   : rangeTuningParameters.leadingBufferScreenfuls;
+  return horizontalBuffer;
+}
+
+extern ASDirectionalScreenfulBuffer ASDirectionalScreenfulBufferVertical(ASScrollDirection scrollDirection,
+                                                                  ASRangeTuningParameters rangeTuningParameters)
+{
+  ASDirectionalScreenfulBuffer verticalBuffer = {0, 0};
+  BOOL movingDown = ASScrollDirectionContainsDown(scrollDirection);
+  
+  verticalBuffer.positiveDirection = movingDown ? rangeTuningParameters.leadingBufferScreenfuls
+                                                : rangeTuningParameters.trailingBufferScreenfuls;
+  verticalBuffer.negativeDirection = movingDown ? rangeTuningParameters.trailingBufferScreenfuls
+                                                : rangeTuningParameters.leadingBufferScreenfuls;
+  return verticalBuffer;
+}
+
+extern CGRect CGRectExpandHorizontally(CGRect rect, ASDirectionalScreenfulBuffer buffer)
+{
+  CGFloat negativeDirectionWidth = buffer.negativeDirection * rect.size.width;
+  CGFloat positiveDirectionWidth = buffer.positiveDirection * rect.size.width;
+  rect.size.width = negativeDirectionWidth + rect.size.width + positiveDirectionWidth;
+  rect.origin.x -= negativeDirectionWidth;
+  return rect;
+}
+
+extern CGRect CGRectExpandVertically(CGRect rect, ASDirectionalScreenfulBuffer buffer)
+{
+  CGFloat negativeDirectionHeight = buffer.negativeDirection * rect.size.height;
+  CGFloat positiveDirectionHeight = buffer.positiveDirection * rect.size.height;
+  rect.size.height = negativeDirectionHeight + rect.size.height + positiveDirectionHeight;
+  rect.origin.y -= negativeDirectionHeight;
+  return rect;
+}
+
+extern CGRect CGRectExpandToRangeWithScrollableDirections(CGRect rect, ASRangeTuningParameters tuningParameters,
+                                                   ASScrollDirection scrollableDirections, ASScrollDirection scrollDirection)
+{
+  // Can scroll horizontally - expand the range appropriately
+  if (ASScrollDirectionContainsHorizontalDirection(scrollableDirections)) {
+    ASDirectionalScreenfulBuffer horizontalBuffer = ASDirectionalScreenfulBufferHorizontal(scrollDirection, tuningParameters);
+    rect = CGRectExpandHorizontally(rect, horizontalBuffer);
+  }
+
+  // Can scroll vertically - expand the range appropriately
+  if (ASScrollDirectionContainsVerticalDirection(scrollableDirections)) {
+    ASDirectionalScreenfulBuffer verticalBuffer = ASDirectionalScreenfulBufferVertical(scrollDirection, tuningParameters);
+    rect = CGRectExpandVertically(rect, verticalBuffer);
+  }
+  
+  return rect;
 }
 
 @interface ASAbstractLayoutController () {
@@ -39,7 +103,7 @@ extern BOOL ASRangeTuningParametersEqualToRangeTuningParameters(ASRangeTuningPar
     .leadingBufferScreenfuls = 1.0,
     .trailingBufferScreenfuls = 0.5
   };
-  _tuningParameters[ASLayoutRangeModeFull][ASLayoutRangeTypeFetchData] = {
+  _tuningParameters[ASLayoutRangeModeFull][ASLayoutRangeTypePreload] = {
     .leadingBufferScreenfuls = 2.5,
     .trailingBufferScreenfuls = 1.5
   };
@@ -48,7 +112,7 @@ extern BOOL ASRangeTuningParametersEqualToRangeTuningParameters(ASRangeTuningPar
     .leadingBufferScreenfuls = 0.25,
     .trailingBufferScreenfuls = 0.25
   };
-  _tuningParameters[ASLayoutRangeModeMinimum][ASLayoutRangeTypeFetchData] = {
+  _tuningParameters[ASLayoutRangeModeMinimum][ASLayoutRangeTypePreload] = {
     .leadingBufferScreenfuls = 0.5,
     .trailingBufferScreenfuls = 0.25
   };
@@ -57,7 +121,7 @@ extern BOOL ASRangeTuningParametersEqualToRangeTuningParameters(ASRangeTuningPar
     .leadingBufferScreenfuls = 0,
     .trailingBufferScreenfuls = 0
   };
-  _tuningParameters[ASLayoutRangeModeVisibleOnly][ASLayoutRangeTypeFetchData] = {
+  _tuningParameters[ASLayoutRangeModeVisibleOnly][ASLayoutRangeTypePreload] = {
     .leadingBufferScreenfuls = 0,
     .trailingBufferScreenfuls = 0
   };
@@ -69,7 +133,7 @@ extern BOOL ASRangeTuningParametersEqualToRangeTuningParameters(ASRangeTuningPar
     .leadingBufferScreenfuls = 0,
     .trailingBufferScreenfuls = 0
   };
-  _tuningParameters[ASLayoutRangeModeLowMemory][ASLayoutRangeTypeFetchData] = {
+  _tuningParameters[ASLayoutRangeModeLowMemory][ASLayoutRangeTypePreload] = {
     .leadingBufferScreenfuls = 0,
     .trailingBufferScreenfuls = 0
   };

@@ -7,14 +7,13 @@
 //  LICENSE file in the root directory of this source tree. An additional grant
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
-#if TARGET_OS_IOS
+
 #import <AVFoundation/AVFoundation.h>
-#import "ASDisplayNodeInternal.h"
-#import "ASDisplayNode+Subclasses.h"
-#import "ASVideoNode.h"
-#import "ASEqualityHelpers.h"
-#import "ASInternalHelpers.h"
-#import "ASDisplayNodeExtras.h"
+#import <AsyncDisplayKit/ASDisplayNode+FrameworkSubclasses.h>
+#import <AsyncDisplayKit/ASVideoNode.h>
+#import <AsyncDisplayKit/ASEqualityHelpers.h>
+#import <AsyncDisplayKit/ASInternalHelpers.h>
+#import <AsyncDisplayKit/ASDisplayNodeExtras.h>
 
 static BOOL ASAssetIsEqual(AVAsset *asset1, AVAsset *asset2) {
   return ASObjectIsEqual(asset1, asset2)
@@ -37,10 +36,10 @@ static void *ASVideoNodeContext = &ASVideoNodeContext;
 static NSString * const kPlaybackLikelyToKeepUpKey = @"playbackLikelyToKeepUp";
 static NSString * const kplaybackBufferEmpty = @"playbackBufferEmpty";
 static NSString * const kStatus = @"status";
+static NSString * const kRate = @"rate";
 
 @interface ASVideoNode ()
 {
-  __weak id<ASVideoNodeDelegate> _delegate;
   struct {
     unsigned int delegateVideNodeShouldChangePlayerStateTo:1;
     unsigned int delegateVideoDidPlayToEnd:1;
@@ -52,11 +51,6 @@ static NSString * const kStatus = @"status";
     unsigned int delegateVideoNodeDidSetCurrentItem:1;
     unsigned int delegateVideoNodeDidStallAtTimeInterval:1;
     unsigned int delegateVideoNodeDidRecoverFromStall:1;
-    
-    //Flags for deprecated methods
-    unsigned int delegateVideoPlaybackDidFinish_deprecated:1;
-    unsigned int delegateVideoNodeWasTapped_deprecated:1;
-    unsigned int delegateVideoNodeDidPlayToSecond_deprecated:1;
   } _delegateFlags;
   
   BOOL _shouldBePlaying;
@@ -80,6 +74,8 @@ static NSString * const kStatus = @"status";
   int32_t _periodicTimeObserverTimescale;
   CMTime _timeObserverInterval;
   
+  CMTime _lastPlaybackTime;
+	
   ASDisplayNode *_playerNode;
   NSString *_gravity;
 }
@@ -88,27 +84,24 @@ static NSString * const kStatus = @"status";
 
 @implementation ASVideoNode
 
+@dynamic delegate;
+
 // TODO: Support preview images with HTTP Live Streaming videos.
 
 #pragma mark - Construction and Layout
 
-- (instancetype)init
+- (instancetype)initWithCache:(id<ASImageCacheProtocol>)cache downloader:(id<ASImageDownloaderProtocol>)downloader
 {
-  if (!(self = [super init])) {
+  if (!(self = [super initWithCache:cache downloader:downloader])) {
     return nil;
   }
 
   self.gravity = AVLayerVideoGravityResizeAspect;
   _periodicTimeObserverTimescale = 10000;
   [self addTarget:self action:@selector(tapped) forControlEvents:ASControlNodeEventTouchUpInside];
+  _lastPlaybackTime = kCMTimeZero;
   
   return self;
-}
-
-- (instancetype)initWithViewBlock:(ASDisplayNodeViewBlock)viewBlock didLoadBlock:(ASDisplayNodeDidLoadBlock)didLoadBlock
-{
-  ASDisplayNodeAssertNotSupported();
-  return nil;
 }
 
 - (ASDisplayNode *)constructPlayerNode
@@ -125,6 +118,7 @@ static NSString * const kStatus = @"status";
 
 - (AVPlayerItem *)constructPlayerItem
 {
+  ASDisplayNodeAssertMainThread();
   ASDN::MutexLocker l(__instanceLock__);
 
   AVPlayerItem *playerItem = nil;
@@ -142,6 +136,8 @@ static NSString * const kStatus = @"status";
 
 - (void)prepareToPlayAsset:(AVAsset *)asset withKeys:(NSArray<NSString *> *)requestedKeys
 {
+  ASDisplayNodeAssertMainThread();
+  
   for (NSString *key in requestedKeys) {
     NSError *error = nil;
     AVKeyValueStatus keyStatus = [asset statusOfValueForKey:key error:&error];
@@ -165,7 +161,7 @@ static NSString * const kStatus = @"status";
   }
 
   if (_delegateFlags.delegateVideoNodeDidSetCurrentItem) {
-    [_delegate videoNode:self didSetCurrentItem:playerItem];
+    [self.delegate videoNode:self didSetCurrentItem:playerItem];
   }
 
   if (self.image == nil && self.URL == nil) {
@@ -214,6 +210,25 @@ static NSString * const kStatus = @"status";
   [notificationCenter removeObserver:self name:AVPlayerItemNewErrorLogEntryNotification object:playerItem];
 }
 
+- (void)addPlayerObservers:(AVPlayer *)player
+{
+  if (player == nil) {
+    return;
+  }
+
+  [player addObserver:self forKeyPath:kRate options:NSKeyValueObservingOptionNew context:ASVideoNodeContext];
+}
+
+- (void) removePlayerObservers:(AVPlayer *)player
+{
+  @try {
+    [player removeObserver:self forKeyPath:kRate context:ASVideoNodeContext];
+  }
+  @catch (NSException * __unused exception) {
+    NSLog(@"Unnecessary KVO removal");
+  }
+}
+
 - (void)layout
 {
   [super layout];
@@ -226,10 +241,6 @@ static NSString * const kStatus = @"status";
   ASDN::MutexLocker l(__instanceLock__);
   CGSize calculatedSize = constrainedSize;
   
-  // if a preferredFrameSize is set, call the superclass to return that instead of using the image size.
-  if (CGSizeEqualToSize(self.preferredFrameSize, CGSizeZero) == NO)
-    calculatedSize = self.preferredFrameSize;
- 
   // Prevent crashes through if infinite width or height
   if (isinf(calculatedSize.width) || isinf(calculatedSize.height)) {
     ASDisplayNodeAssert(NO, @"Infinite width or height in ASVideoNode");
@@ -237,8 +248,8 @@ static NSString * const kStatus = @"status";
   }
   
   if (_playerNode) {
-    _playerNode.preferredFrameSize = calculatedSize;
-    [_playerNode measure:calculatedSize];
+    _playerNode.style.preferredSize = calculatedSize;
+    [_playerNode layoutThatFits:ASSizeRangeMake(CGSizeZero, calculatedSize)];
   }
   
   return calculatedSize;
@@ -273,6 +284,7 @@ static NSString * const kStatus = @"status";
 
     AVAssetImageGenerator *previewImageGenerator = [AVAssetImageGenerator assetImageGeneratorWithAsset:asset];
     previewImageGenerator.appliesPreferredTrackTransform = YES;
+    previewImageGenerator.videoComposition = _videoComposition;
 
     [previewImageGenerator generateCGImagesAsynchronouslyForTimes:@[[NSValue valueWithCMTime:imageTime]]
                                                 completionHandler:^(CMTime requestedTime, CGImageRef image, CMTime actualTime, AVAssetImageGeneratorResult result, NSError *error) {
@@ -297,29 +309,50 @@ static NSString * const kStatus = @"status";
 {
   ASDN::MutexLocker l(__instanceLock__);
 
-  if (object != _currentPlayerItem) {
-    return;
-  }
-
-  if ([keyPath isEqualToString:kStatus]) {
-    if ([change[NSKeyValueChangeNewKey] integerValue] == AVPlayerItemStatusReadyToPlay) {
-      self.playerState = ASVideoNodePlayerStateReadyToPlay;
-      // If we don't yet have a placeholder image update it now that we should have data available for it
-      if (self.image == nil && self.URL == nil) {
-        [self generatePlaceholderImage];
+  if (object == _currentPlayerItem) {
+    if ([keyPath isEqualToString:kStatus]) {
+      if ([change[NSKeyValueChangeNewKey] integerValue] == AVPlayerItemStatusReadyToPlay) {
+        if (self.playerState != ASVideoNodePlayerStatePlaying) {
+          self.playerState = ASVideoNodePlayerStateReadyToPlay;
+          if (_shouldBePlaying && ASInterfaceStateIncludesVisible(self.interfaceState)) {
+            [self play];
+          }
+        }
+        // If we don't yet have a placeholder image update it now that we should have data available for it
+        if (self.image == nil && self.URL == nil) {
+          [self generatePlaceholderImage];
+        }
+      }
+    } else if ([keyPath isEqualToString:kPlaybackLikelyToKeepUpKey]) {
+      BOOL likelyToKeepUp = [change[NSKeyValueChangeNewKey] boolValue];
+      if (likelyToKeepUp && self.playerState == ASVideoNodePlayerStatePlaying) {
+        return;
+      }
+      if (!likelyToKeepUp) {
+        self.playerState = ASVideoNodePlayerStateLoading;
+      } else if (self.playerState != ASVideoNodePlayerStateFinished) {
+        self.playerState = ASVideoNodePlayerStatePlaybackLikelyToKeepUpButNotPlaying;
+      }
+      if (_shouldBePlaying && (_shouldAggressivelyRecoverFromStall || likelyToKeepUp) && ASInterfaceStateIncludesVisible(self.interfaceState)) {
+        if (self.playerState == ASVideoNodePlayerStateLoading && _delegateFlags.delegateVideoNodeDidRecoverFromStall) {
+          [self.delegate videoNodeDidRecoverFromStall:self];
+        }
+        [self play]; // autoresume after buffer catches up
+      }
+    } else if ([keyPath isEqualToString:kplaybackBufferEmpty]) {
+      if (_shouldBePlaying && [change[NSKeyValueChangeNewKey] boolValue] == YES && ASInterfaceStateIncludesVisible(self.interfaceState)) {
+        self.playerState = ASVideoNodePlayerStateLoading;
       }
     }
-  } else if ([keyPath isEqualToString:kPlaybackLikelyToKeepUpKey]) {
-    self.playerState = ASVideoNodePlayerStatePlaybackLikelyToKeepUpButNotPlaying;
-    if (_shouldBePlaying && (_shouldAggressivelyRecoverFromStall || [change[NSKeyValueChangeNewKey] boolValue]) && ASInterfaceStateIncludesVisible(self.interfaceState)) {
-      if (self.playerState == ASVideoNodePlayerStateLoading && _delegateFlags.delegateVideoNodeDidRecoverFromStall) {
-        [_delegate videoNodeDidRecoverFromStall:self];
+  } else if (object == _player) {
+    if ([keyPath isEqualToString:kRate]) {
+      if ([change[NSKeyValueChangeNewKey] floatValue] == 0.0) {
+        if (self.playerState == ASVideoNodePlayerStatePlaying) {
+          self.playerState = ASVideoNodePlayerStatePaused;
+        }
+      } else {
+        self.playerState = ASVideoNodePlayerStatePlaying;
       }
-      [self play]; // autoresume after buffer catches up
-    }
-  } else if ([keyPath isEqualToString:kplaybackBufferEmpty]) {
-    if (_shouldBePlaying && [change[NSKeyValueChangeNewKey] boolValue] == true && ASInterfaceStateIncludesVisible(self.interfaceState)) {
-      self.playerState = ASVideoNodePlayerStateLoading;
     }
   }
 }
@@ -327,14 +360,8 @@ static NSString * const kStatus = @"status";
 - (void)tapped
 {
   if (_delegateFlags.delegateDidTapVideoNode) {
-    [_delegate didTapVideoNode:self];
+    [self.delegate didTapVideoNode:self];
     
-  } else if (_delegateFlags.delegateVideoNodeWasTapped_deprecated) {
-    // TODO: This method is deprecated, remove in ASDK 2.0
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-    [_delegate videoNodeWasTapped:self];
-#pragma clang diagnostic pop
   } else {
     if (_shouldBePlaying) {
       [self pause];
@@ -344,30 +371,27 @@ static NSString * const kStatus = @"status";
   }
 }
 
-- (void)fetchData
+- (void)didEnterPreloadState
 {
-  [super fetchData];
+  [super didEnterPreloadState];
   
   ASDN::MutexLocker l(__instanceLock__);
   AVAsset *asset = self.asset;
   // Return immediately if the asset is nil;
-  if (asset == nil || self.playerState == ASVideoNodePlayerStateInitialLoading) {
+  if (asset == nil || self.playerState != ASVideoNodePlayerStateUnknown) {
       return;
   }
 
-  // FIXME: Nothing appears to prevent this method from sending the delegate notification / calling load on the asset
-  // multiple times, even after the asset is fully loaded and ready to play.  There should probably be a playerState
-  // for NotLoaded or such, besides Unknown, so this can be easily checked before proceeding.
-  self.playerState = ASVideoNodePlayerStateInitialLoading;
+  self.playerState = ASVideoNodePlayerStateLoading;
   if (_delegateFlags.delegateVideoNodeDidStartInitialLoading) {
-      [_delegate videoNodeDidStartInitialLoading:self];
+      [self.delegate videoNodeDidStartInitialLoading:self];
   }
   
   NSArray<NSString *> *requestedKeys = @[@"playable"];
   [asset loadValuesAsynchronouslyForKeys:requestedKeys completionHandler:^{
     ASPerformBlockOnMainThread(^{
       if (_delegateFlags.delegateVideoNodeDidFinishInitialLoading) {
-        [_delegate videoNodeDidFinishInitialLoading:self];
+        [self.delegate videoNodeDidFinishInitialLoading:self];
       }
       [self prepareToPlayAsset:asset withKeys:requestedKeys];
     });
@@ -382,45 +406,52 @@ static NSString * const kStatus = @"status";
   }
   
   if (_delegateFlags.delegateVideoNodeDidPlayToTimeInterval) {
-    [_delegate videoNode:self didPlayToTimeInterval:timeInSeconds];
+    [self.delegate videoNode:self didPlayToTimeInterval:timeInSeconds];
     
-  } else if (_delegateFlags.delegateVideoNodeDidPlayToSecond_deprecated) {
-    // TODO: This method is deprecated, remove in ASDK 2.0
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-      [_delegate videoNode:self didPlayToSecond:timeInSeconds];
-#pragma clang diagnostic pop
   }
 }
 
-- (void)clearFetchedData
+- (void)didExitPreloadState
 {
-  [super clearFetchedData];
+  [super didExitPreloadState];
   
   {
     ASDN::MutexLocker l(__instanceLock__);
 
     self.player = nil;
     self.currentItem = nil;
+    self.playerState = ASVideoNodePlayerStateUnknown;
   }
 }
 
-- (void)visibleStateDidChange:(BOOL)isVisible
+- (void)didEnterVisibleState
 {
-  [super visibleStateDidChange:isVisible];
+  [super didEnterVisibleState];
   
   ASDN::MutexLocker l(__instanceLock__);
   
-  if (isVisible) {
-    if (_shouldBePlaying || _shouldAutoplay) {
-      [self play];
+  if (_shouldBePlaying || _shouldAutoplay) {
+    if (_player != nil && CMTIME_IS_VALID(_lastPlaybackTime)) {
+      [_player seekToTime:_lastPlaybackTime];
     }
-  } else if (_shouldBePlaying) {
-    [self pause];
-    _shouldBePlaying = YES;
+    [self play];
   }
 }
 
+- (void)didExitVisibleState
+{
+  [super didExitVisibleState];
+  
+  ASDN::MutexLocker l(__instanceLock__);
+  
+  if (_shouldBePlaying) {
+    [self pause];
+    if (_player != nil && CMTIME_IS_VALID(_player.currentTime)) {
+      _lastPlaybackTime = _player.currentTime;
+    }
+    _shouldBePlaying = YES;
+  }
+}
 
 #pragma mark - Video Properties
 
@@ -435,7 +466,7 @@ static NSString * const kStatus = @"status";
   }
   
   if (_delegateFlags.delegateVideoNodeWillChangePlayerStateToState) {
-    [_delegate videoNode:self willChangePlayerState:oldState toState:playerState];
+    [self.delegate videoNode:self willChangePlayerState:oldState toState:playerState];
   }
   
   _playerState = playerState;
@@ -443,10 +474,10 @@ static NSString * const kStatus = @"status";
 
 - (void)setAssetURL:(NSURL *)assetURL
 {
-  ASDN::MutexLocker l(__instanceLock__);
-
+  ASDisplayNodeAssertMainThread();
+  
   if (ASObjectIsEqual(assetURL, self.assetURL) == NO) {
-    [self _setAndFetchAsset:[AVURLAsset assetWithURL:assetURL] url:assetURL];
+    [self setAndFetchAsset:[AVURLAsset assetWithURL:assetURL] url:assetURL];
   }
 }
 
@@ -465,10 +496,10 @@ static NSString * const kStatus = @"status";
 
 - (void)setAsset:(AVAsset *)asset
 {
-  ASDN::MutexLocker l(__instanceLock__);
+  ASDisplayNodeAssertMainThread();
   
-  if (ASAssetIsEqual(asset, _asset) == NO) {
-    [self _setAndFetchAsset:asset url:nil];
+  if (ASAssetIsEqual(asset, self.asset) == NO) {
+    [self setAndFetchAsset:asset url:nil];
   }
 }
 
@@ -478,12 +509,20 @@ static NSString * const kStatus = @"status";
   return _asset;
 }
 
-- (void)_setAndFetchAsset:(AVAsset *)asset url:(NSURL *)assetURL
+- (void)setAndFetchAsset:(AVAsset *)asset url:(NSURL *)assetURL
 {
-  [self clearFetchedData];
-  _asset = asset;
-  _assetURL = assetURL;
-  [self setNeedsDataFetch];
+  ASDisplayNodeAssertMainThread();
+  
+  [self didExitPreloadState];
+  
+  {
+    ASDN::MutexLocker l(__instanceLock__);
+    self.videoPlaceholderImage = nil;
+    _asset = asset;
+    _assetURL = assetURL;
+  }
+  
+  [self setNeedsPreload];
 }
 
 - (void)setVideoComposition:(AVVideoComposition *)videoComposition
@@ -520,36 +559,29 @@ static NSString * const kStatus = @"status";
   return _player;
 }
 
-- (id<ASVideoNodeDelegate>)delegate{
-  return _delegate;
+- (AVPlayerLayer *)playerLayer
+{
+  ASDN::MutexLocker l(__instanceLock__);
+  return (AVPlayerLayer *)_playerNode.layer;
 }
 
 - (void)setDelegate:(id<ASVideoNodeDelegate>)delegate
 {
   [super setDelegate:delegate];
-  _delegate = delegate;
   
-  if (_delegate == nil) {
+  if (delegate == nil) {
     memset(&_delegateFlags, 0, sizeof(_delegateFlags));
   } else {
-    _delegateFlags.delegateVideNodeShouldChangePlayerStateTo = [_delegate respondsToSelector:@selector(videoNode:shouldChangePlayerStateTo:)];
-    _delegateFlags.delegateVideoDidPlayToEnd = [_delegate respondsToSelector:@selector(videoDidPlayToEnd:)];
-    _delegateFlags.delegateDidTapVideoNode = [_delegate respondsToSelector:@selector(didTapVideoNode:)];
-    _delegateFlags.delegateVideoNodeWillChangePlayerStateToState = [_delegate respondsToSelector:@selector(videoNode:willChangePlayerState:toState:)];
-    _delegateFlags.delegateVideoNodeDidPlayToTimeInterval = [_delegate respondsToSelector:@selector(videoNode:didPlayToTimeInterval:)];
-    _delegateFlags.delegateVideoNodeDidStartInitialLoading = [_delegate respondsToSelector:@selector(videoNodeDidStartInitialLoading:)];
-    _delegateFlags.delegateVideoNodeDidFinishInitialLoading = [_delegate respondsToSelector:@selector(videoNodeDidFinishInitialLoading:)];
-    _delegateFlags.delegateVideoNodeDidSetCurrentItem = [_delegate respondsToSelector:@selector(videoNode:didSetCurrentItem:)];
-    _delegateFlags.delegateVideoNodeDidStallAtTimeInterval = [_delegate respondsToSelector:@selector(videoNode:didStallAtTimeInterval:)];
-    _delegateFlags.delegateVideoNodeDidRecoverFromStall = [_delegate respondsToSelector:@selector(videoNodeDidRecoverFromStall:)];
-      
-    // deprecated methods
-    _delegateFlags.delegateVideoPlaybackDidFinish_deprecated =  [_delegate respondsToSelector:@selector(videoPlaybackDidFinish:)];
-    _delegateFlags.delegateVideoNodeDidPlayToSecond_deprecated = [_delegate respondsToSelector:@selector(videoNode:didPlayToSecond:)];
-    _delegateFlags.delegateVideoNodeWasTapped_deprecated = [_delegate respondsToSelector:@selector(videoNodeWasTapped:)];
-    ASDisplayNodeAssert((_delegateFlags.delegateVideoDidPlayToEnd && _delegateFlags.delegateVideoPlaybackDidFinish_deprecated) == NO, @"Implemented both deprecated and non-deprecated methods - please remove videoPlaybackDidFinish, it's deprecated");
-    ASDisplayNodeAssert((_delegateFlags.delegateVideoNodeDidPlayToTimeInterval && _delegateFlags.delegateVideoNodeDidPlayToSecond_deprecated) == NO, @"Implemented both deprecated and non-deprecated methods - please remove videoNodeWasTapped, it's deprecated");
-    ASDisplayNodeAssert((_delegateFlags.delegateDidTapVideoNode && _delegateFlags.delegateVideoNodeWasTapped_deprecated) == NO, @"Implemented both deprecated and non-deprecated methods - please remove didPlayToSecond, it's deprecated");
+    _delegateFlags.delegateVideNodeShouldChangePlayerStateTo = [delegate respondsToSelector:@selector(videoNode:shouldChangePlayerStateTo:)];
+    _delegateFlags.delegateVideoDidPlayToEnd = [delegate respondsToSelector:@selector(videoDidPlayToEnd:)];
+    _delegateFlags.delegateDidTapVideoNode = [delegate respondsToSelector:@selector(didTapVideoNode:)];
+    _delegateFlags.delegateVideoNodeWillChangePlayerStateToState = [delegate respondsToSelector:@selector(videoNode:willChangePlayerState:toState:)];
+    _delegateFlags.delegateVideoNodeDidPlayToTimeInterval = [delegate respondsToSelector:@selector(videoNode:didPlayToTimeInterval:)];
+    _delegateFlags.delegateVideoNodeDidStartInitialLoading = [delegate respondsToSelector:@selector(videoNodeDidStartInitialLoading:)];
+    _delegateFlags.delegateVideoNodeDidFinishInitialLoading = [delegate respondsToSelector:@selector(videoNodeDidFinishInitialLoading:)];
+    _delegateFlags.delegateVideoNodeDidSetCurrentItem = [delegate respondsToSelector:@selector(videoNode:didSetCurrentItem:)];
+    _delegateFlags.delegateVideoNodeDidStallAtTimeInterval = [delegate respondsToSelector:@selector(videoNode:didStallAtTimeInterval:)];
+    _delegateFlags.delegateVideoNodeDidRecoverFromStall = [delegate respondsToSelector:@selector(videoNodeDidRecoverFromStall:)];
   }
 }
 
@@ -587,21 +619,25 @@ static NSString * const kStatus = @"status";
 
 - (void)play
 {
-  ASDN::MutexLocker l(__instanceLock__);
+  __instanceLock__.lock();
 
   if (![self isStateChangeValid:ASVideoNodePlayerStatePlaying]) {
+    __instanceLock__.unlock();
     return;
   }
 
   if (_player == nil) {
-    [self setNeedsDataFetch];
+    __instanceLock__.unlock();
+      [self setNeedsPreload];
+    __instanceLock__.lock();
   }
 
   if (_playerNode == nil) {
     _playerNode = [self constructPlayerNode];
 
-    [self addSubnode:_playerNode];
-
+    __instanceLock__.unlock();
+      [self addSubnode:_playerNode];
+    __instanceLock__.lock();
       
     [self setNeedsLayout];
   }
@@ -609,12 +645,7 @@ static NSString * const kStatus = @"status";
   
   [_player play];
   _shouldBePlaying = YES;
-
-  if (![self ready]) {
-    self.playerState = ASVideoNodePlayerStateLoading;
-  } else {
-    self.playerState = ASVideoNodePlayerStatePlaying;
-  }
+  __instanceLock__.unlock();
 }
 
 - (BOOL)ready
@@ -628,7 +659,6 @@ static NSString * const kStatus = @"status";
   if (![self isStateChangeValid:ASVideoNodePlayerStatePaused]) {
     return;
   }
-  self.playerState = ASVideoNodePlayerStatePaused;
   [_player pause];
   _shouldBePlaying = NO;
 }
@@ -643,11 +673,24 @@ static NSString * const kStatus = @"status";
 - (BOOL)isStateChangeValid:(ASVideoNodePlayerState)state
 {
   if (_delegateFlags.delegateVideNodeShouldChangePlayerStateTo) {
-    if (![_delegate videoNode:self shouldChangePlayerStateTo:state]) {
+    if (![self.delegate videoNode:self shouldChangePlayerStateTo:state]) {
       return NO;
     }
   }
   return YES;
+}
+
+- (void)resetToPlaceholder
+{
+  ASDN::MutexLocker l(__instanceLock__);
+  
+  if (_playerNode != nil) {
+    [_playerNode removeFromSupernode];
+    _playerNode = nil;
+  }
+  
+  [_player seekToTime:kCMTimeZero];
+  [self pause];
 }
 
 
@@ -657,13 +700,7 @@ static NSString * const kStatus = @"status";
 {
   self.playerState = ASVideoNodePlayerStateFinished;
   if (_delegateFlags.delegateVideoDidPlayToEnd) {
-    [_delegate videoDidPlayToEnd:self];
-  } else if (_delegateFlags.delegateVideoPlaybackDidFinish_deprecated) {
-    // TODO: This method is deprecated, remove in ASDK 2.0
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
-    [_delegate videoPlaybackDidFinish:self];
-#pragma clang diagnostic pop
+    [self.delegate videoDidPlayToEnd:self];
   }
 
   if (_shouldAutorepeat) {
@@ -678,7 +715,7 @@ static NSString * const kStatus = @"status";
 {
   self.playerState = ASVideoNodePlayerStateLoading;
   if (_delegateFlags.delegateVideoNodeDidStallAtTimeInterval) {
-    [_delegate videoNode:self didStallAtTimeInterval:CMTimeGetSeconds(_player.currentItem.currentTime)];
+    [self.delegate videoNode:self didStallAtTimeInterval:CMTimeGetSeconds(_player.currentItem.currentTime)];
   }
 }
 
@@ -737,9 +774,16 @@ static NSString * const kStatus = @"status";
 - (void)setPlayer:(AVPlayer *)player
 {
   ASDN::MutexLocker l(__instanceLock__);
+
+  [self removePlayerObservers:_player];
+
   _player = player;
   player.muted = _muted;
   ((AVPlayerLayer *)_playerNode.layer).player = player;
+
+  if (player != nil) {
+    [self addPlayerObservers:player];
+  }
 }
 
 - (BOOL)shouldBePlaying
@@ -761,7 +805,7 @@ static NSString * const kStatus = @"status";
   [_player removeTimeObserver:_timeObserver];
   _timeObserver = nil;
   [self removePlayerItemObservers:_currentPlayerItem];
+  [self removePlayerObservers:_player];
 }
 
 @end
-#endif

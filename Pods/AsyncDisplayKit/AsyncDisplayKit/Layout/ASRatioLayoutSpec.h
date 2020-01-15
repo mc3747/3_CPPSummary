@@ -9,9 +9,10 @@
 //
 
 #import <AsyncDisplayKit/ASLayoutSpec.h>
-#import <AsyncDisplayKit/ASLayoutable.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol ASLayoutElement;
 
 /**
  Ratio layout spec
@@ -35,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) CGFloat ratio;
 
-+ (instancetype)ratioLayoutSpecWithRatio:(CGFloat)ratio child:(id<ASLayoutable>)child;
++ (instancetype)ratioLayoutSpecWithRatio:(CGFloat)ratio child:(id<ASLayoutElement>)child AS_WARN_UNUSED_RESULT;
 
 @end
 

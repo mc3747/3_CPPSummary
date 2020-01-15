@@ -9,11 +9,12 @@
 //
 
 #import <AsyncDisplayKit/ASDisplayNode.h>
-#import <AsyncDisplayKit/ASTextKitComponents.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol ASEditableTextNodeDelegate;
+@class ASTextKitComponents;
 
 /**
  @abstract Implements a node that supports text editing.
@@ -24,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * @abstract Initializes an editable text node using default TextKit components.
  *
- * @returns An initialized ASEditableTextNode.
+ * @return An initialized ASEditableTextNode.
  */
 - (instancetype)init;
 
@@ -34,7 +35,7 @@ NS_ASSUME_NONNULL_BEGIN
  * @param textKitComponents The TextKit stack used to render text.
  * @param placeholderTextKitComponents The TextKit stack used to render placeholder text.
  *
- * @returns An initialized ASEditableTextNode.
+ * @return An initialized ASEditableTextNode.
  */
 - (instancetype)initWithTextKitComponents:(ASTextKitComponents *)textKitComponents
              placeholderTextKitComponents:(ASTextKitComponents *)placeholderTextKitComponents;
@@ -68,7 +69,7 @@ NS_ASSUME_NONNULL_BEGIN
   @discussion To update the placeholder, see the <attributedPlaceholderText> property.
   @result YES if the placeholder is currently displayed; NO otherwise.
  */
-- (BOOL)isDisplayingPlaceholder;
+- (BOOL)isDisplayingPlaceholder AS_WARN_UNUSED_RESULT;
 
 /**
   @abstract The styled placeholder text displayed by the text node while no text is entered
@@ -93,22 +94,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readwrite) UIEdgeInsets textContainerInset;
 
 /**
- @abstract <UITextInputTraits> properties.
+ @abstract The maximum number of lines to display. Additional lines will require scrolling.
+ @default 0 (No limit)
  */
-@property(nonatomic, readwrite, assign) UITextAutocapitalizationType autocapitalizationType; // default is UITextAutocapitalizationTypeSentences
-@property(nonatomic, readwrite, assign) UITextAutocorrectionType autocorrectionType;         // default is UITextAutocorrectionTypeDefault
-@property(nonatomic, readwrite, assign) UITextSpellCheckingType spellCheckingType;           // default is UITextSpellCheckingTypeDefault;
-@property(nonatomic, readwrite, assign) UIKeyboardType keyboardType;                         // default is UIKeyboardTypeDefault
-@property(nonatomic, readwrite, assign) UIKeyboardAppearance keyboardAppearance;             // default is UIKeyboardAppearanceDefault
-@property(nonatomic, readwrite, assign) UIReturnKeyType returnKeyType;                       // default is UIReturnKeyDefault (See note under UIReturnKeyType enum)
-@property(nonatomic, readwrite, assign) BOOL enablesReturnKeyAutomatically;                  // default is NO (when YES, will automatically disable return key when text widget has zero-length contents, and will automatically enable when text widget has non-zero-length contents)
-@property(nonatomic, readwrite, assign, getter=isSecureTextEntry) BOOL secureTextEntry;      // default is NO
+@property (nonatomic, assign) NSUInteger maximumLinesToDisplay;
 
 /**
   @abstract Indicates whether the receiver's text view is the first responder, and thus has the keyboard visible and is prepared for editing by the user.
   @result YES if the receiver's text view is the first-responder; NO otherwise.
  */
-- (BOOL)isFirstResponder;
+- (BOOL)isFirstResponder AS_WARN_UNUSED_RESULT;
 
 //! @abstract Makes the receiver's text view the first responder.
 - (BOOL)becomeFirstResponder;
@@ -123,7 +118,27 @@ NS_ASSUME_NONNULL_BEGIN
   @discussion This method raises an exception if `textRange` is not a valid range of characters within the receiver's attributed text.
   @result A CGRect that is the bounding box of the glyphs covered by the given range of characters, in the coordinate system of the receiver.
  */
-- (CGRect)frameForTextRange:(NSRange)textRange;
+- (CGRect)frameForTextRange:(NSRange)textRange AS_WARN_UNUSED_RESULT;
+
+/**
+ @abstract <UITextInputTraits> properties.
+ */
+@property(nonatomic, readwrite, assign) UITextAutocapitalizationType autocapitalizationType; // default is UITextAutocapitalizationTypeSentences
+@property(nonatomic, readwrite, assign) UITextAutocorrectionType autocorrectionType;         // default is UITextAutocorrectionTypeDefault
+@property(nonatomic, readwrite, assign) UITextSpellCheckingType spellCheckingType;           // default is UITextSpellCheckingTypeDefault;
+@property(nonatomic, readwrite, assign) UIKeyboardType keyboardType;                         // default is UIKeyboardTypeDefault
+@property(nonatomic, readwrite, assign) UIKeyboardAppearance keyboardAppearance;             // default is UIKeyboardAppearanceDefault
+@property(nonatomic, readwrite, assign) UIReturnKeyType returnKeyType;                       // default is UIReturnKeyDefault (See note under UIReturnKeyType enum)
+@property(nonatomic, readwrite, assign) BOOL enablesReturnKeyAutomatically;                  // default is NO (when YES, will automatically disable return key when text widget has zero-length contents, and will automatically enable when text widget has non-zero-length contents)
+@property(nonatomic, readwrite, assign, getter=isSecureTextEntry) BOOL secureTextEntry;      // default is NO
+
+@end
+
+@interface ASEditableTextNode (Unavailable)
+
+- (instancetype)initWithLayerBlock:(ASDisplayNodeLayerBlock)viewBlock didLoadBlock:(nullable ASDisplayNodeDidLoadBlock)didLoadBlock __unavailable;
+
+- (instancetype)initWithViewBlock:(ASDisplayNodeViewBlock)viewBlock didLoadBlock:(nullable ASDisplayNodeDidLoadBlock)didLoadBlock __unavailable;
 
 @end
 

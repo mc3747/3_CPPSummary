@@ -11,6 +11,7 @@
 #import "LightLoadingDropVC.h"
 #import "StrongLoadingEasyShowVC.h"
 #import "CQHomeTabBarController.h"
+#import "ToastKeyPointVC.h"
 
 @interface CommonLoadingVC ()
 
@@ -38,6 +39,10 @@
 }
 - (IBAction)buttonAction4:(id)sender {
     CQHomeTabBarController *vc = [CQHomeTabBarController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+- (IBAction)buttonAction5:(id)sender {
+    ToastKeyPointVC *vc = [ToastKeyPointVC new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

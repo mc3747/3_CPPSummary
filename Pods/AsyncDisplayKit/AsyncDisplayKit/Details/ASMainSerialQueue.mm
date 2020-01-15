@@ -10,10 +10,10 @@
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
 
-#import "ASMainSerialQueue.h"
+#import <AsyncDisplayKit/ASMainSerialQueue.h>
 
-#import "ASThread.h"
-#import "ASInternalHelpers.h"
+#import <AsyncDisplayKit/ASThread.h>
+#import <AsyncDisplayKit/ASInternalHelpers.h>
 
 @interface ASMainSerialQueue ()
 {
@@ -39,8 +39,10 @@
 {
   ASDN::MutexLocker l(_serialQueueLock);
   [_blocks addObject:block];
-  ASDN::MutexUnlocker u(_serialQueueLock);
-  [self runBlocks];
+  {
+    ASDN::MutexUnlocker u(_serialQueueLock);
+    [self runBlocks];
+  }
 }
 
 - (void)runBlocks
@@ -55,8 +57,10 @@
       } else {
         break;
       }
-      ASDN::MutexUnlocker u(_serialQueueLock);
-      block();
+      {
+        ASDN::MutexUnlocker u(_serialQueueLock);
+        block();
+      }
     } while (true);
   };
   

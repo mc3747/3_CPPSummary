@@ -8,9 +8,9 @@
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
 
-#import "ASTextKitAttributes.h"
+#import <AsyncDisplayKit/ASTextKitAttributes.h>
 
-#import "ASEqualityHashHelpers.h"
+#import <AsyncDisplayKit/ASEqualityHashHelpers.h>
 
 #include <functional>
 
@@ -23,8 +23,6 @@ size_t ASTextKitAttributes::hash() const
     [attributedString hash],
     [truncationAttributedString hash],
     [avoidTailTruncationSet hash],
-    std::hash<NSUInteger>()((NSUInteger) layoutManagerCreationBlock),
-    std::hash<NSUInteger>()((NSUInteger) textStorageCreationBlock),
     std::hash<NSInteger>()(lineBreakMode),
     std::hash<NSInteger>()(maximumNumberOfLines),
     [exclusionPaths hash],

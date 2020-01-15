@@ -1,14 +1,14 @@
 PODS:
-  - AsyncDisplayKit (1.9.92):
-    - AsyncDisplayKit/PINRemoteImage (= 1.9.92)
-  - AsyncDisplayKit/ASDealloc2MainObject (1.9.92)
-  - AsyncDisplayKit/Core (1.9.92):
-    - AsyncDisplayKit/ASDealloc2MainObject
-  - AsyncDisplayKit/PINRemoteImage (1.9.92):
+  - AsyncDisplayKit (2.2.1):
+    - AsyncDisplayKit/PINRemoteImage (= 2.2.1)
+  - AsyncDisplayKit/Core (2.2.1)
+  - AsyncDisplayKit/PINRemoteImage (2.2.1):
     - AsyncDisplayKit/Core
-    - PINCache (= 3.0.1-beta)
-    - PINRemoteImage/iOS (= 3.0.0-beta.3)
-  - CYLTabBarController (1.19.2)
+    - PINRemoteImage/iOS (= 3.0.0-beta.8)
+    - PINRemoteImage/PINCache
+  - CYLTabBarController (1.28.5):
+    - CYLTabBarController/Core (= 1.28.5)
+  - CYLTabBarController/Core (1.28.5)
   - DZNEmptyDataSet (1.8.1)
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
@@ -20,18 +20,27 @@ PODS:
     - IGListKit/Diffing
   - IGListKit/Diffing (3.4.0)
   - JSONModel (1.8.0)
-  - LEEAlert (1.2.1)
+  - LEEAlert (1.3.3)
   - Masonry (1.1.0)
-  - MJExtension (3.0.17)
-  - MJRefresh (3.1.16)
-  - PINCache (3.0.1-beta)
-  - PINRemoteImage/Core (3.0.0-beta.3):
-    - PINCache (>= 3.0.0-beta)
-  - PINRemoteImage/iOS (3.0.0-beta.3):
+  - MJExtension (3.2.1)
+  - MJRefresh (3.3.1)
+  - PINCache (3.0.1-beta.4):
+    - PINCache/Arc-exception-safe (= 3.0.1-beta.4)
+    - PINCache/Core (= 3.0.1-beta.4)
+  - PINCache/Arc-exception-safe (3.0.1-beta.4):
+    - PINCache/Core
+  - PINCache/Core (3.0.1-beta.4):
+    - PINOperation (= 1.0.3)
+  - PINOperation (1.0.3)
+  - PINRemoteImage/Core (3.0.0-beta.8)
+  - PINRemoteImage/iOS (3.0.0-beta.8):
     - PINRemoteImage/Core
-  - SDWebImage (4.4.6):
-    - SDWebImage/Core (= 4.4.6)
-  - SDWebImage/Core (4.4.6)
+  - PINRemoteImage/PINCache (3.0.0-beta.8):
+    - PINCache (= 3.0.1-beta.4)
+    - PINRemoteImage/Core
+  - SDWebImage (5.4.2):
+    - SDWebImage/Core (= 5.4.2)
+  - SDWebImage/Core (5.4.2)
   - SVProgressHUD (2.2.5)
   - SWTableViewCell (0.3.7)
   - TYAttributedLabel (2.6.6)
@@ -40,11 +49,11 @@ PODS:
   - YYKit/no-arc (1.0.9)
 
 DEPENDENCIES:
-  - AsyncDisplayKit (~> 1.9.90)
+  - AsyncDisplayKit
   - CYLTabBarController
   - DZNEmptyDataSet
   - FMDB
-  - GPUImage (~> 0.1.7)
+  - GPUImage
   - IGListKit
   - JSONModel
   - LEEAlert
@@ -54,11 +63,11 @@ DEPENDENCIES:
   - SDWebImage
   - SVProgressHUD
   - SWTableViewCell
-  - TYAttributedLabel (~> 2.6.2)
+  - TYAttributedLabel
   - YYKit
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - AsyncDisplayKit
     - CYLTabBarController
     - DZNEmptyDataSet
@@ -71,6 +80,7 @@ SPEC REPOS:
     - MJExtension
     - MJRefresh
     - PINCache
+    - PINOperation
     - PINRemoteImage
     - SDWebImage
     - SVProgressHUD
@@ -79,25 +89,26 @@ SPEC REPOS:
     - YYKit
 
 SPEC CHECKSUMS:
-  AsyncDisplayKit: 49d94f5739669d666ff7cdc3430f43f0b2cfbeaf
-  CYLTabBarController: 5b364d6be617331a07f3f3f0ea537f7950501042
+  AsyncDisplayKit: 2234dd8d8770a5ed72936b3f8394bd5a807765f6
+  CYLTabBarController: edd9fecba9afa3f2e9e44ed50ca6dde69941f25f
   DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   IGListKit: 7a5d788e9fb746bcd402baa8e8b24bc3bd2a5a07
   JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
-  LEEAlert: 325078be70d9234e318d69703ba2f2cd01d8974a
+  LEEAlert: fa1547e66bc393a1bd79695f112146c9c3f7f1c5
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
-  MJRefresh: 7798e16e53a5ef7f332dd05b27664db4e29530fd
-  PINCache: 6911fe422a633e18b3d3ddf2bd4f0e55e36e2892
-  PINRemoteImage: 308731aa6534500e58fc211b9cc2bb7252df25ba
-  SDWebImage: 3f3f0c02f09798048c47a5ed0a13f17b063572d8
+  MJExtension: 635f2c663dcb1bf76fa4b715b2570a5710aec545
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  PINCache: a89c8f609232afac77128557bd12c861844423d7
+  PINOperation: ac23db44796d4a564ecf9b5ea7163510f579b71d
+  PINRemoteImage: c4f9f16932840c597f32e69dd288e10e111a1929
+  SDWebImage: 4ca2dc4eefae4224bea8f504251cda485a363745
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
   TYAttributedLabel: cb8fc910d97eb5224936d4f692a78e042af691b2
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: eb6fd7ead4fc8f20444636acdf3c271e5b45bd89
+PODFILE CHECKSUM: 9c0aacf6c7310591bb848334aca8d284d5645956
 
-COCOAPODS: 1.5.0.beta.1
+COCOAPODS: 1.8.0

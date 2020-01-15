@@ -8,13 +8,16 @@
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
 
-#import "ASEditableTextNode.h"
+#import <AsyncDisplayKit/ASEditableTextNode.h>
 
 #import <objc/message.h>
+#import <tgmath.h>
 
-#import "ASDisplayNode+Subclasses.h"
-#import "ASEqualityHelpers.h"
-#import "ASTextNodeWordKerner.h"
+#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#import <AsyncDisplayKit/ASEqualityHelpers.h>
+#import <AsyncDisplayKit/ASTextKitComponents.h>
+#import <AsyncDisplayKit/ASTextNodeWordKerner.h>
+#import <AsyncDisplayKit/ASThread.h>
 
 /**
  @abstract Object to hold UITextView's pending UITextInputTraits
@@ -167,18 +170,6 @@
   return self;
 }
 
-- (instancetype)initWithLayerBlock:(ASDisplayNodeLayerBlock)viewBlock didLoadBlock:(ASDisplayNodeDidLoadBlock)didLoadBlock
-{
-  ASDisplayNodeAssertNotSupported();
-  return nil;
-}
-
-- (instancetype)initWithViewBlock:(ASDisplayNodeViewBlock)viewBlock didLoadBlock:(ASDisplayNodeDidLoadBlock)didLoadBlock
-{
-  ASDisplayNodeAssertNotSupported();
-  return nil;
-}
-
 - (void)dealloc
 {
   _textKitComponents.textView.delegate = nil;
@@ -249,10 +240,19 @@
 - (CGSize)calculateSizeThatFits:(CGSize)constrainedSize
 {
   ASTextKitComponents *displayedComponents = [self isDisplayingPlaceholder] ? _placeholderTextKitComponents : _textKitComponents;
-  CGSize textSize = [displayedComponents sizeForConstrainedWidth:constrainedSize.width];
-  CGFloat width = ceilf(textSize.width + _textContainerInset.left + _textContainerInset.right);
-  CGFloat height = ceilf(textSize.height + _textContainerInset.top + _textContainerInset.bottom);
-  return CGSizeMake(fminf(width, constrainedSize.width), fminf(height, constrainedSize.height));
+  
+  CGSize textSize;
+  
+  if (_maximumLinesToDisplay > 0) {
+    textSize = [displayedComponents sizeForConstrainedWidth:constrainedSize.width
+                                        forMaxNumberOfLines: _maximumLinesToDisplay];
+  } else {
+    textSize = [displayedComponents sizeForConstrainedWidth:constrainedSize.width];
+  }
+  
+  CGFloat width = std::ceil(textSize.width + _textContainerInset.left + _textContainerInset.right);
+  CGFloat height = std::ceil(textSize.height + _textContainerInset.top + _textContainerInset.bottom);
+  return CGSizeMake(std::fmin(width, constrainedSize.width), std::fmin(height, constrainedSize.height));
 }
 
 - (void)layout
@@ -322,6 +322,12 @@
   [self view];
   ASDisplayNodeAssert(_textKitComponents.textView != nil, @"UITextView must be created in -[ASEditableTextNode didLoad]");
   return _textKitComponents.textView;
+}
+
+- (void)setMaximumLinesToDisplay:(NSUInteger)maximumLines
+{
+  _maximumLinesToDisplay = maximumLines;
+  [self setNeedsLayout];
 }
 
 #pragma mark -
@@ -426,7 +432,7 @@
     [_textKitComponents.textStorage setAttributedString:attributedStringToDisplay];
 
   // Calculated size depends on the seeded text.
-  [self invalidateCalculatedLayout];
+  [self setNeedsLayout];
 
   // Update if placeholder is shown.
   [self _updateDisplayingPlaceholder];

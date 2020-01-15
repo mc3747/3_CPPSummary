@@ -153,30 +153,35 @@
     } else {
         NSLog(@"noCacheImage");
         
-        SDWebImageDownloader *downLoder = [SDWebImageDownloader sharedDownloader];
-        [downLoder downloadImageWithURL:imageUrl options:SDWebImageDownloaderLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
-            
-        } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
-            if (image && finished && error == nil) {
-
-                [weakSelf adImageShowWithImage:image];
-                [[SDImageCache sharedImageCache] storeImage:image forKey:urlStr toDisk:YES completion:^{
-                    
-                }];
-                
-            }
-        }];
+//        SDWebImageDownloader *downLoder = [SDWebImageDownloader sharedDownloader];
+        SDWebImageManager *downLoder = [SDWebImageManager sharedManager];
         
-//        [manager downloadImageWithURL:imageUrl options:SDWebImageLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+//        [downLoder downloadImageWithURL:imageUrl options:SDWebImageDownloaderLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
 //
-//        } completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+//        } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, BOOL finished) {
 //            if (image && finished && error == nil) {
 //
 //                [weakSelf adImageShowWithImage:image];
-//                [[SDImageCache sharedImageCache] storeImage:image forKey:urlStr toDisk:YES];
+//                [[SDImageCache sharedImageCache] storeImage:image forKey:urlStr toDisk:YES completion:^{
+//
+//                }];
+//
 //            }
 //        }];
-    }
+        [downLoder loadImageWithURL:imageUrl options:SDWebImageLowPriority progress:^(NSInteger receivedSize, NSInteger expectedSize, NSURL * _Nullable targetURL) {
+            
+        } completed:^(UIImage * _Nullable image, NSData * _Nullable data, NSError * _Nullable error, SDImageCacheType cacheType, BOOL finished, NSURL * _Nullable imageURL) {
+                        if (image && finished && error == nil) {
+                       
+                                       [weakSelf adImageShowWithImage:image];
+                                       [[SDImageCache sharedImageCache] storeImage:image forKey:urlStr toDisk:YES completion:^{
+                       
+                                       }];
+                       
+                                   }
+        }];
+        
+        };
 }
 
 /** 显示广告图 */

@@ -33,14 +33,14 @@
 #pragma mark -- public methods
 
 /**
- *  show badge with red dot style and CYLBadgeAnimTypeNone by default.
+ *  show badge with red dot style and CYLBadgeAnimationTypeNone by default.
  */
 - (void)cyl_showBadge {
-    [kActualView cyl_showBadgeValue:@"" animationType:CYLBadgeAnimTypeNone];
+    [kActualView cyl_showBadgeValue:@"" animationType:CYLBadgeAnimationTypeNone];
 }
 
-- (void)cyl_showBadgeValue:(NSString *)value animationType:(CYLBadgeAnimType)aniType {
-    [kActualView cyl_showBadgeValue:value animationType:aniType];
+- (void)cyl_showBadgeValue:(NSString *)value animationType:(CYLBadgeAnimationType)animationType {
+    [kActualView cyl_showBadgeValue:value animationType:animationType];
     self.cyl_tabButton.cyl_tabBadgeView.hidden = YES;
 }
 
@@ -74,22 +74,24 @@
  *  @return view
  */
 - (UIView *)cyl_getActualBadgeSuperView {
-    // 1.get UITabbarButtion
-    UIControl *cyl_tabButton  = [self cyl_tabButton];
-    //    return cyl_tabButton;
+    UIControl *tabButton = [self cyl_tabButton];
     // badge label will be added onto imageView
-    return [cyl_tabButton cyl_tabImageView];
-}
-
-- (UIView *)cyl_find:(UIView *)view firstSubviewWithClass:(Class)cls {
-    __block UIView *targetView = nil;
-    [view.subviews enumerateObjectsUsingBlock:^(UIView *subview, NSUInteger idx, BOOL * _Nonnull stop) {
-        if ([subview isKindOfClass:cls]) {
-            targetView = subview;
-            *stop = YES;
+    UIImageView *tabImageView = [tabButton cyl_tabImageView];
+    UIView *lottieAnimationView = (UIView *)tabButton.cyl_lottieAnimationView ;
+    UIView *actualBadgeSuperView = tabImageView;
+    
+    do {
+        if (tabImageView && !tabImageView.cyl_isInvisiable) {
+            actualBadgeSuperView = tabImageView;
+            break;
         }
-    }];
-    return targetView;
+        if (lottieAnimationView && !lottieAnimationView.cyl_isInvisiable) {
+            actualBadgeSuperView = lottieAnimationView;
+            break;
+        }
+    } while (NO);
+    [lottieAnimationView setClipsToBounds:NO];
+    return actualBadgeSuperView;
 }
 
 #pragma mark -- setter/getter
@@ -125,12 +127,12 @@
     [kActualView cyl_setBadgeTextColor:badgeTextColor];
 }
 
-- (CYLBadgeAnimType)cyl_aniType {
-    return [kActualView cyl_aniType];
+- (CYLBadgeAnimationType)cyl_badgeAnimationType {
+    return [kActualView cyl_badgeAnimationType];
 }
 
-- (void)cyl_setAniType:(CYLBadgeAnimType)aniType {
-    [kActualView cyl_setAniType:aniType];
+- (void)cyl_setBadgeAnimationType:(CYLBadgeAnimationType)animationType {
+    [kActualView cyl_setBadgeAnimationType:animationType];
 }
 
 - (CGRect)cyl_badgeFrame {
@@ -171,6 +173,14 @@
 
 - (void)cyl_setBadgeRadius:(CGFloat)badgeRadius {
     [kActualView cyl_setBadgeRadius:badgeRadius];
+}
+
+- (CGFloat)cyl_badgeCornerRadius {
+    return [kActualView cyl_badgeCornerRadius];
+}
+
+- (void)cyl_setBadgeCornerRadius:(CGFloat)cyl_badgeCornerRadius {
+    [kActualView cyl_setBadgeCornerRadius:cyl_badgeCornerRadius];
 }
 
 #pragma mark - private method

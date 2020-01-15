@@ -8,21 +8,19 @@
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
 
-#import "ASBasicImageDownloader.h"
+#import <AsyncDisplayKit/ASBasicImageDownloader.h>
 
 #import <objc/runtime.h>
 
-#import "ASBasicImageDownloaderInternal.h"
-#import "ASThread.h"
+#import <AsyncDisplayKit/ASBasicImageDownloaderInternal.h>
+#import <AsyncDisplayKit/ASImageContainerProtocolCategories.h>
+#import <AsyncDisplayKit/ASThread.h>
 
 
 #pragma mark -
 /**
  * Collection of properties associated with a download request.
  */
-
-typedef void (^ASBasicImageDownloaderContextProgressBlock)(CGFloat);
-typedef void (^ASBasicImageDownloaderContextCompletionBlock)(CGImageRef, NSError *);
 
 NSString * const kASBasicImageDownloaderContextCallbackQueue = @"kASBasicImageDownloaderContextCallbackQueue";
 NSString * const kASBasicImageDownloaderContextProgressBlock = @"kASBasicImageDownloaderContextProgressBlock";
@@ -104,7 +102,7 @@ static ASDN::RecursiveMutex currentRequestsLock;
 {
   ASDN::MutexLocker l(__instanceLock__);
   for (NSDictionary *callbackData in self.callbackDatas) {
-    ASBasicImageDownloaderContextProgressBlock progressBlock = callbackData[kASBasicImageDownloaderContextProgressBlock];
+    ASImageDownloaderProgress progressBlock = callbackData[kASBasicImageDownloaderContextProgressBlock];
     dispatch_queue_t callbackQueue = callbackData[kASBasicImageDownloaderContextCallbackQueue];
 
     if (progressBlock) {
@@ -119,12 +117,12 @@ static ASDN::RecursiveMutex currentRequestsLock;
 {
   ASDN::MutexLocker l(__instanceLock__);
   for (NSDictionary *callbackData in self.callbackDatas) {
-    ASBasicImageDownloaderContextCompletionBlock completionBlock = callbackData[kASBasicImageDownloaderContextCompletionBlock];
+    ASImageDownloaderCompletion completionBlock = callbackData[kASBasicImageDownloaderContextCompletionBlock];
     dispatch_queue_t callbackQueue = callbackData[kASBasicImageDownloaderContextCallbackQueue];
 
     if (completionBlock) {
       dispatch_async(callbackQueue, ^{
-        completionBlock(image.CGImage, error);
+        completionBlock(image, error, nil);
       });
     }
   }
@@ -229,9 +227,9 @@ static const char *kContextKey = NSStringFromClass(ASBasicImageDownloaderContext
 #pragma mark ASImageDownloaderProtocol.
 
 - (id)downloadImageWithURL:(NSURL *)URL
-             callbackQueue:(dispatch_queue_t)callbackQueue
-     downloadProgressBlock:(void (^)(CGFloat))downloadProgressBlock
-                completion:(void (^)(CGImageRef, NSError *))completion
+                      callbackQueue:(dispatch_queue_t)callbackQueue
+                   downloadProgress:(nullable ASImageDownloaderProgress)downloadProgress
+                         completion:(ASImageDownloaderCompletion)completion
 {
   ASBasicImageDownloaderContext *context = [ASBasicImageDownloaderContext contextForURL:URL];
 
@@ -242,8 +240,8 @@ static const char *kContextKey = NSStringFromClass(ASBasicImageDownloaderContext
     NSMutableDictionary *callbackData = [NSMutableDictionary dictionary];
     callbackData[kASBasicImageDownloaderContextCallbackQueue] = callbackQueue ? : dispatch_get_main_queue();
 
-    if (downloadProgressBlock) {
-      callbackData[kASBasicImageDownloaderContextProgressBlock] = [downloadProgressBlock copy];
+    if (downloadProgress) {
+      callbackData[kASBasicImageDownloaderContextProgressBlock] = [downloadProgress copy];
     }
 
     if (completion) {

@@ -10,12 +10,41 @@
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
 
-#import "ASDimension.h"
-#import "_ASTransitionContext.h"
+#import <AsyncDisplayKit/ASDimension.h>
+#import <AsyncDisplayKit/_ASTransitionContext.h>
+#import <AsyncDisplayKit/ASDisplayNodeLayout.h>
+#import <AsyncDisplayKit/ASBaseDefines.h>
 
-@class ASDisplayNode;
-@class ASLayout;
+#import <AsyncDisplayKit/ASDisplayNode.h>
+#import <AsyncDisplayKit/ASLayoutSpec.h>
 
+#import <memory>
+
+NS_ASSUME_NONNULL_BEGIN
+
+#pragma mark - ASLayoutElementTransition
+
+/**
+ * Extend the layout element protocol to check if a the element can layout asynchronously.
+ */
+@protocol ASLayoutElementTransition <ASLayoutElement>
+
+/**
+ * @abstract Returns if the layoutElement can be used to layout in an asynchronous way on a background thread.
+ */
+@property (nonatomic, assign, readonly) BOOL canLayoutAsynchronous;
+
+@end
+
+@interface ASDisplayNode () <ASLayoutElementTransition>
+@end
+@interface ASLayoutSpec () <ASLayoutElementTransition>
+@end
+
+
+#pragma mark - ASLayoutTransition
+
+AS_SUBCLASSING_RESTRICTED
 @interface ASLayoutTransition : NSObject <_ASTransitionContextLayoutDelegate>
 
 /**
@@ -26,31 +55,32 @@
 /**
  * Previous layout to transition from
  */
-@property (nonatomic, readonly, strong) ASLayout *previousLayout;
+@property (nonatomic, readonly, assign) std::shared_ptr<ASDisplayNodeLayout> previousLayout;
 
 /**
  * Pending layout to transition to
  */
-@property (nonatomic, readonly, strong) ASLayout *pendingLayout;
+@property (nonatomic, readonly, assign) std::shared_ptr<ASDisplayNodeLayout> pendingLayout;
 
 /**
- * Returns if the layout transition can happen asynchronously
+ * Returns if the layout transition needs to happen synchronously
  */
 @property (nonatomic, readonly, assign) BOOL isSynchronous;
 
 /**
  * Returns a newly initialized layout transition
  */
-- (instancetype)initWithNode:(ASDisplayNode *)node pendingLayout:(ASLayout *)pendingLayout previousLayout:(ASLayout *)previousLayout NS_DESIGNATED_INITIALIZER;
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype)initWithNode:(ASDisplayNode *)node
+               pendingLayout:(std::shared_ptr<ASDisplayNodeLayout>)pendingLayout
+              previousLayout:(std::shared_ptr<ASDisplayNodeLayout>)previousLayout NS_DESIGNATED_INITIALIZER;
 
 /**
- * Insert and remove subnodes that where added or removed between the previousLayout and the pendingLayout
+ * Insert and remove subnodes that were added or removed between the previousLayout and the pendingLayout
  */
-- (void)startTransition;
+- (void)commitTransition;
 
 /**
- * Insert all new subnodes that where added between the previous layout and the pending layout
+ * Insert all new subnodes that were added between the previous layout and the pending layout
  */
 - (void)applySubnodeInsertions;
 
@@ -60,3 +90,11 @@
 - (void)applySubnodeRemovals;
 
 @end
+
+@interface ASLayoutTransition (Unavailable)
+
+- (instancetype)init __unavailable;
+
+@end
+
+NS_ASSUME_NONNULL_END

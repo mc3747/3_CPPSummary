@@ -1,11 +1,11 @@
 
 # LEEAlert - 优雅的Alert ActionSheet
 
-[![](https://img.shields.io/aur/license/yaourt.svg?maxAge=2592000)](https://github.com/lixiang1994/LEEAlert/blob/master/LICENSE)&nbsp;
+[![](https://img.shields.io/cocoapods/l/LEEAlert.svg)](LICENSE)&nbsp;
 [![](http://img.shields.io/cocoapods/v/LEEAlert.svg?style=flat)](http://cocoapods.org/?q=LEEAlert)&nbsp;
 [![](http://img.shields.io/cocoapods/p/LEEAlert.svg?style=flat)](http://cocoapods.org/?q=LEEAlert)&nbsp;
 [![](https://img.shields.io/badge/support-iOS8%2B-blue.svg?style=flat)](https://www.apple.com/nl/ios/)&nbsp;
-[![](https://img.shields.io/badge/Xcode-9.0-blue.svg)](https://developer.apple.com/xcode/)&nbsp;
+[![](https://img.shields.io/badge/Xcode-11.0-blue.svg)](https://developer.apple.com/xcode/)&nbsp;
 [![](https://img.shields.io/badge/language-Objective--C-f48041.svg?style=flat)](https://www.apple.com/)&nbsp;
 ![Build Status](https://travis-ci.org/lixiang1994/LEEAlert.svg?branch=master)&nbsp;
 ![](https://img.shields.io/cocoapods/dt/LEEAlert.svg)
@@ -34,6 +34,7 @@
  - 支持两种背景样式 1.半透明 (支持自定义透明度比例和颜色) 2.毛玻璃 (支持效果类型)
  - 支持自定义UIView动画方法
  - 支持自定义打开关闭动画样式(动画方向 渐变过渡 缩放过渡等)
+ - 支持iOS13 Dark样式
  - 更多特性未来版本中将不断更新.
 
 
@@ -273,26 +274,33 @@ Action一般分为3种类型 1. 默认类型 2. 销毁类型(Destructive) 3.取�
     .LeeShouldAutorotate(YES) // 是否支持自动旋转 默认为NO
     .LeeSupportedInterfaceOrientations(UIInterfaceOrientationMaskAll) // 支持的旋转方向 默认为UIInterfaceOrientationMaskAll
     .LeeClickHeaderClose(YES) // 点击弹框进行关闭 默认为NO
-    .LeeClickBackgroundClose(YES) 	// 设置点击背景进行关闭 Alert默认 NO , ActionSheet默认 YES
+    .LeeClickBackgroundClose(YES) // 设置点击背景进行关闭 Alert默认 NO , ActionSheet默认 YES
     .LeeCloseComplete(^{ 
     	// 关闭回调事件
     })
     .LeeShow();
 ```
 
-### 关闭当前显示
+### 关闭显示
 
 ```
+    // 关闭指定标识的Alert或ActionSheet
+    [LEEAlert closeWithIdentifier:@"xxxx" completionBlock:^{
+        // 关闭完成
+    }];
+
     // 关闭当前显示的Alert或ActionSheet
     [LEEAlert closeWithCompletionBlock:^{
     	
-    	//如果在关闭后需要做一些其他操作 建议在该Block中进行
+    	// 如果在关闭后需要做一些其他操作 建议在该Block中进行
     }];
 ```
 
 
 ### 注意事项
 
+- 在 AppDelegate 或 SceneDelegate 中设置主要Window: 
+`[LEEAlert configMainWindow:self.window];`
 - 添加的功能项顺序会决定显示的排列顺序.
 - 当需要很复杂的样式时 如果默认提供的这些功能项无法满足, 建议将其封装成一个UIView对象 添加自定义视图来显示.
 - ActionSheet中 取消类型的Action 显示的位置与原生位置相同 处于底部独立的位置.
@@ -317,7 +325,7 @@ Action一般分为3种类型 1. 默认类型 2. 销毁类型(Destructive) 3.取�
 
 系统要求
 ==============
-该库最低支持 `iOS 8.0` 和 `Xcode 9.0`。
+该库最低支持 `iOS 8.0` 和 `Xcode 11.0`。
 
 
 版本更新
@@ -327,7 +335,7 @@ Action一般分为3种类型 1. 默认类型 2. 销毁类型(Destructive) 3.取�
 
 许可证
 ==============
-LEEAlert 使用 GPL V3 许可证，详情见 LICENSE 文件。
+LEEAlert 使用 MIT 许可证，详情见 [LICENSE](LICENSE) 文件。
 
 
 友情链接

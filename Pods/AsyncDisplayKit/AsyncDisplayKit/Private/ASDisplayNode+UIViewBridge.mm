@@ -8,13 +8,14 @@
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
 
-#import "_ASCoreAnimationExtras.h"
-#import "_ASPendingState.h"
-#import "ASInternalHelpers.h"
-#import "ASDisplayNodeInternal.h"
-#import "ASDisplayNode+Subclasses.h"
-#import "ASDisplayNode+FrameworkPrivate.h"
-#import "ASPendingStateController.h"
+#import <AsyncDisplayKit/_ASCoreAnimationExtras.h>
+#import <AsyncDisplayKit/_ASPendingState.h>
+#import <AsyncDisplayKit/ASInternalHelpers.h>
+#import <AsyncDisplayKit/ASDisplayNodeInternal.h>
+#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#import <AsyncDisplayKit/ASDisplayNode+FrameworkPrivate.h>
+#import <AsyncDisplayKit/ASDisplayNode+FrameworkSubclasses.h>
+#import <AsyncDisplayKit/ASPendingStateController.h>
 
 /**
  * The following macros are conveniences to help in the common tasks related to the bridging that ASDisplayNode does to UIView and CALayer.
@@ -54,7 +55,7 @@ ASDISPLAYNODE_INLINE BOOL ASDisplayNodeShouldApplyBridgedWriteToView(ASDisplayNo
   if (ASDisplayNodeThreadIsMain()) {
     return loaded;
   } else {
-    if (loaded && !node->_pendingViewState.hasChanges) {
+    if (loaded && !ASDisplayNodeGetPendingState(node).hasChanges) {
       [[ASPendingStateController sharedInstance] registerNode:node];
     }
     return NO;
@@ -217,10 +218,10 @@ if (shouldApply) { _layer.layerProperty = (layerValueExpr); } else { ASDisplayNo
   _bridge_prologue_read;
 
   // Frame is only defined when transform is identity.
-#if DEBUG
-  // Checking if the transform is identity is expensive, so disable when unnecessary. We have assertions on in Release, so DEBUG is the only way I know of.
-  ASDisplayNodeAssert(CATransform3DIsIdentity(self.transform), @"-[ASDisplayNode frame] - self.transform must be identity in order to use the frame property.  (From Apple's UIView documentation: If the transform property is not the identity transform, the value of this property is undefined and therefore should be ignored.)");
-#endif
+//#if DEBUG
+//  // Checking if the transform is identity is expensive, so disable when unnecessary. We have assertions on in Release, so DEBUG is the only way I know of.
+//  ASDisplayNodeAssert(CATransform3DIsIdentity(self.transform), @"-[ASDisplayNode frame] - self.transform must be identity in order to use the frame property.  (From Apple's UIView documentation: If the transform property is not the identity transform, the value of this property is undefined and therefore should be ignored.)");
+//#endif
 
   CGPoint position = self.position;
   CGRect bounds = self.bounds;
@@ -254,6 +255,11 @@ if (shouldApply) { _layer.layerProperty = (layerValueExpr); } else { ASDisplayNo
       CGPoint newPosition = CGPointZero;
       ASBoundsAndPositionForFrame(rect, origin, anchorPoint, &newBounds, &newPosition);
 
+      if (ASIsCGRectValidForLayout(newBounds) == NO || ASIsCGPositionValidForLayout(newPosition) == NO) {
+        ASDisplayNodeAssertNonFatal(NO, @"-[ASDisplayNode setFrame:] - The new frame (%@) is invalid and unsafe to be set.", NSStringFromCGRect(rect));
+        return;
+      }
+      
       if (useLayer) {
         layer.bounds = newBounds;
         layer.position = newPosition;
@@ -276,10 +282,10 @@ if (shouldApply) { _layer.layerProperty = (layerValueExpr); } else { ASDisplayNo
       // We do have to set frame directly, and we're on main thread with a loaded node.
       // Just set the frame on the view.
       // NOTE: Frame is only defined when transform is identity because we explicitly diverge from CALayer behavior and define frame without transform.
-#if DEBUG
-      // Checking if the transform is identity is expensive, so disable when unnecessary. We have assertions on in Release, so DEBUG is the only way I know of.
-      ASDisplayNodeAssert(CATransform3DIsIdentity(self.transform), @"-[ASDisplayNode setFrame:] - self.transform must be identity in order to set the frame property.  (From Apple's UIView documentation: If the transform property is not the identity transform, the value of this property is undefined and therefore should be ignored.)");
-#endif
+//#if DEBUG
+//      // Checking if the transform is identity is expensive, so disable when unnecessary. We have assertions on in Release, so DEBUG is the only way I know of.
+//      ASDisplayNodeAssert(CATransform3DIsIdentity(self.transform), @"-[ASDisplayNode setFrame:] - self.transform must be identity in order to set the frame property.  (From Apple's UIView documentation: If the transform property is not the identity transform, the value of this property is undefined and therefore should be ignored.)");
+//#endif
       _view.frame = rect;
     } else {
       // We do have to set frame directly, but either the node isn't loaded or we're on a non-main thread.
@@ -344,7 +350,7 @@ if (shouldApply) { _layer.layerProperty = (layerValueExpr); } else { ASDisplayNo
     // The node is loaded but we're not on main.
     // We will call [self __setNeedsLayout] when we apply
     // the pending state. We need to call it on main if the node is loaded
-    // to support implicit hierarchy management.
+    // to support automatic subnode management.
     [ASDisplayNodeGetPendingState(self) setNeedsLayout];
   } else {
     // The node is not loaded and we're not on main.
@@ -695,6 +701,18 @@ if (shouldApply) { _layer.layerProperty = (layerValueExpr); } else { ASDisplayNo
   _setToLayer(borderColor, colorValue);
 }
 
+- (BOOL)allowsGroupOpacity
+{
+  _bridge_prologue_read;
+  return _getFromLayer(allowsGroupOpacity);
+}
+
+- (void)setAllowsGroupOpacity:(BOOL)allowsGroupOpacity
+{
+  _bridge_prologue_write;
+  _setToLayer(allowsGroupOpacity, allowsGroupOpacity);
+}
+
 - (BOOL)allowsEdgeAntialiasing
 {
   _bridge_prologue_read;
@@ -962,8 +980,14 @@ nodeProperty = nodeValueExpr; _setToViewOnly(viewAndPendingViewStateProperty, vi
   [_layer asyncdisplaykit_cancelAsyncTransactions];
 }
 
-- (void)asyncdisplaykit_asyncTransactionContainerStateDidChange
+- (void)asyncdisplaykit_setCurrentAsyncTransaction:(_ASAsyncTransaction *)transaction
 {
+  _layer.asyncdisplaykit_currentAsyncTransaction = transaction;
+}
+
+- (_ASAsyncTransaction *)asyncdisplaykit_currentAsyncTransaction
+{
+  return _layer.asyncdisplaykit_currentAsyncTransaction;
 }
 
 @end

@@ -10,15 +10,18 @@
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
 
-#import "ASImageNode.h"
+#import <AsyncDisplayKit/ASImageNode.h>
 
-#import "ASAssert.h"
-#import "ASDisplayNode+Subclasses.h"
-#import "ASDisplayNodeExtras.h"
-#import "ASEqualityHelpers.h"
-#import "ASImageNode+AnimatedImagePrivate.h"
-#import "ASInternalHelpers.h"
-#import "ASWeakProxy.h"
+#import <AsyncDisplayKit/ASAssert.h>
+#import <AsyncDisplayKit/ASBaseDefines.h>
+#import <AsyncDisplayKit/ASDisplayNode+Subclasses.h>
+#import <AsyncDisplayKit/ASDisplayNodeExtras.h>
+#import <AsyncDisplayKit/ASEqualityHelpers.h>
+#import <AsyncDisplayKit/ASImageNode+AnimatedImagePrivate.h>
+#import <AsyncDisplayKit/ASImageProtocols.h>
+#import <AsyncDisplayKit/ASInternalHelpers.h>
+#import <AsyncDisplayKit/ASNetworkImageNode.h>
+#import <AsyncDisplayKit/ASWeakProxy.h>
 
 NSString *const ASAnimatedImageDefaultRunLoopMode = NSRunLoopCommonModes;
 
@@ -89,6 +92,17 @@ NSString *const ASAnimatedImageDefaultRunLoopMode = NSRunLoopCommonModes;
   }
   
   if (setCoverImage) {
+    [self setCoverImage:coverImage];
+  }
+}
+
+- (void)setCoverImage:(UIImage *)coverImage
+{
+  //If we're a network image node, we want to set the default image so
+  //that it will correctly be restored if it exits the range.
+  if ([self isKindOfClass:[ASNetworkImageNode class]]) {
+    [(ASNetworkImageNode *)self setDefaultImage:coverImage];
+  } else {
     self.image = coverImage;
   }
 }
@@ -164,19 +178,23 @@ NSString *const ASAnimatedImageDefaultRunLoopMode = NSRunLoopCommonModes;
   [self.animatedImage clearAnimatedImageCache];
 }
 
-- (void)visibleStateDidChange:(BOOL)isVisible
+- (void)didEnterVisibleState
 {
-  [super visibleStateDidChange:isVisible];
-  
   ASDisplayNodeAssertMainThread();
-  if (isVisible) {
-    if (self.animatedImage.coverImageReady) {
-      self.image = self.animatedImage.coverImage;
-    }
-    [self startAnimating];
-  } else {
-    [self stopAnimating];
+  [super didEnterVisibleState];
+  
+  if (self.animatedImage.coverImageReady) {
+    [self setCoverImage:self.animatedImage.coverImage];
   }
+  [self startAnimating];
+}
+
+- (void)didExitVisibleState
+{
+  ASDisplayNodeAssertMainThread();
+  [super didExitVisibleState];
+  
+  [self stopAnimating];
 }
 
 - (void)displayLinkFired:(CADisplayLink *)displayLink

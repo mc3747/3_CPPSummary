@@ -10,13 +10,60 @@
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
 
-#import "UIImage+ASConvenience.h"
-#import <UIKit/UIKit.h>
+#import <AsyncDisplayKit/UIImage+ASConvenience.h>
+#import <AsyncDisplayKit/ASInternalHelpers.h>
+#import <AsyncDisplayKit/ASAssert.h>
 
-@implementation UIImage (ASDKAdditions)
+#pragma mark - ASDKFastImageNamed
 
+@implementation UIImage (ASDKFastImageNamed)
 
+UIImage *cachedImageNamed(NSString *imageName, UITraitCollection *traitCollection)
+{
+  static NSCache *imageCache = nil;
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    // Because NSCache responds to memory warnings, we do not need an explicit limit.
+    // all of these objects contain compressed image data and are relatively small
+    // compared to the backing stores of text and image views.
+    imageCache = [[NSCache alloc] init];
+  });
 
+  UIImage *image = nil;
+  if ([imageName length] > 0) {
+    NSString *imageKey = imageName;
+    if (traitCollection) {
+      char imageKeyBuffer[256];
+      snprintf(imageKeyBuffer, sizeof(imageKeyBuffer), "%s|%ld|%ld", imageName.UTF8String, (long)traitCollection.horizontalSizeClass, (long)traitCollection.verticalSizeClass);
+      imageKey = [NSString stringWithUTF8String:imageKeyBuffer];
+    }
+
+    image = [imageCache objectForKey:imageKey];
+    if (!image) {
+      image =  [UIImage imageNamed:imageName inBundle:nil compatibleWithTraitCollection:traitCollection];
+      if (image) {
+        [imageCache setObject:image forKey:imageKey];
+      }
+    }
+  }
+  return image;
+}
+
++ (UIImage *)as_imageNamed:(NSString *)imageName
+{
+  return cachedImageNamed(imageName, nil);
+}
+
++ (UIImage *)as_imageNamed:(NSString *)imageName compatibleWithTraitCollection:(UITraitCollection *)traitCollection
+{
+  return cachedImageNamed(imageName, traitCollection);
+}
+
+@end
+
+#pragma mark - ASDKResizableRoundedRects
+
+@implementation UIImage (ASDKResizableRoundedRects)
 
 + (UIImage *)as_resizableRoundedImageWithCornerRadius:(CGFloat)cornerRadius
                                           cornerColor:(UIColor *)cornerColor
@@ -70,41 +117,35 @@
   CGFloat dimension = (cornerRadius * 2) + 1;
   CGRect bounds = CGRectMake(0, 0, dimension, dimension);
   
-  // This is a hack to make one NSNumber key out of the corners and cornerRadius
-  if (roundedCorners == UIRectCornerAllCorners) {
-    // UIRectCornerAllCorners is ~0, but below is equivalent and we can pack it into half an NSUInteger
-    roundedCorners = UIRectCornerTopLeft | UIRectCornerTopRight | UIRectCornerBottomLeft | UIRectCornerBottomRight;
-  }
-  // Left half of NSUInteger is roundedCorners, right half is cornerRadius
-  UInt64 pathKeyNSUInteger = (UInt64)roundedCorners << sizeof(Float32) * 8;
-  Float32 floatCornerRadius = cornerRadius;
-  pathKeyNSUInteger |= (NSUInteger)floatCornerRadius;
-  
-  NSNumber *pathKey = [NSNumber numberWithUnsignedLongLong:pathKeyNSUInteger];
-  
-  UIBezierPath *path = nil;
+  typedef struct {
+    UIRectCorner corners;
+    CGFloat radius;
+  } PathKey;
+  PathKey key = { roundedCorners, cornerRadius };
+  NSValue *pathKeyObject = [[NSValue alloc] initWithBytes:&key objCType:@encode(PathKey)];
+
   CGSize cornerRadii = CGSizeMake(cornerRadius, cornerRadius);
-  
-  @synchronized(__pathCache) {
-    path = [__pathCache objectForKey:pathKey];
-    if (!path) {
-      path = [UIBezierPath bezierPathWithRoundedRect:bounds byRoundingCorners:roundedCorners cornerRadii:cornerRadii];
-      [__pathCache setObject:path forKey:pathKey];
-    }
+  UIBezierPath *path = [__pathCache objectForKey:pathKeyObject];
+  if (path == nil) {
+    path = [UIBezierPath bezierPathWithRoundedRect:bounds byRoundingCorners:roundedCorners cornerRadii:cornerRadii];
+    [__pathCache setObject:path forKey:pathKeyObject];
   }
   
   // We should probably check if the background color has any alpha component but that
   // might be expensive due to needing to check mulitple color spaces.
   UIGraphicsBeginImageContextWithOptions(bounds.size, cornerColor != nil, scale);
   
+  BOOL contextIsClean = YES;
   if (cornerColor) {
+    contextIsClean = NO;
     [cornerColor setFill];
-    // Copy "blend" mode is extra fast because it disregards any value currently in the buffer and overwrites directly.
+    // Copy "blend" mode is extra fast because it disregards any value currently in the buffer and overrides directly.
     UIRectFillUsingBlendMode(bounds, kCGBlendModeCopy);
   }
   
+  BOOL canUseCopy = contextIsClean || (CGColorGetAlpha(fillColor.CGColor) == 1);
   [fillColor setFill];
-  [path fill];
+  [path fillWithBlendMode:(canUseCopy ? kCGBlendModeCopy : kCGBlendModeNormal) alpha:1];
   
   if (borderColor) {
     [borderColor setStroke];
@@ -114,9 +155,12 @@
     
     // It is rarer to have a stroke path, and our cache key only handles rounded rects for the exact-stretchable
     // size calculated by cornerRadius, so we won't bother caching this path.  Profiling validates this decision.
-    UIBezierPath *strokePath = [UIBezierPath bezierPathWithRoundedRect:strokeRect cornerRadius:cornerRadius];
+    UIBezierPath *strokePath = [UIBezierPath bezierPathWithRoundedRect:strokeRect
+                                                     byRoundingCorners:roundedCorners
+                                                           cornerRadii:cornerRadii];
     [strokePath setLineWidth:borderWidth];
-    [strokePath stroke];
+    BOOL canUseCopy = (CGColorGetAlpha(borderColor.CGColor) == 1);
+    [strokePath strokeWithBlendMode:(canUseCopy ? kCGBlendModeCopy : kCGBlendModeNormal) alpha:1];
   }
   
   UIImage *result = UIGraphicsGetImageFromCurrentImageContext();

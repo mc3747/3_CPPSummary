@@ -1,1 +1,1 @@
-../../../AsyncDisplayKit/AsyncDisplayKit/Details/ASCollectionViewFlowLayoutInspector.h
+../../../AsyncDisplayKit/AsyncDisplayKit/Private/ASCollectionViewFlowLayoutInspector.h

@@ -69,7 +69,8 @@
 - (void)cellDidEndDisplayByData:(id)data
 {
     //如果cell在屏幕中消失时图片还未下载完成,则取消下载
-    [self.exampleCellImageView sd_cancelCurrentAnimationImagesLoad];
+//    [self.exampleCellImageView sd_cancelCurrentAnimationImagesLoad];
+    
 }
 
 - (void)exampleButtonClick:(id)sender {

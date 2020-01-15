@@ -8,8 +8,8 @@
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
 
-#import "ASTextKitContext.h"
-#import "ASTextKitTailTruncater.h"
+#import <AsyncDisplayKit/ASTextKitContext.h>
+#import <AsyncDisplayKit/ASTextKitTailTruncater.h>
 
 @implementation ASTextKitTailTruncater
 {
@@ -66,10 +66,7 @@
                                                                              lineBreakMode:NSLineBreakByWordWrapping
                                                                       maximumNumberOfLines:1
                                                                             exclusionPaths:nil
-                                                                           constrainedSize:constrainedRect.size
-                                                                      layoutManagerCreationBlock:nil
-                                                                     layoutManagerDelegate:nil
-                                                                  textStorageCreationBlock:nil];
+                                                                           constrainedSize:constrainedRect.size];
   __block CGRect truncationUsedRect;
 
   [truncationContext performBlockWithLockedTextKitComponents:^(NSLayoutManager *truncationLayoutManager, NSTextStorage *truncationTextStorage, NSTextContainer *truncationTextContainer) {

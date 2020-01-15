@@ -13,12 +13,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+AS_SUBCLASSING_RESTRICTED
 @interface ASTextKitComponents : NSObject
 
 /**
  @abstract Creates the stack of TextKit components.
  @param attributedSeedString The attributed string to seed the returned text storage with, or nil to receive an blank text storage.
- @param textContainerSize The size of the text-container. Typically, size specifies the constraining width of the layout, and FLT_MAX for height. Pass CGSizeZero if these components will be hooked up to a UITextView, which will manage the text container's size itself.
+ @param textContainerSize The size of the text-container. Typically, size specifies the constraining width of the layout, and CGFLOAT_MAX for height. Pass CGSizeZero if these components will be hooked up to a UITextView, which will manage the text container's size itself.
  @return An `ASTextKitComponents` containing the created components. The text view component will be nil.
  @discussion The returned components will be hooked up together, so they are ready for use as a system upon return.
  */
@@ -28,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  @abstract Creates the stack of TextKit components.
  @param textStorage The NSTextStorage to use.
- @param textContainerSize The size of the text-container. Typically, size specifies the constraining width of the layout, and FLT_MAX for height. Pass CGSizeZero if these components will be hooked up to a UITextView, which will manage the text container's size itself.
+ @param textContainerSize The size of the text-container. Typically, size specifies the constraining width of the layout, and CGFLOAT_MAX for height. Pass CGSizeZero if these components will be hooked up to a UITextView, which will manage the text container's size itself.
  @param layoutManager The NSLayoutManager to use.
  @return An `ASTextKitComponents` containing the created components. The text view component will be nil.
  @discussion The returned components will be hooked up together, so they are ready for use as a system upon return.
@@ -43,6 +44,10 @@ NS_ASSUME_NONNULL_BEGIN
  @result A CGSize representing the bounding size for the receiver's text.
  */
 - (CGSize)sizeForConstrainedWidth:(CGFloat)constrainedWidth;
+
+
+- (CGSize)sizeForConstrainedWidth:(CGFloat)constrainedWidth
+              forMaxNumberOfLines:(NSInteger)numberOfLines;
 
 @property (nonatomic, strong, readonly) NSTextStorage *textStorage;
 @property (nonatomic, strong, readonly) NSTextContainer *textContainer;

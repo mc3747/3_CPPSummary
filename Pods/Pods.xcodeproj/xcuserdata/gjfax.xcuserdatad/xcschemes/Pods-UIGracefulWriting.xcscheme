@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1994D1946F6DEC21277F176CE3B21FB4"
+               BlueprintIdentifier = "617A24F88CE08C1EE1F2B7B533E7171B"
+               BuildableName = "libPods-UIGracefulWriting.a"
                BlueprintName = "Pods-UIGracefulWriting"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "libPods-UIGracefulWriting.a">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

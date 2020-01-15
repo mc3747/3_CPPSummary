@@ -10,7 +10,9 @@
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
 
-#import "ASDefaultPlaybackButton.h"
+#import <AsyncDisplayKit/ASDefaultPlaybackButton.h>
+#import <AsyncDisplayKit/_ASDisplayLayer.h>
+
 @interface ASDefaultPlaybackButton()
 {
   ASDefaultPlaybackButtonType _buttonType;
@@ -49,7 +51,7 @@
 
 + (void)drawRect:(CGRect)bounds withParameters:(id<NSObject>)parameters isCancelled:(asdisplaynode_iscancelled_block_t)isCancelledBlock isRasterizing:(BOOL)isRasterizing
 {
-  ASDefaultPlaybackButtonType buttonType = [((NSDictionary *)parameters)[@"buttonType"] intValue];
+  ASDefaultPlaybackButtonType buttonType = (ASDefaultPlaybackButtonType)[((NSDictionary *)parameters)[@"buttonType"] intValue];
   UIColor *color = ((NSDictionary *)parameters)[@"color"];
 
   CGContextRef context = UIGraphicsGetCurrentContext();

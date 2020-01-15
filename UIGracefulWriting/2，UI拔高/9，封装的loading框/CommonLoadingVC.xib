@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,20 +62,35 @@
                         <action selector="buttonAction4:" destination="-1" eventType="touchUpInside" id="upt-Kc-SGm"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zY4-Nu-GSr">
+                    <rect key="frame" x="20" y="527" width="374" height="50"/>
+                    <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="anf-fJ-Acz"/>
+                    </constraints>
+                    <state key="normal" title="5，toast注意点总结"/>
+                    <connections>
+                        <action selector="buttonAction5:" destination="-1" eventType="touchUpInside" id="1B8-qJ-1TZ"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="CpC-Lv-1ah" secondAttribute="trailing" constant="20" id="0Gw-zl-rwe"/>
                 <constraint firstItem="vn7-Z4-Twt" firstAttribute="top" secondItem="cgQ-aN-q6F" secondAttribute="bottom" constant="50" id="6K0-s8-jlz"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="cgQ-aN-q6F" secondAttribute="trailing" constant="20" id="986-33-lIo"/>
+                <constraint firstItem="zY4-Nu-GSr" firstAttribute="top" secondItem="CpC-Lv-1ah" secondAttribute="bottom" constant="33" id="Fns-2k-ZRf"/>
                 <constraint firstItem="CpC-Lv-1ah" firstAttribute="top" secondItem="ke0-ba-Xqf" secondAttribute="bottom" constant="50" id="HSc-U7-iSw"/>
                 <constraint firstItem="vn7-Z4-Twt" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="KEz-zl-yJ3"/>
                 <constraint firstItem="ke0-ba-Xqf" firstAttribute="top" secondItem="vn7-Z4-Twt" secondAttribute="bottom" constant="50" id="LQZ-9z-y9V"/>
                 <constraint firstItem="cgQ-aN-q6F" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="MFq-to-mug"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="vn7-Z4-Twt" secondAttribute="trailing" constant="20" id="N4h-YI-Iue"/>
                 <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="ke0-ba-Xqf" secondAttribute="trailing" constant="20" id="NHW-m1-pK2"/>
+                <constraint firstItem="zY4-Nu-GSr" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" constant="-20" id="NSS-6a-jr3"/>
+                <constraint firstItem="zY4-Nu-GSr" firstAttribute="top" secondItem="CpC-Lv-1ah" secondAttribute="bottom" constant="33" id="cLN-c1-EVg"/>
                 <constraint firstItem="ke0-ba-Xqf" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="dNX-hn-tyI"/>
                 <constraint firstItem="CpC-Lv-1ah" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="g8J-vZ-wxf"/>
+                <constraint firstItem="zY4-Nu-GSr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="20" id="okM-Fp-4wj"/>
                 <constraint firstItem="cgQ-aN-q6F" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="zKB-Cs-1YY"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>

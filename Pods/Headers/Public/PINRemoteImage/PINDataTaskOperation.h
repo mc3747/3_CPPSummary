@@ -1,1 +1,1 @@
-../../../PINRemoteImage/Pod/Classes/PINDataTaskOperation.h
+../../../PINRemoteImage/Source/Classes/PINDataTaskOperation.h

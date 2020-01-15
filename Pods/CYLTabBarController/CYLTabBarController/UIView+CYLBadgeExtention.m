@@ -22,23 +22,25 @@ static const CGFloat kCYLBadgeDefaultRedDotRadius = 4.f;
 
 #pragma mark -- public methods
 /**
- *  show badge with red dot style and CYLBadgeAnimTypeNone by default.
+ *  show badge with red dot style and CYLBadgeAnimationTypeNone by default.
  */
 - (void)cyl_showBadge {
-    [self cyl_showBadgeValue:@"" animationType:CYLBadgeAnimTypeNone];
+    [self cyl_showBadgeValue:@"" animationType:CYLBadgeAnimationTypeNone];
 }
 
-- (void)cyl_showBadgeValue:(NSString *)value animationType:(CYLBadgeAnimType)aniType {
-    self.cyl_aniType = aniType;
+- (void)cyl_showBadgeValue:(NSString *)value animationType:(CYLBadgeAnimationType)animationType {
+    [[[self cyl_badge] subviews] makeObjectsPerformSelector:@selector(removeFromSuperview)];
+
+    self.cyl_badgeAnimationType = animationType;
     [self cyl_showBadgeWithValue:value];
 
-    if (aniType != CYLBadgeAnimTypeNone) {
+    if (animationType != CYLBadgeAnimationTypeNone) {
         [self cyl_beginAnimation];
     }
 }
 
 - (void)cyl_showBadgeValue:(NSString *)value {
-    [self cyl_showBadgeValue:value animationType:CYLBadgeAnimTypeNone];
+    [self cyl_showBadgeValue:value animationType:CYLBadgeAnimationTypeNone];
 }
 
 #pragma mark -- private methods
@@ -47,7 +49,7 @@ static const CGFloat kCYLBadgeDefaultRedDotRadius = 4.f;
         return;
     }
     NSCharacterSet *numberSet = [NSCharacterSet decimalDigitCharacterSet];
-    NSString * trimmedString = [value stringByTrimmingCharactersInSet:numberSet];
+    NSString *trimmedString = [value stringByTrimmingCharactersInSet:numberSet];
     BOOL isNumber = NO;
     if ((trimmedString.length == 0) && (value.length > 0)) {
         isNumber = YES;
@@ -93,74 +95,8 @@ static const CGFloat kCYLBadgeDefaultRedDotRadius = 4.f;
 }
 
 #pragma mark -- private methods
-- (void)cyl_showRedDotBadge {
-    [self cyl_badgeInit];
 
-    //if badge has been displayed and, in addition, is was not red dot style, we must update UI.
-    if (self.cyl_badge.tag != CYLBadgeStyleRedDot) {
-        self.cyl_badge.text = @"";
-        self.cyl_badge.tag = CYLBadgeStyleRedDot;
-        [self resetRedDotBadgeFrame];
-        self.cyl_badge.layer.cornerRadius = CGRectGetWidth(self.cyl_badge.frame) / 2;
-    }
-    self.cyl_badge.hidden = NO;
-}
-
-- (void)cyl_showNewBadge:(NSString *)value {
-    [self cyl_badgeInit];
-    //if badge has been displayed and, in addition, is not red dot style, we must update UI.
-    if (self.cyl_badge.tag != CYLBadgeStyleNew) {
-        self.cyl_badge.text = value;
-        self.cyl_badge.tag = CYLBadgeStyleNew;
-
-        CGRect frame = self.cyl_badge.frame;
-        frame.size.width = 22;
-        frame.size.height = 13;
-        self.cyl_badge.frame = frame;
-
-        self.cyl_badge.center = CGPointMake(CGRectGetWidth(self.frame) + 2 + self.cyl_badgeCenterOffset.x, self.cyl_badgeCenterOffset.y);
-        self.cyl_badge.font = kCYLBadgeDefaultFont;
-        self.cyl_badge.layer.cornerRadius = CGRectGetHeight(self.cyl_badge.frame) / 3;
-    }
-    self.cyl_badge.hidden = NO;
-}
-
-- (void)cyl_showTextBadge:(NSString *)value {
-    [self cyl_badgeInit];
-    if (self.cyl_badge.tag != CYLBadgeStyleOther) {
-        self.cyl_badge.tag = CYLBadgeStyleOther;
-        self.cyl_badge.text = value;
-        [self cyl_adjustLabelWidth:self.cyl_badge];
-        CGRect frame = self.cyl_badge.frame;
-        frame.size.height = 12;
-        if(CGRectGetWidth(frame) < CGRectGetHeight(frame)) {
-            frame.size.width = CGRectGetHeight(frame);
-        }
-        self.cyl_badge.frame = frame;
-        self.cyl_badge.center = CGPointMake(CGRectGetWidth(self.frame) + 2 + self.cyl_badgeCenterOffset.x, self.cyl_badgeCenterOffset.y);
-        self.cyl_badge.font = [UIFont boldSystemFontOfSize:9];
-        
-        self.cyl_badge.layer.cornerRadius = CGRectGetHeight(self.cyl_badge.frame) / 2;
-        self.cyl_badge.hidden = NO;
-        if (value == 0) {
-            self.cyl_badge.hidden = YES;
-        }
-    }
-    self.cyl_badge.hidden = NO;
-}
-    
-- (void)cyl_showNumberBadgeWithValue:(NSInteger)value {
-    if (value < 0) {
-        return;
-    }
-    [self cyl_badgeInit];
-    self.cyl_badge.hidden = (value == 0);
-    self.cyl_badge.tag = CYLBadgeStyleNumber;
-    self.cyl_badge.font = self.cyl_badgeFont;
-    self.cyl_badge.text = (value > self.cyl_badgeMaximumBadgeNumber ?
-                       [NSString stringWithFormat:@"%@+", @(self.cyl_badgeMaximumBadgeNumber)] :
-                       [NSString stringWithFormat:@"%@", @(value)]);
-    [self cyl_adjustLabelWidth:self.cyl_badge];
+- (void)cyl_addMargin {
     CGRect frame = self.cyl_badge.frame;
     frame.size.width += self.cyl_badgeMargin;
     frame.size.height += self.cyl_badgeMargin;
@@ -168,8 +104,58 @@ static const CGFloat kCYLBadgeDefaultRedDotRadius = 4.f;
         frame.size.width = CGRectGetHeight(frame);
     }
     self.cyl_badge.frame = frame;
+}
+
+- (void)cyl_showRedDotBadge {
+    [self cyl_badgeInit];
+    //if badge has been displayed and, in addition, is was not red dot style, we must update UI.
+    if (self.cyl_badge.tag != CYLBadgeStyleRedDot) {
+        self.cyl_badge.text = @"";
+        self.cyl_badge.tag = CYLBadgeStyleRedDot;
+        [self cyl_resetRedDotBadgeFrame];
+        self.cyl_badge.layer.cornerRadius = CGRectGetWidth(self.cyl_badge.frame) / 2;
+    }
+    self.cyl_badge.hidden = NO;
+}
+
+- (void)cyl_showNewBadge:(NSString *)value {
+    CGSize size = [value sizeWithAttributes:
+                   @{NSFontAttributeName:
+                         self.cyl_badgeFont}];
+    float labelHeight = ceilf(size.height)+ self.cyl_badgeMargin;
+    [self cyl_setBadgeCornerRadius:labelHeight/3];
+    [self cyl_showTextBadge:value];
+}
+
+- (void)cyl_showTextBadge:(NSString *)value {
+    if (value == 0 || !value ||value.length == 0) {
+        self.cyl_badge.hidden = YES;
+        return;
+    }
+    [self cyl_badgeInit];
+    self.cyl_badge.tag = CYLBadgeStyleOther;
+    self.cyl_badge.text = value;
+    self.cyl_badge.font = self.cyl_badgeFont;
+    [self cyl_adjustLabelWidth:self.cyl_badge];
+    [self cyl_addMargin];
     self.cyl_badge.center = CGPointMake(CGRectGetWidth(self.frame) + 2 + self.cyl_badgeCenterOffset.x, self.cyl_badgeCenterOffset.y);
-    self.cyl_badge.layer.cornerRadius = CGRectGetHeight(self.cyl_badge.frame) / 2;
+    //FIXME:  to delete
+    self.cyl_badge.layer.cornerRadius = (self.cyl_badgeCornerRadius !=0 ) ? self.cyl_badgeCornerRadius : CGRectGetHeight(self.cyl_badge.frame) / 2;
+    self.cyl_badge.hidden = NO;
+}
+    
+- (void)cyl_showNumberBadgeWithValue:(NSInteger)value {
+    if (value <= 0) {
+        self.cyl_badge.hidden = YES;
+        return;
+    }
+    [self cyl_badgeInit];
+    self.cyl_badge.hidden = (value == 0);
+    self.cyl_badge.tag = CYLBadgeStyleNumber;
+    NSString *text = (value > self.cyl_badgeMaximumBadgeNumber ?
+                      [NSString stringWithFormat:@"%@+", @(self.cyl_badgeMaximumBadgeNumber)] :
+                      [NSString stringWithFormat:@"%@", @(value)]);
+    [self cyl_showTextBadge:text];
 }
 
 //lazy loading
@@ -183,91 +169,95 @@ static const CGFloat kCYLBadgeDefaultRedDotRadius = 4.f;
     
     if (!self.cyl_badge) {
         self.cyl_badge = [[UILabel alloc] init];
-                          [self resetRedDotBadgeFrame];
+        [self cyl_resetRedDotBadgeFrame];
         self.cyl_badge.textAlignment = NSTextAlignmentCenter;
         self.cyl_badge.backgroundColor = self.cyl_badgeBackgroundColor;
         self.cyl_badge.textColor = self.cyl_badgeTextColor;
         self.cyl_badge.text = @"";
-        self.cyl_badge.tag = CYLBadgeStyleRedDot;//red dot by default
         self.cyl_badge.layer.cornerRadius = CGRectGetWidth(self.cyl_badge.frame) / 2;
         self.cyl_badge.layer.masksToBounds = YES;//very important
         self.cyl_badge.hidden = YES;
         self.cyl_badge.layer.zPosition = MAXFLOAT;
-
         [self addSubview:self.cyl_badge];
         [self bringSubviewToFront:self.cyl_badge];
     }
 }
 
-- (void)resetRedDotBadgeFrame {
+- (void)cyl_resetRedDotBadgeFrame {
     CGFloat redotWidth = kCYLBadgeDefaultRedDotRadius *2;
     if (self.cyl_badgeRadius) {
-        redotWidth = self.cyl_badgeRadius *2;
+        redotWidth = self.cyl_badgeRadius * 2;
     }
     CGRect frame = CGRectMake(CGRectGetWidth(self.frame), -redotWidth, redotWidth, redotWidth);
     self.cyl_badge.frame = frame;
     self.cyl_badge.center = CGPointMake(CGRectGetWidth(self.frame) + 2 + self.cyl_badgeCenterOffset.x, self.cyl_badgeCenterOffset.y);
 }
+
 #pragma mark --  other private methods
 - (void)cyl_adjustLabelWidth:(UILabel *)label {
+    CGSize labelsize = [self cyl_getLabelSize:label];
+    CGRect frame = label.frame;
+    frame.size = CGSizeMake(ceilf(labelsize.width), ceilf(labelsize.height));
+    [label setFrame:frame];
+}
+
+- (CGSize)cyl_getLabelSize:(UILabel *)label {
     [label setNumberOfLines:0];
     NSString *s = label.text;
-    UIFont *font = [label font];
+    UIFont *font = label.font;
     CGSize size = CGSizeMake(CGRectGetWidth([UIScreen mainScreen].bounds) ,CGFLOAT_MAX);
-	CGSize labelsize;
-
-	if (![s respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
+    CGSize labelsize;
+    
+    if (![s respondsToSelector:@selector(boundingRectWithSize:options:attributes:context:)]) {
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
-		labelsize = [s sizeWithFont:font constrainedToSize:size lineBreakMode:NSLineBreakByWordWrapping];
+        labelsize = [s sizeWithFont:font constrainedToSize:size lineBreakMode:NSLineBreakByWordWrapping];
 #pragma clang diagnostic pop
-		
-	} else {
-		NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
-		[style setLineBreakMode:NSLineBreakByWordWrapping];
-		
-		labelsize = [s boundingRectWithSize:size
-									options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)
-								 attributes:@{ NSFontAttributeName:font, NSParagraphStyleAttributeName : style}
-									context:nil].size;
-	}
-    CGRect frame = label.frame;
-	frame.size = CGSizeMake(ceilf(labelsize.width), ceilf(labelsize.height));
-    [label setFrame:frame];
+        
+    } else {
+        NSMutableParagraphStyle *style = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
+        [style setLineBreakMode:NSLineBreakByWordWrapping];
+        
+        labelsize = [s boundingRectWithSize:size
+                                    options:(NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading)
+                                 attributes:@{ NSFontAttributeName:font, NSParagraphStyleAttributeName : style}
+                                    context:nil].size;
+    }
+    return labelsize;
 }
 
 #pragma mark -- animation
 
 //if u want to add badge animation type, follow steps bellow:
-//1. go to definition of CYLBadgeAnimType and add new type
+//1. go to definition of CYLBadgeAnimationType and add new type
 //2. go to category of CAAnimation+CYLBadgeExtention to add new animation interface
 //3. call that new interface here
 - (void)cyl_beginAnimation {
-    switch(self.cyl_aniType) {
-        case CYLBadgeAnimTypeBreathe:
+    switch(self.cyl_badgeAnimationType) {
+        case CYLBadgeAnimationTypeBreathe:
             [self.cyl_badge.layer addAnimation:[CAAnimation cyl_opacityForever_Animation:1.4]
-                                    forKey:kBadgeBreatheAniKey];
+                                    forKey:CYLBadgeBreatheAnimationKey];
             break;
-        case CYLBadgeAnimTypeShake:
+        case CYLBadgeAnimationTypeShake:
             [self.cyl_badge.layer addAnimation:[CAAnimation cyl_shake_AnimationRepeatTimes:CGFLOAT_MAX
                                                                           durTimes:1
                                                                             forObj:self.cyl_badge.layer]
-                                    forKey:kBadgeShakeAniKey];
+                                    forKey:CYLBadgeShakeAnimationKey];
             break;
-        case CYLBadgeAnimTypeScale:
+        case CYLBadgeAnimationTypeScale:
             [self.cyl_badge.layer addAnimation:[CAAnimation cyl_scaleFrom:1.4
                                                           toScale:0.6
                                                          durTimes:1
                                                               rep:MAXFLOAT]
-                                    forKey:kBadgeScaleAniKey];
+                                    forKey:CYLBadgeScaleAnimationKey];
             break;
-        case CYLBadgeAnimTypeBounce:
+        case CYLBadgeAnimationTypeBounce:
             [self.cyl_badge.layer addAnimation:[CAAnimation cyl_bounce_AnimationRepeatTimes:CGFLOAT_MAX
                                                                           durTimes:1
                                                                             forObj:self.cyl_badge.layer]
-                                    forKey:kBadgeBounceAniKey];
+                                    forKey:CYLBadgeBounceAnimationKey];
             break;
-        case CYLBadgeAnimTypeNone:
+        case CYLBadgeAnimationTypeNone:
         default:
             break;
     }
@@ -281,21 +271,22 @@ static const CGFloat kCYLBadgeDefaultRedDotRadius = 4.f;
 }
 
 #pragma mark -- setter/getter
+
 - (UILabel *)cyl_badge {
-    return objc_getAssociatedObject(self, &badgeLabelKey);
+    return objc_getAssociatedObject(self, @selector(cyl_badge));
 }
 
 - (void)cyl_setBadge:(UILabel *)label {
-    objc_setAssociatedObject(self, &badgeLabelKey, label, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(cyl_badge), label, OBJC_ASSOCIATION_RETAIN);
 }
 
 - (UIFont *)cyl_badgeFont {
-	id font = objc_getAssociatedObject(self, &badgeFontKey);
-	return font == nil ? kCYLBadgeDefaultFont : font;
+	id font = objc_getAssociatedObject(self, @selector(cyl_badgeFont));
+    return font ?: kCYLBadgeDefaultFont;
 }
 
 - (void)cyl_setBadgeFont:(UIFont *)badgeFont {
-	objc_setAssociatedObject(self, &badgeFontKey, badgeFont, OBJC_ASSOCIATION_RETAIN);
+	objc_setAssociatedObject(self, @selector(cyl_badgeFont), badgeFont, OBJC_ASSOCIATION_RETAIN);
     if (!self.cyl_badge) {
         [self cyl_badgeInit];
     }
@@ -303,11 +294,11 @@ static const CGFloat kCYLBadgeDefaultRedDotRadius = 4.f;
 }
 
 - (UIColor *)cyl_badgeBackgroundColor {
-    return objc_getAssociatedObject(self, &badgeBackgroundColorKey);
+    return objc_getAssociatedObject(self, @selector(cyl_badgeBackgroundColor));
 }
 
 - (void)cyl_setBadgeBackgroundColor:(UIColor *)badgeBackgroundColor {
-    objc_setAssociatedObject(self, &badgeBackgroundColorKey, badgeBackgroundColor, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(cyl_badgeBackgroundColor), badgeBackgroundColor, OBJC_ASSOCIATION_RETAIN);
     if (!self.cyl_badge) {
         [self cyl_badgeInit];
     }
@@ -315,28 +306,28 @@ static const CGFloat kCYLBadgeDefaultRedDotRadius = 4.f;
 }
 
 - (UIColor *)cyl_badgeTextColor {
-    return objc_getAssociatedObject(self, &badgeTextColorKey);
+    return objc_getAssociatedObject(self, @selector(cyl_badgeTextColor));
 }
 
 - (void)cyl_setBadgeTextColor:(UIColor *)badgeTextColor {
-    objc_setAssociatedObject(self, &badgeTextColorKey, badgeTextColor, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(cyl_badgeTextColor), badgeTextColor, OBJC_ASSOCIATION_RETAIN);
     if (!self.cyl_badge) {
         [self cyl_badgeInit];
     }
     self.cyl_badge.textColor = badgeTextColor;
 }
 
-- (CYLBadgeAnimType)cyl_aniType {
-    id obj = objc_getAssociatedObject(self, &badgeAniTypeKey);
+- (CYLBadgeAnimationType)cyl_badgeAnimationType {
+    id obj = objc_getAssociatedObject(self, @selector(cyl_badgeAnimationType));
     if(obj != nil && [obj isKindOfClass:[NSNumber class]]) {
         return [obj integerValue];
     }
-        return CYLBadgeAnimTypeNone;
+        return CYLBadgeAnimationTypeNone;
 }
 
-- (void)cyl_setAniType:(CYLBadgeAnimType)aniType {
-    NSNumber *numObj = @(aniType);
-    objc_setAssociatedObject(self, &badgeAniTypeKey, numObj, OBJC_ASSOCIATION_RETAIN);
+- (void)cyl_setBadgeAnimationType:(CYLBadgeAnimationType)animationType {
+    NSNumber *numObj = @(animationType);
+    objc_setAssociatedObject(self, @selector(cyl_badgeAnimationType), numObj, OBJC_ASSOCIATION_RETAIN);
     if (!self.cyl_badge) {
         [self cyl_badgeInit];
     }
@@ -345,7 +336,7 @@ static const CGFloat kCYLBadgeDefaultRedDotRadius = 4.f;
 }
 
 - (CGRect)cyl_badgeFrame {
-    id obj = objc_getAssociatedObject(self, &badgeFrameKey);
+    id obj = objc_getAssociatedObject(self, @selector(cyl_badgeFrame));
     if (obj != nil && [obj isKindOfClass:[NSDictionary class]] && [obj count] == 4) {
         CGFloat x = [obj[@"x"] floatValue];
         CGFloat y = [obj[@"y"] floatValue];
@@ -359,15 +350,26 @@ static const CGFloat kCYLBadgeDefaultRedDotRadius = 4.f;
 - (void)cyl_setBadgeFrame:(CGRect)badgeFrame {
     NSDictionary *frameInfo = @{@"x" : @(badgeFrame.origin.x), @"y" : @(badgeFrame.origin.y),
                                 @"width" : @(badgeFrame.size.width), @"height" : @(badgeFrame.size.height)};
-    objc_setAssociatedObject(self, &badgeFrameKey, frameInfo, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(cyl_badgeFrame), frameInfo, OBJC_ASSOCIATION_RETAIN);
     if (!self.cyl_badge) {
         [self cyl_badgeInit];
     }
     self.cyl_badge.frame = badgeFrame;
 }
 
+
+- (CGFloat)cyl_badgeCornerRadius {
+    NSNumber *badgeCornerRadiusObject = objc_getAssociatedObject(self, @selector(cyl_badgeCornerRadius));
+    return [badgeCornerRadiusObject floatValue];
+}
+
+- (void)cyl_setBadgeCornerRadius:(CGFloat)badgeCornerRadius {
+    NSNumber *badgeCornerRadiusObject = @(badgeCornerRadius);
+    objc_setAssociatedObject(self, @selector(cyl_badgeCornerRadius), badgeCornerRadiusObject, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
 - (CGPoint)cyl_badgeCenterOffset {
-    id obj = objc_getAssociatedObject(self, &badgeCenterOffsetKey);
+    id obj = objc_getAssociatedObject(self, @selector(cyl_badgeCenterOffset));
     if (obj != nil && [obj isKindOfClass:[NSDictionary class]] && [obj count] == 2) {
         CGFloat x = [obj[@"x"] floatValue];
         CGFloat y = [obj[@"y"] floatValue];
@@ -378,7 +380,7 @@ static const CGFloat kCYLBadgeDefaultRedDotRadius = 4.f;
 
 - (void)cyl_setBadgeCenterOffset:(CGPoint)badgeCenterOff {
     NSDictionary *cenerInfo = @{@"x" : @(badgeCenterOff.x), @"y" : @(badgeCenterOff.y)};
-    objc_setAssociatedObject(self, &badgeCenterOffsetKey, cenerInfo, OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(cyl_badgeCenterOffset), cenerInfo, OBJC_ASSOCIATION_RETAIN);
     if (!self.cyl_badge) {
         [self cyl_badgeInit];
     }
@@ -388,25 +390,25 @@ static const CGFloat kCYLBadgeDefaultRedDotRadius = 4.f;
 //badgeRadiusKey
 
 - (void)cyl_setBadgeRadius:(CGFloat)badgeRadius {
-    objc_setAssociatedObject(self, &badgeRadiusKey, [NSNumber numberWithFloat:badgeRadius], OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(cyl_badgeRadius), [NSNumber numberWithFloat:badgeRadius], OBJC_ASSOCIATION_RETAIN);
     if (!self.cyl_badge) {
         [self cyl_badgeInit];
     }
 }
 
 - (CGFloat)cyl_badgeRadius {
-    return [objc_getAssociatedObject(self, &badgeRadiusKey) floatValue];
+    return [objc_getAssociatedObject(self, @selector(cyl_badgeRadius)) floatValue];
 }
 
 - (void)cyl_setBadgeMargin:(CGFloat)badgeMargin {
-    objc_setAssociatedObject(self, &badgeMarginKey, [NSNumber numberWithFloat:badgeMargin], OBJC_ASSOCIATION_RETAIN);
+    objc_setAssociatedObject(self, @selector(cyl_badgeMargin), [NSNumber numberWithFloat:badgeMargin], OBJC_ASSOCIATION_RETAIN);
     if (!self.cyl_badge) {
         [self cyl_badgeInit];
     }
 }
 
 - (CGFloat)cyl_badgeMargin {
-    id margin = objc_getAssociatedObject(self, &badgeMarginKey);
+    id margin = objc_getAssociatedObject(self, @selector(cyl_badgeMargin));
     return margin == nil ? kCYLBadgeDefaultMargin : [margin floatValue];
 }
 
@@ -426,19 +428,17 @@ static const CGFloat kCYLBadgeDefaultRedDotRadius = 4.f;
     }
 }
 
-//- (NSInteger)cyl_badgeMaximumBadgeNumber {
-//    NSNumber *badgeMaximumBadgeNucyl_setBadgeMaximumBadgeNumbermberObject = objc_getAssociatedObject(self, @selector(cyl_badgeMaximumBadgeNumber));
-//    if(badgeMaximumBadgeNumberObject != nil && [badgeMaximumBadgeNumberObject isKindOfClass:[NSNumber class]]) {
-//        return [badgeMaximumBadgeNumberObject integerValue];
-//    } else {
-//        return kCYLBadgeDefaultMaximumBadgeNumber;
-//    }
-//}
-//
-//- (void):(NSInteger)badgeMaximumBadgeNumber {
-//#warning Attention:`numberWithBool` ,If it is other Number type change this method.
-//    NSNumber *badgeMaximumBadgeNumberObject = @(badgeMaximumBadgeNumber);
-//    objc_setAssociatedObject(self, @selector(cyl_badgeMaximumBadgeNumber), badgeMaximumBadgeNumberObject, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-//}
+- (BOOL)cyl_isInvisiable {
+    UIView *obj = self;
+    CGFloat width = obj.frame.size.width;
+    CGFloat height = obj.frame.size.height;
+    BOOL isSizeZero = (width == 0 || height == 0);
+    BOOL isInvisible = (obj.hidden == YES) || (obj.alpha <= 0.01f)  || (!obj.superview) || isSizeZero;
+    return isInvisible;
+}
+
+- (BOOL)cyl_canNotResponseEvent {
+    return self.cyl_isInvisiable || (self.userInteractionEnabled == NO);
+}
 
 @end

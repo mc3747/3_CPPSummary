@@ -10,12 +10,14 @@
 
 #import <UIKit/UIKit.h>
 
-#import <AsyncDisplayKit/ASChangeSetDataController.h>
+#import <AsyncDisplayKit/ASDataController.h>
 #import <AsyncDisplayKit/ASDimension.h>
 
 @class ASDisplayNode;
 @class ASCollectionDataController;
-@protocol ASDataControllerSource;
+@protocol ASSectionContext;
+
+NS_ASSUME_NONNULL_BEGIN
 
 @protocol ASCollectionDataControllerSource <ASDataControllerSource>
 
@@ -24,11 +26,11 @@
  */
 - (ASSizeRange)dataController:(ASCollectionDataController *)dataController constrainedSizeForSupplementaryNodeOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath;
 
-- (NSArray *)supplementaryNodeKindsInDataController:(ASCollectionDataController *)dataController;
-
-- (NSUInteger)dataController:(ASCollectionDataController *)dataController numberOfSectionsForSupplementaryNodeOfKind:(NSString *)kind;
+- (NSArray<NSString *> *)supplementaryNodeKindsInDataController:(ASCollectionDataController *)dataController sections:(NSIndexSet *)sections;
 
 - (NSUInteger)dataController:(ASCollectionDataController *)dataController supplementaryNodesOfKind:(NSString *)kind inSection:(NSUInteger)section;
+
+- (nullable id<ASSectionContext>)dataController:(ASCollectionDataController *)dataController contextForSection:(NSInteger)section;
 
 @optional
 
@@ -38,8 +40,14 @@
 
 @end
 
-@interface ASCollectionDataController : ASChangeSetDataController
+@interface ASCollectionDataController : ASDataController
 
-- (ASCellNode *)supplementaryNodeOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath;
+- (instancetype)initWithDataSource:(id<ASCollectionDataControllerSource>)dataSource eventLog:(nullable ASEventLog *)eventLog NS_DESIGNATED_INITIALIZER;
+
+- (nullable ASCellNode *)supplementaryNodeOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath;
+
+- (nullable id<ASSectionContext>)contextForSection:(NSInteger)section;
 
 @end
+
+NS_ASSUME_NONNULL_END

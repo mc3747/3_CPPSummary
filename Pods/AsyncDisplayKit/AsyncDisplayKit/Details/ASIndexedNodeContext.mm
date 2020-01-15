@@ -10,9 +10,9 @@
 //  of patent rights can be found in the PATENTS file in the same directory.
 //
 
-#import "ASIndexedNodeContext.h"
-#import "ASEnvironmentInternal.h"
-#import "ASCellNode.h"
+#import <AsyncDisplayKit/ASIndexedNodeContext.h>
+#import <AsyncDisplayKit/ASCellNode+Internal.h>
+#import <mutex>
 
 @interface ASIndexedNodeContext ()
 
@@ -21,31 +21,61 @@
 
 @end
 
-@implementation ASIndexedNodeContext
+@implementation ASIndexedNodeContext {
+  std::mutex _lock;
+  ASCellNode *_node;
+}
 
 - (instancetype)initWithNodeBlock:(ASCellNodeBlock)nodeBlock
                         indexPath:(NSIndexPath *)indexPath
+         supplementaryElementKind:(nullable NSString *)supplementaryElementKind
                   constrainedSize:(ASSizeRange)constrainedSize
-       environmentTraitCollection:(ASEnvironmentTraitCollection)environmentTraitCollection
+                      environment:(id<ASTraitEnvironment>)environment
 {
   NSAssert(nodeBlock != nil && indexPath != nil, @"Node block and index path must not be nil");
   self = [super init];
   if (self) {
     _nodeBlock = nodeBlock;
     _indexPath = indexPath;
+    _supplementaryElementKind = [supplementaryElementKind copy];
     _constrainedSize = constrainedSize;
-    _environmentTraitCollection = environmentTraitCollection;
+    _traitEnvironment = environment;
   }
   return self;
 }
 
-- (ASCellNode *)allocateNode
+- (ASCellNode *)node
 {
-  NSAssert(_nodeBlock != nil, @"Node block is gone. Should not execute it more than once");
-  ASCellNode *node = _nodeBlock();
-  _nodeBlock = nil;
-  ASEnvironmentStatePropagateDown(node, _environmentTraitCollection);
-  return node;
+  std::lock_guard<std::mutex> l(_lock);
+  if (_nodeBlock != nil) {
+    ASCellNode *node = _nodeBlock();
+    _nodeBlock = nil;
+    if (node == nil) {
+      ASDisplayNodeFailAssert(@"Node block returned nil node! Index path: %@", _indexPath);
+      node = [[ASCellNode alloc] init];
+    }
+    node.cachedIndexPath = _indexPath;
+    node.supplementaryElementKind = _supplementaryElementKind;
+    node.owningNode = (ASDisplayNode *)_traitEnvironment;
+    ASTraitCollectionPropagateDown(node, [_traitEnvironment primitiveTraitCollection]);
+    _node = node;
+  }
+  return _node;
+}
+
+- (ASCellNode *)nodeIfAllocated
+{
+  std::lock_guard<std::mutex> l(_lock);
+  return _node;
+}
+
++ (NSArray<NSIndexPath *> *)indexPathsFromContexts:(NSArray<ASIndexedNodeContext *> *)contexts
+{
+  NSMutableArray *result = [NSMutableArray arrayWithCapacity:contexts.count];
+  for (ASIndexedNodeContext *ctx in contexts) {
+    [result addObject:ctx.indexPath];
+  }
+  return result;
 }
 
 @end

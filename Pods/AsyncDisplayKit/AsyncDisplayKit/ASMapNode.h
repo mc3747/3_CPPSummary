@@ -14,6 +14,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+  * Map Annotation options. 
+  * The default behavior is to ignore the annotations' positions, use the region or options specified instead.
+  * Swift: to select the default behavior, use [].
+  */
 typedef NS_OPTIONS(NSUInteger, ASMapNodeShowAnnotationsOptions)
 {
   /** The annotations' positions are ignored, use the region or options specified instead. */
@@ -69,6 +74,12 @@ typedef NS_OPTIONS(NSUInteger, ASMapNodeShowAnnotationsOptions)
  * @default Default value is ASMapNodeShowAnnotationsIgnored
  */
 @property (nonatomic, assign) ASMapNodeShowAnnotationsOptions showAnnotationsOptions;
+
+/**
+ * @abstract The block which should return annotation image for static map based on provided annotation.
+ * @discussion This block is executed on an arbitrary serial queue. If this block is nil, standard pin is used.
+ */
+@property (nonatomic, copy, nullable) UIImage * _Nullable (^imageForStaticMapAnnotationBlock)(id<MKAnnotation> annotation, CGPoint *centerOffset);
 
 @end
 
