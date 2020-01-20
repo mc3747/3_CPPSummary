@@ -963,6 +963,8 @@
 		42EFA8382109BBEA00AFC827 /* TabView_4_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA8372109BBEA00AFC827 /* TabView_4_ViewController.m */; };
 		42EFA83B2109BBF700AFC827 /* TabView_5_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA83A2109BBF700AFC827 /* TabView_5_ViewController.m */; };
 		42EFA83E2109BC0600AFC827 /* TabView_6_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA83D2109BC0600AFC827 /* TabView_6_ViewController.m */; };
+		42F1392E23D5A85D0082813B /* AttributedClickableLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F1392D23D5A85D0082813B /* AttributedClickableLabelVC.m */; };
+		42F1393123D5A8930082813B /* AttributedClickableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F1393023D5A8930082813B /* AttributedClickableView.m */; };
 		42F772162193CDCC00FFD237 /* NSObject+size.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772132193CDCB00FFD237 /* NSObject+size.m */; };
 		42F772172193CDCC00FFD237 /* AdjustSizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772152193CDCC00FFD237 /* AdjustSizeVC.m */; };
 		42F772522193D0DD00FFD237 /* JMRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7721B2193D0D800FFD237 /* JMRadioButton.m */; };
@@ -2869,6 +2871,10 @@
 		42EFA83A2109BBF700AFC827 /* TabView_5_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabView_5_ViewController.m; sourceTree = "<group>"; };
 		42EFA83C2109BC0600AFC827 /* TabView_6_ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabView_6_ViewController.h; sourceTree = "<group>"; };
 		42EFA83D2109BC0600AFC827 /* TabView_6_ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabView_6_ViewController.m; sourceTree = "<group>"; };
+		42F1392C23D5A85D0082813B /* AttributedClickableLabelVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributedClickableLabelVC.h; sourceTree = "<group>"; };
+		42F1392D23D5A85D0082813B /* AttributedClickableLabelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributedClickableLabelVC.m; sourceTree = "<group>"; };
+		42F1392F23D5A8920082813B /* AttributedClickableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributedClickableView.h; sourceTree = "<group>"; };
+		42F1393023D5A8930082813B /* AttributedClickableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributedClickableView.m; sourceTree = "<group>"; };
 		42F772122193CDCB00FFD237 /* NSObject+size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+size.h"; sourceTree = "<group>"; };
 		42F772132193CDCB00FFD237 /* NSObject+size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+size.m"; sourceTree = "<group>"; };
 		42F772142193CDCC00FFD237 /* AdjustSizeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustSizeVC.h; sourceTree = "<group>"; };
@@ -4087,7 +4093,7 @@
 			path = "1，弹框UI层级调试";
 			sourceTree = "<group>";
 		};
-		424F05A02275B5390039CD62 /* 7,可点击label（继承label） */ = {
+		424F05A02275B5390039CD62 /* 2,可点击label（继承label） */ = {
 			isa = PBXGroup;
 			children = (
 				424F05A42275B5E50039CD62 /* DAViewController.h */,
@@ -4096,7 +4102,7 @@
 				424F05A12275B5CB0039CD62 /* DAAttributedLabel.h */,
 				424F05A22275B5CB0039CD62 /* DAAttributedLabel.m */,
 			);
-			path = "7,可点击label（继承label）";
+			path = "2,可点击label（继承label）";
 			sourceTree = "<group>";
 		};
 		42523F2D218BDCA30038CEE3 /* 3，查看list的结构工具 */ = {
@@ -5502,8 +5508,7 @@
 		42B1827A2106D13A00C1E682 /* *2_label相关 */ = {
 			isa = PBXGroup;
 			children = (
-				424F05A02275B5390039CD62 /* 7,可点击label（继承label） */,
-				42B1827B2106D13A00C1E682 /* 1,可点击label */,
+				42F1392A23D5A8060082813B /* 1,富文本可点击 */,
 				422AB70321742BB20019F1D9 /* 2,label左右留白问题 */,
 				42C4DEF9215F105D00247949 /* 3,倒计时label */,
 				422AB6F9217427270019F1D9 /* 4,label文字对齐各种方式 */,
@@ -8326,6 +8331,27 @@
 			path = "6，性能优化";
 			sourceTree = "<group>";
 		};
+		42F1392A23D5A8060082813B /* 1,富文本可点击 */ = {
+			isa = PBXGroup;
+			children = (
+				42F1392B23D5A8290082813B /* 3,自己总结 */,
+				42B1827B2106D13A00C1E682 /* 1,可点击label */,
+				424F05A02275B5390039CD62 /* 2,可点击label（继承label） */,
+			);
+			path = "1,富文本可点击";
+			sourceTree = "<group>";
+		};
+		42F1392B23D5A8290082813B /* 3,自己总结 */ = {
+			isa = PBXGroup;
+			children = (
+				42F1392C23D5A85D0082813B /* AttributedClickableLabelVC.h */,
+				42F1392D23D5A85D0082813B /* AttributedClickableLabelVC.m */,
+				42F1392F23D5A8920082813B /* AttributedClickableView.h */,
+				42F1393023D5A8930082813B /* AttributedClickableView.m */,
+			);
+			path = "3,自己总结";
+			sourceTree = "<group>";
+		};
 		42F772112193CD9600FFD237 /* 5,自适应宽高的label */ = {
 			isa = PBXGroup;
 			children = (
@@ -9226,6 +9252,7 @@
 				422788A72145F431002B9C13 /* JXCategoryCollectionView.m in Sources */,
 				42166F6122800997006724CD /* LDSCacheManage.m in Sources */,
 				42D1C6672277E719001F170F /* EasyAlertGlobalConfig.m in Sources */,
+				42F1393123D5A8930082813B /* AttributedClickableView.m in Sources */,
 				42DD8DCA21A7ACA400CB04A5 /* AAPLCustomPresentationController.m in Sources */,
 				429CB108210436960063A0D8 /* TAAnimatedDotView.m in Sources */,
 				42166F9622801358006724CD /* BaseEmptyView.m in Sources */,
@@ -9322,6 +9349,7 @@
 				426018AC2338A85900AF656A /* YBHTableCellConfig.m in Sources */,
 				42C783C3213CCB6A0012188E /* YZSortViewController.m in Sources */,
 				42166F7722801300006724CD /* BaseEmptyTableView.m in Sources */,
+				42F1392E23D5A85D0082813B /* AttributedClickableLabelVC.m in Sources */,
 				42C4448B2217F9B2004983B3 /* UIView+SnapShot.m in Sources */,
 				42B573BF213FC1FE0089CFDF /* DefaultStaticVC.m in Sources */,
 				42D1C78722783F7C001F170F /* StyleVC2.m in Sources */,
