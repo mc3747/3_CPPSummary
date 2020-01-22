@@ -6,8 +6,8 @@
 //  Copyright © 2016年 zhangyan. All rights reserved.
 //
 
-#import "ClickTextView.h"
-@interface ClickTextView()
+#import "ClickTextView2.h"
+@interface ClickTextView2()
 #define  kCoverViewTag 111
 
 @property (nonatomic, strong)NSMutableArray *rectsArray;
@@ -15,7 +15,7 @@
 
 @end
 
-@implementation ClickTextView
+@implementation ClickTextView2
 
 /*
  // Only override drawRect: if you perform custom drawing.
@@ -112,7 +112,6 @@
 {
     // 获取触摸对象
     UITouch *touch = [touches anyObject];
-    
     // 触摸点
     CGPoint point = [touch locationInView:self];
     // 通过一个触摸点，查询点击的是不是在下划线对应的文字的frame

@@ -3,22 +3,4 @@
    uuid = "45B7ACF2-B534-4226-9527-C08FF60CCCAF"
    type = "0"
    version = "2.0">
-   <Breakpoints>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "3205AD44-81EA-4178-9E87-F6525CC6BCF1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "UIGracefulWriting/1&#xff0c;UI&#x5927;&#x6742;&#x70e9;/*2_label&#x76f8;&#x5173;/1,&#x5bcc;&#x6587;&#x672c;&#x53ef;&#x70b9;&#x51fb;/3,&#x81ea;&#x5df1;&#x603b;&#x7ed3;/AttributedClickableLabelVC.m"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "-textView:shouldInteractWithURL:inRange:interaction:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-   </Breakpoints>
 </Bucket>

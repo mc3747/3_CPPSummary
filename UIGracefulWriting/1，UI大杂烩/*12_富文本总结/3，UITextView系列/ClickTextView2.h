@@ -12,7 +12,7 @@ typedef void(^clickTextViewPartBlock)(NSString *clickText);
 
 /** 可以设置部分内容的下划线，注意事项，该textView不能滑动并且不能编辑 */
 
-@interface ClickTextView : UITextView
+@interface ClickTextView2 : UITextView
 
 /**
  *  设置textView的部分为下划线，并且使之可以点击

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4200C8792159C45800FCD77D /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4200C8782159C45800FCD77D /* TestViewController.m */; };
+		4213028223D8404200704E59 /* ClickTextView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4213028123D8404200704E59 /* ClickTextView1.m */; };
+		4213028523D8432A00704E59 /* ClickTextView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 4213028423D8432900704E59 /* ClickTextView3.m */; };
 		42166F3E228006A0006724CD /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 42166F2C2280069E006724CD /* TableViewCell.m */; };
 		42166F3F228006A0006724CD /* UIImageView+JMRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 42166F2E2280069F006724CD /* UIImageView+JMRadius.m */; };
 		42166F40228006A0006724CD /* UIImage+JMRadius.m in Sources */ = {isa = PBXBuildFile; fileRef = 42166F302280069F006724CD /* UIImage+JMRadius.m */; };
@@ -331,7 +333,7 @@
 		426D55982285BF2F0060AEF4 /* BZBaseTableViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D55972285BF2F0060AEF4 /* BZBaseTableViewViewController.m */; };
 		426D559B2285BFAD0060AEF4 /* BZBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 426D559A2285BFAD0060AEF4 /* BZBaseTableViewCell.m */; };
 		426FEE76221CE67000C4491A /* TextViewRichVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FEE75221CE67000C4491A /* TextViewRichVC.m */; };
-		426FEE79221D39EC00C4491A /* ClickTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FEE78221D39EC00C4491A /* ClickTextView.m */; };
+		426FEE79221D39EC00C4491A /* ClickTextView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FEE78221D39EC00C4491A /* ClickTextView2.m */; };
 		427487042330784D0089B749 /* FourElementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427487032330784D0089B749 /* FourElementViewController.m */; };
 		4274870723308CDC0089B749 /* BaseInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4274870623308CDC0089B749 /* BaseInputView.m */; };
 		42789BF02154759900F85994 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BEF2154759900F85994 /* Test1ViewController.m */; };
@@ -1032,6 +1034,10 @@
 		14963D90AB1CDCB894329DCE /* libPods-UIGracefulWriting.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UIGracefulWriting.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4200C8772159C45800FCD77D /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		4200C8782159C45800FCD77D /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		4213028023D8404200704E59 /* ClickTextView1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickTextView1.h; sourceTree = "<group>"; };
+		4213028123D8404200704E59 /* ClickTextView1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickTextView1.m; sourceTree = "<group>"; };
+		4213028323D8432900704E59 /* ClickTextView3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClickTextView3.h; sourceTree = "<group>"; };
+		4213028423D8432900704E59 /* ClickTextView3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClickTextView3.m; sourceTree = "<group>"; };
 		42166F2C2280069E006724CD /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
 		42166F2E2280069F006724CD /* UIImageView+JMRadius.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JMRadius.m"; sourceTree = "<group>"; };
 		42166F2F2280069F006724CD /* JMRoundedCorner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMRoundedCorner.h; sourceTree = "<group>"; };
@@ -1669,8 +1675,8 @@
 		426D559A2285BFAD0060AEF4 /* BZBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BZBaseTableViewCell.m; sourceTree = "<group>"; };
 		426FEE74221CE67000C4491A /* TextViewRichVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewRichVC.h; sourceTree = "<group>"; };
 		426FEE75221CE67000C4491A /* TextViewRichVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewRichVC.m; sourceTree = "<group>"; };
-		426FEE77221D39EC00C4491A /* ClickTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickTextView.h; sourceTree = "<group>"; };
-		426FEE78221D39EC00C4491A /* ClickTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickTextView.m; sourceTree = "<group>"; };
+		426FEE77221D39EC00C4491A /* ClickTextView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClickTextView2.h; sourceTree = "<group>"; };
+		426FEE78221D39EC00C4491A /* ClickTextView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClickTextView2.m; sourceTree = "<group>"; };
 		427487022330784D0089B749 /* FourElementViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourElementViewController.h; sourceTree = "<group>"; };
 		427487032330784D0089B749 /* FourElementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourElementViewController.m; sourceTree = "<group>"; };
 		4274870523308CDC0089B749 /* BaseInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseInputView.h; sourceTree = "<group>"; };
@@ -4842,8 +4848,12 @@
 			children = (
 				426FEE74221CE67000C4491A /* TextViewRichVC.h */,
 				426FEE75221CE67000C4491A /* TextViewRichVC.m */,
-				426FEE77221D39EC00C4491A /* ClickTextView.h */,
-				426FEE78221D39EC00C4491A /* ClickTextView.m */,
+				4213028023D8404200704E59 /* ClickTextView1.h */,
+				4213028123D8404200704E59 /* ClickTextView1.m */,
+				426FEE77221D39EC00C4491A /* ClickTextView2.h */,
+				426FEE78221D39EC00C4491A /* ClickTextView2.m */,
+				4213028323D8432900704E59 /* ClickTextView3.h */,
+				4213028423D8432900704E59 /* ClickTextView3.m */,
 			);
 			path = "3，UITextView系列";
 			sourceTree = "<group>";
@@ -6877,7 +6887,6 @@
 			children = (
 				42CB7E582138F3C8003397FB /* RichTextVC.h */,
 				42CB7E592138F3C8003397FB /* RichTextVC.m */,
-				42FB50C223A8D27700C5E315 /* 10，小众3-CJ系列 */,
 				42CB7E5B2139159B003397FB /* 1，UILabel的富文本 */,
 				42CB7E6321391B61003397FB /* 2，HTML系列 */,
 				426FEE73221CE4F900C4491A /* 3，UITextView系列 */,
@@ -6887,6 +6896,7 @@
 				42CB7E5C213915D6003397FB /* 7，大众1-YY系列 */,
 				42CB7E5D213915E0003397FB /* 8，大众2-TTT系列 */,
 				42FB50B523A7774100C5E315 /* 9，富文本构造器 */,
+				42FB50C223A8D27700C5E315 /* 10，小众3-CJ系列 */,
 			);
 			path = "*12_富文本总结";
 			sourceTree = "<group>";
@@ -9439,6 +9449,7 @@
 				42F772162193CDCC00FFD237 /* NSObject+size.m in Sources */,
 				426018CD2338A89A00AF656A /* WellKnownSayingThreeCell.m in Sources */,
 				42F772592193D0DD00FFD237 /* JMNumberButtonConfig.m in Sources */,
+				4213028523D8432A00704E59 /* ClickTextView3.m in Sources */,
 				42523F4E218BF9190038CEE3 /* HYBCardFlowLayout.m in Sources */,
 				42C5B6A02142699B00563794 /* SXDataSource.m in Sources */,
 				42D1C77A22783F55001F170F /* WHC_KeyboardManager.m in Sources */,
@@ -9497,7 +9508,7 @@
 				422788A22145F431002B9C13 /* JXCategoryImageCellModel.m in Sources */,
 				42C51A29211C445D00742239 /* XMGStatusCell.m in Sources */,
 				42E9FA50226FF46C00D840A2 /* PackageTableViewVC.m in Sources */,
-				426FEE79221D39EC00C4491A /* ClickTextView.m in Sources */,
+				426FEE79221D39EC00C4491A /* ClickTextView2.m in Sources */,
 				42DE3A50226458F300422577 /* UIWindow+PrivateMethods.m in Sources */,
 				42C7838D213CC45B0012188E /* SpinnerSectionController.m in Sources */,
 				42C7834B213CC45B0012188E /* GridItem.m in Sources */,
@@ -9648,6 +9659,7 @@
 				42C7837B213CC45B0012188E /* PhotoCell.m in Sources */,
 				42C78358213CC45B0012188E /* DiffTableViewController.m in Sources */,
 				42C5B48321422D4500563794 /* showCell.m in Sources */,
+				4213028223D8404200704E59 /* ClickTextView1.m in Sources */,
 				42D1C6052277E476001F170F /* LightLoadingVC.m in Sources */,
 				42C5B4C221422F5300563794 /* TextTableViewController.m in Sources */,
 				429B151D2160C2FD00F595FC /* STHeaderView.m in Sources */,

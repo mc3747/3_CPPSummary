@@ -7,7 +7,9 @@
 //
 
 #import "TextViewRichVC.h"
-#import "ClickTextView.h"
+#import "ClickTextView1.h"
+#import "ClickTextView2.h"
+#import "ClickTextView3.h"
 
 static const NSInteger textFont = 17;
 
@@ -20,15 +22,41 @@ static const NSInteger textFont = 17;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    [self addElementTextView];
-    [self addTextView];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self demo1];
+    [self demo2];
+    [self demo3];
 }
-#pragma mark -  组件化的textView
-- (void)addElementTextView {
+//方式1：系统url scheme方法
+-(void)demo1{
+    NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+             [paragraphStyle setAlignment:NSTextAlignmentLeft];
+             [paragraphStyle setLineSpacing:5];
+             [paragraphStyle setLineBreakMode:NSLineBreakByWordWrapping];
+       
+       NSDictionary *contentDic = [NSDictionary dictionaryWithObjectsAndKeys:
+                                   [UIFont systemFontOfSize:16.0],NSFontAttributeName,//字体
+                                   [UIColor redColor],NSForegroundColorAttributeName,
+                                   paragraphStyle,NSParagraphStyleAttributeName, nil//字体颜色
+                                   ];
+       NSDictionary *highlightDic = [NSDictionary dictionaryWithObjectsAndKeys:
+       [UIFont systemFontOfSize:16.0],NSFontAttributeName,//字体
+                                     [UIColor blueColor],NSForegroundColorAttributeName, nil//字体颜色
+                                   ];
+       NSArray *highlightArray = @[highlightDic,highlightDic,highlightDic];
+       
+       ClickTextView1 *textView = [[ClickTextView1 alloc] initWithFrame:CGRectMake(0, 100, 300, 100) contentStirng:@"请遵守以下协议《支付宝协议》《微信协议》《建行协议》《招行协议》《中国银行协议》《上海银行协议》" contentAttribute:contentDic highlightStringArray:@[@"《支付宝协议》",@"《微信协议》",@"《建行协议》"] hithlightAttribute:highlightArray];
+     textView.backgroundColor = [UIColor whiteColor];
+       textView.clickStringBlock = ^(NSInteger index, NSString * _Nullable highlightString) {
+            NSLog(@"%lu---%@",index,highlightString);
+       };
+       
+       [self.view addSubview:textView];
+}
+//方式2：自绘背景
+-(void)demo2{
     
-    ClickTextView *clickTextView = [[ClickTextView alloc] initWithFrame:CGRectMake(50, 250, 300, 300)];
+    ClickTextView2 *clickTextView = [[ClickTextView2 alloc] initWithFrame:CGRectMake(50, 250, 300, 100)];
     [self.view addSubview:clickTextView];
     
     // 方便测试，设置textView的边框已经背景
@@ -51,73 +79,37 @@ static const NSInteger textFont = 17;
     
     // 设置期中的一段文字有下划线，下划线的颜色没有设置，点击下划线文字没有点击效果
     NSRange range2 = [content rangeOfString:@"不到催上半场低俗"];
-    [clickTextView setUnderlineTextWithRange:range2 withUnderlineColor:nil withClickCoverColor:nil withBlock:^(NSString *clickText) {
+    [clickTextView setUnderlineTextWithRange:range2 withUnderlineColor:nil withClickCoverColor:[UIColor redColor]  withBlock:^(NSString *clickText) {
         NSLog(@"clickText = %@",clickText);
     }];
 }
-#pragma mark -  原生的textView
-- (void)addTextView {
-    UITextView *textview = [[UITextView alloc] initWithFrame:CGRectMake(10, 100, 300, 100)];
-    [self.view addSubview:textview];
-    self.textview = textview;
-    [self protocolIsSelect:self.isSelect];
+//方法3：综合方法1和方法2
+-(void)demo3{
+//    整段文字属性
+       NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
+             [paragraphStyle setAlignment:NSTextAlignmentLeft];
+             [paragraphStyle setLineSpacing:5];
+             [paragraphStyle setLineBreakMode:NSLineBreakByWordWrapping];
+       
+       NSDictionary *contentDic = [NSDictionary dictionaryWithObjectsAndKeys:
+                                   [UIFont systemFontOfSize:16.0],NSFontAttributeName,//字体
+                                   [UIColor redColor],NSForegroundColorAttributeName,
+                                   paragraphStyle,NSParagraphStyleAttributeName, nil//字体颜色
+                                   ];
+//    高亮文字属性
+       NSDictionary *highlightDic = [NSDictionary dictionaryWithObjectsAndKeys:
+       [UIFont systemFontOfSize:16.0],NSFontAttributeName,//字体
+                                     [UIColor blueColor],NSForegroundColorAttributeName, nil//字体颜色
+                                   ];
+       NSArray *highlightArray = @[highlightDic,highlightDic,highlightDic];
+//    高亮文字背景
+    NSArray *highlightBgColorArray = @[[UIColor redColor],[UIColor yellowColor],[UIColor greenColor]];
+       ClickTextView3 *textView = [[ClickTextView3 alloc] initWithFrame:CGRectMake(0, 400, 300, 100) contentStirng:@"请遵守以下协议《支付宝协议》《微信协议》《建行协议》《招行协议》《中国银行协议》《上海银行协议》" contentAttribute:contentDic highlightStringArray:@[@"《支付宝协议》",@"《微信协议》",@"《建行协议》"] hithlightAttribute:highlightArray highlightBgColorArray:highlightBgColorArray];
+       textView.backgroundColor = [UIColor whiteColor];
+       textView.clickStringBlock = ^(NSInteger index, NSString * _Nullable highlightString) {
+            NSLog(@"%lu---%@",index,highlightString);
+       };
+       
+       [self.view addSubview:textView];
 }
-
-- (void)protocolIsSelect:(BOOL)select {
-    NSMutableAttributedString *attributedString = [[NSMutableAttributedString alloc] initWithString:@"请遵守以下协议《支付宝协议》《微信协议》《建行协议》《招行协议》《中国银行协议》《上海银行协议》"];
-    [attributedString addAttribute:NSLinkAttributeName
-                             value:@"zhifubao://"
-                             range:[[attributedString string] rangeOfString:@"《支付宝协议》"]];
-    [attributedString addAttribute:NSLinkAttributeName
-                             value:@"weixin://"
-                             range:[[attributedString string] rangeOfString:@"《微信协议》"]];
-    [attributedString addAttribute:NSLinkAttributeName
-                             value:@"jianhang://"
-                             range:[[attributedString string] rangeOfString:@"《建行协议》"]];
-    
-    
-    UIImage *image = [UIImage imageNamed:select == YES ? @"click-selected" : @"default-nonSelected"];
-    CGSize size = CGSizeMake(textFont + 2, textFont + 2);
-    UIGraphicsBeginImageContextWithOptions(size, false, 0);
-    [image drawInRect:CGRectMake(0, 2, size.width, size.height)];
-    UIImage *resizeImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    NSTextAttachment *textAttachment = [[NSTextAttachment alloc] init];
-    textAttachment.image = resizeImage;
-    NSMutableAttributedString *imageString = [NSMutableAttributedString attributedStringWithAttachment:textAttachment];
-    [imageString addAttribute:NSLinkAttributeName
-                        value:@"checkbox://"
-                        range:NSMakeRange(0, imageString.length)];
-    [attributedString insertAttributedString:imageString atIndex:0];
-    [attributedString addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:textFont] range:NSMakeRange(0, attributedString.length)];
-    [attributedString addAttribute:NSUnderlineStyleAttributeName value:@(NSUnderlineStyleNone) range:NSMakeRange(0, attributedString.length)];
-    _textview.attributedText = attributedString;
-    _textview.linkTextAttributes = @{NSForegroundColorAttributeName: [UIColor blueColor],
-                                     NSUnderlineColorAttributeName: [UIColor redColor],
-                                     NSUnderlineStyleAttributeName: @(NSUnderlineStyleSingle)
-                                     };
-    
-    _textview.delegate = self;
-    _textview.editable = NO;        //必须禁止输入，否则点击将弹出输入键盘
-    _textview.scrollEnabled = NO;
-}
-#pragma mark -  textView的代理
-- (BOOL)textView:(UITextView *)textView shouldInteractWithURL:(NSURL *)URL inRange:(NSRange)characterRange {
-    if ([[URL scheme] isEqualToString:@"jianhang"]) {
-        NSLog(@"建行支付---------------");
-        return NO;
-    } else if ([[URL scheme] isEqualToString:@"zhifubao"]) {
-        NSLog(@"支付宝支付---------------");
-        return NO;
-    } else if ([[URL scheme] isEqualToString:@"weixin"]) {
-        NSLog(@"微信支付---------------");
-        return NO;
-    } else if ([[URL scheme] isEqualToString:@"checkbox"]) {
-        self.isSelect = !self.isSelect;
-        [self protocolIsSelect:self.isSelect];
-        return NO;
-    }
-    return YES;
-}
-
 @end
