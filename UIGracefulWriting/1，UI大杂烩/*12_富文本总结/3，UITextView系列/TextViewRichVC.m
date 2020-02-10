@@ -16,6 +16,7 @@ static const NSInteger textFont = 17;
 @interface TextViewRichVC ()<UITextViewDelegate>
 @property (weak, nonatomic)  UITextView *textview;
 @property (assign, nonatomic) BOOL isSelect;
+@property (nonatomic, strong) UIView *testView;
 @end
 
 @implementation TextViewRichVC
@@ -85,6 +86,9 @@ static const NSInteger textFont = 17;
 }
 //方法3：综合方法1和方法2
 -(void)demo3{
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 400, 300, 100)];
+    view.backgroundColor = [UIColor lightPink];
+    
 //    整段文字属性
        NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
              [paragraphStyle setAlignment:NSTextAlignmentLeft];
@@ -104,12 +108,13 @@ static const NSInteger textFont = 17;
        NSArray *highlightArray = @[highlightDic,highlightDic,highlightDic];
 //    高亮文字背景
     NSArray *highlightBgColorArray = @[[UIColor redColor],[UIColor yellowColor],[UIColor greenColor]];
-       ClickTextView3 *textView = [[ClickTextView3 alloc] initWithFrame:CGRectMake(0, 400, 300, 100) contentStirng:@"请遵守以下协议《支付宝协议》《微信协议》《建行协议》《招行协议》《中国银行协议》《上海银行协议》" contentAttribute:contentDic highlightStringArray:@[@"《支付宝协议》",@"《微信协议》",@"《建行协议》"] hithlightAttribute:highlightArray highlightBgColorArray:highlightBgColorArray];
+       ClickTextView3 *textView = [[ClickTextView3 alloc] initWithFrame:CGRectMake(0, 0, 200, 100) contentStirng:@"请遵守以下协议《支付宝协议》《微信协议》《建行协议》《招行协议》《中国银行协议》《上海银行协议》" contentAttribute:contentDic highlightStringArray:@[@"《支付宝协议》",@"《微信协议》",@"《建行协议》"] hithlightAttribute:highlightArray highlightBgColorArray:highlightBgColorArray];
        textView.backgroundColor = [UIColor whiteColor];
        textView.clickStringBlock = ^(NSInteger index, NSString * _Nullable highlightString) {
             NSLog(@"%lu---%@",index,highlightString);
        };
-       
-       [self.view addSubview:textView];
+    [view addSubview:textView];
+    
+       [self.view addSubview:view];
 }
 @end
