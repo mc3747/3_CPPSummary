@@ -28,7 +28,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (BOOL)haveSpecialVCWithStack:(UINavigationController *)navi SpecificName:(NSString *)vc;
 
 //可以任意地方调用这个push，不需要跑回基类VC调用self.navigationController这么麻烦
+    //  使用控制器vc
 void GJSPushViewController (UIViewController *vc,BOOL animated);
+    //  使用控制器vc的标题
+void GJSPushViewControllerWithName (NSString *vcName,BOOL animated);
 
 //present，同上
 void GJSPresentViewController (UIViewController *vc,BOOL animated);
@@ -41,6 +44,8 @@ UIWindow *GJSMainWindow(void);
 
 //当前最高一级VC
 UIViewController *GJSTopMostViewController(void);
+
+
 @end
 
 NS_ASSUME_NONNULL_END

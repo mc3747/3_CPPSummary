@@ -149,6 +149,15 @@ void GJSPushViewController (UIViewController *vc,BOOL animated) {
     [GJSTopMostViewController().navigationController pushViewController:vc animated:animated];
 }
 
+void GJSPushViewControllerWithName (NSString *vcName,BOOL animated){
+    Class class = NSClassFromString(vcName);
+       if (class) {
+           UIViewController *vc = [class new];
+          if (!vc || ![vc isKindOfClass:[UIViewController class]]) return;
+          [GJSTopMostViewController().navigationController pushViewController:vc animated:animated];
+       };
+}
+
 #pragma mark -  任意地方bottom push
 void GJSBottomPushViewController (UIViewController *vc) {
     

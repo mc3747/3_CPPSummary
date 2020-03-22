@@ -338,6 +338,10 @@
 		426FEE79221D39EC00C4491A /* ClickTextView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 426FEE78221D39EC00C4491A /* ClickTextView2.m */; };
 		427487042330784D0089B749 /* FourElementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 427487032330784D0089B749 /* FourElementViewController.m */; };
 		4274870723308CDC0089B749 /* BaseInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4274870623308CDC0089B749 /* BaseInputView.m */; };
+		4277D7E6241F65AD00AEC27A /* MyOneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4277D7DF241F65AC00AEC27A /* MyOneView.m */; };
+		4277D7E7241F65AD00AEC27A /* MyThreeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4277D7E2241F65AC00AEC27A /* MyThreeView.m */; };
+		4277D7E8241F65AD00AEC27A /* MyTwoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4277D7E3241F65AC00AEC27A /* MyTwoView.m */; };
+		4277D7E9241F65AD00AEC27A /* MyBaseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4277D7E5241F65AD00AEC27A /* MyBaseAlertView.m */; };
 		42789BF02154759900F85994 /* Test1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BEF2154759900F85994 /* Test1ViewController.m */; };
 		42789BF3215475AB00F85994 /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789BF2215475AB00F85994 /* Test2ViewController.m */; };
 		42789C602154EEAB00F85994 /* CommonMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 42789C5F2154EEAB00F85994 /* CommonMethod.m */; };
@@ -1687,6 +1691,14 @@
 		427487032330784D0089B749 /* FourElementViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourElementViewController.m; sourceTree = "<group>"; };
 		4274870523308CDC0089B749 /* BaseInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseInputView.h; sourceTree = "<group>"; };
 		4274870623308CDC0089B749 /* BaseInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseInputView.m; sourceTree = "<group>"; };
+		4277D7DE241F65AC00AEC27A /* MyThreeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyThreeView.h; sourceTree = "<group>"; };
+		4277D7DF241F65AC00AEC27A /* MyOneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOneView.m; sourceTree = "<group>"; };
+		4277D7E0241F65AC00AEC27A /* MyTwoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTwoView.h; sourceTree = "<group>"; };
+		4277D7E1241F65AC00AEC27A /* MyOneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOneView.h; sourceTree = "<group>"; };
+		4277D7E2241F65AC00AEC27A /* MyThreeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyThreeView.m; sourceTree = "<group>"; };
+		4277D7E3241F65AC00AEC27A /* MyTwoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTwoView.m; sourceTree = "<group>"; };
+		4277D7E4241F65AD00AEC27A /* MyBaseAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseAlertView.h; sourceTree = "<group>"; };
+		4277D7E5241F65AD00AEC27A /* MyBaseAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseAlertView.m; sourceTree = "<group>"; };
 		42789BEE2154759900F85994 /* Test1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test1ViewController.h; sourceTree = "<group>"; };
 		42789BEF2154759900F85994 /* Test1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test1ViewController.m; sourceTree = "<group>"; };
 		42789BF1215475AB00F85994 /* Test2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
@@ -3261,9 +3273,9 @@
 		42166F8A22801358006724CD /* BaseTableView */ = {
 			isa = PBXGroup;
 			children = (
+				42166F8D22801358006724CD /* BaseBlockTableView.h */,
 				42166F8B22801358006724CD /* BaseBlockTableView.m */,
 				42166F8C22801358006724CD /* BaseEmptyView.m */,
-				42166F8D22801358006724CD /* BaseBlockTableView.h */,
 				42166F8E22801358006724CD /* BaseEmptyView.h */,
 			);
 			name = BaseTableView;
@@ -4898,6 +4910,21 @@
 				4288EF292331DBF100113EAE /* JudgeFormatTool.m */,
 			);
 			path = tool;
+			sourceTree = "<group>";
+		};
+		4277D7DD241F65AC00AEC27A /* MyShowView */ = {
+			isa = PBXGroup;
+			children = (
+				4277D7E4241F65AD00AEC27A /* MyBaseAlertView.h */,
+				4277D7E5241F65AD00AEC27A /* MyBaseAlertView.m */,
+				4277D7DE241F65AC00AEC27A /* MyThreeView.h */,
+				4277D7DF241F65AC00AEC27A /* MyOneView.m */,
+				4277D7E0241F65AC00AEC27A /* MyTwoView.h */,
+				4277D7E1241F65AC00AEC27A /* MyOneView.h */,
+				4277D7E2241F65AC00AEC27A /* MyThreeView.m */,
+				4277D7E3241F65AC00AEC27A /* MyTwoView.m */,
+			);
+			path = MyShowView;
 			sourceTree = "<group>";
 		};
 		427B1E6C23CDBB410079FAD1 /* 5，toast注意点总结 */ = {
@@ -7106,6 +7133,7 @@
 		42CD42602260670800652FA6 /* #3_多级弹窗控制 */ = {
 			isa = PBXGroup;
 			children = (
+				4277D7DD241F65AC00AEC27A /* MyShowView */,
 				42CD42612260672800652FA6 /* MoreAlertManageVC.h */,
 				42CD42622260672800652FA6 /* MoreAlertManageVC.m */,
 				42CD428E226067C900652FA6 /* MoreAlertManageTableVC.h */,
@@ -9055,6 +9083,7 @@
 				429CB103210436960063A0D8 /* SDCycleScrollView.m in Sources */,
 				42CD42862260674B00652FA6 /* JCAlertController.m in Sources */,
 				42CB7E8A213939C3003397FB /* UIAlertView+RWBlock.m in Sources */,
+				4277D7E6241F65AD00AEC27A /* MyOneView.m in Sources */,
 				426018D02338A89A00AF656A /* WellKnownSayingOneCell.m in Sources */,
 				42523F46218BF8F50038CEE3 /* HYBGridModel.m in Sources */,
 				42D42FDA225C7F2700EA4AA8 /* InputFloatVC.m in Sources */,
@@ -9179,6 +9208,7 @@
 				42685503223F2C9500680CDA /* EasyNavigationScroll.m in Sources */,
 				422789152145F44F002B9C13 /* VerticalListSectionModel.m in Sources */,
 				42B573D5213FC1FE0089CFDF /* ChildFirstPopGestureVC.m in Sources */,
+				4277D7E9241F65AD00AEC27A /* MyBaseAlertView.m in Sources */,
 				4227888F2145F430002B9C13 /* JXCategoryIndicatorTriangleView.m in Sources */,
 				4265FB102265C41D00EA45CE /* NavigationBarChangeBackgroundViewController.m in Sources */,
 				421670152280136A006724CD /* HSCategoryViewController.m in Sources */,
@@ -9225,6 +9255,7 @@
 				42EFA83E2109BC0600AFC827 /* TabView_6_ViewController.m in Sources */,
 				42BF8188211A88680090E612 /* CQHouseModel.m in Sources */,
 				429CB1A5210436960063A0D8 /* RightViewController.m in Sources */,
+				4277D7E7241F65AD00AEC27A /* MyThreeView.m in Sources */,
 				4227889E2145F431002B9C13 /* JXCategoryTitleCell.m in Sources */,
 				42C78373213CC45B0012188E /* CommentCell.m in Sources */,
 				42C5B4C021422F5300563794 /* ImageTextViewController.m in Sources */,
@@ -9729,6 +9760,7 @@
 				42DB02FB221E50B6002B5675 /* UIImage+HTImageWithCenterLogo.m in Sources */,
 				4242B93E212A72C400C3A2C5 /* RequesCover.m in Sources */,
 				42340AA1228BE9D500BAF230 /* IndexAnimationDemo1VC.m in Sources */,
+				4277D7E8241F65AD00AEC27A /* MyTwoView.m in Sources */,
 				42C787DA213D2BA50012188E /* SGCountdownVC.m in Sources */,
 				42166F9122801358006724CD /* LYEmptyBaseView.m in Sources */,
 				42D1C6BB2277E835001F170F /* CQContentsModel.m in Sources */,
