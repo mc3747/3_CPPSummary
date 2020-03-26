@@ -973,6 +973,8 @@
 		42EFA83E2109BC0600AFC827 /* TabView_6_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EFA83D2109BC0600AFC827 /* TabView_6_ViewController.m */; };
 		42F1392E23D5A85D0082813B /* AttributedClickableLabelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F1392D23D5A85D0082813B /* AttributedClickableLabelVC.m */; };
 		42F1393123D5A8930082813B /* AttributedClickableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F1393023D5A8930082813B /* AttributedClickableView.m */; };
+		42F58D35242C540800C0C1DC /* SeparateTableviewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F58D34242C540800C0C1DC /* SeparateTableviewVC.m */; };
+		42F58D38242C541A00C0C1DC /* FirstTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F58D36242C541900C0C1DC /* FirstTableViewModel.m */; };
 		42F772162193CDCC00FFD237 /* NSObject+size.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772132193CDCB00FFD237 /* NSObject+size.m */; };
 		42F772172193CDCC00FFD237 /* AdjustSizeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F772152193CDCC00FFD237 /* AdjustSizeVC.m */; };
 		42F772522193D0DD00FFD237 /* JMRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F7721B2193D0D800FFD237 /* JMRadioButton.m */; };
@@ -2899,6 +2901,10 @@
 		42F1392D23D5A85D0082813B /* AttributedClickableLabelVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributedClickableLabelVC.m; sourceTree = "<group>"; };
 		42F1392F23D5A8920082813B /* AttributedClickableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributedClickableView.h; sourceTree = "<group>"; };
 		42F1393023D5A8930082813B /* AttributedClickableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributedClickableView.m; sourceTree = "<group>"; };
+		42F58D33242C540800C0C1DC /* SeparateTableviewVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SeparateTableviewVC.h; sourceTree = "<group>"; };
+		42F58D34242C540800C0C1DC /* SeparateTableviewVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeparateTableviewVC.m; sourceTree = "<group>"; };
+		42F58D36242C541900C0C1DC /* FirstTableViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewModel.m; sourceTree = "<group>"; };
+		42F58D37242C541A00C0C1DC /* FirstTableViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableViewModel.h; sourceTree = "<group>"; };
 		42F772122193CDCB00FFD237 /* NSObject+size.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+size.h"; sourceTree = "<group>"; };
 		42F772132193CDCB00FFD237 /* NSObject+size.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+size.m"; sourceTree = "<group>"; };
 		42F772142193CDCC00FFD237 /* AdjustSizeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdjustSizeVC.h; sourceTree = "<group>"; };
@@ -8352,6 +8358,7 @@
 			children = (
 				421670452280145D006724CD /* GracefulTableViewVC.h */,
 				421670462280145D006724CD /* GracefulTableViewVC.m */,
+				42F58D32242C53C100C0C1DC /* 8,  tableview解耦写法 */,
 				426018992338A80700AF656A /* 7，mvvm实现多种cell组合 */,
 				42E9FA49226FF3C000D840A2 /* 6，一般封装tableView */,
 				42166F66228012BF006724CD /* 5，多种cell组合 */,
@@ -8406,6 +8413,17 @@
 				42F1393023D5A8930082813B /* AttributedClickableView.m */,
 			);
 			path = "3,自己总结";
+			sourceTree = "<group>";
+		};
+		42F58D32242C53C100C0C1DC /* 8,  tableview解耦写法 */ = {
+			isa = PBXGroup;
+			children = (
+				42F58D33242C540800C0C1DC /* SeparateTableviewVC.h */,
+				42F58D34242C540800C0C1DC /* SeparateTableviewVC.m */,
+				42F58D37242C541A00C0C1DC /* FirstTableViewModel.h */,
+				42F58D36242C541900C0C1DC /* FirstTableViewModel.m */,
+			);
+			path = "8,  tableview解耦写法";
 			sourceTree = "<group>";
 		};
 		42F772112193CD9600FFD237 /* 5,自适应宽高的label */ = {
@@ -8927,6 +8945,7 @@
 				422788A02145F431002B9C13 /* JXCategoryImageView.m in Sources */,
 				42BF81AE211A89D90090E612 /* CQDetailViewController.m in Sources */,
 				425901142140BE7700304394 /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
+				42F58D35242C540800C0C1DC /* SeparateTableviewVC.m in Sources */,
 				42DD8DC721A7ACA400CB04A5 /* AAPLCrossDissolveTransitionAnimator.m in Sources */,
 				42D1C77922783F55001F170F /* WHC_KeyboardHeaderView.m in Sources */,
 				42C4DF25215F2B3000247949 /* UITableViewCell+Animated.m in Sources */,
@@ -9408,6 +9427,7 @@
 				426018AC2338A85900AF656A /* YBHTableCellConfig.m in Sources */,
 				42C783C3213CCB6A0012188E /* YZSortViewController.m in Sources */,
 				42166F7722801300006724CD /* BaseEmptyTableView.m in Sources */,
+				42F58D38242C541A00C0C1DC /* FirstTableViewModel.m in Sources */,
 				42F1392E23D5A85D0082813B /* AttributedClickableLabelVC.m in Sources */,
 				42C4448B2217F9B2004983B3 /* UIView+SnapShot.m in Sources */,
 				42B573BF213FC1FE0089CFDF /* DefaultStaticVC.m in Sources */,
